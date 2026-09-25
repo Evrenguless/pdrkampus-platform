@@ -60,18 +60,10 @@ Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritaban
 
 `db/007_community_documents.sql` yalnızca **yeni** Supabase projesinde, `006_accounts.sql` sonrasında çalıştırılır. Önceki `005_community_documents_draft.sql` çalıştırılmaz. Yeni SQL, **özel** `community-documents` bucket'ını, belge kayıtlarını, RLS politikalarını ve moderatör tablosunu oluşturur. Bekleyen dosyalar halka açık URL ile sunulmaz; onaylı belgeler kısa süreli imzalı bağlantıyla açılır. Depolama politikası kullanıcının yalnızca kendi kimlik klasörüne yükleme yapmasına izin verir. Belgelerde öğrenci kişisel verisi ve paylaşım hakkı olmayan materyal bulunmamalıdır.
 
-İlk moderatörü atamak için Supabase Authentication → Users içinden **kendi hesap UUID** değerinizi alın ve SQL Editor'da yalnızca güvenilir proje yöneticisi olarak şu komutu çalıştırın:
+`db/008_moderator_file_access.sql` dosyasını 007 sonrasında çalıştırın. Ardından Authentication → Users bölümünden kendi hesabınızın UUID değerini alıp SQL Editor'da bir kez şu komutu çalıştırın:
 
 ```sql
 insert into public.community_moderators(user_id) values ('KENDI_HESAP_UUID') on conflict do nothing;
 ```
 
-İnceleme için ilk sürümde SQL Editor kullanılır. Bekleyen kayıtları `select id,title,document_type,level,topic,original_filename,created_at from public.community_documents where review_status='pending' order by created_at;` ile gözden geçirin. Dosyanın içeriğini denetlemeden onaylamayın. Onay kararı için:
-
-```sql
-update public.community_documents
-set review_status='approved', reviewer_id='KENDI_HESAP_UUID', reviewed_at=now(), review_note='İçerik ve paylaşım hakkı kontrol edildi'
-where id='BELGE_UUID' and review_status='pending';
-```
-
-Uygun olmayan belge için aynı komutta `review_status='rejected'` ve açıklayıcı `review_note` kullanın. Bu SQL uygulanmadan sitedeki yükleme alanı kapalı kalır. Moderatör ekranı, dosya tarama, otomatik kişisel veri denetimi ve itiraz/kaldırma akışı henüz yoktur.
+Bu atama yalnızca yetkili yönetici tarafından yapılır. Ardından hesabınızla giriş yaptığınız Belge Merkezi'nde **Belge inceleme** alanı görünür. Bekleyen dosyayı açıp onaylayabilir veya gerekçe yazarak reddedebilirsiniz. Otomatik dosya taraması ve kişisel veri tespiti henüz yoktur; her dosya insan tarafından incelenmelidir.
