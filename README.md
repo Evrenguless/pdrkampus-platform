@@ -96,3 +96,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## Yönetici kaynak ekleme
 
 `db/015_curated_resources.sql` dosyasını 014 sonrasında yeni Supabase projesinde çalıştırın. Mevcut 76 form ve 23 kütüphane kaydı JSON dosyalarında kalır. Profildeki Kaynak yönetimi bağlantısından yönetici yeni MEB bağlantılarını taslak olarak ekler, sınıflandırır, yayımlar, düzenler veya kaldırır. Yalnızca `meb.gov.tr` HTTPS dosya adresleri kabul edilir; yönetici yayımlamadan önce dosyayı ve kaynak sayfasını elle kontrol eder. Yayımlanan kayıtlar katalog, Belge Merkezi, ana arama ve Çalışma Alanım'da görünür; işlem geçmişi özel denetim tablosundadır.
+
+## Bildirimler
+
+`db/016_notifications.sql` dosyasını 015 sonrasında yeni Supabase projesinde çalıştırın. Yeni soru cevapları, gönderi yorumları ve belge inceleme kararları için hesap sahibine site içi bildirim gelir. Kullanıcı kendi bildirimlerini okuyabilir ve okundu işaretleyebilir; eski olaylar için geriye dönük bildirim üretilmez. Profilde okunmamış sayısı ve Bildirimler bağlantısı vardır. E-posta gönderilmez.
