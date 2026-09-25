@@ -32,3 +32,7 @@ Katalog girdileri **örnek içerik taslaklarıdır**. Resmî MEB formu, indirile
 ## Kontrol
 
 `node --check src/app.js` ve `node --check src/catalog.js`; ayrıca yerel sunucuda ana sayfa, kart filtresi, arama, ayrıntı iletişim kutusu ve `/analiz/` bağlantısını kontrol edin.
+
+## 25 Eylül 2026 · Form haritası adımı
+
+Araç Kutusu, MEB Özel Eğitim ve Rehberlik Hizmetleri Genel Müdürlüğünün 16.05.2025 tarihli [Form Haritası](https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/16122806_formharitasi-16.05.2025-saat_09.45.pdf) içindeki seçili 12 kayıtla başlatıldı. Kartlar form kodunu ve haritadaki adı gösterir. Bu PDF bir form dizinidir; uygulama yönergesi, dosya, süre, hedef grup ve değerlendirme kuralı içerdiği varsayılmadı. Eksik bilgiler açıkça belirtilir. Kütüphane kayıtları ayrı bir "Örnek taslak" etiketiyle kalır.

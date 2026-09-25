@@ -1,15 +1,25 @@
-// Demonstration records only. No official source, downloadable form or clinical validation is implied.
-export const tools = [
-{id:'gorusme',title:'Öğrenci görüşmesi hazırlık kartı',category:'Görüşme',level:'Ortaokul',grade:'5–8. sınıf',audience:'Öğrenci',appliedBy:'Psikolojik danışman',completedBy:'Psikolojik danışman',duration:'Görüşmeye göre',purpose:'Görüşme öncesi başlıkları düzenlemek',when:'Akran ilişkileri ve okul yaşantısına dair görüşme planlarken',domain:'Sosyal-duygusal',source:'PDR Kampüs örnek içerik taslağı',file:null,evaluation:'Görüşme notları mesleki değerlendirmeyle ele alınır.',tags:['akran','zorbalık','ilişkiler','7. sınıf']},
-{id:'gozlem',title:'Sınıf içi gözlem planı',category:'Gözlem',level:'Ortaokul',grade:'5–8. sınıf',audience:'Sınıf',appliedBy:'Psikolojik danışman / öğretmen',completedBy:'Gözlemi yapan kişi',duration:'Ders süresine göre',purpose:'Sınıf etkileşimine ilişkin gözlem başlıklarını planlamak',when:'Akran ilişkilerinde değişim incelenirken',domain:'Sosyal-duygusal',source:'PDR Kampüs örnek içerik taslağı',file:null,evaluation:'Tek bir gözlemle sonuç veya etiket üretilmez.',tags:['akran','zorbalık','sınıf','sosyometri']},
-{id:'sosyometri',title:'Sosyometri uygulama bilgi kartı',category:'Sosyometri',level:'Ortaokul',grade:'5–8. sınıf',audience:'Sınıf',appliedBy:'Yetkin psikolojik danışman',completedBy:'Öğrenciler',duration:'Uygulamaya göre',purpose:'Sınıf içi ilişkileri incelemeye hazırlık',when:'Uygun izin, amaç ve mesleki koşullar sağlandığında',domain:'Sosyal-duygusal',source:'PDR Kampüs örnek bilgi kartı; resmî form içermez',file:null,evaluation:'Sonuçlar bağlamla birlikte, gizlilik gözetilerek yorumlanır.',tags:['akran','zorbalık','ilişkiler']},
-{id:'kariyer',title:'Kariyer görüşmesi hazırlık kartı',category:'Görüşme',level:'Lise',grade:'9–12. sınıf',audience:'Öğrenci',appliedBy:'Psikolojik danışman',completedBy:'Psikolojik danışman',duration:'Görüşmeye göre',purpose:'İlgi ve seçenekleri konuşmak için yapı sunmak',when:'Kariyer planlama görüşmelerinde',domain:'Kariyer',source:'PDR Kampüs örnek içerik taslağı',file:null,evaluation:'Öğrencinin kendi hedefleriyle birlikte ele alınır.',tags:['kariyer','meslek']},
-{id:'etkinlik',title:'Akran ilişkileri sınıf etkinliği taslağı',category:'Etkinlik',level:'Ortaokul',grade:'6–8. sınıf',audience:'Sınıf',appliedBy:'Psikolojik danışman',completedBy:'Öğrenciler',duration:'Bir ders saati',purpose:'Güvenli akran iletişimini konuşmak',when:'Sınıf rehberliği planlanırken',domain:'Sosyal-duygusal',source:'PDR Kampüs örnek içerik taslağı',file:null,evaluation:'Etkinlik sonu geri bildirimleri izlenebilir.',tags:['akran','zorbalık','iletişim','7. sınıf']}
+// Official entries identify names/codes visible in MEB's Form Haritası (16.05.2025).
+// The map is an index, not a downloadable copy of each form or its instructions.
+export const formMap='https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/16122806_formharitasi-16.05.2025-saat_09.45.pdf';
+const official=(id,title,category,level,completedBy,tags)=>({id,title,category,level,grade:'Kaynakta belirtilmiyor',audience:'Kaynakta belirtilmiyor',appliedBy:'Kaynakta belirtilmiyor',completedBy,duration:'Kaynakta belirtilmiyor',purpose:'Form haritasında listelenen araç',when:'Uygulama koşulları ilgili formun yönergesinden doğrulanmalı',domain:'Kaynakta belirtilmiyor',source:'MEB Özel Eğitim ve Rehberlik Hizmetleri GM · Form Haritası (16.05.2025)',sourceUrl:formMap,sourceType:'official-map',file:null,evaluation:'Form haritası değerlendirme yönergesi içermez.',tags});
+export const tools=[
+ official('B.K.A.2.c','Devamsızlık Nedenleri Anketi','Anket','Belirtilmiyor','Kaynakta belirtilmiyor',['devamsızlık','okul','öğrenci']),
+ official('B.G.G.7.c','Öğrenci Gözlem Kaydı','Gözlem','Belirtilmiyor','Kaynakta belirtilmiyor',['gözlem','akran','zorbalık','7. sınıf']),
+ official('B.G.G.9.a','Sosyometri','Sosyometri','Belirtilmiyor','Kaynakta belirtilmiyor',['akran','ilişkiler','sınıf','zorbalık']),
+ official('B.K.A.16.a','RİBA (Ortaokul-Öğrenci Formu)','RİBA','Ortaokul','Öğrenci',['riba','risk','değişim']),
+ official('B.K.A.17.a','RİBA (Lise-Öğrenci Formu)','RİBA','Lise','Öğrenci',['riba','risk','değişim']),
+ official('B.K.A.19.a','RİBA (İlkokul-Öğretmen Formu)','RİBA','İlkokul','Öğretmen',['riba','öğretmen']),
+ official('B.K.A.20.a','RİBA (Ortaokul-Öğretmen Formu)','RİBA','Ortaokul','Öğretmen',['riba','öğretmen']),
+ official('B.K.A.21.a','RİBA (Lise-Öğretmen Formu)','RİBA','Lise','Öğretmen',['riba','öğretmen']),
+ official('B.K.A.22.a','RİBA (Okulöncesi-Veli Formu)','RİBA','Okul öncesi','Veli',['riba','veli']),
+ official('B.K.A.23.a','RİBA (İlkokul-Veli Formu)','RİBA','İlkokul','Veli',['riba','veli']),
+ official('B.K.A.24.a','RİBA (Ortaokul-Veli Formu)','RİBA','Ortaokul','Veli',['riba','veli']),
+ official('B.K.A.25.a','RİBA (Lise-Veli Formu)','RİBA','Lise','Veli',['riba','veli'])
 ];
-export const library = [
-{id:'veli',title:'Akran ilişkileri için veli bilgilendirme taslağı',type:'Veli metni',level:'Ortaokul',area:'Veli',topic:'Akran zorbalığı',source:'PDR Kampüs örnek içerik taslağı',tags:['7. sınıf','akran','zorbalık','veli']},
-{id:'ogretmen',title:'Sınıfta akran ilişkilerini konuşma rehberi',type:'Öğretmen metni',level:'Ortaokul',area:'Sosyal-duygusal',topic:'Akran ilişkileri',source:'PDR Kampüs örnek içerik taslağı',tags:['7. sınıf','akran','zorbalık','öğretmen']},
-{id:'sinav',title:'Sınav kaygısı üzerine etkinlik planı',type:'Etkinlik',level:'Ortaokul',area:'Akademik',topic:'Sınav kaygısı',source:'PDR Kampüs örnek içerik taslağı',tags:['8. sınıf','sınav','kaygı']},
-{id:'kariyer',title:'Kariyer seçenekleri çalışma kağıdı',type:'Çalışma kağıdı',level:'Lise',area:'Kariyer',topic:'Kariyer',source:'PDR Kampüs örnek içerik taslağı',tags:['kariyer','meslek']},
-{id:'iletisim',title:'Duyguları ifade etme etkinliği',type:'Etkinlik',level:'İlkokul',area:'Sosyal-duygusal',topic:'Duygu yönetimi',source:'PDR Kampüs örnek içerik taslağı',tags:['duygu','iletişim']}
+export const library=[
+{id:'veli',title:'Akran ilişkileri için veli bilgilendirme taslağı',type:'Veli metni',level:'Ortaokul',area:'Veli',topic:'Akran zorbalığı',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['7. sınıf','akran','zorbalık','veli']},
+{id:'ogretmen',title:'Sınıfta akran ilişkilerini konuşma rehberi',type:'Öğretmen metni',level:'Ortaokul',area:'Sosyal-duygusal',topic:'Akran ilişkileri',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['7. sınıf','akran','zorbalık','öğretmen']},
+{id:'sinav',title:'Sınav kaygısı üzerine etkinlik planı',type:'Etkinlik',level:'Ortaokul',area:'Akademik',topic:'Sınav kaygısı',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['8. sınıf','sınav','kaygı']},
+{id:'kariyer',title:'Kariyer seçenekleri çalışma kağıdı',type:'Çalışma kağıdı',level:'Lise',area:'Kariyer',topic:'Kariyer',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['kariyer','meslek']},
+{id:'iletisim',title:'Duyguları ifade etme etkinliği',type:'Etkinlik',level:'İlkokul',area:'Sosyal-duygusal',topic:'Duygu yönetimi',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['duygu','iletişim']}
 ];
