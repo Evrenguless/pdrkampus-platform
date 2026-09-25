@@ -1,10 +1,10 @@
 # PDR Kampüs Platform · Aşama 1
 
-Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. `analiz/`, mevcut uygulamanın kopyasını içerir. Hesaplama formülleri, sayısal veriler ve simülatör korunur. Kopyadaki Google giriş düğmesi yeni platformun e-posta/şifre giriş sayfasına yönlendirir; özgün depoya dokunulmadı.
+Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. Puan hesaplama ve simülatör mevcut `Evrenguless/pdrkampus` deposunda kalır; bu platformun kapsamından ve yol haritasından çıkarılmıştır. Özgün depoya dokunulmadı.
 
 ## Kullanım
 
-Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama, Araç Kutusu, MEB kaynaklı Kütüphane ve mevcut PDR Analiz bağlantısı bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir. Analiz bölümü kendi CDN/Supabase bağlantılarına bağımlıdır.
+Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama, Araç Kutusu, MEB kaynaklı Kütüphane bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir.
 
 ## Araç Kutusu
 
@@ -36,6 +36,6 @@ Araç Kutusu artık varsayılan olarak 76 dosyanın tamamını alt başlıkları
 
 ## Hesap ve kaydedilenler
 
-Ana sayfada e-posta/şifre ile kayıt, giriş ve çıkış bulunur. Kayıt, mevcut Supabase Auth projesinin e-posta doğrulamasına bağlıdır. Analiz modülü aynı oturumu kullanır. Form ve kütüphane kartlarındaki **Kaydet** düğmesi oturum açmadan da çalışır; kayıtlar bu tarayıcıda saklanır. Giriş sırasında konuk kayıtları hesaba aktarılır.
+Ana sayfada e-posta/şifre ile kayıt, giriş ve çıkış bulunur. Kayıt, mevcut Supabase Auth projesinin e-posta doğrulamasına bağlıdır. Form ve kütüphane kartlarındaki **Kaydet** düğmesi oturum açmadan da çalışır; kayıtlar bu tarayıcıda saklanır. Giriş sırasında konuk kayıtları hesaba aktarılır.
 
 `db/005_user_bookmarks.sql` kullanıcının kaydettiklerini hesaplar arasında eşitlemek için RLS korumalı tabloyu kurar. Bu SQL **canlı veritabanına uygulanmadı**; uygulanıncaya kadar arayüz kaydetme durumunun yalnızca bu cihazda tutulduğunu açıkça belirtir. Supabase Auth ayarlarında e-posta kaydı ve yeni GitHub Pages adresinin yönlendirme izinleri ayrıca doğrulanmalıdır. Hizmet anahtarlarından yalnızca istemcide kullanılabilen public/anon anahtar vardır; şifreler uygulama kodunda veya yerel kayıtlarda tutulmaz.
