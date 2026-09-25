@@ -84,3 +84,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## PDR Topluluğu
 
 `db/012_community_feed.sql` dosyasını 011 sonrasında yeni Supabase projesinde çalıştırın. `topluluk.html` herkese açık gönderi/yorum akışıdır; giriş yapan üyeler gönderi, yorum, beğeni ve kaydetme işlemlerini yapabilir. Kaydedilen gönderiler profildeki bağlantıdan filtrelenir. Yönetici `topluluk-yonetimi.html` ekranında gönderi ve yorumları düzenleyebilir, geri alınabilir biçimde kaldırabilir. Değişiklikler özel denetim tablosunda saklanır. Öğrenci bilgileri bu alanda paylaşılmamalıdır.
+
+## Çalışma Alanım
+
+`db/013_workspace.sql` dosyasını 012 sonrasında yeni Supabase projesinde çalıştırın. `calisma-alani.html` hesabın özel notlarını, işleri, kaydedilen araç ve belgeleri, topluluk gönderilerini ve yüklediği belgeleri gösterir. Araç ve belge kartlarında Kaydet düğmesi görünür. Notlar ve işler yalnızca sahibine açıktır. Öğrenci kişisel verileri veya görüşme kayıtları bu sürümün kapsamına girmez.
