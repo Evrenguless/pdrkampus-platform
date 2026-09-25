@@ -54,7 +54,7 @@ Hesap bölümü **yeni ve bağımsız** bir Supabase projesinin Project URL ve p
 4. Project URL ve **publishable key** `src/auth-config.js` içinde ayarlanmıştır. **Secret/service_role key asla tarayıcı koduna veya GitHub'a konmaz.** Publishable key herkese açık istemci anahtarıdır; gerçek veri koruması RLS ile sağlanır.
 5. GitHub Pages dağıtımından sonra kendi e-postanızla kayıt, doğrulama bağlantısı, giriş, profil ve şifre sıfırlama akışını deneyin. E-posta gönderimi için Supabase'in varsayılan sınırları ve üretim SMTP ayarları ayrıca değerlendirilmelidir.
 
-Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritabanı tablomuzda tutmaz. SQL uygulanmadan kişisel profil özelliği tamamlanmaz; e-posta kayıt ayarı ve yönlendirme adresi de Supabase panelinde kontrol edilmelidir. Belge yükleme ve Topluluk için yetki/depoma politikaları henüz yoktur.
+Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritabanı tablomuzda tutmaz. E-posta kayıt ayarı ve yönlendirme adresi Supabase panelinde kontrol edilmelidir.
 
 ## Meslektaş belge paylaşımı · kurulum
 
@@ -66,4 +66,9 @@ Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritaban
 insert into public.community_moderators(user_id) values ('KENDI_HESAP_UUID') on conflict do nothing;
 ```
 
-Bu atama yalnızca yetkili yönetici tarafından yapılır. Ardından hesabınızla giriş yaptığınız Belge Merkezi'nde **Belge inceleme** alanı görünür. Bekleyen dosyayı açıp onaylayabilir veya gerekçe yazarak reddedebilirsiniz. Otomatik dosya taraması ve kişisel veri tespiti henüz yoktur; her dosya insan tarafından incelenmelidir.
+Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonrasında giriş yaptığınız profilinizde **Belge yönetimi** alanı görünür. Bekleyen dosyayı açıp onaylayabilir veya gerekçe yazarak reddedebilirsiniz. Otomatik dosya taraması ve kişisel veri tespiti henüz yoktur; her dosya insan tarafından incelenmelidir.
+
+
+## Üye profili ve belge yönetimi
+
+`db/009_profiles_and_document_management.sql` dosyasını 006–008 sonrasında yeni Supabase projesinde çalıştırın. `profil.html` her üyeye kendi belgelerini (incelemede/yayında/reddedildi/kaldırıldı) ve görünen adını gösterir. Yayımlanmış belge kartındaki üye bağlantısı yalnızca görünen ad ve yayımlanmış belgeleri açar; e-posta görünmez. Moderatörün profilinde belge bilgilerini düzeltme, yayımlama, reddetme ve **geri alınabilir silme/yayından kaldırma** bulunur. Düzenleme ve durum değişiklikleri özel audit tablosuna kaydedilir. Fiziksel dosya silme ve dosya değiştirme henüz yoktur.
