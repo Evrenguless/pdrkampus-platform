@@ -76,3 +76,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## Meslektaşıma Sor
 
 `db/010_colleague_questions.sql` dosyasını 009'dan sonra yeni Supabase projesinde çalıştırın. `meslektasima-sor.html` sayfasında sorular ve cevaplar herkese açık okunur; giriş yapan üyeler paylaşım yapar, kendi cevabına oy veremez, her cevaba bir oy verebilir ve oyunu geri alabilir. Üye kimlikleri profil bağlantısı için kullanılır; oy verenlerin kimlikleri genel erişime açık değildir. Paylaşımlarda öğrenciye ait tanınabilir bilgi bulunmamalıdır. Yanıtlar meslektaş deneyimidir, uzman veya resmî kaynak onayı değildir.
+
+## Topluluk yönetimi
+
+`db/011_question_moderation.sql` dosyasını 010'dan sonra Supabase SQL Editor'da çalıştırın. Yönetici kendi profilinden `topluluk-yonetimi.html` bağlantısına gider. Yalnızca mevcut `community_moderators` tablosundaki yönetici soru/cevap metinlerini düzeltebilir ve içeriği geri alınabilir biçimde yayından kaldırabilir. Yayından kaldırılan soru, cevaplarıyla beraber normal akıştan gizlenir. Yönetici değişiklikleri özel denetim tablosuna yazılır.

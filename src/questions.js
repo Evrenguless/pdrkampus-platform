@@ -7,8 +7,8 @@ const author=id=>`<a href="profil.html?id=${encodeURIComponent(id)}">${esc(names
 const notice=(s)=>{$('#questionStatus').textContent=s};
 async function load(){
   const [q,a,v]=await Promise.all([
-    client.from('colleague_questions').select('id,author_id,title,body,category,created_at').order('created_at',{ascending:false}).limit(100),
-    client.from('colleague_answers').select('id,question_id,author_id,body,created_at').order('created_at',{ascending:true}).limit(1000),
+    client.from('colleague_questions').select('id,author_id,title,body,category,created_at').eq('moderation_status','published').order('created_at',{ascending:false}).limit(100),
+    client.from('colleague_answers').select('id,question_id,author_id,body,created_at').eq('moderation_status','published').order('created_at',{ascending:true}).limit(1000),
     user?client.from('colleague_helpful_votes').select('answer_id,voter_id').eq('voter_id',user.id).limit(5000):Promise.resolve({data:[],error:null})
   ]);
   if(q.error||a.error||v.error)throw q.error||a.error||v.error;
