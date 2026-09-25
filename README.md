@@ -100,3 +100,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## Bildirimler
 
 `db/016_notifications.sql` dosyasını 015 sonrasında yeni Supabase projesinde çalıştırın. Yeni soru cevapları, gönderi yorumları ve belge inceleme kararları için hesap sahibine site içi bildirim gelir. Kullanıcı kendi bildirimlerini okuyabilir ve okundu işaretleyebilir; eski olaylar için geriye dönük bildirim üretilmez. Profilde okunmamış sayısı ve Bildirimler bağlantısı vardır. E-posta gönderilmez.
+
+## İçerik bildirimi
+
+`db/017_content_reports.sql` dosyasını 016 sonrasında yeni Supabase projesinde çalıştırın. Giriş yapan üyeler yayımlanmış gönderi, yorum, soru, cevap ve meslektaş belgelerini gerekçeyle bildirebilir. Aynı üye aynı içeriği bir kez bildirebilir. Bildirimler yalnızca sahibine ve yöneticiye görünür; yönetici Topluluk yönetimi sayfasındaki kuyruğu inceler ve işlem yapıldı/işlem gerekmiyor durumunu seçer. Bu işlem içeriği kendiliğinden yayından kaldırmaz; yönetici mevcut düzenleme/kaldırma ekranlarından karar verir.
