@@ -34,8 +34,6 @@ Araç Kutusu artık varsayılan olarak 76 dosyanın tamamını alt başlıkları
 
 `src/search.js` form ve kaynak kataloglarını birlikte tarar. Sınıf düzeyini (1–4 ilkokul, 5–8 ortaokul, 9–12 lise) sorgudan ayırır; farklı kademe için açıkça hazırlanmış materyalleri dışlar. Konuyla doğrudan eşleşme, ilgili terim ve kademeye uygun genel kaynak ayrı gerekçelerle gösterilir. Arama yalnızca kayıt metaverisine ve açıkça tanımlı terim ilişkilerine dayanır; belge içeriğini tam metin taramaz, uygulama kararı veya psikolojik tanı üretmez. `npm test` örnek sorguları doğrular.
 
-## Hesap ve kaydedilenler
+## Belge Merkezi sıradaki adım
 
-Ana sayfada e-posta/şifre ile kayıt, giriş ve çıkış bulunur. Kayıt, mevcut Supabase Auth projesinin e-posta doğrulamasına bağlıdır. Form ve kütüphane kartlarındaki **Kaydet** düğmesi oturum açmadan da çalışır; kayıtlar bu tarayıcıda saklanır. Giriş sırasında konuk kayıtları hesaba aktarılır.
-
-`db/005_user_bookmarks.sql` kullanıcının kaydettiklerini hesaplar arasında eşitlemek için RLS korumalı tabloyu kurar. Bu SQL **canlı veritabanına uygulanmadı**; uygulanıncaya kadar arayüz kaydetme durumunun yalnızca bu cihazda tutulduğunu açıkça belirtir. Supabase Auth ayarlarında e-posta kaydı ve yeni GitHub Pages adresinin yönlendirme izinleri ayrıca doğrulanmalıdır. Hizmet anahtarlarından yalnızca istemcide kullanılabilen public/anon anahtar vardır; şifreler uygulama kodunda veya yerel kayıtlarda tutulmaz.
+Ana sayfadaki bölüm resmî MEB dosyalarını mevcut kataloglara bağlar ve ilerideki meslektaş belgelerini ayrı gösterir. Kullanıcı yükleme, indirme sayacı ve moderasyon henüz çalışmıyor; oturum ve kişisel kayıt işlevleri bu aşamadan çıkarılmıştır. Yükleme için kimlik, dosya depolama, inceleme ve kaynak türü alanları ayrı bir aşamada tasarlanmalıdır.
