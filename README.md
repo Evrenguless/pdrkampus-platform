@@ -4,7 +4,7 @@ Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. `analiz/`, 
 
 ## Kullanım
 
-Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama, Araç Kutusu, örnek Kütüphane ve mevcut PDR Analiz bağlantısı bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir. Analiz bölümü kendi CDN/Supabase bağlantılarına bağımlıdır.
+Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama, Araç Kutusu, MEB kaynaklı Kütüphane ve mevcut PDR Analiz bağlantısı bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir. Analiz bölümü kendi CDN/Supabase bağlantılarına bağımlıdır.
 
 ## Araç Kutusu
 
@@ -20,8 +20,12 @@ PDF kayıtları sitedeki görüntüleyicide özgün MEB URL'si üzerinden açıl
 
 ## Sınırlar ve sonraki aşama
 
-Kütüphane kayıtları örnek taslaktır ve indirilebilir dosya içermez. Arama istemci tarafındaki katalog terimlerini eşleştirir; tanı veya uygulama önerisi üretmez. Belge Merkezi, Topluluk, Meslektaşıma Sor ve kişisel çalışma alanı henüz yoktur. Sonraki adım katalog içerik denetimi, gerçek materyal/kaynak izinleri, ardından birleşik arama ve rol tabanlı içerik iş akışıdır. Öğrenci kayıtları için ayrı güvenlik, yetki ve saklama modeli gereklidir.
+Kütüphane kaynakları özgün MEB PDF bağlantılarını içerir. Arama istemci tarafındaki katalog terimlerini eşleştirir; tanı veya uygulama önerisi üretmez. Belge Merkezi, Topluluk, Meslektaşıma Sor ve kişisel çalışma alanı henüz yoktur. Sonraki adım katalog içerik denetimi, gerçek materyal/kaynak izinleri, ardından birleşik arama ve rol tabanlı içerik iş akışıdır. Öğrenci kayıtları için ayrı güvenlik, yetki ve saklama modeli gereklidir.
 
 ### Görünürlük
 
 Araç Kutusu artık varsayılan olarak 76 dosyanın tamamını alt başlıklarına ayrılmış kartlarla listeler. Üstteki başlık düğmeleri ilgili bölüme kaydırır; filtreler listeyi daraltır. Arama sonuçları ilk 12 eşleşmeyi gösterir, tam katalog Araç Kutusu'ndadır.
+
+## Kütüphane · MEB kaynakları
+
+Örnek kartlar yerine `data/library.json` içinde 23 resmî MEB PDF kaydı bulunur: kademelere göre sınıf rehberlik etkinlikleri, akran zorbalığı farkındalık programları, veli/öğretmen broşür ve sunumları, psikolojik danışman kitapçığı ve özelleştirilmiş özel eğitim programları. Kaynak sayfaları ve dosya URL'leri ayrı tutulur; tamamı 25.09.2026 tarihinde erişim kontrolünden geçti. PDF görüntüleyici Araç Kutusu ile ortaktır. `db/003_library_resources.sql` ve `db/004_seed_library_resources.sql` henüz uygulanmamış PostgreSQL/Supabase hazırlığıdır.
