@@ -4,7 +4,7 @@ Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. Puan hesapl
 
 ## Kullanım
 
-Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama, Araç Kutusu, MEB kaynaklı Kütüphane bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir.
+Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama; ayrı `araclar.html`, `kutuphane.html`, `belgeler.html` ve `platform.html` sayfalarında katalog ve yol haritası bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir.
 
 ## Araç Kutusu
 
@@ -39,3 +39,7 @@ Araç Kutusu artık varsayılan olarak 76 dosyanın tamamını alt başlıkları
 `src/documents.js`, 76 MEB formunu ve 23 MEB yayınını tek listede birleştirir; kaynak türü, belge türü, kademe ve başlığa göre filtreler. Belgeler mevcut görüntüleyicide resmî MEB bağlantısından açılır. Meslektaş belgeleri ayrı ve kapalıdır; kullanıcı yüklemesi varmış gibi gösterilmez.
 
 `db/005_community_documents_draft.sql` gelecekteki paylaşım için **uygulanmamış** bir taslaktır. Kaynak türü bu tabloda yalnızca meslektaş paylaşımıdır; `pending/approved/rejected/withdrawn` durumları ve dosya metaverisi ayrıdır. RLS açık ve hiçbir erişim politikası tanımlı değildir. Yayına almadan önce hesaplar, özel dosya depolama, hak/onay kontrolü, moderatör yetkileri ve onay geçmişi kurulmalıdır.
+
+## Sayfa yapısı
+
+Ana sayfa yalnızca arama ve bölüm geçişlerini sunar. Araç Kutusu, Kütüphane, Belge Merkezi ve Platform ayrı HTML sayfalarıdır. Aynı menü ve görüntüleyici her sayfada bulunur; tek sayfada uzun kaydırma gerekmez.
