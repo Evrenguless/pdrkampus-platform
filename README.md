@@ -55,3 +55,23 @@ Hesap bölümü **yeni ve bağımsız** bir Supabase projesinin Project URL ve p
 5. GitHub Pages dağıtımından sonra kendi e-postanızla kayıt, doğrulama bağlantısı, giriş, profil ve şifre sıfırlama akışını deneyin. E-posta gönderimi için Supabase'in varsayılan sınırları ve üretim SMTP ayarları ayrıca değerlendirilmelidir.
 
 Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritabanı tablomuzda tutmaz. SQL uygulanmadan kişisel profil özelliği tamamlanmaz; e-posta kayıt ayarı ve yönlendirme adresi de Supabase panelinde kontrol edilmelidir. Belge yükleme ve Topluluk için yetki/depoma politikaları henüz yoktur.
+
+## Meslektaş belge paylaşımı · kurulum
+
+`db/007_community_documents.sql` yalnızca **yeni** Supabase projesinde, `006_accounts.sql` sonrasında çalıştırılır. Önceki `005_community_documents_draft.sql` çalıştırılmaz. Yeni SQL, **özel** `community-documents` bucket'ını, belge kayıtlarını, RLS politikalarını ve moderatör tablosunu oluşturur. Bekleyen dosyalar halka açık URL ile sunulmaz; onaylı belgeler kısa süreli imzalı bağlantıyla açılır. Depolama politikası kullanıcının yalnızca kendi kimlik klasörüne yükleme yapmasına izin verir. Belgelerde öğrenci kişisel verisi ve paylaşım hakkı olmayan materyal bulunmamalıdır.
+
+İlk moderatörü atamak için Supabase Authentication → Users içinden **kendi hesap UUID** değerinizi alın ve SQL Editor'da yalnızca güvenilir proje yöneticisi olarak şu komutu çalıştırın:
+
+```sql
+insert into public.community_moderators(user_id) values ('KENDI_HESAP_UUID') on conflict do nothing;
+```
+
+İnceleme için ilk sürümde SQL Editor kullanılır. Bekleyen kayıtları `select id,title,document_type,level,topic,original_filename,created_at from public.community_documents where review_status='pending' order by created_at;` ile gözden geçirin. Dosyanın içeriğini denetlemeden onaylamayın. Onay kararı için:
+
+```sql
+update public.community_documents
+set review_status='approved', reviewer_id='KENDI_HESAP_UUID', reviewed_at=now(), review_note='İçerik ve paylaşım hakkı kontrol edildi'
+where id='BELGE_UUID' and review_status='pending';
+```
+
+Uygun olmayan belge için aynı komutta `review_status='rejected'` ve açıklayıcı `review_note` kullanın. Bu SQL uygulanmadan sitedeki yükleme alanı kapalı kalır. Moderatör ekranı, dosya tarama, otomatik kişisel veri denetimi ve itiraz/kaldırma akışı henüz yoktur.
