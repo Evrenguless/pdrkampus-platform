@@ -1,6 +1,6 @@
 # PDR Kampüs Platform · Aşama 1
 
-Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. `analiz/`, 25 Eylül 2026 tarihinde okunan mevcut uygulamanın değiştirilmemiş `index.html` ve `assets` kopyasını içerir. Hesaplama formülleri, sayısal veriler, Auth ve simülatör bu yeni kabuk için düzenlenmedi.
+Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. `analiz/`, mevcut uygulamanın kopyasını içerir. Hesaplama formülleri, sayısal veriler ve simülatör korunur. Kopyadaki Google giriş düğmesi yeni platformun e-posta/şifre giriş sayfasına yönlendirir; özgün depoya dokunulmadı.
 
 ## Kullanım
 
@@ -33,3 +33,9 @@ Araç Kutusu artık varsayılan olarak 76 dosyanın tamamını alt başlıkları
 ## Birleşik arama
 
 `src/search.js` form ve kaynak kataloglarını birlikte tarar. Sınıf düzeyini (1–4 ilkokul, 5–8 ortaokul, 9–12 lise) sorgudan ayırır; farklı kademe için açıkça hazırlanmış materyalleri dışlar. Konuyla doğrudan eşleşme, ilgili terim ve kademeye uygun genel kaynak ayrı gerekçelerle gösterilir. Arama yalnızca kayıt metaverisine ve açıkça tanımlı terim ilişkilerine dayanır; belge içeriğini tam metin taramaz, uygulama kararı veya psikolojik tanı üretmez. `npm test` örnek sorguları doğrular.
+
+## Hesap ve kaydedilenler
+
+Ana sayfada e-posta/şifre ile kayıt, giriş ve çıkış bulunur. Kayıt, mevcut Supabase Auth projesinin e-posta doğrulamasına bağlıdır. Analiz modülü aynı oturumu kullanır. Form ve kütüphane kartlarındaki **Kaydet** düğmesi oturum açmadan da çalışır; kayıtlar bu tarayıcıda saklanır. Giriş sırasında konuk kayıtları hesaba aktarılır.
+
+`db/005_user_bookmarks.sql` kullanıcının kaydettiklerini hesaplar arasında eşitlemek için RLS korumalı tabloyu kurar. Bu SQL **canlı veritabanına uygulanmadı**; uygulanıncaya kadar arayüz kaydetme durumunun yalnızca bu cihazda tutulduğunu açıkça belirtir. Supabase Auth ayarlarında e-posta kaydı ve yeni GitHub Pages adresinin yönlendirme izinleri ayrıca doğrulanmalıdır. Hizmet anahtarlarından yalnızca istemcide kullanılabilen public/anon anahtar vardır; şifreler uygulama kodunda veya yerel kayıtlarda tutulmaz.

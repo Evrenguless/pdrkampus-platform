@@ -8,8 +8,8 @@
       }
 
       if (!currentUser) {
-        if (confirm("Canlı sıralamaya katılmak ve netlerinizi hesabınıza kaydetmek için lütfen Google ile giriş yapın.\n\nGiriş sayfasına yönlendirilsin mi?")) {
-          loginWithGoogle();
+        if (confirm("Canlı sıralamaya katılmak ve netlerinizi hesabınıza kaydetmek için lütfen giriş yapın.\n\nGiriş sayfasına yönlendirilsin mi?")) {
+          goToPlatformLogin();
         }
         return;
       }

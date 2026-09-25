@@ -35,7 +35,7 @@
     async function handleSendChatMessage(e) {
       e.preventDefault();
       if (!supabaseClient || !currentUser) {
-        loginWithGoogle();
+        goToPlatformLogin();
         return;
       }
 

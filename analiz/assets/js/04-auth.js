@@ -1,27 +1,9 @@
     // ==========================================
     // 🔐 GOOGLE AUTH & KULLANICI YÖNETİMİ
     // ==========================================
-    async function loginWithGoogle() {
-      if (!supabaseClient) {
-        alert("Giriş hizmetine şu anda ulaşılamıyor. Lütfen daha sonra tekrar deneyin.");
-        return;
-      }
-
-      if (window.location.protocol === 'file:') {
-        alert("⚠️ Google ile Giriş yapabilmek için sayfayı 'file://' olarak değil, VS Code Live Server veya web siteniz üzerinden açmalısınız.");
-        return;
-      }
-
-      try {
-        const redirectUrl = window.location.href.split('#')[0];
-        const { error } = await supabaseClient.auth.signInWithOAuth({
-          provider: 'google',
-          options: { redirectTo: redirectUrl }
-        });
-        if (error) throw error;
-      } catch (err) {
-        alert("Giriş başlatılamadı: " + err.message);
-      }
+    function goToPlatformLogin() {
+      const returnUrl = new URL('../?login=1&return=analiz/', window.location.href);
+      window.location.href = returnUrl.href;
     }
 
     async function logoutUser() {
