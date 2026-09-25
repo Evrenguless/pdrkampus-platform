@@ -34,6 +34,8 @@ Araç Kutusu artık varsayılan olarak 76 dosyanın tamamını alt başlıkları
 
 `src/search.js` form ve kaynak kataloglarını birlikte tarar. Sınıf düzeyini (1–4 ilkokul, 5–8 ortaokul, 9–12 lise) sorgudan ayırır; farklı kademe için açıkça hazırlanmış materyalleri dışlar. Konuyla doğrudan eşleşme, ilgili terim ve kademeye uygun genel kaynak ayrı gerekçelerle gösterilir. Arama yalnızca kayıt metaverisine ve açıkça tanımlı terim ilişkilerine dayanır; belge içeriğini tam metin taramaz, uygulama kararı veya psikolojik tanı üretmez. `npm test` örnek sorguları doğrular.
 
-## Belge Merkezi sıradaki adım
+## Belge Merkezi
 
-Ana sayfadaki bölüm resmî MEB dosyalarını mevcut kataloglara bağlar ve ilerideki meslektaş belgelerini ayrı gösterir. Kullanıcı yükleme, indirme sayacı ve moderasyon henüz çalışmıyor; oturum ve kişisel kayıt işlevleri bu aşamadan çıkarılmıştır. Yükleme için kimlik, dosya depolama, inceleme ve kaynak türü alanları ayrı bir aşamada tasarlanmalıdır.
+`src/documents.js`, 76 MEB formunu ve 23 MEB yayınını tek listede birleştirir; kaynak türü, belge türü, kademe ve başlığa göre filtreler. Belgeler mevcut görüntüleyicide resmî MEB bağlantısından açılır. Meslektaş belgeleri ayrı ve kapalıdır; kullanıcı yüklemesi varmış gibi gösterilmez.
+
+`db/005_community_documents_draft.sql` gelecekteki paylaşım için **uygulanmamış** bir taslaktır. Kaynak türü bu tabloda yalnızca meslektaş paylaşımıdır; `pending/approved/rejected/withdrawn` durumları ve dosya metaverisi ayrıdır. RLS açık ve hiçbir erişim politikası tanımlı değildir. Yayına almadan önce hesaplar, özel dosya depolama, hak/onay kontrolü, moderatör yetkileri ve onay geçmişi kurulmalıdır.
