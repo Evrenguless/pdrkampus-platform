@@ -1,0 +1,92 @@
+/* PDR Kampüs — sade, güçlü marka alanı */
+.rk-brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:0 !important;
+  padding:12px 12px 30px !important;
+  min-height:72px;
+}
+
+.rk-brand-name{
+  display:block !important;
+  font-family:"Syne","DM Sans",sans-serif !important;
+  font-size:24px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:-.055em !important;
+  color:#f7f3e9 !important;
+  white-space:nowrap;
+}
+.rk-brand-name span{
+  color:var(--rk-coral) !important;
+  font-weight:800 !important;
+}
+.rk-brand::before,
+.rk-brand::after{
+  content:none !important;
+}
+
+/* Marka alanını menüden görsel olarak ayır */
+
+/* Alt bölümdeki marka adını da tutarlı hale getir */
+
+.rk-real-distribution-card{background:#fffdf8;border:1px solid rgba(24,44,64,.10);border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(24,44,64,.07);margin-top:12px}
+.rk-real-dist-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.rk-real-dist-kicker{font-size:10px;font-weight:800;letter-spacing:.12em;color:#d17b5b;margin-bottom:4px}
+.rk-real-dist-head h3{margin:3px 0 4px;font-size:18px;font-weight:800;color:#182c40}
+.rk-real-dist-head p{margin:0;color:#6c7883;font-size:12px}
+.rk-real-dist-count{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap}
+.rk-real-dist-count strong{font-size:18px;line-height:1;color:#182c40}
+.rk-real-dist-count span{font-size:9px;color:#8a949c;margin-top:4px;text-transform:uppercase;letter-spacing:.08em}
+.rk-real-dist-switch{display:flex;gap:6px;margin:16px 0 8px;background:#f1eee7;padding:4px;border-radius:11px;width:max-content;max-width:100%}
+.rk-real-dist-btn{border:0;background:transparent;color:#71808c;font-size:10px;font-weight:800;padding:8px 11px;border-radius:8px;cursor:pointer;transition:all .18s ease}
+.rk-real-dist-btn:hover{color:#182c40}
+.rk-real-dist-btn.active{background:#182c40;color:#fff;box-shadow:0 3px 10px rgba(24,44,64,.14)}
+.rk-real-dist-meta{display:flex;justify-content:space-between;align-items:center;margin:8px 0;font-size:11px;color:#8a949c}
+.rk-real-dist-meta strong{font-size:12px;color:#263a4a}
+.rk-real-dist-chart-wrap{height:250px;position:relative}
+#rkRealResultDistributionChart{display:block!important;width:100%!important;height:100%!important}
+.rk-real-dist-note{margin-top:8px;font-size:10px;color:#8a949c}
+@media(max-width:640px){.rk-real-distribution-card{padding:16px}.rk-real-dist-head{gap:10px}.rk-real-dist-head h3{font-size:16px}.rk-real-dist-switch{width:100%}.rk-real-dist-btn{flex:1;padding:8px 7px}.rk-real-dist-chart-wrap{height:210px}.rk-real-dist-meta{gap:8px;flex-wrap:wrap}}
+.rk-oabt-distribution-card{background:#fffdf8;border:1px solid rgba(24,44,64,.10);border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(24,44,64,.07)}
+.rk-oabt-dist-kicker{font-size:10px;font-weight:800;letter-spacing:.12em;color:#4c9f95;margin-bottom:4px}
+.rk-oabt-dist-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.rk-oabt-dist-head h3{margin:3px 0 4px;font-size:18px;font-weight:800;color:#182c40}
+.rk-oabt-dist-head p{margin:0;color:#6c7883;font-size:12px}
+.rk-oabt-dist-live{font-size:10px;font-weight:800;color:#328a7e;background:#eaf7f4;border:1px solid #c9e9e3;border-radius:999px;padding:6px 9px;white-space:nowrap}
+.rk-oabt-dist-live span{display:inline-block;width:6px;height:6px;border-radius:50%;background:#4c9f95;margin-right:4px}
+.rk-oabt-dist-meta{display:flex;justify-content:space-between;align-items:center;margin:16px 0 8px;font-size:11px;color:#8a949c}
+.rk-oabt-dist-meta strong{font-size:13px;color:#263a4a}
+.rk-oabt-dist-chart-wrap{height:250px;position:relative}
+#rkOabtDistributionChart{display:block!important;width:100%!important;height:100%!important}
+.rk-oabt-dist-note{margin-top:8px;font-size:10px;color:#8a949c}
+.rk-dist-switch{display:inline-flex;gap:4px;padding:4px;background:#eef2f0;border:1px solid rgba(24,44,64,.08);border-radius:12px;margin:4px 0 14px}
+.rk-dist-switch button{border:0;background:transparent;color:#63727d;padding:7px 12px;border-radius:9px;font-size:11px;font-weight:800;cursor:pointer;transition:.2s}
+.rk-dist-switch button:hover{color:#183044}
+.rk-dist-switch button.active{background:#183044;color:#fff;box-shadow:0 3px 10px rgba(24,48,68,.16)}
+@media(max-width:640px){.rk-dist-switch{width:100%}.rk-dist-switch button{flex:1;padding:8px 7px;font-size:10px}}
+
+@media(max-width:640px){.rk-oabt-distribution-card{padding:16px;margin-top:0}.rk-oabt-dist-head{gap:10px}.rk-oabt-dist-head h3{font-size:16px}.rk-oabt-dist-chart-wrap{height:210px}.rk-oabt-dist-live{padding:5px 7px}}
+.rk-oabt-distribution-card{
+  margin-top:18px;padding:20px 20px 16px;border:1px solid rgba(24,44,64,.08);
+  border-radius:18px;background:#fffdf8;box-shadow:0 12px 34px rgba(25,42,55,.06);
+}
+.rk-oabt-dist-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.rk-oabt-dist-head h3{margin:3px 0 4px;font-size:18px;font-weight:800;color:#182c40}
+.rk-oabt-dist-head p{margin:0;color:#6c7883;font-size:12px}
+.rk-eyebrow{font-size:9px;letter-spacing:.12em;font-weight:800;color:#4c9f95}
+
+.rk-oabt-dist-meta{display:flex;justify-content:space-between;align-items:center;margin:16px 0 8px;
+  font-size:11px;color:#7a858e}
+.rk-oabt-dist-meta strong{font-size:13px;color:#263a4a}
+
+#rkOabtDistributionChart{display:block!important;width:100%!important;height:100%!important}
+.rk-oabt-dist-note{margin-top:8px;font-size:10px;color:#8a949c}
+@media(max-width:768px){
+  .rk-oabt-distribution-card{padding:16px;margin-top:14px}
+  .rk-oabt-dist-head{gap:10px}
+  .rk-oabt-dist-head h3{font-size:16px}
+
+}
+
+.rk-historical-card{position:relative;overflow:hidden;background:#fffdf8;border:1px solid #e8e1d7;border-radius:18px;padding:20px;box-shadow:0 10px 28px rgba(31,52,69,.07);margin-top:4px}.rk-historical-card:before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,#2f897b 0%,#2f897b 52%,#e77865 100%)}.rk-historical-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:15px}.rk-historical-kicker{font-size:9px;letter-spacing:.15em;color:#2f897b;font-weight:900;margin-bottom:5px}.rk-historical-head h3{margin:0;color:#182c40;font-size:18px;font-weight:850;letter-spacing:-.025em}.rk-historical-head p{margin:6px 0 0;color:#6c7883;font-size:11px;line-height:1.55;max-width:760px}.rk-historical-badge{white-space:nowrap;border:1px solid rgba(47,137,123,.24);background:#f0f8f6;color:#2f897b;border-radius:999px;padding:7px 10px;font-size:9px;font-weight:900}.rk-historical-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 16px}.rk-historical-kpis>div{background:#fff;border:1px solid #e8e1d7;border-radius:13px;padding:12px 13px}.rk-historical-kpis span{display:block;color:#71808a;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.rk-historical-kpis strong{display:block;color:#203447;font-size:22px;line-height:1.1;margin-top:4px}.rk-historical-kpis small{color:#9a6b61;font-size:9px;font-weight:800}.rk-historical-chart-wrap{height:310px;padding:8px 4px 2px;background:linear-gradient(180deg,#fffdf8 0%,#fbf7ef 100%);border-radius:14px}.rk-historical-table-wrap{overflow:auto;margin-top:14px}.rk-historical-table{width:100%;border-collapse:separate;border-spacing:0;min-width:760px;font-size:10px}.rk-historical-table th{background:#f5f0e8;color:#66747f;text-align:left;padding:10px 9px;font-size:9px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}.rk-historical-table th:first-child{border-radius:9px 0 0 9px}.rk-historical-table th:last-child{border-radius:0 9px 9px 0}.rk-historical-table td{padding:10px 9px;border-bottom:1px solid #eee7dc;color:#435361;font-weight:600;white-space:nowrap}.rk-historical-table tbody tr:hover td{background:#faf7f1}.rk-historical-table td:first-child{font-weight:900;color:#203447}.rk-historical-table td:nth-child(4){color:#2f897b;font-weight:900}.rk-historical-table td:last-child{color:#d36f5d;font-weight:900}.rk-historical-note{margin-top:13px;padding:11px 13px;border:1px solid #eadfd3;background:#fff8ef;border-radius:12px;color:#6d655d;font-size:10px;line-height:1.55}.rk-historical-note strong{color:#4d443c}.rk-historical-sources{margin-top:9px;color:#9a9288;font-size:9px;line-height:1.5}@media(max-width:700px){.rk-historical-card{padding:15px}.rk-historical-head{flex-direction:column}.rk-historical-kpis{grid-template-columns:1fr}.rk-historical-chart-wrap{height:270px}}

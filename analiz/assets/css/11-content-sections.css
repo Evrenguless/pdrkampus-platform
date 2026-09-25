@@ -1,0 +1,190 @@
+/* Sonradan eklenmiş eski sürüm kurallarına karşı V67 yerleşimini korur. */
+@media(min-width:681px){
+  .rk-sidebar{
+    width:var(--rk-sidebar-rail)!important;
+    padding:22px 11px 16px!important;
+    overflow:hidden!important;
+  }
+  .rk-sidebar:hover,.rk-sidebar:focus-within{width:var(--rk-sidebar-open)!important}
+
+  .rk-topbar{
+    width:calc(100% - var(--rk-sidebar-rail))!important;
+    margin-left:var(--rk-sidebar-rail)!important;
+  }
+  .rk-main{
+    width:calc(100% - var(--rk-sidebar-rail))!important;
+    margin-left:var(--rk-sidebar-rail)!important;
+  }
+  .rk-main+footer,footer.rk-footer,footer.w-full.bg-slate-950{
+    width:calc(100% - var(--rk-sidebar-rail))!important;
+    margin-left:var(--rk-sidebar-rail)!important;
+  }
+}
+@media(max-width:680px){
+  .rk-sidebar{width:270px!important;padding:22px 14px 18px!important;overflow-y:auto!important}
+
+  .rk-topbar,.rk-main,.rk-main+footer,footer.rk-footer,footer.w-full.bg-slate-950{
+    width:100%!important;margin-left:0!important;
+  }
+}
+
+.rk-brand-name span,.rk-header-brand-kampus{color:#2f897b!important}
+@media(min-width:681px){
+  .rk-sidebar{z-index:2200!important}
+  .rk-topbar{
+    position:fixed!important;top:0!important;
+    left:var(--rk-sidebar-rail)!important;right:0!important;
+    width:auto!important;margin-left:0!important;z-index:2000!important;
+  }
+}
+@media(max-width:680px){
+  .rk-topbar{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;margin:0!important}
+}
+
+/* Net giriş alanı yerinde kalır; yalnızca analiz bölümleri verilen sıraya girer. */
+.rk-content-stage{display:flex!important;flex-direction:column!important}
+#tab-overview{order:1}
+#tab-simulator{order:2}
+#tab-matches{order:3}
+#tab-leaderboard{order:4}
+#tab-historical{order:5}
+#tab-research{order:6}
+#tab-ags{order:7}
+
+@media(min-width:681px){.rk-sidebar{overflow-x:hidden!important;overflow-y:auto!important}}
+
+.rk-calc-panel>.rk-stat-strip{
+  width:100%!important;max-width:none!important;margin:0!important;padding:0!important;
+  border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;
+}
+@media(min-width:681px){.rk-calc-panel>.rk-stat-strip{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+
+/* Ana analizler artık birbirinden belirgin büyük bölüm kartlarıdır. */
+.rk-content-stage{gap:0!important}
+.rk-content-stage>.tab-content{
+  --rk-section-accent:#2f897b;
+  position:relative!important;
+  margin:0 0 34px!important;
+  padding:25px!important;
+  border:1px solid rgba(24,44,64,.12)!important;
+  border-radius:25px!important;
+  background:linear-gradient(145deg,#fffdf8 0%,#faf7ef 100%)!important;
+  box-shadow:0 16px 42px rgba(24,44,64,.075)!important;
+  overflow:visible!important;
+  isolation:isolate;
+}
+.rk-content-stage>.tab-content::after{
+  content:"";position:absolute;z-index:2;left:22px;right:22px;top:0;height:5px;
+  border-radius:0 0 999px 999px;background:var(--rk-section-accent);
+}
+.rk-content-stage>.tab-content:not(#tab-overview){margin-top:14px!important}
+.rk-content-stage>.tab-content:not(#tab-overview)::before{
+  content:"";position:absolute;left:50%;top:-31px;width:3px;height:18px;border-radius:999px;
+  background:#cfc8bc;box-shadow:0 0 0 5px #f5f1e8;transform:translateX(-50%);
+}
+#tab-overview{--rk-section-accent:#2f897b;background:linear-gradient(145deg,#fffdf8,#f1f8f5)!important}
+#tab-simulator{--rk-section-accent:#56618f;background:linear-gradient(145deg,#fffdf8,#f3f3f8)!important}
+#tab-matches{--rk-section-accent:#dc8065;background:linear-gradient(145deg,#fffdf8,#fff4ef)!important}
+#tab-leaderboard{--rk-section-accent:#bd8730;background:linear-gradient(145deg,#fffdf8,#fff8e9)!important}
+#tab-historical{--rk-section-accent:#9b6b2d;background:linear-gradient(145deg,#fffdf8,#fbf3e5)!important}
+#tab-research{--rk-section-accent:#397968;background:linear-gradient(145deg,#fffdf8,#edf7f3)!important}
+#tab-ags{--rk-section-accent:#315f62;background:linear-gradient(145deg,#fffdf8,#edf5f2)!important}
+
+.rk-content-stage>.tab-content>.rk-section-head{
+  margin:0 0 5px!important;padding:3px 3px 18px!important;border-bottom:1px solid rgba(24,44,64,.11)!important;
+}
+.rk-content-stage>.tab-content>.rk-section-head>div>span{color:var(--rk-section-accent)!important}
+.rk-content-stage>.tab-content>.rk-section-head>b{
+  flex:0 0 auto;width:56px;height:56px;display:grid;place-items:center;
+  border-radius:17px;background:var(--rk-section-accent)!important;color:#fff!important;
+  font-size:23px!important;letter-spacing:-.05em!important;
+  box-shadow:0 9px 20px color-mix(in srgb,var(--rk-section-accent) 24%,transparent);
+}
+.rk-content-stage>.tab-content>div:not(.rk-section-head),
+.rk-content-stage>.tab-content>section:not(.rk-section-head){position:relative;z-index:1}
+
+/* Beşinci bölüm de diğer ana kartlarla aynı dış kabuğu kullanır. */
+#tab-historical>#rk-historical-appointments{
+  position:relative!important;margin:0!important;border:1px solid rgba(155,107,45,.20)!important;
+  border-radius:18px!important;box-shadow:0 8px 24px rgba(71,54,27,.055)!important;overflow:hidden!important;
+}
+#rk-historical-appointments::after{content:none!important;display:none!important}
+
+@media(max-width:680px){
+  .rk-content-stage>.tab-content{padding:16px!important;border-radius:20px!important;margin-bottom:25px!important}
+  .rk-content-stage>.tab-content::after{left:15px;right:15px;height:4px}
+  .rk-content-stage>.tab-content:not(#tab-overview){margin-top:9px!important}
+  .rk-content-stage>.tab-content:not(#tab-overview)::before{top:-22px;height:12px}
+  .rk-content-stage>.tab-content>.rk-section-head{gap:12px!important;padding-bottom:14px!important}
+  .rk-content-stage>.tab-content>.rk-section-head>b{width:44px;height:44px;border-radius:13px;font-size:18px!important}
+  #tab-historical>#rk-historical-appointments{border-radius:16px!important}
+}
+
+/* Kapalı menü yalnızca sade ikon rayıdır; mevcut koyu palet ve açılma davranışı korunur. */
+:root{--rk-sidebar-rail:72px}
+.rk-nav-icon svg{
+  width:22px;height:22px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+@media(min-width:681px){
+  .rk-sidebar{
+    width:var(--rk-sidebar-rail)!important;padding:18px 10px 16px!important;
+    overflow-x:hidden!important;overflow-y:auto!important;
+    transition:width .24s cubic-bezier(.2,.75,.25,1),box-shadow .24s ease!important;
+  }
+  .rk-sidebar:hover,.rk-sidebar:focus-within{
+    width:var(--rk-sidebar-open)!important;
+    box-shadow:18px 0 45px rgba(20,35,52,.18)!important;
+  }
+  .rk-brand{height:46px!important;padding:3px 10px 17px!important;white-space:nowrap!important}
+  .rk-brand-name{
+    opacity:0!important;transform:translateX(-6px)!important;
+    transition:opacity .15s ease,transform .2s ease!important;
+  }
+  .rk-sidebar:hover .rk-brand-name,.rk-sidebar:focus-within .rk-brand-name{
+    opacity:1!important;transform:none!important;
+  }
+
+  .rk-nav{width:238px!important;gap:4px!important}
+  .rk-nav-button{
+    width:238px!important;height:48px!important;min-height:48px!important;padding:0!important;gap:9px!important;
+    border-radius:12px!important;overflow:hidden!important;white-space:nowrap!important;transform:none!important;
+    background:transparent!important;box-shadow:none!important;
+  }
+  .rk-nav-icon{
+    width:52px!important;min-width:52px!important;height:44px!important;display:grid!important;place-items:center!important;
+    border-radius:12px!important;font-size:0!important;
+    transition:color .18s ease,background .18s ease,box-shadow .18s ease,transform .18s ease!important;
+  }
+  .rk-nav-button:hover{color:#f7f3e9!important;background:transparent!important;transform:none!important}
+  .rk-nav-button:hover .rk-nav-icon,.rk-nav-button:focus-visible .rk-nav-icon{
+    color:#f7f3e9!important;background:#353b52!important;
+    box-shadow:0 0 0 1px rgba(244,201,93,.10),0 0 18px rgba(76,159,149,.24)!important;
+    transform:scale(1.03)!important;
+  }
+  .rk-nav-button.active{color:#f7f3e9!important;background:transparent!important;box-shadow:none!important}
+  .rk-nav-button.active .rk-nav-icon{
+    color:#f7f3e9!important;background:var(--rk-teal)!important;
+    box-shadow:inset 3px 0 var(--rk-yellow),0 7px 20px rgba(47,137,123,.27)!important;
+  }
+  .rk-nav-text{
+    opacity:0!important;transform:translateX(-5px)!important;
+    transition:opacity .13s ease .03s,transform .2s ease!important;
+  }
+  .rk-sidebar:hover .rk-nav-text,.rk-sidebar:focus-within .rk-nav-text{
+    opacity:1!important;transform:none!important;
+  }
+  .rk-topbar{left:var(--rk-sidebar-rail)!important}
+  .rk-main,.rk-main+footer,footer.rk-footer,footer.w-full.bg-slate-950{
+    width:calc(100% - var(--rk-sidebar-rail))!important;margin-left:var(--rk-sidebar-rail)!important;
+  }
+}
+@media(max-width:680px){
+  .rk-brand-name{opacity:1!important;transform:none!important}
+
+  .rk-nav{width:100%!important}
+  .rk-nav-button{width:100%!important}
+  .rk-nav-icon{width:28px!important;min-width:28px!important}
+  .rk-nav-text{opacity:1!important}
+}
+

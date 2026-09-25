@@ -1,0 +1,64 @@
+/* Capacitor uygulama kabuğu. Hesaplama ve veri stillerinden bağımsızdır. */
+:root {
+  --rk-safe-top: env(safe-area-inset-top, 0px);
+  --rk-safe-right: env(safe-area-inset-right, 0px);
+  --rk-safe-bottom: env(safe-area-inset-bottom, 0px);
+  --rk-safe-left: env(safe-area-inset-left, 0px);
+}
+
+html.rk-native-app {
+  background: #f7f3e9;
+  overscroll-behavior-y: none;
+}
+
+html.rk-native-app body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  overscroll-behavior-y: contain;
+}
+
+html.rk-native-app .rk-topbar {
+  padding-top: var(--rk-safe-top) !important;
+  min-height: calc(82px + var(--rk-safe-top)) !important;
+}
+
+html.rk-native-app .rk-sidebar {
+  padding-top: var(--rk-safe-top) !important;
+  padding-left: var(--rk-safe-left) !important;
+}
+
+html.rk-native-app .rk-main {
+  padding-bottom: calc(70px + var(--rk-safe-bottom)) !important;
+}
+
+html.rk-native-app .rk-site-footer,
+html.rk-native-app footer {
+  padding-bottom: calc(24px + var(--rk-safe-bottom)) !important;
+}
+
+@media (max-width: 680px) {
+  html.rk-native-app .rk-topbar {
+    min-height: calc(64px + var(--rk-safe-top)) !important;
+    padding-left: calc(14px + var(--rk-safe-left)) !important;
+    padding-right: calc(14px + var(--rk-safe-right)) !important;
+  }
+
+  html.rk-native-app .rk-main {
+    padding-left: calc(16px + var(--rk-safe-left)) !important;
+    padding-right: calc(16px + var(--rk-safe-right)) !important;
+    padding-bottom: calc(48px + var(--rk-safe-bottom)) !important;
+  }
+
+  html.rk-native-app input,
+  html.rk-native-app select,
+  html.rk-native-app textarea {
+    font-size: 16px !important;
+  }
+
+  html.rk-native-app button,
+  html.rk-native-app a,
+  html.rk-native-app input,
+  html.rk-native-app select {
+    touch-action: manipulation;
+  }
+}

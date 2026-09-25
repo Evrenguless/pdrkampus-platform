@@ -1,0 +1,382 @@
+
+/* PDRKAMPÜS LAYOUT V2 — spacious desktop workspace */
+.rk-main{padding:34px 48px 70px!important;max-width:none!important}
+.rk-intro{max-width:1440px!important;margin:0 auto 28px!important;align-items:center!important}
+.rk-workspace{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(380px,.92fr);gap:24px;align-items:start}
+.rk-calc-panel,.rk-result-panel{min-width:0}
+.rk-calc-panel{display:flex;flex-direction:column;gap:18px}
+.rk-calc-panel>div{padding:22px!important;border-radius:18px!important}
+.rk-calc-panel>div:first-child{background:#fbfaf6!important;border:1px solid #ded9ce!important}
+.rk-calc-panel>div:first-child .space-y-2{display:grid;grid-template-columns:1fr 1fr;gap:10px!important}
+.rk-calc-panel>div:first-child .space-y-2>div{min-height:76px;padding:14px!important;border-radius:13px!important}
+.rk-calc-panel>div:first-child .space-y-2>div>div:first-child{width:55%!important}
+.rk-calc-panel>div:first-child .space-y-2>div>div:last-child{width:45%!important}
+.rk-calc-panel input{height:38px!important;font-size:13px!important}
+.rk-calc-panel>div:nth-child(2){padding:22px!important}
+.rk-calc-panel #btn-publish-live{min-height:52px!important;font-size:13px!important;border-radius:13px!important}
+.rk-result-panel{position:sticky;top:104px;display:flex;flex-direction:column;gap:18px}
+.rk-result-panel>div{border-radius:18px!important;padding:25px!important}
+.rk-result-panel #result-rank-range{font-size:clamp(42px,5vw,66px)!important;line-height:1!important;margin:18px 0!important}
+.rk-result-panel .grid.grid-cols-3{gap:14px!important}
+.rk-content-stage{max-width:1440px;margin:30px auto 0;min-width:0}
+.rk-content-stage>.tab-content{width:100%!important}
+.rk-content-stage>.tab-content:not(.hidden){display:flex!important;min-height:300px}
+.rk-content-stage .tab-content>div{border-radius:18px!important;padding:24px!important}
+.rk-content-stage .tab-content>div:not([class*="space-y"]){ }
+.rk-stat-strip{max-width:1440px;margin:24px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rk-stat-card{background:#fbfaf6;border:1px solid #ded9ce;border-radius:15px;padding:15px 18px;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--rk-shadow)}
+.rk-stat-card span{font:10px "Space Mono",monospace;text-transform:uppercase;color:#747886;letter-spacing:.08em}
+.rk-stat-card strong{font:700 19px "Syne",sans-serif;color:#242b3f}
+.rk-stat-card.stat-p2 strong{color:#2e806f}.rk-stat-card.stat-oabt strong{color:#e88a68}.rk-stat-card.stat-rank strong{color:#b57a19}
+.rk-content-stage .tab-content .h-52{height:280px!important}
+.rk-content-stage #tab-leaderboard>div:nth-child(2){min-height:500px}
+.rk-content-stage #tab-matches>div{min-height:460px}
+.rk-sidebar{width:252px!important}
+.rk-topbar,.rk-main{margin-left:252px!important}
+@media(max-width:680px){.rk-topbar,.rk-main{margin-left:0!important}.rk-main{padding:22px 15px 45px!important}.rk-workspace{display:flex;flex-direction:column}.rk-result-panel{width:100%}.rk-stat-strip{grid-template-columns:1fr}.rk-calc-panel>div{padding:16px!important}.rk-calc-panel>div:first-child .space-y-2>div{min-height:70px}.rk-content-stage{margin-top:20px}.rk-content-stage .tab-content>div{padding:17px!important}.rk-intro h1{font-size:32px!important}}
+
+/* V3 — stable full-width tabs / no sticky result movement */
+html,body{overflow-x:hidden!important}
+.rk-main,.rk-main *{box-sizing:border-box}
+.rk-main{min-width:0!important}
+.rk-workspace{grid-template-columns:minmax(0,1fr) minmax(360px,420px)!important;align-items:start!important}
+.rk-result-panel{position:static!important;top:auto!important;min-width:0!important}
+.rk-result-panel>div{width:100%!important;min-width:0!important}
+.rk-result-panel #result-rank-range{font-size:clamp(38px,4vw,58px)!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.rk-content-stage{width:100%!important;max-width:1440px!important;min-width:0!important;overflow:visible!important}
+.rk-content-stage>.tab-content{width:100%!important;max-width:100%!important;min-width:0!important;display:none!important}
+.rk-content-stage>.tab-content:not(.hidden){display:flex!important;flex-direction:column!important;gap:20px!important}
+.rk-content-stage>.tab-content>div{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important}
+.rk-content-stage .overflow-x-auto{max-width:100%!important;overflow-x:auto!important}
+.rk-content-stage table{width:100%!important;min-width:640px}
+.rk-content-stage img,.rk-content-stage canvas{max-width:100%!important}
+.rk-content-stage input,.rk-content-stage select,.rk-content-stage textarea{max-width:100%!important;min-width:0!important}
+.rk-content-stage .grid{min-width:0!important}
+.rk-content-stage .grid>*{min-width:0!important}
+.rk-content-stage #tab-leaderboard #leaderboard-list-container>div{min-width:0!important;max-width:100%!important}
+.rk-content-stage #tab-simulator>div{overflow:hidden!important}
+.rk-content-stage #tab-matches>div{min-height:420px!important}
+.rk-content-stage .font-mono{overflow-wrap:anywhere}
+.rk-nav-button{flex-shrink:0!important}
+@media(max-width:1100px){
+ .rk-workspace{grid-template-columns:1fr!important}
+ .rk-result-panel{position:static!important}
+}
+@media(max-width:680px){
+ .rk-main{padding:22px 16px 45px!important}
+ .rk-workspace{display:flex!important;flex-direction:column!important;gap:18px!important}
+ .rk-calc-panel,.rk-result-panel{width:100%!important}
+ .rk-result-panel #result-rank-range{font-size:36px!important}
+ .rk-content-stage>.tab-content:not(.hidden){gap:14px!important}
+ .rk-content-stage>.tab-content>div{padding:18px!important}
+ .rk-content-stage table{min-width:600px}
+}
+
+/* V4 — gerçek viewport genişliği + taşma/üst üste binme düzeltmesi */
+html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+body.rk-app-body{position:relative!important;overflow-x:hidden!important}
+.rk-sidebar{width:252px!important;left:0!important;right:auto!important}
+.rk-topbar{width:calc(100% - 252px)!important;margin-left:252px!important;box-sizing:border-box!important}
+.rk-main{width:calc(100% - 252px)!important;margin-left:252px!important;padding:34px 40px 70px!important;box-sizing:border-box!important;max-width:none!important;overflow:visible!important}
+.rk-intro,.rk-mode-switch,.rk-workspace,.rk-stat-strip,.rk-content-stage{width:100%!important;max-width:1440px!important;box-sizing:border-box!important}
+.rk-intro{margin-left:auto!important;margin-right:auto!important}
+
+.rk-workspace{margin-left:auto!important;margin-right:auto!important;display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr)!important;gap:28px!important;align-items:start!important}
+.rk-calc-panel,.rk-result-panel{width:100%!important;min-width:0!important;max-width:100%!important}
+.rk-calc-panel>div,.rk-result-panel>div{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important}
+.rk-calc-panel>div:first-child .space-y-2{width:100%!important;min-width:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.rk-calc-panel>div:first-child .space-y-2>div{width:100%!important;min-width:0!important;max-width:100%!important;overflow:hidden!important}
+.rk-calc-panel>div:first-child .space-y-2>div>div:first-child{width:48%!important;min-width:0!important}
+.rk-calc-panel>div:first-child .space-y-2>div>div:last-child{width:52%!important;min-width:0!important}
+.rk-calc-panel .dy-group{min-width:0!important}
+.rk-calc-panel .dy-group input{flex:0 1 44px!important;width:44px!important;min-width:0!important}
+.rk-calc-panel .dy-group .net-group input{width:70px!important}
+.rk-result-panel{position:static!important;top:auto!important}
+.rk-content-stage{margin-left:auto!important;margin-right:auto!important;overflow:visible!important}
+.rk-content-stage>.tab-content{width:100%!important;max-width:100%!important;min-width:0!important}
+.rk-content-stage>.tab-content>div{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important}
+.rk-content-stage .overflow-x-auto{max-width:100%!important;overflow-x:auto!important}
+.rk-content-stage table{min-width:640px}
+.rk-stat-strip{margin-left:auto!important;margin-right:auto!important}
+/* 2027 sıra kartındaki büyük sayı hiçbir zaman dışarı taşmasın */
+.rk-result-panel #result-rank-range{display:block!important;max-width:100%!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;font-size:clamp(36px,4.5vw,60px)!important}
+/* Dar masaüstü / tablet: iki ana paneli kesin olarak alt alta al */
+@media (max-width:1250px){
+  .rk-workspace{grid-template-columns:1fr!important;gap:20px!important}
+  .rk-result-panel{order:2!important}
+  .rk-calc-panel{order:1!important}
+  .rk-result-panel>div{width:100%!important}
+}
+@media (max-width:900px){
+  .rk-sidebar{width:220px!important}
+  .rk-topbar{width:calc(100% - 220px)!important;margin-left:220px!important}
+  .rk-main{width:calc(100% - 220px)!important;margin-left:220px!important;padding-left:24px!important;padding-right:24px!important}
+}
+@media (max-width:680px){
+  .rk-sidebar{width:252px!important}
+  .rk-topbar{width:100%!important;margin-left:0!important}
+  .rk-main{width:100%!important;margin-left:0!important;padding:22px 16px 45px!important}
+  .rk-workspace{display:flex!important;flex-direction:column!important;gap:18px!important}
+  .rk-calc-panel,.rk-result-panel{width:100%!important}
+  .rk-calc-panel>div:first-child .space-y-2{grid-template-columns:1fr!important}
+  .rk-calc-panel>div:first-child .space-y-2>div{min-height:70px!important}
+  .rk-stat-strip{grid-template-columns:1fr!important}
+}
+
+/* V6 — all campus sections visible on one home page */
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+.rk-content-stage>.tab-content,
+.rk-content-stage>.tab-content.hidden{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  width:100%!important;
+  min-height:300px!important;
+  margin:0 0 24px!important;
+  scroll-margin-top:96px;
+}
+.rk-content-stage>.tab-content.hidden{display:flex!important}
+.rk-content-stage>.tab-content>div{width:100%;min-width:0}
+
+/* Net giriş alanları: siyah/koyu Tailwind zemini temaya uygun açık yüzeye çevir */
+.rk-calc-panel input[type="number"],
+.rk-calc-panel input[type="text"],
+.rk-calc-panel input.bg-slate-900,
+.rk-calc-panel input.bg-slate-950,
+.rk-calc-panel input[class*="bg-slate-900"],
+.rk-calc-panel input[class*="bg-slate-950"]{
+  background:#f7f5ef!important;
+  color:#242b3f!important;
+  border:1px solid #cfc8bb!important;
+  box-shadow:inset 0 1px 2px rgba(36,43,63,.04)!important;
+}
+.rk-calc-panel input[type="number"]:focus,
+.rk-calc-panel input[type="text"]:focus{
+  background:#fffdf8!important;
+  border-color:#2e806f!important;
+  outline:none!important;
+  box-shadow:0 0 0 3px rgba(46,128,111,.10)!important;
+}
+/* Doğru / yanlış kutularının koyu görünümünü kaldır */
+.rk-calc-panel .text-emerald-400{color:#2e806f!important}
+.rk-calc-panel .text-rose-400{color:#c95b55!important}
+.rk-calc-panel .text-indigo-300{color:#2e806f!important}
+
+/* Footer — ana temayla aynı krem/teal görünüm */
+.rk-main + footer,
+footer.w-full.bg-slate-950{
+  margin-left:252px!important;
+  width:calc(100% - 252px)!important;
+  margin-top:20px!important;
+  padding:30px 48px 24px!important;
+  background:#252b40!important;
+  color:#d7d9df!important;
+  border-top:1px solid #3b4257!important;
+}
+footer.w-full.bg-slate-950 .max-w-7xl{max-width:1440px!important}
+footer.w-full.bg-slate-950 .border-slate-800\/60{border-color:#3b4257!important}
+footer.w-full.bg-slate-950 .text-white{color:#f7f3e9!important}
+footer.w-full.bg-slate-950 .text-indigo-400{color:#f4c95d!important}
+footer.w-full.bg-slate-950 .text-slate-400{color:#b8bdc9!important}
+footer.w-full.bg-slate-950 .text-slate-500,
+footer.w-full.bg-slate-950 .text-slate-600{color:#858b9b!important}
+
+@media(max-width:680px){
+  .rk-content-stage>.tab-content,
+  .rk-content-stage>.tab-content.hidden{margin-bottom:18px!important;scroll-margin-top:76px}
+  .rk-main + footer,
+  footer.w-full.bg-slate-950{margin-left:0!important;width:100%!important;padding:25px 18px 20px!important}
+}
+
+/* V7 — mobil menü kapatma + krem tema uyumu */
+.rk-sidebar-close{
+  display:none;
+  position:absolute;top:16px;right:14px;width:36px;height:36px;border:1px solid rgba(247,243,233,.14);
+  border-radius:10px;background:rgba(255,255,255,.06);color:#f7f3e9;font-size:27px;line-height:1;
+  align-items:center;justify-content:center;cursor:pointer;transition:background .2s,transform .2s,border-color .2s;
+}
+.rk-sidebar-close:hover{background:rgba(255,255,255,.12);border-color:rgba(247,243,233,.3);transform:rotate(4deg)}
+.rk-sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(36,43,63,.34);backdrop-filter:blur(2px);z-index:90;opacity:0;transition:opacity .22s ease}
+.rk-sidebar-overlay.rk-visible{display:block;opacity:1}
+/* Net girişleri: koyu/siyah yüzeyleri açık PDRkampüs temasına çevir */
+.rk-calc-panel input,
+.rk-calc-panel select,
+.rk-calc-panel textarea{
+  background:#fbfaf6!important;
+  color:#252b40!important;
+  border-color:#d9d4c8!important;
+  box-shadow:inset 0 1px 1px rgba(36,43,63,.03)!important;
+}
+.rk-calc-panel input::placeholder,.rk-calc-panel textarea::placeholder{color:#9a9ca5!important}
+.rk-calc-panel input:focus,.rk-calc-panel select:focus,.rk-calc-panel textarea:focus{
+  border-color:#2e806f!important;
+  box-shadow:0 0 0 3px rgba(46,128,111,.10)!important;
+}
+.rk-calc-panel .bg-slate-950,
+.rk-calc-panel .bg-slate-950\/50,
+.rk-calc-panel .bg-slate-900\/80,
+.rk-calc-panel .bg-purple-950\/25{
+  background:#fbfaf6!important;
+  color:#252b40!important;
+}
+.rk-calc-panel .border-slate-800\/60,
+.rk-calc-panel .border-slate-800\/80,
+.rk-calc-panel .border-purple-800\/40{border-color:#ddd8cc!important}
+.rk-calc-panel .text-slate-200{color:#3a4052!important}
+.rk-calc-panel .text-slate-300,.rk-calc-panel .text-slate-400{color:#777b86!important}
+.rk-calc-panel .text-indigo-300,.rk-calc-panel .text-purple-300{color:#2e806f!important}
+.rk-calc-panel .text-purple-200{color:#2e806f!important}
+.rk-calc-panel .bg-indigo-950\/80,.rk-calc-panel .bg-purple-900\/60{background:#e8f2ef!important;border-color:#b7d8cf!important;color:#2e806f!important}
+/* Footer: header ile aynı krem yüzey */
+.rk-main + footer,
+footer.w-full.bg-slate-950{
+  background:#f5f1e8!important;
+  color:#70747f!important;
+  border-top:1px solid #ded9ce!important;
+  box-shadow:0 -8px 30px rgba(36,43,63,.035)!important;
+}
+footer.w-full.bg-slate-950 .border-slate-800\/60{border-color:#ded9ce!important}
+footer.w-full.bg-slate-950 .text-white{color:#252b40!important}
+footer.w-full.bg-slate-950 .text-indigo-400{color:#2e806f!important}
+footer.w-full.bg-slate-950 .text-slate-400{color:#777b86!important}
+footer.w-full.bg-slate-950 .text-slate-500,
+footer.w-full.bg-slate-950 .text-slate-600{color:#9a9ca5!important}
+footer.w-full.bg-slate-950 .text-slate-600{color:#9a9ca5!important}
+@media(max-width:680px){
+  .rk-sidebar-close{display:flex}
+  .rk-sidebar{z-index:110!important}
+  .rk-mobile-menu{z-index:120}
+  .rk-mobile-menu span{font-size:19px;line-height:1}
+  .rk-sidebar.rk-open + .rk-sidebar-overlay{display:block}
+  .rk-sidebar-overlay{z-index:100}
+  body.rk-menu-open{overflow:hidden!important}
+  footer.w-full.bg-slate-950{padding:25px 18px 20px!important}
+}
+
+/* V8 — simülatör okunabilirliği + mobil menüde tek kapatma ikonu */
+/* Mobilde yalnızca header'daki ☰ / × butonu kullanılır. Sidebar içindeki ikinci X gizlenir. */
+.rk-sidebar-close{display:none!important}
+
+/* Senaryo Simülatörü: açık PDRkampüs yüzeyi ve yüksek kontrast */
+#tab-simulator .bg-slate-900\/80,
+#tab-simulator .bg-slate-950\/70,
+#tab-simulator .bg-slate-950\/90,
+#tab-simulator .bg-slate-950,
+#tab-simulator .bg-purple-950\/80,
+#tab-simulator .bg-indigo-950\/80{
+  background:#fbfaf6!important;
+  color:#252b40!important;
+}
+#tab-simulator .border-indigo-500\/30,
+#tab-simulator .border-indigo-700\/40,
+#tab-simulator .border-slate-800,
+#tab-simulator .border-slate-800\/60,
+#tab-simulator .border-slate-800\/80{
+  border-color:#ded9ce!important;
+}
+#tab-simulator .border-b{border-color:#ded9ce!important}
+#tab-simulator .text-white,
+#tab-simulator .text-slate-200,
+#tab-simulator .text-slate-300{color:#303648!important}
+#tab-simulator .text-slate-400,
+#tab-simulator .text-slate-500{color:#777b86!important}
+#tab-simulator .text-indigo-300,
+#tab-simulator .text-indigo-400,
+#tab-simulator .text-purple-400,
+#tab-simulator .text-purple-300,
+#tab-simulator .text-emerald-400{color:#2e806f!important}
+#tab-simulator .bg-gradient-to-r{
+  background:#e8f2ef!important;
+  border-color:#b7d8cf!important;
+}
+#tab-simulator table{color:#3a4052!important}
+#tab-simulator thead tr{background:#f0ede5!important;color:#626773!important}
+#tab-simulator tbody{color:#555b68!important}
+#tab-simulator tbody tr{border-color:#e1ddd3!important}
+#tab-simulator input[type="range"]{accent-color:#2e806f!important}
+#tab-simulator .custom-scrollbar{background:transparent!important}
+
+/* Simülatör başlıkları ve değerleri daha okunaklı */
+#tab-simulator h3{color:#2e806f!important}
+#tab-simulator label,#tab-simulator span{
+  text-shadow:none!important;
+}
+
+@media(max-width:680px){
+  /* Header butonu tek kapatma kontrolüdür; sidebar X tamamen gizlidir. */
+  .rk-sidebar-close{display:none!important}
+  .rk-mobile-menu{display:grid!important;position:relative;z-index:120!important}
+  .rk-mobile-menu span{display:block;font-size:20px;line-height:1}
+}
+
+/* V9: fixed/sticky header + sidebar-only close button */
+.rk-topbar{
+  position:sticky !important;
+  top:0 !important;
+  z-index:1000 !important;
+}
+.rk-main{
+  position:relative;
+}
+.rk-sidebar{
+  z-index:1100 !important;
+}
+@media (max-width: 900px){
+  .rk-topbar{
+    position:sticky !important;
+    top:0 !important;
+  }
+  .rk-sidebar{
+    z-index:1200 !important;
+  }
+  /* Header should never render a second close/X control */
+  .rk-topbar .rk-menu-close,
+  .rk-topbar [aria-label="Close menu"],
+  .rk-topbar [data-menu-close]{
+    display:none !important;
+  }
+}
+
+/* V11: genuinely fixed header; cancel legacy margin-left so it aligns correctly */
+.rk-topbar{
+  position:fixed !important;
+  top:0 !important;
+  left:252px !important;
+  right:0 !important;
+  width:auto !important;
+  margin-left:0 !important;
+  z-index:2000 !important;
+}
+.rk-main{
+  padding-top:82px !important;
+}
+@media (max-width: 900px){
+  .rk-topbar{
+    left:0 !important;
+    right:0 !important;
+    width:100% !important;
+    margin-left:0 !important;
+  }
+  .rk-main{
+    padding-top:72px !important;
+  }
+}
+
+.rk-footer{
+  background:#f6f2e8 !important;
+  color:#4b5060 !important;
+  border-top:1px solid #ddd8cc !important;
+  min-height:88px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:24px 32px !important;
+  font-size:15px !important;
+  letter-spacing:.02em !important;
+}
+.rk-footer a{
+  color:#347f73 !important;
+  text-decoration:none !important;
+  font-weight:700 !important;
+}
+

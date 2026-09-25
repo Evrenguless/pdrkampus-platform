@@ -1,0 +1,22 @@
+
+/* Yeni PK işaretinin kare tuvalindeki sağ boşluğu optik olarak dengeler. */
+.rk-site-logo{
+  background-image:var(--rk-logo-image)!important;
+  background-repeat:no-repeat!important;
+  background-size:92% 92%!important;
+  background-position:92% center!important;
+  background-color:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  vertical-align:middle!important;
+}
+.rk-brand,.rk-header-brand,.rk-footer .rk-footer-logo{align-items:center!important}
+.rk-site-logo-sidebar{flex:0 0 42px!important}
+.rk-site-logo-header{flex:0 0 42px!important}
+.rk-site-logo-footer{flex:0 0 48px!important}
+@media(max-width:680px){
+  .rk-site-logo-sidebar{flex-basis:42px!important}
+  .rk-site-logo-header{flex-basis:34px!important}
+  .rk-site-logo-footer{flex-basis:46px!important}
+}
+@media(max-width:380px){.rk-site-logo-header{flex-basis:32px!important}}

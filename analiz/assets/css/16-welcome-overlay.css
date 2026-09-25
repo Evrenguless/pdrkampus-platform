@@ -1,0 +1,132 @@
+/* PDRkampüs first-visit welcome */
+body.rk-welcome-pending{overflow:hidden!important}
+.rk-welcome-overlay{
+  position:fixed;inset:0;z-index:10000;
+  display:flex;align-items:center;justify-content:center;
+  min-height:100dvh;padding:clamp(18px,3vh,32px) clamp(18px,4vw,56px);
+  overflow:auto;color:#102f49;
+  background:rgba(247,243,234,.91);
+  -webkit-backdrop-filter:blur(13px) saturate(.82);
+  backdrop-filter:blur(13px) saturate(.82);
+  opacity:1;visibility:visible;
+  transition:opacity .52s ease,visibility .52s ease;
+}
+.rk-welcome-overlay[hidden]{display:none}
+.rk-welcome-overlay.is-closing{opacity:0;visibility:hidden}
+.rk-welcome-overlay:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 26%,rgba(255,255,255,.98),rgba(255,253,248,.68) 36%,transparent 66%),
+    linear-gradient(180deg,rgba(255,253,248,.34),rgba(245,241,232,.58));
+}
+.rk-welcome-shell{
+  position:relative;z-index:2;width:min(100%,1120px);
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+}
+.rk-welcome-brand{display:inline-flex;align-items:center;gap:10px}
+.rk-welcome-logo{width:58px;height:58px}
+.rk-welcome-wordmark{
+  display:inline-flex;align-items:baseline;
+  color:#102f49;font:700 clamp(29px,3.3vw,45px) "Syne","Plus Jakarta Sans",sans-serif;
+  letter-spacing:-.055em;
+}
+.rk-welcome-wordmark b{color:#168c83;font:inherit}
+.rk-welcome-kicker{
+  margin-top:7px;color:#31526a;
+  font:700 9px "Space Mono",monospace;letter-spacing:.32em;
+}
+.rk-welcome-kicker i{margin:0 7px;color:#d5a83f;font-style:normal}
+.rk-welcome-shell>h1{
+  margin:clamp(18px,3.2vh,31px) 0 0!important;
+  color:#102f49!important;
+  font:700 clamp(38px,4.6vw,68px)/.96 Georgia,"Times New Roman",serif!important;
+  letter-spacing:-.055em!important;
+}
+.rk-welcome-shell>h1 em{
+  display:block;margin-top:2px;color:#168c83;
+  font-size:1.18em;font-weight:600;font-style:italic;
+}
+.rk-welcome-description{
+  max-width:760px;margin:clamp(13px,2vh,20px) auto 0!important;
+  color:#596e7b!important;font-size:clamp(11px,1.15vw,15px)!important;line-height:1.55;
+}
+.rk-welcome-features{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+  width:min(100%,880px);margin-top:clamp(18px,3vh,28px);
+}
+.rk-welcome-features article{
+  min-width:0;display:flex;align-items:center;text-align:left;gap:13px;
+  padding:16px 17px;border:1px solid rgba(105,116,113,.18);border-radius:17px;
+  background:rgba(255,253,248,.82);box-shadow:0 10px 28px rgba(31,58,65,.055);
+}
+.rk-welcome-feature-icon{
+  width:45px;height:45px;flex:0 0 45px;display:grid;place-items:center;
+  border-radius:50%;background:#e8f3ef;color:#168c83;
+}
+.rk-welcome-feature-icon svg{
+  width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.rk-welcome-features h2{
+  margin:0!important;color:#102f49!important;
+  font:800 13px "Syne","Plus Jakarta Sans",sans-serif!important;letter-spacing:-.025em;
+}
+.rk-welcome-features p{
+  margin:5px 0 0!important;color:#6b7c86!important;font-size:10px!important;line-height:1.4;
+}
+.rk-welcome-enter{
+  appearance:none;display:flex;align-items:center;justify-content:center;gap:12px;
+  width:min(100%,340px);min-height:55px;margin-top:clamp(19px,3vh,29px);
+  padding:14px 24px;border:0;border-radius:999px;background:#168c83;color:#fff;
+  box-shadow:0 13px 27px rgba(22,140,131,.22);
+  font:800 14px "Syne","Plus Jakarta Sans",sans-serif;cursor:pointer;
+  transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+}
+.rk-welcome-enter:hover{transform:translateY(-2px);background:#117c75;box-shadow:0 16px 32px rgba(22,140,131,.28)}
+.rk-welcome-enter:focus-visible{outline:3px solid rgba(213,168,63,.5);outline-offset:4px}
+.rk-welcome-enter svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.rk-welcome-note{margin:9px 0 0!important;color:#7a898f!important;font-size:10px!important}
+.rk-welcome-orbit{
+  position:absolute;width:410px;height:410px;border:1px solid rgba(22,140,131,.2);
+  border-radius:50%;pointer-events:none;
+}
+.rk-welcome-orbit:before,.rk-welcome-orbit:after{
+  content:"";position:absolute;border-radius:50%;border:1px solid rgba(213,168,63,.18);
+}
+.rk-welcome-orbit:before{inset:55px}.rk-welcome-orbit:after{inset:112px;border-color:rgba(22,140,131,.11)}
+.rk-welcome-orbit-left{left:-270px;top:-120px}.rk-welcome-orbit-right{right:-275px;bottom:-150px}
+.rk-welcome-orbit i{position:absolute;width:10px;height:10px;border-radius:50%;background:#168c83;box-shadow:0 0 0 5px rgba(22,140,131,.06)}
+.rk-welcome-orbit i:nth-child(1){left:92%;top:31%}.rk-welcome-orbit i:nth-child(2){left:75%;top:77%;background:#d5a83f}.rk-welcome-orbit i:nth-child(3){left:54%;top:2%;width:7px;height:7px;background:#8abdb4}
+@media(max-width:700px){
+  .rk-welcome-overlay{align-items:flex-start;padding:calc(18px + env(safe-area-inset-top)) 18px calc(18px + env(safe-area-inset-bottom))}
+  .rk-welcome-shell{min-height:calc(100dvh - 36px);justify-content:center}
+  .rk-welcome-logo{width:45px;height:45px}
+  .rk-welcome-wordmark{font-size:30px}
+  .rk-welcome-kicker{margin-top:5px;font-size:7px;letter-spacing:.2em}
+  .rk-welcome-kicker i{margin:0 4px}
+  .rk-welcome-shell>h1{margin-top:18px!important;font-size:clamp(36px,11vw,49px)!important;line-height:1!important}
+  .rk-welcome-description{max-width:430px;margin-top:13px!important;font-size:11px!important;line-height:1.48}
+  .rk-welcome-features{grid-template-columns:1fr;gap:8px;margin-top:17px;width:min(100%,430px)}
+  .rk-welcome-features article{min-height:64px;padding:9px 12px;border-radius:14px;gap:11px}
+  .rk-welcome-feature-icon{width:40px;height:40px;flex-basis:40px}
+  .rk-welcome-feature-icon svg{width:21px;height:21px}
+  .rk-welcome-features h2{font-size:12px!important}
+  .rk-welcome-features p{margin-top:3px!important;font-size:9px!important}
+  .rk-welcome-enter{width:min(100%,430px);min-height:52px;margin-top:16px}
+  .rk-welcome-note{margin-top:7px!important}
+  .rk-welcome-orbit{width:270px;height:270px}
+  .rk-welcome-orbit-left{left:-205px;top:-55px}.rk-welcome-orbit-right{right:-205px;bottom:-65px}
+}
+@media(max-width:370px),(max-height:720px){
+  .rk-welcome-overlay{padding-top:12px;padding-bottom:12px}
+  .rk-welcome-brand{gap:7px}.rk-welcome-logo{width:38px;height:38px}.rk-welcome-wordmark{font-size:26px}
+  .rk-welcome-shell>h1{margin-top:12px!important;font-size:34px!important}
+  .rk-welcome-description{margin-top:9px!important}
+  .rk-welcome-features{margin-top:12px;gap:6px}
+  .rk-welcome-features article{min-height:55px;padding:7px 10px}
+  .rk-welcome-feature-icon{width:34px;height:34px;flex-basis:34px}
+  .rk-welcome-enter{min-height:48px;margin-top:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .rk-welcome-overlay,.rk-welcome-enter{transition:none!important}
+}

@@ -1,0 +1,59 @@
+/* Bu panel, mevcut iki sütunlu analiz ızgarasında tam genişlikte kalır. */
+#tab-overview > #rk-personal-dashboard{
+  grid-column:1 / -1!important;
+  width:100%!important;
+  max-width:100%!important;
+  padding:0!important;
+  overflow:visible!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+/* PDRkampüs · Kişisel Analiz kart sistemi */
+.rk-personal-dashboard{display:grid;gap:16px}
+.rk-pa-welcome{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:20px 22px;border:1px solid var(--rk-line,#e4ddd0);border-radius:19px;background:linear-gradient(115deg,#fffdf8 0%,#fbf7ef 70%,#edf6f3 100%);box-shadow:0 8px 24px rgba(24,44,64,.045)}
+.rk-pa-kicker{display:block;margin-bottom:6px;color:var(--rk-teal,#2f897b);font:800 9px "Space Mono",monospace;letter-spacing:.16em}
+.rk-pa-welcome h3{margin:0;color:var(--rk-ink,#123044);font:800 clamp(22px,2.5vw,32px)/1.08 "Syne","DM Sans",sans-serif;letter-spacing:-.04em}
+.rk-pa-welcome p{margin:7px 0 0;color:var(--rk-muted,#72808a);font-size:11px;line-height:1.55}
+.rk-pa-live{display:flex;align-items:center;gap:8px;white-space:nowrap;padding:9px 12px;border:1px solid #cfe2dc;border-radius:999px;background:#f1f8f6;color:#287a6d;font:800 9px "Space Mono",monospace;letter-spacing:.06em}
+.rk-pa-live i{width:7px;height:7px;border-radius:50%;background:#4c9f95;box-shadow:0 0 0 4px rgba(76,159,149,.12)}
+.rk-pa-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.rk-pa-kpi{position:relative;min-width:0;padding:17px 18px;border:1px solid var(--rk-line,#e4ddd0);border-radius:17px;background:#fffdf8;box-shadow:0 7px 20px rgba(24,44,64,.04);overflow:hidden}
+.rk-pa-kpi:after{content:"";position:absolute;width:74px;height:74px;right:-28px;top:-32px;border-radius:50%;background:rgba(76,159,149,.08)}
+.rk-pa-kpi:nth-child(3):after{background:rgba(185,136,48,.10)}.rk-pa-kpi:nth-child(4):after{background:rgba(79,105,157,.09)}
+.rk-pa-kpi-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;color:#69767d;font-size:10px;font-weight:750}
+.rk-pa-kpi-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:10px;background:#edf6f3;color:#2f897b}
+.rk-pa-kpi-icon svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rk-pa-kpi strong{display:block;position:relative;z-index:1;color:#123044;font:800 clamp(21px,2.2vw,29px)/1 "Space Mono",monospace;letter-spacing:-.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk-pa-kpi small{display:block;margin-top:8px;color:#8b9498;font-size:9px}
+.rk-pa-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.75fr);gap:14px}
+.rk-pa-card{min-width:0;border:1px solid var(--rk-line,#e4ddd0);border-radius:18px;background:#fffdf8;box-shadow:0 8px 24px rgba(24,44,64,.045);overflow:hidden}
+.rk-pa-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;padding:17px 19px 12px;border-bottom:1px solid rgba(24,44,64,.075)}
+.rk-pa-card-head span{display:block;margin-bottom:4px;color:var(--rk-teal,#2f897b);font:800 8px "Space Mono",monospace;letter-spacing:.14em}
+.rk-pa-card-head h4{margin:0;color:#123044;font-size:15px;font-weight:800;letter-spacing:-.025em}
+.rk-pa-card-head p{margin:4px 0 0;color:#849097;font-size:9px}
+.rk-pa-card-tag{flex:0 0 auto;padding:6px 9px;border:1px solid #d9e6e2;border-radius:999px;background:#f1f7f5;color:#427d74;font:800 8px "Space Mono",monospace}
+.rk-pa-chart-box{height:260px;padding:12px 16px 15px}.rk-pa-chart-box canvas{width:100%!important;height:100%!important}
+.rk-pa-score-body{display:grid;place-items:center;gap:15px;padding:20px}
+.rk-pa-ring{--rk-pa-progress:0;display:grid;place-items:center;width:152px;height:152px;border-radius:50%;background:conic-gradient(#2f9184 calc(var(--rk-pa-progress)*1%),#e5ebe7 0);position:relative}
+.rk-pa-ring:after{content:"";position:absolute;inset:17px;border-radius:50%;background:#fffdf8;box-shadow:inset 0 0 0 1px rgba(24,44,64,.06)}
+.rk-pa-ring-content{position:relative;z-index:1;text-align:center}.rk-pa-ring-content strong{display:block;color:#123044;font:800 27px/1 "Space Mono",monospace}.rk-pa-ring-content span{display:block;margin-top:6px;color:#76858c;font-size:9px;font-weight:700}
+.rk-pa-score-list{width:100%;display:grid;gap:8px}.rk-pa-score-list div{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 11px;border-radius:11px;background:#f7f4ec;color:#6f7a80;font-size:9px}.rk-pa-score-list strong{color:#17364a;font:800 10px "Space Mono",monospace}
+.rk-pa-bottom{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,.85fr);gap:14px}
+.rk-pa-bars{display:grid;gap:10px;padding:17px 19px 20px}
+.rk-pa-bar-row{display:grid;grid-template-columns:92px minmax(80px,1fr) 44px;align-items:center;gap:10px}.rk-pa-bar-row>span{color:#344c59;font-size:9px;font-weight:750}.rk-pa-bar-track{height:8px;border-radius:999px;background:#e9e8e1;overflow:hidden}.rk-pa-bar-fill{width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#2f897b,#64aaa0);transition:width .45s ease}.rk-pa-bar-row[data-key="mevzuat"] .rk-pa-bar-fill{background:#c79537}.rk-pa-bar-row b{text-align:right;color:#52646d;font:800 9px "Space Mono",monospace}
+.rk-pa-insights{display:grid;gap:0;padding:5px 17px 12px}
+.rk-pa-insight{display:grid;grid-template-columns:32px minmax(0,1fr);align-items:center;gap:10px;padding:12px 2px;border-bottom:1px solid rgba(24,44,64,.08)}.rk-pa-insight:last-child{border-bottom:0}
+.rk-pa-insight-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#edf6f3;color:#2f897b;font-size:14px}
+.rk-pa-insight span{display:block;color:#899399;font-size:8px}.rk-pa-insight strong{display:block;margin-top:2px;color:#17364a;font-size:10px;line-height:1.35}
+.rk-pa-empty-note{margin:0 17px 16px;padding:10px 12px;border:1px dashed #d7d8d1;border-radius:11px;background:#faf8f2;color:#7d878c;font-size:9px;line-height:1.5}
+@media(max-width:980px){.rk-pa-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.rk-pa-layout,.rk-pa-bottom{grid-template-columns:1fr}.rk-pa-score-body{grid-template-columns:auto minmax(180px,1fr);justify-items:center}}
+@media(max-width:620px){.rk-pa-welcome{display:block;padding:17px}.rk-pa-live{display:inline-flex;margin-top:13px}.rk-pa-kpis{grid-template-columns:1fr 1fr;gap:8px}.rk-pa-kpi{padding:14px}.rk-pa-kpi strong{font-size:19px}.rk-pa-layout,.rk-pa-bottom{gap:10px}.rk-pa-chart-box{height:225px;padding:9px}.rk-pa-score-body{grid-template-columns:1fr}.rk-pa-ring{width:138px;height:138px}.rk-pa-bar-row{grid-template-columns:72px minmax(60px,1fr) 38px}.rk-pa-card-head{padding:15px}.rk-pa-bars{padding:15px}.rk-pa-welcome h3{font-size:23px}}
+
+/* Kişisel analiz · ders netlerinin daire dağılımı */
+.rk-pa-distribution-card{display:flex;flex-direction:column}
+.rk-pa-donut-wrap{height:282px;padding:14px 16px 4px;position:relative}
+.rk-pa-donut-wrap canvas{width:100%!important;height:100%!important;max-width:100%!important}
+.rk-pa-donut-note{margin:4px 17px 16px;padding:9px 11px;border:1px dashed #d7d8d1;border-radius:11px;background:#faf8f2;color:#7d878c;font-size:8px;line-height:1.5}
+@media(max-width:620px){.rk-pa-donut-wrap{height:260px;padding:12px 10px 2px}}

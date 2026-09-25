@@ -1,0 +1,203 @@
+/* V18 — radar chart visibility/fixed sizing */
+#radarChart{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:190px !important;
+}
+#radarChart + *{max-width:100% !important;}
+#tab-overview .h-52.relative{
+  min-height:208px !important;
+  height:208px !important;
+  width:100% !important;
+  overflow:visible !important;
+}
+#tab-overview .h-52.relative canvas{
+  min-width:0 !important;
+  max-width:100% !important;
+}
+
+/* V19 — dashboard-first visual system */
+:root{
+  --rk-cream:#f6f1e7;
+  --rk-paper:#fffdf8;
+  --rk-ink:#273047;
+  --rk-muted:#707887;
+  --rk-line:#e4ddd0;
+  --rk-teal:#2f897b;
+  --rk-coral:#e77865;
+  --rk-yellow:#e2b84b;
+}
+
+/* Main canvas */
+body{
+  background:var(--rk-cream) !important;
+  color:var(--rk-ink) !important;
+}
+.rk-main{
+  background:var(--rk-cream) !important;
+}
+.rk-content-stage{
+  background:transparent !important;
+  max-width:1440px !important;
+}
+
+/* Dashboard spacing and hierarchy */
+.rk-workspace{
+  gap:22px !important;
+  margin-bottom:24px !important;
+}
+.rk-calc-panel,
+.rk-result-panel{
+  background:var(--rk-paper) !important;
+  border:1px solid var(--rk-line) !important;
+  border-radius:20px !important;
+  box-shadow:0 10px 28px rgba(39,48,71,.055) !important;
+}
+.rk-calc-panel{
+  padding:24px !important;
+}
+.rk-result-panel{
+  padding:24px !important;
+}
+
+/* Make the result side feel like a dashboard KPI area */
+#result-rank-range{
+  font-family:"Syne","DM Sans",sans-serif !important;
+  letter-spacing:-.04em !important;
+}
+#result-p2-score,
+#result-2026-rank,
+#percentile-label{
+  font-family:"Space Mono",monospace !important;
+}
+.rk-stat-strip{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:12px !important;
+  margin:18px 0 24px !important;
+}
+.rk-stat-strip > *{
+  background:var(--rk-paper) !important;
+  border:1px solid var(--rk-line) !important;
+  border-radius:16px !important;
+  padding:15px 16px !important;
+  min-width:0 !important;
+}
+
+/* Section headers */
+.rk-content-stage > .tab-content{
+  margin-bottom:24px !important;
+}
+.rk-content-stage > .tab-content > h2,
+.rk-content-stage > .tab-content > .section-title{
+  margin-bottom:16px !important;
+}
+
+/* Cards: softer, cleaner dashboard blocks */
+.rk-content-stage .card,
+.rk-content-stage .rk-card{
+  border:1px solid var(--rk-line) !important;
+  border-radius:18px !important;
+  background:var(--rk-paper) !important;
+  box-shadow:0 8px 24px rgba(39,48,71,.045) !important;
+}
+.rk-content-stage .card:hover,
+.rk-content-stage .rk-card:hover{
+  box-shadow:0 12px 30px rgba(39,48,71,.075) !important;
+  transform:translateY(-1px);
+  transition:.18s ease;
+}
+
+/* Overview dashboard grid */
+#tab-overview{
+  display:block;
+}
+#tab-overview > .grid,
+#tab-overview .grid{
+  gap:16px !important;
+}
+#tab-overview .h-52.relative{
+  background:var(--rk-paper) !important;
+  border:1px solid var(--rk-line) !important;
+  border-radius:18px !important;
+  padding:12px !important;
+}
+
+/* Inputs */
+.rk-calc-panel input,
+.rk-calc-panel select,
+.rk-calc-panel textarea{
+  background:#fffaf2 !important;
+  color:var(--rk-ink) !important;
+  border:1px solid #dcd4c6 !important;
+  border-radius:12px !important;
+}
+.rk-calc-panel input:focus,
+.rk-calc-panel select:focus,
+.rk-calc-panel textarea:focus{
+  outline:none !important;
+  border-color:var(--rk-teal) !important;
+  box-shadow:0 0 0 3px rgba(47,137,123,.11) !important;
+}
+
+/* KPI / badges */
+.rk-main .bg-teal-50,
+.rk-main [class*="bg-teal-50"]{
+  background:#e9f5f1 !important;
+}
+.rk-main .bg-yellow-50,
+.rk-main [class*="bg-yellow-50"]{
+  background:#fbf4dc !important;
+}
+.rk-main .bg-red-50,
+.rk-main [class*="bg-red-50"]{
+  background:#fcece8 !important;
+}
+
+/* Tables */
+.rk-content-stage table{
+  border-collapse:separate !important;
+  border-spacing:0 !important;
+  overflow:hidden !important;
+  border:1px solid var(--rk-line) !important;
+  border-radius:14px !important;
+}
+.rk-content-stage th{
+  background:#f1eadf !important;
+  color:var(--rk-ink) !important;
+  font-weight:700 !important;
+}
+.rk-content-stage td{
+  background:var(--rk-paper) !important;
+}
+
+/* Simulator gets a dashboard panel instead of a flat section */
+#tab-simulator{
+  background:transparent !important;
+}
+#tab-simulator .card,
+#tab-simulator .rk-card{
+  min-height:0 !important;
+}
+
+/* Mobile dashboard */
+@media(max-width:900px){
+  .rk-workspace{
+    gap:14px !important;
+  }
+  .rk-calc-panel,
+  .rk-result-panel{
+    padding:18px !important;
+    border-radius:16px !important;
+  }
+  .rk-stat-strip{
+    grid-template-columns:1fr !important;
+  }
+  .rk-content-stage > .tab-content{
+    margin-bottom:18px !important;
+  }
+}
+
+.net-group{display:none!important}
+
