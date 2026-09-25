@@ -46,12 +46,12 @@ Ana sayfa yalnızca arama ve bölüm geçişlerini sunar. Araç Kutusu, Kütüph
 
 ## Yeni kullanıcı hesabı kurulumu
 
-Hesap bölümü **yeni ve bağımsız** bir Supabase projesini bekler; eski PDR analiz projesine bağlanmaz. `hesap.html` şimdilik kurulum uyarısı gösterir. Giriş/kayıt, şifre sıfırlama ve kişisel profil kodu hazırdır; gerçek hesap oluşturma ancak aşağıdaki adımlardan sonra açılır.
+Hesap bölümü **yeni ve bağımsız** bir Supabase projesinin Project URL ve publishable key bilgileriyle bağlanmıştır; eski PDR analiz projesine bağlanmaz. Giriş/kayıt, şifre sıfırlama ve kişisel profil kodu hazırdır. Profil tablosu SQL dosyası yeni projede çalıştırılmadan profil kaydı oluşmaz.
 
 1. [Supabase Dashboard](https://supabase.com/dashboard) üzerinde PDR Kampüs Platform için yeni proje oluşturun. Projenin veritabanı parolasını GitHub'a veya site koduna koymayın.
 2. Authentication → Providers → Email bölümünde e-posta kaydını etkinleştirin; e-posta doğrulamasını açık tutun. Authentication → URL Configuration bölümünde Site URL olarak `https://evrenguless.github.io/pdrkampus-platform/` ve Redirect URLs içine `https://evrenguless.github.io/pdrkampus-platform/hesap.html` adresini ekleyin. Yerel deneme için ayrıca `http://localhost:8000/hesap.html` eklenebilir.
 3. Yeni projenin SQL Editor bölümünde `db/006_accounts.sql` içeriğini çalıştırın. Bu işlem `auth.users` ile bağlı `public.profiles` tablosu ve yalnızca kendi profilini okumaya izin veren RLS politikası oluşturur. Daha önceki taslak katalog SQL'leri ve `005_community_documents_draft.sql` hesap açmak için gerekli değildir; topluluk taslağını çalıştırmayın.
-4. Project Settings → API bölümündeki **Project URL** ve **publishable key** değerlerini `src/auth-config.js` içindeki iki boş sabite girin. **Secret/service_role key asla tarayıcı koduna veya GitHub'a konmaz.** Publishable key herkese açık istemci anahtarıdır; gerçek veri koruması RLS ile sağlanır.
+4. Project URL ve **publishable key** `src/auth-config.js` içinde ayarlanmıştır. **Secret/service_role key asla tarayıcı koduna veya GitHub'a konmaz.** Publishable key herkese açık istemci anahtarıdır; gerçek veri koruması RLS ile sağlanır.
 5. GitHub Pages dağıtımından sonra kendi e-postanızla kayıt, doğrulama bağlantısı, giriş, profil ve şifre sıfırlama akışını deneyin. E-posta gönderimi için Supabase'in varsayılan sınırları ve üretim SMTP ayarları ayrıca değerlendirilmelidir.
 
-Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritabanı tablomuzda tutmaz. SQL kurulumu ve URL/anahtar ayarı tamamlanmadan form çalışmaz. Belge yükleme ve Topluluk için yetki/depoma politikaları henüz yoktur.
+Kayıt formu yalnızca görünen ad, e-posta ve şifre ister; şifreyi veritabanı tablomuzda tutmaz. SQL uygulanmadan kişisel profil özelliği tamamlanmaz; e-posta kayıt ayarı ve yönlendirme adresi de Supabase panelinde kontrol edilmelidir. Belge yükleme ve Topluluk için yetki/depoma politikaları henüz yoktur.
