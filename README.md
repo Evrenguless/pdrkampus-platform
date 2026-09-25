@@ -1,42 +1,23 @@
-# PDR Kampüs Platform · Aşama 1 prototipi
+# PDR Kampüs Platform · Aşama 1
 
-Bu, mevcut `Evrenguless/pdrkampus` deposundan **ayrı** bir projedir. `analiz/` klasörü, 25 Eylül 2026 tarihinde okunan mevcut deponun `index.html` ve `assets` dosyalarının değiştirilmemiş kopyasını taşır. Formüller, sayısal veriler, kimlik doğrulama ve simülatör kodu düzenlenmemiştir. Depoya hiçbir yazma yapılmamıştır.
+Bu proje, mevcut `Evrenguless/pdrkampus` deposundan bağımsızdır. `analiz/`, 25 Eylül 2026 tarihinde okunan mevcut uygulamanın değiştirilmemiş `index.html` ve `assets` kopyasını içerir. Hesaplama formülleri, sayısal veriler, Auth ve simülatör bu yeni kabuk için düzenlenmedi.
 
-## Çalıştırma
+## Kullanım
 
-Proje kökünde `python3 -m http.server 8000` çalıştırın ve `http://localhost:8000` adresine gidin. `analiz/` mevcut CDN ve Supabase bağlantılarına bağlıdır. Yeni ana sayfa ve katalog statiktir; hesap gerekmez.
+Kök dizinde `python3 -m http.server 8000` çalıştırıp `http://localhost:8000` adresini açın. Ana sayfada arama, Araç Kutusu, örnek Kütüphane ve mevcut PDR Analiz bağlantısı bulunur. GitHub Pages için `main` dalı ve `/(root)` kullanılabilir. Analiz bölümü kendi CDN/Supabase bağlantılarına bağımlıdır.
 
-## Bugünkü kapsam
+## Araç Kutusu
 
-- Mobil uyumlu kampüs ana sayfası ve mevcut analize geçiş
-- Araç Kutusu ve Kütüphane için örnek, filtrelenebilir kayıtlar ve ayrıntı kartları
-- Konu/kademe terimleriyle iki koleksiyonda arama; basit eş anlamlı eşleştirme
-- Gelecek aşamaların açık yol haritası
+`data/forms.json`, MEB Özel Eğitim ve Rehberlik Hizmetleri Genel Müdürlüğünün [16.05.2025 Form Haritası](https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/16122806_formharitasi-16.05.2025-saat_09.45.pdf) içindeki **76 benzersiz ve doğrudan tıklanabilir dosyayı** kaydeder: 64 PDF ve 12 XLSX. Bağlantıların tamamı 25.09.2026 tarihinde HTTP 200 yanıtıyla kontrol edildi. Haritadaki bağlantısız, devam eden kalemler ve iki sonuç sayfası bu indirilebilir dosya listesine dahil edilmedi.
 
-Katalog girdileri **örnek içerik taslaklarıdır**. Resmî MEB formu, indirilebilir belge veya doğrulanmış klinik araç olarak sunulmaz. Arama şu an katalog üzerindeki istemci tarafı eşleştirmedir; topluluk gönderilerini veya harici kaynakları taramaz. İçerik indirme, kaydetme, giriş, belge yükleme, yorum ve kişisel öğrenci verisi bu prototipte yoktur.
+Her kayıt şu sırada görünür: **Bireyi Tanıma / Sistem Formları → alt başlık → form**. Kademe yalnızca form adında açıkça geçiyorsa atanır. Kod sonundaki `a`, `b`, `c` haritanın açıklamasına göre sırasıyla okul, RAM, okul ve RAM kullanımını gösterir. Haritada kod bulunmayan iki program kaydı “Kod belirtilmiyor” olarak gösterilir.
 
-## Modül sınırları ve sonraki geliştirme
+PDF kayıtları sitedeki görüntüleyicide özgün MEB URL'si üzerinden açılır. MEB veya tarayıcı gömmeyi engellerse “Dosyayı aç / indir” bağlantısı doğrudan özgün dosyayı açar. XLSX için tarayıcı içi önizleme yoktur; özgün dosya bağlantısı gösterilir. **Dosyalar henüz bu deponun sunucusunda saklanmaz.** Bir tarayıcı PDF'yi önce açarsa kullanıcı PDF görüntüleyicisinin indirme düğmesini kullanır.
 
-- `analiz/`: Eski çalışan uygulamanın bağımsız ve değişmemiş kopyası. Mevcut Supabase projesine bağlanır; yeni platform kimliğiyle birleştirilmeden önce oturum, yönlendirme, veri sahipliği ve dağıtım ayrıntıları incelenmelidir.
-- `src/catalog.js`: Araç ve kaynak metaverisinin tek noktası. Gelecekte kayıtlar API üzerinden alınabilir. Her kayıt kaynak türü (`official`, `verified`, `community`, `draft`), kaynak URL'si, sürüm, moderasyon ve erişim alanlarıyla genişletilmeli.
-- `src/app.js`: Görünüm, filtre ve örnek arama. İkinci aşamada birleşik arama API'si araç, kütüphane, belge ve topluluk için tür ve yetki filtresiyle sonuç dönmeli.
-- Belge Merkezi / Topluluk / Meslektaşıma Sor: Kullanıcı, rol, içerik, revizyon, rapor ve moderasyon tabloları ile ayrı modüller. Topluluk deneyimi resmî kaynaklarla aynı rozet altında gösterilmemeli.
-- Çalışma alanı / erken uyarı: Öğrenci kayıtları için ayrı güvenli veri alanı, yetkilendirme, erişim kaydı, saklama politikası ve kurum onayı tasarlanmadan öğrenci verisi toplanmamalı. Değişim sinyali karar desteğidir; tanı veya otomatik risk etiketi değildir.
+## Veri tabanı hazırlığı
 
-## Önerilen aşamalar
+`db/001_form_catalog.sql` PostgreSQL/Supabase tablosu, `db/002_seed_form_catalog.sql` 76 kayıtlık başlangıç verisidir. Bu dosyalar **canlı bir veritabanına uygulanmadı**. Kaynak URL ve olası gelecek depolama anahtarı ayrı tutulur; `storage_key` şimdilik boştur. Öğrenciye ait kişisel veri bu katalogda yer almaz.
 
-1. Katalog içeriğini doğrulama, gerçek kaynak izinleri ve veri modelini kesinleştirme; mevcut analizi yeni uygulama kabuğuna taşırken regresyon karşılaştırması.
-2. Kimlik/rol sistemi, belge iş akışı, moderasyonlu topluluk ve soru cevap; birleşik arama dizini.
-3. Kurumsal çalışma alanı, öğrenci/sınıf ölçümleri ve açıklanabilir zaman serisi; gizlilik ve yetki tasarımı tamamlandıktan sonra pilot.
+## Sınırlar ve sonraki aşama
 
-## Kontrol
-
-`node --check src/app.js` ve `node --check src/catalog.js`; ayrıca yerel sunucuda ana sayfa, kart filtresi, arama, ayrıntı iletişim kutusu ve `/analiz/` bağlantısını kontrol edin.
-
-## 25 Eylül 2026 · Form haritası adımı
-
-Araç Kutusu, MEB Özel Eğitim ve Rehberlik Hizmetleri Genel Müdürlüğünün 16.05.2025 tarihli [Form Haritası](https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/16122806_formharitasi-16.05.2025-saat_09.45.pdf) içindeki seçili 12 kayıtla başlatıldı. Kartlar form kodunu ve haritadaki adı gösterir. Bu PDF bir form dizinidir; uygulama yönergesi, dosya, süre, hedef grup ve değerlendirme kuralı içerdiği varsayılmadı. Eksik bilgiler açıkça belirtilir. Kütüphane kayıtları ayrı bir "Örnek taslak" etiketiyle kalır.
-
-## Doğrulanmış form dosyaları
-
-Araç Kutusu'ndaki 12 form kartı MEB `orgm.meb.gov.tr` alanındaki doğrudan PDF bağlantısını açar. Kartta form kodu, MEB form haritası ve özgün PDF bağlantısı birlikte bulunur. PDF dosyaları projeye kopyalanmaz. Kullanıcı, uygulama ve değerlendirme koşulları için belgenin kendisini ve kurumunun güncel yönergelerini kontrol etmelidir.
+Kütüphane kayıtları örnek taslaktır ve indirilebilir dosya içermez. Arama istemci tarafındaki katalog terimlerini eşleştirir; tanı veya uygulama önerisi üretmez. Belge Merkezi, Topluluk, Meslektaşıma Sor ve kişisel çalışma alanı henüz yoktur. Sonraki adım katalog içerik denetimi, gerçek materyal/kaynak izinleri, ardından birleşik arama ve rol tabanlı içerik iş akışıdır. Öğrenci kayıtları için ayrı güvenlik, yetki ve saklama modeli gereklidir.
