@@ -88,3 +88,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## Çalışma Alanım
 
 `db/013_workspace.sql` dosyasını 012 sonrasında yeni Supabase projesinde çalıştırın. `calisma-alani.html` hesabın özel notlarını, işleri, kaydedilen araç ve belgeleri, topluluk gönderilerini ve yüklediği belgeleri gösterir. Araç ve belge kartlarında Kaydet düğmesi görünür. Notlar ve işler yalnızca sahibine açıktır. Öğrenci kişisel verileri veya görüşme kayıtları bu sürümün kapsamına girmez.
+
+## Kampüs araması
+
+`db/014_campus_search.sql` dosyasını 013 sonrasında yeni Supabase projesinde çalıştırın. Ana sayfa araç ve kütüphane kataloglarını mevcut istemci aramasıyla gösterir. Meslektaş belgeleri, sorular ve gönderiler ise indeksli veritabanı aramasıyla tüm yayımlanmış kayıtlar üzerinden taranır. Arama okul kademesini dikkate alır ve yalnızca ilk 8 sonucu her bölümde gösterip toplam eşleşme sayısını belirtir. Resmî MEB kaynakları ile üye içerikleri ayrı başlıklardadır. Yeni soru/gönderilerde isteğe bağlı kademe ve konu etiketi vardır; eski kayıtlar metinlerinden aranır.
