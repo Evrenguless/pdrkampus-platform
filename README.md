@@ -72,3 +72,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## Üye profili ve belge yönetimi
 
 `db/009_profiles_and_document_management.sql` dosyasını 006–008 sonrasında yeni Supabase projesinde çalıştırın. `profil.html` her üyeye kendi belgelerini (incelemede/yayında/reddedildi/kaldırıldı) ve görünen adını gösterir. Yayımlanmış belge kartındaki üye bağlantısı yalnızca görünen ad ve yayımlanmış belgeleri açar; e-posta görünmez. Moderatörün profilinde belge bilgilerini düzeltme, yayımlama, reddetme ve **geri alınabilir silme/yayından kaldırma** bulunur. Düzenleme ve durum değişiklikleri özel audit tablosuna kaydedilir. Fiziksel dosya silme ve dosya değiştirme henüz yoktur.
+
+## Meslektaşıma Sor
+
+`db/010_colleague_questions.sql` dosyasını 009'dan sonra yeni Supabase projesinde çalıştırın. `meslektasima-sor.html` sayfasında sorular ve cevaplar herkese açık okunur; giriş yapan üyeler paylaşım yapar, kendi cevabına oy veremez, her cevaba bir oy verebilir ve oyunu geri alabilir. Üye kimlikleri profil bağlantısı için kullanılır; oy verenlerin kimlikleri genel erişime açık değildir. Paylaşımlarda öğrenciye ait tanınabilir bilgi bulunmamalıdır. Yanıtlar meslektaş deneyimidir, uzman veya resmî kaynak onayı değildir.
