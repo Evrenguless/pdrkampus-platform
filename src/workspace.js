@@ -1,21 +1,22 @@
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
+import {getCuratedResources} from './curated.js?v=20260926-1';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&quot;',"'":'&#39;'}[c]));
 const client=authConfigured&&window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 let user=null,notes=[],tasks=[],saved=[];
 const status=s=>{$('#workspaceStatus').textContent=s};
 async function readCatalog(path){try{const r=await fetch(path);return r.ok?await r.json():[]}catch{return []}}
-async function load(){const [n,t,s,own,reactions,forms,library]=await Promise.all([
+async function load(){const [n,t,s,own,reactions,forms,library,curated]=await Promise.all([
  client.from('workspace_notes').select('id,title,body,updated_at').eq('owner_id',user.id).order('updated_at',{ascending:false}).limit(100),
  client.from('workspace_tasks').select('id,title,due_date,completed').eq('owner_id',user.id).order('completed',{ascending:true}).order('due_date',{ascending:true,nullsFirst:false}).limit(100),
  client.from('workspace_saved_items').select('kind,ref_id').eq('owner_id',user.id).order('created_at',{ascending:false}).limit(200),
  client.from('community_documents').select('title,review_status,created_at').eq('uploader_id',user.id).order('created_at',{ascending:false}).limit(10),
  client.from('community_reactions').select('post_id').eq('user_id',user.id).eq('kind','save').limit(100),
- readCatalog('data/forms.json'),readCatalog('data/library.json')]);
+ readCatalog('data/forms.json'),readCatalog('data/library.json'),getCuratedResources()]);
  const failure=[n,t,s,own,reactions].find(x=>x.error);if(failure)throw failure.error;notes=n.data;tasks=t.data;saved=s.data;
  $('#taskCount').textContent=tasks.filter(x=>!x.completed).length;$('#noteCount').textContent=notes.length;$('#savedCount').textContent=saved.length;
  $('#taskList').innerHTML=tasks.length?tasks.map(x=>`<div class="workspace-row ${x.completed?'is-done':''}"><label><input type="checkbox" data-task-toggle="${esc(x.id)}" ${x.completed?'checked':''}><span>${esc(x.title)}</span></label><small>${x.due_date?new Date(x.due_date+'T12:00:00').toLocaleDateString('tr-TR'):'Tarih yok'}</small><button type="button" data-task-delete="${esc(x.id)}" aria-label="İşi sil">×</button></div>`).join(''):'<p class="workspace-empty">Henüz planlanmış iş yok.</p>';
  $('#noteList').innerHTML=notes.length?notes.map(x=>`<details class="workspace-note" data-note="${esc(x.id)}"><summary><strong>${esc(x.title)}</strong><small>${new Date(x.updated_at).toLocaleDateString('tr-TR')}</small></summary><div class="workspace-note-editor"><label>Başlık<input name="title" maxlength="120" value="${esc(x.title)}"></label><label>Not<textarea name="body" maxlength="3000">${esc(x.body)}</textarea></label><div><button type="button" data-note-save>Kaydet</button><button type="button" data-note-delete>Sil</button></div></div></details>`).join(''):'<p class="workspace-empty">Henüz not eklemedin.</p>';
- const formsById=new Map(forms.map(x=>[String(x.id),x])),libraryById=new Map(library.map(x=>[String(x.id),x]));const keys=saved.filter(x=>x.kind==='community_file').map(x=>x.ref_id);
+ const formsById=new Map([...forms,...curated.tools].map(x=>[String(x.id),x])),libraryById=new Map([...library,...curated.library].map(x=>[String(x.id),x]));const keys=saved.filter(x=>x.kind==='community_file').map(x=>x.ref_id);
  const files=keys.length?await client.from('community_documents').select('title,file_storage_key').in('file_storage_key',keys).eq('review_status','approved'):{data:[],error:null};if(files.error)throw files.error;const filesByKey=new Map(files.data.map(x=>[x.file_storage_key,x]));
  $('#savedList').innerHTML=saved.length?saved.map(x=>{const item=x.kind==='tool'?formsById.get(x.ref_id):x.kind==='library'?libraryById.get(x.ref_id):filesByKey.get(x.ref_id),href=x.kind==='tool'?'araclar.html':x.kind==='library'?'kutuphane.html':'belgeler.html#meslektas',label=x.kind==='tool'?'Araç':x.kind==='library'?'Kütüphane':'Meslektaş belgesi';return `<div class="workspace-saved-row"><div><small>${label}</small><a href="${href}">${esc(item?.title||'Artık erişilemeyen kayıt')} ↗</a></div><button type="button" data-unsave="${esc(x.kind)}" data-ref="${esc(x.ref_id)}" aria-label="Kaydı kaldır">Kaldır</button></div>`}).join(''):'<p class="workspace-empty">Araç veya belge kartındaki Kaydet düğmesinden kaynak ekleyebilirsin.</p>';
  const postIds=reactions.data.map(x=>x.post_id),posts=postIds.length?await client.from('community_posts').select('id,title').in('id',postIds).eq('status','published'):{data:[],error:null};if(posts.error)throw posts.error;$('#savedPosts').innerHTML=posts.data.length?posts.data.map(x=>`<a class="workspace-link" href="topluluk.html#gonderi-${encodeURIComponent(x.id)}">${esc(x.title)} ↗</a>`).join(''):'<p class="workspace-empty">Henüz gönderi kaydetmedin.</p>';

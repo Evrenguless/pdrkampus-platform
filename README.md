@@ -92,3 +92,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## Kampüs araması
 
 `db/014_campus_search.sql` dosyasını 013 sonrasında yeni Supabase projesinde çalıştırın. Ana sayfa araç ve kütüphane kataloglarını mevcut istemci aramasıyla gösterir. Meslektaş belgeleri, sorular ve gönderiler ise indeksli veritabanı aramasıyla tüm yayımlanmış kayıtlar üzerinden taranır. Arama okul kademesini dikkate alır ve yalnızca ilk 8 sonucu her bölümde gösterip toplam eşleşme sayısını belirtir. Resmî MEB kaynakları ile üye içerikleri ayrı başlıklardadır. Yeni soru/gönderilerde isteğe bağlı kademe ve konu etiketi vardır; eski kayıtlar metinlerinden aranır.
+
+## Yönetici kaynak ekleme
+
+`db/015_curated_resources.sql` dosyasını 014 sonrasında yeni Supabase projesinde çalıştırın. Mevcut 76 form ve 23 kütüphane kaydı JSON dosyalarında kalır. Profildeki Kaynak yönetimi bağlantısından yönetici yeni MEB bağlantılarını taslak olarak ekler, sınıflandırır, yayımlar, düzenler veya kaldırır. Yalnızca `meb.gov.tr` HTTPS dosya adresleri kabul edilir; yönetici yayımlamadan önce dosyayı ve kaynak sayfasını elle kontrol eder. Yayımlanan kayıtlar katalog, Belge Merkezi, ana arama ve Çalışma Alanım'da görünür; işlem geçmişi özel denetim tablosundadır.

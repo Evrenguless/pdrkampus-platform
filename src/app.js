@@ -1,10 +1,12 @@
 import {documentItems,filterDocuments,documentTypes} from './documents.js';
 import {searchCatalogs} from './search.js';
+import {getCuratedResources} from './curated.js?v=20260926-1';
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>String(s??'').toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i');
 async function loadCatalog(path){return fetch(new URL(path,import.meta.url)).then(r=>{if(!r.ok)throw Error('Katalog yüklenemedi');return r.json()}).catch(()=>[])}
-const [tools,library]=await Promise.all([loadCatalog('../data/forms.json?v=20260925-3'),loadCatalog('../data/library.json?v=20260925-3')]);
+const [baseTools,baseLibrary,curated]=await Promise.all([loadCatalog('../data/forms.json?v=20260925-3'),loadCatalog('../data/library.json?v=20260925-3'),getCuratedResources()]);
+const tools=[...baseTools,...curated.tools],library=[...baseLibrary,...curated.library];
 let group='';
 function populateTypes(){const categories=[...new Set(tools.filter(x=>!group||x.group===group).map(x=>x.category))];$('#toolType').innerHTML='<option value="">Tüm alt başlıklar</option>'+categories.map(x=>`<option>${esc(x)}</option>`).join('')}
 if ($('#toolGrid')) {populateTypes();$('#allCount').textContent=tools.length;$('#individualCount').textContent=tools.filter(x=>x.group==='Bireyi Tanıma').length;$('#systemCount').textContent=tools.filter(x=>x.group==='Sistem Formları').length;$('#toolTotal').textContent=tools.length+' dosya'}
@@ -21,7 +23,7 @@ function renderDocuments(){const filtered=filterDocuments(documents,{query:$('#d
 $('#documentMore').addEventListener('click',()=>{documentLimit+=18;renderDocuments()});
 renderDocuments();
 }
-if ($('#toolGrid'))renderTools();if ($('#libraryGrid'))renderLibrary();
+if ($('#toolGrid'))renderTools();if ($('#libraryGrid')){for(const [id,key] of [['libraryArea','area'],['libraryLevel','level'],['libraryTopic','topic']]){const select=$('#'+id),known=new Set([...select.options].map(o=>o.value));for(const value of [...new Set(library.map(x=>x[key]).filter(Boolean))])if(!known.has(value)){const option=document.createElement('option');option.value=value;option.textContent=value;select.append(option)}}renderLibrary()}
 if ($('#toolGrid')) {
 $('.catalog-sidebar').addEventListener('click',e=>{const b=e.target.closest('[data-group]');if(!b)return;group=b.dataset.group;document.querySelectorAll('.group-button').forEach(x=>x.classList.toggle('active',x===b));populateTypes();renderTools()});
 ['toolType','toolLevel','toolLocation'].forEach(id=>$('#'+id).addEventListener('change',renderTools));$('#categoryOverview').addEventListener('click',e=>{const b=e.target.closest('[data-category-jump]');if(!b)return;const idx=[...new Set(tools.filter(x=>(!group||x.group===group)&&(!$('#toolType').value||x.category===$('#toolType').value)&&(!$('#toolLevel').value||x.level===$('#toolLevel').value)&&(!$('#toolLocation').value||x.location===$('#toolLocation').value)).map(x=>x.category))].indexOf(b.dataset.categoryJump);(()=>{const section=$('#form-category-'+idx);if(section){section.open=true;section.scrollIntoView({behavior:'smooth',block:'start'})}})()});
