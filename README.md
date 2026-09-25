@@ -36,3 +36,7 @@ Katalog girdileri **örnek içerik taslaklarıdır**. Resmî MEB formu, indirile
 ## 25 Eylül 2026 · Form haritası adımı
 
 Araç Kutusu, MEB Özel Eğitim ve Rehberlik Hizmetleri Genel Müdürlüğünün 16.05.2025 tarihli [Form Haritası](https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/16122806_formharitasi-16.05.2025-saat_09.45.pdf) içindeki seçili 12 kayıtla başlatıldı. Kartlar form kodunu ve haritadaki adı gösterir. Bu PDF bir form dizinidir; uygulama yönergesi, dosya, süre, hedef grup ve değerlendirme kuralı içerdiği varsayılmadı. Eksik bilgiler açıkça belirtilir. Kütüphane kayıtları ayrı bir "Örnek taslak" etiketiyle kalır.
+
+## Doğrulanmış form dosyaları
+
+Araç Kutusu'ndaki 12 form kartı MEB `orgm.meb.gov.tr` alanındaki doğrudan PDF bağlantısını açar. Kartta form kodu, MEB form haritası ve özgün PDF bağlantısı birlikte bulunur. PDF dosyaları projeye kopyalanmaz. Kullanıcı, uygulama ve değerlendirme koşulları için belgenin kendisini ve kurumunun güncel yönergelerini kontrol etmelidir.

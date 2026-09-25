@@ -16,6 +16,23 @@ export const tools=[
  official('B.K.A.24.a','RİBA (Ortaokul-Veli Formu)','RİBA','Ortaokul','Veli',['riba','veli']),
  official('B.K.A.25.a','RİBA (Lise-Veli Formu)','RİBA','Lise','Veli',['riba','veli'])
 ];
+// Direct files remain on MEB's domain. Match on the printed form code and title.
+const officialFiles = {
+  'B.K.A.2.c': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131422_devamsizliknedenianketi.pdf',
+  'B.G.G.7.c': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131159_ogrencigozlemkaydi.pdf',
+  'B.G.G.9.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131159_sosyometri.pdf',
+  'B.K.A.16.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/09171828_ribaortaokulogrenciformuyeni.pdf',
+  'B.K.A.17.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribaliseogrenciformuyeni.pdf',
+  'B.K.A.19.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribailkokulogretmenformuyeni.pdf',
+  'B.K.A.20.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribaortaokulogretmenformuyeni.pdf',
+  'B.K.A.21.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribaliseogretmenformuyeni.pdf',
+  'B.K.A.22.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribaokuloncesiveliformuyeni.pdf',
+  'B.K.A.23.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribailkokulveliformuyeni.pdf',
+  'B.K.A.24.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribaortaokulveliformuyeni.pdf',
+  'B.K.A.25.a': 'https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131423_ribaliseveliformuyeni.pdf',
+};
+for (const item of tools) item.file = officialFiles[item.id] ?? null;
+
 export const library=[
 {id:'veli',title:'Akran ilişkileri için veli bilgilendirme taslağı',type:'Veli metni',level:'Ortaokul',area:'Veli',topic:'Akran zorbalığı',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['7. sınıf','akran','zorbalık','veli']},
 {id:'ogretmen',title:'Sınıfta akran ilişkilerini konuşma rehberi',type:'Öğretmen metni',level:'Ortaokul',area:'Sosyal-duygusal',topic:'Akran ilişkileri',source:'PDR Kampüs örnek içerik taslağı',sourceType:'draft',tags:['7. sınıf','akran','zorbalık','öğretmen']},
