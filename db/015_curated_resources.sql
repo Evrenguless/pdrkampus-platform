@@ -28,6 +28,9 @@ alter table public.curated_resources enable row level security;
 revoke all on public.curated_resources from public,anon,authenticated;
 grant select on public.curated_resources to anon,authenticated;
 grant insert,update on public.curated_resources to authenticated;
+drop policy if exists curated_resources_read on public.curated_resources;
+drop policy if exists curated_resources_insert on public.curated_resources;
+drop policy if exists curated_resources_update on public.curated_resources;
 create policy curated_resources_read on public.curated_resources for select to anon,authenticated
  using (status='published' or public.is_community_moderator());
 create policy curated_resources_insert on public.curated_resources for insert to authenticated
