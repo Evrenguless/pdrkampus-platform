@@ -39,7 +39,7 @@
 .campus-home-intro>p{max-width:305px;margin:0 0 4px;color:#6c7c6f;font-size:14px;line-height:1.7}
 .campus-home-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;align-items:stretch}
 .campus-home-panel{position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;border:1px solid #dee8dd;border-radius:17px;overflow:hidden;background:#fff}
-.campus-home-feature{grid-row:span 2;background:#eaf1e8;border-color:#d8e6d7;padding:33px 34px 25px}
+.campus-home-feature{grid-column:1/-1;background:#eaf1e8;border-color:#d8e6d7;padding:31px 34px 25px}
 .campus-home-secondary{padding:23px 28px 17px}
 .campus-panel-heading{padding:0;border:0}
 .campus-panel-index{display:inline-flex;align-items:center;gap:10px;color:#557c5e;font-size:10px;font-weight:800;letter-spacing:.13em}
@@ -47,7 +47,7 @@
 .campus-home-feature .campus-panel-heading h3{max-width:440px;margin:22px 0 8px;font:800 clamp(26px,2.5vw,34px)/1.18 Manrope,sans-serif;letter-spacing:-.055em;color:#254733}
 .campus-home-secondary .campus-panel-heading h3{margin:12px 0 5px;font:800 20px/1.25 Manrope,sans-serif;letter-spacing:-.04em;color:#254733}
 .campus-panel-heading p{margin:0;color:#718474;font-size:12px;line-height:1.55}
-.campus-home-feature .campus-entry-list{margin-top:29px;border-top:1px solid #d4e2d4}
+.campus-home-feature .campus-entry-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:24px;border-top:1px solid #d4e2d4;border-bottom:1px solid #d4e2d4}
 .campus-home-secondary .campus-entry-list{margin-top:12px;border-top:1px solid #e9eee8}
 .campus-entry-list{flex:1;padding:0}
 .campus-entry-list>.small-note{padding:16px 0}
@@ -57,14 +57,14 @@
 .campus-entry:hover,.campus-entry:focus-visible{background:transparent;color:#1d754b;padding-left:7px;outline:none}
 .campus-entry-meta{font-size:10px;color:#698572}
 .campus-entry strong{font:700 13px/1.4 Manrope,sans-serif}
-.campus-home-feature .campus-entry strong{font-size:15px}
+.campus-home-feature .campus-entry{padding:19px 22px 19px 0;border-bottom:0;border-right:1px solid #d4e2d4;margin-right:20px}.campus-home-feature .campus-entry:last-child{border-right:0;margin-right:0}.campus-home-feature .campus-entry strong{font-size:15px}
 .campus-entry-go{font-size:17px;color:#4c8158}
 .campus-panel-link{display:flex;align-items:center;justify-content:space-between;gap:12px;align-self:flex-start;min-width:190px;margin-top:17px;padding:12px 15px;border:1px solid #b9cfb9;border-radius:9px;color:#275e3e;font-size:12px;font-weight:800;transition:background .15s,transform .15s}
 .campus-home-feature .campus-panel-link{background:#28553b;border-color:#28553b;color:#fff}
 .campus-panel-link:hover,.campus-panel-link:focus-visible{background:#deeadb;transform:translateY(-2px);text-decoration:none;outline:none}
 .campus-home-feature .campus-panel-link:hover,.campus-home-feature .campus-panel-link:focus-visible{background:#37684a}
 .campus-panel-link:focus-visible{outline:2px solid #528568;outline-offset:3px}
-@media(max-width:960px){.home-stage{padding:43px 40px 47px}.home-stage h1{font-size:clamp(42px,5.5vw,58px)}.campus-home-intro{align-items:start}.campus-home-grid{grid-template-columns:1fr 1fr}.campus-home-feature{grid-column:1/-1;grid-row:auto}.campus-home-secondary{padding:23px}}
+@media(max-width:960px){.home-stage{padding:43px 40px 47px}.home-stage h1{font-size:clamp(42px,5.5vw,58px)}.campus-home-intro{align-items:start}.campus-home-grid{grid-template-columns:1fr 1fr}.campus-home-feature{grid-column:1/-1}.campus-home-secondary{padding:23px}}
 @media(max-width:700px){
  .home-hero{padding:18px 14px 37px}
  .home-stage{padding:34px 23px 32px;border-radius:20px}
@@ -95,7 +95,9 @@
  .campus-home-grid{grid-template-columns:1fr;gap:13px}
  .campus-home-feature,.campus-home-secondary{grid-column:auto;padding:24px 21px 20px}
  .campus-home-feature .campus-panel-heading h3{font-size:27px;margin-top:16px}
- .campus-home-feature .campus-entry-list{margin-top:19px}
+ .campus-home-feature .campus-entry-list{display:block;margin-top:19px}
+ .campus-home-feature .campus-entry{border-right:0;border-bottom:1px solid #d4e2d4;margin-right:0;padding:14px 0}
+ .campus-home-feature .campus-entry:last-child{border-bottom:0}
  .campus-home-secondary .campus-entry-list{margin-top:14px}
  .campus-panel-link{margin-top:14px}
 
