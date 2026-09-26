@@ -5,7 +5,7 @@ if(form&&authConfigured&&window.supabase){
  const client=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const groups=[
-  {type:'document',name:'Meslektaş belgeleri',source:'Üye paylaşımı · incelemeden geçti',url:id=>`belgeler.html${id?'#belge-'+encodeURIComponent(id):'#meslektas'}`},
+  {type:'document',name:'Üye belgeleri',source:'Üye paylaşımı · incelemeden geçti',url:id=>`kutuphane.html${id?'#belge-'+encodeURIComponent(id):'?kaynak=member'}`},
   {type:'question',name:'Meslektaşıma Sor',source:'Meslektaş deneyimi',url:id=>`meslektasima-sor.html${id?'#soru-'+encodeURIComponent(id):''}`},
   {type:'post',name:'Topluluk gönderileri',source:'Meslektaş paylaşımı',url:id=>`topluluk.html${id?'#gonderi-'+encodeURIComponent(id):''}`}
  ];
