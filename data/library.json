@@ -2954,5 +2954,99 @@
     "file": "https://gaziosmanpasabilsem.meb.k12.tr/meb_iys_dosyalar/34/11/769504/dosyalar/2023_04/27213902_OZ_DUZENLEME.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "susehri-aile-ici-iletisim-pano-2025",
+    "title": "Aile İçi İletişim · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Aile içi iletişim",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_11/04115612_aileiciiletisimmodulerpanokopyasi1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-ofke-yonetimi-pano-2025",
+    "title": "Öfke Yönetimi · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Öfke yönetimi",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_11/04105157_ofkeyonetimimodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-cocuk-haklari-pano-2025",
+    "title": "Çocuk Hakları · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Çocuk hakları",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_09/24104614_cocukhaklarimodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-ergenlik-pano-2025",
+    "title": "Ergenlik · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Ergenlik",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_09/24104536_ergenlikmodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-ozdenetim-okuloncesi-ilkokul-2025",
+    "title": "Öz Denetim Geliştirme · Modüler Pano · Okul Öncesi ve İlkokul",
+    "type": "Pano materyali",
+    "level": "Okul öncesi / İlkokul",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Öz denetim",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_03/10101203_ozdenetimokuloncesiilkokulmodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-ozdenetim-ortaokul-lise-2025",
+    "title": "Öz Denetim Geliştirme · Modüler Pano · Ortaokul ve Lise",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Öz denetim",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_03/10101045_ozdenetimgelistirme.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
