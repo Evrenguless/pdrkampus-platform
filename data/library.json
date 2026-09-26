@@ -3714,5 +3714,70 @@
     "file": "https://serikram.meb.k12.tr/meb_iys_dosyalar/07/13/761015/dosyalar/2022_11/06142415_20140845_BYREYSELLEYTYRYLMYY_EYYTYM_PROGRAMI_TUM_OYRETMENLER_YCYN_YOL_HARITASI.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "ozel-egitim-tanilama-ogretmen-2026",
+    "title": "Özel Eğitim Tanılama · Öğretmen Bilgilendirme",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Eğitsel değerlendirme ve tanılama",
+    "source": "Aktaş Ortaokulu / MEB",
+    "sourcePage": "https://aktasoo.meb.k12.tr/",
+    "file": "https://aktasoo.meb.k12.tr/meb_iys_dosyalar/31/12/726133/dosyalar/2026_03/69a7d52112f3b578173312_%C3%96ZEL_E%C4%9E%C4%B0T%C4%B0M_%C3%96%C4%9ERETMEN_B%C4%B0LG%C4%B0LEND%C4%B0RME_1_PDF.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "73-soruda-ozel-egitim-2024",
+    "title": "73 Soruda Özel Eğitim",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Özel eğitim süreçleri",
+    "source": "Silopi Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://silopiram.meb.k12.tr/",
+    "file": "https://silopiram.meb.k12.tr/meb_iys_dosyalar/73/06/769139/dosyalar/2024_01/10091218_73sorudaozelegitim.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "evde-egitim-kilavuzu",
+    "title": "Evde Eğitim Hizmeti · Uygulama Kılavuzu",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Evde eğitim",
+    "source": "MEB okul yayını",
+    "sourcePage": "https://sehrinuhio.meb.k12.tr/",
+    "file": "https://sehrinuhio.meb.k12.tr/meb_iys_dosyalar/73/01/715619/dosyalar/2022_04/21090204_31155907_Evde_EYitim_KYlavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "bep-dosyasi-ornek-format-2024",
+    "title": "Bireyselleştirilmiş Eğitim Programı (BEP) Dosyası · Örnek Format",
+    "type": "BEP dosyası",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "BEP",
+    "source": "Mercan Ortaokulu / MEB",
+    "sourcePage": "https://mercanoo.meb.k12.tr/",
+    "file": "https://mercanoo.meb.k12.tr/meb_iys_dosyalar/03/10/710830/dosyalar/2024_09/24095038_10154336_bepdosyasi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "turkiyede-ozel-egitim-hizmetleri",
+    "title": "Türkiye'de Özel Eğitim Hizmetleri",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Özel eğitim hizmetleri",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/22170504_13143029_turkyyeyde_ozel_eyytym_hyzmetlery.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
