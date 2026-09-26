@@ -1,0 +1,153 @@
+{
+  "source_pages": [
+    "https://orgm.meb.gov.tr/www/sosyal-duygusal-beceriler/icerik/3121",
+    "https://orgm.meb.gov.tr/www/akran-zorbaligi/icerik/3132",
+    "https://orgm.meb.gov.tr/www/sinifrehberliketkinlikleri/icerik/1952",
+    "https://orgm.meb.gov.tr/www/siber-zorbalik/icerik/2086",
+    "https://orgm.meb.gov.tr/www/mesleki-rehberlik-programlari/icerik/3138",
+    "https://orgm.meb.gov.tr/www/brosurler/icerik/1364"
+  ],
+  "before": 90,
+  "added": 85,
+  "after": 175,
+  "verified_bytes": 1127241853,
+  "rejected": [
+    {
+      "id": "sinif-etkinlikleri-cilt-0",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2021_09/03105548_Okul_Oncesi_SYnYf_Rehberlik_Etkinlikleriiiii.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "sinif-etkinlikleri-cilt-2",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2021_09/03012045_ORTAOKUL_SINIF_REHBERLYK_ETKYNLYKLERYYYY.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "sinif-etkinlikleri-cilt-3",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2021_09/03012233_ORTAOYRETYM_SINIF_REHBERLYK_ETKYNLYKLERYYYY.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "sinif-etkinlikleri-cilt-1",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2021_09/03011848_YLKOKUL_SINIF_REHBERLYK_ETKYNLYKLERYYYY.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "siber-2022-08",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2022_04/27134838_siber_zorbalYk-ilkokul_veli.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "siber-2022-05",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2022_04/27134734_siber_zorbalYk-Ylkokul_oYretmen.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "siber-2022-06",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2022_04/27134927_siber_zorbalYk-ortaokul_oYretmenleri.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "siber-2022-09",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2022_04/27135020_siber_zorbalYk-ortaokul_veli.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "brosur-112",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2019_12/26113055_SYBER_ZORBALIK.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    },
+    {
+      "id": "brosur-113",
+      "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2019_12/26113028_GUVENLY_YNTERNET_KULLANIMI.pdf",
+      "reason": "HTTP Error 404: Sayfa BulunamadÄ±"
+    }
+  ],
+  "added_ids": [
+    "akran-29",
+    "akran-30",
+    "akran-34",
+    "akran-35",
+    "akran-39",
+    "akran-40",
+    "akran-44",
+    "akran-45",
+    "akran-48",
+    "akran-52",
+    "akran-53",
+    "akran-55",
+    "akran-veli-bulteni-11",
+    "akran-veli-bulteni-6",
+    "sdb-547",
+    "sdb-548",
+    "sdb-549",
+    "sdb-550",
+    "sdb-551",
+    "sdb-552",
+    "sdb-553",
+    "sdb-554",
+    "sdb-555",
+    "sdb-556",
+    "sdb-557",
+    "sdb-558",
+    "sdb-559",
+    "sdb-560",
+    "sdb-561",
+    "sdb-562",
+    "sdb-563",
+    "sdb-564",
+    "sdb-565",
+    "sdb-566",
+    "sdb-567",
+    "sdb-568",
+    "sdb-569",
+    "sdb-570",
+    "sdb-571",
+    "sdb-572",
+    "sdb-573",
+    "sdb-574",
+    "sdb-575",
+    "sdb-576",
+    "sdb-577",
+    "sdb-578",
+    "sdb-579",
+    "sdb-580",
+    "sdb-581",
+    "sdb-583",
+    "sdb-584",
+    "sdb-585",
+    "sdb-586",
+    "sdb-587",
+    "sdb-588",
+    "sdb-589",
+    "sdb-590",
+    "sdb-591",
+    "sdb-592",
+    "sdb-593",
+    "sdb-594",
+    "sdb-595",
+    "sdb-596",
+    "sdb-597",
+    "sdb-598",
+    "sdb-599",
+    "sdb-600",
+    "sdb-601",
+    "sdb-602",
+    "sdb-603",
+    "kariyer-90",
+    "kariyer-91",
+    "kariyer-92",
+    "sdb-582",
+    "siber-2022-01",
+    "siber-2022-02",
+    "siber-2022-03",
+    "siber-2022-04",
+    "siber-2022-07",
+    "siber-2022-10",
+    "siber-2022-11",
+    "siber-2022-12",
+    "siber-2022-13",
+    "siber-2022-14",
+    "siber-2022-15"
+  ]
+}

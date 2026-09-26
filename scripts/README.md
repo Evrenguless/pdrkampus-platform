@@ -7,3 +7,9 @@
 ## Kaynak envanteri toplu hazırlama
 
 `python scripts/prepare_inventory.py envanter.xlsx --out-dir inventory-review` komutu, Excel'deki kaynakları `review-queue.csv`, `source-pages.csv` ve `summary.json` dosyalarına ayırır. Ayrıntılar için `docs/envanter-toplu-aktarim.md` dosyasına bakın. Çıktı onaysız dosyaları canlı kataloğa eklemez.
+
+## Doğrudan MEB dosyası aktarımı
+
+`python scripts/import_official_batches.py` komutu, gözden geçirilmiş envanter satırlarını MEB ÖRGM'nin sosyal-duygusal beceriler, akran zorbalığı, siber zorbalık ve mesleki rehberlik sayfalarındaki ayrı PDF bağlantılarıyla eşleştirir. Çalıştırmak için Python `lxml` paketi gerekir. Kaynak sayfasındaki dosya sayısı veya beklenen dosya adı değişmişse işlem durur; her yeni dosyada HTTP 200, PDF türü ve sıfırdan büyük boyut aranır. Aynı dosya ikinci kez eklenmez. Dosya kopyası depolanmaz; kütüphane kartı özgün PDF'yi sitenin görüntüleyicisinde açar.
+
+`docs/verified-batch-2026-09-26.json` son aktarımın kayıt sayısını ve çalışmayan bağlantılarını listeler. Eski sınıf rehberliği seti bağlantıları 404 verdiği için sınıf başına sahte dosya kartı oluşturulmadı. Yeni kaynak sayfaları önce başlık/dosya eşleşmesi doğrulanıp aynı akışa eklenmelidir.
