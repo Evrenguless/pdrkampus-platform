@@ -11557,5 +11557,74 @@
     "file": "https://selcukmesem.meb.k12.tr/meb_iys_dosyalar/35/20/761205/dosyalar/2026_01/69578774b91ad155388186_2026_SEL%C3%87UK_MESEM_MESLEKLER_VE_%C4%B0Y%C4%B0_OLU%C5%9E_TAKV%C4%B0M%C4%B0.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "bursa-bilsem-ozel-yetenekliler-mukemmeliyetcilik-2024",
+    "title": "Özel Yetenekli Öğrencilerde Mükemmeliyetçilik · Veli Bülteni",
+    "type": "Veli bülteni",
+    "level": "BİLSEM / Özel Yetenek",
+    "area": "Veli",
+    "topic": "Özel yetenek ve mükemmeliyetçilik",
+    "source": "BTSO Kamil Tolon Bilim ve Sanat Merkezi",
+    "sourcePage": "https://bursabilsem.meb.k12.tr/icerikler/velibultenimizin3sayisicikti_14539521.html",
+    "file": "https://bursabilsem.meb.k12.tr/meb_iys_dosyalar/16/15/965473/dosyalar/2024_01/20130701_velibulten3mukemmeliyetcilik.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "tegm-ozduzenleme-dikkat-aile-bulteni-mart-2026",
+    "title": "Öz Düzenleme ve Dikkat Becerilerinin Desteklenmesi · Aile Eğitim Bülteni · Mart 2026",
+    "type": "Aile bülteni",
+    "level": "Okul öncesi",
+    "area": "Veli",
+    "topic": "Öz düzenleme ve dikkat becerileri",
+    "source": "MEB Temel Eğitim Genel Müdürlüğü",
+    "sourcePage": "https://nezahaterenanaokulu.meb.k12.tr/icerikler/martayiaileegitimbulteni_17265019.html",
+    "file": "https://nezahaterenanaokulu.meb.k12.tr/meb_iys_dosyalar/34/09/766003/dosyalar/2026_03/69b28d85ed3a5829248250_Mart_Ayi_Aile_Egitim_Bulteni.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "bahcelievler-erteleme-tukenmislik-bulteni",
+    "title": "Erteleme ve Tükenmişlik · Psikoeğitim Bülteni",
+    "type": "Bülten",
+    "level": "Lise / Yetişkin",
+    "area": "Psikoeğitim",
+    "topic": "Akademik erteleme ve tükenmişlik",
+    "source": "Bahçelievler Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://bahcelievlerram.meb.k12.tr/",
+    "file": "https://bahcelievlerram.meb.k12.tr/meb_iys_dosyalar/34/28/965180/dosyalar/2024_10/01224136_bultenler_tukenmislik_erteleme.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "yuksekova-sosyal-kaygi-egitim-kultur-dergisi",
+    "title": "Sosyal Kaygı · Eğitim ve Kültür Dergisi İçeriği",
+    "type": "E-dergi",
+    "level": "Ortaokul / Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Sosyal kaygı ve sosyal fobi",
+    "source": "Yüksekova Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://yuksekovaram.meb.k12.tr/",
+    "file": "https://yuksekovaram.meb.k12.tr/meb_iys_dosyalar/30/06/972239/dosyalar/2021_03/23121443_Dergi_YRAM-Son.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "kadikoy-kekemelik-sosyal-kaygi-dergi-2022",
+    "title": "Kekemelik, Sosyal Kaygı ve Okul Yaşantısı · RAM Dergisi",
+    "type": "E-dergi",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Kekemelik, sosyal kaygı ve okul katılımı",
+    "source": "Kadıköy Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kadikoyram.meb.k12.tr/",
+    "file": "https://kadikoyram.meb.k12.tr/meb_iys_dosyalar/34/12/161110/dosyalar/2022_01/10160745_KADIKOY-RAM-DERGI-Ocak-2022-Sayi-10.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
