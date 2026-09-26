@@ -222,3 +222,43 @@
  .viewer-dialog .viewer-actions{padding:10px 14px}
  .viewer-dialog .viewer-actions a{min-height:44px;display:inline-flex;align-items:center}
 }
+
+/* Compact contribution and moderation work on narrow screens. */
+.profile-page .review-list{grid-template-columns:1fr}
+.profile-page details.moderation-entry{display:block;padding:0;overflow:hidden}
+.profile-page details.moderation-entry>summary{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto auto;gap:3px 11px;align-items:center;list-style:none;padding:14px 17px;cursor:pointer}
+.profile-page details.moderation-entry>summary::-webkit-details-marker{display:none}
+.profile-page details.moderation-entry>summary:after{content:"⌄";grid-column:3;grid-row:1/3;color:#66836d;font-size:18px}
+.profile-page details.moderation-entry[open]>summary:after{transform:rotate(180deg)}
+.profile-page details.moderation-entry[open]>summary{background:#f6faf5;border-bottom:1px solid #e4ece3}
+.profile-page details.moderation-entry>summary strong{grid-column:2;grid-row:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+.profile-page details.moderation-entry>summary small{grid-column:2;grid-row:2;margin:0;font-size:11px}
+.moderation-state{grid-column:1;grid-row:1/3;display:inline-block;border-radius:99px;background:#e6f2e7;color:#327049;padding:6px 9px;font-size:10px;font-weight:800;white-space:nowrap}
+.moderation-state.archived{background:#f3eae6;color:#9b554b}
+.profile-page details.moderation-entry .moderation-body{padding:13px 17px 18px}
+.profile-page details.moderation-entry .moderation-body label{margin:10px 0}
+.profile-page details.moderation-entry .moderation-body input,.profile-page details.moderation-entry .moderation-body select,.profile-page details.moderation-entry .moderation-body textarea{max-width:100%}
+.profile-page details.moderation-entry .review-actions{margin-top:15px}
+.resource-new-link{color:#346d48;font-size:12px;font-weight:800}
+@media(max-width:700px){
+ .profile-hero{padding:24px 21px;border-radius:14px}
+ .profile-hero-row{gap:14px;align-items:flex-start}
+ .profile-hero-row>div:last-child{min-width:0}
+ .profile-hero h1{overflow-wrap:anywhere;font-size:clamp(25px,7vw,36px)}
+ .profile-avatar{width:54px;height:54px;border-radius:14px;font-size:19px}
+ .profile-quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .profile-quick a{min-width:0;min-height:46px;padding:11px;overflow-wrap:anywhere;display:flex;align-items:center;font-size:12px}
+ .profile-page details.review-card>summary{grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto auto;gap:3px 9px}
+ .profile-page details.review-card>summary strong{grid-column:2;grid-row:1;white-space:normal;overflow-wrap:anywhere}
+ .profile-page details.review-card>summary small{grid-column:2;grid-row:2;white-space:normal}
+ .profile-page details.review-card>summary:after{grid-column:3;grid-row:1/3}
+ .document-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .document-filters label{min-width:0}
+ .document-filters label:first-child{grid-column:1/-1}
+ .upload-panel .upload-steps{margin-left:12px;margin-right:12px}
+ .upload-steps li{overflow-wrap:anywhere}
+ .resource-admin-layout>section:last-child{order:-1}
+ .resource-admin .workspace-panel{min-width:0}
+ .resource-row strong,.resource-row small{overflow-wrap:anywhere}
+ .review-actions button,.resource-row-actions button{min-height:44px}
+}
