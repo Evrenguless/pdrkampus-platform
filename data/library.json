@@ -2727,5 +2727,232 @@
     "file": "https://www.aile.gov.tr/media/2499/cocuk-bakim-kuruluslarinda-calisan-personele-yonelik-istismarla-mucadele-rehber-kitapcigi.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "susehri-yks-moduler-pano-2026",
+    "title": "YKS 2026 · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Lise",
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "YKS ve tercih",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_07/6a60bbd91c73a552407465_YKS_TERC%C4%B0H%C4%B0_2026_Mod%C3%BCler_Panosu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-universite-haritasi-2026",
+    "title": "Türkiye'nin Üniversite Haritası · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Lise",
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Üniversite tercihi",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_07/6a45fc9385b26026246485_T%C3%BCrkiyenin_%C3%9Cniversite_Haritas%C4%B1_Mod%C3%BCler_Pano_Par%C3%A7al%C4%B1%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-lgs-moduler-pano-2026",
+    "title": "LGS 2026 · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul",
+    "area": "Eğitsel Rehberlik",
+    "topic": "LGS",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_06/6a269eaa27304822718603_LGS_2026_Mod%C3%BCler_Pano-Par%C3%A7al%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-guvenli-internet-pano-2026",
+    "title": "Güvenli İnternet Kullanımı · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Dijital Yaşam",
+    "topic": "Güvenli internet",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_04/69ce3d32a6f4b658199893_G%C3%BCvenli_internet_kullan%C4%B1m%C4%B1_mod%C3%BCler_pano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-zaman-yonetimi-pano-2026",
+    "title": "Zaman Yönetimi · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Zaman yönetimi",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_03/69a586035053c238051610_zaman_y%C3%B6netimi_mod%C3%BCler_pano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-not-tutma-pano-2026",
+    "title": "Etkili Not Tutma Teknikleri · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Not tutma teknikleri",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_02/698475cdae70b109712843_Etkili_Not_Tutma_Teknikleri_Moduler_Pano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-dikkat-pano-2026",
+    "title": "Dikkat Geliştirme Rehberi · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Eğitsel Rehberlik",
+    "topic": "Dikkat ve odaklanma",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2026_01/695f7230701fa617819097_dikkat_geli%C5%9Ftirme_rehberi_mod%C3%BCler_pano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "susehri-mesleki-ilgi-yetenek-pano-2025",
+    "title": "Mesleki İlgi-Yetenek-Değer-Kişilik İlişkisi · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek seçimi",
+    "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://susehriram.meb.k12.tr/dosyalar/listele_dosya_2522026_Mod%C3%BCler%20Panolar",
+    "file": "https://susehriram.meb.k12.tr/meb_iys_dosyalar/58/09/964692/dosyalar/2025_12/02143734_meslekiilgiyetenekkisilikozelligi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kiziltepe-sinav-kaygisi-pano-2025",
+    "title": "Sınav Kaygısı · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Sınav kaygısı",
+    "source": "Kızıltepe Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kizilteperam.meb.k12.tr/dosyalar/listele_dosya_679596_Pano%20%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
+    "file": "https://kizilteperam.meb.k12.tr/meb_iys_dosyalar/47/07/967398/dosyalar/2025_04/10140525_sinavkaygisimodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kiziltepe-farkliliklara-saygi-pano-2025",
+    "title": "Farklılıklarımıza Saygı · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Farklılıklara saygı",
+    "source": "Kızıltepe Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kizilteperam.meb.k12.tr/dosyalar/listele_dosya_679596_Pano%20%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
+    "file": "https://kizilteperam.meb.k12.tr/meb_iys_dosyalar/47/07/967398/dosyalar/2025_02/04153340_farkliliklarimizmodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kiziltepe-basari-pusulasi-pano-2024",
+    "title": "Başarı Pusulası · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Akademik başarı",
+    "source": "Kızıltepe Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kizilteperam.meb.k12.tr/dosyalar/listele_dosya_679596_Pano%20%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
+    "file": "https://kizilteperam.meb.k12.tr/meb_iys_dosyalar/47/07/967398/dosyalar/2024_12/10095909_basaripusulasimodulerpano2.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kiziltepe-verimli-ders-pano-2024",
+    "title": "Verimli Ders Çalışma Teknikleri · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Verimli ders çalışma",
+    "source": "Kızıltepe Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kizilteperam.meb.k12.tr/dosyalar/listele_dosya_679596_Pano%20%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
+    "file": "https://kizilteperam.meb.k12.tr/meb_iys_dosyalar/47/07/967398/dosyalar/2024_11/05082934_verimliderscalismamodulerpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kiziltepe-sdb-pano-2024",
+    "title": "Sosyal Duygusal Becerilerim · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Sosyal-duygusal beceriler",
+    "source": "Kızıltepe Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kizilteperam.meb.k12.tr/dosyalar/listele_dosya_679596_Pano%20%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
+    "file": "https://kizilteperam.meb.k12.tr/meb_iys_dosyalar/47/07/967398/dosyalar/2024_10/04145529_sosyalduygusalbecerilerimpano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "rehber-dinar-2025",
+    "title": "Rehber Dinar · Kariyer ve Tercih Rehberi",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Lise ve üniversite tercihi",
+    "source": "Dinar Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://dinarram.meb.k12.tr/",
+    "file": "https://dinarram.meb.k12.tr/meb_iys_dosyalar/03/07/767171/dosyalar/2025_05/23094310_rehberdinar.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "oz-duzenleme-psikoegitim-meb",
+    "title": "Öz Düzenleme · Psikoeğitim Programı",
+    "type": "Program",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Öz düzenleme",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri",
+    "sourcePage": "https://gaziosmanpasabilsem.meb.k12.tr/",
+    "file": "https://gaziosmanpasabilsem.meb.k12.tr/meb_iys_dosyalar/34/11/769504/dosyalar/2023_04/27213902_OZ_DUZENLEME.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
