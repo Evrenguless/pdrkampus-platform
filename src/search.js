@@ -115,7 +115,13 @@ export function parseQuery(query){
   else if(q.includes('ilkokul'))level='İlkokul';
   else if(q.includes('lise'))level='Lise';
  }
- const topic=topics.find(x=>x.terms.some(term=>q.includes(normalize(term))))||null;
+ const topicMatches=[];
+ for(const candidate of topics)for(const term of candidate.terms){
+  const normalizedTerm=normalize(term);
+  if(q.includes(normalizedTerm))topicMatches.push({topic:candidate,term:normalizedTerm});
+ }
+ topicMatches.sort((a,b)=>b.term.length-a.term.length);
+ const topic=topicMatches[0]?.topic||null;
  const words=q
   .replace(/\b(?:1[0-2]|[1-9])\.?\s*sinif(?:ta|i|in)?\b/g,' ')
   .split(/[^a-z0-9]+/)
@@ -142,7 +148,7 @@ export function searchCatalogs(query,forms,resources){
 
   if(parsed.topic&&intent.direct.length){
    relation='direct';
-   score=30+intent.titleDirect.length*7+titleHits*3+(kind==='resource'&&normalize(item.type).includes('program')?5:0);
+   score=30+(intent.titleDirect.length?7:0)+titleHits*3+(kind==='resource'&&normalize(item.type).includes('program')?5:0);
    reason=parsed.topic.name+' konusunda kaynak';
   }else if(parsed.topic&&intent.related.length){
    relation='related';
