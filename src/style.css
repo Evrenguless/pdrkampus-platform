@@ -56,3 +56,56 @@
 
 /* Library search, including narrow screens */
 .library-searchbar{display:flex;align-items:center;gap:12px;margin:0 0 22px}.library-searchbar label{font-size:13px;font-weight:800;white-space:nowrap;color:#35533e}.library-searchbar input{width:min(520px,100%);min-width:0;background:#fff;border:1px solid #cfded0;border-radius:9px;padding:13px 15px;color:#24342e}.library-searchbar input:focus-visible{outline:2px solid #4d8160;outline-offset:2px}.library-searchbar span{margin-left:auto;font-size:12px;color:#617668;white-space:nowrap}@media(max-width:700px){.library-band .section-heading{display:block}.library-band .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.library-band .filters label,.library-band .filters select{min-width:0;width:100%}.library-searchbar{display:grid;grid-template-columns:1fr auto;gap:8px}.library-searchbar label{grid-column:1/-1}.library-searchbar input{width:100%}.library-searchbar span{margin:0}.library-band .card-grid{grid-template-columns:1fr}}@media(max-width:380px){.library-band .filters{grid-template-columns:1fr}}
+
+/* Community and review hierarchy */
+.questions-page .community-hero{margin-bottom:22px}
+.questions-page .community-hero h1{margin:8px 0 10px}
+.questions-page .community-hero .lead{font-size:16px;margin:0 0 12px;line-height:1.6}
+.questions-page .community-hero .small-note{max-width:760px;line-height:1.5}
+.questions-page .compose-panel{display:block;padding:0!important;margin:20px 0 32px;border:1px solid #d7e3d7;background:#fff;overflow:hidden}
+.questions-page .compose-panel[hidden]{display:none!important}
+.compose-panel>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 23px}
+.compose-panel>summary::-webkit-details-marker{display:none}
+.compose-panel>summary span:first-child{display:grid;gap:5px}
+.compose-panel>summary small{font-size:10px;letter-spacing:.12em;font-weight:800;color:#6b9275}
+.compose-panel>summary strong{font:800 19px/1.3 Manrope,sans-serif;color:#263f32}
+.compose-panel .compose-open{font-size:12px;font-weight:800;color:#34704b;white-space:nowrap}
+.compose-panel[open]>summary{border-bottom:1px solid #e5ece4;background:#f8faf6}
+.compose-panel .compose-body{padding:22px 24px 26px}
+.compose-panel .compose-body>p{font-size:12px;color:#69796d;margin:0 0 20px}
+.compose-panel form{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px!important}
+.compose-panel form label:first-child,.compose-panel form label:has(textarea),.compose-panel form button{grid-column:1/-1}
+.compose-panel form label{min-width:0}
+.compose-panel input:focus-visible,.compose-panel textarea:focus-visible,.compose-panel select:focus-visible,.review-toolbar input:focus-visible,.review-toolbar select:focus-visible{outline:2px solid #53916a;outline-offset:2px}
+.questions-page .question-list{gap:16px}
+.questions-page .question-card{border-color:#dce7dc;box-shadow:0 5px 18px #24453208}
+.questions-page .question-card>.document-card-meta{color:#6b836f}
+.questions-page .question-card>h2{color:#213a2b;font-size:clamp(19px,2vw,24px);margin-top:11px;margin-bottom:9px}
+.questions-page .question-card>.question-copy{font-size:14px;color:#394d40;line-height:1.65;margin-top:0;margin-bottom:14px}
+.questions-page .question-card>.question-author{font-size:11px;color:#7c8c7e}
+.questions-page .thread{border-top:1px solid #e7ede6;background:#f8faf7}
+.questions-page .thread>summary{padding-top:12px;padding-bottom:12px;font-size:12px;font-weight:800;color:#466b50}
+.questions-page .thread[open]>summary{border-bottom:1px solid #e5ebe4}
+.questions-page .question-answers{margin:0;padding-top:9px;padding-bottom:13px;gap:0}
+.questions-page .answer-card{padding:12px 0 10px 14px;margin:0 0 7px 8px;border:0;border-left:2px solid #c6d8c9;border-radius:0;background:transparent}
+.questions-page .answer-card p{font-size:13px;line-height:1.55;color:#4d6252}
+.questions-page .answer-footer{font-size:11px}
+.profile-page .review-toolbar{display:flex;align-items:end;gap:12px;margin:14px 0 18px}
+.profile-page .review-toolbar label{display:grid;gap:6px;font-size:11px;font-weight:800;color:#617668}
+.profile-page .review-toolbar input,.profile-page .review-toolbar select{border:1px solid #d3e0d3;border-radius:8px;background:#fff;padding:10px 12px;font:inherit;color:#2c4835}
+.profile-page .review-toolbar input{min-width:250px}
+.profile-page .review-toolbar span{margin-left:auto;color:#708274;font-size:12px;white-space:nowrap}
+.profile-page .review-list{grid-template-columns:1fr;gap:8px}
+.profile-page .review-card{display:block;padding:0;border-radius:10px;overflow:hidden}
+.profile-page .review-card>summary{cursor:pointer;display:grid;grid-template-columns:105px minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px 17px;list-style:none}
+.profile-page .review-card>summary::-webkit-details-marker{display:none}
+.profile-page .review-card>summary strong{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-page .review-card>summary small{margin:0;font-size:11px;white-space:nowrap}
+.profile-page .review-card[open]>summary{background:#f7faf6;border-bottom:1px solid #e6ede5}
+.profile-page .review-card>button,.profile-page .review-card>label,.profile-page .review-card>.review-actions{margin-left:17px;margin-right:17px}
+.profile-page .review-card>.review-actions{margin-bottom:18px}
+.profile-page .review-card>label{max-width:760px}
+.profile-page .review-card>button{margin-top:10px}
+.profile-page .review-empty{background:white;padding:20px;border-radius:10px;color:#647769}
+@media(max-width:700px){.compose-panel>summary{padding:16px}.compose-panel .compose-open{font-size:11px}.compose-panel .compose-body{padding:17px}.compose-panel form{grid-template-columns:1fr}.profile-page .review-toolbar{display:grid;grid-template-columns:1fr 1fr}.profile-page .review-toolbar input{min-width:0;width:100%}.profile-page .review-toolbar span{margin:0}.profile-page .review-card>summary{grid-template-columns:1fr;gap:4px}.profile-page .review-card>summary strong{white-space:normal}.profile-page .review-card>summary small{white-space:normal}}
+@media(max-width:380px){.profile-page .review-toolbar{grid-template-columns:1fr}.compose-panel>summary{align-items:flex-start;flex-direction:column;gap:8px}}
