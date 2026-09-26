@@ -209,3 +209,16 @@
 @media(max-width:960px){.campus-home-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.campus-home-panel:last-child{grid-column:1/-1;min-height:0}}
 @media(max-width:700px){.home-hero{padding:69px 22px 64px}.home-hero h1{font-size:clamp(37px,9vw,49px)}.home-hero .lead{font-size:14px;margin:21px auto 27px}.home-hero .quick{gap:7px}.home-hero .quick>span{width:100%}.campus-home{padding-top:55px;padding-bottom:70px}.campus-home-grid{grid-template-columns:1fr}.campus-home-panel,.campus-home-panel:last-child{grid-column:auto;min-height:0}.campus-entry-list{min-height:92px}}
 @media(prefers-reduced-motion:reduce){.home-hero,.campus-entry{scroll-behavior:auto}}
+
+/* Keep the PDF preview usable when mobile headings or actions wrap. */
+.viewer-dialog[open]{display:flex;flex-direction:column}
+.viewer-dialog .viewer-head,.viewer-dialog .viewer-actions{flex:none}
+.viewer-dialog .viewer-head>div{min-width:0}
+.viewer-dialog .viewer-head h2{overflow-wrap:anywhere}
+.viewer-dialog #viewerBody{height:auto;min-height:0;flex:1}
+@media(max-width:700px){
+ .viewer-dialog{width:calc(100% - 12px);max-width:none;height:calc(100dvh - 12px);max-height:calc(100dvh - 12px)}
+ .viewer-dialog .viewer-head{padding:12px 14px;gap:10px}
+ .viewer-dialog .viewer-actions{padding:10px 14px}
+ .viewer-dialog .viewer-actions a{min-height:44px;display:inline-flex;align-items:center}
+}
