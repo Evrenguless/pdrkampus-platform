@@ -5,7 +5,7 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>String(s??'').toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i');
 async function loadCatalog(path){return fetch(new URL(path,import.meta.url)).then(r=>{if(!r.ok)throw Error('Katalog yüklenemedi');return r.json()}).catch(()=>[])}
-const [baseTools,baseLibrary,curated]=await Promise.all([loadCatalog('../data/forms.json?v=20260926-5'),loadCatalog('../data/library.json?v=20260926-40'),getCuratedResources()]);
+const [baseTools,baseLibrary,curated]=await Promise.all([loadCatalog('../data/forms.json?v=20260926-5'),loadCatalog('../data/library.json?v=20260926-41'),getCuratedResources()]);
 const tools=[...baseTools,...curated.tools],library=[...baseLibrary,...curated.library];
 if($('#homeResources')){
  const preferred=['esenlik-2026-01','psikososyal-2025-16','psikososyal-2025-22'].map(id=>library.find(x=>x.id===id)).filter(Boolean);
