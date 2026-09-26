@@ -131,3 +131,46 @@
 }
 @media(max-width:700px){.header{padding-left:20px;padding-right:20px}.mobile-menu:not([hidden]){top:62px;right:10px;width:calc(100vw - 20px);max-height:60vh;padding:15px}.mobile-menu-group>div{gap:3px 6px}}
 @media(max-width:380px){.mobile-menu-group>div{grid-template-columns:1fr}.mobile-menu:not([hidden]){max-height:70vh}}
+
+/* Document contribution and editorial controls */
+.community-layout{grid-template-columns:minmax(0,1fr) minmax(340px,390px);gap:24px}
+.upload-panel{padding:0;border-radius:14px;overflow:hidden;box-shadow:0 10px 32px #1a3b220c;scroll-margin-top:24px}
+.upload-intro{padding:24px 24px 15px;background:#eef5ec;border-bottom:1px solid #dfeade}
+.upload-kicker{font-size:10px;letter-spacing:.14em;font-weight:800;color:#568467}
+.upload-panel .upload-intro h3{font-size:24px;letter-spacing:-.04em;margin:7px 0 7px;color:#244531}
+.upload-panel .upload-intro p{margin:0;color:#5d725f;font-size:13px}
+.upload-steps{display:flex;gap:6px;counter-reset:upload;list-style:none;margin:17px 20px;padding:0}
+.upload-steps li{flex:1;min-width:0;color:#667e6a;font-size:10px;font-weight:800;text-align:center;line-height:1.25}
+.upload-steps li::before{counter-increment:upload;content:counter(upload);display:grid;place-items:center;width:24px;height:24px;border:1px solid #bcd3be;border-radius:50%;background:#eff5ef;color:#387249;margin:0 auto 6px}
+.upload-panel #uploadLogin,.upload-panel #profileShortcut{margin:17px 23px}
+.upload-panel form{padding:0 23px 24px}
+.upload-group{min-width:0;border:0;border-top:1px solid #e6ede5;margin:17px 0 0;padding:13px 0 0}
+.upload-group legend{font:800 13px Manrope,sans-serif;color:#2d5139;padding:0;margin-bottom:2px}
+.upload-panel .upload-group label{margin:11px 0;font-size:11px}
+.upload-field-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.upload-field-row label{min-width:0}
+.upload-panel input:not([type="checkbox"]),.upload-panel select{border-radius:8px;border-color:#d1dfd1;padding:11px}
+.upload-panel input:focus-visible,.upload-panel select:focus-visible{outline:2px solid #4e9162;outline-offset:2px}
+.upload-panel .upload-file{display:block;padding:14px;border:1px dashed #a9c7ad;border-radius:10px;background:#f8fbf7}
+.upload-file small{display:block;color:#718774;font-weight:500;margin:4px 0 8px}
+.upload-file input{font-size:11px;max-width:100%;background:#fff}
+.upload-panel #selectedFile{display:block;color:#4b7052;font-weight:700;overflow-wrap:anywhere;margin-top:7px}
+.upload-panel .rights-confirm{display:flex;gap:9px;line-height:1.5;font-weight:600}
+.upload-panel .rights-confirm input{flex:none;width:16px;height:16px;accent-color:#376c48}
+.upload-panel form button{margin-top:9px;border-radius:8px;padding:13px}
+.upload-panel #uploadStatus{margin:0 23px 14px;padding:0}
+.upload-panel #uploadStatus:not(:empty){padding:12px;border-radius:8px;background:#edf3ec}
+.upload-panel #uploadStatus[data-state="success"]{background:#e5f3e6;color:#245c36}
+.upload-panel #uploadStatus[data-state="error"]{background:#f9eae6;color:#8d4339}
+.profile-page .review-card .review-edit,.profile-page .review-card .review-decision{padding:17px 19px;border-bottom:1px solid #e8eee7}
+.profile-page .review-card .review-edit-head{display:flex;justify-content:space-between;gap:14px;align-items:center}
+.profile-page .review-card .review-edit-head strong,.profile-page .review-card .review-decision>strong{font-size:13px;color:#2f4c38}
+.profile-page .review-card .review-edit-head button{border:0;background:none;color:#326c48;font-size:12px;font-weight:800;cursor:pointer}
+.profile-page .review-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 14px;margin:12px 0 6px}
+.profile-page .review-fields label{min-width:0}
+.profile-page .review-card .review-decision label{display:block;max-width:760px}
+.profile-page .review-card .review-decision textarea{min-height:75px}
+.profile-page .review-card .review-save{border:1px solid #b9cfba;background:#f0f6ee;color:#255c39;border-radius:7px;padding:9px 13px;font-size:11px;font-weight:800;cursor:pointer}
+.profile-page .review-card .review-actions{margin:13px 0 0}
+@media(max-width:950px){.community-layout>.upload-panel{order:-1}.community-layout{gap:20px}}
+@media(max-width:600px){.upload-field-row,.profile-page .review-fields{grid-template-columns:1fr}.upload-panel form{padding-left:18px;padding-right:18px}.upload-intro{padding-left:19px;padding-right:19px}.profile-page .review-card .review-edit-head{align-items:start;flex-direction:column}}
