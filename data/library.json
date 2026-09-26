@@ -9213,5 +9213,472 @@
     "file": "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2026_09/6a9fdc6b7699c861784648_ortaokul_sunu.pptx",
     "fileType": "PPTX",
     "sourceType": "official"
+  },
+  {
+    "id": "cizre-selamlasma-okuloncesi-ilkokul-sunum-2026",
+    "title": "Selamlaşma · Anaokulu-İlkokul Sunumu · 2026-2027",
+    "type": "Sunum",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab23277987d6395719718_Selamla%C5%9Fmay%C4%B1_%C3%96%C4%9FreniyoruzZ.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-selamlasma-ortaokul-lise-pano-2026",
+    "title": "Selamlaşma · Sen Hangi Selamlaşma Tipisin? · Ortaokul-Lise Pano",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2304ad2f89096339491_Pano_lise.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-selamlasma-okuloncesi-ilkokul-pano-2026",
+    "title": "Selamlaşma · Hadi Sen de Sihirli Sözcüğü Söyle · Anaokulu-İlkokul Pano",
+    "type": "Pano materyali",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2304aa35b7786034353_Anaokulu_ilkokul_selamla%C5%9Fma_pano.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-selamlasma-ortaokul-lise-etkinlik-2026",
+    "title": "Selamlaşma · Ortaokul-Lise Etkinlik Kitapçığı · 2026-2027",
+    "type": "Etkinlik kitabı",
+    "level": "Ortaokul / Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab230280b9e0217655105_L%C4%B0SE-ORTAOKUL.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-selamlasma-okuloncesi-ilkokul-veli-brosur-2026",
+    "title": "Selamlaşma · Anaokulu-İlkokul Veli Broşürü",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Veli",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22febbea8e757932722_Veli_Bro%C5%9F%C3%BCr%C3%BC-Selamla%C5%9Fma.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-selamlasma-okuloncesi-ilkokul-ogretmen-brosur-2026",
+    "title": "Selamlaşma · Anaokulu-İlkokul Öğretmen Broşürü",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Öğretmen",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22feb9892d045346510_selamla%C5%9Fma-ilkokul_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-selamlasma-ortaokul-lise-brosur-2026",
+    "title": "Selamlaşma · Ortaokul-Lise Broşürü",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Selamlaşma ve iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116590_GENEL%20HEDEF-%20SELAMLA%C5%9EMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22feb66375532268088_%C3%96%C4%9ERETMEN_BRO%C5%9E%C3%9CR_ORTAOKUL-L%C4%B0SE.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-sinir-koyma-okuloncesi-ilkokul-etkinlik-2026",
+    "title": "Sağlıklı Sınır Koyma · Anaokulu-İlkokul Etkinlik Kitapçığı",
+    "type": "Etkinlik kitabı",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Sınır koyma",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116686_YEREL%20HEDEF-%20SINIR%20KOYMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab25d3e60a55063123757_s%C4%B1n%C4%B1r_koyma_ilkokul_anaokul_etkinlik_kitap%C3%A7%C4%B1%C4%9F%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-sinir-koyma-okuloncesi-ilkokul-veli-brosur-2026",
+    "title": "Sağlıklı Sınır Koyma · Anaokulu-İlkokul Veli Broşürü",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Veli",
+    "topic": "Sınır koyma",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116686_YEREL%20HEDEF-%20SINIR%20KOYMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2585d3dea6699280602_S%C4%B1n%C4%B1r_Koyma_Veli_Bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-sinir-koyma-ortaokul-lise-veli-brosur-2026",
+    "title": "Sağlıklı Sınır Koyma · Ortaokul-Lise Veli Broşürü",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "area": "Veli",
+    "topic": "Sınır koyma",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116686_YEREL%20HEDEF-%20SINIR%20KOYMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2585d0320e925639089_S%C4%B1n%C4%B1r_Koyma_orta-lise_veli_bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-sinir-koyma-okuloncesi-ilkokul-ogretmen-brosur-2026",
+    "title": "Sağlıklı Sınır Koyma · Anaokulu-İlkokul Öğretmen Broşürü",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Öğretmen",
+    "topic": "Sınır koyma",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116686_YEREL%20HEDEF-%20SINIR%20KOYMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2585ccb537321424723_okun%C3%B6ncesi-ilkokul_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-sinir-koyma-okuloncesi-ilkokul-afis-2026",
+    "title": "Sağlıklı Sınır Koyma · Bedenime Sınır Koyuyorum · Anaokulu-İlkokul Afişi",
+    "type": "Afiş",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Sınır koyma ve beden sınırları",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116686_YEREL%20HEDEF-%20SINIR%20KOYMA",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2583589c08668981501_ANAOKUL_AF%C4%B0%C5%9E.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ]
+  },
+  {
+    "id": "cizre-aile-ici-iletisim-ogretmen-brosur-2026",
+    "title": "Aile İçi İletişim · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Aile içi iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116720_A%C4%B0LE%20%C4%B0%C3%87%C4%B0%20%C4%B0LET%C4%B0%C5%9E%C4%B0M",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab261ad7af3c145692832_Aile_%C4%B0%C3%A7i_%C4%B0leti%C5%9Fim-%C3%96%C4%9Fretmen_Bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-aile-ici-iletisim-etkinlik-2026",
+    "title": "Aile İçi İletişim · Etkinlik Kitapçığı · 2026-2027",
+    "type": "Etkinlik kitabı",
+    "level": "Tüm kademeler",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Aile içi iletişim",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116720_A%C4%B0LE%20%C4%B0%C3%87%C4%B0%20%C4%B0LET%C4%B0%C5%9E%C4%B0M",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab261acebe08306869704_Aile_%C4%B0%C3%A7i_%C4%B0leti%C5%9Fim-Etkinlik.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-atilganlik-ogretmen-brosur-2026",
+    "title": "Atılganlık · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Atılganlık ve iletişim becerileri",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116569_ATILGANLIK",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab228e98a1c7011437266_ATILGANLIK-%C3%96%C4%9ERETMEN_BRO%C5%9E%C3%9CR%C3%9C.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-bagimlilikla-mucadele-veli-brosur-2026",
+    "title": "Bağımlılıkla Mücadele · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Bağımlılıkla mücadele",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116586_BA%C4%9EIMLILIKLA%20M%C3%9CCADELE",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22d5c81bbb028305635_ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k_veli_bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-bagimlilikla-mucadele-ogretmen-brosur-2026",
+    "title": "Bağımlılıkla Mücadele · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Bağımlılıkla mücadele",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116586_BA%C4%9EIMLILIKLA%20M%C3%9CCADELE",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22d5c1de88214938168_Ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-hedef-motivasyon-veli-brosur-2026",
+    "title": "Hedef Belirleme ve Motivasyon · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Hedef belirleme ve motivasyon",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116598_HEDEF%20BEL%C4%B0RLEME%20VE%20MOT%C4%B0VASYON",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2342357f66989022015_VEL%C4%B0_BRO%C5%9E%C3%9CR.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-hedef-motivasyon-ogretmen-brosur-2026",
+    "title": "Hedef Belirleme ve Motivasyon · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Hedef belirleme ve motivasyon",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116598_HEDEF%20BEL%C4%B0RLEME%20VE%20MOT%C4%B0VASYON",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab234232492d342103167_%C3%96%C4%9ERETMEN_BRO%C5%9E%C3%9CR.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-meslek-secimi-veli-brosur-2026",
+    "title": "Meslek Seçimi · İlgi-Yetenek-Değer-Kişisel Özellik · Veli Broşürü",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "area": "Veli",
+    "topic": "Mesleki rehberlik ve meslek seçimi",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116657_MESLEKLE%20%C4%B0LG%C4%B0%20%20DE%C4%9EER%20%20YETENEK%20VE%20K%C4%B0%C5%9E%C4%B0SEL%20%C3%96ZELL%C4%B0K%20%C4%B0L%C4%B0%C5%9EK%C4%B0S%C4%B0",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab24b34a02c6347071183_VEL%C4%B0_BRO%C5%9E%C3%9CR.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-meslek-secimi-ogretmen-brosur-2026",
+    "title": "Meslek Seçimi · İlgi-Yetenek-Değer-Kişisel Özellik · Öğretmen Broşürü",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "area": "Öğretmen",
+    "topic": "Mesleki rehberlik ve meslek seçimi",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116657_MESLEKLE%20%C4%B0LG%C4%B0%20%20DE%C4%9EER%20%20YETENEK%20VE%20K%C4%B0%C5%9E%C4%B0SEL%20%C3%96ZELL%C4%B0K%20%C4%B0L%C4%B0%C5%9EK%C4%B0S%C4%B0",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab24b346f3b7727092948_%C3%96%C4%9ERETMEN_BRO%C5%9E%C3%9CR%C3%9C.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-otokontrol-veli-brosur-2026",
+    "title": "Otokontrol / Öz Düzenleme · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Otokontrol ve öz düzenleme",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116581_OTOKONTROL",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22c5d3dbd9280435128_Otokontrol_veli_bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-otokontrol-ogretmen-brosur-2026",
+    "title": "Otokontrol / Öz Düzenleme · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Otokontrol ve öz düzenleme",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116581_OTOKONTROL",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab22c5d14a09510370530_Otokontrol_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-ozguven-veli-brosur-2026",
+    "title": "Özgüven Geliştirme · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Özgüven geliştirme",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116660_%C3%96ZG%C3%9CVEN%20GEL%C4%B0%C5%9ET%C4%B0RME",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab24cb4c589d899367850_%C3%96zg%C3%BCven_Veli_Bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-ozguven-ogretmen-brosur-2026",
+    "title": "Özgüven Geliştirme · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Özgüven geliştirme",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116660_%C3%96ZG%C3%9CVEN%20GEL%C4%B0%C5%9ET%C4%B0RME",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab24cb498305524368694_%C3%96zg%C3%BCven_%C3%96%C4%9Fretmen_Bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-problem-cozme-ogretmen-brosur-2026",
+    "title": "Problem Çözme Becerileri · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Problem çözme becerileri",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116679_PROBLEM%20%C3%87%C3%96ZME%20BECER%C4%B0LER%C4%B0",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2534e33c82015409983_Problem_%C3%87%C3%B6zme_%C3%96%C4%9Fretmen_Bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-problem-cozme-veli-brosur-2026",
+    "title": "Problem Çözme Becerileri · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Problem çözme becerileri",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116679_PROBLEM%20%C3%87%C3%96ZME%20BECER%C4%B0LER%C4%B0",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2534dce059812919406_PROBLEM_%C3%87%C3%96ZME_BECER%C4%B0LER%C4%B0_VEL%C4%B0.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-sinav-kaygisi-veli-brosur-2026",
+    "title": "Sınav Kaygısı · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "area": "Veli",
+    "topic": "Sınav kaygısı",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116682_SINAV%20KAYGISI",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab253cc1cf0b843214109_S%C4%B1nav_kayg%C4%B1s%C4%B1_veli_bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-sinav-kaygisi-ogretmen-brosur-2026",
+    "title": "Sınav Kaygısı · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "area": "Öğretmen",
+    "topic": "Sınav kaygısı",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116682_SINAV%20KAYGISI",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab253cbe769a634088158_s%C4%B1nav_kayg%C4%B1s%C4%B1_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr%C3%BC.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "cizre-siddeti-onleme-veli-brosur-2026",
+    "title": "Şiddetin Önlenmesi · Veli Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Şiddetin önlenmesi",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116684_%C5%9E%C4%B0DDET%C4%B0N%20%C3%96NLENMES%C4%B0",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2547fbcf33812693242_%C5%9E%C4%B0DDET%C4%B0_%C3%96NLEME-VEL%C4%B0_BRO%C5%9E%C3%9CR%C3%9C.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "cizre-siddeti-onleme-ogretmen-brosur-2026",
+    "title": "Şiddetin Önlenmesi · Öğretmen Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Şiddetin önlenmesi",
+    "source": "Cizre Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://cizreram.meb.k12.tr/dosyalar/listele_dosya_4116684_%C5%9E%C4%B0DDET%C4%B0N%20%C3%96NLENMES%C4%B0",
+    "file": "https://cizreram.meb.k12.tr/meb_iys_dosyalar/73/03/758358/dosyalar/2026_09/6ab2547f91838306892700_%C5%9E%C4%B0DDET%C4%B0_%C3%96NLEME-%C3%96%C4%9ERETMEN_BRO%C5%9E%C3%9CR%C3%9C.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
