@@ -11907,5 +11907,65 @@
     "file": "https://sidikaavarkml.meb.k12.tr/meb_iys_dosyalar/23/01/216470/dosyalar/2025_10/09151414_aylikrehberlikcalismaraporu.docx",
     "fileType": "DOCX",
     "sourceType": "official"
+  },
+  {
+    "id": "osmangazi-flort-siddeti-bulteni-2026",
+    "title": "Flört Şiddeti · Güvenli İlişkiler ve Kırmızı Bayraklar Bülteni · 2026",
+    "type": "Bülten",
+    "level": "Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Flört şiddeti, dijital şiddet, sınırlar ve güvenli ilişkiler",
+    "source": "Osmangazi Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://osmangaziram.meb.k12.tr/tema/dosyadetay.php?KATEGORINO=689428",
+    "file": "https://osmangaziram.meb.k12.tr/meb_iys_dosyalar/16/15/963765/dosyalar/2026_06/6a26ac56e910e225886142_FL%C3%96RT_%C5%9E%C4%B0DDET%C4%B0_B%C3%9CLTEN.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "osmangazi-ergenlikte-cinsel-gelisim-2026",
+    "title": "Ergenlikte Cinsel Gelişim · Bilgilendirme Bülteni · 2026",
+    "type": "Bülten",
+    "level": "Ortaokul / Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Ergenlikte cinsel gelişim ve sağlıklı gelişim",
+    "source": "Osmangazi Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://osmangaziram.meb.k12.tr/tema/dosyadetay.php?KATEGORINO=689428",
+    "file": "https://osmangaziram.meb.k12.tr/meb_iys_dosyalar/16/15/963765/dosyalar/2026_03/69b7a0b1c4241367946858_ergenlikte_cinsel_geli%C5%9Fim.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "osmangazi-yks-engelsiz-adimlar-2026",
+    "title": "YKS İçin Engelsiz Adımlar · Özel Gereksinimli Adaylar İçin Bilgilendirme · 2026",
+    "type": "Bilgilendirme rehberi",
+    "level": "Lise",
+    "area": "Kariyer",
+    "topic": "YKS erişilebilirliği ve özel gereksinimli adaylar",
+    "source": "Osmangazi Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://osmangaziram.meb.k12.tr/tema/dosyadetay.php?KATEGORINO=689428",
+    "file": "https://osmangaziram.meb.k12.tr/meb_iys_dosyalar/16/15/963765/dosyalar/2026_02/698f1bc6ca669449920685_yks_icin_engelsiz_ad%C4%B1mlar_son_hali.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "dortyol-yeme-bozukluklari-bulteni-2019",
+    "title": "Yeme Bozuklukları · Rehberlik Bülteni",
+    "type": "Bülten",
+    "level": "Ortaokul / Lise",
+    "area": "Sağlıklı Yaşam",
+    "topic": "Yeme davranışı, beden algısı ve yeme bozuklukları",
+    "source": "Dörtyol Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://dortyolram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://dortyolram.meb.k12.tr/meb_iys_dosyalar/31/03/761093/dosyalar/2019_04/29094338_NYSAN_BYLTEN_SON_HALY.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
   }
 ]
