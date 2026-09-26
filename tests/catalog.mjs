@@ -45,3 +45,20 @@ test('2026 esenlik kartları doğru dosya başlığıyla eşleşir',()=>{
  }
  assert.ok(!rows.some(item=>item.level==='Lise'&&item.topic==='Dijital esenlik'&&item.title.includes('Bireysel')));
 });
+
+test('psikolojik sağlamlık dosyaları kademe ve materyal türüne göre eşleşir',()=>{
+ const rows=library.filter(item=>item.id.startsWith('psikososyal-2025-'));
+ assert.equal(rows.length,32);
+ const schoolGroups=[['Okul öncesi','28150031'],['İlkokul','28150408'],['Ortaokul','28150620'],['Lise','28150838']];
+ const material=['Program','Afiş','Broşür','Broşür','Sunum','Sunum'];
+ for(let group=0;group<4;group++)for(let offset=0;offset<6;offset++){
+  const item=rows[3+group*6+offset],filename=decodeURIComponent(new URL(item.file).pathname.split('/').at(-1));
+  assert.equal(item.level,schoolGroups[group][0],item.id);
+  assert.equal(item.type,material[offset],item.id);
+  assert.ok(filename.includes(group===3&&offset===1?'28150837':schoolGroups[group][1]),`${item.id}: yanlış kademe PDF'si`);
+  assert.ok(filename.includes(['program','afis','velibrosur','ogretmenbrosur','velisunu','ogretmensunu'][offset]),`${item.id}: yanlış materyal PDF'si`);
+ }
+ for(const [i,token] of ['dogalafetkitabi','olumyaskitabi','gockitabi','intiharkitabi','terorkitabi'].entries()){
+  const item=rows[27+i];assert.ok(item.file.includes(token),`${item.id}: yanlış güçlendirici destek kitabı`);
+ }
+});
