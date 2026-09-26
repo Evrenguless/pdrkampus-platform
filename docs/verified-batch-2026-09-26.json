@@ -7,12 +7,13 @@
     "https://orgm.meb.gov.tr/www/mesleki-rehberlik-programlari/icerik/3138",
     "https://orgm.meb.gov.tr/www/brosurler/icerik/1364",
     "https://orgm.meb.gov.tr/www/sosyal-uyum-programlari/icerik/3135",
-    "https://orgm.meb.gov.tr/www/ozellestirilmis-ogrenci-programlari/icerik/3098"
+    "https://orgm.meb.gov.tr/www/ozellestirilmis-ogrenci-programlari/icerik/3098",
+    "https://golcukram.meb.k12.tr/icerikler/rehberlikihtiyacbelirlemeanketlerininribagonderilmesi_17459085.html"
   ],
   "before": 90,
-  "added": 99,
-  "after": 189,
-  "verified_bytes": 1256642534,
+  "added": 107,
+  "after": 197,
+  "verified_bytes": 1266376887,
   "rejected": [
     {
       "id": "sinif-etkinlikleri-cilt-0",
@@ -164,6 +165,14 @@
     "uyum-608",
     "uyum-609",
     "uyum-610",
-    "uyum-611"
+    "uyum-611",
+    "riba-cizelge-530",
+    "riba-cizelge-531",
+    "riba-cizelge-535",
+    "riba-cizelge-536",
+    "riba-cizelge-540",
+    "riba-cizelge-541",
+    "riba-cizelge-545",
+    "riba-cizelge-546"
   ]
 }
