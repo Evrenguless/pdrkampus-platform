@@ -1,4 +1,4 @@
-export const documentTypes = ['Form', 'Sunum', 'Etkinlik kitabı', 'Farkındalık programı', 'Program', 'Broşür', 'Kılavuz', 'Mesleki kaynak'];
+export const documentTypes = ['Form', 'Sunum', 'Etkinlik kitabı', 'Farkındalık programı', 'Program', 'Broşür', 'Kılavuz', 'Bülten', 'Etkinlik', 'Pano materyali', 'Mesleki kaynak'];
 
 export function documentItems(forms, resources) {
   return [
