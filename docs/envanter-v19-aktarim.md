@@ -27,3 +27,9 @@ Modüler pano kaydının envanter başlığında “18 parçalı” yazıyor; PD
 Sayfada lise **Dijital Esenlik Bireysel Psikoeğitim Programı** için verilen bağlantı, lise **Esenlik Bireysel Psikoeğitim Programı** ile aynı PDF'ye gidiyor. PDF'nin kapağında dijital esenlik değil genel esenlik yazıyor; ikinci başlık bağımsız dosya gibi yayımlanmadı. Böylece bu aktarımda **27 benzersiz PDF** eklendi ve kütüphane toplamı **58** oldu.
 
 Kalan kaynaklar, başlık ve dosya eşleşmesi ile kademe doğrulandıktan sonra aynı yöntemle eklenebilir. Bağlantı ve dosya türü kontrolü materyalin pedagojik uygunluğunu tek başına doğrulamaz.
+
+## Katalog denetimi
+
+26.09.2026 tarihinde Araç Kutusu'ndaki **76 form** ve Kütüphane'deki **58 kaynak** olmak üzere **134 dosyanın tamamı** tekrar denetlendi. `python scripts/check_catalog_links.py` çıktısı: **134 / 134 HTTP 200, beklenen PDF/XLSX türü ve sıfırdan büyük dosya boyutu**. Bu kontrol ağa bağlıdır; ileride bağlantı değişirse tekrar çalıştırılmalıdır.
+
+`npm test` içindeki 16 senaryo ayrıca 134 statik kaydın tamamında gerekli alan, benzersiz kimlik, benzersiz dosya, HTTPS adresi ve uzantı uyumunu; 20 esenlik kartında başlık ile dosya adı eşleşmesini; arama ve kademe filtrelerini denetler. **16 test sayısı 16 kaynak anlamına gelmez.**
