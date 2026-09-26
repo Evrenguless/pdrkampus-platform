@@ -7,6 +7,14 @@ const norm=s=>String(s??'').toLocaleLowerCase('tr-TR').normalize('NFD').replace(
 async function loadCatalog(path){return fetch(new URL(path,import.meta.url)).then(r=>{if(!r.ok)throw Error('Katalog yüklenemedi');return r.json()}).catch(()=>[])}
 const [baseTools,baseLibrary,curated]=await Promise.all([loadCatalog('../data/forms.json?v=20260925-3'),loadCatalog('../data/library.json?v=20260926-9'),getCuratedResources()]);
 const tools=[...baseTools,...curated.tools],library=[...baseLibrary,...curated.library];
+if($('#homeResources')){
+ const preferred=['esenlik-2026-01','psikososyal-2025-16','psikososyal-2025-22'].map(id=>library.find(x=>x.id===id)).filter(Boolean);
+ const picks=[...curated.library,...preferred].filter((x,i,a)=>a.findIndex(y=>y.id===x.id)===i).slice(0,3);
+ $('#homeResources').innerHTML=picks.length?picks.map(x=>`<button class="campus-entry" type="button" data-kind="library" data-id="${esc(x.id)}"><span class="campus-entry-meta">${esc(x.type)} · ${esc(x.level)}</span><strong>${esc(x.title)}</strong><span class="campus-entry-go" aria-hidden="true">↗</span></button>`).join(''):'<p class="small-note">Kaynaklar şu anda yüklenemedi.</p>';
+ const quick=['meb-42','meb-14','meb-40'].map(id=>tools.find(x=>x.id===id)).filter(Boolean);
+ $('#homeTools').innerHTML=quick.length?quick.map(x=>`<button class="campus-entry" type="button" data-kind="tool" data-id="${esc(x.id)}"><span class="campus-entry-meta">MEB Form Haritası · ${esc(x.category)}</span><strong>${esc(x.title)}</strong><span class="campus-entry-go" aria-hidden="true">↗</span></button>`).join(''):'<p class="small-note">Araçlar şu anda yüklenemedi.</p>';
+}
+
 let group='';
 function populateTypes(){const categories=[...new Set(tools.filter(x=>!group||x.group===group).map(x=>x.category))];$('#toolType').innerHTML='<option value="">Tüm alt başlıklar</option>'+categories.map(x=>`<option>${esc(x)}</option>`).join('')}
 if ($('#toolGrid')) {populateTypes();$('#allCount').textContent=tools.length;$('#individualCount').textContent=tools.filter(x=>x.group==='Bireyi Tanıma').length;$('#systemCount').textContent=tools.filter(x=>x.group==='Sistem Formları').length;$('#toolTotal').textContent=tools.length+' dosya'}
