@@ -5,12 +5,14 @@
     "https://orgm.meb.gov.tr/www/sinifrehberliketkinlikleri/icerik/1952",
     "https://orgm.meb.gov.tr/www/siber-zorbalik/icerik/2086",
     "https://orgm.meb.gov.tr/www/mesleki-rehberlik-programlari/icerik/3138",
-    "https://orgm.meb.gov.tr/www/brosurler/icerik/1364"
+    "https://orgm.meb.gov.tr/www/brosurler/icerik/1364",
+    "https://orgm.meb.gov.tr/www/sosyal-uyum-programlari/icerik/3135",
+    "https://orgm.meb.gov.tr/www/ozellestirilmis-ogrenci-programlari/icerik/3098"
   ],
   "before": 90,
-  "added": 85,
-  "after": 175,
-  "verified_bytes": 1127241853,
+  "added": 99,
+  "after": 189,
+  "verified_bytes": 1256642534,
   "rejected": [
     {
       "id": "sinif-etkinlikleri-cilt-0",
@@ -148,6 +150,20 @@
     "siber-2022-12",
     "siber-2022-13",
     "siber-2022-14",
-    "siber-2022-15"
+    "siber-2022-15",
+    "ozel-93",
+    "ozel-94",
+    "ozel-95",
+    "ozel-96",
+    "ozel-97",
+    "ozel-98",
+    "uyum-604",
+    "uyum-605",
+    "uyum-606",
+    "uyum-607",
+    "uyum-608",
+    "uyum-609",
+    "uyum-610",
+    "uyum-611"
   ]
 }

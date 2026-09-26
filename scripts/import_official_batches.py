@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Import verified, individually linked MEB files from two inventory source pages.
+"""Import verified, individually linked MEB files from reviewed source pages.
 
 Run from the repository root: python scripts/import_official_batches.py
 The fixed row mapping is guarded by page counts and PDF filenames. Missing or
 non-PDF responses are omitted and reported, never turned into catalogue cards.
 """
 import csv
+import gzip
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -15,7 +16,7 @@ from urllib.request import Request, urlopen
 from lxml import html
 
 ROOT = Path(__file__).resolve().parents[1]
-QUEUE = ROOT / 'inventory-review/review-queue.csv'
+QUEUE = ROOT / 'inventory-review/review-queue.csv.gz'
 CATALOG = ROOT / 'data/library.json'
 REPORT = ROOT / 'docs/verified-batch-2026-09-26.json'
 SOCIAL = 'https://orgm.meb.gov.tr/www/sosyal-duygusal-beceriler/icerik/3121'
@@ -24,6 +25,8 @@ CLASS = 'https://orgm.meb.gov.tr/www/sinifrehberliketkinlikleri/icerik/1952'
 CYBER = 'https://orgm.meb.gov.tr/www/siber-zorbalik/icerik/2086'
 CAREER = 'https://orgm.meb.gov.tr/www/mesleki-rehberlik-programlari/icerik/3138'
 BROCHURES = 'https://orgm.meb.gov.tr/www/brosurler/icerik/1364'
+SOCIAL_ADAPTATION = 'https://orgm.meb.gov.tr/www/sosyal-uyum-programlari/icerik/3135'
+SPECIAL = 'https://orgm.meb.gov.tr/www/ozellestirilmis-ogrenci-programlari/icerik/3098'
 
 
 def links(page):
@@ -70,17 +73,21 @@ def row_record(row, url, page, prefix, area=None, topic=None):
 
 
 def main():
-    inventory = {int(row['row']): row for row in csv.DictReader(QUEUE.open(encoding='utf-8-sig'))}
+    with gzip.open(QUEUE, 'rt', encoding='utf-8-sig') as source:
+        inventory = {int(row['row']): row for row in csv.DictReader(source)}
     catalog = json.loads(CATALOG.read_text(encoding='utf-8'))
     known = {item['file'] for item in catalog if item.get('file')}
     social, bullying, class_links = links(SOCIAL), links(BULLYING), links(CLASS)
     cyber, career, brochures = links(CYBER), links(CAREER), links(BROCHURES)
+    adaptation, special = links(SOCIAL_ADAPTATION), links(SPECIAL)
     assert len(social) == 57 and 'sosyalduygusalbecerilerkitapcigi' in social[0][0] and 'velibireyselmudahaleprogrami' in social[-1][0], 'Social page changed; review mapping'
     assert len(bullying) == 29 and 'kuramsalkitap' in bullying[0][0] and 'obenimsirrimdi' in bullying[-1][0], 'Bullying page changed; review mapping'
     assert len(class_links) >= 4 and all('2021_09' in pair[0] for pair in class_links[:4]), 'Class page changed; review mapping'
     assert len(cyber) == 15 and 'Kuramsal_Kitap' in cyber[0][0] and 'Maceras' in cyber[-1][0], 'Cyber page changed; review mapping'
     assert len(career) == 3 and 'kagep' in career[1][0], 'Career page changed; review mapping'
     assert len(brochures) >= 18 and 'SYBER_ZORBALIK' in brochures[16][0], 'Brochures page changed; review mapping'
+    assert len(adaptation) == 9 and 'kulturlerarasi' in adaptation[0][0] and 'grupmudahale' in adaptation[-1][0], 'Adaptation page changed; review mapping'
+    assert len(special) == 6 and '1okuloncesi' in special[0][0] and 'akrandanismanligi' in special[-1][0], 'Special education page changed; review mapping'
 
     # The page groups preschool and primary storybooks between grade-specific program blocks.
     social_rows = ([*range(547, 560)] + [*range(594, 599)] + [*range(560, 572)]
@@ -135,6 +142,15 @@ def main():
                            'sourcePage': CYBER, 'file': url, 'fileType': 'PDF', 'sourceType': 'official'})
     for index, number in [(16,112),(17,113)]:
         candidates.append(row_record(inventory[number], brochures[index][0], BROCHURES, 'brosur', topic='Dijital güvenlik'))
+    for index, number in [(0,604),(1,605),(2,606),(3,607),(4,608),(6,609),(7,610),(8,611)]:
+        candidates.append(row_record(inventory[number], adaptation[index][0], SOCIAL_ADAPTATION, 'uyum',
+                                     area='Sosyal-duygusal', topic='Sosyal uyum'))
+    for index, number in enumerate(range(93,99)):
+        topic = 'Akran danışmanlığı' if index == 5 else 'Zorlayıcı yaşam olayları'
+        record = row_record(inventory[number], special[index][0], SPECIAL, 'ozel', area='Özel eğitim', topic=topic)
+        if record['level'] == 'Meslek Okulu':
+            record['level'] = 'Lise'  # Site's upper-secondary filter; title retains Meslek Okulu.
+        candidates.append(record)
 
     candidates = [row for row in candidates if row['file'] not in known]
     assert len({row['file'] for row in candidates}) == len(candidates), 'Duplicate candidate URL'
@@ -151,7 +167,7 @@ def main():
     verified = [row for row, _ in sorted(checked, key=lambda item: item[0]['id'])]
     CATALOG.write_text(json.dumps(catalog + verified, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     prior = json.loads(REPORT.read_text(encoding='utf-8')) if REPORT.exists() else {}
-    report = {'source_pages': [SOCIAL, BULLYING, CLASS, CYBER, CAREER, BROCHURES],
+    report = {'source_pages': [SOCIAL, BULLYING, CLASS, CYBER, CAREER, BROCHURES, SOCIAL_ADAPTATION, SPECIAL],
               'before': prior.get('before', len(catalog)),
               'added': prior.get('added', 0) + len(verified), 'after': len(catalog) + len(verified),
               'verified_bytes': prior.get('verified_bytes', 0) + sum(size for _, size in checked),
