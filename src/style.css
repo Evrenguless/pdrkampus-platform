@@ -174,3 +174,6 @@
 .profile-page .review-card .review-actions{margin:13px 0 0}
 @media(max-width:950px){.community-layout>.upload-panel{order:-1}.community-layout{gap:20px}}
 @media(max-width:600px){.upload-field-row,.profile-page .review-fields{grid-template-columns:1fr}.upload-panel form{padding-left:18px;padding-right:18px}.upload-intro{padding-left:19px;padding-right:19px}.profile-page .review-card .review-edit-head{align-items:start;flex-direction:column}}
+
+/* Separate the official catalogue from member contributions in unified search. */
+.member-search-results:not(:empty){margin-top:36px;padding-top:28px;border-top:1px solid #d7e4d7}.member-search-results .search-origin{font-size:11px;color:#6d826f;background:#edf3eb;padding:7px 10px;border-radius:6px}.member-search-results .search-result-section{margin-bottom:0}@media(max-width:700px){.member-search-results .result-head{align-items:flex-start;flex-wrap:wrap}.member-search-results .search-origin{white-space:normal}}
