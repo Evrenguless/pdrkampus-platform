@@ -3675,5 +3675,44 @@
     "file": "https://manisaram.meb.k12.tr/meb_iys_dosyalar/45/01/182183/dosyalar/2026_09/6a9ac8406ac17449259223_lise_%C3%A7er%C3%A7eve_y%C4%B1ll%C4%B1k_plan%C4%B1.xlsx",
     "fileType": "XLSX",
     "sourceType": "official"
+  },
+  {
+    "id": "serik-bep-ornek-xlsx-2024",
+    "title": "Örnek BEP Dosyası · Excel",
+    "type": "BEP dosyası",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "BEP",
+    "source": "Serik Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://serikram.meb.k12.tr/dosyalar/listele_dosya_2254932_%C3%96zel%20E%C4%9Fitim%20Formlar%C4%B1",
+    "file": "https://serikram.meb.k12.tr/meb_iys_dosyalar/07/13/761015/dosyalar/2024_10/23135937_ornekbepdosyasi.xlsx",
+    "fileType": "XLSX",
+    "sourceType": "official"
+  },
+  {
+    "id": "serik-bep-ornek-docx-2024",
+    "title": "Örnek BEP Dosyası · Word",
+    "type": "BEP dosyası",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "BEP",
+    "source": "Serik Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://serikram.meb.k12.tr/dosyalar/listele_dosya_2254932_%C3%96zel%20E%C4%9Fitim%20Formlar%C4%B1",
+    "file": "https://serikram.meb.k12.tr/meb_iys_dosyalar/07/13/761015/dosyalar/2024_10/23135919_ornekbepdosyasi.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "serik-bep-hazirlama-kilavuzu",
+    "title": "BEP Hazırlama Kılavuzu",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "BEP hazırlama",
+    "source": "Serik Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://serikram.meb.k12.tr/dosyalar/listele_dosya_2254932_%C3%96zel%20E%C4%9Fitim%20Formlar%C4%B1",
+    "file": "https://serikram.meb.k12.tr/meb_iys_dosyalar/07/13/761015/dosyalar/2022_11/06142415_20140845_BYREYSELLEYTYRYLMYY_EYYTYM_PROGRAMI_TUM_OYRETMENLER_YCYN_YOL_HARITASI.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
