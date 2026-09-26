@@ -2637,5 +2637,95 @@
     "file": "https://konakram.meb.k12.tr/meb_iys_dosyalar/35/01/164246/dosyalar/2023_05/18160050_RIBA-Lise-Okul-Sonuc-Cizelgesi.xlsx",
     "fileType": "XLSX",
     "sourceType": "official"
+  },
+  {
+    "id": "ofkemi-yonetiyorum-2018",
+    "title": "Öfkemi Yönetiyorum · Psikoeğitim Programı",
+    "type": "Program",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Öfke kontrolü",
+    "source": "Dörtyol Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://dortyolram.meb.k12.tr/",
+    "file": "https://dortyolram.meb.k12.tr/meb_iys_dosyalar/31/03/761093/dosyalar/2019_02/25112358_YFKEMY_YYNETYYORUM_PSYKOEYYTYM_PROGRAMI.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "akranzorbaligi-psikoegitim-isparta-2025",
+    "title": "Tüm Yönleriyle Akran Zorbalığı · Psikoeğitim Programı",
+    "type": "Program",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Sosyal-duygusal",
+    "topic": "Akran zorbalığı",
+    "source": "Isparta Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://ispartaram.meb.k12.tr/",
+    "file": "https://ispartaram.meb.k12.tr/meb_iys_dosyalar/32/01/155082/dosyalar/2025_09/16084548_akranzorbaligipsikoegitimprogrami.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "sefkat-etkinlik-kilavuzu",
+    "title": "Şefkat ve Öz Şefkat · Etkinlik Kılavuzu",
+    "type": "Etkinlik kitabı",
+    "level": "Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Öz şefkat",
+    "source": "Beypazarı Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://beypazariram.meb.k12.tr/",
+    "file": "https://beypazariram.meb.k12.tr/meb_iys_dosyalar/06/04/865032/dosyalar/2022_03/03094538_sefkat-etkinlik-kilavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "beden-algisi-2026",
+    "title": "Beden Algısı · Öğrenci Rehberlik Materyali",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Beden algısı",
+    "source": "Bolluca İMKB Mesleki ve Teknik Anadolu Lisesi",
+    "sourcePage": "https://bollucaimkb.meb.k12.tr/",
+    "file": "https://bollucaimkb.meb.k12.tr/meb_iys_dosyalar/34/35/969903/dosyalar/2026_03/69aa9734e4b75168378253_Beden_Alg%C4%B1s%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "oog-tarama-akyazi",
+    "title": "Özel Öğrenme Güçlüğü · Tarama ve Gözlem Kılavuzu",
+    "type": "Kılavuz",
+    "level": "İlkokul",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Özel öğrenme güçlüğü",
+    "source": "Akyazı Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://akyaziram.meb.k12.tr/",
+    "file": "https://akyaziram.meb.k12.tr/meb_iys_dosyalar/54/02/767414/dosyalar/2023_11/22134137_ramkitapcik1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istismarla-mucadele-rehberi-aile",
+    "title": "Çocuk Bakım Kuruluşlarında Çalışan Personele Yönelik İstismarla Mücadele Rehber Kitapçığı",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Güvenli Okul ve Çocuk Koruma",
+    "topic": "İhmal ve istismar",
+    "source": "Aile ve Sosyal Hizmetler Bakanlığı",
+    "sourcePage": "https://www.aile.gov.tr/",
+    "file": "https://www.aile.gov.tr/media/2499/cocuk-bakim-kuruluslarinda-calisan-personele-yonelik-istismarla-mucadele-rehber-kitapcigi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
