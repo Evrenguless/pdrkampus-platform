@@ -1,5 +1,5 @@
 import {documentItems,filterDocuments,documentTypes} from './documents.js?v=20260926-9';
-import {searchCatalogs} from './search.js?v=20260926-14';
+import {searchCatalogs} from './search.js?v=20260927-1';
 import {getCuratedResources} from './curated.js?v=20260926-1';
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
