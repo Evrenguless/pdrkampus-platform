@@ -3779,5 +3779,134 @@
     "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/22170504_13143029_turkyyeyde_ozel_eyytym_hyzmetlery.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "sinif-risk-haritasi-xlsx-duzenlenebilir",
+    "title": "Sınıf Risk Haritası · Düzenlenebilir Excel",
+    "type": "Form",
+    "level": "Tüm kademeler",
+    "area": "PDR Servisi Evrakları",
+    "topic": "Risk haritası",
+    "source": "Yardımcı Çok Programlı Anadolu Lisesi / MEB",
+    "sourcePage": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+    "file": "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114859_RI%CC%87SK-HARI%CC%87TASI-DU%CC%88ZENLI%CC%87.xlsx",
+    "fileType": "XLSX",
+    "sourceType": "official"
+  },
+  {
+    "id": "devamsizlik-takip-formu-pdf-2025",
+    "title": "Devamsızlık Takip Formu · PDF",
+    "type": "Form",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "PDR Servisi Evrakları",
+    "topic": "Devamsızlık takibi",
+    "source": "Yardımcı Çok Programlı Anadolu Lisesi / MEB",
+    "sourcePage": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+    "file": "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2025_09/29143218_devamsizliktakipformu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "devamsizlik-takip-formu-docx-2025",
+    "title": "Devamsızlık Takip Formu · Düzenlenebilir Word",
+    "type": "Form",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "PDR Servisi Evrakları",
+    "topic": "Devamsızlık takibi",
+    "source": "Yardımcı Çok Programlı Anadolu Lisesi / MEB",
+    "sourcePage": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+    "file": "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2025_09/29143219_devamsizliktakipformu.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "rehberlik-faaliyet-raporu-pdf",
+    "title": "Rehberlik Faaliyet Değerlendirme Formu · PDF",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "PDR Servisi Evrakları",
+    "topic": "Faaliyet raporu",
+    "source": "Yardımcı Çok Programlı Anadolu Lisesi / MEB",
+    "sourcePage": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+    "file": "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114123_REH.YIL-SONU-FAALI%CC%87YET-RAPORU.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "rehberlik-faaliyet-raporu-docx",
+    "title": "Rehberlik Faaliyet Değerlendirme Formu · Düzenlenebilir Word",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "PDR Servisi Evrakları",
+    "topic": "Faaliyet raporu",
+    "source": "Yardımcı Çok Programlı Anadolu Lisesi / MEB",
+    "sourcePage": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+    "file": "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114044_REH.YIL-SONU-FAALI%CC%87YET-RAPORU.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "sinif-oturma-plani-xlsx",
+    "title": "Sınıf Oturma Planı · Düzenlenebilir Excel",
+    "type": "Çizelge",
+    "level": "Tüm kademeler",
+    "area": "PDR Servisi Evrakları",
+    "topic": "Sınıf düzeni",
+    "source": "Yardımcı Çok Programlı Anadolu Lisesi / MEB",
+    "sourcePage": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+    "file": "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114928_SINIF-OTURMA-PLANI.xlsx",
+    "fileType": "XLSX",
+    "sourceType": "official"
+  },
+  {
+    "id": "destek-egitim-odalari-isleyis-kilavuzu",
+    "title": "Destek Eğitim Odaları · İşleyiş Kılavuzu",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Destek eğitim odası",
+    "source": "Kastamonu Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kastamonuram.meb.k12.tr/",
+    "file": "https://kastamonuram.meb.k12.tr/meb_iys_dosyalar/37/01/168207/dosyalar/2020_01/30103312_Destek_EYitim_OdasY_Acma_KYlavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "destek-egitim-odasi-programi-docx",
+    "title": "Destek Eğitim Odası Programı · Düzenlenebilir Word",
+    "type": "Program",
+    "level": "İlkokul",
+    "area": "Özel Eğitim ve Kapsayıcılık",
+    "topic": "Destek eğitim odası",
+    "source": "Karacaören İlkokulu / MEB",
+    "sourcePage": "https://karacaorenilkokulu.meb.k12.tr/icerikler/destekegitimodasiplanlamasi_14260772.html",
+    "file": "https://karacaorenilkokulu.meb.k12.tr/meb_iys_dosyalar/06/01/711876/dosyalar/2023_09/29173710_DESTEK-EGITIM-ODASI-PROGRAMI-2023-2024.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "sinav-kaygisi-psikoegitim-grubu-isparta",
+    "title": "Sınav Kaygısı ile Baş Etme · Psikoeğitim Grubu Programı",
+    "type": "Program",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Sınav kaygısı",
+    "source": "Isparta Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://ispartaram.meb.k12.tr/",
+    "file": "https://ispartaram.meb.k12.tr/meb_iys_dosyalar/32/01/155082/dosyalar/2021_03/12150728_SYnav_KaygYsY_Yle_BaY_Etme_PsikoeYitim_Grubunun_GeliYtirilmesi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
