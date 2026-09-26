@@ -115,7 +115,7 @@ $('#closeViewer').addEventListener('click',closeViewer);
 $('#viewerDialog').addEventListener('click',event=>{if(event.target===$('#viewerDialog'))closeViewer()});
 
 try{
- const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260926-4'),loadJson('../data/library.json?v=20260926-30'),getCuratedResources()]);
+ const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260926-5'),loadJson('../data/library.json?v=20260926-31'),getCuratedResources()]);
  documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library]);
  setTypeOptions();setAreaOptions();
  const url=new URL(location.href);
