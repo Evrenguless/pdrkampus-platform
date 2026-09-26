@@ -16,3 +16,24 @@ test('çok sözcüklü form araması yalnız ortak bağlamı eşleştirir',()=>{
 test('veli iletişim sorgusu tek başına veli materyallerini ilgisizce listelemez',()=>{const r=searchCatalogs('veli iletişim',forms,library).results;assert.ok(!r.some(x=>x.item.title.includes('Akran Zorbalığı · Veli')))});
 test('sınav kaygısı sorgusu genel sınav stratejilerini doğrudan kaynak saymaz',()=>{const r=searchCatalogs('8. sınıf sınav kaygısı',forms,library).results;assert.ok(r.some(x=>x.item.id==='kocasinan-2026-sinav-kaygisini-yonetmek'));assert.ok(!r.some(x=>x.item.id==='kocasinan-2026-lgs-sinav-stratejileri'))});
 test('akran zorbalığı aramasında uygulama programı sunumlardan önce gelir',()=>{const r=searchCatalogs('7. sınıf akran zorbalığı',forms,library).results.filter(x=>x.kind==='resource');assert.equal(r[0].item.id,'farkindalik-ortaokul')});
+
+test('doğal dilde okul reddi sorgusu uygun kaynakları bulur',()=>{
+ const r=searchCatalogs('çocuk okula gitmek istemiyor',forms,library);
+ assert.equal(r.parsed.topic.name,'Devamsızlık / okul reddi');
+ assert.ok(r.results.some(x=>x.item.id==='meram-okul-reddi-2024'));
+});
+test('doğal dilde meslek seçimi sorgusu kariyer kaynaklarını bulur',()=>{
+ const r=searchCatalogs('hangi mesleği seçmeli',forms,library);
+ assert.equal(r.parsed.topic.name,'Kariyer / meslek seçimi');
+ assert.ok(r.results.some(x=>x.item.id==='gediz-mesleki-envanter-ogrenci-yonerge-2026'));
+});
+test('duygularını yönetemiyor ifadesi duygu düzenleme kaynaklarına gider',()=>{
+ const r=searchCatalogs('duygularını yönetemiyor',forms,library);
+ assert.equal(r.parsed.topic.name,'Duygu düzenleme');
+ assert.ok(r.results.some(x=>x.item.topic==='Duygu düzenleme'));
+});
+test('dijital zorbalık ifadesi siber zorbalık kaynaklarını bulur',()=>{
+ const r=searchCatalogs('dijital zorbalık',forms,library);
+ assert.equal(r.parsed.topic.name,'Dijital yaşam / siber zorbalık');
+ assert.ok(r.results.some(x=>x.item.topic==='Siber zorbalık'));
+});
