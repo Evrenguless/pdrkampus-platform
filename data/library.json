@@ -450,40 +450,6 @@
     "sourceType": "official"
   },
   {
-    "id": "v19-dortyol-ofkemi-yonetiyorum",
-    "title": "Öfkemi Yönetiyorum – Yapılandırılmış Psikoeğitim Programı",
-    "type": "Program",
-    "level": "Ortaokul / Lise",
-    "area": "Sosyal-duygusal",
-    "topic": "Öfke yönetimi",
-    "source": "Dörtyol RAM",
-    "sourcePage": "https://dortyolram.meb.k12.tr/meb_iys_dosyalar/31/03/761093/dosyalar/2019_02/25112358_YFKEMY_YYNETYYORUM_PSYKOEYYTYM_PROGRAMI.pdf",
-    "file": "https://dortyolram.meb.k12.tr/meb_iys_dosyalar/31/03/761093/dosyalar/2019_02/25112358_YFKEMY_YYNETYYORUM_PSYKOEYYTYM_PROGRAMI.pdf",
-    "fileType": "PDF",
-    "sourceType": "official",
-    "levels": [
-      "Ortaokul",
-      "Lise"
-    ]
-  },
-  {
-    "id": "v19-isparta-akran-psikoegitim",
-    "title": "Tüm Yönleriyle Akran Zorbalığı – Psikoeğitim Programı",
-    "type": "Program",
-    "level": "Ortaokul / Lise",
-    "area": "Sosyal-duygusal",
-    "topic": "Akran zorbalığı",
-    "source": "Isparta RAM",
-    "sourcePage": "https://ispartaram.meb.k12.tr/meb_iys_dosyalar/32/01/155082/dosyalar/2025_09/16084548_akranzorbaligipsikoegitimprogrami.pdf",
-    "file": "https://ispartaram.meb.k12.tr/meb_iys_dosyalar/32/01/155082/dosyalar/2025_09/16084548_akranzorbaligipsikoegitimprogrami.pdf",
-    "fileType": "PDF",
-    "sourceType": "official",
-    "levels": [
-      "Ortaokul",
-      "Lise"
-    ]
-  },
-  {
     "id": "v19-igdir-siddeti-onleme",
     "title": "Şiddete Hayır – Okullarda Şiddeti Önleme Kitapçığı",
     "type": "Kılavuz",
@@ -506,23 +472,6 @@
     "source": "Hacı Lütfiye Şireci RAM",
     "sourcePage": "https://sehitkamilram.meb.k12.tr/meb_iys_dosyalar/27/01/966497/dosyalar/2025_03/12152047_verimliderscalismamartbulten.pdf",
     "file": "https://sehitkamilram.meb.k12.tr/meb_iys_dosyalar/27/01/966497/dosyalar/2025_03/12152047_verimliderscalismamartbulten.pdf",
-    "fileType": "PDF",
-    "sourceType": "official",
-    "levels": [
-      "Ortaokul",
-      "Lise"
-    ]
-  },
-  {
-    "id": "v19-bolluca-beden-algisi",
-    "title": "Beden Algısı – Öğrenci Rehberlik Materyali 2026",
-    "type": "Broşür",
-    "level": "Ortaokul / Lise",
-    "area": "Sosyal-duygusal",
-    "topic": "Beden algısı",
-    "source": "Bolluca İMKB MTAL",
-    "sourcePage": "https://bollucaimkb.meb.k12.tr/meb_iys_dosyalar/34/35/969903/dosyalar/2026_03/69aa9734e4b75168378253_Beden_Alg%C4%B1s%C4%B1.pdf",
-    "file": "https://bollucaimkb.meb.k12.tr/meb_iys_dosyalar/34/35/969903/dosyalar/2026_03/69aa9734e4b75168378253_Beden_Alg%C4%B1s%C4%B1.pdf",
     "fileType": "PDF",
     "sourceType": "official",
     "levels": [
