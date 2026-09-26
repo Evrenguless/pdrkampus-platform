@@ -53,7 +53,7 @@ function score(item,query,parsed){
  const hits=words.filter(word=>hay.includes(word));
 
  if(parsed.topic&&direct.length){
-  return 36+titleDirect.length*8+words.filter(word=>title.includes(word)).length*4+(item.origin==='official'?1:0);
+  return 36+(titleDirect.length?8:0)+words.filter(word=>title.includes(word)).length*4+(item.origin==='official'?1:0);
  }
  if(parsed.topic&&related.length){
   return 14+related.length*2+hits.length;
