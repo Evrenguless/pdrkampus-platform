@@ -1,12 +1,21 @@
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 import {getCuratedResources} from './curated.js?v=20260926-1';
-import {parseQuery,normalize} from './search.js?v=20260926-14';
+import {parseQuery,normalize} from './search.js?v=20260927-1';
 
 const $=selector=>document.querySelector(selector);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const client=authConfigured&&window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 const bucket='community-documents';
-const topicButtons=['Akran zorbalığı','Sınav kaygısı','LGS','Kariyer','Devamsızlık','Özel eğitim'];
+const topicButtons=[
+ {label:'Akran zorbalığı',query:'akran zorbalığı'},
+ {label:'Okula gelmek istemiyor',query:'çocuk okula gelmek istemiyor'},
+ {label:'Sınav kaygısı',query:'sınav kaygısı'},
+ {label:'Duygularını yönetemiyor',query:'duygularını yönetemiyor'},
+ {label:'Hangi mesleği seçmeli?',query:'hangi mesleği seçmeli'},
+ {label:'Özel eğitim / BEP',query:'özel eğitim BEP'},
+ {label:'Veli görüşme formu',query:'veli görüşme formu'},
+ {label:'Dijital zorbalık',query:'siber zorbalık'}
+];
 const state={query:'',type:'',level:'',area:'',source:'',limit:24};
 let documents=[];
 
@@ -36,10 +45,22 @@ function score(item,query,parsed){
  const title=normalize(item.title);
  const hay=normalize([item.title,item.type,item.topic,item.area,item.source,item.level,item.code,item.location].join(' '));
  const words=parsed.words.filter(word=>!['meb','resmi','kaynak','belge'].includes(word));
- if(!words.length)return hay.includes(normalize(query))||parsed.level?1:0;
+ const directTerms=(parsed.topic?.resourceTerms||parsed.topic?.terms||[]).map(normalize);
+ const relatedTerms=(parsed.topic?.related||[]).map(normalize);
+ const direct=directTerms.filter(term=>hay.includes(term));
+ const related=relatedTerms.filter(term=>hay.includes(term));
+ const titleDirect=directTerms.filter(term=>title.includes(term));
  const hits=words.filter(word=>hay.includes(word));
+
+ if(parsed.topic&&direct.length){
+  return 36+titleDirect.length*8+words.filter(word=>title.includes(word)).length*4+(item.origin==='official'?1:0);
+ }
+ if(parsed.topic&&related.length){
+  return 14+related.length*2+hits.length;
+ }
+ if(!words.length)return hay.includes(normalize(query))||parsed.level?1:0;
  if(hits.length===words.length)return 20+words.filter(word=>title.includes(word)).length*5+(item.origin==='official'?1:0);
- if(parsed.topic&&item.kind==='tool'&&parsed.topic.related?.some(term=>title.includes(term))&&hits.length>=words.length-2)return 8;
+ if(words.length>=3&&hits.length>=Math.ceil(words.length*.75)&&words.some(word=>title.includes(word)))return 8+hits.length;
  return 0;
 }
 function card(item){
@@ -68,7 +89,7 @@ function render(){
   .sort((a,b)=>b.score-a.score||a.item.title.localeCompare(b.item.title,'tr')).map(row=>row.item);
  const target=decodeURIComponent(location.hash.slice(1));
  if(target){const position=rows.findIndex(item=>(item.kind==='member'?'belge-'+item.id:item.id)===target);if(position>=state.limit)state.limit=position+1}
- $('#libraryCount').textContent=`${rows.length} kaynak${state.query?' bulundu':' gösteriliyor'}`;
+ $('#libraryCount').textContent=parsed.topic?`${rows.length} kaynak · ${parsed.topic.name}`:`${rows.length} kaynak${state.query?' bulundu':' gösteriliyor'}`;
  $('#libraryGrid').innerHTML=rows.length?rows.slice(0,state.limit).map(card).join(''):'<p class="empty">Bu ölçütlerde kaynak bulunamadı. Aramayı veya filtreleri değiştir.</p>';
  $('#libraryMore').hidden=rows.length<=state.limit;
  $('#libraryMore').textContent=`Daha fazla göster · ${rows.length-state.limit} kayıt`;
@@ -92,7 +113,7 @@ document.querySelector('[data-library-sources]').addEventListener('click',event=
  const button=event.target.closest('[data-library-source]');if(!button)return;
  state.source=button.dataset.librarySource;state.limit=24;render();
 });
-$('#libraryTopics').innerHTML=topicButtons.map(topic=>`<button type="button" data-library-topic="${esc(topic)}">${esc(topic)}</button>`).join('');
+$('#libraryTopics').innerHTML=topicButtons.map(item=>`<button type="button" data-library-topic="${esc(item.query)}">${esc(item.label)}</button>`).join('');
 $('#libraryTopics').addEventListener('click',event=>{
  const button=event.target.closest('[data-library-topic]');if(!button)return;
  state.query=button.dataset.libraryTopic;$('#libraryQuery').value=state.query;state.limit=24;render();
@@ -115,7 +136,7 @@ $('#closeViewer').addEventListener('click',closeViewer);
 $('#viewerDialog').addEventListener('click',event=>{if(event.target===$('#viewerDialog'))closeViewer()});
 
 try{
- const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260926-5'),loadJson('../data/library.json?v=20260926-41'),getCuratedResources()]);
+ const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260926-5'),loadJson('../data/library.json?v=20260927-1'),getCuratedResources()]);
  documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library]);
  setTypeOptions();setAreaOptions();
  const url=new URL(location.href);
