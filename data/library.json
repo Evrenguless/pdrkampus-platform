@@ -5290,5 +5290,147 @@
     "file": "https://akdagmtal.meb.k12.tr/meb_iys_dosyalar/55/08/762934/dosyalar/2019_01/30174243_Yube_YYretmenler_Kurulu_ToplantY_TutanaY.docx",
     "fileType": "DOCX",
     "sourceType": "official"
+  },
+  {
+    "id": "sinif-etkinlik-okuloncesi-cilt2",
+    "title": "Sınıf Rehberlik Etkinlikleri · Okul Öncesi · 2. Cilt",
+    "type": "Etkinlik kitabı",
+    "level": "Okul öncesi",
+    "area": "Sınıf Rehberliği",
+    "topic": "Sınıf rehberlik etkinlikleri",
+    "source": "MEB / Konak Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://konakram.meb.k12.tr/icerikler/sinifrehberliketkinlikleriyillikcalismaplanlari20262027egitimogretimyili_17676082.html",
+    "file": "https://konakram.meb.k12.tr/meb_iys_dosyalar/35/01/164246/dosyalar/2025_09/08115912_okuloncesi2.cilt.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "sinif-etkinlik-ilkokul-cilt2",
+    "title": "Sınıf Rehberlik Etkinlikleri · İlkokul · 2. Cilt",
+    "type": "Etkinlik kitabı",
+    "level": "İlkokul",
+    "area": "Sınıf Rehberliği",
+    "topic": "Sınıf rehberlik etkinlikleri",
+    "source": "MEB / Konak Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://konakram.meb.k12.tr/icerikler/sinifrehberliketkinlikleriyillikcalismaplanlari20262027egitimogretimyili_17676082.html",
+    "file": "https://konakram.meb.k12.tr/meb_iys_dosyalar/35/01/164246/dosyalar/2025_09/08120012_ilkokul2.cilt.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "sinif-etkinlik-ortaokul-cilt2",
+    "title": "Sınıf Rehberlik Etkinlikleri · Ortaokul · 2. Cilt",
+    "type": "Etkinlik kitabı",
+    "level": "Ortaokul",
+    "area": "Sınıf Rehberliği",
+    "topic": "Sınıf rehberlik etkinlikleri",
+    "source": "MEB / Konak Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://konakram.meb.k12.tr/icerikler/sinifrehberliketkinlikleriyillikcalismaplanlari20262027egitimogretimyili_17676082.html",
+    "file": "https://konakram.meb.k12.tr/meb_iys_dosyalar/35/01/164246/dosyalar/2025_09/08120129_ortaokul2.cilt.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "sinif-etkinlik-lise-cilt2",
+    "title": "Sınıf Rehberlik Etkinlikleri · Lise · 2. Cilt",
+    "type": "Etkinlik kitabı",
+    "level": "Lise",
+    "area": "Sınıf Rehberliği",
+    "topic": "Sınıf rehberlik etkinlikleri",
+    "source": "MEB / Konak Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://konakram.meb.k12.tr/icerikler/sinifrehberliketkinlikleriyillikcalismaplanlari20262027egitimogretimyili_17676082.html",
+    "file": "https://konakram.meb.k12.tr/meb_iys_dosyalar/35/01/164246/dosyalar/2025_09/08120237_lise2.cilt.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "karam-hedef-belirleme-lise-sunum-2025",
+    "title": "Hedef Belirleme · Lise Öğrenci Sunumu",
+    "type": "Sunum",
+    "level": "Lise",
+    "area": "Eğitsel Rehberlik",
+    "topic": "Hedef belirleme",
+    "source": "Korkuteli Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://karam.meb.k12.tr/icerikler/hayatimiplanliyorumbasariyaulasiyorumprojesihedefbelirleme_16887058.html",
+    "file": "https://karam.meb.k12.tr/meb_iys_dosyalar/07/20/974543/dosyalar/2025_11/28143757_hedefbelirlemelisesunumpdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "karam-hedef-belirleme-ortaokul-sunum-2025",
+    "title": "Hedef Belirleme · Ortaokul Öğrenci Sunumu",
+    "type": "Sunum",
+    "level": "Ortaokul",
+    "area": "Eğitsel Rehberlik",
+    "topic": "Hedef belirleme",
+    "source": "Korkuteli Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://karam.meb.k12.tr/icerikler/hayatimiplanliyorumbasariyaulasiyorumprojesihedefbelirleme_16887058.html",
+    "file": "https://karam.meb.k12.tr/meb_iys_dosyalar/07/20/974543/dosyalar/2025_11/28143841_hedefbelirlemeortaokulsunumpdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "karam-hedef-belirleme-brosur-2025",
+    "title": "Hedef Belirleme · Ortaokul-Lise Broşürü",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Hedef belirleme",
+    "source": "Korkuteli Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://karam.meb.k12.tr/icerikler/hayatimiplanliyorumbasariyaulasiyorumprojesihedefbelirleme_16887058.html",
+    "file": "https://karam.meb.k12.tr/meb_iys_dosyalar/07/20/974543/dosyalar/2025_11/28143913_hedefbelirlemeortaokullisebrosur.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "karam-hedef-belirleme-etkinlik1-2025",
+    "title": "Hedef Belirleme · Etkinlik 1",
+    "type": "Etkinlik",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Hedef belirleme",
+    "source": "Korkuteli Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://karam.meb.k12.tr/icerikler/hayatimiplanliyorumbasariyaulasiyorumprojesihedefbelirleme_16887058.html",
+    "file": "https://karam.meb.k12.tr/meb_iys_dosyalar/07/20/974543/dosyalar/2025_11/28143935_hedefbelirlemeetkinlik1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "karam-hedef-belirleme-etkinlik2-2025",
+    "title": "Hedef Belirleme · Etkinlik 2 · Düzenlenebilir Word",
+    "type": "Etkinlik",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Hedef belirleme",
+    "source": "Korkuteli Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://karam.meb.k12.tr/icerikler/hayatimiplanliyorumbasariyaulasiyorumprojesihedefbelirleme_16887058.html",
+    "file": "https://karam.meb.k12.tr/meb_iys_dosyalar/07/20/974543/dosyalar/2025_11/28143950_hedefbelirlemeetkinlik2.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "akdag-proje-takip-degerlendirme-formu-doc",
+    "title": "Proje Ödevi Takip ve Değerlendirme Formu · Düzenlenebilir Word",
+    "type": "Form",
+    "level": "Lise",
+    "area": "PDR Servisi Evrakları",
+    "topic": "Akademik takip",
+    "source": "Akdağ Mesleki ve Teknik Anadolu Lisesi / MEB",
+    "sourcePage": "https://akdagmtal.meb.k12.tr/icerikler/sinifrehberligievraklari_6455948.html",
+    "file": "https://akdagmtal.meb.k12.tr/meb_iys_dosyalar/55/08/762934/dosyalar/2019_01/30174527_proje-takip-formu.doc",
+    "fileType": "DOC",
+    "sourceType": "official"
   }
 ]
