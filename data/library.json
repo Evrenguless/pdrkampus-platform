@@ -4826,5 +4826,171 @@
     "file": "https://kurtulusimamhatipoo.meb.k12.tr/meb_iys_dosyalar/46/01/726977/dosyalar/2026_01/69672eee3f6a2082009233_Soru_Takip_%C3%87izelgesi.docx",
     "fileType": "DOCX",
     "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-ab",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · A-B",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17195700_mbk_1.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-ccd",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · C-Ç-D",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17195800_mbk_2.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-ef",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · E-F",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200110_mbk_3.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-gh",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · G-H",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200223_mbk_4.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-iijk",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · I-İ-J-K",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200420_mbk_5.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-lmno",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · L-M-N-O",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200607_mbk_6.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-oprs",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · Ö-P-R-S",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200732_mbk_7.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "iskur-mesleki-bilgi-tuvyz",
+    "title": "İŞKUR Mesleki Bilgi Kitapçığı · T-U-V-Y-Z",
+    "type": "Mesleki kaynak",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kariyer ve Mesleki Rehberlik",
+    "topic": "Meslek tanıtımı",
+    "source": "İŞKUR / MEB okul arşivi",
+    "sourcePage": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+    "file": "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17201244_mbk_8.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "corum-aile-iletisim-cocuk-haklari-bulten-2026",
+    "title": "Aile İçi İletişim, Çocuk Hakları ve Çocuk Kıymeti · Bülten",
+    "type": "Bülten",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Aile içi iletişim ve çocuk hakları",
+    "source": "Çorum Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://corumram.meb.k12.tr/dosyalar/listele_dosya_3983895_Aile%20%C4%B0%C3%A7i%20%C4%B0leti%C5%9Fim-%C3%87ocuk%20Haklar%C4%B1%20ve%20%C3%87ocuk%20K%C4%B1ymeti%202025",
+    "file": "https://corumram.meb.k12.tr/meb_iys_dosyalar/19/01/138844/dosyalar/2026_02/69a009f1193f8787275746_A%C4%B0LE_%C4%B0%C3%87%C4%B0_%C4%B0LET%C4%B0%C5%9E%C4%B0M_d%C3%BCzeltilmi%C5%9F_1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "corum-cocuk-haklari-okuloncesi-ilkokul-etkinlik-2025",
+    "title": "Çocuk Hakları · Okul Öncesi ve İlkokul Sınıf Etkinliği",
+    "type": "Etkinlik",
+    "level": "Okul öncesi / İlkokul",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Çocuk hakları",
+    "source": "Çorum Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://corumram.meb.k12.tr/dosyalar/listele_dosya_3983895_Aile%20%C4%B0%C3%A7i%20%C4%B0leti%C5%9Fim-%C3%87ocuk%20Haklar%C4%B1%20ve%20%C3%87ocuk%20K%C4%B1ymeti%202025",
+    "file": "https://corumram.meb.k12.tr/meb_iys_dosyalar/19/01/138844/dosyalar/2025_11/17101617_cocukhaklariokuloncesiveilkokulsinifetkinligi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
