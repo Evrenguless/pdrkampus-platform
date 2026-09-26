@@ -3908,5 +3908,74 @@
     "file": "https://ispartaram.meb.k12.tr/meb_iys_dosyalar/32/01/155082/dosyalar/2021_03/12150728_SYnav_KaygYsY_Yle_BaY_Etme_PsikoeYitim_Grubunun_GeliYtirilmesi.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "nizip-haftalik-etkinlik-kayit-formu",
+    "title": "Haftalık Etkinlik Kayıt Formu",
+    "type": "Form",
+    "level": "Lise",
+    "area": "Eğitsel Rehberlik",
+    "topic": "Akademik izleme",
+    "source": "Nizip Abdulkadir Sayın Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://nizipram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://nizipram.meb.k12.tr/meb_iys_dosyalar/27/05/752686/dosyalar/2021_09/18160915_Haftalik-Etkinlik-Kayit-Formu.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "nizip-konu-soru-takip-cizelgesi",
+    "title": "Konu-Soru Dağılımları ve Soru Takip Çizelgesi",
+    "type": "Çizelge",
+    "level": "Lise",
+    "area": "Eğitsel Rehberlik",
+    "topic": "Akademik izleme",
+    "source": "Nizip Abdulkadir Sayın Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://nizipram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://nizipram.meb.k12.tr/meb_iys_dosyalar/27/05/752686/dosyalar/2021_09/18160916_Konu-Soru-Dagilimlari-Soru-Takip-Cizelgesi.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "nizip-tyt-ayt-deneme-takip",
+    "title": "TYT-AYT Deneme Takip Çizelgesi",
+    "type": "Çizelge",
+    "level": "Lise",
+    "area": "Eğitsel Rehberlik",
+    "topic": "TYT-AYT akademik izleme",
+    "source": "Nizip Abdulkadir Sayın Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://nizipram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://nizipram.meb.k12.tr/meb_iys_dosyalar/27/05/752686/dosyalar/2021_09/18160916_TYT-AYT-Deneme-Takip-Cizelgesi.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "nizip-haftalik-planlayici",
+    "title": "TYT-AYT Deneme Takip Çizelgesi ve Haftalık Planlayıcı",
+    "type": "Planlayıcı",
+    "level": "Lise",
+    "area": "Eğitsel Rehberlik",
+    "topic": "Haftalık planlama",
+    "source": "Nizip Abdulkadir Sayın Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://nizipram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://nizipram.meb.k12.tr/meb_iys_dosyalar/27/05/752686/dosyalar/2021_09/18160916_TYT-AYT-Deneme-Takip-Cizelgesi-ve-Haftalik-Planlayici.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "nizip-verimli-ders-kontrol-listesi",
+    "title": "Verimli Ders Çalışma Kontrol Listesi",
+    "type": "Kontrol listesi",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Eğitsel Rehberlik",
+    "topic": "Verimli ders çalışma",
+    "source": "Nizip Abdulkadir Sayın Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://nizipram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://nizipram.meb.k12.tr/meb_iys_dosyalar/27/05/752686/dosyalar/2021_09/18160310_Verimli-Ders-Calisma-Kontrol-Listesi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
