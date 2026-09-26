@@ -8160,5 +8160,215 @@
     "file": "https://mardin.meb.gov.tr/meb_iys_dosyalar/2026_09/6ab27c6737c8c874911294_S%C4%B1n%C4%B1r_Koyma_veli_Afi%C5%9F.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "selamlasma-7-gunde-7-selam-2026",
+    "title": "7 Günde 7 Selam · Selamlaşma Etkinlikleri · 2026-2027",
+    "type": "Etkinlik",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Selamlaşma ve sosyal iletişim",
+    "source": "Vali Kemal Nehrozoğlu Ortaokulu / MEB",
+    "sourcePage": "https://vknortaokulu.meb.k12.tr/icerikler/birselambirbakisbirgulumseme_17665540.html",
+    "file": "https://vknortaokulu.meb.k12.tr/meb_iys_dosyalar/47/09/722060/dosyalar/2026_09/6a9942d7b3ef3773041316_7_G%C3%BCnde_7_Selam.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "usak-2026-genel-yerel-hedefler-docx",
+    "title": "2026-2027 Genel Hedef Selamlaşma ve Yerel Hedef Sınır Koyma · Çalışma Dokümanı",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "PDR Servisi Evrakları",
+    "topic": "Genel ve yerel hedefler",
+    "source": "Uşak Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://usakram.meb.k12.tr/icerikler/20262027egitimogretimyiligenelveyerelhedeflerimizbelirlendi_17664333.html",
+    "file": "https://usakram.meb.k12.tr/meb_iys_dosyalar/64/01/206682/dosyalar/2026_09/6a981521bdf33127867449_2026_hedef.docx",
+    "fileType": "DOCX",
+    "sourceType": "official"
+  },
+  {
+    "id": "osmangazi-duygu-duzenleme-bulteni-2026",
+    "title": "Çocuklarda Duygu Düzenleme Becerisi · Bülten · 2026",
+    "type": "Bülten",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Duygu düzenleme",
+    "source": "Osmangazi Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://osmangaziram.meb.k12.tr/icerikler/cocuklardaduyguduzenlemebecerisibulteniyayinlandi_17414441.html",
+    "file": "https://osmangaziram.meb.k12.tr/meb_iys_dosyalar/16/15/963765/dosyalar/2026_04/69eb55f3afff2676808640_%C3%87OCUKLARDA_DUYGU_D%C3%9CZENLEME_BECER%C4%B0S%C4%B0.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kecioren-duygu-duzenleme-ogretmen-afis-2025",
+    "title": "Çocuklarda Duygu Düzenleme Teknikleri · Öğretmen Afişi",
+    "type": "Afiş",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Duygu düzenleme",
+    "source": "Keçiören Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://keciorenram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2025_09/15160441_duyguduzenlemeteknikleriogretmenafis.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kecioren-duygu-duzenleme-ogretmen-brosur-2025",
+    "title": "Çocuklarda Duygu Düzenleme · Öğretmen Broşürü",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Duygu düzenleme",
+    "source": "Keçiören Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://keciorenram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2025_09/15160437_cocuklardaduyguduzenlemeogretmenbrosuru.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kecioren-duygu-duzenleme-moduler-pano-2025",
+    "title": "Çocuklar İçin Duygu Düzenleme Teknikleri · Modüler Pano",
+    "type": "Pano materyali",
+    "level": "Tüm kademeler",
+    "area": "Öğretmen",
+    "topic": "Duygu düzenleme",
+    "source": "Keçiören Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://keciorenram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2025_09/24104253_cocuklardaduyguduzenlemeteknikleri.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kecioren-duygu-duzenleme-veli-brosur-2025",
+    "title": "Çocuklarda Duygu Düzenleme · Veli Broşürü",
+    "type": "Broşür",
+    "level": "Tüm kademeler",
+    "area": "Veli",
+    "topic": "Duygu düzenleme",
+    "source": "Keçiören Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://keciorenram.meb.k12.tr/tema/siteharitasi.php",
+    "file": "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2025_09/15160630_cocuklardaduyguduzenlemevelibrosuru.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-ogrenci-etkinlik-kitabi-2026",
+    "title": "Otokontrol · Öğrenci Etkinlik Kitabı · İstanbul 2026-2027",
+    "type": "Etkinlik kitabı",
+    "level": "Tüm kademeler",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e78e3194ac639739413_OGRENCI-ETKINLIK_KITABI.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-pano-okuloncesi-ilkokul-2026",
+    "title": "Otokontrol · Pano/Afiş Serisi · Okul Öncesi-İlkokul · 2026-2027",
+    "type": "Pano materyali",
+    "level": "Okul öncesi / İlkokul",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e79cc2029f145558842_okul%C3%B6ncesi-ilkokul_pono-afi%C5%9F_serisi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-pano-ortaokul-lise-2026",
+    "title": "Otokontrol · Pano/Afiş Serisi · Ortaokul-Lise · 2026-2027",
+    "type": "Pano materyali",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e79cc40f59112702689_ortaokul-lise_pano-afi%C5%9F_serisi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-veli-brosur-okuloncesi-ilkokul-2026",
+    "title": "Otokontrol · Veli Broşürü · Okul Öncesi-İlkokul · 2026-2027",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ],
+    "area": "Veli",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e79f231a5d586287357_veli_bro%C5%9F%C3%BCr%C3%BC-okul%C3%B6ncesi-ilkokul.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-veli-brosur-ortaokul-lise-2026",
+    "title": "Otokontrol · Veli Broşürü · Ortaokul-Lise · 2026-2027",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Veli",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e79f25904e637450845_veli_bro%C5%9F%C3%BCr%C3%BC-ortaokul-lise.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-ogretmen-brosur-okuloncesi-ilkokul-2026",
+    "title": "Otokontrol · Öğretmen Broşürü · Okul Öncesi-İlkokul · 2026-2027",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "levels": [
+      "Okul öncesi",
+      "İlkokul"
+    ],
+    "area": "Öğretmen",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e79f1b68ef865851857_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr%C3%BC-okul%C3%B6ncesi-ilkokul.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "istanbul-otokontrol-ogretmen-brosur-ortaokul-lise-2026",
+    "title": "Otokontrol · Öğretmen Broşürü · Ortaokul-Lise · 2026-2027",
+    "type": "Broşür",
+    "level": "Ortaokul / Lise",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Öğretmen",
+    "topic": "Otokontrol",
+    "source": "İstanbul İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://istanbul.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-yerel-hedef-icerikleri/icerik/6413",
+    "file": "https://istanbul.meb.gov.tr/meb_iys_dosyalar/2026_09/6a9e79f20193a651887898_%C3%B6%C4%9Fretmen_bro%C5%9F%C3%BCr%C3%BC-ortaokul-lise.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
