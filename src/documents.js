@@ -1,4 +1,4 @@
-export const documentTypes = ['Form', 'Sunum', 'Etkinlik kitabı', 'Farkındalık programı', 'Program', 'Broşür', 'Mesleki kaynak'];
+export const documentTypes = ['Form', 'Sunum', 'Etkinlik kitabı', 'Farkındalık programı', 'Program', 'Broşür', 'Kılavuz', 'Mesleki kaynak'];
 
 export function documentItems(forms, resources) {
   return [
@@ -9,5 +9,5 @@ export function documentItems(forms, resources) {
 
 export function filterDocuments(items, { query = '', type = '', level = '', source = '' } = {}) {
   const q = query.trim().toLocaleLowerCase('tr-TR');
-  return items.filter(x => (!type || x.type === type) && (!level || x.level === level || x.level === 'Tüm kademeler') && (!source || x.source === source) && (!q || [x.title, x.type, x.level, x.topic, x.group].some(v => String(v || '').toLocaleLowerCase('tr-TR').includes(q))));
+  return items.filter(x => (!type || x.type === type) && (!level || x.level === level || x.level === 'Tüm kademeler' || x.item.levels?.includes(level)) && (!source || x.source === source) && (!q || [x.title, x.type, x.level, x.topic, x.group].some(v => String(v || '').toLocaleLowerCase('tr-TR').includes(q))));
 }

@@ -297,5 +297,143 @@
     "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_03/04153516_meslekokuluprogrami-21.08.2024_compressed.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-lgs-kaygi-motivasyon",
+    "title": "LGS Kaygı ve Motivasyon Rehberi",
+    "type": "Kılavuz",
+    "level": "Ortaokul",
+    "grades": [
+      8
+    ],
+    "area": "Akademik",
+    "topic": "Sınav kaygısı",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698d70cc82660794601079_LGS_Kayg%C4%B1_ve_Motivasyon.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-lgs-sinav-stratejileri",
+    "title": "LGS Sınav Stratejileri",
+    "type": "Kılavuz",
+    "level": "Ortaokul",
+    "grades": [
+      8
+    ],
+    "area": "Akademik",
+    "topic": "Sınava hazırlık",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698d70a4592a7157891043_LGS_S%C4%B1nav_Stratejileri.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-lgs-basari-rehberi",
+    "title": "LGS'de Başarı İçin Rehber",
+    "type": "Kılavuz",
+    "level": "Ortaokul",
+    "grades": [
+      8
+    ],
+    "area": "Akademik",
+    "topic": "Sınava hazırlık",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698d6a3e28eff241535866_LGSDE_BA%C5%9EARI_%C4%B0%C3%87%C4%B0N.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-yks-altin-taktikler",
+    "title": "YKS'de Altın Taktikler",
+    "type": "Kılavuz",
+    "level": "Lise",
+    "grades": [
+      12
+    ],
+    "area": "Akademik",
+    "topic": "Sınava hazırlık",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698fbfe154649633700088_YKSDE_Alt%C4%B1n_Taktikler.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-yks-stratejisi",
+    "title": "YKS Stratejisi",
+    "type": "Kılavuz",
+    "level": "Lise",
+    "grades": [
+      12
+    ],
+    "area": "Akademik",
+    "topic": "Sınava hazırlık",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698da2e9af206209285990_YKS_Stratejisi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-yks-stratejileri",
+    "title": "YKS Stratejileri",
+    "type": "Kılavuz",
+    "level": "Lise",
+    "grades": [
+      12
+    ],
+    "area": "Akademik",
+    "topic": "Sınava hazırlık",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698da2bab1d7b811189825_YKS_Stratejileri.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-2026-sinav-kaygisini-yonetmek",
+    "title": "Sınav Kaygısını Yönetmek",
+    "type": "Kılavuz",
+    "level": "8. ve 12. sınıf",
+    "grades": [
+      8,
+      12
+    ],
+    "area": "Akademik",
+    "topic": "Sınav kaygısı",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698da2625a99c555923539_S%C4%B1nav_Kayg%C4%B1s%C4%B1n%C4%B1_Y%C3%B6netmek.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
+  },
+  {
+    "id": "kocasinan-2026-sinav-doneminde-anne-baba-olmak",
+    "title": "Sınav Döneminde Anne Baba Olmak",
+    "type": "Kılavuz",
+    "level": "8. ve 12. sınıf",
+    "grades": [
+      8,
+      12
+    ],
+    "area": "Veli",
+    "topic": "Sınav dönemi",
+    "source": "Kocasinan RAM",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/icerikler/lgsveykssureciileilgiliyolgostericikilavuzlarhazirladik_17135315.html",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698da08ea8146057683199_S%C4%B1nav_D%C3%B6neminde_Anne_Baba_Olmak.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ]
   }
 ]
