@@ -1,0 +1,95 @@
+/* PDR Kampüs shared visual language. Keep page-specific layouts in their own files. */
+:root{
+  --campus-card-radius:16px;
+  --campus-card-border:#d8e5d9;
+  --campus-card-hover:#a8c5ad;
+  --campus-card-shadow:0 8px 24px #1d44300b;
+  --campus-card-shadow-hover:0 17px 36px #1d443019;
+  --campus-card-footer:#f0f6ef;
+  --campus-card-ink:#183e2d;
+  --campus-card-accent:#1e6447;
+  --campus-card-muted:#657b6a;
+  --campus-font-ui:Manrope,sans-serif;
+  --campus-font-editorial:Georgia,serif;
+}
+
+/* Editorial headings are distinct from navigation, controls, and card titles. */
+button,input,select,textarea,summary,.desktop,.mobile-menu{font-family:var(--campus-font-ui)}
+.page-intro h1,.profile-hero h1,.community-hero h1,.pathways-heading h2,.campus-home .section-heading h2{font-family:var(--campus-font-editorial)}
+.document-card h3,.form-card h4,.surface-card h2,.surface-card h3,.search-result-section h3,.search-source h4,.library-intro h1{font-family:var(--campus-font-ui)}
+
+/* The supplied PNG stays transparent and sits directly in the existing brand slot. */
+.header .brand img,.campus-footer-brand img{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.header .brand:hover img,.header .brand:focus-visible img{border:0;box-shadow:none}
+.header .brand{gap:10px}
+.desktop{gap:clamp(17px,2vw,30px);font-size:12px;font-weight:700;letter-spacing:-.015em}
+.desktop a{min-height:46px;transition:color .18s ease}
+.desktop a[aria-current="page"]::after,.desktop a[data-section-current="true"]::after{height:2px;bottom:5px;left:0;right:0;border-radius:4px}
+.desktop a:last-child{min-height:38px;padding:0 16px;border:1px solid #d6e4db;border-radius:9px;background:#f7faf6;color:#235b46;box-shadow:0 2px 7px #22453408}
+.desktop a:last-child::after{display:none}
+.desktop a:last-child:hover,.desktop a:last-child[aria-current="page"],.desktop a:last-child[data-section-current="true"]{border-color:#aec9b6;background:#eaf4ed}
+@media(max-width:700px){.header .brand img{width:44px;height:44px}.header .brand{gap:9px}}
+
+/* One surface, border, hover, and footer for resources and publishing cards. */
+.surface-card,.document-card:not(.resource-card),.form-card{
+  min-width:0;background:#fff;border:1px solid var(--campus-card-border);
+  border-radius:var(--campus-card-radius);box-shadow:var(--campus-card-shadow);
+  transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+}
+.surface-card:hover,.document-card:not(.resource-card):hover,.form-card:hover{
+  border-color:var(--campus-card-hover);box-shadow:var(--campus-card-shadow-hover);transform:translateY(-2px);
+}
+.resource-card.surface-card{border-color:var(--campus-card-border);border-radius:var(--campus-card-radius);box-shadow:var(--campus-card-shadow)}
+.resource-card.surface-card:hover{border-color:var(--campus-card-hover);box-shadow:var(--campus-card-shadow-hover);transform:translateY(-2px)}
+.resource-card .document-card-meta span:first-child,.document-card:not(.resource-card) .document-card-meta span:first-child,
+.community-feed .post-card-tags .post-card-type,.community-feed .post-card-tags .post-card-category{
+  display:inline-flex;align-items:center;width:fit-content;padding:6px 10px;border:0;border-radius:7px;
+  background:#eaf3e9;color:#286344;font:800 10px/1.35 var(--campus-font-ui);letter-spacing:.015em;
+}
+.resource-card .document-card-meta span+span,.document-card:not(.resource-card) .document-card-meta span+span{color:var(--campus-card-muted);font:700 11px/1.4 var(--campus-font-ui)}
+.resource-card h3,.document-card h3,.community-feed .question-card h2,.search-hit-copy strong{color:var(--campus-card-ink);font-family:var(--campus-font-ui);letter-spacing:-.035em}
+.resource-card .resource-actions,.document-card:not(.resource-card)>div:last-child,.community-feed .question-card .feed-actions{
+  border-top:1px solid #dfeade;background:var(--campus-card-footer);
+}
+.resource-card .resource-actions>button:first-child,.document-card:not(.resource-card)>div:last-child button,
+.community-feed .question-card .feed-actions .post-card-open,.search-hit-cta{color:var(--campus-card-accent);font:800 12px/1.4 var(--campus-font-ui)}
+.surface-card :is(a,button):focus-visible,.document-card :is(a,button):focus-visible,.form-card :is(a,button):focus-visible{outline:2px solid #438d64;outline-offset:3px}
+
+/* Full resource cards and compact member results share the same information order. */
+.resource-card .resource-content{padding:22px 24px 19px}
+.resource-card .resource-actions{padding:10px 20px 10px 24px;min-height:60px}
+.search-mini-list{gap:14px}
+.search-mini-list .search-hit.surface-card{display:flex;flex-direction:column;align-items:stretch!important;gap:0;padding:0;overflow:hidden}
+.search-hit .search-hit-copy{display:flex;flex-direction:column;align-items:flex-start;gap:0;width:100%;padding:20px 22px 17px;margin:0}
+.search-hit-copy .search-hit-meta{width:auto;max-width:100%;white-space:normal!important;margin:0 0 12px;padding:6px 10px;border-radius:7px;background:#eaf3e9;color:#286344;font:700 10px/1.4 var(--campus-font-ui)}
+.search-hit-copy strong{font-size:16px;line-height:1.4;margin-bottom:8px}
+.search-hit-copy .search-snippet{margin:0;color:var(--campus-card-muted);font-size:12px;line-height:1.55;-webkit-line-clamp:2}
+.search-hit .search-hit-cta{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:52px;margin-top:auto!important;padding:12px 22px;border-top:1px solid #dfeade;background:var(--campus-card-footer)}
+.search-hit:hover .search-hit-cta{color:#124a32}
+
+/* Publishing cards: byline, topic, title, two-line preview, interaction footer. */
+.community-feed .question-card.surface-card{border:1px solid var(--campus-card-border);border-radius:var(--campus-card-radius);box-shadow:var(--campus-card-shadow)}
+.community-feed .question-card.surface-card:hover{border-color:var(--campus-card-hover);box-shadow:var(--campus-card-shadow-hover)}
+.community-feed .question-card .post-card-top{padding:21px 25px 0;align-items:center}
+.community-feed .post-card-top .post-card-byline{display:inline-flex;align-items:center;gap:10px;min-width:0;margin:0;font:800 12px/1.35 var(--campus-font-ui)}
+.community-feed .post-card-byline .post-card-avatar{width:34px;height:34px;font-size:12px}
+.community-feed .post-card-byline a{overflow-wrap:anywhere}
+.community-feed .question-card .post-card-tags{padding:16px 25px 0;gap:7px}
+.community-feed .post-card-tags .post-card-type{background:#e8f2eb;color:#226246;letter-spacing:.05em}
+.community-feed .post-card-tags .post-card-category{background:#f2f5ed;color:#566d58}
+.community-feed .question-card h2{margin:14px 25px 10px;font-size:clamp(19px,2.2vw,23px);line-height:1.32}
+.community-feed .question-card .question-copy{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;white-space:normal;overflow-wrap:anywhere;margin:0 25px 22px;font-size:13px;line-height:1.6}
+.community-feed .question-card .feed-actions{min-height:60px;padding:11px 25px;gap:10px}
+.community-feed .question-card .feed-actions button:not(.report-action){min-height:36px;padding:7px 10px;border:1px solid #cfe1d2;border-radius:8px;background:#fff;font:700 11px var(--campus-font-ui)}
+.community-feed .question-card .feed-actions button[aria-pressed=true]{background:#e2efe5}
+.community-feed .question-card .feed-actions .post-card-open{order:-1;margin-left:0;margin-right:auto}
+.community-feed .question-card .feed-actions .report-action{margin-left:0}
+@media(max-width:700px){
+  .community-feed .question-card .post-card-top{padding:18px 18px 0}
+  .community-feed .question-card .post-card-tags{padding:14px 18px 0}
+  .community-feed .question-card h2{margin:13px 18px 8px}
+  .community-feed .question-card .question-copy{margin:0 18px 18px}
+  .community-feed .question-card .feed-actions{padding:11px 18px}
+}
+@media(max-width:420px){.community-feed .question-card .feed-actions .post-card-open{width:100%}.community-feed .question-card .feed-actions .report-action{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.surface-card,.document-card,.form-card{transition:none}}
