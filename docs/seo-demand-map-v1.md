@@ -3,7 +3,7 @@
 ## Özet
 - Benzersiz sorgu: 723
 - Canonical hedef grubu: 149
-- P1/P2/P3 dağılımı: {"P2":302,"P1":421}
+- P1/P2/P3 dağılımı: {"P2":281,"P1":419,"P3":23}
 - Risk dağılımı: {"Normal":669,"Yüksek-risk":44,"Hassas":10}
 - İlk üretim listesi: 50 sayfa
 
