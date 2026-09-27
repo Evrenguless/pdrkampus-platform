@@ -4,7 +4,7 @@
 .home-stage .hero-copy{max-width:none;margin:0}
 .home-stage .eyebrow{display:flex;align-items:center;justify-content:center;gap:19px;margin:0 0 23px;color:#477f70;font-size:11px;font-weight:750;letter-spacing:.26em}
 .home-stage .eyebrow::before,.home-stage .eyebrow::after{content:"";width:76px;height:1px;background:#b9d0c6}
-.home-stage h1{margin:0;color:#123c31;font:700 clamp(44px,5vw,72px)/1.06 Georgia,serif;letter-spacing:-.047em}
+.home-stage h1{max-width:1120px;margin:0 auto;color:#123c31;font:700 clamp(44px,5vw,72px)/1.06 Georgia,serif;letter-spacing:-.047em;text-align:center}
 .home-stage h1 em{font-style:normal;color:#123c31}
 .home-stage .lead{max-width:none;margin:19px auto 30px;color:#5d6971;font-size:18px;line-height:1.6}
 .home-stage .search{max-width:890px;margin:0 auto;padding:7px;border:1px solid #a9c9bc;border-radius:13px;background:#fff;box-shadow:none}
@@ -26,9 +26,9 @@
 .pathway-card{position:relative;display:flex;flex-direction:column;min-height:312px;min-width:0;overflow:hidden;padding:27px 31px 25px;border:1px solid #dce4d9;border-top:6px solid #4d927c;border-radius:11px;background:#f1f5ed;color:#153c34}
 .pathway-absence{border-top-color:#c7c5a6;background:#faf9f3}
 .pathway-bullying{border-top-color:#a1bc9e;background:#f0f5ed}
-.pathway-card svg{position:absolute;top:40px;right:30px;width:74px;height:74px;fill:none;stroke:#315f50;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round;opacity:.72}
+.pathway-card svg{position:absolute;top:19px;right:25px;width:43px;height:43px;fill:none;stroke:#315f50;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round;opacity:.72}
 .pathway-kicker{display:block;max-width:calc(100% - 90px);color:#4d7e6f;font-size:10px;font-weight:800;letter-spacing:.16em}
-.pathway-card h3{max-width:290px;min-height:52px;margin:22px 0 9px;color:#123c31;font:750 clamp(21px,2vw,27px)/1.16 Manrope,sans-serif;letter-spacing:-.045em}
+.pathway-card h3{max-width:none;min-height:52px;margin:39px 0 9px;color:#123c31;font:750 clamp(21px,2vw,27px)/1.16 Manrope,sans-serif;letter-spacing:-.045em}
 .pathway-card p{max-width:345px;margin:0;color:#536369;font-size:14px;line-height:1.55}
 .pathway-types{display:block;margin-top:auto;padding-top:23px;color:#63747a;font-size:13px;line-height:1.5}
 .pathway-card>button{display:flex;align-items:center;gap:12px;align-self:flex-start;margin-top:20px;padding:0 0 4px;border:0;border-bottom:1px solid #367964;background:transparent;color:#123c31;font:700 14px/1.3 Manrope,sans-serif;cursor:pointer;text-align:left}
@@ -84,7 +84,7 @@
 .campus-panel-link:hover,.campus-panel-link:focus-visible{background:#deeadb;transform:translateY(-2px);text-decoration:none;outline:none}
 .campus-home-feature .campus-panel-link:hover,.campus-home-feature .campus-panel-link:focus-visible{background:#37684a}
 .campus-panel-link:focus-visible{outline:2px solid #528568;outline-offset:3px}
-@media(max-width:960px){.home-stage{padding-top:65px}.pathway-card{padding:23px;min-height:345px}.pathway-card svg{width:56px;height:56px;right:19px}.campus-home-intro{align-items:start}.campus-home-grid{grid-template-columns:1fr 1fr}.campus-home-feature{grid-column:1/-1}.campus-home-secondary{padding:23px}}
+@media(max-width:960px){.home-stage{padding-top:65px}.pathway-card{padding:23px;min-height:345px}.pathway-card svg{right:19px}.campus-home-intro{align-items:start}.campus-home-grid{grid-template-columns:1fr 1fr}.campus-home-feature{grid-column:1/-1}.campus-home-secondary{padding:23px}}
 @media(max-width:700px){
  .home-stage{padding:55px 20px 43px}
  .home-stage .eyebrow{gap:9px;font-size:9px;letter-spacing:.13em}
@@ -103,7 +103,7 @@
  .pathways-heading p{font-size:13px}
  .pathway-grid,.pathway-resources{grid-template-columns:1fr}
  .pathway-card{min-height:267px;padding:25px}
- .pathway-card h3{min-height:0;margin-top:20px}
+ .pathway-card h3{min-height:0;margin-top:30px}
  .pathway-types{padding-top:19px}
  .pathway-detail{padding:20px}
  .campus-home{padding-top:48px;padding-bottom:68px}
