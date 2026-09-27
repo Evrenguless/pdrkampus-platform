@@ -107,11 +107,11 @@
         "veli bilgilendirme",
         "sınıf çalışması"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Akran Zorbalığı | PDR Kampüs",
-        "description": "",
+        "title": "Akran Zorbalığı Nedir? Okul İçin Kaynaklar | PDR Kampüs",
+        "description": "Akran zorbalığı nedir, okulda nasıl ele alınır ve hangi MEB kaynakları kullanılabilir? Programları ve psikolojik danışman kaynaklarını keşfedin.",
         "primaryQuery": "akran zorbalığı"
       },
       "contentBrief": {
@@ -123,7 +123,20 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/akran-zorbaligi/",
+      "relatedTopics": [
+        "siber-zorbalik",
+        "akran-iliskileri",
+        "sosyal-dislanma",
+        "okul-iklimi"
+      ],
+      "officialSources": [
+        {
+          "name": "MEB Akran Zorbalığı",
+          "url": "https://orgm.meb.gov.tr/www/akran-zorbaligi/icerik/3132"
+        }
+      ]
     },
     {
       "id": "topic_siber_zorbalik",
@@ -709,11 +722,11 @@
         "devamsızlık nedenlerini inceleme",
         "öğrenci ve veli görüşmesi"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Devamsızlık | PDR Kampüs",
-        "description": "",
+        "title": "Devamsızlık Nedenleri ve MEB Kaynakları | PDR Kampüs",
+        "description": "Okul devamsızlığının nedenlerini değerlendirmek için MEB Devamsızlık Nedenleri Anketi ve önleme programlarını inceleyin.",
         "primaryQuery": "devamsızlık"
       },
       "contentBrief": {
@@ -725,7 +738,24 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/devamsizlik/",
+      "relatedTopics": [
+        "okul-reddi",
+        "aidiyet",
+        "okula-uyum",
+        "motivasyon"
+      ],
+      "officialSources": [
+        {
+          "name": "MEB Devamsızlık Nedenleri Anketi",
+          "url": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_05/08131422_devamsizliknedenianketi.pdf"
+        },
+        {
+          "name": "MEB Okul Devamsızlığını Önleme",
+          "url": "https://orgm.meb.gov.tr/www/okul-devamsizligini-onleme/icerik/3245"
+        }
+      ]
     },
     {
       "id": "topic_okul_reddi",
