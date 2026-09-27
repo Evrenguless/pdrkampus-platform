@@ -60,11 +60,11 @@
         "akran ilişkilerini değerlendirme",
         "grup dinamiğini anlama"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Sosyometri | PDR Kampüs",
-        "description": "",
+        "title": "Sosyometri Nedir? Uygulama ve Kaynaklar | PDR Kampüs",
+        "description": "Sosyometri nedir, okulda ne amaçla kullanılır ve uygulamada nelere dikkat edilir? PDR Kampüs'te sosyometri formu ve resmî kaynaklara ulaşın.",
         "primaryQuery": "sosyometri testi"
       },
       "contentBrief": {
@@ -76,7 +76,19 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/sosyometri/",
+      "relatedTopics": [
+        "akran-iliskileri",
+        "sosyal-dislanma",
+        "grup-dinamikleri"
+      ],
+      "officialSources": [
+        {
+          "name": "MEB Sosyometri Uygulama Örnekleri",
+          "url": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2017_08/07232804_SOSYOMETRY.pdf"
+        }
+      ]
     },
     {
       "id": "topic_akran_zorbaligi",
