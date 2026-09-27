@@ -1,0 +1,4878 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-27",
+  "summary": {
+    "keywordCount": 723,
+    "canonicalGroupCount": 149,
+    "priority50Count": 50,
+    "note": "Bir keyword bir sayfa değildir. Bu dosya keywordleri canonical içerik hedeflerinde kümeler."
+  },
+  "canonicalGroups": [
+    {
+      "canonicalPage": "/pdr-ags/",
+      "mainTopics": [
+        "PDR AGS / ÖABT"
+      ],
+      "queryCount": 41,
+      "p1Count": 37,
+      "p2Count": 4,
+      "p3Count": 0,
+      "highPotentialCount": 34,
+      "seasonalHighCount": 2,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR adayı"
+      ],
+      "contentTypes": [
+        "Rehber",
+        "Veri sayfası",
+        "Hesaplama aracı",
+        "Etkinlik"
+      ],
+      "sampleQueries": [
+        "PDR AGS nedir",
+        "PDR AGS 2026",
+        "PDR AGS konuları",
+        "PDR AGS konu dağılımı 2026",
+        "PDR AGS soru dağılımı",
+        "PDR AGS kaç soru",
+        "PDR AGS sınav süresi",
+        "PDR AGS puanı nasıl hesaplanır",
+        "PDR AGS puan hesaplama",
+        "PDR AGS net hesaplama",
+        "PDR AGS kaç net iyi",
+        "PDR AGS çalışma programı"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/akran-zorbaligi/",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 34,
+      "p1Count": 31,
+      "p2Count": 3,
+      "p3Count": 0,
+      "highPotentialCount": 30,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "PPT",
+        "Etkinlik"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı nedir",
+        "akran zorbalığı belirtileri",
+        "akran zorbalığı türleri",
+        "akran zorbalığı nedenleri",
+        "akran zorbalığı nasıl önlenir",
+        "okulda akran zorbalığına müdahale nasıl yapılır",
+        "rehber öğretmen akran zorbalığında ne yapmalı",
+        "akran zorbalığı yapan öğrenciyle nasıl görüşülür",
+        "zorbalığa uğrayan öğrenciye nasıl yaklaşılır",
+        "akran zorbalığı veli görüşmesi nasıl yapılır",
+        "akran zorbalığı veli görüşme tutanağı",
+        "akran zorbalığı müdahale planı"
+      ]
+    },
+    {
+      "canonicalPage": "/yks/",
+      "mainTopics": [
+        "YKS"
+      ],
+      "queryCount": 43,
+      "p1Count": 28,
+      "p2Count": 15,
+      "p3Count": 0,
+      "highPotentialCount": 31,
+      "seasonalHighCount": 2,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber",
+        "Hesaplama aracı",
+        "Etkinlik",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "YKS tercih nasıl yapılır",
+        "YKS tercih robotu",
+        "YKS tercih listesi nasıl hazırlanır",
+        "YKS sıralamaya göre tercih nasıl yapılır",
+        "puan mı sıralama mı önemli YKS",
+        "YKS bölüm seçimi nasıl yapılır",
+        "üniversite bölümü nasıl seçilir",
+        "üniversite tercihinde nelere dikkat edilmeli",
+        "YKS tercih danışmanlığı",
+        "YKS tercih hataları",
+        "YKS tercih sıralaması önemli mi",
+        "YKS kaç tercih hakkı var"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/bep/",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 36,
+      "p1Count": 28,
+      "p2Count": 8,
+      "p3Count": 0,
+      "highPotentialCount": 26,
+      "seasonalHighCount": 1,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "Mevzuat açıklaması",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "BEP nedir",
+        "BEP nasıl hazırlanır",
+        "BEP dosyası nasıl hazırlanır",
+        "BEP dosyasında neler olmalı",
+        "BEP planı örneği",
+        "BEP toplantısı nasıl yapılır",
+        "BEP toplantı tutanağı örneği",
+        "BEP geliştirme birimi kimlerden oluşur",
+        "rehber öğretmenin BEP görevleri",
+        "rehber öğretmen BEP hazırlar mı",
+        "kaynaştırma öğrencisi için BEP nasıl hazırlanır",
+        "özel eğitim öğrencisi veli görüşmesi"
+      ]
+    },
+    {
+      "canonicalPage": "/pdr-oabt/",
+      "mainTopics": [
+        "PDR AGS / ÖABT"
+      ],
+      "queryCount": 27,
+      "p1Count": 27,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 27,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR adayı"
+      ],
+      "contentTypes": [
+        "Rehber",
+        "Veri sayfası",
+        "Hesaplama aracı",
+        "Etkinlik"
+      ],
+      "sampleQueries": [
+        "PDR ÖABT nedir",
+        "PDR ÖABT 2026",
+        "PDR ÖABT konuları",
+        "PDR ÖABT konu dağılımı 2026",
+        "PDR ÖABT soru dağılımı",
+        "PDR ÖABT kaç soru",
+        "PDR ÖABT kaç dakika",
+        "PDR ÖABT kaç net iyi",
+        "PDR ÖABT net puan hesaplama",
+        "PDR ÖABT çalışma programı",
+        "PDR ÖABT nasıl çalışılır",
+        "PDR ÖABT kaynak önerisi"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/kriz-mudahale/",
+      "mainTopics": [
+        "Kriz ve risk"
+      ],
+      "queryCount": 37,
+      "p1Count": 29,
+      "p2Count": 8,
+      "p3Count": 0,
+      "highPotentialCount": 22,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk",
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber",
+        "Mevzuat açıklaması"
+      ],
+      "sampleQueries": [
+        "okulda kriz müdahalesi nasıl yapılır",
+        "kriz müdahale planı okul",
+        "kriz eylem planı örneği",
+        "okul kriz ekibi görevleri",
+        "öğrenci kriz durumunda ne yapılır",
+        "rehber öğretmen kriz anında ne yapmalı",
+        "öğrenci kendine zarar verdiğini söyledi ne yapmalıyım",
+        "kendine zarar veren öğrenciyle nasıl konuşulur",
+        "kendine zarar verme risk değerlendirmesi",
+        "öğrenci intihar edeceğini söyledi ne yapmalıyım",
+        "intihar riski olan öğrenciyle nasıl görüşülür",
+        "intihar riskinde veliye ne söylenir"
+      ]
+    },
+    {
+      "canonicalPage": "/lgs/",
+      "mainTopics": [
+        "LGS"
+      ],
+      "queryCount": 38,
+      "p1Count": 21,
+      "p2Count": 17,
+      "p3Count": 0,
+      "highPotentialCount": 30,
+      "seasonalHighCount": 2,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber",
+        "Hesaplama aracı",
+        "Sözlük maddesi",
+        "Etkinlik",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "LGS tercih nasıl yapılır",
+        "LGS tercih robotu",
+        "lise tercih listesi nasıl hazırlanır",
+        "LGS yüzdelik dilim nasıl kullanılır",
+        "LGS puan mı yüzdelik dilim mi önemli",
+        "lise seçerken nelere dikkat edilmeli",
+        "hangi lise bana uygun",
+        "fen lisesi mi anadolu lisesi mi",
+        "meslek lisesi seçimi nasıl yapılır",
+        "LGS tercih kılavuzu 2026",
+        "LGS tercih tarihleri 2026",
+        "LGS nakil nasıl yapılır"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/sinav-kaygisi/",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 18,
+      "p1Count": 18,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 18,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "PPT",
+        "Etkinlik"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı nedir",
+        "sınav kaygısı belirtileri",
+        "sınav kaygısı nedenleri",
+        "sınav kaygısı nasıl azaltılır",
+        "sınav kaygısı nasıl yenilir",
+        "sınav kaygısı yaşayan öğrenciye nasıl yaklaşılır",
+        "rehber öğretmen sınav kaygısında ne yapmalı",
+        "sınav kaygısı öğrenci görüşmesi",
+        "sınav kaygısı etkinliği",
+        "sınav kaygısı grup etkinliği",
+        "sınav kaygısı rehberlik etkinliği",
+        "sınav kaygısı semineri"
+      ]
+    },
+    {
+      "canonicalPage": "/atama/",
+      "mainTopics": [
+        "Atama / kontenjan / norm"
+      ],
+      "queryCount": 30,
+      "p1Count": 19,
+      "p2Count": 11,
+      "p3Count": 0,
+      "highPotentialCount": 9,
+      "seasonalHighCount": 10,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR adayı / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Veri sayfası",
+        "Rehber",
+        "Mevzuat açıklaması",
+        "Sözlük maddesi"
+      ],
+      "sampleQueries": [
+        "PDR atama 2026",
+        "PDR kontenjan 2026",
+        "rehberlik kontenjan 2026",
+        "PDR taban puanı 2026",
+        "PDR öğretmen atama sayısı",
+        "rehber öğretmen atama sayısı 2026",
+        "PDR akademi kontenjanı",
+        "rehberlik akademi kontenjanı",
+        "PDR asıl yedek liste",
+        "PDR akademi yerleştirme sonuçları",
+        "PDR atama yerleri",
+        "rehber öğretmen ihtiyaç listesi"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/veli-gorusmesi/",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 26,
+      "p1Count": 17,
+      "p2Count": 9,
+      "p3Count": 0,
+      "highPotentialCount": 10,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal",
+        "Hassas"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "veli görüşmesi nasıl yapılır",
+        "veli görüşme tutanağı",
+        "rehber öğretmen veli görüşme tutanağı örneği",
+        "veli ile ilk görüşmede ne sorulur",
+        "zor veliyle nasıl konuşulur",
+        "öfkeli veliyle nasıl konuşulur",
+        "veli çocuğunun rehberlik servisine gitmesini istemiyor ne yapılır",
+        "veli çocuğunu psikoloğa götürmek istemiyor ne yapılır",
+        "veliye yönlendirme nasıl anlatılır",
+        "veli semineri konuları",
+        "veli bilgilendirme metni örneği",
+        "veli görüşmesi gizlilik sınırları"
+      ]
+    },
+    {
+      "canonicalPage": "/norm/",
+      "mainTopics": [
+        "Atama / kontenjan / norm"
+      ],
+      "queryCount": 15,
+      "p1Count": 15,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 13,
+      "seasonalHighCount": 1,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR adayı / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Hesaplama aracı",
+        "Veri sayfası",
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "rehber öğretmen norm kadro nasıl hesaplanır",
+        "rehber öğretmen normu kaç öğrenciye bir",
+        "rehber öğretmen norm yönetmeliği 2026",
+        "rehberlik norm kadro fazlası",
+        "rehber öğretmen norm fazlası ne olur",
+        "rehber öğretmen norm güncelleme",
+        "RAM rehber öğretmen normu",
+        "okul rehber öğretmen normu",
+        "rehber öğretmen norm kadro yönetmeliği",
+        "PDR norm kadro",
+        "rehber öğretmen normu hangi tarihte güncellenir",
+        "rehber öğretmen norm fazlası tercihleri"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/devamsizlik/",
+      "mainTopics": [
+        "Devamsızlık"
+      ],
+      "queryCount": 20,
+      "p1Count": 18,
+      "p2Count": 2,
+      "p3Count": 0,
+      "highPotentialCount": 6,
+      "seasonalHighCount": 2,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "öğrenci devamsızlığı nedenleri",
+        "kronik devamsızlık nedir",
+        "öğrencim sürekli devamsızlık yapıyor ne yapmalıyım",
+        "devamsız öğrenciyle nasıl görüşülür",
+        "devamsız öğrenci veli görüşmesi nasıl yapılır",
+        "devamsızlık veli görüşme tutanağı",
+        "devamsızlık müdahale planı",
+        "devamsızlık önleme planı okul",
+        "devamsızlık yıllık çalışma planı",
+        "devamsızlık sınıf sonuç çizelgesi",
+        "devamsızlık okul sonuç çizelgesi",
+        "okul terki riski olan öğrenci ne yapılır"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/bireysel-gorusme/",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 22,
+      "p1Count": 16,
+      "p2Count": 6,
+      "p3Count": 0,
+      "highPotentialCount": 9,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "öğrenciyle ilk görüşme nasıl yapılır",
+        "rehber öğretmen öğrenciyle nasıl görüşür",
+        "öğrenci görüşmesinde ne sorulur",
+        "öğrenci görüşme tutanağı",
+        "öğrenci görüşme tutanağı örneği",
+        "problem tarama envanteri",
+        "öğrenci görüşmesi gizlilik",
+        "rehberlik görüşmesinde gizlilik ne zaman bozulur",
+        "öğrenci görüşmesi nasıl sonlandırılır",
+        "öğrenci görüşmesi raporu nasıl yazılır",
+        "öğrencinin anlattığı aileye söylenir mi",
+        "öğrenciyle görüşmede not tutulur mu"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/rehberlik-hizmetleri/",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 37,
+      "p1Count": 13,
+      "p2Count": 24,
+      "p3Count": 0,
+      "highPotentialCount": 10,
+      "seasonalHighCount": 3,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "Mevzuat açıklaması",
+        "Etkinlik"
+      ],
+      "sampleQueries": [
+        "rehberlik hizmetleri nedir",
+        "okul rehberlik hizmetleri nelerdir",
+        "rehberlik servisi ne iş yapar",
+        "rehberlik servisi görevleri",
+        "rehberlik servisi nasıl kurulur",
+        "rehberlik yıllık planı 2026 2027",
+        "rehberlik yıllık planı örneği",
+        "okul rehberlik programı nasıl hazırlanır",
+        "rehberlik çerçeve planı 2026 2027",
+        "rehberlik çerçeve planı örneği",
+        "rehberlik servisi faaliyet raporu örneği",
+        "rehberlik servisi yıl sonu raporu nasıl hazırlanır"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/okul-reddi/",
+      "mainTopics": [
+        "Okula uyum ve okul reddi"
+      ],
+      "queryCount": 25,
+      "p1Count": 9,
+      "p2Count": 16,
+      "p3Count": 0,
+      "highPotentialCount": 8,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Hassas",
+        "Normal"
+      ],
+      "audiences": [
+        "Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "Etkinlik",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "okul reddi nedir",
+        "okul reddi belirtileri",
+        "okul reddi nedenleri",
+        "çocuk okula gitmek istemiyor ne yapmalıyım",
+        "çocuğum sabah okula gitmek istemiyor",
+        "çocuk okul kapısında ağlıyor ne yapmalıyım",
+        "okul fobisi nedir",
+        "okul fobisi nasıl geçer",
+        "okul reddi yaşayan çocuğa nasıl yaklaşılır",
+        "rehber öğretmen okul reddinde ne yapmalı",
+        "okul reddi veli görüşmesi",
+        "okul reddi veli bilgilendirme"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/ihmal-istismar/",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 18,
+      "p1Count": 6,
+      "p2Count": 12,
+      "p3Count": 0,
+      "highPotentialCount": 5,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk",
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "PPT",
+        "Mevzuat açıklaması"
+      ],
+      "sampleQueries": [
+        "çocuk ihmal ve istismarı nedir",
+        "ihmal belirtileri nelerdir",
+        "çocuk istismarı belirtileri nelerdir",
+        "okulda istismar şüphesi olursa ne yapılır",
+        "istismar durumunda rehber öğretmen ne yapmalı",
+        "çocuk istismarı bildirim süreci",
+        "ihmal istismar bildirim yükümlülüğü öğretmen",
+        "istismar şüphesinde veliye haber verilir mi",
+        "istismar şüphesinde öğrenciyle nasıl konuşulur",
+        "ihmal istismar semineri",
+        "ihmal istismar veli bilgilendirme",
+        "mahremiyet eğitimi etkinliği"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/sosyal-duygusal/",
+      "mainTopics": [
+        "Sosyal-duygusal beceriler"
+      ],
+      "queryCount": 27,
+      "p1Count": 5,
+      "p2Count": 22,
+      "p3Count": 0,
+      "highPotentialCount": 5,
+      "seasonalHighCount": 1,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Etkinlik",
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "sosyal beceri etkinlikleri",
+        "iletişim becerileri etkinliği",
+        "empati etkinliği ortaokul",
+        "empati etkinliği lise",
+        "öfke yönetimi etkinliği",
+        "öfke kontrolü yaşayan öğrenciye nasıl yaklaşılır",
+        "duygu düzenleme etkinliği",
+        "duyguları tanıma etkinliği",
+        "öz düzenleme etkinliği",
+        "özgüven etkinliği",
+        "benlik saygısı etkinliği",
+        "problem çözme etkinliği"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/kariyer-gelisimi/",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 32,
+      "p1Count": 4,
+      "p2Count": 28,
+      "p3Count": 0,
+      "highPotentialCount": 3,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "Etkinlik",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "mesleki rehberlik nedir",
+        "kariyer danışmanlığı nedir",
+        "kariyer planlama nasıl yapılır",
+        "meslek seçimi nasıl yapılır",
+        "hangi meslek bana uygun",
+        "mesleki ilgi envanteri",
+        "Holland meslek kuramı nedir",
+        "Holland tipleri nelerdir",
+        "Super kariyer gelişim kuramı",
+        "kariyer gelişim kuramları özet",
+        "kariyer kararsızlığı nasıl çözülür",
+        "ortaokul kariyer etkinlikleri"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/pdr-ogrencileri/",
+      "mainTopics": [
+        "PDR öğrencileri"
+      ],
+      "queryCount": 28,
+      "p1Count": 3,
+      "p2Count": 25,
+      "p3Count": 0,
+      "highPotentialCount": 3,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR öğrencisi"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "PDR bölümü dersleri",
+        "PDR 1 sınıf dersleri",
+        "PDR 2 sınıf dersleri",
+        "PDR 3 sınıf dersleri",
+        "PDR 4 sınıf dersleri",
+        "PDR ders notları",
+        "psikolojik danışma kuramları özet",
+        "psikolojik danışma kuramları tablo",
+        "bireyle psikolojik danışma uygulaması",
+        "grupla psikolojik danışma ders notları",
+        "mesleki rehberlik ders notları",
+        "bireyi tanıma teknikleri ders notları"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/ergenlik/",
+      "mainTopics": [
+        "Ergenlik"
+      ],
+      "queryCount": 17,
+      "p1Count": 2,
+      "p2Count": 15,
+      "p3Count": 0,
+      "highPotentialCount": 2,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "ergenlik dönemi nedir",
+        "ergenlik dönemi özellikleri",
+        "ergenlik dönemi sorunları",
+        "ergen öğrenciyle nasıl iletişim kurulur",
+        "ergen çocuğum benimle konuşmuyor ne yapmalıyım",
+        "ergenlikte öfke neden olur",
+        "ergenlikte aile çatışması",
+        "ergenlikte sınır koyma",
+        "ergenlik semineri",
+        "ergenlik veli semineri",
+        "ergenlik rehberlik etkinliği",
+        "ergenlik sınıf etkinliği"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/dijital-denge/",
+      "mainTopics": [
+        "Teknoloji bağımlılığı"
+      ],
+      "queryCount": 20,
+      "p1Count": 2,
+      "p2Count": 18,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi",
+        "Rehber",
+        "PPT"
+      ],
+      "sampleQueries": [
+        "teknoloji bağımlılığı nedir",
+        "telefon bağımlılığı belirtileri",
+        "sosyal medya bağımlılığı belirtileri",
+        "internet bağımlılığı belirtileri",
+        "çocuğum telefondan kopmuyor ne yapmalıyım",
+        "ergenlerde telefon bağımlılığı",
+        "telefon kullanımına nasıl sınır konur",
+        "ekran süresi nasıl azaltılır",
+        "teknoloji bağımlılığı etkinliği",
+        "teknoloji bağımlılığı rehberlik etkinliği",
+        "teknoloji bağımlılığı semineri",
+        "sosyal medya güvenliği öğrenci etkinliği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20tutanak%20%C3%B6rne%C4%9Fi",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Tutanak"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı tutanak örneği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20m%C3%BCdahale%20plan%C4%B1%20word",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı müdahale planı word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20sunumu%20ppt",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20veli%20sunumu",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı veli sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20%C3%B6%C4%9Fretmen%20sunumu",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı öğretmen sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20bro%C5%9F%C3%BCr%20pdf",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı broşür pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20afi%C5%9F",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı afiş"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20anketi",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı anketi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=kriz%20eylem%20plan%C4%B1%20word",
+      "mainTopics": [
+        "Kriz ve risk"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "kriz eylem planı word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=intihar%20risk%20de%C4%9Ferlendirme%20formu",
+      "mainTopics": [
+        "Kriz ve risk"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "intihar risk değerlendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=istismar%20durumunda%20tutanak%20nas%C4%B1l%20tutulur",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Tutanak"
+      ],
+      "sampleQueries": [
+        "istismar durumunda tutanak nasıl tutulur"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ihmal%20istismar%20tutanak%20%C3%B6rne%C4%9Fi",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Tutanak"
+      ],
+      "sampleQueries": [
+        "ihmal istismar tutanak örneği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%A7ocuk%20koruma%20bildirim%20formu",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "çocuk koruma bildirim formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=devams%C4%B1zl%C4%B1k%20takip%20formu",
+      "mainTopics": [
+        "Devamsızlık"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "devamsızlık takip formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=devams%C4%B1zl%C4%B1k%20takip%20formu%20word",
+      "mainTopics": [
+        "Devamsızlık"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "devamsızlık takip formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=devams%C4%B1zl%C4%B1k%20nedenleri%20anketi%20pdf",
+      "mainTopics": [
+        "Devamsızlık"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "devamsızlık nedenleri anketi pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=devams%C4%B1zl%C4%B1k%20yapan%20%C3%B6%C4%9Frenci%20i%C3%A7in%20hangi%20form%20kullan%C4%B1l%C4%B1r",
+      "mainTopics": [
+        "Devamsızlık"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "devamsızlık yapan öğrenci için hangi form kullanılır"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=BEP%20%C3%B6rne%C4%9Fi%20word",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "BEP örneği word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=BEP%20formu%20word",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "BEP formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=BEP%20toplant%C4%B1%20tutana%C4%9F%C4%B1%20word",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "BEP toplantı tutanağı word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=e%C4%9Fitsel%20de%C4%9Ferlendirme%20iste%C4%9Fi%20formu",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "eğitsel değerlendirme isteği formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6zel%20e%C4%9Fitim%20y%C3%B6nlendirme%20formu",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "özel eğitim yönlendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=BEP%20de%C4%9Ferlendirme%20formu",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "BEP değerlendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=BEP%20izleme%20formu",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "BEP izleme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=BEP%20dosyas%C4%B1%20pdf",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "BEP dosyası pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "veli görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20g%C3%B6r%C3%BC%C5%9Fme%20formu%20word",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "veli görüşme formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20g%C3%B6r%C3%BC%C5%9Fme%20tutana%C4%9F%C4%B1%20word",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "veli görüşme tutanağı word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20izin%20formu%20rehberlik",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "veli izin formu rehberlik"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20onam%20formu%20%C3%B6rne%C4%9Fi",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "veli onam formu örneği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20g%C3%B6r%C3%BC%C5%9Fmesi%20kay%C4%B1t%20formu",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "veli görüşmesi kayıt formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20g%C3%B6r%C3%BC%C5%9Fme%20formu%20word",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "öğrenci görüşme formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=bireysel%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "bireysel görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20g%C3%B6r%C3%BC%C5%9Fme%20kay%C4%B1t%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci görüşme kayıt formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20tan%C4%B1ma%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci tanıma formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20bilgi%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci bilgi formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=aile%20bilgi%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "aile bilgi formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20%C3%B6n%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci ön görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20grup%20%C3%A7al%C4%B1%C5%9Fmas%C4%B1%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci grup çalışması formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=risk%20tarama%20formu%20%C3%B6%C4%9Frenci",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Hassas"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "risk tarama formu öğrenci"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20sunumu%20ppt",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20veli%20sunumu",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı veli sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20veli%20bro%C5%9F%C3%BCr%C3%BC",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı veli broşürü"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20%C3%B6%C4%9Frenci%20bro%C5%9F%C3%BCr%C3%BC",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı öğrenci broşürü"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20afi%C5%9F",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı afiş"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20testi",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı testi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1nav%20kayg%C4%B1s%C4%B1%20pdf",
+      "mainTopics": [
+        "Sınav kaygısı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "sınav kaygısı pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=YKS%20tercih%20sunumu%20ppt",
+      "mainTopics": [
+        "YKS"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "YKS tercih sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=LGS%20tercih%20sunumu%20ppt",
+      "mainTopics": [
+        "LGS"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "LGS tercih sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=PDR%20AGS%20deneme%20pdf",
+      "mainTopics": [
+        "PDR AGS / ÖABT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR adayı"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "PDR AGS deneme pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%96ABT%20rehberlik%20test%20pdf",
+      "mainTopics": [
+        "PDR AGS / ÖABT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR adayı"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "ÖABT rehberlik test pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehber%20%C3%B6%C4%9Fretmen%20form%20%C3%B6rnekleri",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "rehber öğretmen form örnekleri"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehber%20%C3%B6%C4%9Fretmen%20tutanak%20%C3%B6rne%C4%9Fi",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Tutanak"
+      ],
+      "sampleQueries": [
+        "rehber öğretmen tutanak örneği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20g%C3%B6r%C3%BC%C5%9Fme%20formu%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "öğrenci görüşme formu pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20g%C3%B6r%C3%BC%C5%9Fme%20formu%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "veli görüşme formu pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Fretmen%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğretmen görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20grup%20%C3%A7al%C4%B1%C5%9Fma%20formu",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci grup çalışma formu"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/rehberlik-formlari/",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 5,
+      "p1Count": 1,
+      "p2Count": 4,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "rehberlik pano materyalleri",
+        "rehberlik dosyası kapak örneği",
+        "rehberlik komisyon tutanağı",
+        "rehberlik resmi yazı örnekleri",
+        "rehberlik dilekçe örneği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20y%C3%B6nlendirme%20formu",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "öğrenci yönlendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=psikolojik%20dan%C4%B1%C5%9Fma%20onam%20formu",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "psikolojik danışma onam formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20izin%20formu",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "rehberlik izin formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20%C3%B6%C4%9Frenci%20takip%20formu",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "rehberlik öğrenci takip formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=PDR%20g%C3%B6zlem%20formu%20%C3%B6rne%C4%9Fi",
+      "mainTopics": [
+        "PDR öğrencileri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR öğrencisi"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "PDR gözlem formu örneği"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=sosyometri%20formu",
+      "mainTopics": [
+        "Sosyal-duygusal beceriler"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "sosyometri formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20servisi%20%C3%B6%C4%9Frenci%20y%C3%B6nlendirme%20formu",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "rehberlik servisi öğrenci yönlendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20servisi%20%C3%B6%C4%9Fretmen%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "rehberlik servisi öğretmen görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20s%C4%B1n%C4%B1f%20g%C3%B6zlem%20formu",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı sınıf gözlem formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=akran%20zorbal%C4%B1%C4%9F%C4%B1%20%C3%B6%C4%9Fretmen%20bilgilendirme%20formu",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "akran zorbalığı öğretmen bilgilendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20g%C3%B6r%C3%BC%C5%9Fmesi%20sonras%C4%B1%20takip%20formu",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "veli görüşmesi sonrası takip formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=bireysel%20g%C3%B6r%C3%BC%C5%9Fme%20de%C4%9Ferlendirme%20formu",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "bireysel görüşme değerlendirme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=kariyer%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20g%C3%B6r%C3%BC%C5%9Fme%20formu",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Form"
+      ],
+      "sampleQueries": [
+        "kariyer danışmanlığı görüşme formu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=devams%C4%B1zl%C4%B1k%20nedenleri%20anketi",
+      "mainTopics": [
+        "Devamsızlık"
+      ],
+      "queryCount": 1,
+      "p1Count": 1,
+      "p2Count": 0,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Sözlük maddesi"
+      ],
+      "sampleQueries": [
+        "devamsızlık nedenleri anketi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20y%C4%B1ll%C4%B1k%20plan%20word",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik yıllık plan word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20y%C4%B1ll%C4%B1k%20plan%20pdf",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik yıllık plan pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1n%C4%B1f%20rehberlik%20plan%C4%B1%20word",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "sınıf rehberlik planı word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1n%C4%B1f%20rehberlik%20etkinlikleri%20pdf",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "sınıf rehberlik etkinlikleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1n%C4%B1f%20rehberlik%20etkinlikleri%20word",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "sınıf rehberlik etkinlikleri word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=psikososyal%20destek%20program%C4%B1%20pdf",
+      "mainTopics": [
+        "Kriz ve risk"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "psikososyal destek programı pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ihmal%20istismar%20sunumu%20ppt",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "ihmal istismar sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ihmal%20istismar%20bro%C5%9F%C3%BCr%20pdf",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "ihmal istismar broşür pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20semineri%20sunumu%20ppt",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "veli semineri sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=bireysel%20g%C3%B6r%C3%BC%C5%9Fme%20formu%20word",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "bireysel görüşme formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ergenlik%20veli%20sunumu%20ppt",
+      "mainTopics": [
+        "Ergenlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "ergenlik veli sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ergenlik%20bro%C5%9F%C3%BCr%C3%BC%20pdf",
+      "mainTopics": [
+        "Ergenlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "ergenlik broşürü pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=teknoloji%20ba%C4%9F%C4%B1ml%C4%B1l%C4%B1%C4%9F%C4%B1%20sunumu%20ppt",
+      "mainTopics": [
+        "Teknoloji bağımlılığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "teknoloji bağımlılığı sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=teknoloji%20ba%C4%9F%C4%B1ml%C4%B1l%C4%B1%C4%9F%C4%B1%20bro%C5%9F%C3%BCr%20pdf",
+      "mainTopics": [
+        "Teknoloji bağımlılığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "teknoloji bağımlılığı broşür pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=kariyer%20sunumu%20ppt",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "kariyer sunumu ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=kariyer%20rehberli%C4%9Fi%20program%C4%B1%20pdf",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "kariyer rehberliği programı pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20formlar%C4%B1%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik formları word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20formlar%C4%B1%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik formları pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20servisi%20evraklar%C4%B1%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik servisi evrakları word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20servisi%20evraklar%C4%B1%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik servisi evrakları pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20tutanak%20%C3%B6rnekleri%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik tutanak örnekleri word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=aile%20bilgi%20formu%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "aile bilgi formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20bilgi%20formu%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "öğrenci bilgi formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20%C3%B6n%20g%C3%B6r%C3%BC%C5%9Fme%20formu%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "öğrenci ön görüşme formu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20faaliyet%20raporu%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik faaliyet raporu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20y%C4%B1l%20sonu%20raporu%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik yıl sonu raporu word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20ayl%C4%B1k%20rapor%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik aylık rapor word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20seminer%20sunumlar%C4%B1%20ppt",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "rehberlik seminer sunumları ppt"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20etkinlikleri%20pdf%20indir",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik etkinlikleri pdf indir"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20bro%C5%9F%C3%BCrleri%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik broşürleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20afi%C5%9Fleri%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik afişleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20anketleri%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik anketleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20%C3%B6l%C3%A7ekleri%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik ölçekleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20testleri%20pdf",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "rehberlik testleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=s%C4%B1n%C4%B1f%20rehberlik%20dosyas%C4%B1%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "sınıf rehberlik dosyası word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20toplant%C4%B1%20tutana%C4%9F%C4%B1%20word",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Word"
+      ],
+      "sampleQueries": [
+        "rehberlik toplantı tutanağı word"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=sosyometri%20%C3%B6rne%C4%9Fi%20pdf",
+      "mainTopics": [
+        "Sosyal-duygusal beceriler"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "PDF"
+      ],
+      "sampleQueries": [
+        "sosyometri örneği pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=siber%20zorbal%C4%B1k%20sunumu",
+      "mainTopics": [
+        "Akran zorbalığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "siber zorbalık sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=mahremiyet%20e%C4%9Fitimi%20sunumu",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "mahremiyet eğitimi sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ihmal%20istismar%20fark%C4%B1ndal%C4%B1k%20afi%C5%9Fi",
+      "mainTopics": [
+        "İhmal ve istismar"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Yüksek-risk"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "ihmal istismar farkındalık afişi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6zel%20e%C4%9Fitim%20veli%20bilgilendirme%20sunumu",
+      "mainTopics": [
+        "BEP ve özel eğitim"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "özel eğitim veli bilgilendirme sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=veli%20toplant%C4%B1s%C4%B1%20rehberlik%20sunumu",
+      "mainTopics": [
+        "Veli görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "veli toplantısı rehberlik sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20ihtiya%C3%A7%20belirleme%20anketi",
+      "mainTopics": [
+        "Öğrenci görüşmeleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "öğrenci ihtiyaç belirleme anketi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=ergenlik%20%C3%B6%C4%9Frenci%20sunumu",
+      "mainTopics": [
+        "Ergenlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Veli / Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "ergenlik öğrenci sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=teknoloji%20ba%C4%9F%C4%B1ml%C4%B1l%C4%B1%C4%9F%C4%B1%20veli%20sunumu",
+      "mainTopics": [
+        "Teknoloji bağımlılığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "teknoloji bağımlılığı veli sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=teknoloji%20ba%C4%9F%C4%B1ml%C4%B1l%C4%B1%C4%9F%C4%B1%20afi%C5%9F",
+      "mainTopics": [
+        "Teknoloji bağımlılığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "teknoloji bağımlılığı afiş"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=internet%20ba%C4%9F%C4%B1ml%C4%B1l%C4%B1%C4%9F%C4%B1%20testi",
+      "mainTopics": [
+        "Teknoloji bağımlılığı"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Öğrenci / Veli"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "internet bağımlılığı testi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=meslek%20se%C3%A7imi%20testi",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "meslek seçimi testi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=mesleki%20ilgi%20testi",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "mesleki ilgi testi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=yetenek%20testi%20meslek%20se%C3%A7imi",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "yetenek testi meslek seçimi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=kariyer%20de%C4%9Ferleri%20testi",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "kariyer değerleri testi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=meslek%20tan%C4%B1t%C4%B1m%20sunumu",
+      "mainTopics": [
+        "Kariyer ve mesleki rehberlik"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "meslek tanıtım sunumu"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=psikolojik%20testler%20ders%20notlar%C4%B1",
+      "mainTopics": [
+        "PDR öğrencileri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "PDR öğrencisi"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "psikolojik testler ders notları"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=sosyometri%20testi",
+      "mainTopics": [
+        "Sosyal-duygusal beceriler"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen / Öğrenci"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "sosyometri testi"
+      ]
+    },
+    {
+      "canonicalPage": "/kutuphane.html?q=rehberlik%20servisi%20tan%C4%B1t%C4%B1m%20sunumu",
+      "mainTopics": [
+        "Rehberlik hizmetleri"
+      ],
+      "queryCount": 1,
+      "p1Count": 0,
+      "p2Count": 1,
+      "p3Count": 0,
+      "highPotentialCount": 0,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "PPT"
+      ],
+      "sampleQueries": [
+        "rehberlik servisi tanıtım sunumu"
+      ]
+    }
+  ],
+  "priority50": [
+    {
+      "rank": 1,
+      "title": "Rehberlik Yıllık Planı 2026-2027",
+      "targetKeyword": "rehberlik yıllık planı 2026 2027",
+      "mainTopic": "Rehberlik hizmetleri",
+      "intent": "Mevzuat / belge",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber + dosya merkezi",
+      "priority": "P1",
+      "canonicalPage": "/rehberlik/yillik-plan/"
+    },
+    {
+      "rank": 2,
+      "title": "Rehberlik Servisi Evrakları: Tam Liste",
+      "targetKeyword": "rehberlik servisi evrakları nelerdir",
+      "mainTopic": "Rehberlik hizmetleri",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehberlik/servis-evraklari/"
+    },
+    {
+      "rank": 3,
+      "title": "Yeni Atanan Rehber Öğretmen İlk Hafta Ne Yapmalı?",
+      "targetKeyword": "yeni atanan rehber öğretmen ne yapmalı",
+      "mainTopic": "Rehberlik hizmetleri",
+      "intent": "Problem çözme",
+      "audience": "Yeni rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehberlik/yeni-atanan-rehber-ogretmen/"
+    },
+    {
+      "rank": 4,
+      "title": "Rehberlik Servisi Yıl Sonu Raporu",
+      "targetKeyword": "rehberlik servisi yıl sonu raporu nasıl hazırlanır",
+      "mainTopic": "Rehberlik hizmetleri",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber + Word",
+      "priority": "P1",
+      "canonicalPage": "/rehberlik/yil-sonu-raporu/"
+    },
+    {
+      "rank": 5,
+      "title": "Rehber Öğretmen Görevleri ve Gizlilik Sınırları",
+      "targetKeyword": "rehber öğretmen görevleri yönetmelik 2026",
+      "mainTopic": "Rehberlik hizmetleri",
+      "intent": "Mevzuat",
+      "audience": "Rehber öğretmen",
+      "contentType": "Mevzuat açıklaması",
+      "priority": "P1",
+      "canonicalPage": "/rehberlik/gorevler-ve-gizlilik/"
+    },
+    {
+      "rank": 6,
+      "title": "Akran Zorbalığında Rehber Öğretmen Ne Yapmalı?",
+      "targetKeyword": "rehber öğretmen akran zorbalığında ne yapmalı",
+      "mainTopic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/akran-zorbaliginda-ne-yapilmali/"
+    },
+    {
+      "rank": 7,
+      "title": "Akran Zorbalığı Müdahale Planı",
+      "targetKeyword": "akran zorbalığı müdahale planı",
+      "mainTopic": "Akran zorbalığı",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber + plan",
+      "priority": "P1",
+      "canonicalPage": "/rehber/akran-zorbaligi-mudahale-plani/"
+    },
+    {
+      "rank": 8,
+      "title": "Akran Zorbalığı Veli Görüşme Tutanağı",
+      "targetKeyword": "akran zorbalığı veli görüşme tutanağı",
+      "mainTopic": "Akran zorbalığı",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Tutanak",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/akran-zorbaligi-veli-gorusme-tutanagi/"
+    },
+    {
+      "rank": 9,
+      "title": "Akran Zorbalığı Sınıf Etkinlikleri",
+      "targetKeyword": "akran zorbalığı sınıf etkinliği",
+      "mainTopic": "Akran zorbalığı",
+      "intent": "Etkinlik",
+      "audience": "Rehber öğretmen",
+      "contentType": "Etkinlik merkezi",
+      "priority": "P1",
+      "canonicalPage": "/rehber/akran-zorbaligi-etkinlikleri/"
+    },
+    {
+      "rank": 10,
+      "title": "Siber Zorbalıkta Okul Ne Yapmalı?",
+      "targetKeyword": "siber zorbalık durumunda rehber öğretmen ne yapmalı",
+      "mainTopic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/siber-zorbalikta-ne-yapilmali/"
+    },
+    {
+      "rank": 11,
+      "title": "Öğrenci Kendine Zarar Verdiğini Söylerse Ne Yapılmalı?",
+      "targetKeyword": "öğrenci kendine zarar verdiğini söyledi ne yapmalıyım",
+      "mainTopic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Yüksek-risk rehberi",
+      "priority": "P1",
+      "canonicalPage": "/kriz/kendine-zarar-verme/"
+    },
+    {
+      "rank": 12,
+      "title": "Öğrenci İntihar Edeceğini Söylerse Ne Yapılmalı?",
+      "targetKeyword": "öğrenci intihar edeceğini söyledi ne yapmalıyım",
+      "mainTopic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Yüksek-risk rehberi",
+      "priority": "P1",
+      "canonicalPage": "/kriz/intihar-riski/"
+    },
+    {
+      "rank": 13,
+      "title": "Okul Kriz Müdahale Planı",
+      "targetKeyword": "kriz müdahale planı okul",
+      "mainTopic": "Kriz ve risk",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber + plan",
+      "priority": "P1",
+      "canonicalPage": "/kriz/kriz-mudahale-plani/"
+    },
+    {
+      "rank": 14,
+      "title": "Okulda Ölüm ve Yas Sonrası Rehberlik",
+      "targetKeyword": "okulda ölüm olursa rehber öğretmen ne yapmalı",
+      "mainTopic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/kriz/yas-ve-kayip/"
+    },
+    {
+      "rank": 15,
+      "title": "İstismar Şüphesinde Rehber Öğretmen Ne Yapmalı?",
+      "targetKeyword": "istismar durumunda rehber öğretmen ne yapmalı",
+      "mainTopic": "İhmal ve istismar",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Yüksek-risk rehberi",
+      "priority": "P1",
+      "canonicalPage": "/cocuk-koruma/istismar-suphesi/"
+    },
+    {
+      "rank": 16,
+      "title": "İhmal ve İstismar Bildirim Süreci",
+      "targetKeyword": "çocuk istismarı bildirim süreci",
+      "mainTopic": "İhmal ve istismar",
+      "intent": "Mevzuat / problem",
+      "audience": "Rehber öğretmen",
+      "contentType": "Yüksek-risk mevzuat rehberi",
+      "priority": "P1",
+      "canonicalPage": "/cocuk-koruma/bildirim-sureci/"
+    },
+    {
+      "rank": 17,
+      "title": "Devamsız Öğrenciyle Nasıl Görüşülür?",
+      "targetKeyword": "devamsız öğrenciyle nasıl görüşülür",
+      "mainTopic": "Devamsızlık",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/devamsiz-ogrenci-gorusmesi/"
+    },
+    {
+      "rank": 18,
+      "title": "Devamsızlık Nedenleri Anketi",
+      "targetKeyword": "devamsızlık nedenleri anketi",
+      "mainTopic": "Devamsızlık",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Kaynak detay",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/devamsizlik-nedenleri-anketi/"
+    },
+    {
+      "rank": 19,
+      "title": "Devamsızlık Veli Görüşme Tutanağı",
+      "targetKeyword": "devamsızlık veli görüşme tutanağı",
+      "mainTopic": "Devamsızlık",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Tutanak",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/devamsizlik-veli-gorusme-tutanagi/"
+    },
+    {
+      "rank": 20,
+      "title": "Devamsızlık Müdahale ve Önleme Planı",
+      "targetKeyword": "devamsızlık müdahale planı",
+      "mainTopic": "Devamsızlık",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber + plan",
+      "priority": "P1",
+      "canonicalPage": "/rehber/devamsizlik-mudahale-plani/"
+    },
+    {
+      "rank": 21,
+      "title": "BEP Nasıl Hazırlanır?",
+      "targetKeyword": "BEP nasıl hazırlanır",
+      "mainTopic": "BEP ve özel eğitim",
+      "intent": "Uygulama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/bep/nasil-hazirlanir/"
+    },
+    {
+      "rank": 22,
+      "title": "BEP Dosyasında Neler Olmalı?",
+      "targetKeyword": "BEP dosyasında neler olmalı",
+      "mainTopic": "BEP ve özel eğitim",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber + checklist",
+      "priority": "P1",
+      "canonicalPage": "/bep/dosya-icerigi/"
+    },
+    {
+      "rank": 23,
+      "title": "BEP Toplantı Tutanağı Word",
+      "targetKeyword": "BEP toplantı tutanağı word",
+      "mainTopic": "BEP ve özel eğitim",
+      "intent": "Dosya indirme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Word",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/bep-toplanti-tutanagi/"
+    },
+    {
+      "rank": 24,
+      "title": "Rehber Öğretmenin BEP'teki Görevi",
+      "targetKeyword": "rehber öğretmenin BEP görevleri",
+      "mainTopic": "BEP ve özel eğitim",
+      "intent": "Mevzuat / bilgi",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/bep/rehber-ogretmen-gorevleri/"
+    },
+    {
+      "rank": 25,
+      "title": "Veli Görüşme Formu",
+      "targetKeyword": "veli görüşme formu",
+      "mainTopic": "Veli görüşmeleri",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Form",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/veli-gorusme-formu/"
+    },
+    {
+      "rank": 26,
+      "title": "Veli Görüşme Tutanağı Word",
+      "targetKeyword": "veli görüşme tutanağı word",
+      "mainTopic": "Veli görüşmeleri",
+      "intent": "Dosya indirme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Word",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/veli-gorusme-tutanagi/"
+    },
+    {
+      "rank": 27,
+      "title": "Zor Veliyle Nasıl Görüşülür?",
+      "targetKeyword": "zor veliyle nasıl konuşulur",
+      "mainTopic": "Veli görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/zor-veliyle-gorusme/"
+    },
+    {
+      "rank": 28,
+      "title": "Veli Çocuğunun Rehberlik Servisine Gitmesini İstemiyorsa",
+      "targetKeyword": "veli çocuğunun rehberlik servisine gitmesini istemiyor ne yapılır",
+      "mainTopic": "Veli görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/veli-rehberlik-servisini-istemiyorsa/"
+    },
+    {
+      "rank": 29,
+      "title": "Öğrenci Görüşme Formu",
+      "targetKeyword": "öğrenci görüşme formu",
+      "mainTopic": "Öğrenci görüşmeleri",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Form",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/ogrenci-gorusme-formu/"
+    },
+    {
+      "rank": 30,
+      "title": "Öğrenciyle İlk Görüşme Nasıl Yapılır?",
+      "targetKeyword": "öğrenciyle ilk görüşme nasıl yapılır",
+      "mainTopic": "Öğrenci görüşmeleri",
+      "intent": "Uygulama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/ogrenciyle-ilk-gorusme/"
+    },
+    {
+      "rank": 31,
+      "title": "Öğrenci Görüşmesinde Gizlilik Ne Zaman Bozulur?",
+      "targetKeyword": "rehberlik görüşmesinde gizlilik ne zaman bozulur",
+      "mainTopic": "Öğrenci görüşmeleri",
+      "intent": "Mevzuat / uygulama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/gizlilik-sinirlari/"
+    },
+    {
+      "rank": 32,
+      "title": "Sınav Kaygısı Nasıl Azaltılır?",
+      "targetKeyword": "sınav kaygısı nasıl azaltılır",
+      "mainTopic": "Sınav kaygısı",
+      "intent": "Problem çözme",
+      "audience": "Öğrenci / Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/rehber/sinav-kaygisi-nasil-azaltilir/"
+    },
+    {
+      "rank": 33,
+      "title": "Sınav Kaygısı Psikoeğitim Programı",
+      "targetKeyword": "sınav kaygısı psikoeğitim programı",
+      "mainTopic": "Sınav kaygısı",
+      "intent": "Etkinlik",
+      "audience": "Rehber öğretmen",
+      "contentType": "Program",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/sinav-kaygisi-psikoegitim-programi/"
+    },
+    {
+      "rank": 34,
+      "title": "Sınav Kaygısı Veli Broşürü",
+      "targetKeyword": "sınav kaygısı veli broşürü",
+      "mainTopic": "Sınav kaygısı",
+      "intent": "Dosya indirme",
+      "audience": "Veli / Rehber öğretmen",
+      "contentType": "PDF",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/sinav-kaygisi-veli-brosuru/"
+    },
+    {
+      "rank": 35,
+      "title": "Okul Reddi: Çocuk Okula Gitmek İstemiyorsa",
+      "targetKeyword": "çocuk okula gitmek istemiyor ne yapmalıyım",
+      "mainTopic": "Okula uyum ve okul reddi",
+      "intent": "Problem çözme",
+      "audience": "Veli / Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/konu/okul-reddi/"
+    },
+    {
+      "rank": 36,
+      "title": "Okula Uyum Etkinlikleri",
+      "targetKeyword": "okula uyum etkinlikleri",
+      "mainTopic": "Okula uyum ve okul reddi",
+      "intent": "Etkinlik",
+      "audience": "Rehber öğretmen",
+      "contentType": "Etkinlik merkezi",
+      "priority": "P1",
+      "canonicalPage": "/rehber/okula-uyum-etkinlikleri/"
+    },
+    {
+      "rank": 37,
+      "title": "Sosyometri Nasıl Uygulanır?",
+      "targetKeyword": "sosyometri nasıl uygulanır",
+      "mainTopic": "Sosyal-duygusal beceriler",
+      "intent": "Uygulama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/konu/sosyometri/"
+    },
+    {
+      "rank": 38,
+      "title": "Sosyometri Formu ve Sosyogram Örneği",
+      "targetKeyword": "sosyometri formu",
+      "mainTopic": "Sosyal-duygusal beceriler",
+      "intent": "Belge arama",
+      "audience": "Rehber öğretmen",
+      "contentType": "Form + rehber",
+      "priority": "P1",
+      "canonicalPage": "/kaynak/sosyometri-formu/"
+    },
+    {
+      "rank": 39,
+      "title": "Meslek Seçimi Nasıl Yapılır?",
+      "targetKeyword": "meslek seçimi nasıl yapılır",
+      "mainTopic": "Kariyer ve mesleki rehberlik",
+      "intent": "Kariyer",
+      "audience": "Öğrenci / Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/kariyer/meslek-secimi/"
+    },
+    {
+      "rank": 40,
+      "title": "Mesleki İlgi Envanteri ve Kullanımı",
+      "targetKeyword": "mesleki ilgi envanteri",
+      "mainTopic": "Kariyer ve mesleki rehberlik",
+      "intent": "Kariyer",
+      "audience": "Rehber öğretmen / Öğrenci",
+      "contentType": "Rehber + araç",
+      "priority": "P1",
+      "canonicalPage": "/kariyer/mesleki-ilgi/"
+    },
+    {
+      "rank": 41,
+      "title": "YKS Tercih Nasıl Yapılır?",
+      "targetKeyword": "YKS tercih nasıl yapılır",
+      "mainTopic": "YKS",
+      "intent": "Tercih",
+      "audience": "Öğrenci / Rehber öğretmen",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/yks/tercih-nasil-yapilir/"
+    },
+    {
+      "rank": 42,
+      "title": "YKS Tercih Robotu",
+      "targetKeyword": "YKS tercih robotu",
+      "mainTopic": "YKS",
+      "intent": "Tercih",
+      "audience": "Öğrenci",
+      "contentType": "Hesaplama aracı",
+      "priority": "P1",
+      "canonicalPage": "/yks/tercih-robotu/"
+    },
+    {
+      "rank": 43,
+      "title": "YKS Tercih Kılavuzu 2026",
+      "targetKeyword": "YKS tercih kılavuzu 2026",
+      "mainTopic": "YKS",
+      "intent": "Tercih",
+      "audience": "Öğrenci / Rehber öğretmen",
+      "contentType": "Güncel veri sayfası",
+      "priority": "P1",
+      "canonicalPage": "/yks/tercih-kilavuzu/"
+    },
+    {
+      "rank": 44,
+      "title": "LGS Tercih Nasıl Yapılır?",
+      "targetKeyword": "LGS tercih nasıl yapılır",
+      "mainTopic": "LGS",
+      "intent": "Tercih",
+      "audience": "Öğrenci / Veli",
+      "contentType": "Rehber",
+      "priority": "P1",
+      "canonicalPage": "/lgs/tercih-nasil-yapilir/"
+    },
+    {
+      "rank": 45,
+      "title": "LGS Tercih Robotu",
+      "targetKeyword": "LGS tercih robotu",
+      "mainTopic": "LGS",
+      "intent": "Tercih",
+      "audience": "Öğrenci / Veli",
+      "contentType": "Hesaplama aracı",
+      "priority": "P1",
+      "canonicalPage": "/lgs/tercih-robotu/"
+    },
+    {
+      "rank": 46,
+      "title": "PDR AGS Konu ve Soru Dağılımı",
+      "targetKeyword": "PDR AGS konu dağılımı 2026",
+      "mainTopic": "PDR AGS / ÖABT",
+      "intent": "Sınav",
+      "audience": "PDR adayı",
+      "contentType": "Güncel rehber",
+      "priority": "P1",
+      "canonicalPage": "/pdr-ags/konu-soru-dagilimi/"
+    },
+    {
+      "rank": 47,
+      "title": "PDR ÖABT Konu ve Soru Dağılımı",
+      "targetKeyword": "PDR ÖABT konu dağılımı 2026",
+      "mainTopic": "PDR AGS / ÖABT",
+      "intent": "Sınav",
+      "audience": "PDR adayı",
+      "contentType": "Güncel rehber",
+      "priority": "P1",
+      "canonicalPage": "/pdr-oabt/konu-soru-dagilimi/"
+    },
+    {
+      "rank": 48,
+      "title": "PDR AGS Puan Hesaplama",
+      "targetKeyword": "PDR AGS puan hesaplama",
+      "mainTopic": "PDR AGS / ÖABT",
+      "intent": "Sınav",
+      "audience": "PDR adayı",
+      "contentType": "Hesaplama aracı",
+      "priority": "P1",
+      "canonicalPage": "/pdr-ags/puan-hesaplama/"
+    },
+    {
+      "rank": 49,
+      "title": "PDR AGS / ÖABT Çıkmış Sorular ve Resmî Kitapçıklar",
+      "targetKeyword": "PDR AGS çıkmış sorular",
+      "mainTopic": "PDR AGS / ÖABT",
+      "intent": "Sınav",
+      "audience": "PDR adayı",
+      "contentType": "Kaynak merkezi",
+      "priority": "P1",
+      "canonicalPage": "/pdr-ags/cikmis-sorular/"
+    },
+    {
+      "rank": 50,
+      "title": "PDR Akademi Kontenjanı ve Yerleştirme",
+      "targetKeyword": "PDR akademi kontenjanı 2026",
+      "mainTopic": "Atama / kontenjan / norm",
+      "intent": "Atama",
+      "audience": "PDR adayı",
+      "contentType": "Güncel veri sayfası",
+      "priority": "P1",
+      "canonicalPage": "/atama/pdr-akademi-kontenjan/"
+    }
+  ],
+  "topLongTail50": [
+    {
+      "rank": 1,
+      "query": "öğrenci kendini öldürmek istediğini söylediğinde öğretmen ne yapmalı",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 2,
+      "query": "veli çocuğunun rehberlik servisine gitmesini istemiyor ne yapılır",
+      "topic": "Veli görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/veli-gorusmesi/"
+    },
+    {
+      "rank": 3,
+      "query": "kendine zarar veren öğrenci için yönlendirme nasıl yapılır",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 4,
+      "query": "öğrenci ağlayarak rehberlik servisine geldi ne yapmalıyım",
+      "topic": "Öğrenci görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/bireysel-gorusme/"
+    },
+    {
+      "rank": 5,
+      "query": "akran zorbalığına uğrayan çocuk okula gitmek istemiyor",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 6,
+      "query": "öğrenci öğretmeninden korktuğunu söyledi ne yapmalıyım",
+      "topic": "Öğrenci görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/bireysel-gorusme/"
+    },
+    {
+      "rank": 7,
+      "query": "öğrenci kendine zarar verdiğini söyledi ne yapmalıyım",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 8,
+      "query": "veli çocuğunu psikoloğa götürmek istemiyor ne yapılır",
+      "topic": "Veli görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/veli-gorusmesi/"
+    },
+    {
+      "rank": 9,
+      "query": "rehberlik servisine öğrenci yönlendirme nasıl yapılır",
+      "topic": "Rehberlik hizmetleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/rehberlik-hizmetleri/"
+    },
+    {
+      "rank": 10,
+      "query": "öğrenci hangi mesleği seçeceğini bilmiyor ne yapmalı",
+      "topic": "Kariyer ve mesleki rehberlik",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen / Öğrenci",
+      "priority": "P1",
+      "canonicalPage": "/konu/kariyer-gelisimi/"
+    },
+    {
+      "rank": 11,
+      "query": "siber zorbalık durumunda rehber öğretmen ne yapmalı",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 12,
+      "query": "öğrenci evde şiddet gördüğünü söyledi ne yapmalıyım",
+      "topic": "Öğrenci görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/bireysel-gorusme/"
+    },
+    {
+      "rank": 13,
+      "query": "öğrencim sürekli devamsızlık yapıyor ne yapmalıyım",
+      "topic": "Devamsızlık",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/devamsizlik/"
+    },
+    {
+      "rank": 14,
+      "query": "öğrenci zorbalığa uğradığını söyledi ne yapmalıyım",
+      "topic": "Öğrenci görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/bireysel-gorusme/"
+    },
+    {
+      "rank": 15,
+      "query": "akran zorbalığı olayında okul yönetimi ne yapmalı",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 16,
+      "query": "öğrenci ailesine söylemememi istedi ne yapmalıyım",
+      "topic": "Öğrenci görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/bireysel-gorusme/"
+    },
+    {
+      "rank": 17,
+      "query": "sınav kaygısı yaşayan öğrenciye nasıl yaklaşılır",
+      "topic": "Sınav kaygısı",
+      "intent": "Problem çözme",
+      "audience": "Öğrenci / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/sinav-kaygisi/"
+    },
+    {
+      "rank": 18,
+      "query": "öfke kontrolü yaşayan öğrenciye nasıl yaklaşılır",
+      "topic": "Sosyal-duygusal beceriler",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen / Öğrenci",
+      "priority": "P1",
+      "canonicalPage": "/konu/sosyal-duygusal/"
+    },
+    {
+      "rank": 19,
+      "query": "okulda akran zorbalığına müdahale nasıl yapılır",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 20,
+      "query": "çocuğum akran zorbalığına uğruyor ne yapmalıyım",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 21,
+      "query": "öğrenci intihar edeceğini söyledi ne yapmalıyım",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 22,
+      "query": "kaynaştırma öğrencisi için BEP nasıl hazırlanır",
+      "topic": "BEP ve özel eğitim",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/bep/"
+    },
+    {
+      "rank": 23,
+      "query": "veli rehber öğretmene hakaret ederse ne yapılır",
+      "topic": "Veli görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/veli-gorusmesi/"
+    },
+    {
+      "rank": 24,
+      "query": "kendine zarar veren öğrenciyle nasıl konuşulur",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 25,
+      "query": "acil risk durumunda rehberlik servisi ne yapar",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 26,
+      "query": "istismar şüphesinde öğrenciyle nasıl konuşulur",
+      "topic": "İhmal ve istismar",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/ihmal-istismar/"
+    },
+    {
+      "rank": 27,
+      "query": "ergen çocuğum benimle konuşmuyor ne yapmalıyım",
+      "topic": "Ergenlik",
+      "intent": "Problem çözme",
+      "audience": "Veli / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/ergenlik/"
+    },
+    {
+      "rank": 28,
+      "query": "intihar riski veli bilgilendirme nasıl yapılır",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 29,
+      "query": "veli görüşmesine gelmeyen veli için ne yapılır",
+      "topic": "Veli görüşmeleri",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/veli-gorusmesi/"
+    },
+    {
+      "rank": 30,
+      "query": "rehber öğretmen akran zorbalığında ne yapmalı",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 31,
+      "query": "intihar riski olan öğrenciyle nasıl görüşülür",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 32,
+      "query": "okulda ölüm olursa rehber öğretmen ne yapmalı",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 33,
+      "query": "istismar durumunda rehber öğretmen ne yapmalı",
+      "topic": "İhmal ve istismar",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/ihmal-istismar/"
+    },
+    {
+      "rank": 34,
+      "query": "devamsız öğrenci veli görüşmesi nasıl yapılır",
+      "topic": "Devamsızlık",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/devamsizlik/"
+    },
+    {
+      "rank": 35,
+      "query": "zorbalığa uğrayan öğrenciye nasıl yaklaşılır",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 36,
+      "query": "akran zorbalığı veli görüşmesi nasıl yapılır",
+      "topic": "Akran zorbalığı",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/akran-zorbaligi/"
+    },
+    {
+      "rank": 37,
+      "query": "öğrenci tehdit edildiğinde okulda ne yapılır",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 38,
+      "query": "sosyal dışlanma yaşayan öğrenciye ne yapılır",
+      "topic": "Sosyal-duygusal beceriler",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen / Öğrenci",
+      "priority": "P1",
+      "canonicalPage": "/konu/sosyal-duygusal/"
+    },
+    {
+      "rank": 39,
+      "query": "arkadaşlık sorunu yaşayan öğrenciyle görüşme",
+      "topic": "Sosyal-duygusal beceriler",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen / Öğrenci",
+      "priority": "P1",
+      "canonicalPage": "/konu/sosyal-duygusal/"
+    },
+    {
+      "rank": 40,
+      "query": "istismar şüphesinde veliye haber verilir mi",
+      "topic": "İhmal ve istismar",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/ihmal-istismar/"
+    },
+    {
+      "rank": 41,
+      "query": "rehber öğretmen sınav kaygısında ne yapmalı",
+      "topic": "Sınav kaygısı",
+      "intent": "Problem çözme",
+      "audience": "Öğrenci / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/sinav-kaygisi/"
+    },
+    {
+      "rank": 42,
+      "query": "çocuk okula gitmek istemiyor ne yapmalıyım",
+      "topic": "Okula uyum ve okul reddi",
+      "intent": "Problem çözme",
+      "audience": "Veli / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/okul-reddi/"
+    },
+    {
+      "rank": 43,
+      "query": "çocuk okul kapısında ağlıyor ne yapmalıyım",
+      "topic": "Okula uyum ve okul reddi",
+      "intent": "Problem çözme",
+      "audience": "Veli / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/okul-reddi/"
+    },
+    {
+      "rank": 44,
+      "query": "okul reddi yaşayan çocuğa nasıl yaklaşılır",
+      "topic": "Okula uyum ve okul reddi",
+      "intent": "Problem çözme",
+      "audience": "Veli / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/okul-reddi/"
+    },
+    {
+      "rank": 45,
+      "query": "yeni okula alışamayan öğrenciye ne yapılır",
+      "topic": "Okula uyum ve okul reddi",
+      "intent": "Problem çözme",
+      "audience": "Veli / Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/okul-reddi/"
+    },
+    {
+      "rank": 46,
+      "query": "okulda istismar şüphesi olursa ne yapılır",
+      "topic": "İhmal ve istismar",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/ihmal-istismar/"
+    },
+    {
+      "rank": 47,
+      "query": "çocuğum telefondan kopmuyor ne yapmalıyım",
+      "topic": "Teknoloji bağımlılığı",
+      "intent": "Problem çözme",
+      "audience": "Öğrenci / Veli",
+      "priority": "P1",
+      "canonicalPage": "/konu/dijital-denge/"
+    },
+    {
+      "rank": 48,
+      "query": "kendine zarar verme risk değerlendirmesi",
+      "topic": "Kriz ve risk",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/kriz-mudahale/"
+    },
+    {
+      "rank": 49,
+      "query": "istismar beyanı alan öğretmen ne yapmalı",
+      "topic": "İhmal ve istismar",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/ihmal-istismar/"
+    },
+    {
+      "rank": 50,
+      "query": "okul terki riski olan öğrenci ne yapılır",
+      "topic": "Devamsızlık",
+      "intent": "Problem çözme",
+      "audience": "Rehber öğretmen",
+      "priority": "P1",
+      "canonicalPage": "/konu/devamsizlik/"
+    }
+  ]
+}
