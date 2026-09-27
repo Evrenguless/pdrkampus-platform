@@ -564,11 +564,11 @@
         "sınava hazırlık desteği",
         "baş etme becerileri"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Sınav Kaygısı | PDR Kampüs",
-        "description": "",
+        "title": "Sınav Kaygısı Nedir? Kaynaklar ve Uygulama Notları | PDR Kampüs",
+        "description": "Sınav kaygısı nedir, okulda nasıl ele alınır ve hangi RAM/MEB kaynakları kullanılabilir? Öğrenci, veli ve psikoeğitim materyallerini keşfedin.",
         "primaryQuery": "sınav kaygısı"
       },
       "contentBrief": {
@@ -580,7 +580,20 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/sinav-kaygisi/",
+      "relatedTopics": [
+        "sinav-hazirligi",
+        "motivasyon",
+        "calisma-aliskanliklari",
+        "stresle-bas-etme"
+      ],
+      "officialSources": [
+        {
+          "name": "Kocasinan RAM Sınav Kaygısını Yönetmek",
+          "url": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698da2625a99c555923539_S%C4%B1nav_Kayg%C4%B1s%C4%B1n%C4%B1_Y%C3%B6netmek.pdf"
+        }
+      ]
     },
     {
       "id": "topic_kaygi",
@@ -771,11 +784,11 @@
         "okula devam güçlüğünü değerlendirme",
         "veli görüşmesi"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Okul Reddi | PDR Kampüs",
-        "description": "",
+        "title": "Okul Reddi: Çocuk Okula Gitmek İstemiyorsa | PDR Kampüs",
+        "description": "Çocuk okula gitmek istemiyorsa okul reddi nasıl ele alınır? Okul reddi, devamsızlık, veli görüşmesi ve ilgili RAM kaynaklarını inceleyin.",
         "primaryQuery": "okul reddi"
       },
       "contentBrief": {
@@ -787,7 +800,20 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/okul-reddi/",
+      "relatedTopics": [
+        "devamsizlik",
+        "okula-uyum",
+        "aidiyet",
+        "veli-gorusmesi"
+      ],
+      "officialSources": [
+        {
+          "name": "Meram RAM Okul Reddi Veli Bilgilendirme Materyali",
+          "url": "https://meramram.meb.k12.tr/meb_iys_dosyalar/42/26/175064/dosyalar/2024_09/02103847_okulreddipdf.pdf"
+        }
+      ]
     },
     {
       "id": "topic_okula_uyum",
