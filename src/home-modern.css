@@ -16,7 +16,6 @@
 .home-stage .search input::placeholder{color:#718084}
 .home-stage .search button{flex:none;min-width:127px;min-height:55px;border-radius:9px;background:#0d5947;color:#fff;font-size:16px}
 .home-stage .search button:hover{background:#18715d}
-.home-stage .search button span{margin-left:8px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .pathways{max-width:1400px;padding:16px 26px 57px}
 .pathways-heading{text-align:center;margin-bottom:23px}
@@ -31,10 +30,9 @@
 .pathway-card h3{max-width:none;min-height:52px;margin:39px 0 9px;color:#123c31;font:750 clamp(21px,2vw,27px)/1.16 Manrope,sans-serif;letter-spacing:-.045em}
 .pathway-card p{max-width:345px;margin:0;color:#536369;font-size:14px;line-height:1.55}
 .pathway-types{display:block;margin-top:auto;padding-top:23px;color:#63747a;font-size:13px;line-height:1.5}
-.pathway-card>button{display:flex;align-items:center;gap:12px;align-self:flex-start;margin-top:20px;padding:0 0 4px;border:0;border-bottom:1px solid #367964;background:transparent;color:#123c31;font:700 14px/1.3 Manrope,sans-serif;cursor:pointer;text-align:left}
-.pathway-card>button span{font-size:19px;line-height:1}
-.pathway-card>button:hover,.pathway-card>button:focus-visible{color:#077958;border-color:#077958;outline:none}
-.pathway-card>button:focus-visible{outline:2px solid #077958;outline-offset:5px}
+.pathway-card>button{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;margin-top:20px;min-height:44px;padding:9px 16px;border:1px solid #315e4a;border-bottom-width:2px;border-radius:10px;background:#faf9f3;color:#123c31;font:800 13px/1.3 Manrope,sans-serif;cursor:pointer;text-align:center;box-shadow:0 3px 8px #25432d0a;transition:background .18s ease,transform .18s ease}
+.pathway-card>button:hover{background:#e6f0e6;transform:translateY(-2px)}
+.pathway-card>button:focus-visible{outline:2px solid #077958;outline-offset:3px}
 .pathway-card>button[aria-expanded="true"]{color:#077958}
 .pathway-detail[hidden]{display:none}
 .pathway-detail{margin-top:21px;padding:28px;border:1px solid #cbded3;border-radius:12px;background:#fff;scroll-margin-top:110px}
@@ -79,10 +77,10 @@
 .campus-entry strong{font:700 13px/1.4 Manrope,sans-serif}
 .campus-home-feature .campus-entry{padding:19px 22px 19px 0;border-bottom:0;border-right:1px solid #d4e2d4;margin-right:20px}.campus-home-feature .campus-entry:last-child{border-right:0;margin-right:0}.campus-home-feature .campus-entry strong{font-size:15px}
 .campus-entry-go{font-size:17px;color:#4c8158}
-.campus-panel-link{display:flex;align-items:center;justify-content:space-between;gap:12px;align-self:flex-start;min-width:190px;margin-top:17px;padding:12px 15px;border:1px solid #b9cfb9;border-radius:9px;color:#275e3e;font-size:12px;font-weight:800;transition:background .15s,transform .15s}
-.campus-home-feature .campus-panel-link{background:#28553b;border-color:#28553b;color:#fff}
-.campus-panel-link:hover,.campus-panel-link:focus-visible{background:#deeadb;transform:translateY(-2px);text-decoration:none;outline:none}
-.campus-home-feature .campus-panel-link:hover,.campus-home-feature .campus-panel-link:focus-visible{background:#37684a}
+.campus-panel-link{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;min-width:190px;min-height:48px;margin-top:17px;padding:11px 18px;border:1px solid #315e4a;border-bottom-width:2px;border-radius:10px;background:#faf9f3;color:#123c31;font-size:13px;font-weight:800;box-shadow:0 3px 8px #25432d0a;transition:background .18s,transform .18s}
+.campus-home-feature .campus-panel-link{background:#faf9f3;border-color:#315e4a;color:#123c31}
+.campus-panel-link:hover{background:#e6f0e6;transform:translateY(-2px);text-decoration:none}
+.campus-home-feature .campus-panel-link:hover{background:#e6f0e6}
 .campus-panel-link:focus-visible{outline:2px solid #528568;outline-offset:3px}
 @media(max-width:960px){.home-stage{padding-top:65px}.pathway-card{padding:23px;min-height:345px}.pathway-card svg{right:19px}.campus-home-intro{align-items:start}.campus-home-grid{grid-template-columns:1fr 1fr}.campus-home-feature{grid-column:1/-1}.campus-home-secondary{padding:23px}}
 @media(max-width:700px){

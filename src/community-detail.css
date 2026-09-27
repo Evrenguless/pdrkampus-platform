@@ -12,8 +12,9 @@
 .community-feed:not(.question-feed) .community-hero h1{max-width:740px}
 .community-feed .community-hero h1 em{font-style:normal;color:#3e8169}
 .community-feed .community-hero .lead{max-width:690px;margin:20px auto 23px;color:#5d6971;font-size:17px;line-height:1.65}
-.community-feed .hero-jump{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:44px;padding:9px 17px;border:1px solid #c5dccb;border-radius:9px;background:#fff;color:#235e46;font:800 12px Manrope,sans-serif;box-shadow:0 3px 12px #25432d0b}
-.community-feed .hero-jump:hover,.community-feed .hero-jump:focus-visible{border-color:#83b39a;background:#f0f7ee;color:#174a36}
+.community-feed .hero-jump{display:inline-flex;align-items:center;justify-content:center;min-width:240px;min-height:56px;padding:12px 24px;border:1.5px solid #123c31;border-bottom-width:3px;border-radius:12px;background:#faf9f3;color:#123c31;font:800 15px/1.3 Manrope,sans-serif;box-shadow:0 5px 12px #25432d12;transition:background .18s ease,box-shadow .18s ease,transform .18s ease}
+.community-feed .hero-jump:hover{border-color:#123c31;background:#edf3e9;color:#123c31;box-shadow:0 8px 18px #25432d18;transform:translateY(-2px)}
+.community-feed .hero-jump:focus-visible{outline:2px solid #438d64;outline-offset:3px}
 .community-feed .community-guidance{max-width:840px;margin:17px auto 29px;padding:0 15px;color:#6b7e71;font-size:12px;line-height:1.55;text-align:center}
 .community-feed .compose-panel,.community-feed #feedLogin,.community-feed #loginPrompt,.community-feed #feedStatus,.community-feed #questionStatus{max-width:840px;margin-left:auto;margin-right:auto}
 .community-feed #feedLogin,.community-feed #loginPrompt{text-align:center}
