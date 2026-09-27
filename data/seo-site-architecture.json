@@ -1,0 +1,184 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-27",
+  "principle": "Kategori sayfaları kullanıcı ihtiyacını toplar; keyword varyasyonları ayrı sayfa açmak yerine canonical konu/rehber/kaynak hedeflerine bağlanır.",
+  "categories": [
+    {
+      "slug": "rehberlik",
+      "name": "Rehberlik Hizmetleri",
+      "children": [
+        "yillik-plan",
+        "servis-evraklari",
+        "faaliyet-raporu",
+        "gizlilik",
+        "sinif-rehberligi",
+        "yeni-atanan-rehber-ogretmen"
+      ]
+    },
+    {
+      "slug": "ogrenci",
+      "name": "Öğrenci Çalışmaları",
+      "children": [
+        "bireysel-gorusme",
+        "ogrenciyi-tanima",
+        "risk-degerlendirme",
+        "sosyometri",
+        "sosyal-duygusal-beceriler"
+      ]
+    },
+    {
+      "slug": "veli",
+      "name": "Veli Çalışmaları",
+      "children": [
+        "veli-gorusmesi",
+        "veli-seminerleri",
+        "aileyi-tanima",
+        "zor-veliyle-gorusme",
+        "yonlendirme"
+      ]
+    },
+    {
+      "slug": "akran-zorbaligi",
+      "name": "Akran Zorbalığı",
+      "children": [
+        "mudahale",
+        "veli-gorusmesi",
+        "sinif-etkinlikleri",
+        "siber-zorbalik",
+        "farkindalik"
+      ]
+    },
+    {
+      "slug": "kriz",
+      "name": "Kriz ve Risk",
+      "children": [
+        "kendine-zarar-verme",
+        "intihar-riski",
+        "yas-ve-kayip",
+        "travma",
+        "kriz-mudahale-plani"
+      ]
+    },
+    {
+      "slug": "cocuk-koruma",
+      "name": "İhmal ve İstismar",
+      "children": [
+        "istismar-suphesi",
+        "bildirim-sureci",
+        "mahremiyet",
+        "cocuk-koruma"
+      ]
+    },
+    {
+      "slug": "devamsizlik",
+      "name": "Devamsızlık ve Okul Terki",
+      "children": [
+        "nedenler",
+        "ogrenci-gorusmesi",
+        "veli-gorusmesi",
+        "mudahale-plani",
+        "okul-terki"
+      ]
+    },
+    {
+      "slug": "bep",
+      "name": "BEP ve Özel Eğitim",
+      "children": [
+        "bep-hazirlama",
+        "toplanti-tutanagi",
+        "rehber-ogretmen-gorevleri",
+        "kaynaştirma",
+        "destek-egitim-odasi"
+      ]
+    },
+    {
+      "slug": "kariyer",
+      "name": "Kariyer ve Mesleki Rehberlik",
+      "children": [
+        "meslek-secimi",
+        "mesleki-ilgi",
+        "kariyer-kuramlari",
+        "kariyer-etkinlikleri",
+        "kariyer-karari"
+      ]
+    },
+    {
+      "slug": "yks",
+      "name": "YKS",
+      "children": [
+        "tercih",
+        "tercih-robotu",
+        "bolum-secimi",
+        "siralamalar",
+        "veli-rehberi"
+      ]
+    },
+    {
+      "slug": "lgs",
+      "name": "LGS",
+      "children": [
+        "tercih",
+        "tercih-robotu",
+        "lise-secimi",
+        "yuzdelik-dilim",
+        "nakil"
+      ]
+    },
+    {
+      "slug": "pdr-ags",
+      "name": "PDR AGS",
+      "children": [
+        "konu-soru-dagilimi",
+        "puan-hesaplama",
+        "calisma-programi",
+        "deneme",
+        "sonuclar",
+        "akademi-basvuru"
+      ]
+    },
+    {
+      "slug": "pdr-oabt",
+      "name": "PDR ÖABT",
+      "children": [
+        "konu-soru-dagilimi",
+        "cikmis-sorular",
+        "deneme",
+        "soru-analizi",
+        "calisma-programi"
+      ]
+    },
+    {
+      "slug": "atama",
+      "name": "Atama ve Akademi",
+      "children": [
+        "kontenjan",
+        "yerlestirme",
+        "asil-yedek",
+        "kayit",
+        "hazirlik-egitimi"
+      ]
+    },
+    {
+      "slug": "norm",
+      "name": "Norm ve Yer Değiştirme",
+      "children": [
+        "norm-hesabi",
+        "norm-fazlasi",
+        "il-ici",
+        "il-disi",
+        "mazeret"
+      ]
+    },
+    {
+      "slug": "pdr-ogrencileri",
+      "name": "PDR Öğrencileri",
+      "children": [
+        "dersler",
+        "ders-notlari",
+        "staj",
+        "uygulama",
+        "odev-ve-arastirma"
+      ]
+    }
+  ]
+}
