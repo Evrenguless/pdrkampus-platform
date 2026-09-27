@@ -15,8 +15,9 @@
 
 /* Editorial headings are distinct from navigation, controls, and card titles. */
 button,input,select,textarea,summary,.desktop,.mobile-menu{font-family:var(--campus-font-ui)}
-.page-intro h1,.profile-hero h1,.community-hero h1,.pathways-heading h2,.campus-home .section-heading h2{font-family:var(--campus-font-editorial)}
-.document-card h3,.form-card h4,.surface-card h2,.surface-card h3,.search-result-section h3,.search-source h4,.library-intro h1{font-family:var(--campus-font-ui)}
+.page-intro h1,.profile-hero h1,.community-hero h1,.library-intro h1,.pathways-heading h2,.campus-home-intro h2,.campus-home .section-heading h2{font-family:var(--campus-font-editorial)}
+.document-card h3,.form-card h4,.surface-card h2,.surface-card h3,.search-result-section h3,.search-source h4{font-family:var(--campus-font-ui)}
+.library-intro h1{font-weight:500;letter-spacing:-.045em}
 
 /* The supplied PNG stays transparent and sits directly in the existing brand slot. */
 .header .brand img,.campus-footer-brand img{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
@@ -82,8 +83,9 @@ button,input,select,textarea,summary,.desktop,.mobile-menu{font-family:var(--cam
 .community-feed .question-card .feed-actions{min-height:60px;padding:11px 25px;gap:10px}
 .community-feed .question-card .feed-actions button:not(.report-action){min-height:36px;padding:7px 10px;border:1px solid #cfe1d2;border-radius:8px;background:#fff;font:700 11px var(--campus-font-ui)}
 .community-feed .question-card .feed-actions button[aria-pressed=true]{background:#e2efe5}
-.community-feed .question-card .feed-actions .post-card-open{order:-1;margin-left:0;margin-right:auto}
-.community-feed .question-card .feed-actions .report-action{margin-left:0}
+.community-feed .question-card .feed-actions .post-card-open{order:-1;margin-left:0;margin-right:auto;font-size:13px}
+.community-feed .question-card .feed-actions .report-action{margin-left:auto;opacity:.65}
+.community-feed .question-card .feed-actions .report-action:hover,.community-feed .question-card .feed-actions .report-action:focus-visible{opacity:1}
 @media(max-width:700px){
   .community-feed .question-card .post-card-top{padding:18px 18px 0}
   .community-feed .question-card .post-card-tags{padding:14px 18px 0}
@@ -91,5 +93,5 @@ button,input,select,textarea,summary,.desktop,.mobile-menu{font-family:var(--cam
   .community-feed .question-card .question-copy{margin:0 18px 18px}
   .community-feed .question-card .feed-actions{padding:11px 18px}
 }
-@media(max-width:420px){.community-feed .question-card .feed-actions .post-card-open{width:100%}.community-feed .question-card .feed-actions .report-action{margin-left:auto}}
-@media(prefers-reduced-motion:reduce){.surface-card,.document-card,.form-card{transition:none}}
+@media(max-width:420px){.community-feed .question-card .feed-actions .post-card-open{width:100%;padding-bottom:9px;border-bottom:1px solid #dfeade}.community-feed .question-card .feed-actions .report-action{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.surface-card,.document-card,.form-card,.pathway-card{transition:none}}

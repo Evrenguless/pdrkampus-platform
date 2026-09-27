@@ -22,7 +22,8 @@
 .pathways-heading h2{margin:0;color:#123c31;font:500 clamp(32px,3.5vw,49px)/1.15 Georgia,serif;letter-spacing:-.045em}
 .pathways-heading p{margin:8px 0 0;color:#697780;font-size:15px}
 .pathway-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.pathway-card{position:relative;display:flex;flex-direction:column;min-height:312px;min-width:0;overflow:hidden;padding:27px 31px 25px;border:1px solid #dce4d9;border-top:6px solid #4d927c;border-radius:11px;background:#f1f5ed;color:#153c34}
+.pathway-card{position:relative;display:flex;flex-direction:column;min-height:312px;min-width:0;overflow:hidden;padding:27px 31px 25px;border:1px solid var(--campus-card-border,#d8e5d9);border-top:4px solid #4d927c;border-radius:var(--campus-card-radius,16px);background:#f1f5ed;color:#153c34;box-shadow:var(--campus-card-shadow,0 8px 24px #1d44300b);transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
+.pathway-card:hover{border-left-color:var(--campus-card-hover,#a8c5ad);border-right-color:var(--campus-card-hover,#a8c5ad);border-bottom-color:var(--campus-card-hover,#a8c5ad);box-shadow:var(--campus-card-shadow-hover,0 17px 36px #1d443019);transform:translateY(-2px)}
 .pathway-absence{border-top-color:#c7c5a6;background:#faf9f3}
 .pathway-bullying{border-top-color:#a1bc9e;background:#f0f5ed}
 .pathway-card svg{position:absolute;top:19px;right:25px;width:43px;height:43px;fill:none;stroke:#315f50;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round;opacity:.72}
@@ -52,7 +53,7 @@
 .campus-home-intro{display:flex;align-items:end;justify-content:space-between;gap:48px;margin-bottom:35px}
 .campus-home-intro .eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 16px;color:#5c8464}
 .campus-intro-line{width:25px;height:1px;background:#a7bbaa}
-.campus-home-intro h2{max-width:720px;font:800 clamp(32px,3.4vw,48px)/1.13 Manrope,sans-serif;letter-spacing:-.06em;color:#254733;margin:0}
+.campus-home-intro h2{max-width:720px;font:500 clamp(32px,3.4vw,48px)/1.13 Georgia,serif;letter-spacing:-.045em;color:#254733;margin:0}
 .campus-home-intro h2 em{font-style:normal;color:#719574}
 .campus-home-intro>p{max-width:305px;margin:0 0 4px;color:#6c7c6f;font-size:14px;line-height:1.7}
 .campus-home-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;align-items:stretch}
