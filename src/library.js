@@ -69,7 +69,7 @@ function card(item){
  const fileButton=item.kind==='member'
   ?`<button type="button" data-community-file="${esc(item.file)}" data-library-open="${esc(item.id)}">Görüntüle ↗</button>`
   :`<button type="button" data-kind="${item.kind}" data-id="${esc(item.id)}" data-library-open="${esc(item.id)}">Görüntüle ↗</button>`;
- return `<article class="document-card library-document" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${esc(item.title)}</h3><p class="library-source">${esc(item.source)}</p><p>${esc(subtitle)}</p><div><small>${esc(item.fileType||'Dosya')}</small>${fileButton}</div></article>`;
+ return `<article class="document-card library-document resource-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${esc(item.title)}</h3><p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
 }
 function setTypeOptions(){
  const current=state.type;
