@@ -10,12 +10,11 @@
   "summary": {
     "priority50": 50,
     "statusCounts": {
-      "covered": 36,
-      "covered_by_backbone": 9,
-      "partial": 2,
-      "partial_plus_backbone": 2,
-      "gap": 1
-    }
+      "covered": 37,
+      "covered_by_backbone": 10,
+      "partial_plus_backbone": 3
+    },
+    "contentReady": 50
   },
   "audit": [
     {
@@ -486,7 +485,7 @@
       "title": "Okulda Ölüm ve Yas Sonrası Rehberlik",
       "targetKeyword": "okulda ölüm olursa rehber öğretmen ne yapmalı",
       "canonicalPage": "/kriz/yas-ve-kayip/",
-      "status": "partial",
+      "status": "partial_plus_backbone",
       "matchedResources": [
         {
           "id": "arnavutkoy-olum-yas-veli-ogretmen-el-kitabi",
@@ -496,8 +495,12 @@
           "score": 3
         }
       ],
-      "backboneResource": null,
-      "nextAction": "supplement_source_research"
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
     },
     {
       "rank": 15,
@@ -922,10 +925,15 @@
       "title": "Veli Çocuğunun Rehberlik Servisine Gitmesini İstemiyorsa",
       "targetKeyword": "veli çocuğunun rehberlik servisine gitmesini istemiyor ne yapılır",
       "canonicalPage": "/rehber/veli-rehberlik-servisini-istemiyorsa/",
-      "status": "gap",
+      "status": "covered_by_backbone",
       "matchedResources": [],
-      "backboneResource": null,
-      "nextAction": "official_source_research"
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready",
+      "note": "Ayrı bir 'veli reddi formu' uydurulmayacak; güncel rehberlik mevzuatı, gizlilik/iş birliği ilkeleri ve vaka bağlamı üzerinden rehber içerik üretilecek."
     },
     {
       "rank": 29,
@@ -1152,7 +1160,7 @@
       "title": "Okul Reddi: Çocuk Okula Gitmek İstemiyorsa",
       "targetKeyword": "çocuk okula gitmek istemiyor ne yapmalıyım",
       "canonicalPage": "/konu/okul-reddi/",
-      "status": "partial",
+      "status": "covered",
       "matchedResources": [
         {
           "id": "meram-okul-reddi-2024",
@@ -1163,7 +1171,8 @@
         }
       ],
       "backboneResource": null,
-      "nextAction": "supplement_source_research"
+      "nextAction": "content_ready",
+      "note": "Meram RAM Okul Reddi materyali ile mevcut okula uyum ve devamsızlık kaynakları birlikte kullanılacak."
     },
     {
       "rank": 36,
