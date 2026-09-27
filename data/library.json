@@ -12474,5 +12474,19 @@
     "file": "https://yokatlas.yok.gov.tr/",
     "fileType": "WEB",
     "sourceType": "official"
+  },
+  {
+    "id": "osym-2026-meb-ags-konu-dagilimlari",
+    "title": "2026 MEB-AGS · AGS ve ÖABT Konu Dağılımları",
+    "type": "Resmî sınav duyurusu",
+    "level": "PDR adayı",
+    "area": "PDR AGS / ÖABT",
+    "topic": "AGS konu dağılımı",
+    "source": "ÖSYM",
+    "sourcePage": "https://www.osym.gov.tr/mill-egitim-bakanligi-akademi-giris-sinavi-mebags-2026-akademi-giris-sinavi-ags-ile-2026-ogretmenlik-alan-bilgisi-testi-oabt-konu-dagilimlari",
+    "file": "https://dokuman.osym.gov.tr/pdfdokuman/2026/MEB-AGS/konudagilimi08012026.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "note": "Ek PDF AGS genel dağılımını ve ÖABT Özel Eğitim alanını içerir; Rehberlik alanına özgü ayrı konu yüzdesi tablosu bu ekte yer almamaktadır."
   }
 ]
