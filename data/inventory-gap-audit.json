@@ -10,11 +10,11 @@
   "summary": {
     "priority50": 50,
     "statusCounts": {
-      "covered": 30,
+      "covered": 36,
       "covered_by_backbone": 9,
-      "partial": 4,
+      "partial": 2,
       "partial_plus_backbone": 2,
-      "gap": 5
+      "gap": 1
     }
   },
   "audit": [
@@ -1152,10 +1152,18 @@
       "title": "Okul Reddi: Çocuk Okula Gitmek İstemiyorsa",
       "targetKeyword": "çocuk okula gitmek istemiyor ne yapmalıyım",
       "canonicalPage": "/konu/okul-reddi/",
-      "status": "gap",
-      "matchedResources": [],
+      "status": "partial",
+      "matchedResources": [
+        {
+          "id": "meram-okul-reddi-2024",
+          "title": "Okul Reddi · Veli Bilgilendirme Materyali",
+          "kind": "library",
+          "source": "Meram Rehberlik ve Araştırma Merkezi",
+          "score": 6
+        }
+      ],
       "backboneResource": null,
-      "nextAction": "official_source_research"
+      "nextAction": "supplement_source_research"
     },
     {
       "rank": 36,
@@ -1211,17 +1219,24 @@
       "status": "covered",
       "matchedResources": [
         {
-          "id": "kocasinan-sinif-rehberlik-etkinlik-uygulama-ilkeleri",
-          "title": "Sınıf Rehberlik Etkinlikleri Uygulanırken Dikkat Edilmesi Gerekenler",
+          "id": "meb-sosyometri-uygulama-ornekleri",
+          "title": "Sosyometri Uygulama Örnekleri",
           "kind": "library",
-          "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
-          "score": 1
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
         },
         {
           "id": "meb-42",
           "title": "Sosyometri",
           "kind": "form",
           "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "kocasinan-sinif-rehberlik-etkinlik-uygulama-ilkeleri",
+          "title": "Sınıf Rehberlik Etkinlikleri Uygulanırken Dikkat Edilmesi Gerekenler",
+          "kind": "library",
+          "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
           "score": 1
         }
       ],
@@ -1233,10 +1248,25 @@
       "title": "Sosyometri Formu ve Sosyogram Örneği",
       "targetKeyword": "sosyometri formu",
       "canonicalPage": "/kaynak/sosyometri-formu/",
-      "status": "gap",
-      "matchedResources": [],
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "meb-sosyometri-uygulama-ornekleri",
+          "title": "Sosyometri Uygulama Örnekleri",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
+        },
+        {
+          "id": "meb-42",
+          "title": "Sosyometri",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        }
+      ],
       "backboneResource": null,
-      "nextAction": "official_source_research"
+      "nextAction": "content_ready"
     },
     {
       "rank": 39,
@@ -1345,6 +1375,13 @@
           "score": 2
         },
         {
+          "id": "yok-atlas-tercih-referansi",
+          "title": "YÖK Atlas · Üniversite ve Tercih Referans Sistemi",
+          "kind": "library",
+          "source": "Yükseköğretim Kurulu",
+          "score": 2
+        },
+        {
           "id": "kocasinan-2026-yks-altin-taktikler",
           "title": "YKS'de Altın Taktikler",
           "kind": "library",
@@ -1364,13 +1401,6 @@
           "kind": "library",
           "source": "Kocasinan RAM",
           "score": 1
-        },
-        {
-          "id": "susehri-universite-haritasi-2026",
-          "title": "Türkiye'nin Üniversite Haritası · Modüler Pano",
-          "kind": "library",
-          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
-          "score": 1
         }
       ],
       "backboneResource": null,
@@ -1381,18 +1411,46 @@
       "title": "YKS Tercih Robotu",
       "targetKeyword": "YKS tercih robotu",
       "canonicalPage": "/yks/tercih-robotu/",
-      "status": "partial",
+      "status": "covered",
       "matchedResources": [
+        {
+          "id": "yok-atlas-tercih-referansi",
+          "title": "YÖK Atlas · Üniversite ve Tercih Referans Sistemi",
+          "kind": "library",
+          "source": "Yükseköğretim Kurulu",
+          "score": 8
+        },
+        {
+          "id": "susehri-universite-haritasi-2026",
+          "title": "Türkiye'nin Üniversite Haritası · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 5
+        },
+        {
+          "id": "rehber-dinar-2025",
+          "title": "Rehber Dinar · Kariyer ve Tercih Rehberi",
+          "kind": "library",
+          "source": "Dinar Rehberlik ve Araştırma Merkezi",
+          "score": 5
+        },
         {
           "id": "susehri-yks-moduler-pano-2026",
           "title": "YKS 2026 · Modüler Pano",
           "kind": "library",
           "source": "Suşehri Rehberlik ve Araştırma Merkezi",
-          "score": 2
+          "score": 4
+        },
+        {
+          "id": "manisa-lgs-puanlar-2026",
+          "title": "Manisa Lise Puanları ve Kontenjan Bilgileri · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 3
         }
       ],
       "backboneResource": null,
-      "nextAction": "supplement_source_research"
+      "nextAction": "content_ready"
     },
     {
       "rank": 43,
@@ -1523,8 +1581,22 @@
       "title": "PDR AGS Konu ve Soru Dağılımı",
       "targetKeyword": "PDR AGS konu dağılımı 2026",
       "canonicalPage": "/pdr-ags/konu-soru-dagilimi/",
-      "status": "partial",
+      "status": "covered",
       "matchedResources": [
+        {
+          "id": "osym-2026-ags-oabt-soru-kitapciklari",
+          "title": "2026 MEB-AGS ve ÖABT · Temel Soru Kitapçıkları ve Cevap Anahtarları",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 8
+        },
+        {
+          "id": "osym-2026-meb-ags-kilavuz",
+          "title": "2026 MEB-AGS · Başvuru Kılavuzu ve Resmî Bilgiler",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 7
+        },
         {
           "id": "bismil-ihmal-istismar-yasal-sorumluluklar-2026",
           "title": "İhmal-İstismar Sürecinde Yasal Sorumluluklar · TCK ve ÇKK · 2026",
@@ -1534,45 +1606,89 @@
         }
       ],
       "backboneResource": null,
-      "nextAction": "supplement_source_research"
+      "nextAction": "content_ready"
     },
     {
       "rank": 47,
       "title": "PDR ÖABT Konu ve Soru Dağılımı",
       "targetKeyword": "PDR ÖABT konu dağılımı 2026",
       "canonicalPage": "/pdr-oabt/konu-soru-dagilimi/",
-      "status": "partial",
+      "status": "covered",
       "matchedResources": [
+        {
+          "id": "osym-2026-ags-oabt-soru-kitapciklari",
+          "title": "2026 MEB-AGS ve ÖABT · Temel Soru Kitapçıkları ve Cevap Anahtarları",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 4
+        },
         {
           "id": "bismil-ihmal-istismar-yasal-sorumluluklar-2026",
           "title": "İhmal-İstismar Sürecinde Yasal Sorumluluklar · TCK ve ÇKK · 2026",
           "kind": "library",
           "source": "Bismil Rehberlik ve Araştırma Merkezi",
           "score": 3
+        },
+        {
+          "id": "osym-2026-meb-ags-kilavuz",
+          "title": "2026 MEB-AGS · Başvuru Kılavuzu ve Resmî Bilgiler",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 3
         }
       ],
       "backboneResource": null,
-      "nextAction": "supplement_source_research"
+      "nextAction": "content_ready"
     },
     {
       "rank": 48,
       "title": "PDR AGS Puan Hesaplama",
       "targetKeyword": "PDR AGS puan hesaplama",
       "canonicalPage": "/pdr-ags/puan-hesaplama/",
-      "status": "gap",
-      "matchedResources": [],
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "osym-2026-ags-oabt-soru-kitapciklari",
+          "title": "2026 MEB-AGS ve ÖABT · Temel Soru Kitapçıkları ve Cevap Anahtarları",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 6
+        },
+        {
+          "id": "osym-2026-meb-ags-kilavuz",
+          "title": "2026 MEB-AGS · Başvuru Kılavuzu ve Resmî Bilgiler",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 6
+        }
+      ],
       "backboneResource": null,
-      "nextAction": "official_source_research"
+      "nextAction": "content_ready"
     },
     {
       "rank": 49,
       "title": "PDR AGS / ÖABT Çıkmış Sorular ve Resmî Kitapçıklar",
       "targetKeyword": "PDR AGS çıkmış sorular",
       "canonicalPage": "/pdr-ags/cikmis-sorular/",
-      "status": "gap",
-      "matchedResources": [],
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "osym-2026-ags-oabt-soru-kitapciklari",
+          "title": "2026 MEB-AGS ve ÖABT · Temel Soru Kitapçıkları ve Cevap Anahtarları",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 11
+        },
+        {
+          "id": "osym-2026-meb-ags-kilavuz",
+          "title": "2026 MEB-AGS · Başvuru Kılavuzu ve Resmî Bilgiler",
+          "kind": "library",
+          "source": "ÖSYM",
+          "score": 8
+        }
+      ],
       "backboneResource": null,
-      "nextAction": "official_source_research"
+      "nextAction": "content_ready"
     },
     {
       "rank": 50,
