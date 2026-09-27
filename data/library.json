@@ -12417,5 +12417,62 @@
     "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_02/04134441_10165645_motorkonusmaveyutmabozukluklari4.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "meb-sosyometri-uygulama-ornekleri",
+    "title": "Sosyometri Uygulama Örnekleri",
+    "type": "Uygulama rehberi",
+    "level": "3-8. sınıf / Ortaöğretim",
+    "levels": [
+      "İlkokul",
+      "Ortaokul",
+      "Lise"
+    ],
+    "area": "Bireyi Tanıma",
+    "topic": "Sosyometri",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2017_08/07232804_SOSYOMETRY.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "osym-2026-ags-oabt-soru-kitapciklari",
+    "title": "2026 MEB-AGS ve ÖABT · Temel Soru Kitapçıkları ve Cevap Anahtarları",
+    "type": "Resmî sınav kaynağı",
+    "level": "PDR adayı",
+    "area": "PDR AGS / ÖABT",
+    "topic": "Çıkmış sorular ve cevap anahtarları",
+    "source": "ÖSYM",
+    "sourcePage": "https://www.osym.gov.tr/2026-ags-ve-2026-oabt-temel-soru-kitapciklarinin-yayimlanmasi-10",
+    "file": "https://www.osym.gov.tr/2026-ags-ve-2026-oabt-temel-soru-kitapciklarinin-yayimlanmasi-10",
+    "fileType": "WEB",
+    "sourceType": "official"
+  },
+  {
+    "id": "osym-2026-meb-ags-kilavuz",
+    "title": "2026 MEB-AGS · Başvuru Kılavuzu ve Resmî Bilgiler",
+    "type": "Kılavuz merkezi",
+    "level": "PDR adayı",
+    "area": "PDR AGS / ÖABT",
+    "topic": "AGS başvuru ve sınav bilgileri",
+    "source": "ÖSYM",
+    "sourcePage": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri",
+    "file": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri",
+    "fileType": "WEB",
+    "sourceType": "official"
+  },
+  {
+    "id": "yok-atlas-tercih-referansi",
+    "title": "YÖK Atlas · Üniversite ve Tercih Referans Sistemi",
+    "type": "Veri aracı",
+    "level": "Lise",
+    "area": "Kariyer",
+    "topic": "YKS tercih ve üniversite programları",
+    "source": "Yükseköğretim Kurulu",
+    "sourcePage": "https://yokatlas.yok.gov.tr/",
+    "file": "https://yokatlas.yok.gov.tr/",
+    "fileType": "WEB",
+    "sourceType": "official"
   }
 ]
