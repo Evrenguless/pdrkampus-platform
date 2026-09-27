@@ -1,0 +1,1624 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-27",
+  "policy": {
+    "indexRule": "Bir canonical sayfa, özgün kullanıcı değeri ve yeterli kaynak desteği olmadan indexable yapılmaz.",
+    "keywordRule": "Bir keyword bir sayfa değildir; benzer niyetler tek canonical hedefte kümelenir.",
+    "sourceRule": "Önce mevcut inventory taranır; boşluk varsa resmî MEB/RAM/ÖSYM/ÖSYM veya ilgili birincil kurum kaynağı aranır.",
+    "thinContentRule": "Sadece dış bağlantı veya birkaç cümle içeren ince sayfa üretilmez."
+  },
+  "summary": {
+    "priority50": 50,
+    "statusCounts": {
+      "covered": 30,
+      "covered_by_backbone": 9,
+      "partial": 4,
+      "partial_plus_backbone": 2,
+      "gap": 5
+    }
+  },
+  "audit": [
+    {
+      "rank": 1,
+      "title": "Rehberlik Yıllık Planı 2026-2027",
+      "targetKeyword": "rehberlik yıllık planı 2026 2027",
+      "canonicalPage": "/rehberlik/yillik-plan/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "manisa-yillik-plan-ortaokul-2026-2027",
+          "title": "2026-2027 Okul Rehberlik Hizmetleri Yıllık Planı · Ortaokul",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "manisa-yillik-plan-lise-2026-2027",
+          "title": "2026-2027 Okul Rehberlik Hizmetleri Yıllık Planı · Lise",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "konak-2026-2027-okuloncesi-plan-cilt1",
+          "title": "2026-2027 Okul Öncesi Sınıf Rehberlik Yıllık Planı · 1. Cilt",
+          "kind": "library",
+          "source": "Konak Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "konak-2026-2027-ilkokul-plan-cilt1",
+          "title": "2026-2027 İlkokul Sınıf Rehberlik Yıllık Planı · 1. Cilt",
+          "kind": "library",
+          "source": "Konak Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "konak-2026-2027-ortaokul-plan-cilt1",
+          "title": "2026-2027 Ortaokul Sınıf Rehberlik Yıllık Planı · 1. Cilt",
+          "kind": "library",
+          "source": "Konak Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 2,
+      "title": "Rehberlik Servisi Evrakları: Tam Liste",
+      "targetKeyword": "rehberlik servisi evrakları nelerdir",
+      "canonicalPage": "/rehberlik/servis-evraklari/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "bismil-hedef-listesi-2025-2026",
+          "title": "PDR Hedef Listesi · 2025-2026",
+          "kind": "library",
+          "source": "Bismil Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "kecioren-yillik-plan-kontrol-listesi-2026",
+          "title": "Rehberlik ve Psikolojik Danışma Yıllık Plan Kontrol Listesi · 2026",
+          "kind": "library",
+          "source": "Keçiören Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "osmancik-yillik-plan-kontrol-listesi-2026-2027",
+          "title": "RPD Hizmetleri Yıllık Plan Hazırlama Kontrol Listesi · 2026-2027",
+          "kind": "library",
+          "source": "Osmancık Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "manisa-yillik-plan-ortaokul-2026-2027",
+          "title": "2026-2027 Okul Rehberlik Hizmetleri Yıllık Planı · Ortaokul",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "manisa-yillik-plan-lise-2026-2027",
+          "title": "2026-2027 Okul Rehberlik Hizmetleri Yıllık Planı · Lise",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 3,
+      "title": "Yeni Atanan Rehber Öğretmen İlk Hafta Ne Yapmalı?",
+      "targetKeyword": "yeni atanan rehber öğretmen ne yapmalı",
+      "canonicalPage": "/rehberlik/yeni-atanan-rehber-ogretmen/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 4,
+      "title": "Rehberlik Servisi Yıl Sonu Raporu",
+      "targetKeyword": "rehberlik servisi yıl sonu raporu nasıl hazırlanır",
+      "canonicalPage": "/rehberlik/yil-sonu-raporu/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "sinif-rehberlik-faaliyet-raporu-1-donem-2026",
+          "title": "Sınıf Rehberlik Çalışmaları · 1. Dönem Sonu Faaliyet Raporu",
+          "kind": "library",
+          "source": "Eldivan 100. Yıl İlkokulu / MEB",
+          "score": 4
+        },
+        {
+          "id": "sinif-rehberlik-faaliyet-raporu-2-donem-2026",
+          "title": "Sınıf Rehberlik Çalışmaları · 2. Dönem Sonu Faaliyet Raporu",
+          "kind": "library",
+          "source": "Eldivan 100. Yıl İlkokulu / MEB",
+          "score": 4
+        },
+        {
+          "id": "yilsonu-faaliyet-raporu-sinif-rehberlik-2025",
+          "title": "Sınıf Rehberlik Çalışmaları · Yıl Sonu Faaliyet Raporu · 2025",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 4
+        },
+        {
+          "id": "bep-degerlendirme-raporu-1-donem-2026",
+          "title": "BEP Değerlendirme Raporu · 1. Dönem Sonu",
+          "kind": "library",
+          "source": "Eldivan 100. Yıl İlkokulu / MEB",
+          "score": 3
+        },
+        {
+          "id": "bep-degerlendirme-raporu-2-donem-2026",
+          "title": "BEP Değerlendirme Raporu · 2. Dönem Sonu",
+          "kind": "library",
+          "source": "Eldivan 100. Yıl İlkokulu / MEB",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 5,
+      "title": "Rehber Öğretmen Görevleri ve Gizlilik Sınırları",
+      "targetKeyword": "rehber öğretmen görevleri yönetmelik 2026",
+      "canonicalPage": "/rehberlik/gorevler-ve-gizlilik/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 6,
+      "title": "Akran Zorbalığında Rehber Öğretmen Ne Yapmalı?",
+      "targetKeyword": "rehber öğretmen akran zorbalığında ne yapmalı",
+      "canonicalPage": "/rehber/akran-zorbaliginda-ne-yapilmali/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "ogretmen-brosur",
+          "title": "Akran Zorbalığı · Öğretmen Broşürü",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "sunum-öğretmen-okuloncesi",
+          "title": "Akran Zorbalığı · Öğretmen Sunumu · Okul öncesi",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "sunum-öğretmen-ilkokul",
+          "title": "Akran Zorbalığı · Öğretmen Sunumu · İlkokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "sunum-öğretmen-ortaokul",
+          "title": "Akran Zorbalığı · Öğretmen Sunumu · Ortaokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "sunum-öğretmen-lise",
+          "title": "Akran Zorbalığı · Öğretmen Sunumu · Lise",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 7,
+      "title": "Akran Zorbalığı Müdahale Planı",
+      "targetKeyword": "akran zorbalığı müdahale planı",
+      "canonicalPage": "/rehber/akran-zorbaligi-mudahale-plani/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "farkindalik-okuloncesi",
+          "title": "Akran Zorbalığı Farkındalık Programı · Okul öncesi",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "farkindalik-ilkokul",
+          "title": "Akran Zorbalığı Farkındalık Programı · İlkokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "farkindalik-ortaokul",
+          "title": "Akran Zorbalığı Farkındalık Programı · Ortaokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "farkindalik-lise",
+          "title": "Akran Zorbalığı Farkındalık Programı · Lise",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "zorbalik-kuramsal",
+          "title": "Akran Zorbalığı · Psikolojik Danışman Kitapçığı",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 8,
+      "title": "Akran Zorbalığı Veli Görüşme Tutanağı",
+      "targetKeyword": "akran zorbalığı veli görüşme tutanağı",
+      "canonicalPage": "/kaynak/akran-zorbaligi-veli-gorusme-tutanagi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "veli-brosur",
+          "title": "Akran Zorbalığı · Veli Broşürü",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
+        },
+        {
+          "id": "sunum-veli-okuloncesi",
+          "title": "Akran Zorbalığı · Veli Sunumu · Okul öncesi",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
+        },
+        {
+          "id": "sunum-veli-ilkokul",
+          "title": "Akran Zorbalığı · Veli Sunumu · İlkokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
+        },
+        {
+          "id": "sunum-veli-ortaokul",
+          "title": "Akran Zorbalığı · Veli Sunumu · Ortaokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
+        },
+        {
+          "id": "sunum-veli-lise",
+          "title": "Akran Zorbalığı · Veli Sunumu · Lise",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 9,
+      "title": "Akran Zorbalığı Sınıf Etkinlikleri",
+      "targetKeyword": "akran zorbalığı sınıf etkinliği",
+      "canonicalPage": "/rehber/akran-zorbaligi-etkinlikleri/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "kocasinan-sinif-rehberlik-etkinlik-uygulama-ilkeleri",
+          "title": "Sınıf Rehberlik Etkinlikleri Uygulanırken Dikkat Edilmesi Gerekenler",
+          "kind": "library",
+          "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "farkindalik-okuloncesi",
+          "title": "Akran Zorbalığı Farkındalık Programı · Okul öncesi",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "farkindalik-ilkokul",
+          "title": "Akran Zorbalığı Farkındalık Programı · İlkokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "farkindalik-ortaokul",
+          "title": "Akran Zorbalığı Farkındalık Programı · Ortaokul",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        },
+        {
+          "id": "farkindalik-lise",
+          "title": "Akran Zorbalığı Farkındalık Programı · Lise",
+          "kind": "library",
+          "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 10,
+      "title": "Siber Zorbalıkta Okul Ne Yapmalı?",
+      "targetKeyword": "siber zorbalık durumunda rehber öğretmen ne yapmalı",
+      "canonicalPage": "/rehber/siber-zorbalikta-ne-yapilmali/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "siber-2022-04",
+          "title": "Siber Zorbalık Öğretmen Broşürü",
+          "kind": "library",
+          "source": "MEB ÖRGM",
+          "score": 3
+        },
+        {
+          "id": "siber-2022-07",
+          "title": "Siber Zorbalık Öğretmen Sunumu · Lise",
+          "kind": "library",
+          "source": "MEB ÖRGM",
+          "score": 3
+        },
+        {
+          "id": "siber-2022-11",
+          "title": "Siber Zorbalık Psikoeğitim Programı · İlkokul",
+          "kind": "library",
+          "source": "MEB ÖRGM",
+          "score": 3
+        },
+        {
+          "id": "siber-2022-12",
+          "title": "Siber Zorbalık Psikoeğitim Programı · Ortaokul",
+          "kind": "library",
+          "source": "MEB ÖRGM",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 11,
+      "title": "Öğrenci Kendine Zarar Verdiğini Söylerse Ne Yapılmalı?",
+      "targetKeyword": "öğrenci kendine zarar verdiğini söyledi ne yapmalıyım",
+      "canonicalPage": "/kriz/kendine-zarar-verme/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 12,
+      "title": "Öğrenci İntihar Edeceğini Söylerse Ne Yapılmalı?",
+      "targetKeyword": "öğrenci intihar edeceğini söyledi ne yapmalıyım",
+      "canonicalPage": "/kriz/intihar-riski/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 13,
+      "title": "Okul Kriz Müdahale Planı",
+      "targetKeyword": "kriz müdahale planı okul",
+      "canonicalPage": "/kriz/kriz-mudahale-plani/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "v19-cankaya-kriz-yol-haritasi",
+          "title": "Okul Temelli Psikososyal Koruma, Önleme ve Krize Müdahalede Bir Yol Haritası",
+          "kind": "library",
+          "source": "Çankaya RAM",
+          "score": 3
+        },
+        {
+          "id": "afsin-psikososyal-koruma-kriz-hizmetleri-brosur-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale Hizmetleri · Broşür",
+          "kind": "library",
+          "source": "Afşin Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "afsin-psikososyal-koruma-kriz-sema-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale · İşleyiş Şeması",
+          "kind": "library",
+          "source": "Afşin Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "afsin-psikososyal-koruma-kriz-kitapcigi-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale Hizmetleri · Kitapçık",
+          "kind": "library",
+          "source": "Afşin Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "kecioren-psikososyal-koruma-kriz-sunum-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale Hizmetleri · Bilgilendirme Sunumu",
+          "kind": "library",
+          "source": "Keçiören Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 14,
+      "title": "Okulda Ölüm ve Yas Sonrası Rehberlik",
+      "targetKeyword": "okulda ölüm olursa rehber öğretmen ne yapmalı",
+      "canonicalPage": "/kriz/yas-ve-kayip/",
+      "status": "partial",
+      "matchedResources": [
+        {
+          "id": "arnavutkoy-olum-yas-veli-ogretmen-el-kitabi",
+          "title": "Ölüm ve Yas Süreci · Öğretmen ve Veli El Kitabı",
+          "kind": "library",
+          "source": "Arnavutköy Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "supplement_source_research"
+    },
+    {
+      "rank": 15,
+      "title": "İstismar Şüphesinde Rehber Öğretmen Ne Yapmalı?",
+      "targetKeyword": "istismar durumunda rehber öğretmen ne yapmalı",
+      "canonicalPage": "/cocuk-koruma/istismar-suphesi/",
+      "status": "partial_plus_backbone",
+      "matchedResources": [
+        {
+          "id": "beyoglu-ogretmen-cocuk-istismari-mudahale-rehberi",
+          "title": "Öğretmenler İçin Çocuk İstismarına Müdahale Rehberi",
+          "kind": "library",
+          "source": "Beyoğlu Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 16,
+      "title": "İhmal ve İstismar Bildirim Süreci",
+      "targetKeyword": "çocuk istismarı bildirim süreci",
+      "canonicalPage": "/cocuk-koruma/bildirim-sureci/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "beyoglu-istismar-4-asamali-yaklasim",
+          "title": "Çocuk İhmal ve İstismarına 4 Aşamalı Yaklaşım",
+          "kind": "library",
+          "source": "Beyoğlu Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "beyoglu-ogretmen-cocuk-istismari-mudahale-rehberi",
+          "title": "Öğretmenler İçin Çocuk İstismarına Müdahale Rehberi",
+          "kind": "library",
+          "source": "Beyoğlu Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "bismil-ihmal-istismar-yasal-sorumluluklar-2026",
+          "title": "İhmal-İstismar Sürecinde Yasal Sorumluluklar · TCK ve ÇKK · 2026",
+          "kind": "library",
+          "source": "Bismil Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "istismarla-mucadele-rehberi-aile",
+          "title": "Çocuk Bakım Kuruluşlarında Çalışan Personele Yönelik İstismarla Mücadele Rehber Kitapçığı",
+          "kind": "library",
+          "source": "Aile ve Sosyal Hizmetler Bakanlığı",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 17,
+      "title": "Devamsız Öğrenciyle Nasıl Görüşülür?",
+      "targetKeyword": "devamsız öğrenciyle nasıl görüşülür",
+      "canonicalPage": "/rehber/devamsiz-ogrenci-gorusmesi/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 18,
+      "title": "Devamsızlık Nedenleri Anketi",
+      "targetKeyword": "devamsızlık nedenleri anketi",
+      "canonicalPage": "/kaynak/devamsizlik-nedenleri-anketi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "meb-14",
+          "title": "Devamsızlık Nedenleri Anketi",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-73",
+          "title": "Devamsızlık Nedenleri Anketi Sınıf/Okul Sonuç Çizelgesi",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 19,
+      "title": "Devamsızlık Veli Görüşme Tutanağı",
+      "targetKeyword": "devamsızlık veli görüşme tutanağı",
+      "canonicalPage": "/kaynak/devamsizlik-veli-gorusme-tutanagi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "aksu-devamsiz-ogrenci-veli-gorusme-tutanagi-2024",
+          "title": "Devamsız Öğrenci Veli Görüşme Tutanağı",
+          "kind": "library",
+          "source": "Aksu 15 Temmuz Şehitler Anadolu Lisesi / MEB",
+          "score": 4
+        },
+        {
+          "id": "veli-gorusme-tutanagi-docx",
+          "title": "Veli Görüşme Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 3
+        },
+        {
+          "id": "oddk-veli-gorusme-formu-docx-2024",
+          "title": "Öğrenci Davranışlarını Değerlendirme Kurulu · Veli Görüşme Formu",
+          "kind": "library",
+          "source": "Cengiz Topel Ortaokulu / MEB",
+          "score": 2
+        },
+        {
+          "id": "ogrenci-gorusme-tutanagi-docx",
+          "title": "Öğrenci Görüşme Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 2
+        },
+        {
+          "id": "kurtulus-lgs-veli-toplanti-docx-2025",
+          "title": "LGS Veli Toplantı Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Kurtuluş İmam Hatip Ortaokulu / MEB",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 20,
+      "title": "Devamsızlık Müdahale ve Önleme Planı",
+      "targetKeyword": "devamsızlık müdahale planı",
+      "canonicalPage": "/rehber/devamsizlik-mudahale-plani/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "aksu-devamsizlik-sinif-tekrari-onleme-plani-2025-2026",
+          "title": "Devamsızlık ve Sınıf Tekrarı Riski · Önleme, Müdahale ve Yönlendirme Komisyonu Yıllık Çalışma Planı",
+          "kind": "library",
+          "source": "Aksu 15 Temmuz Şehitler Anadolu Lisesi / MEB",
+          "score": 4
+        },
+        {
+          "id": "v19-cankaya-kriz-yol-haritasi",
+          "title": "Okul Temelli Psikososyal Koruma, Önleme ve Krize Müdahalede Bir Yol Haritası",
+          "kind": "library",
+          "source": "Çankaya RAM",
+          "score": 2
+        },
+        {
+          "id": "afsin-psikososyal-koruma-kriz-hizmetleri-brosur-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale Hizmetleri · Broşür",
+          "kind": "library",
+          "source": "Afşin Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "afsin-psikososyal-koruma-kriz-sema-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale · İşleyiş Şeması",
+          "kind": "library",
+          "source": "Afşin Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "afsin-psikososyal-koruma-kriz-kitapcigi-2025",
+          "title": "Psikososyal Koruma, Önleme ve Krize Müdahale Hizmetleri · Kitapçık",
+          "kind": "library",
+          "source": "Afşin Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 21,
+      "title": "BEP Nasıl Hazırlanır?",
+      "targetKeyword": "BEP nasıl hazırlanır",
+      "canonicalPage": "/bep/nasil-hazirlanir/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "serik-bep-ornek-xlsx-2024",
+          "title": "Örnek BEP Dosyası · Excel",
+          "kind": "library",
+          "source": "Serik Rehberlik ve Araştırma Merkezi",
+          "score": 1
+        },
+        {
+          "id": "serik-bep-ornek-docx-2024",
+          "title": "Örnek BEP Dosyası · Word",
+          "kind": "library",
+          "source": "Serik Rehberlik ve Araştırma Merkezi",
+          "score": 1
+        },
+        {
+          "id": "serik-bep-hazirlama-kilavuzu",
+          "title": "BEP Hazırlama Kılavuzu",
+          "kind": "library",
+          "source": "Serik Rehberlik ve Araştırma Merkezi",
+          "score": 1
+        },
+        {
+          "id": "bep-dosyasi-ornek-format-2024",
+          "title": "Bireyselleştirilmiş Eğitim Programı (BEP) Dosyası · Örnek Format",
+          "kind": "library",
+          "source": "Mercan Ortaokulu / MEB",
+          "score": 1
+        },
+        {
+          "id": "bep-degerlendirme-raporu-1-donem-2026",
+          "title": "BEP Değerlendirme Raporu · 1. Dönem Sonu",
+          "kind": "library",
+          "source": "Eldivan 100. Yıl İlkokulu / MEB",
+          "score": 1
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 22,
+      "title": "BEP Dosyasında Neler Olmalı?",
+      "targetKeyword": "BEP dosyasında neler olmalı",
+      "canonicalPage": "/bep/dosya-icerigi/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 23,
+      "title": "BEP Toplantı Tutanağı Word",
+      "targetKeyword": "BEP toplantı tutanağı word",
+      "canonicalPage": "/kaynak/bep-toplanti-tutanagi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "ismetaktar-bep-gelistirme-2-toplanti-2025",
+          "title": "BEP Geliştirme Birimi · 2. Toplantı Tutanağı",
+          "kind": "library",
+          "source": "İsmet Aktar MTAL / MEB",
+          "score": 3
+        },
+        {
+          "id": "ismetaktar-bep-gelistirme-1-toplanti-2025",
+          "title": "BEP Geliştirme Birimi · 1. Toplantı Tutanağı",
+          "kind": "library",
+          "source": "İsmet Aktar MTAL / MEB",
+          "score": 3
+        },
+        {
+          "id": "oddk-toplanti-tutanagi-docx-2024",
+          "title": "Öğrenci Davranışlarını Değerlendirme Kurulu · Toplantı Tutanağı",
+          "kind": "library",
+          "source": "Cengiz Topel Ortaokulu / MEB",
+          "score": 2
+        },
+        {
+          "id": "kurtulus-lgs-veli-toplanti-docx-2025",
+          "title": "LGS Veli Toplantı Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Kurtuluş İmam Hatip Ortaokulu / MEB",
+          "score": 2
+        },
+        {
+          "id": "akdag-sub-ogretmenler-kurulu-tutanak-docx",
+          "title": "Şube Öğretmenler Kurulu Toplantı Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Akdağ Mesleki ve Teknik Anadolu Lisesi / MEB",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 24,
+      "title": "Rehber Öğretmenin BEP'teki Görevi",
+      "targetKeyword": "rehber öğretmenin BEP görevleri",
+      "canonicalPage": "/bep/rehber-ogretmen-gorevleri/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 25,
+      "title": "Veli Görüşme Formu",
+      "targetKeyword": "veli görüşme formu",
+      "canonicalPage": "/kaynak/veli-gorusme-formu/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "oddk-veli-gorusme-formu-docx-2024",
+          "title": "Öğrenci Davranışlarını Değerlendirme Kurulu · Veli Görüşme Formu",
+          "kind": "library",
+          "source": "Cengiz Topel Ortaokulu / MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-08",
+          "title": "RAM Özel Eğitim Bölümü Veli Görüşme Formu",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-65",
+          "title": "Veli Görüşme Formu",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "veli-gorusme-tutanagi-docx",
+          "title": "Veli Görüşme Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 2
+        },
+        {
+          "id": "aksu-devamsiz-ogrenci-veli-gorusme-tutanagi-2024",
+          "title": "Devamsız Öğrenci Veli Görüşme Tutanağı",
+          "kind": "library",
+          "source": "Aksu 15 Temmuz Şehitler Anadolu Lisesi / MEB",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 26,
+      "title": "Veli Görüşme Tutanağı Word",
+      "targetKeyword": "veli görüşme tutanağı word",
+      "canonicalPage": "/kaynak/veli-gorusme-tutanagi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "veli-gorusme-tutanagi-docx",
+          "title": "Veli Görüşme Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 3
+        },
+        {
+          "id": "aksu-devamsiz-ogrenci-veli-gorusme-tutanagi-2024",
+          "title": "Devamsız Öğrenci Veli Görüşme Tutanağı",
+          "kind": "library",
+          "source": "Aksu 15 Temmuz Şehitler Anadolu Lisesi / MEB",
+          "score": 3
+        },
+        {
+          "id": "oddk-veli-gorusme-formu-docx-2024",
+          "title": "Öğrenci Davranışlarını Değerlendirme Kurulu · Veli Görüşme Formu",
+          "kind": "library",
+          "source": "Cengiz Topel Ortaokulu / MEB",
+          "score": 2
+        },
+        {
+          "id": "ogrenci-gorusme-tutanagi-docx",
+          "title": "Öğrenci Görüşme Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 2
+        },
+        {
+          "id": "kurtulus-lgs-veli-toplanti-docx-2025",
+          "title": "LGS Veli Toplantı Tutanağı · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Kurtuluş İmam Hatip Ortaokulu / MEB",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 27,
+      "title": "Zor Veliyle Nasıl Görüşülür?",
+      "targetKeyword": "zor veliyle nasıl konuşulur",
+      "canonicalPage": "/rehber/zor-veliyle-gorusme/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 28,
+      "title": "Veli Çocuğunun Rehberlik Servisine Gitmesini İstemiyorsa",
+      "targetKeyword": "veli çocuğunun rehberlik servisine gitmesini istemiyor ne yapılır",
+      "canonicalPage": "/rehber/veli-rehberlik-servisini-istemiyorsa/",
+      "status": "gap",
+      "matchedResources": [],
+      "backboneResource": null,
+      "nextAction": "official_source_research"
+    },
+    {
+      "rank": 29,
+      "title": "Öğrenci Görüşme Formu",
+      "targetKeyword": "öğrenci görüşme formu",
+      "canonicalPage": "/kaynak/ogrenci-gorusme-formu/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "oddk-veli-gorusme-formu-docx-2024",
+          "title": "Öğrenci Davranışlarını Değerlendirme Kurulu · Veli Görüşme Formu",
+          "kind": "library",
+          "source": "Cengiz Topel Ortaokulu / MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-01",
+          "title": "Disiplin Kurulu İçin Öğrenci Görüşme Formu",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-03",
+          "title": "Öğrenci Bilgi Formu",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-04",
+          "title": "Öğrenci Görüşme Formu",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        },
+        {
+          "id": "meb-05",
+          "title": "Öğrenci Grup Çalışması Formu",
+          "kind": "form",
+          "source": "MEB",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 30,
+      "title": "Öğrenciyle İlk Görüşme Nasıl Yapılır?",
+      "targetKeyword": "öğrenciyle ilk görüşme nasıl yapılır",
+      "canonicalPage": "/rehber/ogrenciyle-ilk-gorusme/",
+      "status": "covered_by_backbone",
+      "matchedResources": [],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 31,
+      "title": "Öğrenci Görüşmesinde Gizlilik Ne Zaman Bozulur?",
+      "targetKeyword": "rehberlik görüşmesinde gizlilik ne zaman bozulur",
+      "canonicalPage": "/rehber/gizlilik-sinirlari/",
+      "status": "partial_plus_backbone",
+      "matchedResources": [
+        {
+          "id": "nevsehir-ogrenci-zaman-yonetimi",
+          "title": "Zaman Yönetimi · Öğrenci Semineri",
+          "kind": "library",
+          "source": "Nevşehir Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": {
+        "id": "istanbul-ozel-egitim-rehberlik-uygulama-rehberi-2026",
+        "title": "Özel Eğitim ve Rehberlik Hizmetleri Uygulama Rehberi · 2026",
+        "source": "İstanbul İl Millî Eğitim Müdürlüğü"
+      },
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 32,
+      "title": "Sınav Kaygısı Nasıl Azaltılır?",
+      "targetKeyword": "sınav kaygısı nasıl azaltılır",
+      "canonicalPage": "/rehber/sinav-kaygisi-nasil-azaltilir/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "kocasinan-2026-lgs-kaygi-motivasyon",
+          "title": "LGS Kaygı ve Motivasyon Rehberi",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 2
+        },
+        {
+          "id": "kocasinan-2026-sinav-kaygisini-yonetmek",
+          "title": "Sınav Kaygısını Yönetmek",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 2
+        },
+        {
+          "id": "kiziltepe-sinav-kaygisi-pano-2025",
+          "title": "Sınav Kaygısı · Modüler Pano",
+          "kind": "library",
+          "source": "Kızıltepe Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "sinav-kaygisi-psikoegitim-grubu-isparta",
+          "title": "Sınav Kaygısı ile Baş Etme · Psikoeğitim Grubu Programı",
+          "kind": "library",
+          "source": "Isparta Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "rabiaarikan-sinav-kaygisi-kitapcik-2025",
+          "title": "Sınav Kaygısı · Öğrenci Kitapçığı",
+          "kind": "library",
+          "source": "Rabia Arıkan İmam Hatip Ortaokulu / MEB",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 33,
+      "title": "Sınav Kaygısı Psikoeğitim Programı",
+      "targetKeyword": "sınav kaygısı psikoeğitim programı",
+      "canonicalPage": "/kaynak/sinav-kaygisi-psikoegitim-programi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "sinav-kaygisi-psikoegitim-grubu-isparta",
+          "title": "Sınav Kaygısı ile Baş Etme · Psikoeğitim Grubu Programı",
+          "kind": "library",
+          "source": "Isparta Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "kocasinan-2026-lgs-kaygi-motivasyon",
+          "title": "LGS Kaygı ve Motivasyon Rehberi",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 2
+        },
+        {
+          "id": "kocasinan-2026-sinav-kaygisini-yonetmek",
+          "title": "Sınav Kaygısını Yönetmek",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 2
+        },
+        {
+          "id": "esenlik-2026-04",
+          "title": "Esenliği Güçlendirme – Öğrenci Psikoeğitim Programı",
+          "kind": "library",
+          "source": "MEB ÖRGM",
+          "score": 2
+        },
+        {
+          "id": "esenlik-2026-05",
+          "title": "Esenliği Güçlendirme – Aile Psikoeğitim Programı · Okul öncesi / İlkokul",
+          "kind": "library",
+          "source": "MEB ÖRGM",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 34,
+      "title": "Sınav Kaygısı Veli Broşürü",
+      "targetKeyword": "sınav kaygısı veli broşürü",
+      "canonicalPage": "/kaynak/sinav-kaygisi-veli-brosuru/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "cizre-sinav-kaygisi-veli-brosur-2026",
+          "title": "Sınav Kaygısı · Veli Broşürü · 2026-2027",
+          "kind": "library",
+          "source": "Cizre Rehberlik ve Araştırma Merkezi",
+          "score": 4
+        },
+        {
+          "id": "nevsehir-veli-sinav-kaygisi",
+          "title": "Sınav Kaygısı · Veli Bilgilendirme Kitapçığı",
+          "kind": "library",
+          "source": "Nevşehir Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "yenice-mart-2026-veli-bulteni",
+          "title": "Odak, Tekrar ve Sınav Kaygısı · Veli Bülteni · Mart 2026",
+          "kind": "library",
+          "source": "Yenice 19 Mayıs Ortaokulu / MEB",
+          "score": 3
+        },
+        {
+          "id": "kemalpasa-sinav-donemi-ebeveynligi",
+          "title": "Sınav Dönemi Ebeveynliği · Veli Bülteni",
+          "kind": "library",
+          "source": "Kemalpaşa İmam Hatip Ortaokulu / MEB",
+          "score": 3
+        },
+        {
+          "id": "cizre-sinav-kaygisi-ogretmen-brosur-2026",
+          "title": "Sınav Kaygısı · Öğretmen Broşürü · 2026-2027",
+          "kind": "library",
+          "source": "Cizre Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 35,
+      "title": "Okul Reddi: Çocuk Okula Gitmek İstemiyorsa",
+      "targetKeyword": "çocuk okula gitmek istemiyor ne yapmalıyım",
+      "canonicalPage": "/konu/okul-reddi/",
+      "status": "gap",
+      "matchedResources": [],
+      "backboneResource": null,
+      "nextAction": "official_source_research"
+    },
+    {
+      "rank": 36,
+      "title": "Okula Uyum Etkinlikleri",
+      "targetKeyword": "okula uyum etkinlikleri",
+      "canonicalPage": "/rehber/okula-uyum-etkinlikleri/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "ozel-ogrenciler-okula-uyum-etkinlikleri-2025",
+          "title": "Özel Öğrencilerimiz İçin Okula Uyum Etkinlikleri",
+          "kind": "library",
+          "source": "Ebu Hanife İmam Hatip Ortaokulu / MEB",
+          "score": 3
+        },
+        {
+          "id": "kocasinan-isinma-etkinlikleri-2025",
+          "title": "Okula Uyum · 25 Isınma Etkinliği · 2025",
+          "kind": "library",
+          "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "camlik-okula-uyum-veli-bulteni-2025",
+          "title": "Okula Uyum · Haftalık Veli Bülteni · 2025",
+          "kind": "library",
+          "source": "Çamlık Şehit Hüseyin Tolga Hepgül İlkokulu / MEB",
+          "score": 2
+        },
+        {
+          "id": "czarifoglu-4sinif-34-okuldan-okula",
+          "title": "Okuldan Okula · 4. Sınıf 34. Hafta",
+          "kind": "library",
+          "source": "Cahit Zarifoğlu İlkokulu / MEB",
+          "score": 2
+        },
+        {
+          "id": "kocasinan-okula-uyum-kilavuzu-2025",
+          "title": "Okula Uyum Süreci · Kılavuz · 2025",
+          "kind": "library",
+          "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 37,
+      "title": "Sosyometri Nasıl Uygulanır?",
+      "targetKeyword": "sosyometri nasıl uygulanır",
+      "canonicalPage": "/konu/sosyometri/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "kocasinan-sinif-rehberlik-etkinlik-uygulama-ilkeleri",
+          "title": "Sınıf Rehberlik Etkinlikleri Uygulanırken Dikkat Edilmesi Gerekenler",
+          "kind": "library",
+          "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
+          "score": 1
+        },
+        {
+          "id": "meb-42",
+          "title": "Sosyometri",
+          "kind": "form",
+          "source": "MEB",
+          "score": 1
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 38,
+      "title": "Sosyometri Formu ve Sosyogram Örneği",
+      "targetKeyword": "sosyometri formu",
+      "canonicalPage": "/kaynak/sosyometri-formu/",
+      "status": "gap",
+      "matchedResources": [],
+      "backboneResource": null,
+      "nextAction": "official_source_research"
+    },
+    {
+      "rank": 39,
+      "title": "Meslek Seçimi Nasıl Yapılır?",
+      "targetKeyword": "meslek seçimi nasıl yapılır",
+      "canonicalPage": "/kariyer/meslek-secimi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "susehri-mesleki-ilgi-yetenek-pano-2025",
+          "title": "Mesleki İlgi-Yetenek-Değer-Kişilik İlişkisi · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "seyhan-meslek-secimi-2025",
+          "title": "Meslek Seçimi · Öğrenci Sunumu",
+          "kind": "library",
+          "source": "Seyhan Borsa İstanbul Fen Lisesi / MEB",
+          "score": 2
+        },
+        {
+          "id": "mesleki-alan-dal-kilavuzu-2026",
+          "title": "Mesleki ve Teknik Ortaöğretim · Alana/Dala Geçiş, Tercih ve Yerleştirme Kılavuzu · 2026",
+          "kind": "library",
+          "source": "MEB Mesleki ve Teknik Eğitim",
+          "score": 2
+        },
+        {
+          "id": "akdag-sinif-temsilcisi-secimi-docx",
+          "title": "Sınıf Temsilcisi Seçimi Formu · Düzenlenebilir Word",
+          "kind": "library",
+          "source": "Akdağ Mesleki ve Teknik Anadolu Lisesi / MEB",
+          "score": 2
+        },
+        {
+          "id": "cizre-meslek-secimi-veli-brosur-2026",
+          "title": "Meslek Seçimi · İlgi-Yetenek-Değer-Kişisel Özellik · Veli Broşürü",
+          "kind": "library",
+          "source": "Cizre Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 40,
+      "title": "Mesleki İlgi Envanteri ve Kullanımı",
+      "targetKeyword": "mesleki ilgi envanteri",
+      "canonicalPage": "/kariyer/mesleki-ilgi/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "susehri-mesleki-ilgi-yetenek-pano-2025",
+          "title": "Mesleki İlgi-Yetenek-Değer-Kişilik İlişkisi · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "manisa-lgs-puanlar-2026",
+          "title": "Manisa Lise Puanları ve Kontenjan Bilgileri · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "iskur-mesleki-bilgi-ab",
+          "title": "İŞKUR Mesleki Bilgi Kitapçığı · A-B",
+          "kind": "library",
+          "source": "İŞKUR / MEB okul arşivi",
+          "score": 2
+        },
+        {
+          "id": "iskur-mesleki-bilgi-ccd",
+          "title": "İŞKUR Mesleki Bilgi Kitapçığı · C-Ç-D",
+          "kind": "library",
+          "source": "İŞKUR / MEB okul arşivi",
+          "score": 2
+        },
+        {
+          "id": "iskur-mesleki-bilgi-ef",
+          "title": "İŞKUR Mesleki Bilgi Kitapçığı · E-F",
+          "kind": "library",
+          "source": "İŞKUR / MEB okul arşivi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 41,
+      "title": "YKS Tercih Nasıl Yapılır?",
+      "targetKeyword": "YKS tercih nasıl yapılır",
+      "canonicalPage": "/yks/tercih-nasil-yapilir/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "susehri-yks-moduler-pano-2026",
+          "title": "YKS 2026 · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "kocasinan-2026-yks-altin-taktikler",
+          "title": "YKS'de Altın Taktikler",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 1
+        },
+        {
+          "id": "kocasinan-2026-yks-stratejisi",
+          "title": "YKS Stratejisi",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 1
+        },
+        {
+          "id": "kocasinan-2026-yks-stratejileri",
+          "title": "YKS Stratejileri",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 1
+        },
+        {
+          "id": "susehri-universite-haritasi-2026",
+          "title": "Türkiye'nin Üniversite Haritası · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 1
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 42,
+      "title": "YKS Tercih Robotu",
+      "targetKeyword": "YKS tercih robotu",
+      "canonicalPage": "/yks/tercih-robotu/",
+      "status": "partial",
+      "matchedResources": [
+        {
+          "id": "susehri-yks-moduler-pano-2026",
+          "title": "YKS 2026 · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "supplement_source_research"
+    },
+    {
+      "rank": 43,
+      "title": "YKS Tercih Kılavuzu 2026",
+      "targetKeyword": "YKS tercih kılavuzu 2026",
+      "canonicalPage": "/yks/tercih-kilavuzu/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "susehri-yks-moduler-pano-2026",
+          "title": "YKS 2026 · Modüler Pano",
+          "kind": "library",
+          "source": "Suşehri Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        },
+        {
+          "id": "mesleki-alan-dal-kilavuzu-2026",
+          "title": "Mesleki ve Teknik Ortaöğretim · Alana/Dala Geçiş, Tercih ve Yerleştirme Kılavuzu · 2026",
+          "kind": "library",
+          "source": "MEB Mesleki ve Teknik Eğitim",
+          "score": 3
+        },
+        {
+          "id": "manisa-lgs-puanlar-2026",
+          "title": "Manisa Lise Puanları ve Kontenjan Bilgileri · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "manisa-lgs-pdr-egitim-sunumu-2026",
+          "title": "LGS Tercih Dönemi Rehber Öğretmen/Psikolojik Danışman Eğitim Sunumu · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "seyhan-yks-tanitim-2026",
+          "title": "YKS Tanıtım · 2026",
+          "kind": "library",
+          "source": "Seyhan Borsa İstanbul Fen Lisesi / MEB",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 44,
+      "title": "LGS Tercih Nasıl Yapılır?",
+      "targetKeyword": "LGS tercih nasıl yapılır",
+      "canonicalPage": "/lgs/tercih-nasil-yapilir/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "manisa-lgs-puanlar-2026",
+          "title": "Manisa Lise Puanları ve Kontenjan Bilgileri · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "manisa-lgs-pdr-egitim-sunumu-2026",
+          "title": "LGS Tercih Dönemi Rehber Öğretmen/Psikolojik Danışman Eğitim Sunumu · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "tokat-lgs-tercih-rehberi-2026",
+          "title": "Ortaöğretim Tanıtım Dergisi · LGS Tercih Rehberi · 2026",
+          "kind": "library",
+          "source": "Tokat İl MEM / Tokat RAM ve İlçe RAM'ları",
+          "score": 2
+        },
+        {
+          "id": "kocasinan-2026-lgs-kaygi-motivasyon",
+          "title": "LGS Kaygı ve Motivasyon Rehberi",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 1
+        },
+        {
+          "id": "kocasinan-2026-lgs-sinav-stratejileri",
+          "title": "LGS Sınav Stratejileri",
+          "kind": "library",
+          "source": "Kocasinan RAM",
+          "score": 1
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 45,
+      "title": "LGS Tercih Robotu",
+      "targetKeyword": "LGS tercih robotu",
+      "canonicalPage": "/lgs/tercih-robotu/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "manisa-lgs-puanlar-2026",
+          "title": "Manisa Lise Puanları ve Kontenjan Bilgileri · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "manisa-lgs-pdr-egitim-sunumu-2026",
+          "title": "LGS Tercih Dönemi Rehber Öğretmen/Psikolojik Danışman Eğitim Sunumu · 2026",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "tokat-lgs-tercih-rehberi-2026",
+          "title": "Ortaöğretim Tanıtım Dergisi · LGS Tercih Rehberi · 2026",
+          "kind": "library",
+          "source": "Tokat İl MEM / Tokat RAM ve İlçe RAM'ları",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    },
+    {
+      "rank": 46,
+      "title": "PDR AGS Konu ve Soru Dağılımı",
+      "targetKeyword": "PDR AGS konu dağılımı 2026",
+      "canonicalPage": "/pdr-ags/konu-soru-dagilimi/",
+      "status": "partial",
+      "matchedResources": [
+        {
+          "id": "bismil-ihmal-istismar-yasal-sorumluluklar-2026",
+          "title": "İhmal-İstismar Sürecinde Yasal Sorumluluklar · TCK ve ÇKK · 2026",
+          "kind": "library",
+          "source": "Bismil Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "supplement_source_research"
+    },
+    {
+      "rank": 47,
+      "title": "PDR ÖABT Konu ve Soru Dağılımı",
+      "targetKeyword": "PDR ÖABT konu dağılımı 2026",
+      "canonicalPage": "/pdr-oabt/konu-soru-dagilimi/",
+      "status": "partial",
+      "matchedResources": [
+        {
+          "id": "bismil-ihmal-istismar-yasal-sorumluluklar-2026",
+          "title": "İhmal-İstismar Sürecinde Yasal Sorumluluklar · TCK ve ÇKK · 2026",
+          "kind": "library",
+          "source": "Bismil Rehberlik ve Araştırma Merkezi",
+          "score": 3
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "supplement_source_research"
+    },
+    {
+      "rank": 48,
+      "title": "PDR AGS Puan Hesaplama",
+      "targetKeyword": "PDR AGS puan hesaplama",
+      "canonicalPage": "/pdr-ags/puan-hesaplama/",
+      "status": "gap",
+      "matchedResources": [],
+      "backboneResource": null,
+      "nextAction": "official_source_research"
+    },
+    {
+      "rank": 49,
+      "title": "PDR AGS / ÖABT Çıkmış Sorular ve Resmî Kitapçıklar",
+      "targetKeyword": "PDR AGS çıkmış sorular",
+      "canonicalPage": "/pdr-ags/cikmis-sorular/",
+      "status": "gap",
+      "matchedResources": [],
+      "backboneResource": null,
+      "nextAction": "official_source_research"
+    },
+    {
+      "rank": 50,
+      "title": "PDR Akademi Kontenjanı ve Yerleştirme",
+      "targetKeyword": "PDR akademi kontenjanı 2026",
+      "canonicalPage": "/atama/pdr-akademi-kontenjan/",
+      "status": "covered",
+      "matchedResources": [
+        {
+          "id": "manisa-yillik-plan-ortaokul-2026-2027",
+          "title": "2026-2027 Okul Rehberlik Hizmetleri Yıllık Planı · Ortaokul",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "manisa-yillik-plan-lise-2026-2027",
+          "title": "2026-2027 Okul Rehberlik Hizmetleri Yıllık Planı · Lise",
+          "kind": "library",
+          "source": "Manisa Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        },
+        {
+          "id": "proje-odev-cizelgesi-xlsx",
+          "title": "Proje Ödev Çizelgesi · Düzenlenebilir Excel",
+          "kind": "library",
+          "source": "Esenyurt Anadolu Lisesi / MEB",
+          "score": 2
+        },
+        {
+          "id": "mesleki-alan-dal-kilavuzu-2026",
+          "title": "Mesleki ve Teknik Ortaöğretim · Alana/Dala Geçiş, Tercih ve Yerleştirme Kılavuzu · 2026",
+          "kind": "library",
+          "source": "MEB Mesleki ve Teknik Eğitim",
+          "score": 2
+        },
+        {
+          "id": "konak-2026-2027-okuloncesi-plan-cilt1",
+          "title": "2026-2027 Okul Öncesi Sınıf Rehberlik Yıllık Planı · 1. Cilt",
+          "kind": "library",
+          "source": "Konak Rehberlik ve Araştırma Merkezi",
+          "score": 2
+        }
+      ],
+      "backboneResource": null,
+      "nextAction": "content_ready"
+    }
+  ]
+}
