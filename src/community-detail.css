@@ -3,6 +3,7 @@
 
 /* Shared editorial treatment for the community and colleague feeds. */
 .community-feed{padding-top:34px;background:#f7f7f2}
+.community-feed [hidden]{display:none!important}
 .community-feed .community-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.7fr);gap:32px;align-items:center;min-height:330px;padding:44px 48px;margin:0;background:radial-gradient(circle at 95% 0%,#446f56 0,transparent 34%),linear-gradient(125deg,#1d3d30,#28563e);border:1px solid #23523c;border-radius:24px;overflow:hidden;position:relative}
 .community-feed .community-hero-copy{position:relative;z-index:1;min-width:0}
 .community-feed .community-hero .eyebrow{color:#a9d6b2;font-size:11px;margin:0 0 18px}
