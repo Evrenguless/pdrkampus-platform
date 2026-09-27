@@ -7,6 +7,25 @@ const norm=s=>String(s??'').toLocaleLowerCase('tr-TR').normalize('NFD').replace(
 async function loadCatalog(path){return fetch(new URL(path,import.meta.url)).then(r=>{if(!r.ok)throw Error('Katalog yüklenemedi');return r.json()}).catch(()=>[])}
 const [baseTools,baseLibrary,curated]=await Promise.all([loadCatalog('../data/forms.json?v=20260926-5'),loadCatalog('../data/library.json?v=20260926-41'),getCuratedResources()]);
 const tools=[...baseTools,...curated.tools],library=[...baseLibrary,...curated.library];
+const pathways={
+ baslangic:{title:'Mesleğe başlangıç kaynakları',intro:'İlk görüşmeler, okul rehberlik planı ve günlük çalışmada başvurabileceğin seçili kaynaklar.',items:[['tool','meb-03'],['tool','meb-04'],['tool','meb-65'],['tool','meb-67'],['library','kocasinan-rehberlik-programi-hazirlama-kitapcigi'],['library','sdb-547']]},
+ devamsizlik:{title:'Devamsızlık kaynakları',intro:'Nedenleri anlamak, görüşmeyi kaydetmek ve süreci izlemek için belgeler.',items:[['tool','meb-14'],['tool','meb-73'],['library','devamsizlik-takip-formu-pdf-2025'],['library','aksu-devamsiz-ogrenci-veli-gorusme-tutanagi-2024'],['library','aksu-devamsizlik-sinif-tekrari-onleme-plani-2025-2026'],['library','meram-okul-reddi-2024']]},
+ zorbalik:{title:'Akran zorbalığı kaynakları',intro:'Farkındalık programları, psikolojik danışman kitapçığı ve aile materyalleri.',items:[['library','zorbalik-kuramsal'],['library','farkindalik-ilkokul'],['library','farkindalik-ortaokul'],['library','farkindalik-lise'],['library','veli-brosur'],['library','akranzorbaligi-psikoegitim-isparta-2025']]}
+};
+const pathwayHost=$('#pathwayDetails');
+document.querySelectorAll('[data-pathway]').forEach(button=>button.addEventListener('click',()=>{
+ const key=button.dataset.pathway,selected=pathways[key];
+ if(!selected||!pathwayHost)return;
+ if(!pathwayHost.hidden&&button.getAttribute('aria-expanded')==='true'){
+  pathwayHost.hidden=true;button.setAttribute('aria-expanded','false');return;
+ }
+ document.querySelectorAll('[data-pathway]').forEach(item=>item.setAttribute('aria-expanded',String(item===button)));
+ const entries=selected.items.map(([kind,id])=>({kind,item:(kind==='tool'?tools:library).find(x=>x.id===id)})).filter(row=>row.item?.file);
+ pathwayHost.innerHTML=`<div class="pathway-detail-head"><div><span class="pathway-kicker">SEÇİLİ KAYNAKLAR</span><h3>${esc(selected.title)}</h3><p>${esc(selected.intro)}</p></div><button type="button" class="pathway-close" aria-label="Kaynakları kapat">×</button></div><div class="pathway-resources">${entries.map(({kind,item})=>`<article class="pathway-resource"><span>${esc(kind==='tool'?'MEB Form Haritası':item.type)} · ${esc(item.level||'Tüm kademeler')}</span><h4>${esc(item.title)}</h4><button type="button" data-kind="${kind}" data-id="${esc(item.id)}">Dosyayı aç ↗</button></article>`).join('')}</div><a class="pathway-all" href="kutuphane.html?q=${encodeURIComponent(key==='baslangic'?'rehberlik':key==='devamsizlik'?'devamsızlık':'akran zorbalığı')}">Kütüphanede daha fazlasını gör ↗</a>`;
+ pathwayHost.hidden=false;
+ pathwayHost.querySelector('.pathway-close').addEventListener('click',()=>{pathwayHost.hidden=true;button.setAttribute('aria-expanded','false');button.focus()});
+ pathwayHost.scrollIntoView({behavior:'smooth',block:'start'});
+}));
 if($('#homeResources')){
  const preferred=['esenlik-2026-01','psikososyal-2025-16','psikososyal-2025-22'].map(id=>library.find(x=>x.id===id)).filter(Boolean);
  const picks=[...curated.library,...preferred].filter((x,i,a)=>a.findIndex(y=>y.id===x.id)===i).slice(0,3);
