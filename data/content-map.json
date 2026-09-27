@@ -129,8 +129,8 @@
       ],
       "queryCount": 36,
       "p1Count": 28,
-      "p2Count": 8,
-      "p3Count": 0,
+      "p2Count": 7,
+      "p3Count": 1,
       "highPotentialCount": 26,
       "seasonalHighCount": 1,
       "riskLevels": [
@@ -501,9 +501,9 @@
         "Rehberlik hizmetleri"
       ],
       "queryCount": 37,
-      "p1Count": 13,
-      "p2Count": 24,
-      "p3Count": 0,
+      "p1Count": 12,
+      "p2Count": 22,
+      "p3Count": 3,
       "highPotentialCount": 10,
       "seasonalHighCount": 3,
       "riskLevels": [
@@ -654,8 +654,8 @@
       ],
       "queryCount": 32,
       "p1Count": 4,
-      "p2Count": 28,
-      "p3Count": 0,
+      "p2Count": 25,
+      "p3Count": 3,
       "highPotentialCount": 3,
       "seasonalHighCount": 0,
       "riskLevels": [
@@ -692,8 +692,8 @@
       ],
       "queryCount": 28,
       "p1Count": 3,
-      "p2Count": 25,
-      "p3Count": 0,
+      "p2Count": 14,
+      "p3Count": 11,
       "highPotentialCount": 3,
       "seasonalHighCount": 0,
       "riskLevels": [
@@ -2187,34 +2187,6 @@
       ]
     },
     {
-      "canonicalPage": "/konu/rehberlik-formlari/",
-      "mainTopics": [
-        "Form / Word / PDF / PPT"
-      ],
-      "queryCount": 5,
-      "p1Count": 1,
-      "p2Count": 4,
-      "p3Count": 0,
-      "highPotentialCount": 1,
-      "seasonalHighCount": 0,
-      "riskLevels": [
-        "Normal"
-      ],
-      "audiences": [
-        "Rehber öğretmen"
-      ],
-      "contentTypes": [
-        "Rehber"
-      ],
-      "sampleQueries": [
-        "rehberlik pano materyalleri",
-        "rehberlik dosyası kapak örneği",
-        "rehberlik komisyon tutanağı",
-        "rehberlik resmi yazı örnekleri",
-        "rehberlik dilekçe örneği"
-      ]
-    },
-    {
       "canonicalPage": "/kutuphane.html?q=%C3%B6%C4%9Frenci%20y%C3%B6nlendirme%20formu",
       "mainTopics": [
         "Form / Word / PDF / PPT"
@@ -3277,8 +3249,8 @@
       ],
       "queryCount": 1,
       "p1Count": 0,
-      "p2Count": 1,
-      "p3Count": 0,
+      "p2Count": 0,
+      "p3Count": 1,
       "highPotentialCount": 1,
       "seasonalHighCount": 0,
       "riskLevels": [
@@ -3292,6 +3264,34 @@
       ],
       "sampleQueries": [
         "rehberlik afişleri pdf"
+      ]
+    },
+    {
+      "canonicalPage": "/konu/rehberlik-formlari/",
+      "mainTopics": [
+        "Form / Word / PDF / PPT"
+      ],
+      "queryCount": 5,
+      "p1Count": 0,
+      "p2Count": 3,
+      "p3Count": 2,
+      "highPotentialCount": 1,
+      "seasonalHighCount": 0,
+      "riskLevels": [
+        "Normal"
+      ],
+      "audiences": [
+        "Rehber öğretmen"
+      ],
+      "contentTypes": [
+        "Rehber"
+      ],
+      "sampleQueries": [
+        "rehberlik pano materyalleri",
+        "rehberlik dosyası kapak örneği",
+        "rehberlik komisyon tutanağı",
+        "rehberlik resmi yazı örnekleri",
+        "rehberlik dilekçe örneği"
       ]
     },
     {
@@ -3637,8 +3637,8 @@
       ],
       "queryCount": 1,
       "p1Count": 0,
-      "p2Count": 1,
-      "p3Count": 0,
+      "p2Count": 0,
+      "p3Count": 1,
       "highPotentialCount": 0,
       "seasonalHighCount": 0,
       "riskLevels": [
@@ -3805,8 +3805,8 @@
       ],
       "queryCount": 1,
       "p1Count": 0,
-      "p2Count": 1,
-      "p3Count": 0,
+      "p2Count": 0,
+      "p3Count": 1,
       "highPotentialCount": 0,
       "seasonalHighCount": 0,
       "riskLevels": [
