@@ -12969,5 +12969,44 @@
     "file": "https://serdivaniho.meb.k12.tr/meb_iys_dosyalar/54/16/748502/dosyalar/2021_11/29215934_BIREYI-TANIMA-TEKNIKLERI-2.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "kapakli-okula-uyum-okul-fobisi-2025",
+    "title": "Okula Uyum ve Okul Fobisi · Aileye Öneriler · 2025",
+    "type": "Bülten / Rehber",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Kapaklı Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kapakliram.meb.k12.tr/",
+    "file": "https://kapakliram.meb.k12.tr/meb_iys_dosyalar/59/11/774317/dosyalar/2025_09/01132430_092025okulauyumveokulfobisi.pdf?CHK=63394ef60b004c5480a149c5a40f68c9",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "pursaklar-okul-fobisi-el-kitabi-2025",
+    "title": "Çocuklarda Okula Uyum Problemleri ve Okul Fobisi · El Kitabı · 2025",
+    "type": "El Kitabı",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Pursaklar Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://pursaklarram.meb.k12.tr/",
+    "file": "https://pursaklarram.meb.k12.tr/meb_iys_dosyalar/06/29/765997/dosyalar/2025_09/05160643_uyumhaftasiicinokulfobisielkitabi.pdf?CHK=a5ccd9420bc119524ec3df4c6b0acea7",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "bingol-sosyometri-uygulama-yonerge",
+    "title": "Sosyometri · Uygulama, Puanlama ve Sosyogram Yönergesi",
+    "type": "Uygulama Yönergesi",
+    "level": "İlkokul / Ortaokul / Lise",
+    "area": "Bireyi Tanıma ve Değerlendirme",
+    "topic": "Sosyometri",
+    "source": "Bingöl Atatürk Anadolu Lisesi / MEB",
+    "sourcePage": "https://bingolataturkanadolulisesi.meb.k12.tr/",
+    "file": "https://bingolataturkanadolulisesi.meb.k12.tr/meb_iys_dosyalar/12/01/973785/dosyalar/2017_10/03112241_sosyometri.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
