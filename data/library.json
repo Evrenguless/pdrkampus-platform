@@ -14204,5 +14204,70 @@
     "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "orgm-cinsel-istismar-okuloncesi-bireysel-psikoegitim-2025",
+    "title": "Cinsel İstismar · Okul Öncesi Bireysel Psikoeğitim Programı",
+    "type": "Bireysel Psikoeğitim Programı",
+    "level": "Okul öncesi",
+    "area": "Çocuk Koruma ve Güvenlik",
+    "topic": "Cinsel istismar ve çocuk koruma",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28153025_okuloncesibireyselpsikoegitim.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-cinsel-istismar-ilkokul-bireysel-psikoegitim-2025",
+    "title": "Cinsel İstismar · İlkokul Bireysel Psikoeğitim Programı",
+    "type": "Bireysel Psikoeğitim Programı",
+    "level": "İlkokul",
+    "area": "Çocuk Koruma ve Güvenlik",
+    "topic": "Cinsel istismar ve çocuk koruma",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28153152_ilkokulbireyselpsikoegitim.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-cinsel-istismar-ortaokul-bireysel-psikoegitim-2025",
+    "title": "Cinsel İstismar · Ortaokul Bireysel Psikoeğitim Programı",
+    "type": "Bireysel Psikoeğitim Programı",
+    "level": "Ortaokul",
+    "area": "Çocuk Koruma ve Güvenlik",
+    "topic": "Cinsel istismar ve çocuk koruma",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28153340_ortaokulbireyselpsikoegitim.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-cinsel-istismar-lise-bireysel-psikoegitim-2025",
+    "title": "Cinsel İstismar · Lise Bireysel Psikoeğitim Programı",
+    "type": "Bireysel Psikoeğitim Programı",
+    "level": "Lise",
+    "area": "Çocuk Koruma ve Güvenlik",
+    "topic": "Cinsel istismar ve çocuk koruma",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28153244_lisebireyselpsikoegitim.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-cinsel-istismar-yetiskin-brosur-2025",
+    "title": "Cinsel İstismar · Yetişkinler İçin Bilgilendirme Broşürü",
+    "type": "Broşür",
+    "level": "Tüm kademeler / Yetişkin",
+    "area": "Çocuk Koruma ve Güvenlik",
+    "topic": "Cinsel istismar ve çocuk koruma",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28152731_yetiskinbrosur.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
