@@ -14347,5 +14347,83 @@
     "file": "https://bakirkoyram.meb.k12.tr/meb_iys_dosyalar/34/34/973610/dosyalar/2026_07/6a509f80e6b4e451277772_LGS_tercih_ve_yerle%C5%9Ftirme_k%C4%B1lavuzu.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-lisans-programi",
+    "title": "Rehberlik ve Psikolojik Danışmanlık Lisans Programı ve Ders İçerikleri",
+    "type": "Lisans Programı",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "PDR bölümü dersleri",
+    "file": "https://rpd.aksaray.edu.tr/indir/147fcc9e-2360-489e-bb3e-dcb46cdcaf88.pdf",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-egitim-ortak-ders-kodlari",
+    "title": "RPD · Eğitim Ortak Zorunlu ve Seçmeli Ders Kodları",
+    "type": "Ders Planı",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "PDR bölümü dersleri",
+    "file": "https://rpd.aksaray.edu.tr/indir/ab0b2f58-416e-4cf2-807d-6db5252e74c6.pdf",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-aes-secmelileri-yok",
+    "title": "RPD Alan Eğitimi Seçmeli Dersleri · YÖK Çerçevesi",
+    "type": "Ders Planı",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "PDR bölümü dersleri",
+    "file": "https://rpd.aksaray.edu.tr/indir/f81de40a-21b9-4b5c-b921-637df4195588.pdf",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-okullarda-uygulamalar-1-kilavuz",
+    "title": "RPD 4009 · Okullarda RPD Uygulamaları 1 Ders Kılavuzu",
+    "type": "Uygulama Kılavuzu",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "Okullarda RPD uygulamaları",
+    "file": "https://rpd.aksaray.edu.tr/indir/f0be4780-ac94-4278-93d8-e6d4c16803e8.pdf",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-okullarda-uygulamalar-2-kilavuz",
+    "title": "RPD 4010 · Okullarda RPD Uygulamaları 2 Ders Kılavuzu",
+    "type": "Uygulama Kılavuzu",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "Okullarda RPD uygulamaları",
+    "file": "https://rpd.aksaray.edu.tr/indir/e650ebf5-f68f-4945-81dd-2030caea9600.pdf",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-2018-oncesi-ders-icerikleri",
+    "title": "RPD · 2018 Müfredatı Öncesi Ders İçerikleri",
+    "type": "Ders İçerikleri",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "PDR bölümü dersleri",
+    "file": "https://rpd.aksaray.edu.tr/indir/d98fdd64-e869-4472-9268-3152903369dd.pdf",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
