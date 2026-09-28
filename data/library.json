@@ -14867,5 +14867,70 @@
     "fileType": "PDF",
     "source": "Gazi Üniversitesi Gazi Eğitim Fakültesi RPD ABD",
     "sourceType": "official"
+  },
+  {
+    "id": "osym-2026-meb-ags-basvuru-kilavuzu-pdf",
+    "title": "2026 MEB-AGS · Başvuru Kılavuzu",
+    "type": "Kılavuz",
+    "level": "PDR adayları",
+    "area": "PDR AGS / ÖABT",
+    "topic": "MEB-AGS",
+    "sourcePage": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri",
+    "file": "https://dokuman.osym.gov.tr/web/2026/7/basvuru-kilavuzu-p9djhk-30105733.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "source": "ÖSYM"
+  },
+  {
+    "id": "osym-2026-meb-ags-aday-basvuru-formu",
+    "title": "2026 MEB-AGS · Aday Başvuru Formu",
+    "type": "Form",
+    "level": "PDR adayları",
+    "area": "PDR AGS / ÖABT",
+    "topic": "MEB-AGS",
+    "sourcePage": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri",
+    "file": "https://dokuman.osym.gov.tr/web/2026/7/aday-basvuru-formu-fg52k3-30105733.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "source": "ÖSYM"
+  },
+  {
+    "id": "osym-2026-meb-ags-engelli-basvuru-kullanici-kilavuzu",
+    "title": "2026 MEB-AGS · AİS Engelli Başvuru Kullanıcı Kılavuzu",
+    "type": "Kılavuz",
+    "level": "PDR adayları",
+    "area": "PDR AGS / ÖABT",
+    "topic": "MEB-AGS başvuru",
+    "sourcePage": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri",
+    "file": "https://dokuman.osym.gov.tr/web/2026/7/aday-slemleri-sistemi-as-engelli-basvuru-kullanici-kilavuzu-x24yl2-30105733.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "source": "ÖSYM"
+  },
+  {
+    "id": "osym-2026-meb-ags-yakin-sinav-merkezleri",
+    "title": "2026 MEB-AGS · Adres İline Göre Tercih Edilebilecek Yakın Sınav Merkezleri",
+    "type": "Liste / Kılavuz",
+    "level": "PDR adayları",
+    "area": "PDR AGS / ÖABT",
+    "topic": "MEB-AGS başvuru",
+    "sourcePage": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri",
+    "file": "https://dokuman.osym.gov.tr/web/2026/7/adres-line-gore-tercih-edilebilecek-yakin-sinav-merkezleri-42ndla-30105733.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "source": "ÖSYM"
+  },
+  {
+    "id": "osym-2026-meb-ags-sinav-sayisal-bilgiler",
+    "title": "2026 MEB-AGS · Sınav Sonuçlarına İlişkin Sayısal Bilgiler",
+    "type": "Sayısal Bilgi",
+    "level": "PDR adayları",
+    "area": "PDR AGS / ÖABT",
+    "topic": "MEB-AGS",
+    "sourcePage": "https://www.osym.gov.tr/2026-meb-ags-sinav-sonuclarina-iliskin-sayisal-bilgiler",
+    "file": "https://dokuman.osym.gov.tr/web/2026/8/2026-meb-ags-sinav-sonuclarina-liskin-sayisal-bilgiler-3p3l3d-31125057.pdf",
+    "fileType": "PDF",
+    "sourceType": "official",
+    "source": "ÖSYM"
   }
 ]
