@@ -14126,5 +14126,83 @@
     "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-okuloncesi-psikoegitim-2025",
+    "title": "Yas · Okul Öncesi Psikososyal Destek Psikoeğitim Programı",
+    "type": "Psikoeğitim Programı",
+    "level": "Okul öncesi",
+    "area": "Kriz ve Psikososyal Destek",
+    "topic": "Ölüm ve yas",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28154508_okuloncesi.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-ilkokul-psikoegitim-2025",
+    "title": "Yas · İlkokul Psikososyal Destek Psikoeğitim Programı",
+    "type": "Psikoeğitim Programı",
+    "level": "İlkokul",
+    "area": "Kriz ve Psikososyal Destek",
+    "topic": "Ölüm ve yas",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28154508_ilkokul.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-ortaokul-psikoegitim-2025",
+    "title": "Yas · Ortaokul Psikososyal Destek Psikoeğitim Programı",
+    "type": "Psikoeğitim Programı",
+    "level": "Ortaokul",
+    "area": "Kriz ve Psikososyal Destek",
+    "topic": "Ölüm ve yas",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28154508_ortaokul.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-lise-psikoegitim-2025",
+    "title": "Yas · Lise Psikososyal Destek Psikoeğitim Programı",
+    "type": "Psikoeğitim Programı",
+    "level": "Lise",
+    "area": "Kriz ve Psikososyal Destek",
+    "topic": "Ölüm ve yas",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28154508_lise.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-aile-bilgilendirme-rehberi-2025",
+    "title": "Çocuk ve Ergenlerde Kayıp-Yas · Aileler İçin Bilgilendirme Rehberi",
+    "type": "Rehber",
+    "level": "Tüm kademeler / Veli",
+    "area": "Kriz ve Psikososyal Destek",
+    "topic": "Ölüm ve yas",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28154403_veli.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-ogretmen-bilgilendirme-rehberi-2025",
+    "title": "Çocuk ve Ergenlerde Kayıp-Yas · Öğretmenler İçin Bilgilendirme Rehberi",
+    "type": "Rehber",
+    "level": "Tüm kademeler / Öğretmen",
+    "area": "Kriz ve Psikososyal Destek",
+    "topic": "Ölüm ve yas",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_01/28154403_ogretmen.pdf",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
