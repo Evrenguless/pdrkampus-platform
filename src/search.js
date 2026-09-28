@@ -11,6 +11,20 @@ const stop=new Set([
 // They improve retrieval without making clinical inferences or diagnoses.
 const topics=[
  {
+  name:'Güvenli okul iklimi / şiddeti önleme',
+  terms:['guvenli okul iklimi','okul iklimi','okul aidiyeti','siddeti onleme','şiddeti önleme','akran nezaketi'],
+  resourceTerms:['okul iklimi','okul aidiyeti','siddeti onleme','şiddeti önleme','akran nezaketi','guvenli okul','güvenli okul'],
+  related:['akran zorbaligi','siber zorbalik','sosyal duygusal beceriler'],
+  explanation:'Güvenli okul iklimi, aidiyet ve şiddeti önleme çalışmalarına yakın kaynak.'
+ },
+ {
+  name:'Öğrenciyi tanıma / RİBA',
+  terms:['ogrenciyi tanima','öğrenciyi tanıma','bireyi tanima','bireyi tanıma','riba','ogrenci tanima formu','öğrenci tanıma formu'],
+  resourceTerms:['riba','ogrenciyi tanima','öğrenciyi tanıma','bireyi tanima','bireyi tanıma','sosyometri','ogrenci bilgileri','öğrenci bilgileri'],
+  related:['gozlem','gözlem','ogrenci gorusme','öğrenci görüşme'],
+  explanation:'Öğrenciyi tanıma, RİBA, gözlem ve bireyi tanıma araçlarına yakın kaynak.'
+ },
+ {
   name:'Akran zorbalığı',
   terms:['akran zorbaligi','zorbalik','akran baskisi','disliyor','dislanma','dalga geciyor','alay ediyor','arkadaslari disliyor'],
   resourceTerms:['akran zorbaligi','zorbalik','akran baskisi','sosyal dislanma','arkadaslik iliskileri'],
