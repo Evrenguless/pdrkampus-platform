@@ -173,38 +173,6 @@
       "canonicalPath": "/konu/siber-zorbalik/"
     },
     {
-      "id": "topic_akran_iliskileri",
-      "slug": "akran-iliskileri",
-      "name": "Akran İlişkileri",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "akran ilişkileri",
-        "arkadaşlık ilişkileri",
-        "arkadaşlık sorunları"
-      ],
-      "useCases": [
-        "sınıf içi ilişkileri güçlendirme",
-        "akran desteği"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Akran İlişkileri | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "akran ilişkileri"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_sosyal_dislanma",
       "slug": "sosyal-dislanma",
       "name": "Sosyal Dışlanma",
@@ -255,101 +223,6 @@
         "title": "Grup Dinamikleri | PDR Kampüs",
         "description": "",
         "primaryQuery": "grup dinamiği"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_ofke_yonetimi",
-      "slug": "ofke-yonetimi",
-      "name": "Öfke Yönetimi",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "öfke yönetimi",
-        "öfke kontrolü",
-        "öfke etkinliği"
-      ],
-      "useCases": [
-        "duygu düzenleme çalışması",
-        "öğrenci görüşmesi"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Öfke Yönetimi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "öfke yönetimi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_duygu_duzenleme",
-      "slug": "duygu-duzenleme",
-      "name": "Duygu Düzenleme",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "duygu düzenleme",
-        "duyguları yönetme",
-        "duygu farkındalığı"
-      ],
-      "useCases": [
-        "duyguları tanıma",
-        "baş etme becerileri"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Duygu Düzenleme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "duygu düzenleme"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_ozguven",
-      "slug": "ozguven",
-      "name": "Özgüven",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "özgüven",
-        "öz güven etkinliği",
-        "kendine güven"
-      ],
-      "useCases": [
-        "öğrenci gelişimini destekleme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Özgüven | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "özgüven"
       },
       "contentBrief": {
         "sections": [
@@ -433,11 +306,16 @@
         "sınav kaygısı",
         "sınav stresi",
         "sınav kaygısı ölçeği",
-        "sınav kaygısı etkinliği"
+        "sınav kaygısı etkinliği",
+        "Kaygı",
+        "kaygı",
+        "endişe",
+        "kaygıyla baş etme"
       ],
       "useCases": [
         "sınava hazırlık desteği",
-        "baş etme becerileri"
+        "baş etme becerileri",
+        "öğrenci görüşmesi"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -469,69 +347,6 @@
           "url": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2026_02/698da2625a99c555923539_S%C4%B1nav_Kayg%C4%B1s%C4%B1n%C4%B1_Y%C3%B6netmek.pdf"
         }
       ]
-    },
-    {
-      "id": "topic_kaygi",
-      "slug": "kaygi",
-      "name": "Kaygı",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "kaygı",
-        "endişe",
-        "kaygıyla baş etme"
-      ],
-      "useCases": [
-        "öğrenci görüşmesi",
-        "baş etme becerileri"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Kaygı | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "kaygı"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_stresle_bas_etme",
-      "slug": "stresle-bas-etme",
-      "name": "Stresle Baş Etme",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "stres yönetimi",
-        "stresle başa çıkma",
-        "stres etkinliği"
-      ],
-      "useCases": [
-        "baş etme becerilerini güçlendirme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Stresle Baş Etme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "stres yönetimi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
     },
     {
       "id": "topic_devamsizlik",
@@ -636,11 +451,21 @@
       "aliases": [
         "okula uyum",
         "okula uyum etkinliği",
-        "okul adaptasyonu"
+        "okul adaptasyonu",
+        "Oryantasyon ve Okula Başlangıç",
+        "oryantasyon",
+        "okula başlangıç etkinliği",
+        "uyum haftası",
+        "Lise Tercihi",
+        "lise tercihi",
+        "lgs tercih",
+        "lise seçimi"
       ],
       "useCases": [
         "okula başlangıç desteği",
-        "uyum çalışmaları"
+        "uyum çalışmaları",
+        "okula yeni başlayan öğrencileri destekleme",
+        "tercih danışmanlığı"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -659,7 +484,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/okula-uyum/"
+      "canonicalPath": "/konu/okula-uyum/",
+      "relatedTopics": []
     },
     {
       "id": "topic_okul_degisikligi",
@@ -765,11 +591,16 @@
       "aliases": [
         "veli görüşme formu",
         "veli ile görüşme",
-        "veli görüşmesi"
+        "veli görüşmesi",
+        "Veli Eğitimi",
+        "veli eğitimi",
+        "veli semineri",
+        "aile eğitimi"
       ],
       "useCases": [
         "veli görüşmesi hazırlığı",
-        "bilgi toplama"
+        "bilgi toplama",
+        "veli bilgilendirme ve beceri geliştirme"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -788,7 +619,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/veli-gorusmesi/"
+      "canonicalPath": "/konu/veli-gorusmesi/",
+      "relatedTopics": []
     },
     {
       "id": "topic_ogretmen_gorusmesi",
@@ -985,37 +817,6 @@
       }
     },
     {
-      "id": "topic_kontrol_listeleri",
-      "slug": "kontrol-listeleri",
-      "name": "Kontrol Listeleri",
-      "categoryId": "cat-assessment",
-      "aliases": [
-        "kontrol listesi",
-        "rehberlik kontrol listesi"
-      ],
-      "useCases": [
-        "izleme",
-        "öz değerlendirme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Kontrol Listeleri | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "kontrol listesi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_motivasyon",
       "slug": "akademik-motivasyon",
       "name": "Akademik Motivasyon",
@@ -1036,7 +837,10 @@
         "zaman planlama",
         "Çalışma Alışkanlıkları",
         "çalışma alışkanlıkları",
-        "ders çalışma programı"
+        "ders çalışma programı",
+        "Sınava Hazırlık",
+        "sınava hazırlık",
+        "sınav çalışma planı"
       ],
       "useCases": [
         "öğrenme motivasyonunu destekleme",
@@ -1045,7 +849,9 @@
         "akademik erteleme ile çalışma",
         "akademik ve kişisel planlama",
         "akademik planlama",
-        "çalışma becerilerini geliştirme"
+        "çalışma becerilerini geliştirme",
+        "çalışma planı",
+        "sınav dönemi rehberliği"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1068,37 +874,6 @@
       "relatedTopics": []
     },
     {
-      "id": "topic_sinav_hazirligi",
-      "slug": "sinav-hazirligi",
-      "name": "Sınava Hazırlık",
-      "categoryId": "cat-academic",
-      "aliases": [
-        "sınava hazırlık",
-        "sınav çalışma planı"
-      ],
-      "useCases": [
-        "çalışma planı",
-        "sınav dönemi rehberliği"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Sınava Hazırlık | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "sınava hazırlık"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_kariyer_gelisimi",
       "slug": "kariyer-gelisimi",
       "name": "Kariyer Gelişimi",
@@ -1106,11 +881,26 @@
       "aliases": [
         "kariyer gelişimi",
         "kariyer rehberliği",
-        "mesleki rehberlik"
+        "mesleki rehberlik",
+        "Meslek Seçimi",
+        "meslek seçimi",
+        "hangi meslek bana uygun",
+        "meslek seçme",
+        "Üniversite Tercihi",
+        "üniversite tercihi",
+        "tercih dönemi",
+        "yks tercih",
+        "Mesleki İlgi",
+        "mesleki ilgi",
+        "meslek ilgi alanları",
+        "ilgi envanteri"
       ],
       "useCases": [
         "kariyer farkındalığı",
-        "yöneltme"
+        "yöneltme",
+        "kariyer kararı",
+        "tercih danışmanlığı",
+        "kariyer keşfi"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1129,131 +919,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/kariyer-gelisimi/"
-    },
-    {
-      "id": "topic_mesleki_ilgi",
-      "slug": "mesleki-ilgi",
-      "name": "Mesleki İlgi",
-      "categoryId": "cat-career",
-      "aliases": [
-        "mesleki ilgi",
-        "meslek ilgi alanları",
-        "ilgi envanteri"
-      ],
-      "useCases": [
-        "kariyer keşfi"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Mesleki İlgi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "mesleki ilgi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_meslek_secimi",
-      "slug": "meslek-secimi",
-      "name": "Meslek Seçimi",
-      "categoryId": "cat-career",
-      "aliases": [
-        "meslek seçimi",
-        "hangi meslek bana uygun",
-        "meslek seçme"
-      ],
-      "useCases": [
-        "kariyer kararı"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Meslek Seçimi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "meslek seçimi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_universite_tercihi",
-      "slug": "universite-tercihi",
-      "name": "Üniversite Tercihi",
-      "categoryId": "cat-career",
-      "aliases": [
-        "üniversite tercihi",
-        "tercih dönemi",
-        "yks tercih"
-      ],
-      "useCases": [
-        "tercih danışmanlığı"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Üniversite Tercihi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "üniversite tercihi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_lise_tercihi",
-      "slug": "lise-tercihi",
-      "name": "Lise Tercihi",
-      "categoryId": "cat-career",
-      "aliases": [
-        "lise tercihi",
-        "lgs tercih",
-        "lise seçimi"
-      ],
-      "useCases": [
-        "tercih danışmanlığı"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Lise Tercihi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "lise tercihi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
+      "canonicalPath": "/konu/kariyer-gelisimi/",
+      "relatedTopics": []
     },
     {
       "id": "topic_kariyer_karari",
@@ -1488,11 +1155,16 @@
       "aliases": [
         "öğrenci iyi oluşu",
         "iyi oluş",
-        "esenlik"
+        "esenlik",
+        "Stresle Baş Etme",
+        "stres yönetimi",
+        "stresle başa çıkma",
+        "stres etkinliği"
       ],
       "useCases": [
         "koruyucu önleyici çalışma",
-        "okul iklimi"
+        "okul iklimi",
+        "baş etme becerilerini güçlendirme"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1511,7 +1183,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/ogrenci-esenligi-psikoegitim/"
+      "canonicalPath": "/konu/ogrenci-esenligi-psikoegitim/",
+      "relatedTopics": []
     },
     {
       "id": "topic_okul_iklimi",
@@ -1526,7 +1199,12 @@
         "akran nezaketi",
         "Şiddeti Önleme",
         "şiddet algısı",
-        "okulda şiddet"
+        "okulda şiddet",
+        "Okula Aidiyet",
+        "okula aidiyet",
+        "Akran Arabuluculuğu",
+        "akran arabuluculuğu",
+        "akran arabuluculuk"
       ],
       "useCases": [
         "okul çapında rehberlik planlama",
@@ -1535,7 +1213,9 @@
         "aidiyet çalışması",
         "koruyucu önleyici planlama",
         "koruyucu önleyici çalışma",
-        "risk değerlendirme"
+        "risk değerlendirme",
+        "devam ve bağlılığı destekleme",
+        "çatışma çözme ve okul iklimi"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1554,68 +1234,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/guvenli-okul-iklimi/"
-    },
-    {
-      "id": "topic_aidiyet",
-      "slug": "aidiyet",
-      "name": "Okula Aidiyet",
-      "categoryId": "cat-school-adjustment",
-      "aliases": [
-        "okula aidiyet",
-        "okul aidiyeti"
-      ],
-      "useCases": [
-        "devam ve bağlılığı destekleme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Okula Aidiyet | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "okula aidiyet"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_veli_egitimi",
-      "slug": "veli-egitimi",
-      "name": "Veli Eğitimi",
-      "categoryId": "cat-family",
-      "aliases": [
-        "veli eğitimi",
-        "veli semineri",
-        "aile eğitimi"
-      ],
-      "useCases": [
-        "veli bilgilendirme ve beceri geliştirme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Veli Eğitimi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "veli eğitimi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
+      "canonicalPath": "/konu/guvenli-okul-iklimi/",
+      "relatedTopics": []
     },
     {
       "id": "topic_ergenlik",
@@ -1689,67 +1309,6 @@
       "canonicalPath": "/konu/mahremiyet-beden-guvenligi/"
     },
     {
-      "id": "topic_akran_arabuluculugu",
-      "slug": "akran-arabuluculugu",
-      "name": "Akran Arabuluculuğu",
-      "categoryId": "cat-guidance",
-      "aliases": [
-        "akran arabuluculuğu",
-        "akran arabuluculuk"
-      ],
-      "useCases": [
-        "çatışma çözme ve okul iklimi"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Akran Arabuluculuğu | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "akran arabuluculuğu"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_oryantasyon",
-      "slug": "oryantasyon",
-      "name": "Oryantasyon ve Okula Başlangıç",
-      "categoryId": "cat-school-adjustment",
-      "aliases": [
-        "oryantasyon",
-        "okula başlangıç etkinliği",
-        "uyum haftası"
-      ],
-      "useCases": [
-        "okula yeni başlayan öğrencileri destekleme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Oryantasyon ve Okula Başlangıç | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "oryantasyon"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_bep",
       "slug": "bep",
       "name": "BEP ve Özel Eğitim Rehberi",
@@ -1796,13 +1355,18 @@
         "rehberlik formları",
         "öğrenci görüşme formu",
         "veli görüşme formu",
-        "MEB rehberlik formları"
+        "MEB rehberlik formları",
+        "Kontrol Listeleri",
+        "kontrol listesi",
+        "rehberlik kontrol listesi"
       ],
       "useCases": [
         "görüşme kaydı",
         "anket seçimi",
         "yönlendirme formu",
-        "MEB Form Haritası"
+        "MEB Form Haritası",
+        "izleme",
+        "öz değerlendirme"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1894,7 +1458,22 @@
         "akran çatışması",
         "Karar Verme",
         "karar verme becerileri",
-        "karar verme etkinliği"
+        "karar verme etkinliği",
+        "Akran İlişkileri",
+        "akran ilişkileri",
+        "arkadaşlık ilişkileri",
+        "arkadaşlık sorunları",
+        "Duygu Düzenleme",
+        "duyguları yönetme",
+        "duygu farkındalığı",
+        "Öfke Yönetimi",
+        "öfke yönetimi",
+        "öfke kontrolü",
+        "öfke etkinliği",
+        "Özgüven",
+        "özgüven",
+        "öz güven etkinliği",
+        "kendine güven"
       ],
       "useCases": [
         "sınıf etkinliği",
@@ -1908,7 +1487,14 @@
         "iletişim çalışması",
         "çatışma önleme",
         "akran çatışmasını yönetme",
-        "kariyer kararı"
+        "kariyer kararı",
+        "sınıf içi ilişkileri güçlendirme",
+        "akran desteği",
+        "duyguları tanıma",
+        "baş etme becerileri",
+        "duygu düzenleme çalışması",
+        "öğrenci görüşmesi",
+        "öğrenci gelişimini destekleme"
       ],
       "indexable": true,
       "contentStatus": "published",
