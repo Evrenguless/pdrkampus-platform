@@ -1042,22 +1042,31 @@
     {
       "id": "topic_ogrenciyi_tanima",
       "slug": "ogrenciyi-tanima",
-      "name": "Öğrenciyi Tanıma",
+      "name": "Öğrenciyi Tanıma Teknikleri ve RİBA",
       "categoryId": "cat-assessment",
       "aliases": [
         "öğrenci bilgi formu",
         "öğrenciyi tanıma teknikleri",
-        "bireyi tanıma"
+        "bireyi tanıma",
+        "öğrenciyi tanıma",
+        "RİBA",
+        "öğrenci tanıma formu",
+        "öğrenci tanıma teknikleri"
       ],
       "useCases": [
-        "öğrenci hakkında çok yönlü bilgi toplama"
+        "öğrenci hakkında çok yönlü bilgi toplama",
+        "ihtiyaç belirleme",
+        "öğrenci görüşmesi",
+        "gözlem",
+        "sosyometri",
+        "RİBA sonuçlarını yorumlama"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Öğrenciyi Tanıma | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "öğrenci bilgi formu"
+        "title": "Öğrenciyi Tanıma Teknikleri ve RİBA | PDR Kampüs",
+        "description": "Öğrenciyi tanıma teknikleri, RİBA, öğrenci tanıma formları, sosyometri ve bireyi tanıma araçlarını okul PDR bağlamında doğru kullanma rehberi.",
+        "primaryQuery": "öğrenciyi tanıma teknikleri"
       },
       "contentBrief": {
         "sections": [
@@ -1068,7 +1077,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/ogrenciyi-tanima/"
     },
     {
       "id": "topic_problem_tarama",
@@ -1828,22 +1838,29 @@
     },
     {
       "id": "topic_okul_iklimi",
-      "slug": "okul-iklimi",
-      "name": "Okul İklimi",
+      "slug": "guvenli-okul-iklimi",
+      "name": "Güvenli Okul İklimi ve Şiddeti Önleme",
       "categoryId": "cat-guidance",
       "aliases": [
         "okul iklimi",
-        "güvenli okul iklimi"
+        "güvenli okul iklimi",
+        "okul aidiyeti",
+        "şiddeti önleme",
+        "akran nezaketi"
       ],
       "useCases": [
-        "okul çapında rehberlik planlama"
+        "okul çapında rehberlik planlama",
+        "okul iklimi değerlendirme",
+        "şiddeti önleme",
+        "aidiyet çalışması",
+        "koruyucu önleyici planlama"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Okul İklimi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "okul iklimi"
+        "title": "Güvenli Okul İklimi ve Şiddeti Önleme | PDR Kampüs",
+        "description": "Okul iklimi, okul aidiyeti, akran nezaketi ve şiddeti önleme için 2026-2027 MEB çerçevesi, rehberlik yaklaşımı ve uygulama kaynakları.",
+        "primaryQuery": "güvenli okul iklimi"
       },
       "contentBrief": {
         "sections": [
@@ -1854,7 +1871,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/guvenli-okul-iklimi/"
     },
     {
       "id": "topic_aidiyet",
