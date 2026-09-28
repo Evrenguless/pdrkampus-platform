@@ -64,14 +64,14 @@ function renderGoals(){
 }
 
 document.querySelector('#specialGoalForm').addEventListener('submit',e=>{
- e.preventDefault();const title=e.currentTarget.title.value.trim();if(!title)return;
+ e.preventDefault();const title=e.currentTarget.elements.namedItem('title').value.trim();if(!title)return;
  const goal={id:'custom-'+uid(),type:'special',title,description:'Okulun kendi ihtiyaçları doğrultusunda eklenen özel hedef.',keywords:title.split(/\s+/).filter(x=>x.length>3)};
  yearState().customGoals.push(goal);yearState().selectedGoals.push(goal.id);save();e.currentTarget.reset();renderAll();
 });
 
 function renderSchool(){
  const s=yearState().school,form=document.querySelector('#schoolForm');
- form.level.value=s.level||'';form.schoolType.value=s.schoolType||'';form.grades.value=s.grades||'';form.studentCount.value=s.studentCount||'';
+ form.elements.namedItem('level').value=s.level||'';form.elements.namedItem('schoolType').value=s.schoolType||'';form.elements.namedItem('grades').value=s.grades||'';form.elements.namedItem('studentCount').value=s.studentCount||'';
 }
 document.querySelector('#schoolForm').addEventListener('submit',e=>{
  e.preventDefault();const fd=new FormData(e.currentTarget);
@@ -81,9 +81,9 @@ document.querySelector('#schoolForm').addEventListener('submit',e=>{
 
 function openPlanForm(){
  const form=document.querySelector('#planForm');form.hidden=false;
- const goalSelect=form.goalId;const goals=selectedGoals();
+ const goalSelect=form.elements.namedItem('goalId');const goals=selectedGoals();
  goalSelect.innerHTML='<option value="">Hedef seçin</option>'+goals.map(g=>`<option value="${g.id}">${escapeHtml(g.title)}</option>`).join('');
- form.month.innerHTML=months.map(m=>`<option ${m===activeMonth?'selected':''}>${m}</option>`).join('');
+ form.elements.namedItem('month').innerHTML=months.map(m=>`<option ${m===activeMonth?'selected':''}>${m}</option>`).join('');
  form.scrollIntoView({behavior:'smooth',block:'center'});
 }
 document.querySelector('#openPlanForm').addEventListener('click',openPlanForm);
