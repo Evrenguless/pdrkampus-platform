@@ -12488,5 +12488,83 @@
     "fileType": "PDF",
     "sourceType": "official",
     "note": "Ek PDF AGS genel dağılımını ve ÖABT Özel Eğitim alanını içerir; Rehberlik alanına özgü ayrı konu yüzdesi tablosu bu ekte yer almamaktadır."
+  },
+  {
+    "id": "manisa-atilganlik-ilkokul-ogrenci-brosur-2026",
+    "title": "Atılganlık Becerileri · İlkokul Öğrenci Broşürü · 2026-2027",
+    "type": "Broşür",
+    "level": "İlkokul",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Atılganlık",
+    "source": "Manisa İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://manisa.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-rehberlik-ve-psikolojik-danisma-hizmetleri-yerel-hedefler/icerik/7333/tr",
+    "file": "https://manisa.meb.gov.tr/meb_iys_dosyalar/2026_08/6a919d680d2b7949610961_%C3%B6%C4%9Frenci-bro%C5%9F%C3%BCr.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "manisa-atilganlik-ortaokul-etkinlik1-2026",
+    "title": "Atılganlık Becerileri · 5-8. Sınıf Rehberlik Etkinliği 1 · 2026-2027",
+    "type": "Etkinlik",
+    "level": "Ortaokul",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Atılganlık",
+    "source": "Manisa İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://manisa.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-rehberlik-ve-psikolojik-danisma-hizmetleri-yerel-hedefler/icerik/7333/tr",
+    "file": "https://manisa.meb.gov.tr/meb_iys_dosyalar/2026_08/6a91a2fb08a07918609967_%C3%B6%C4%9Frenci-etkinlik1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "manisa-atilganlik-lise-ogrenci-sunum-2026",
+    "title": "Atılganlık · Lise Öğrenci Sunumu · 2026-2027",
+    "type": "Sunum",
+    "level": "Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Atılganlık",
+    "source": "Manisa İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://manisa.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-rehberlik-ve-psikolojik-danisma-hizmetleri-yerel-hedefler/icerik/7333/tr",
+    "file": "https://manisa.meb.gov.tr/meb_iys_dosyalar/2026_08/6a91a5152c95f268011075_%C3%96%C4%9Frenci_Sunum.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "manisa-atilganlik-lise-etkinlik1-2026",
+    "title": "Atılganlık · Lise Öğrenci Etkinliği 1 · 2026-2027",
+    "type": "Etkinlik",
+    "level": "Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Atılganlık",
+    "source": "Manisa İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://manisa.meb.gov.tr/www/2026-2027-egitim-ogretim-yili-rehberlik-ve-psikolojik-danisma-hizmetleri-yerel-hedefler/icerik/7333/tr",
+    "file": "https://manisa.meb.gov.tr/meb_iys_dosyalar/2026_08/6a91a5a6d7465029954313_%C3%96%C4%9Frenci-etkinlik1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "seyidburhaneddin-teknoloji-bagimliligi-lise-brosur-2026",
+    "title": "Teknoloji Bağımlılığı · Lise Broşürü · 2026",
+    "type": "Broşür",
+    "level": "Lise",
+    "area": "Dijital Yaşam",
+    "topic": "Teknoloji bağımlılığı",
+    "source": "Seyyid Burhaneddin Mesleki ve Teknik Anadolu Lisesi / MEB",
+    "sourcePage": "https://sbeml.meb.k12.tr/dosyalar/listele_dosya_3728233_Rehberlik",
+    "file": "https://sbeml.meb.k12.tr/meb_iys_dosyalar/38/14/169752/dosyalar/2026_02/6980716909ea6073723302_TBM_lise_teknoloji.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "patnos-problem-cozme-becerileri-2026",
+    "title": "Problem Çözme Becerileri · Pano, Broşür ve Seminer Çalışması · 2026",
+    "type": "Etkinlik / Seminer",
+    "level": "Lise",
+    "area": "Kişisel-Sosyal Rehberlik",
+    "topic": "Problem çözme",
+    "source": "15 Temmuz Şehitleri Anadolu İmam Hatip Lisesi / MEB",
+    "sourcePage": "https://patnos15temmuzsehitleriaihl.meb.k12.tr/icerikler/rehberlikservisimiztarafindanproblemcozmebecerilerikonulupanobrosurveseminercalismalari_17374182.html",
+    "file": "https://patnos15temmuzsehitleriaihl.meb.k12.tr/icerikler/rehberlikservisimiztarafindanproblemcozmebecerilerikonulupanobrosurveseminercalismalari_17374182.html",
+    "fileType": "HTML",
+    "sourceType": "official"
   }
 ]
