@@ -14425,5 +14425,31 @@
     "sourcePage": "https://rpd.aksaray.edu.tr/lisans-ders-icerikleri",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "ankara-universitesi-rpd-lisans-programi",
+    "title": "Rehberlik ve Psikolojik Danışmanlık Lisans Programı · Ankara Üniversitesi",
+    "type": "Lisans Programı",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "PDR bölümü dersleri",
+    "source": "Ankara Üniversitesi Eğitim Bilimleri Fakültesi",
+    "sourcePage": "https://www.education.ankara.edu.tr/",
+    "file": "https://www.education.ankara.edu.tr/wp-content/uploads/sites/85/2021/02/RPD.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "beun-rpd-ders-icerikleri",
+    "title": "Rehberlik ve Psikolojik Danışmanlık · Ders İçerikleri · Zonguldak Bülent Ecevit Üniversitesi",
+    "type": "Ders İçerikleri",
+    "level": "PDR Öğrencileri",
+    "area": "PDR Lisans Eğitimi",
+    "topic": "PDR bölümü dersleri",
+    "source": "Zonguldak Bülent Ecevit Üniversitesi Eğitim Fakültesi",
+    "sourcePage": "https://egitim.beun.edu.tr/",
+    "file": "https://cdn1.beun.edu.tr/egitim/74d05f8b0f01db134fa090c13fd08651/rehberlik-ve-pisikolojik-danismanlik.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
