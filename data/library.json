@@ -14269,5 +14269,83 @@
     "sourcePage": "https://orgm.meb.gov.tr/www/psikososyal-destek-3/icerik/3072",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "alasehir-lise-tercih-rehberi-2026",
+    "title": "Lise Tercih Rehberi 2026 · Düşük Boyutlu Sürüm",
+    "type": "Tercih Rehberi",
+    "level": "Ortaokul / LGS",
+    "area": "Kariyer ve Yöneltme",
+    "topic": "LGS tercih",
+    "source": "Alaşehir Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://alasehirram.meb.k12.tr/icerikler/lisetercihrehberi2026yayimlandi_17609430.html",
+    "file": "https://alasehirram.meb.k12.tr/meb_iys_dosyalar/45/04/774078/dosyalar/2026_06/6a3e6419680bf304751288_lise_tan%C4%B1t%C4%B1m_rehberi_dusukboyut.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "altieylul-yks-tercih-ogrenci-veli-kilavuzu-2026",
+    "title": "YKS Tercih Süreci · Öğrenci ve Veli Bilgilendirme Kılavuzu · 2026",
+    "type": "Tercih Kılavuzu",
+    "level": "Lise / YKS",
+    "area": "Kariyer ve Yöneltme",
+    "topic": "YKS tercih",
+    "source": "Altıeylül Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://altieylulram.meb.k12.tr/icerikler/ykstercihsurecinerehberlikedecekkilavuz_17635868.html",
+    "file": "https://altieylulram.meb.k12.tr/meb_iys_dosyalar/10/20/764521/dosyalar/2026_07/6a620a2b9d509792407372_6a5fb7d12e5a8337054536_yks_kilavuz_2026.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "omeremineakin-yks-ogrenci-rehberi-2026",
+    "title": "YKS Öğrenci Rehberi 2026 · Çalışma Takvimi, Konular, Programlar ve Tercih Kaynakları",
+    "type": "Öğrenci Rehberi",
+    "level": "Lise / YKS",
+    "area": "Akademik Gelişim",
+    "topic": "YKS hazırlık ve tercih",
+    "source": "Ömer Emine Akın Anadolu Lisesi / MEB",
+    "sourcePage": "https://omeremineakin.meb.k12.tr/",
+    "file": "https://omeremineakin.meb.k12.tr/meb_iys_dosyalar/38/10/967360/dosyalar/2025_12/01094620_2026yksogrencirehberi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "bakirkoy-lise-tanitimi-2026",
+    "title": "Bakırköy İlçesi Lise Tanıtımı · 2026",
+    "type": "Lise Tanıtım Rehberi",
+    "level": "Ortaokul / LGS",
+    "area": "Kariyer ve Yöneltme",
+    "topic": "LGS tercih ve lise tanıtımı",
+    "source": "Bakırköy Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://bakirkoyram.meb.k12.tr/icerikler/2026lisetercihveyerlestirmesureci_17626400.html",
+    "file": "https://bakirkoyram.meb.k12.tr/meb_iys_dosyalar/34/02/158659/dosyalar/2026_07/6a58d3d22397d285805648_BAKIRK%C3%96Y_%C4%B0L%C3%87ES%C4%B0_L%C4%B0SE_TANITIMI_1_1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "meb-lgs-ogrenci-veli-bilgilendirme-kilavuzu-2026",
+    "title": "LGS Tercih Süreci · Öğrenci ve Veli Bilgilendirme Kılavuzu · 2026",
+    "type": "Tercih Kılavuzu",
+    "level": "Ortaokul / LGS",
+    "area": "Kariyer ve Yöneltme",
+    "topic": "LGS tercih",
+    "source": "MEB / Bakırköy RAM",
+    "sourcePage": "https://bakirkoyram.meb.k12.tr/icerikler/2026lisetercihveyerlestirmesureci_17626400.html",
+    "file": "https://bakirkoyram.meb.k12.tr/meb_iys_dosyalar/34/34/973610/dosyalar/2026_07/6a509f6804f41848917599_%C3%B6%C4%9Frenci_ve_veli_bilgilendirme_k%C4%B1lavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "meb-lgs-tercih-yerlestirme-kilavuzu-2026",
+    "title": "LGS Tercih ve Yerleştirme Kılavuzu · 2026",
+    "type": "Resmî Kılavuz",
+    "level": "Ortaokul / LGS",
+    "area": "Kariyer ve Yöneltme",
+    "topic": "LGS tercih ve yerleştirme",
+    "source": "MEB / Bakırköy RAM",
+    "sourcePage": "https://bakirkoyram.meb.k12.tr/icerikler/2026lisetercihveyerlestirmesureci_17626400.html",
+    "file": "https://bakirkoyram.meb.k12.tr/meb_iys_dosyalar/34/34/973610/dosyalar/2026_07/6a509f80e6b4e451277772_LGS_tercih_ve_yerle%C5%9Ftirme_k%C4%B1lavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
