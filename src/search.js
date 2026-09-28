@@ -73,6 +73,20 @@ const topics=[
   related:['sinir koyma','cocuk haklari'],
   explanation:'Mahremiyet, beden güvenliği ve kişisel sınırlarla ilgili kaynak.'
  },
+  {
+  name:'Öğrenci esenliği / psikoeğitim',
+  terms:['ogrenci esenligi','esenlik','psikoegitim','psikoeğitim','esenligi guclendirme','esenliği güçlendirme'],
+  resourceTerms:['esenlik','psikoegitim','psikoeğitim','dijital esenlik','farkindalik programi','farkındalık programı'],
+  related:['psikolojik saglamlik','sosyal duygusal beceriler','duygu duzenleme'],
+  explanation:'Öğrenci esenliği, psikoeğitim ve koruyucu-önleyici okul PDR çalışmalarına yakın kaynak.'
+ },
+ {
+  name:'Sınıf rehberliği',
+  terms:['sinif rehberligi','sinif rehberlik etkinlikleri','sinif etkinlikleri','rehberlik etkinlikleri'],
+  resourceTerms:['sinif rehberligi','sinif rehberlik','etkinlik kitabi','etkinlik'],
+  related:['sosyal duygusal beceriler','okula uyum','iletisim becerileri','empati'],
+  explanation:'Sınıf rehberliği ve kademe bazlı etkinlik kaynaklarına yakın içerik.'
+ },
  {
   name:'Psikolojik sağlamlık',
   terms:['psikolojik saglamlik','dayaniklilik','zor zamanlarla basa cikma','zorlayici yasam'],
