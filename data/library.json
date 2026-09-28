@@ -14594,5 +14594,31 @@
     "file": "https://www.ufuk.edu.tr/uploads/egitim-fakultesi/ders_programlari/pdr/2026-2027/3_26-27_pdr_gu%CC%88z_nihai_ders_programi_(16-09-2026).pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "meb-lgs-merkezi-sinav-basvuru-uygulama-kilavuzu-2026",
+    "title": "LGS 2026 · Merkezî Sınav Başvuru ve Uygulama Kılavuzu",
+    "type": "Kılavuz",
+    "level": "Ortaokul",
+    "area": "Akademik Gelişim",
+    "topic": "LGS",
+    "source": "MEB Ölçme, Değerlendirme ve Sınav Hizmetleri GM",
+    "sourcePage": "https://www.meb.gov.tr/",
+    "file": "https://odsgm.meb.gov.tr/meb_iys_dosyalar/2026_04/69cfb9daaf8f2557696260_LGS_Basvuru_ve_Uygulama_K%C4%B1lavuzu_2026.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "atasehir-lise-bilgi-kitapcigi-2026",
+    "title": "Ataşehir Liseleri · 2026 Lise Bilgi Kitapçığı",
+    "type": "Tanıtım Kitapçığı",
+    "level": "Ortaokul",
+    "area": "Kariyer ve Yöneltme",
+    "topic": "LGS tercih",
+    "source": "Ataşehir Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://atasehirram.meb.k12.tr/icerikler/2026lisetercihsonuclariveguncellgstakvimi_17570663.html",
+    "file": "https://atasehirram.meb.k12.tr/meb_iys_dosyalar/34/34/973610/dosyalar/2026_06/6a2bbfb2e1272049544494_2026_L%C4%B0SE_B%C4%B0LG%C4%B0_K%C4%B0TAP%C3%87I%C4%9EI.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
