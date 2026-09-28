@@ -14568,5 +14568,31 @@
     "file": "https://cdn.osym.gov.tr/en-kucuk-ve-en-buyuk-puanlar-tablo-4-rps0lq-18092428.xlsx",
     "fileType": "XLSX",
     "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-2026-2027-guz-ders-programi",
+    "title": "RPD Lisans Ders Programı · 2026-2027 Güz · Aksaray Üniversitesi",
+    "type": "Ders Programı",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans dersleri",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/pdr-lisans-ders-programi-2026-2027-guz",
+    "file": "https://rpd.aksaray.edu.tr/indir/f1c0f1ff-d1e9-4afd-9a2d-7ff723e7c1b9.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "ufuk-rpd-2026-2027-guz-ders-programi",
+    "title": "RPD Lisans Ders Programı · 2026-2027 Güz · Ufuk Üniversitesi",
+    "type": "Ders Programı",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans dersleri",
+    "source": "Ufuk Üniversitesi Eğitim Fakültesi",
+    "sourcePage": "https://www.ufuk.edu.tr/egitim-fakultesi/egitim-bilimleri-bolumu-rehberlik-ve-psikolojik-danismanlik-anabilim-dali/haftalik-ders-programi",
+    "file": "https://www.ufuk.edu.tr/uploads/egitim-fakultesi/ders_programlari/pdr/2026-2027/3_26-27_pdr_gu%CC%88z_nihai_ders_programi_(16-09-2026).pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
