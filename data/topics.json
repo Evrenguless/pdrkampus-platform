@@ -1616,38 +1616,6 @@
       "canonicalPath": "/konu/dijital-denge/"
     },
     {
-      "id": "topic_siddet",
-      "slug": "siddet",
-      "name": "Şiddeti Önleme",
-      "categoryId": "cat-risk-safety",
-      "aliases": [
-        "şiddet algısı",
-        "şiddeti önleme",
-        "okulda şiddet"
-      ],
-      "useCases": [
-        "koruyucu önleyici çalışma",
-        "risk değerlendirme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Şiddeti Önleme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "şiddet algısı"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_ihmal_istismar",
       "slug": "ihmal-istismar",
       "name": "İhmal ve İstismar Farkındalığı",
@@ -1846,14 +1814,19 @@
         "güvenli okul iklimi",
         "okul aidiyeti",
         "şiddeti önleme",
-        "akran nezaketi"
+        "akran nezaketi",
+        "Şiddeti Önleme",
+        "şiddet algısı",
+        "okulda şiddet"
       ],
       "useCases": [
         "okul çapında rehberlik planlama",
         "okul iklimi değerlendirme",
         "şiddeti önleme",
         "aidiyet çalışması",
-        "koruyucu önleyici planlama"
+        "koruyucu önleyici planlama",
+        "koruyucu önleyici çalışma",
+        "risk değerlendirme"
       ],
       "indexable": true,
       "contentStatus": "published",
