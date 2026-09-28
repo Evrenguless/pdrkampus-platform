@@ -32,6 +32,13 @@ const topics=[
   explanation:''
  },
  {
+  name:'Akademik motivasyon',
+  terms:['akademik motivasyon','ders motivasyonu','motivasyon dusuk','motivasyon düşük','ders calisma','ders çalışma','akademik erteleme','erteleme'],
+  resourceTerms:['motivasyon','hedef belirleme','verimli ders calisma','verimli ders çalışma','akademik erteleme','etkili calisma','etkili çalışma'],
+  related:['sinav kaygisi','oz duzenleme','tukenmislik'],
+  explanation:'Akademik motivasyon, hedef belirleme, çalışma becerileri ve ertelemeye yakın kaynak.'
+ },
+ {
   name:'Kariyer / meslek seçimi',
   terms:['kariyer','meslek secimi','hangi meslegi secmeli','meslek karari','kariyer kararsizligi','meslek kararsizligi','tercih yapacak','lgs tercih','yks tercih'],
   resourceTerms:['kariyer','meslek secimi','mesleki karar','mesleki ilgi','mesleki beceri','tercih rehberi','meslek tanitimi','lgs tercih','yks tercih'],
