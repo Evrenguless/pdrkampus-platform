@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import json
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -64,6 +65,27 @@ for value, paths in titles.items():
 for value, paths in descriptions.items():
     if len(paths) > 1:
         warnings.append(f"Aynı description ({len(paths)}): {value} -> {', '.join(paths)}")
+
+
+# Validate direct PDR Kampüs Library deep links such as kutuphane.html#resource-id.
+library_ids = set()
+for catalog_name in ("data/library.json", "data/forms.json"):
+    catalog_path = ROOT / catalog_name
+    if catalog_path.exists():
+        try:
+            rows = json.loads(catalog_path.read_text(encoding="utf-8"))
+            library_ids.update(str(row.get("id")) for row in rows if row.get("id"))
+        except Exception as exc:
+            errors.append(f"Katalog okunamadı: {catalog_name} | {exc}")
+
+for html_path in ROOT.rglob("*.html"):
+    html = html_path.read_text(encoding="utf-8")
+    for match in re.finditer(r'href=["\'][^"\']*kutuphane\.html#([^"\']+)["\']', html, flags=re.I):
+        resource_id = match.group(1)
+        if resource_id not in library_ids:
+            errors.append(
+                f"Kütüphane kaynak ID bulunamadı: {html_path.relative_to(ROOT)} -> {resource_id}"
+            )
 
 for personal in ("profil.html", "calisma-alani.html", "araclar.html", "belgeler.html", "bildirimler.html", "gonderi.html", "hesap.html", "kaynak-yonetimi.html", "platform.html", "soru.html", "topluluk-yonetimi.html"):
     p = ROOT / personal
