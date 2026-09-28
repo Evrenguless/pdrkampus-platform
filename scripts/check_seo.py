@@ -65,7 +65,7 @@ for value, paths in descriptions.items():
     if len(paths) > 1:
         warnings.append(f"Aynı description ({len(paths)}): {value} -> {', '.join(paths)}")
 
-for personal in ("profil.html", "calisma-alani.html"):
+for personal in ("profil.html", "calisma-alani.html", "araclar.html", "belgeler.html", "bildirimler.html", "gonderi.html", "hesap.html", "kaynak-yonetimi.html", "platform.html", "soru.html", "topluluk-yonetimi.html"):
     p = ROOT / personal
     if p.exists():
         html = p.read_text(encoding="utf-8")
