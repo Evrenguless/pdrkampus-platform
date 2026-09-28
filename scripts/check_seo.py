@@ -40,6 +40,9 @@ for url in urls:
     title = grab(r"<title>(.*?)</title>", html)
     desc = grab(r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']', html)
     canonical = grab(r'<link\s+rel=["\']canonical["\']\s+href=["\'](.*?)["\']', html)
+    og_url = grab(r'<meta\s+property=["\']og:url["\']\s+content=["\'](.*?)["\']', html)
+    robots = grab(r'<meta\s+name=["\']robots["\']\s+content=["\'](.*?)["\']', html)
+    h1_count = len(re.findall(r"<h1(?:\s[^>]*)?>.*?</h1>", html, flags=re.I | re.S))
 
     if not title:
         errors.append(f"Title eksik: {path.relative_to(ROOT)}")
@@ -58,6 +61,19 @@ for url in urls:
             f"Canonical/sitemap uyumsuz: {path.relative_to(ROOT)} | sitemap={url} | canonical={canonical}"
         )
 
+    if robots and "noindex" in robots.lower():
+        errors.append(f"Sitemap sayfasında noindex var: {path.relative_to(ROOT)}")
+
+    if h1_count != 1:
+        errors.append(f"H1 sayısı {h1_count}: {path.relative_to(ROOT)}")
+
+    if not og_url:
+        warnings.append(f"og:url eksik: {path.relative_to(ROOT)}")
+    elif canonical and og_url != canonical:
+        errors.append(
+            f"og:url/canonical uyumsuz: {path.relative_to(ROOT)} | canonical={canonical} | og:url={og_url}"
+        )
+
 for value, paths in titles.items():
     if len(paths) > 1:
         warnings.append(f"Aynı title ({len(paths)}): {value} -> {', '.join(paths)}")
@@ -66,6 +82,47 @@ for value, paths in descriptions.items():
     if len(paths) > 1:
         warnings.append(f"Aynı description ({len(paths)}): {value} -> {', '.join(paths)}")
 
+
+
+# Validate published topic dictionary entries against actual topic pages and sitemap.
+topics_path = ROOT / "data/topics.json"
+if topics_path.exists():
+    try:
+        topic_data = json.loads(topics_path.read_text(encoding="utf-8"))
+        topic_rows = topic_data.get("topics", [])
+        topic_urls = set(urls)
+        published_by_slug = {}
+
+        for topic in topic_rows:
+            if not topic.get("indexable") or topic.get("contentStatus") != "published":
+                continue
+            slug = str(topic.get("slug", "")).strip()
+            canonical_path = str(topic.get("canonicalPath", "")).strip()
+            if not slug:
+                errors.append("Published topic slug eksik")
+                continue
+            if slug in published_by_slug:
+                errors.append(f"Duplicate published topic slug: {slug}")
+            published_by_slug[slug] = topic
+
+            expected_path = f"/konu/{slug}/"
+            expected_url = BASE.rstrip("/") + expected_path
+            if canonical_path != expected_path:
+                errors.append(
+                    f"Topic canonicalPath uyumsuz: {slug} | beklenen={expected_path} | bulunan={canonical_path or '-'}"
+                )
+            if expected_url not in topic_urls:
+                errors.append(f"Published topic sitemap'te yok: {slug} -> {expected_url}")
+            topic_file = ROOT / "konu" / slug / "index.html"
+            if not topic_file.exists():
+                errors.append(f"Published topic dosyası yok: konu/{slug}/index.html")
+
+        for topic_file in (ROOT / "konu").glob("*/index.html"):
+            slug = topic_file.parent.name
+            if slug not in published_by_slug:
+                errors.append(f"Konu sayfası sözlükte published değil: konu/{slug}/index.html")
+    except Exception as exc:
+        errors.append(f"data/topics.json doğrulanamadı: {exc}")
 
 # Validate direct PDR Kampüs Library deep links such as kutuphane.html#resource-id.
 library_ids = set()
