@@ -15738,5 +15738,83 @@
     "file": "https://osmangaziram.meb.k12.tr/meb_iys_dosyalar/16/15/963765/dosyalar/2026_04/69e519559a1f5835956278_Veli_Ac%C4%B1klamas%C4%B1.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-ilkokul-psikoegitim-programi",
+    "title": "Psikososyal Destek · Yas Psikoeğitim Programı · İlkokul",
+    "type": "Psikoeğitim Programı",
+    "level": "İlkokul",
+    "area": "Yas ve Kayıp",
+    "topic": "Kayıp ve yas sürecinde psikososyal destek",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://www.meb.gov.tr/psikososyal-destek-eylem-plani-ve-psikososyal-destek-programlari-yayimlandi/haber/29014/tr",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2023_02/09164738_Ylkokul.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-yas-ortaokul-psikoegitim-programi",
+    "title": "Psikososyal Destek · Yas Psikoeğitim Programı · Ortaokul",
+    "type": "Psikoeğitim Programı",
+    "level": "Ortaokul",
+    "area": "Yas ve Kayıp",
+    "topic": "Kayıp ve yas sürecinde psikososyal destek",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://www.meb.gov.tr/psikososyal-destek-eylem-plani-ve-psikososyal-destek-programlari-yayimlandi/haber/29014/tr",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2023_02/09164812_Ortaokul.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-kayip-yas-aile-bilgilendirme-rehberi",
+    "title": "Çocuk ve Ergenlerde Kayıp-Yas · Aileler İçin Bilgilendirme Rehberi",
+    "type": "Bilgilendirme Rehberi",
+    "level": "Veli / Tüm kademeler",
+    "area": "Yas ve Kayıp",
+    "topic": "Çocuk ve ergenlerde kayıp-yas sürecinde aile desteği",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://www.meb.gov.tr/psikososyal-destek-eylem-plani-ve-psikososyal-destek-programlari-yayimlandi/haber/29014/tr",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2023_02/09165125_AYLELER_YCYN_BYLGYLENDYRME_REHBERY.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "orgm-kayip-yas-ogretmen-bilgilendirme-rehberi",
+    "title": "Çocuk ve Ergenlerde Kayıp-Yas · Öğretmenler İçin Bilgilendirme Rehberi",
+    "type": "Bilgilendirme Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Yas ve Kayıp",
+    "topic": "Çocuk ve ergenlerde kayıp-yas sürecinde okul desteği",
+    "source": "MEB Özel Eğitim ve Rehberlik Hizmetleri GM",
+    "sourcePage": "https://www.meb.gov.tr/psikososyal-destek-eylem-plani-ve-psikososyal-destek-programlari-yayimlandi/haber/29014/tr",
+    "file": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2023_02/09165244_OYRETMENLER_YCYN_BYLGYLENDYRME_REHBERY.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "gebze-dumlupinar-2026-sinav-donemi-ebeveynligi",
+    "title": "Sınav Dönemi Ebeveynliği · 2026",
+    "type": "Veli Broşürü",
+    "level": "Ortaokul / LGS",
+    "area": "Sınav Kaygısı",
+    "topic": "Sınav döneminde ebeveyn desteği ve iletişim",
+    "source": "MEB / Gebze Dumlupınar İmam Hatip Ortaokulu Rehberlik Servisi",
+    "sourcePage": "https://gebzedumlupinariho.meb.k12.tr/icerikler/sinavdonemiebeveynligi_17449130.html",
+    "file": "https://gebzedumlupinariho.meb.k12.tr/meb_iys_dosyalar/41/02/701944/dosyalar/2026_05/69f9d4d163d86577200689_S%C4%B1nav_d%C3%B6nemi_ebeveynli%C4%9Fi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "gebze-dumlupinar-2026-sinav-kaygisi",
+    "title": "Sınav Kaygısı ve Baş Etme Yolları · 2026",
+    "type": "Sunum / Rehber",
+    "level": "Ortaokul / LGS",
+    "area": "Sınav Kaygısı",
+    "topic": "Sınav kaygısını tanıma ve baş etme",
+    "source": "MEB / Gebze Dumlupınar İmam Hatip Ortaokulu Rehberlik Servisi",
+    "sourcePage": "https://gebzedumlupinariho.meb.k12.tr/icerikler/sinavdonemiebeveynligi_17449130.html",
+    "file": "https://gebzedumlupinariho.meb.k12.tr/meb_iys_dosyalar/41/02/701944/dosyalar/2026_05/69f9d4bc4972e303734634_S%C4%B1nav_Kayg%C4%B1s%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
