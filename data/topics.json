@@ -880,8 +880,8 @@
     },
     {
       "id": "topic_sinif_rehberligi",
-      "slug": "sinif-rehberligi",
-      "name": "Sınıf Rehberliği",
+      "slug": "sinif-rehberligi-etkinlikleri",
+      "name": "Sınıf Rehberliği Etkinlikleri",
       "categoryId": "cat-guidance",
       "aliases": [
         "sınıf rehberliği",
@@ -891,11 +891,11 @@
         "yıllık rehberlik uygulamaları",
         "sınıf etkinliği"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Sınıf Rehberliği | PDR Kampüs",
-        "description": "",
+        "title": "Sınıf Rehberliği Etkinlikleri | PDR Kampüs",
+        "description": "Okul öncesi, ilkokul, ortaokul ve lise için sınıf rehberliği etkinlikleri: uyum, iletişim, empati, duygu düzenleme, atılganlık ve problem çözme.",
         "primaryQuery": "sınıf rehberliği"
       },
       "contentBrief": {
@@ -907,7 +907,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/sinif-rehberligi-etkinlikleri/"
     },
     {
       "id": "topic_bireysel_gorusme",
@@ -944,7 +945,7 @@
     {
       "id": "topic_veli_gorusmesi",
       "slug": "veli-gorusmesi",
-      "name": "Veli Görüşmesi",
+      "name": "Veli Görüşmeleri",
       "categoryId": "cat-family",
       "aliases": [
         "veli görüşme formu",
@@ -955,11 +956,11 @@
         "veli görüşmesi hazırlığı",
         "bilgi toplama"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Veli Görüşmesi | PDR Kampüs",
-        "description": "",
+        "title": "Veli Görüşmeleri | PDR Kampüs",
+        "description": "Veliyle ilk görüşme, zor ve öfkeli veli, gizlilik, yönlendirme, seminer ve görüşme tutanakları için PDR Kampüs konu merkezi.",
         "primaryQuery": "veli görüşme formu"
       },
       "contentBrief": {
@@ -971,7 +972,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/veli-gorusmesi/"
     },
     {
       "id": "topic_ogretmen_gorusmesi",
@@ -1363,11 +1365,11 @@
         "kariyer farkındalığı",
         "yöneltme"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Kariyer Gelişimi | PDR Kampüs",
-        "description": "",
+        "title": "Kariyer Planlama ve Mesleki Rehberlik | PDR Kampüs",
+        "description": "Kariyer planlama, meslek seçimi, kariyer kararsızlığı, mesleki ilgi ve ortaokul-lise kariyer gelişimi için okul PDR içerik merkezi.",
         "primaryQuery": "kariyer gelişimi"
       },
       "contentBrief": {
@@ -1379,7 +1381,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/kariyer-gelisimi/"
     },
     {
       "id": "topic_mesleki_ilgi",
@@ -1767,11 +1770,11 @@
       "useCases": [
         "koruyucu faktörleri güçlendirme"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Psikolojik Sağlamlık | PDR Kampüs",
-        "description": "",
+        "title": "Psikolojik Sağlamlık Nedir? Okulda Nasıl Desteklenir? | PDR Kampüs",
+        "description": "Psikolojik sağlamlık nedir, okulda nasıl desteklenir ve hangi MEB programları kullanılabilir? Öğrenci, veli ve öğretmen kaynaklarını keşfedin.",
         "primaryQuery": "psikolojik sağlamlık"
       },
       "contentBrief": {
@@ -1783,12 +1786,13 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/psikolojik-saglamlik/"
     },
     {
       "id": "topic_iyi_olus",
-      "slug": "iyi-olus",
-      "name": "İyi Oluş",
+      "slug": "ogrenci-esenligi-psikoegitim",
+      "name": "Öğrenci Esenliği ve Psikoeğitim",
       "categoryId": "cat-social-emotional",
       "aliases": [
         "öğrenci iyi oluşu",
@@ -1799,11 +1803,11 @@
         "koruyucu önleyici çalışma",
         "okul iklimi"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "İyi Oluş | PDR Kampüs",
-        "description": "",
+        "title": "Öğrenci Esenliği ve Psikoeğitim Programları | PDR Kampüs",
+        "description": "MEB 2026 Öğrencilerde Esenliği Güçlendirme içerikleri, psikoeğitim programları, dijital esenlik etkinlikleri ve sosyal-duygusal beceri kaynakları.",
         "primaryQuery": "öğrenci iyi oluşu"
       },
       "contentBrief": {
@@ -1815,7 +1819,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/ogrenci-esenligi-psikoegitim/"
     },
     {
       "id": "topic_okul_iklimi",
@@ -1921,11 +1926,11 @@
       "useCases": [
         "öğrenci ve veli bilgilendirme"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
         "title": "Ergenlik Dönemi | PDR Kampüs",
-        "description": "",
+        "description": "Ergen öğrenciyle iletişim, aile çatışmaları, sınır koyma, veli çalışmaları ve okul PDR görüşmeleri için konu merkezi.",
         "primaryQuery": "ergenlik"
       },
       "contentBrief": {
@@ -1937,7 +1942,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/ergenlik/"
     },
     {
       "id": "topic_mahremiyet",
