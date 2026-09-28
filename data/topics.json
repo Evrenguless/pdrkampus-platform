@@ -153,11 +153,11 @@
         "veli bilgilendirme",
         "koruyucu önleyici çalışma"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Siber Zorbalık | PDR Kampüs",
-        "description": "",
+        "title": "Siber Zorbalık Nedir? Okulda Ne Yapılmalı? | PDR Kampüs",
+        "description": "Siber zorbalık nedir, okulda nasıl ele alınır, öğrenci ve veliyle nasıl çalışılır? MEB broşür, psikoeğitim ve rehber kaynaklarını tek merkezde keşfedin.",
         "primaryQuery": "siber zorbalık"
       },
       "contentBrief": {
@@ -169,7 +169,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/siber-zorbalik/"
     },
     {
       "id": "topic_akran_iliskileri",
@@ -829,11 +830,11 @@
         "okula başlangıç desteği",
         "uyum çalışmaları"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Okula Uyum | PDR Kampüs",
-        "description": "",
+        "title": "Okula Uyum Rehberi 2026-2027 | PDR Kampüs",
+        "description": "Okula uyum süreci, okul öncesi, 1. sınıf ve 5. sınıf geçişleri, veli-öğretmen desteği ve 2026-2027 MEB uyum materyalleri için okul PDR rehberi.",
         "primaryQuery": "okula uyum"
       },
       "contentBrief": {
@@ -845,7 +846,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/okula-uyum/"
     },
     {
       "id": "topic_okul_degisikligi",
