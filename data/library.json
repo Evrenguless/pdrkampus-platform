@@ -13164,5 +13164,31 @@
     "file": "https://raifazakhafizkiziho.meb.k12.tr/meb_iys_dosyalar/25/21/767073/dosyalar/2025_11/04094050_ozduzenlemeliogrenmevelisunumu.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "mamak-okul-reddi-sunum",
+    "title": "Okul Reddi · Bilgilendirme Sunumu",
+    "type": "Sunum",
+    "level": "Tüm kademeler",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Mamak Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://mamakram.meb.k12.tr/",
+    "file": "https://mamakram.meb.k12.tr/meb_iys_dosyalar/06/19/277816/dosyalar/2022_09/05132851_OKUL-REDDI-SUNU.pdf?CHK=8920353bb082936366bfd811fcc343cc",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "canik-sosyometri-degerlendirme-sosyogram",
+    "title": "Sosyometri Tekniği · Değerlendirme Tablosu ve Sosyogram",
+    "type": "Uygulama Yönergesi",
+    "level": "İlkokul / Ortaokul / Lise",
+    "area": "Bireyi Tanıma ve Değerlendirme",
+    "topic": "Sosyometri",
+    "source": "Canik Türk Telekom Mesleki ve Teknik Anadolu Lisesi / MEB",
+    "sourcePage": "https://canikturktelekomlisesi.meb.k12.tr/",
+    "file": "https://canikturktelekomlisesi.meb.k12.tr/meb_iys_dosyalar/55/17/970410/dosyalar/2017_12/22102615_sosyometri_tekniYi.pdf?CHK=c1bd66c7d3b7c82e47c007d32b5711b7",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
