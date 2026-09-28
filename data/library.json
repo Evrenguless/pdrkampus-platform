@@ -15920,5 +15920,44 @@
     "file": "https://karabaglarcemilmericortaokulu.meb.k12.tr/meb_iys_dosyalar/35/30/749349/dosyalar/2025_02/11172115_internetinasilkullanmaliyiz.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "samandag-2026-2027-rehber-ogretmeni-olmayan-okuloncesi",
+    "title": "Rehber Öğretmeni Olmayan Okullar İçin Örnek Yıllık Plan · Okul Öncesi · 2026-2027",
+    "type": "Yıllık Plan / XLSX",
+    "level": "Okul öncesi",
+    "area": "Rehberlik Programı",
+    "topic": "Selamlaşma genel hedefi ve şiddeti önleme yerel hedefi",
+    "source": "Samandağ Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://samandagram.meb.k12.tr/icerikler/20262027egitimogretimyilirehberogretmeniolmayanokullaricinrehberlikvepsikolojikdanismaornekyillikplanlari_17714322.html",
+    "file": "https://samandagram.meb.k12.tr/meb_iys_dosyalar/31/09/776960/dosyalar/2026_09/6aba21720b2f8890330342_okul_%C3%B6ncesi_y%C4%B1ll%C4%B1k_plan_normu_olmayan_okullar.xlsx",
+    "fileType": "XLSX",
+    "sourceType": "official"
+  },
+  {
+    "id": "samandag-2026-2027-rehber-ogretmeni-olmayan-ilkokul",
+    "title": "Rehber Öğretmeni Olmayan Okullar İçin Örnek Yıllık Plan · İlkokul · 2026-2027",
+    "type": "Yıllık Plan / XLSX",
+    "level": "İlkokul",
+    "area": "Rehberlik Programı",
+    "topic": "Selamlaşma genel hedefi ve şiddeti önleme yerel hedefi",
+    "source": "Samandağ Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://samandagram.meb.k12.tr/icerikler/20262027egitimogretimyilirehberogretmeniolmayanokullaricinrehberlikvepsikolojikdanismaornekyillikplanlari_17714322.html",
+    "file": "https://samandagram.meb.k12.tr/meb_iys_dosyalar/31/09/776960/dosyalar/2026_09/6aba21debac47803483618_Ilkokul_y%C4%B1ll%C4%B1k_plan_Normu_olmayan_okullar_1.xlsx",
+    "fileType": "XLSX",
+    "sourceType": "official"
+  },
+  {
+    "id": "samandag-2026-2027-rehber-ogretmeni-olmayan-ortaokul",
+    "title": "Rehber Öğretmeni Olmayan Okullar İçin Örnek Yıllık Plan · Ortaokul · 2026-2027",
+    "type": "Yıllık Plan / XLSX",
+    "level": "Ortaokul",
+    "area": "Rehberlik Programı",
+    "topic": "Selamlaşma genel hedefi ve şiddeti önleme yerel hedefi",
+    "source": "Samandağ Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://samandagram.meb.k12.tr/icerikler/20262027egitimogretimyilirehberogretmeniolmayanokullaricinrehberlikvepsikolojikdanismaornekyillikplanlari_17714322.html",
+    "file": "https://samandagram.meb.k12.tr/meb_iys_dosyalar/31/09/776960/dosyalar/2026_09/6aba220d6df2b111077982_ortaokul_y%C4%B1ll%C4%B1k_plan_normu_olmayan_okullar.xlsx",
+    "fileType": "XLSX",
+    "sourceType": "official"
   }
 ]
