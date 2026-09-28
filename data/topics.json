@@ -1942,22 +1942,29 @@
     },
     {
       "id": "topic_mahremiyet",
-      "slug": "mahremiyet",
-      "name": "Mahremiyet Eğitimi",
+      "slug": "mahremiyet-beden-guvenligi",
+      "name": "Mahremiyet, Kişisel Sınırlar ve Beden Güvenliği",
       "categoryId": "cat-risk-safety",
       "aliases": [
         "mahremiyet eğitimi",
         "beden sınırları",
-        "kişisel sınırlar"
+        "kişisel sınırlar",
+        "beden güvenliği",
+        "hayır diyebilme",
+        "dijital mahremiyet"
       ],
       "useCases": [
-        "koruyucu önleyici eğitim"
+        "koruyucu önleyici eğitim",
+        "kişisel sınırlar",
+        "beden güvenliği",
+        "veli bilgilendirme",
+        "dijital mahremiyet"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Mahremiyet Eğitimi | PDR Kampüs",
-        "description": "",
+        "title": "Mahremiyet, Kişisel Sınırlar ve Beden Güvenliği | PDR Kampüs",
+        "description": "Mahremiyet eğitimi, kişisel ve bedensel sınırlar, hayır diyebilme, güvenli yetişkinler ve dijital mahremiyet için okul PDR rehberi ve kaynakları.",
         "primaryQuery": "mahremiyet eğitimi"
       },
       "contentBrief": {
@@ -1969,7 +1976,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/mahremiyet-beden-guvenligi/"
     },
     {
       "id": "topic_akran_arabuluculugu",
