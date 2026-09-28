@@ -16596,5 +16596,44 @@
     "file": "https://idilram.meb.k12.tr/meb_iys_dosyalar/73/05/769374/dosyalar/2023_05/26150823_BEDENSEL-YETERSIZLIK.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "kagithane-ram-2026-zihinsel-yetersizlik-sinif-duzenleme",
+    "title": "Zihinsel Yetersizliği Olan Kaynaştırma Öğrencileri İçin Sınıf Düzenleme Rehberi · 2026",
+    "type": "Öğretmen Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Zihinsel yetersizlikte sınıf düzeni, öğretim uyarlamaları ve kaynaştırma",
+    "source": "Kağıthane Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kagithaneram.meb.k12.tr/icerikler/otizmzihinkaynastirmaogrencilerineyoneliksinifduzenlemerehberleri_17180522.html",
+    "file": "https://kagithaneram.meb.k12.tr/meb_iys_dosyalar/34/13/861906/dosyalar/2026_02/699c4d16e021c569756995_Zihinsel_Yetersizli%C4%9Fi_Olan_Kayna%C5%9Ft%C4%B1rma_%C3%96%C4%9Frencileri_%C4%B0%C3%A7in_S%C4%B1n%C4%B1f_D%C3%BCzenleme_Rehberi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "korfez-ram-2025-evde-egitim-hizmetleri-kilavuzu",
+    "title": "Evde Eğitim Hizmetleri Kılavuzu · 2025",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Evde Eğitim",
+    "topic": "Evde eğitim başvuru, değerlendirme, uygulama ve süreç yönetimi",
+    "source": "Körfez Rehberlik ve Araştırma Merkezi / MEB",
+    "sourcePage": "https://korfezram.meb.k12.tr/icerikler/ozelegitimhizmetlerikonulubilgilendirmesayfamizyayinda_16803770.html",
+    "file": "https://korfezram.meb.k12.tr/meb_iys_dosyalar/41/06/768859/dosyalar/2025_11/06110058_evdeegitimhizmetlerikilavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "onikisubat-ram-okullarda-pdr-hizmetleri-kilavuzu",
+    "title": "Okullarda PDR Hizmetleri Kılavuzu",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Müşavirlik ve Rehberlik Hizmetleri",
+    "topic": "Müşavirlik, bilgi verme, yöneltme-izleme, BEP ve okul rehberlik hizmetlerinin aylık işleyişi",
+    "source": "Onikişubat Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://onikisubatram.meb.k12.tr/",
+    "file": "https://onikisubatram.meb.k12.tr/meb_iys_dosyalar/46/12/767100/dosyalar/2024_11/19143121_okullardapdrhizmetlerikilavuzu.pdf?CHK=522c468362e888f21b3086433ff1446c",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
