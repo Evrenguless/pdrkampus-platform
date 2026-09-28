@@ -14620,5 +14620,70 @@
     "file": "https://atasehirram.meb.k12.tr/meb_iys_dosyalar/34/34/973610/dosyalar/2026_06/6a2bbfb2e1272049544494_2026_L%C4%B0SE_B%C4%B0LG%C4%B0_K%C4%B0TAP%C3%87I%C4%9EI.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "aksaray-rpd-yeni-mufredat-ders-icerikleri",
+    "title": "RPD Yeni Müfredat · Lisans Programı ve Ders İçerikleri",
+    "type": "Ders İçerikleri",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans dersleri ve müfredat",
+    "source": "Aksaray Üniversitesi Eğitim Fakültesi RPD ABD",
+    "sourcePage": "https://rpd.aksaray.edu.tr/rehberlik-ve-psikolojik-danismanlik-ders-icerikleri-2",
+    "file": "https://rpd.aksaray.edu.tr/indir/dd33d78d-df07-48b4-a526-200aafd09c61.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "adiyaman-rpd-eski-mufredat-2018-oncesi",
+    "title": "RPD Eski Müfredat · 2018 Öncesi Ders İçerikleri",
+    "type": "Ders İçerikleri",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans dersleri ve müfredat",
+    "source": "Adıyaman Üniversitesi Eğitim Fakültesi",
+    "sourcePage": "https://egitim.adiyaman.edu.tr/tr/bolumler/egitim-bilimleri-bolumu/ders-icerikleri",
+    "file": "https://static.adiyaman.edu.tr/files/4/ders%20icerikleri/pdr%202018%20%C3%B6ncesi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "adiyaman-rpd-yeni-mufredat-ders-icerikleri",
+    "title": "RPD Yeni Müfredat · Lisans Programı ve Ders İçerikleri · Adıyaman Üniversitesi",
+    "type": "Ders İçerikleri",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans dersleri ve müfredat",
+    "source": "Adıyaman Üniversitesi Eğitim Fakültesi",
+    "sourcePage": "https://egitim.adiyaman.edu.tr/tr/bolumler/egitim-bilimleri-bolumu/ders-icerikleri",
+    "file": "https://static.adiyaman.edu.tr/files/4/ders%20icerikleri/rehberlik_ve_psikolojik_danismanlik_lisans_programi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "ankara-rpd-lisans-program-yeterlikleri",
+    "title": "RPD Lisans Programı Yeterlikleri · Ankara Üniversitesi",
+    "type": "Program Yeterlikleri",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans programı",
+    "source": "Ankara Üniversitesi Eğitim Bilimleri Fakültesi",
+    "sourcePage": "https://www.education.ankara.edu.tr/2020/09/11/rehberlik-ve-psikolojik-danismanlik-lisans-programi/",
+    "file": "https://www.education.ankara.edu.tr/wp-content/uploads/sites/85/2022/11/RPD-Lisans-Programi-Yeterlikleri.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "ankara-rpd-anadal-program-formu",
+    "title": "RPD Anadal Programı Formu · Ankara Üniversitesi",
+    "type": "Program Formu",
+    "level": "PDR öğrencileri",
+    "area": "PDR Öğrencileri",
+    "topic": "PDR lisans programı",
+    "source": "Ankara Üniversitesi Eğitim Bilimleri Fakültesi",
+    "sourcePage": "https://www.education.ankara.edu.tr/2020/09/11/rehberlik-ve-psikolojik-danismanlik-lisans-programi/",
+    "file": "https://www.education.ankara.edu.tr/wp-content/uploads/sites/85/2022/11/RPD-2022-2023-Anadal-Formlari.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
