@@ -3958,7 +3958,8 @@
       "audience": "Rehber öğretmen",
       "contentType": "Tutanak",
       "priority": "P1",
-      "canonicalPage": "/kaynak/akran-zorbaligi-veli-gorusme-tutanagi/"
+      "canonicalPage": "/kaynak/veli-gorusme-tutanagi/",
+      "canonicalNote": "Akran zorbalığına özel doğrulanmış ayrı tutanak bulunmadığı için genel veli görüşme tutanağı canonical kaynak olarak kullanılır; zorbalık bağlamı ilgili rehberlerden verilir."
     },
     {
       "rank": 9,
@@ -4365,7 +4366,8 @@
       "audience": "Öğrenci / Veli",
       "contentType": "Hesaplama aracı",
       "priority": "P1",
-      "canonicalPage": "/lgs/tercih-robotu/"
+      "canonicalPage": "/lgs/tercih-nasil-yapilir/",
+      "canonicalNote": "Doğrulanmış sürekli çalışan resmî LGS tercih robotu bulunmadığı için ayrı ince araç sayfası açılmaz; tercih rehberi resmî MEB kaynaklarına yönlendirir."
     },
     {
       "rank": 46,
