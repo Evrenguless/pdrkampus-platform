@@ -13190,5 +13190,31 @@
     "file": "https://canikturktelekomlisesi.meb.k12.tr/meb_iys_dosyalar/55/17/970410/dosyalar/2017_12/22102615_sosyometri_tekniYi.pdf?CHK=c1bd66c7d3b7c82e47c007d32b5711b7",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "silivri-okul-fobisi-veli-sunum-2023",
+    "title": "Okul Fobisi · Veli Bilgilendirme Sunumu",
+    "type": "Sunum",
+    "level": "Okul öncesi / İlkokul / Veli",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Silivri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://silivriram.meb.k12.tr/dosyalar/listele_dosya_92775_Dosyalar",
+    "file": "https://silivriram.meb.k12.tr/meb_iys_dosyalar/34/18/965173/dosyalar/2023_09/14113319_OKUL-FOBISI.pptx",
+    "fileType": "PPTX",
+    "sourceType": "official"
+  },
+  {
+    "id": "silivri-okul-fobisi-veli-brosur-2023",
+    "title": "Okul Fobisi · Veli Bilgilendirme Broşürü",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul / Veli",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Silivri Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://silivriram.meb.k12.tr/dosyalar/listele_dosya_92775_Dosyalar",
+    "file": "https://silivriram.meb.k12.tr/meb_iys_dosyalar/34/18/965173/dosyalar/2023_09/14113051_okul-fobisi-veli-brosuru.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
