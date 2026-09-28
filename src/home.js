@@ -1,3 +1,18 @@
+const scopeLibrary=document.querySelector('#scopeLibrary');
+const scopeForms=document.querySelector('#scopeForms');
+const scopeTopics=document.querySelector('#scopeTopics');
+if(scopeLibrary||scopeForms||scopeTopics){
+ const readJson=path=>fetch(path).then(r=>r.ok?r.json():Promise.reject()).catch(()=>null);
+ const [libraryData,formsData,topicsData]=await Promise.all([
+  readJson('data/library.json?v=20260928-1'),
+  readJson('data/forms.json?v=20260928-1'),
+  readJson('data/topics.json?v=20260928-1')
+ ]);
+ if(scopeLibrary)scopeLibrary.textContent=Array.isArray(libraryData)?libraryData.length:'—';
+ if(scopeForms)scopeForms.textContent=Array.isArray(formsData)?formsData.length:'—';
+ if(scopeTopics)scopeTopics.textContent=Array.isArray(topicsData?.topics)?topicsData.topics.filter(x=>x.indexable&&x.contentStatus==='published').length:'—';
+}
+
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 const host=document.querySelector('#homeQuestions');
 if(host){
