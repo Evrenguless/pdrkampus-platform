@@ -16544,5 +16544,57 @@
     "file": "https://selcuklumsinan.meb.k12.tr/meb_iys_dosyalar/42/01/963916/dosyalar/2023_02/20160753_DESTEK-EGITIM-ODASI-KILAVUZU.pdf?CHK=468dada3f56481753138b527bbca6c8d%3FKeepThis%3Dtrue&TB_iframe=true&height=75&width=60",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "tekirdag-ram-isitme-yetersizligi-ogretmen-onerileri",
+    "title": "İşitme Yetersizliği Olan Öğrenciler İçin Öğretmenlere Öneriler",
+    "type": "Öğretmen Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "İşitme yetersizliğinde sınıf düzeni, iletişim ve görsel destek",
+    "source": "Tekirdağ Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://tekirdagram.meb.k12.tr/",
+    "file": "https://tekirdagram.meb.k12.tr/meb_iys_dosyalar/59/01/348119/dosyalar/2022_08/31171027_Isitme-Yetersizligi-Ogrencisi-Olan-Ogretmenlere-Oneriler.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kocasinan-ram-ustun-yetenekliler-zenginlestirme",
+    "title": "Üstün Yetenekliler · Sınıf İçi Zenginleştirme ve Eğitim Önlemleri",
+    "type": "Öğretmen Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Özel Yetenek / Zenginleştirme",
+    "topic": "Üstün yetenekli öğrencilerde zenginleştirme, hızlandırma ve sınıf içi düzenlemeler",
+    "source": "Kocasinan Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kocasinanram.meb.k12.tr/",
+    "file": "https://kocasinanram.meb.k12.tr/meb_iys_dosyalar/38/15/169918/dosyalar/2017_05/29163557_YstYn_Yetenekliler.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "ergani-ram-bedensel-yetersizlik-aile-ogretmen-onerileri",
+    "title": "Bedensel Yetersizliği Olan Çocuklar İçin Aile ve Öğretmenlere Öneriler",
+    "type": "Aile / Öğretmen Rehberi",
+    "level": "Öğretmen / Veli / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Bedensel yetersizlikte erişilebilirlik, bağımsız yaşam ve öğretim desteği",
+    "source": "Ergani Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://erganiram.meb.k12.tr/",
+    "file": "https://erganiram.meb.k12.tr/meb_iys_dosyalar/21/08/767679/dosyalar/2023_01/30092534_BEDENSEL-YETERSIZLIGI-OLAN-COCUKLAR-ICIN-AILE-VE-OGRETMENLERE-ONERILER.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "idil-ram-bedensel-yetersizlik-rehberi",
+    "title": "Bedensel Yetersizlik · Tanılama, Değerlendirme ve Öğretmene Öneriler",
+    "type": "Rehber",
+    "level": "Öğretmen / Veli / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Bedensel yetersizlikte değerlendirme, erişilebilirlik ve okul desteği",
+    "source": "İdil Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://idilram.meb.k12.tr/",
+    "file": "https://idilram.meb.k12.tr/meb_iys_dosyalar/73/05/769374/dosyalar/2023_05/26150823_BEDENSEL-YETERSIZLIK.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
