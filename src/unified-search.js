@@ -1,5 +1,5 @@
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
-import {parseQuery,normalize} from './search.js?v=20260927-1';
+import {parseQuery,normalize} from './search.js?v=20260928-1';
 const form=document.querySelector('#searchForm');
 if(form&&authConfigured&&window.supabase){
  const client=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
