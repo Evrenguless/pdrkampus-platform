@@ -13008,5 +13008,31 @@
     "file": "https://bingolataturkanadolulisesi.meb.k12.tr/meb_iys_dosyalar/12/01/973785/dosyalar/2017_10/03112241_sosyometri.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "gursu-okula-uyum-okul-fobisi-bulten-2025",
+    "title": "Okula Uyum ve Okul Fobisi · Veli Bilgilendirme Bülteni · 2025",
+    "type": "Bülten",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Gürsu Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://gursuram.meb.k12.tr/",
+    "file": "https://gursuram.meb.k12.tr/meb_iys_dosyalar/16/16/768934/dosyalar/2025_09/03154256_okulauyumveokulfobisibulten1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksu-okul-fobisi-ebeveyn-brosur-2023",
+    "title": "Okul Fobisi ve Öneriler · Ebeveyn Broşürü",
+    "type": "Broşür",
+    "level": "Okul öncesi / İlkokul",
+    "area": "Okula Uyum ve Devam",
+    "topic": "Okul reddi / okul fobisi",
+    "source": "Aksu Anadolu İmam Hatip Lisesi / MEB",
+    "sourcePage": "https://aksuihl.meb.k12.tr/",
+    "file": "https://aksuihl.meb.k12.tr/meb_iys_dosyalar/07/16/748529/dosyalar/2023_04/06111139_Okul-fobisi-ve-oneriler-brosur.pdf?CHK=65607057195c48192d6ea757f06bc2bb",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
