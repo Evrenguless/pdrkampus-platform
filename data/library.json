@@ -13034,5 +13034,70 @@
     "file": "https://aksuihl.meb.k12.tr/meb_iys_dosyalar/07/16/748529/dosyalar/2023_04/06111139_Okul-fobisi-ve-oneriler-brosur.pdf?CHK=65607057195c48192d6ea757f06bc2bb",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "maltepe-sinav-kaygisi-veli-bulten-2026",
+    "title": "Sınav Kaygısı · Veli Bülteni · Şubat 2026",
+    "type": "Bülten",
+    "level": "Ortaokul / Lise",
+    "area": "Akademik Gelişim",
+    "topic": "Sınav kaygısı",
+    "source": "Maltepe Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://malteperam.meb.k12.tr/",
+    "file": "https://malteperam.meb.k12.tr/meb_iys_dosyalar/34/30/974044/dosyalar/2026_02/69959569cb476309628914_SINAV_KAYGISI_-_RamB%C3%BClten9.pdf?CHK=9720685c37e827fa015ff7d3060994f2",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "corum-yks-sinav-kaygisi-psikolojik-hazirlik-2026",
+    "title": "YKS Sürecinde Psikolojik Hazırlık ve Başarı Stratejileri · Sınav Kaygısı, Motivasyon ve Çalışma Stratejileri · 2026",
+    "type": "Sunum / Rehber",
+    "level": "Lise",
+    "area": "Akademik Gelişim",
+    "topic": "Sınav kaygısı ve akademik motivasyon",
+    "source": "Çorum Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://corumram.meb.k12.tr/icerikler/2026ykssinavkaygisisunumuhazirlanaraksitemizeyuklenmistir_17415249.html",
+    "file": "https://corumram.meb.k12.tr/meb_iys_dosyalar/19/01/138844/dosyalar/2026_04/69eb667e0f208271462801_2026_yks_s%C4%B1nav_kayg%C4%B1s%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "ercis-lgs-sinav-kaygisi-ebeveyn-sunum-2026",
+    "title": "LGS 2026 Sınav Kaygısı · Ebeveyn Sunumu",
+    "type": "Sunum",
+    "level": "Ortaokul / Veli",
+    "area": "Akademik Gelişim",
+    "topic": "Sınav kaygısı",
+    "source": "Erciş Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://ercisram.meb.k12.tr/",
+    "file": "https://ercisram.meb.k12.tr/meb_iys_dosyalar/65/06/963632/dosyalar/2025_12/694b8ac6aff44330341578_S%C4%B1nav_Kayg%C4%B1s%C4%B1_Veli_Sunusu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "tekirdag-sinav-kaygisi-veli-bulteni",
+    "title": "Sınav Kaygısı · Veli Bülteni",
+    "type": "Bülten",
+    "level": "Ortaokul / Lise",
+    "area": "Akademik Gelişim",
+    "topic": "Sınav kaygısı",
+    "source": "Tekirdağ İl Millî Eğitim Müdürlüğü",
+    "sourcePage": "https://tekirdag.meb.gov.tr/",
+    "file": "https://tekirdag.meb.gov.tr/arge/upload/files/Sinav_Kaygisi_Veli_Bulteni.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "kagithane-psikolojik-saglamlik-sinav-kaygisi-2025",
+    "title": "Psikolojik Sağlamlık Çerçevesinde Sınav Kaygısıyla Başa Çıkma · 2025",
+    "type": "Bülten / Rehber",
+    "level": "Ortaokul / Lise",
+    "area": "Akademik Gelişim",
+    "topic": "Sınav kaygısı ve psikolojik sağlamlık",
+    "source": "Kağıthane Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://kagithaneram.meb.k12.tr/",
+    "file": "https://kagithaneram.meb.k12.tr/meb_iys_dosyalar/34/13/861906/dosyalar/2025_04/21132240_psikolojiksaglamlikbulteni.pdf?CHK=bedddcbb0f4e352ef512ca10b1d9bdec",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
