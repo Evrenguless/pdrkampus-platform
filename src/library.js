@@ -1,6 +1,6 @@
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 import {getCuratedResources} from './curated.js?v=20260926-1';
-import {parseQuery,normalize} from './search.js?v=20260928-3';
+import {parseQuery,normalize} from './search.js?v=20260928-4';
 
 const $=selector=>document.querySelector(selector);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -9,6 +9,7 @@ const bucket='community-documents';
 const topicButtons=[
  {label:'Akran zorbalığı',query:'akran zorbalığı'},
  {label:'Okul iklimi',query:'güvenli okul iklimi'},
+ {label:'Mahremiyet',query:'mahremiyet eğitimi'},
  {label:'Öğrenciyi tanıma',query:'öğrenciyi tanıma'},
  {label:'Okula gelmek istemiyor',query:'çocuk okula gelmek istemiyor'},
  {label:'Sınav kaygısı',query:'sınav kaygısı'},
