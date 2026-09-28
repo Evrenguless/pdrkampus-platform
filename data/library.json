@@ -16453,5 +16453,70 @@
     "file": "https://kahramankazanram.meb.k12.tr/meb_iys_dosyalar/06/14/772315/dosyalar/2026_05/6a0324277d18a113704683_OT%C4%B0ZM_SPEKTRUM_BOZUKLU%C4%9EU_OLAN_%C3%87OCUKLAR.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "sehit-furkan-ozel-ogrenme-guclugu-ogretmen-rehberi",
+    "title": "Özel Öğrenme Güçlüğü · Öğretmenler İçin Rehber",
+    "type": "Öğretmen Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Özel öğrenme güçlüğünde sınıf içi düzenleme, öğretim ve çalışma becerileri",
+    "source": "MEB / Şehit Furkan Doğan İmam Hatip Ortaokulu",
+    "sourcePage": "https://sehitfurkandoganio.meb.k12.tr/",
+    "file": "https://sehitfurkandoganio.meb.k12.tr/meb_iys_dosyalar/06/29/761850/dosyalar/2017_10/18134530_YZEL_YYRENME_GYYLYYY_YYRETMEN_REHBERY.pdf?CHK=3db97b04588e7705c70401a6ec590427",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "yakutiye-ram-dehb-ogretmen-aile-rehberi",
+    "title": "Dikkat Eksikliği ve Hiperaktivite Bozukluğu · Öğretmen ve Aile Rehberi",
+    "type": "Rehber",
+    "level": "Öğretmen / Veli / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "DEHB, öğretmen önerileri, aile desteği ve olumlu davranış sağlama",
+    "source": "Yakutiye Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://yakutiyeram.meb.k12.tr/",
+    "file": "https://yakutiyeram.meb.k12.tr/meb_iys_dosyalar/25/21/969720/dosyalar/2015_01/05011906_dehb.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "aksaray-ram-gorme-yetersizligi-ogretmen-onerileri",
+    "title": "Görme Yetersizliği · Öğretmenlere Öneriler ve Sınıf İçi Önlemler",
+    "type": "Öğretmen Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Görme yetersizliğinde sınıf düzeni, erişilebilirlik ve öğretim uyarlamaları",
+    "source": "Aksaray Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://aksarayram.meb.k12.tr/",
+    "file": "https://aksarayram.meb.k12.tr/meb_iys_dosyalar/68/01/270420/dosyalar/2024_03/10034556_gormeyetersizligiyayin.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "sorgun-ram-dil-konusma-aile-ogretmen-onerileri",
+    "title": "Dil ve Konuşma Güçlüğü · Aile ve Öğretmenlere Öneriler",
+    "type": "Broşür / Rehber",
+    "level": "Öğretmen / Veli / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Dil-konuşma güçlüğünde iletişim, sınıf yaklaşımı ve aile desteği",
+    "source": "Sorgun Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://sorgunram.meb.k12.tr/",
+    "file": "https://sorgunram.meb.k12.tr/meb_iys_dosyalar/66/07/963633/dosyalar/2018_01/04115144_dil_konuYma_gYYlYY.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "carsamba-ram-2026-ozel-ogrenme-guclugu-ogretmen-onerileri",
+    "title": "Özel Öğrenme Güçlüğü · Öğretmenlere Öneriler · 2026",
+    "type": "Bilgilendirme Rehberi",
+    "level": "Öğretmen / Tüm kademeler",
+    "area": "Sınıf İçi Uyarlama",
+    "topic": "Özel öğrenme güçlüğünde doğrudan öğretim, bilişsel strateji ve sınıf uyarlamaları",
+    "source": "Çarşamba Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://carsambaram.meb.k12.tr/",
+    "file": "https://carsambaram.meb.k12.tr/meb_iys_dosyalar/55/05/963763/dosyalar/2026_02/698b2092d36bf361590248_%C3%96%C3%96G.pdf?CHK=52eb7cae411bdc1d977aba48377a73c7",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
