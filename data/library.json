@@ -14685,5 +14685,57 @@
     "file": "https://www.education.ankara.edu.tr/wp-content/uploads/sites/85/2022/11/RPD-2022-2023-Anadal-Formlari.pdf",
     "fileType": "PDF",
     "sourceType": "official"
+  },
+  {
+    "id": "meb-akademi-hazirlik-basvuru-duyurusu-ocak-2026",
+    "title": "Millî Eğitim Akademisi · Hazırlık Eğitimi Başvuru Duyurusu · Ocak 2026",
+    "type": "Başvuru Duyurusu",
+    "level": "PDR adayları",
+    "area": "Atama ve Millî Eğitim Akademisi",
+    "topic": "Millî Eğitim Akademisi",
+    "source": "MEB Personel Genel Müdürlüğü",
+    "sourcePage": "https://personel.meb.gov.tr/",
+    "file": "https://personel.meb.gov.tr/meb_iys_dosyalar/2026_01/09094622_milli_egitim_akademisi_hazirlik_egitimi_basvuru_duyurusu_ocak_20261.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "meb-akademi-hazirlik-egitimi-programi-2026",
+    "title": "Millî Eğitim Akademisi · Hazırlık Eğitimi Programı · 2026",
+    "type": "Program",
+    "level": "PDR adayları",
+    "area": "Atama ve Millî Eğitim Akademisi",
+    "topic": "Millî Eğitim Akademisi",
+    "source": "Millî Eğitim Akademisi Başkanlığı",
+    "sourcePage": "https://akademi.meb.gov.tr/www/milli-egitim-akademisi-hazirlik-egitimi-programi-yayimlandi/icerik/135",
+    "file": "https://akademi.meb.gov.tr/meb_iys_dosyalar/2026_03/69b0326a5a846876932904_Akademi_Program_10.03.26_17.32.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "meb-akademi-hazirlik-kayit-kilavuzu-mart-2026",
+    "title": "Millî Eğitim Akademisi · Hazırlık Eğitimi Kayıt Kılavuzu · Mart 2026",
+    "type": "Kılavuz",
+    "level": "PDR adayları",
+    "area": "Atama ve Millî Eğitim Akademisi",
+    "topic": "Millî Eğitim Akademisi",
+    "source": "Millî Eğitim Akademisi Başkanlığı",
+    "sourcePage": "https://ankaraakademi.meb.gov.tr/",
+    "file": "https://ankaraakademi.meb.gov.tr/meb_iys_dosyalar/2026_03/69bf8cd5def85705894559_Akdemi_Kay%C4%B1t_K%C4%B1lavuzu.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "meb-ogretmenlik-meslegine-hazirlik-egitimi-yonetmeligi-2026",
+    "title": "Öğretmenlik Mesleğine Hazırlık Eğitimi Yönetmeliği · 17 Mart 2026",
+    "type": "Yönetmelik",
+    "level": "PDR adayları",
+    "area": "Atama ve Millî Eğitim Akademisi",
+    "topic": "Millî Eğitim Akademisi",
+    "source": "Millî Eğitim Akademisi Başkanlığı",
+    "sourcePage": "https://akademi.meb.gov.tr/www/milli-egitim-bakanligi-ogretmenlik-meslegine-hazirlik-egitimi-yonetmeligi/icerik/137",
+    "file": "https://akademi.meb.gov.tr/meb_iys_dosyalar/2026_04/69d373065ed38866397105_Haz%C4%B1rl%C4%B1k_E%C4%9Fitimi_Y%C3%B6netmeli%C4%9Fi.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
   }
 ]
