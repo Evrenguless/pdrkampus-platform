@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-28",
   "purpose": "PDR Kampüs konu sözlüğü; arama, filtreleme, öneriler, iç bağlantılar ve indekslenebilir konu sayfaları için tek kaynak.",
   "rules": {
     "canonicalTopic": "Her kavram tek canonical slug kullanır.",
@@ -913,7 +913,7 @@
     {
       "id": "topic_bireysel_gorusme",
       "slug": "bireysel-gorusme",
-      "name": "Bireysel Görüşme",
+      "name": "Öğrenciyle Bireysel Görüşme",
       "categoryId": "cat-guidance",
       "aliases": [
         "öğrenci görüşme formu",
@@ -924,11 +924,11 @@
         "öğrenciyle ilk görüşme",
         "izleme görüşmesi"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Bireysel Görüşme | PDR Kampüs",
-        "description": "",
+        "title": "Öğrenciyle Bireysel Görüşme | PDR Kampüs",
+        "description": "Öğrenciyle ilk görüşme, soru sorma, gizlilik, not tutma, görüşmeyi sonlandırma ve raporlama için konu merkezi.",
         "primaryQuery": "öğrenci görüşme formu"
       },
       "contentBrief": {
@@ -940,7 +940,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/bireysel-gorusme/"
     },
     {
       "id": "topic_veli_gorusmesi",
@@ -1573,7 +1574,7 @@
     {
       "id": "topic_dijital_denge",
       "slug": "dijital-denge",
-      "name": "Dijital Denge ve Ekran Kullanımı",
+      "name": "Dijital Denge ve Teknoloji Kullanımı",
       "categoryId": "cat-risk-safety",
       "aliases": [
         "ekran süresi",
@@ -1583,11 +1584,11 @@
       "useCases": [
         "öğrenci ve veli farkındalığı"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Dijital Denge ve Ekran Kullanımı | PDR Kampüs",
-        "description": "",
+        "title": "Dijital Denge ve Teknoloji Kullanımı | PDR Kampüs",
+        "description": "Dijital denge, ekran süresi ve bilinçli teknoloji kullanımı için okul PDR yaklaşımı; 2026 MEB dijital esenlik etkinlikleri ve veli-öğretmen kaynakları.",
         "primaryQuery": "ekran süresi"
       },
       "contentBrief": {
@@ -1599,7 +1600,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/dijital-denge/"
     },
     {
       "id": "topic_siddet",
@@ -2036,6 +2038,160 @@
         ],
         "minUsefulResources": 2
       }
+    },
+    {
+      "id": "topic_bep",
+      "slug": "bep",
+      "name": "BEP ve Özel Eğitim Rehberi",
+      "categoryId": "cat-guidance",
+      "aliases": [
+        "BEP",
+        "BEP hazırlama",
+        "BEP dosyası",
+        "bireyselleştirilmiş eğitim programı"
+      ],
+      "useCases": [
+        "BEP hazırlama",
+        "BEP toplantısı",
+        "BEP dosya düzeni",
+        "veli iş birliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "BEP ve Özel Eğitim Rehberi | PDR Kampüs",
+        "description": "BEP hazırlama, toplantı, dosya içeriği, rehber öğretmenin görevleri ve veli iş birliği için PDR Kampüs konu merkezi.",
+        "primaryQuery": "BEP nasıl hazırlanır"
+      },
+      "contentBrief": {
+        "sections": [
+          "Nedir?",
+          "Okul PDR bağlamında kullanım",
+          "Uygulamada dikkat edilecek noktalar",
+          "İlgili kaynaklar",
+          "İlgili konular"
+        ],
+        "minUsefulResources": 2
+      },
+      "canonicalPath": "/konu/bep/",
+      "relatedTopics": [],
+      "officialSources": []
+    },
+    {
+      "id": "topic_rehberlik_formlari",
+      "slug": "rehberlik-formlari",
+      "name": "Rehberlik Formları ve Ölçme Araçları",
+      "categoryId": "cat-assessment",
+      "aliases": [
+        "rehberlik formları",
+        "öğrenci görüşme formu",
+        "veli görüşme formu",
+        "MEB rehberlik formları"
+      ],
+      "useCases": [
+        "görüşme kaydı",
+        "anket seçimi",
+        "yönlendirme formu",
+        "MEB Form Haritası"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Rehberlik Formları ve Ölçme Araçları | PDR Kampüs",
+        "description": "Okul rehberlik hizmetlerinde kullanılan resmî MEB formları, görüşme formları, anketler, çizelgeler ve sistem formları için kaynak merkezi.",
+        "primaryQuery": "rehberlik formları"
+      },
+      "contentBrief": {
+        "sections": [
+          "Nedir?",
+          "Okul PDR bağlamında kullanım",
+          "Uygulamada dikkat edilecek noktalar",
+          "İlgili kaynaklar",
+          "İlgili konular"
+        ],
+        "minUsefulResources": 2
+      },
+      "canonicalPath": "/konu/rehberlik-formlari/",
+      "relatedTopics": [],
+      "officialSources": []
+    },
+    {
+      "id": "topic_rehberlik_hizmetleri",
+      "slug": "rehberlik-hizmetleri",
+      "name": "Okul Rehberlik Hizmetleri",
+      "categoryId": "cat-guidance",
+      "aliases": [
+        "okul rehberlik hizmetleri",
+        "rehberlik servisi",
+        "rehber öğretmen görevleri",
+        "rehberlik yıllık planı"
+      ],
+      "useCases": [
+        "servis kurulumu",
+        "yıllık plan",
+        "evrak düzeni",
+        "raporlama",
+        "yönlendirme"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Okul Rehberlik Hizmetleri | PDR Kampüs",
+        "description": "Okul rehberlik servisinin görevleri, yıllık programı, evrakları, öğrenci yönlendirme ve raporlama süreçleri için konu merkezi.",
+        "primaryQuery": "okul rehberlik hizmetleri"
+      },
+      "contentBrief": {
+        "sections": [
+          "Nedir?",
+          "Okul PDR bağlamında kullanım",
+          "Uygulamada dikkat edilecek noktalar",
+          "İlgili kaynaklar",
+          "İlgili konular"
+        ],
+        "minUsefulResources": 2
+      },
+      "canonicalPath": "/konu/rehberlik-hizmetleri/",
+      "relatedTopics": [],
+      "officialSources": []
+    },
+    {
+      "id": "topic_sosyal_duygusal",
+      "slug": "sosyal-duygusal",
+      "name": "Sosyal-Duygusal Beceriler",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "sosyal duygusal beceriler",
+        "sosyal duygusal öğrenme",
+        "duygu düzenleme",
+        "empati etkinlikleri"
+      ],
+      "useCases": [
+        "sınıf etkinliği",
+        "empati",
+        "iletişim",
+        "duygu düzenleme",
+        "problem çözme"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Sosyal-Duygusal Beceriler | PDR Kampüs",
+        "description": "Empati, iletişim, öfke yönetimi, duygu düzenleme, atılganlık ve problem çözme etkinlikleri için PDR Kampüs konu merkezi.",
+        "primaryQuery": "sosyal duygusal beceriler"
+      },
+      "contentBrief": {
+        "sections": [
+          "Nedir?",
+          "Okul PDR bağlamında kullanım",
+          "Uygulamada dikkat edilecek noktalar",
+          "İlgili kaynaklar",
+          "İlgili konular"
+        ],
+        "minUsefulResources": 2
+      },
+      "canonicalPath": "/konu/sosyal-duygusal/",
+      "relatedTopics": [],
+      "officialSources": []
     }
   ]
 }
