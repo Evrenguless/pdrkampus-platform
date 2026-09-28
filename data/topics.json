@@ -1252,22 +1252,27 @@
     },
     {
       "id": "topic_motivasyon",
-      "slug": "motivasyon",
+      "slug": "akademik-motivasyon",
       "name": "Akademik Motivasyon",
       "categoryId": "cat-academic",
       "aliases": [
         "ders motivasyonu",
         "akademik motivasyon",
-        "motivasyon düşüklüğü"
+        "motivasyon düşüklüğü",
+        "verimli ders çalışma",
+        "akademik erteleme"
       ],
       "useCases": [
-        "öğrenme motivasyonunu destekleme"
+        "öğrenme motivasyonunu destekleme",
+        "hedef belirleme",
+        "verimli ders çalışma",
+        "akademik erteleme ile çalışma"
       ],
-      "indexable": false,
-      "contentStatus": "seed",
+      "indexable": true,
+      "contentStatus": "published",
       "seo": {
-        "title": "Akademik Motivasyon | PDR Kampüs",
-        "description": "",
+        "title": "Akademik Motivasyon ve Verimli Ders Çalışma | PDR Kampüs",
+        "description": "Ders motivasyonu düşük öğrenciyle nasıl çalışılır? Hedef belirleme, verimli ders çalışma, akademik erteleme ve öğrenci-veli materyalleri için okul PDR rehberi.",
         "primaryQuery": "ders motivasyonu"
       },
       "contentBrief": {
@@ -1279,7 +1284,8 @@
           "İlgili konular"
         ],
         "minUsefulResources": 2
-      }
+      },
+      "canonicalPath": "/konu/akademik-motivasyon/"
     },
     {
       "id": "topic_hedef_belirleme",
