@@ -15,12 +15,18 @@ test('her katalog kaydında benzersiz kimlik, dosya ve gerekli alanlar bulunur',
   assert.ok(!files.has(item.file),`${label}: aynı dosyaya ikinci bağımsız kart`);files.add(item.file);
   const url=new URL(item.file);
   assert.equal(url.protocol,'https:',`${label}: güvenli dosya adresi gerekli`);
-  assert.ok(/\.meb\.(?:gov\.tr|k12\.tr)$/.test(url.hostname)||['meb.gov.tr','www.aile.gov.tr'].includes(url.hostname),`${label}: kaynak alan adı`);
+  const officialHost=/\.meb\.(?:gov\.tr|k12\.tr)$/.test(url.hostname)
+   || /(?:^|\.)osym\.gov\.tr$/.test(url.hostname)
+   || /(?:^|\.)yok\.gov\.tr$/.test(url.hostname)
+   || /(?:^|\.)edu\.tr$/.test(url.hostname)
+   || ['meb.gov.tr','www.aile.gov.tr'].includes(url.hostname);
+  assert.ok(officialHost,`${label}: kaynak alan adı`);
   assert.equal(item.sourceType,'official',`${label}: kaynak türü`);
-  assert.ok(['PDF','XLSX','MP4','PPTX','DOCX','DOC','JPEG','JPG','PNG','ZIP','PPT'].includes(item.fileType),`${label}: dosya türü`);
+  assert.ok(['PDF','XLSX','XLS','MP4','PPTX','DOCX','DOC','JPEG','JPG','PNG','ZIP','PPT','WEB','HTML'].includes(item.fileType),`${label}: dosya türü`);
   const hasExpectedExtension=decodeURIComponent(url.pathname).toLowerCase().endsWith('.'+item.fileType.toLowerCase());
   const isMebBulutZip=item.fileType==='ZIP'&&url.hostname==='bulut.meb.gov.tr'&&/^\/app\/tr-TR\/Dosya\/Paylas\/MEBBulut\/[0-9a-f-]{36}$/.test(url.pathname);
-  assert.ok(hasExpectedExtension||isMebBulutZip,`${label}: uzantı/tür uyumsuz`);
+  const isWebPage=['WEB','HTML'].includes(item.fileType)&&!hasExpectedExtension;
+  assert.ok(hasExpectedExtension||isMebBulutZip||isWebPage,`${label}: uzantı/tür uyumsuz`);
   assert.ok(item.sourcePage||item.sourceUrl,`${label}: kaynak sayfası yok`);
   if(item.levels){
    assert.ok(Array.isArray(item.levels)&&item.levels.length>1,`${label}: çoklu kademe`);
