@@ -268,101 +268,6 @@
       }
     },
     {
-      "id": "topic_sosyal_beceri",
-      "slug": "sosyal-beceri",
-      "name": "Sosyal Beceri",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "sosyal beceri",
-        "sosyal beceri etkinlikleri"
-      ],
-      "useCases": [
-        "sosyal beceri geliştirme",
-        "sınıf etkinliği"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Sosyal Beceri | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "sosyal beceri"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_iletisim_becerileri",
-      "slug": "iletisim-becerileri",
-      "name": "İletişim Becerileri",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "iletişim becerileri",
-        "etkili iletişim",
-        "ben dili"
-      ],
-      "useCases": [
-        "iletişim çalışması",
-        "çatışma önleme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "İletişim Becerileri | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "iletişim becerileri"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_catisma_cozme",
-      "slug": "catisma-cozme",
-      "name": "Çatışma Çözme",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "çatışma çözme",
-        "çatışma çözme becerileri",
-        "akran çatışması"
-      ],
-      "useCases": [
-        "akran çatışmasını yönetme",
-        "sınıf etkinliği"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Çatışma Çözme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "çatışma çözme"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_ofke_yonetimi",
       "slug": "ofke-yonetimi",
       "name": "Öfke Yönetimi",
@@ -414,37 +319,6 @@
         "title": "Duygu Düzenleme | PDR Kampüs",
         "description": "",
         "primaryQuery": "duygu düzenleme"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_oz_duzenleme",
-      "slug": "oz-duzenleme",
-      "name": "Öz Düzenleme",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "öz düzenleme",
-        "kendini düzenleme",
-        "öz kontrol"
-      ],
-      "useCases": [
-        "davranış ve çalışma alışkanlıklarını destekleme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Öz Düzenleme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "öz düzenleme"
       },
       "contentBrief": {
         "sections": [
@@ -647,68 +521,6 @@
         "title": "Stresle Baş Etme | PDR Kampüs",
         "description": "",
         "primaryQuery": "stres yönetimi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_problem_cozme",
-      "slug": "problem-cozme",
-      "name": "Problem Çözme",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "problem çözme becerileri",
-        "sorun çözme"
-      ],
-      "useCases": [
-        "yaşam becerileri",
-        "sınıf etkinliği"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Problem Çözme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "problem çözme becerileri"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_karar_verme",
-      "slug": "karar-verme",
-      "name": "Karar Verme",
-      "categoryId": "cat-social-emotional",
-      "aliases": [
-        "karar verme becerileri",
-        "karar verme etkinliği"
-      ],
-      "useCases": [
-        "yaşam becerileri",
-        "kariyer kararı"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Karar Verme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "karar verme becerileri"
       },
       "contentBrief": {
         "sections": [
@@ -1204,68 +1016,6 @@
       }
     },
     {
-      "id": "topic_calisma_aliskanliklari",
-      "slug": "calisma-aliskanliklari",
-      "name": "Çalışma Alışkanlıkları",
-      "categoryId": "cat-academic",
-      "aliases": [
-        "verimli ders çalışma",
-        "çalışma alışkanlıkları",
-        "ders çalışma programı"
-      ],
-      "useCases": [
-        "çalışma becerilerini geliştirme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Çalışma Alışkanlıkları | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "verimli ders çalışma"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
-      "id": "topic_zaman_yonetimi",
-      "slug": "zaman-yonetimi",
-      "name": "Zaman Yönetimi",
-      "categoryId": "cat-academic",
-      "aliases": [
-        "zaman yönetimi",
-        "ders çalışma planı",
-        "zaman planlama"
-      ],
-      "useCases": [
-        "akademik planlama"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Zaman Yönetimi | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "zaman yönetimi"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_motivasyon",
       "slug": "akademik-motivasyon",
       "name": "Akademik Motivasyon",
@@ -1275,13 +1025,27 @@
         "akademik motivasyon",
         "motivasyon düşüklüğü",
         "verimli ders çalışma",
-        "akademik erteleme"
+        "akademik erteleme",
+        "Hedef Belirleme",
+        "hedef belirleme",
+        "akademik hedef",
+        "hedef belirleme etkinliği",
+        "Zaman Yönetimi",
+        "zaman yönetimi",
+        "ders çalışma planı",
+        "zaman planlama",
+        "Çalışma Alışkanlıkları",
+        "çalışma alışkanlıkları",
+        "ders çalışma programı"
       ],
       "useCases": [
         "öğrenme motivasyonunu destekleme",
         "hedef belirleme",
         "verimli ders çalışma",
-        "akademik erteleme ile çalışma"
+        "akademik erteleme ile çalışma",
+        "akademik ve kişisel planlama",
+        "akademik planlama",
+        "çalışma becerilerini geliştirme"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1300,38 +1064,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/akademik-motivasyon/"
-    },
-    {
-      "id": "topic_hedef_belirleme",
-      "slug": "hedef-belirleme",
-      "name": "Hedef Belirleme",
-      "categoryId": "cat-academic",
-      "aliases": [
-        "hedef belirleme",
-        "akademik hedef",
-        "hedef belirleme etkinliği"
-      ],
-      "useCases": [
-        "akademik ve kişisel planlama"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Hedef Belirleme | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "hedef belirleme"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
+      "canonicalPath": "/konu/akademik-motivasyon/",
+      "relatedTopics": []
     },
     {
       "id": "topic_sinav_hazirligi",
@@ -1552,38 +1286,6 @@
       }
     },
     {
-      "id": "topic_guvenli_internet",
-      "slug": "guvenli-internet",
-      "name": "Güvenli İnternet Kullanımı",
-      "categoryId": "cat-risk-safety",
-      "aliases": [
-        "güvenli internet",
-        "internet güvenliği",
-        "dijital güvenlik"
-      ],
-      "useCases": [
-        "koruyucu önleyici çalışma",
-        "veli bilgilendirme"
-      ],
-      "indexable": false,
-      "contentStatus": "seed",
-      "seo": {
-        "title": "Güvenli İnternet Kullanımı | PDR Kampüs",
-        "description": "",
-        "primaryQuery": "güvenli internet"
-      },
-      "contentBrief": {
-        "sections": [
-          "Nedir?",
-          "Okul PDR bağlamında ne zaman kullanılır?",
-          "Uygulamada dikkat edilecek noktalar",
-          "İlgili kaynaklar",
-          "İlgili konular"
-        ],
-        "minUsefulResources": 2
-      }
-    },
-    {
       "id": "topic_dijital_denge",
       "slug": "dijital-denge",
       "name": "Dijital Denge ve Teknoloji Kullanımı",
@@ -1591,10 +1293,16 @@
       "aliases": [
         "ekran süresi",
         "telefon kullanımı",
-        "dijital denge"
+        "dijital denge",
+        "Güvenli İnternet Kullanımı",
+        "güvenli internet",
+        "internet güvenliği",
+        "dijital güvenlik"
       ],
       "useCases": [
-        "öğrenci ve veli farkındalığı"
+        "öğrenci ve veli farkındalığı",
+        "koruyucu önleyici çalışma",
+        "veli bilgilendirme"
       ],
       "indexable": true,
       "contentStatus": "published",
@@ -1613,7 +1321,8 @@
         ],
         "minUsefulResources": 2
       },
-      "canonicalPath": "/konu/dijital-denge/"
+      "canonicalPath": "/konu/dijital-denge/",
+      "relatedTopics": []
     },
     {
       "id": "topic_ihmal_istismar",
@@ -2164,14 +1873,42 @@
         "sosyal duygusal beceriler",
         "sosyal duygusal öğrenme",
         "duygu düzenleme",
-        "empati etkinlikleri"
+        "empati etkinlikleri",
+        "Öz Düzenleme",
+        "öz düzenleme",
+        "kendini düzenleme",
+        "öz kontrol",
+        "Problem Çözme",
+        "problem çözme becerileri",
+        "sorun çözme",
+        "Sosyal Beceri",
+        "sosyal beceri",
+        "sosyal beceri etkinlikleri",
+        "İletişim Becerileri",
+        "iletişim becerileri",
+        "etkili iletişim",
+        "ben dili",
+        "Çatışma Çözme",
+        "çatışma çözme",
+        "çatışma çözme becerileri",
+        "akran çatışması",
+        "Karar Verme",
+        "karar verme becerileri",
+        "karar verme etkinliği"
       ],
       "useCases": [
         "sınıf etkinliği",
         "empati",
         "iletişim",
         "duygu düzenleme",
-        "problem çözme"
+        "problem çözme",
+        "davranış ve çalışma alışkanlıklarını destekleme",
+        "yaşam becerileri",
+        "sosyal beceri geliştirme",
+        "iletişim çalışması",
+        "çatışma önleme",
+        "akran çatışmasını yönetme",
+        "kariyer kararı"
       ],
       "indexable": true,
       "contentStatus": "published",
