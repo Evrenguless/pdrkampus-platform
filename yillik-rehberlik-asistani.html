@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5f0">
+<title>Yıllık Rehberlik Asistanı — PDR Kampüs</title>
+<meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="src/style.css?v=20260929-1">
+<link rel="stylesheet" href="src/shell-refresh.css?v=20260927-8">
+<link rel="stylesheet" href="src/design-system.css?v=20260927-8">
+<link rel="stylesheet" href="src/annual-guidance.css?v=20260929-1">
+</head>
+<body id="top">
+<header class="header">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="PDR Kampüs logosu"><strong>PDR<span>Kampüs</span></strong></a>
+  <nav class="desktop" aria-label="Ana menü">
+    <a href="kutuphane.html">Kütüphane</a><a href="konular.html">Konular</a><a href="topluluk.html">Topluluk</a><a href="meslektasima-sor.html">Meslektaşıma Sor</a><a href="calisma-alani.html" data-section-current="true">Çalışma Alanım</a><a href="profil.html">Profil</a>
+  </nav>
+  <button id="menuButton" class="menu-button" type="button" aria-label="Menüyü aç" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+</header>
+<nav id="mobileMenu" class="mobile-menu" aria-label="Mobil menü" hidden>
+  <div class="mobile-menu-group"><span class="mobile-menu-label">KAYNAKLAR</span><div><a href="kutuphane.html">Kütüphane</a><a href="konular.html">Konular</a></div></div>
+  <div class="mobile-menu-group"><span class="mobile-menu-label">MESLEKTAŞLAR</span><div><a href="topluluk.html">Topluluk</a><a href="meslektasima-sor.html">Meslektaşıma Sor</a></div></div>
+  <div class="mobile-menu-group"><span class="mobile-menu-label">KİŞİSEL ALAN</span><div><a href="calisma-alani.html">Çalışma Alanım</a><a href="yillik-rehberlik-asistani.html" aria-current="page">Yıllık Asistan</a><a href="profil.html">Profil</a></div></div>
+</nav>
+
+<main class="annual-assistant">
+<section class="annual-hero">
+  <div class="annual-shell annual-hero-grid">
+    <div>
+      <p class="annual-kicker">PDR KAMPÜS · ÇALIŞMA ALANIM <span>ÖNİZLEME</span></p>
+      <h1>Yıllık Rehberlik <em>Asistanı</em></h1>
+      <p>Yıllık hedeflerini seç, çalışmalarını eğitim-öğretim yılına yerleştir ve her çalışma için uygun kaynaklara tek yerden ulaş.</p>
+      <div class="annual-flow" aria-label="Asistan iş akışı">
+        <span>Hedef</span><i>→</i><span>Plan</span><i>→</i><span>Zaman</span><i>→</i><span>Kaynak</span><i>→</i><span>Uygulama</span>
+      </div>
+    </div>
+    <div class="annual-year-card">
+      <label for="academicYear">Eğitim-öğretim yılı</label>
+      <select id="academicYear"></select>
+      <p>Her yıl ayrı tutulur. Bu önizleme verileri yalnızca bu tarayıcıda saklar.</p>
+      <button id="resetYear" type="button" class="annual-link-button">Bu yılın önizleme verisini sıfırla</button>
+    </div>
+  </div>
+</section>
+
+<div class="annual-shell annual-layout">
+  <aside class="annual-side" aria-label="Yıllık rehberlik asistanı bölümleri">
+    <span>YILLIK PLAN</span>
+    <a href="#overview" aria-current="page">01 · Genel bakış</a>
+    <a href="#school">02 · Okul bilgileri</a>
+    <a href="#goals">03 · Hedefler</a>
+    <a href="#plan">04 · Yıllık plan</a>
+    <a href="#resources">05 · Kaynaklar</a>
+    <a href="#yearEnd">06 · Yıl sonu</a>
+  </aside>
+
+  <div class="annual-content">
+    <section id="overview" class="annual-section">
+      <div class="annual-section-head">
+        <div><span>2026–2027 / GENEL BAKIŞ</span><h2>Bu yılın rehberlik çalışma alanı</h2></div>
+        <button id="quickAdd" type="button" class="annual-primary">+ Çalışma ekle</button>
+      </div>
+      <div class="annual-stats">
+        <article><small>SEÇİLEN HEDEF</small><strong id="statGoals">0</strong><span>yıllık planda</span></article>
+        <article><small>PLANLANAN ÇALIŞMA</small><strong id="statItems">0</strong><span>toplam çalışma</span></article>
+        <article><small>UYGULANDI</small><strong id="statDone">0</strong><span>tamamlanan</span></article>
+        <article><small>İLERLEME</small><strong id="statProgress">%0</strong><span>uygulanan / toplam</span></article>
+      </div>
+      <div class="annual-overview-grid">
+        <article class="annual-panel">
+          <div class="annual-panel-title"><div><span>BU AY</span><h3 id="currentMonthTitle">Eylül</h3></div><span id="currentMonthCount" class="annual-count">0 çalışma</span></div>
+          <div id="currentMonthList" class="annual-mini-list"></div>
+        </article>
+        <article class="annual-panel annual-gap-panel">
+          <div class="annual-panel-title"><div><span>PLAN KONTROLÜ</span><h3>Henüz planlanmayan hedefler</h3></div></div>
+          <div id="gapList" class="annual-mini-list"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="school" class="annual-section">
+      <div class="annual-section-head"><div><span>02 / OKUL BİLGİLERİ</span><h2>Kaynakları okuluna göre daralt.</h2><p>Bu bilgiler yalnızca öneri ve filtreleme için kullanılır.</p></div></div>
+      <form id="schoolForm" class="annual-form annual-school-form">
+        <label>Okul kademesi<select name="level" required><option value="">Seçin</option><option>Okul öncesi</option><option>İlkokul</option><option>Ortaokul</option><option>Lise</option><option>Özel eğitim</option></select></label>
+        <label>Okul türü<input name="schoolType" placeholder="Örn. devlet ortaokulu"></label>
+        <label>Sınıf düzeyleri<input name="grades" placeholder="Örn. 5, 6, 7, 8"></label>
+        <label>Yaklaşık öğrenci sayısı<input name="studentCount" type="number" min="0" max="5000" placeholder="Örn. 480"></label>
+        <button type="submit" class="annual-primary">Okul bilgilerini kaydet</button>
+      </form>
+      <p id="schoolStatus" class="annual-status" role="status"></p>
+    </section>
+
+    <section id="goals" class="annual-section">
+      <div class="annual-section-head"><div><span>03 / HEDEFLER</span><h2>Bu yıl hangi hedeflerle çalışacaksın?</h2><p>Genel, yerel ve okul özel hedeflerini ayrı tut. Resmî hedefler doğrulanmadan “resmî” etiketi verilmez.</p></div></div>
+      <div class="annual-goal-grid">
+        <article class="annual-goal-column" data-type="general"><header><span>GENEL HEDEF</span><p>MEB tarafından belirlenen hedef alanı.</p></header><div id="generalGoals"></div></article>
+        <article class="annual-goal-column" data-type="local"><header><span>YEREL HEDEF</span><p>İl/ilçe düzeyindeki hedef alanı.</p></header><div id="localGoals"></div></article>
+        <article class="annual-goal-column" data-type="special"><header><span>OKUL ÖZEL HEDEFİ</span><p>Okulunun kendi ihtiyacına göre oluştur.</p></header><div id="specialGoals"></div><form id="specialGoalForm" class="annual-inline-goal"><input name="title" maxlength="100" placeholder="Örn. okul aidiyetini güçlendirme" required><button type="submit">+ Ekle</button></form></article>
+      </div>
+    </section>
+
+    <section id="plan" class="annual-section">
+      <div class="annual-section-head"><div><span>04 / YILLIK PLAN</span><h2>Eylül’den Haziran’a çalışma akışı</h2><p>Aylar bir zorunluluk değil; senin eklediğin çalışmaların görünümüdür.</p></div><button id="openPlanForm" type="button" class="annual-primary">+ Planlanan çalışma</button></div>
+
+      <form id="planForm" class="annual-form annual-plan-form" hidden>
+        <label>Ay<select name="month" required></select></label>
+        <label>Hedef<select name="goalId" required></select></label>
+        <label>Sınıf<input name="grade" placeholder="Örn. 7. sınıf"></label>
+        <label>Çalışma türü<select name="activityType"><option>Sınıf çalışması</option><option>Grup çalışması</option><option>Bireysel çalışma</option><option>Veli çalışması</option><option>Öğretmen çalışması</option><option>Seminer / sunum</option><option>İzleme / değerlendirme</option></select></label>
+        <label class="annual-form-wide">Çalışma başlığı<input name="title" maxlength="160" required placeholder="Örn. Akran ilişkilerini güçlendirme sınıf çalışması"></label>
+        <div class="annual-form-actions"><button type="submit" class="annual-primary">Çalışmayı plana ekle</button><button id="cancelPlanForm" type="button" class="annual-secondary">Vazgeç</button></div>
+      </form>
+
+      <div id="monthStrip" class="annual-month-strip" aria-label="Eğitim öğretim yılı ayları"></div>
+      <div id="monthBoard" class="annual-month-board"></div>
+    </section>
+
+    <section id="resources" class="annual-section">
+      <div class="annual-section-head"><div><span>05 / KAYNAKLAR</span><h2 id="resourceHeading">Bir çalışma seç; uygun kaynakları bulalım.</h2><p id="resourceContext">Öneriler mevcut PDR Kampüs katalog metadatası üzerinden eşleştirilir.</p></div></div>
+      <div id="resourceFilters" class="annual-filter-row">
+        <select id="resourceTypeFilter"><option value="">Tüm kaynak türleri</option></select>
+        <input id="resourceSearch" type="search" placeholder="Sonuçlarda ara">
+      </div>
+      <div id="resourceResults" class="annual-resource-grid"></div>
+    </section>
+
+    <section id="yearEnd" class="annual-section">
+      <div class="annual-section-head"><div><span>06 / YIL SONU</span><h2>Yılın sonunda ne yaptığını tek bakışta gör.</h2></div></div>
+      <div class="annual-year-end">
+        <div id="yearEndSummary" class="annual-year-end-stats"></div>
+        <label>Gelecek eğitim yılı için notlarım<textarea id="yearEndNotes" maxlength="2000" placeholder="Bu yıl işe yarayanlar, gelecek yıl değiştirmek istediklerim..."></textarea></label>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+
+<footer class="campus-footer">
+  <div class="wrap campus-footer-main">
+    <div class="campus-footer-about"><a class="brand campus-footer-brand" href="index.html" aria-label="PDR Kampüs ana sayfa"><img src="assets/logo.png" alt=""><strong>PDR<span>Kampüs</span></strong></a><p>Psikolojik danışmanlar için kaynak, araç ve meslektaş dayanışması tek kampüste.</p></div>
+    <nav class="campus-footer-links" aria-label="Kampüsü keşfet"><h2>KEŞFET</h2><a href="kutuphane.html">Kütüphane</a><a href="konular.html">Konular</a><a href="topluluk.html">Topluluk</a></nav>
+    <nav class="campus-footer-links" aria-label="Kişisel alan"><h2>KİŞİSEL ALAN</h2><a href="calisma-alani.html">Çalışma Alanım</a><a href="yillik-rehberlik-asistani.html">Yıllık Asistan</a><a href="profil.html">Profil</a></nav>
+  </div>
+  <div class="wrap campus-footer-bottom"><span>© 2026 PDR Kampüs</span><span>Mesleki dijital çalışma alanı</span><a href="#top">Yukarı çık ↑</a></div>
+</footer>
+<script type="module" src="src/annual-guidance.js?v=20260929-1"></script>
+<script type="module" src="src/menu.js?v=20260926-12"></script>
+</body></html>
