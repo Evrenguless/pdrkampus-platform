@@ -1,6 +1,6 @@
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 import {getCuratedResources} from './curated.js?v=20260926-1';
-import {parseQuery,normalize} from './search.js?v=20260928-1';
+import {parseQuery,normalize} from './search.js?v=20260928-2';
 
 const $=selector=>document.querySelector(selector);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -10,6 +10,7 @@ const topicButtons=[
  {label:'Akran zorbalığı',query:'akran zorbalığı'},
  {label:'Okula gelmek istemiyor',query:'çocuk okula gelmek istemiyor'},
  {label:'Sınav kaygısı',query:'sınav kaygısı'},
+ {label:'Ders motivasyonu',query:'ders motivasyonu'},
  {label:'Duygularını yönetemiyor',query:'duygularını yönetemiyor'},
  {label:'Hangi mesleği seçmeli?',query:'hangi mesleği seçmeli'},
  {label:'Özel eğitim / BEP',query:'özel eğitim BEP'},
