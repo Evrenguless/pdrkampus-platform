@@ -5,7 +5,7 @@ Bu dal hazırlık içindir. `main` dalına birleştirilmeden ve DNS değiştiril
 ## Hazırlık
 
 1. Tamamlandı (29 Eylül 2026): GitHub hesap ayarları → Pages → Verified domains bölümünde `pdrkampus.com` doğrulandı. Squarespace DNS ekranındaki `_github-pages-challenge-Evrenguless` TXT kaydı yayındaki doğrulamayı sağlıyor; kaydı koruyun.
-2. Supabase Authentication → URL Configuration bölümündeki Redirect URLs listesine `https://pdrkampus.com/hesap.html` ekleyin. Bu aşamada mevcut Site URL'yi değiştirmeyin; eski `hesap.html` adresini geçiş süresince listede tutun.
+2. Tamamlandı (29 Eylül 2026): Supabase Authentication → URL Configuration bölümündeki Redirect URLs listesinde `https://pdrkampus.com/hesap.html` ile eski `hesap.html` adresi birlikte doğrulandı. Site URL hâlâ eski GitHub Pages adresi; yeni domain açılana kadar değiştirmeyin.
 3. Gizlilik/aydınlatma, iletişim ve materyal paylaşım kurallarının gerçek işletici ve veri akışına göre hazır olduğundan emin olun. Bu metinler için kişi/kurum bilgisi uydurmayın.
 
 ## Alan adı geçişi
