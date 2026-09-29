@@ -14,7 +14,7 @@ BINARY_TYPES = {"PDF", "XLSX", "MP4", "PPTX", "DOCX", "DOC", "JPEG", "JPG", "PNG
 
 def open_url(url, method="HEAD"):
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; PDR-Kampus-Link-Check/2.0; +https://evrenguless.github.io/pdrkampus-platform/)"
+        "User-Agent": "Mozilla/5.0 (compatible; PDR-Kampus-Link-Check/2.0; +https://pdrkampus.com/)"
     }
     if method == "GET":
         headers["Range"] = "bytes=0-1023"
