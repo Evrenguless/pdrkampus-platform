@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://evrenguless.github.io/pdrkampus-platform/sitemap.xml
+Sitemap: https://pdrkampus.com/sitemap.xml

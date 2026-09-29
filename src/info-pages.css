@@ -1,0 +1,17 @@
+.info-page{background:#f7f8f5;min-height:65vh;padding:52px 24px 84px;color:#20392c}
+.info-shell{max-width:860px;margin:auto}
+.info-back{color:#2c7656;font-size:13px;font-weight:700}
+.info-hero{margin:30px 0 28px}
+.info-kicker{color:#3d7a59;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.info-hero h1{font:800 clamp(30px,4vw,46px)/1.15 Manrope,sans-serif;letter-spacing:-.055em;margin:10px 0 14px}
+.info-lead{font-size:16px;line-height:1.7;color:#526657;max-width:700px}
+.info-card{background:#fff;border:1px solid #dfe8df;border-radius:16px;padding:clamp(22px,4vw,38px);box-shadow:0 12px 35px #17362908}
+.info-card section+section{border-top:1px solid #e5ebe4;margin-top:24px;padding-top:24px}
+.info-card h2{font:800 20px/1.3 Manrope,sans-serif;margin:0 0 10px}
+.info-card p,.info-card li{font-size:14px;line-height:1.8;color:#415449}
+.info-card ul{padding-left:22px;margin:8px 0}
+.info-card a,.info-inline-link{color:#1e6c4b;text-decoration:underline;text-underline-offset:3px}
+.info-card a:focus-visible,.info-back:focus-visible{outline:2px solid #2b7653;outline-offset:3px}
+.info-contact{font-weight:800;font-size:18px!important;overflow-wrap:anywhere}
+.info-meta{font-size:12px;color:#748379;margin-top:24px}
+@media(max-width:700px){.info-page{padding:30px 18px 60px}}

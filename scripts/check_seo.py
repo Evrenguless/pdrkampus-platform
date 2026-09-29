@@ -5,7 +5,8 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 
-BASE = "https://evrenguless.github.io/pdrkampus-platform/"
+BASE = "https://pdrkampus.com/"
+LEGACY_BASE = "https://evrenguless.github.io/pdrkampus-platform/"
 ROOT = Path(__file__).resolve().parents[1]
 SITEMAP = ROOT / "sitemap.xml"
 
@@ -30,13 +31,23 @@ warnings = []
 titles = {}
 descriptions = {}
 
+if (ROOT / "CNAME").read_text(encoding="utf-8").strip() != "pdrkampus.com":
+    errors.append("CNAME ana alan adıyla uyuşmuyor")
+if f"Sitemap: {BASE}sitemap.xml" not in (ROOT / "robots.txt").read_text(encoding="utf-8"):
+    errors.append("robots.txt yeni alan adındaki sitemap'i göstermiyor")
+
 for url in urls:
+    if not url.startswith(BASE):
+        errors.append(f"Sitemap farklı alan adında: {url}")
+        continue
     path = url_to_file(url)
     if not path.exists():
         errors.append(f"Sitemap URL dosyası yok: {url} -> {path.relative_to(ROOT)}")
         continue
 
     html = path.read_text(encoding="utf-8")
+    if LEGACY_BASE in html:
+        errors.append(f"Eski alan adı kaldı: {path.relative_to(ROOT)}")
     title = grab(r"<title>(.*?)</title>", html)
     desc = grab(r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']', html)
     canonical = grab(r'<link\s+rel=["\']canonical["\']\s+href=["\'](.*?)["\']', html)
