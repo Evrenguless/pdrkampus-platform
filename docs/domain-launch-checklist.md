@@ -6,7 +6,7 @@ Bu dal hazırlık içindir. `main` dalına birleştirilmeden ve DNS değiştiril
 
 1. Tamamlandı (29 Eylül 2026): GitHub hesap ayarları → Pages → Verified domains bölümünde `pdrkampus.com` doğrulandı. Squarespace DNS ekranındaki `_github-pages-challenge-Evrenguless` TXT kaydı yayındaki doğrulamayı sağlıyor; kaydı koruyun.
 2. Tamamlandı (29 Eylül 2026): Supabase Authentication → URL Configuration bölümündeki Redirect URLs listesinde `https://pdrkampus.com/hesap.html` ile eski `hesap.html` adresi birlikte doğrulandı. Site URL hâlâ eski GitHub Pages adresi; yeni domain açılana kadar değiştirmeyin.
-3. Gizlilik/aydınlatma, iletişim ve materyal paylaşım kurallarının gerçek işletici ve veri akışına göre hazır olduğundan emin olun. Bu metinler için kişi/kurum bilgisi uydurmayın.
+3. İletişim, veri işleme bilgileri ve materyal paylaşım kuralları sayfaları taslak PR'da hazırlandı. Yayın öncesinde PDRKampüs'ün tam tescilli veri sorumlusu unvanını, uygulanacak KVKK işleme şartlarını, Avustralya (Sydney) Supabase bölgesine aktarımın hukuki mekanizmasını, saklama/silme sürelerini ve başvuru usulünü yetkili hukuk danışmanıyla kesinleştirip gizlilik metnini buna göre tamamlayın. İletişim için verilen `evrengules@pdrkampus.com` adresi kullanıldı; kayıt sahibinin özel adresi siteye eklenmedi.
 
 ## Alan adı geçişi
 
@@ -20,7 +20,7 @@ Bu dal hazırlık içindir. `main` dalına birleştirilmeden ve DNS değiştiril
 
 - `https://pdrkampus.com/` ve üç ayrı konu sayfası `200` dönmeli; `www` tek seçilen ana adrese yönlenmeli.
 - Eski GitHub Pages URL'sinden ana sayfa ve bir alt sayfa yeni karşılığına gitmeli; yalnız ana sayfaya toplu yönlendirme olmamalı.
-- `https://pdrkampus.com/robots.txt` yeni sitemap'i göstermeli; sitemap'teki 131 URL yeni domain ve doğru canonical ile eşleşmeli.
+- `https://pdrkampus.com/robots.txt` yeni sitemap'i göstermeli; sitemap'teki 134 URL yeni domain ve doğru canonical ile eşleşmeli.
 - Kayıt, e-posta doğrulama, giriş, çıkış, şifre sıfırlama, kütüphane kaynağı açma, belge gönderme ve moderasyon akışları yeni domainde denenmeli.
 - Google Search Console'da yeni domain doğrulanıp yeni sitemap gönderilmeli; eski ve yeni adreslerin dizin durumu izlenmeli.
 
