@@ -4,7 +4,7 @@ Bu dal hazırlık içindir. `main` dalına birleştirilmeden ve DNS değiştiril
 
 ## Hazırlık
 
-1. GitHub hesap ayarları → Pages → Verified domains bölümünde `pdrkampus.com` alan adını doğrulayın. GitHub'ın ürettiği TXT kaydını DNS'e ekleyin; değeri tahmin etmeyin.
+1. GitHub hesap ayarları → Pages → Verified domains bölümünde `pdrkampus.com` alan adını doğrulayın. GitHub'ın ürettiği TXT kaydını Squarespace DNS ekranına ekleyin; değeri tahmin etmeyin.
 2. Supabase Authentication → URL Configuration bölümündeki Redirect URLs listesine `https://pdrkampus.com/hesap.html` ekleyin. Bu aşamada mevcut Site URL'yi değiştirmeyin; eski `hesap.html` adresini geçiş süresince listede tutun.
 3. Gizlilik/aydınlatma, iletişim ve materyal paylaşım kurallarının gerçek işletici ve veri akışına göre hazır olduğundan emin olun. Bu metinler için kişi/kurum bilgisi uydurmayın.
 
@@ -12,7 +12,7 @@ Bu dal hazırlık içindir. `main` dalına birleştirilmeden ve DNS değiştiril
 
 1. Bu dalı `main` ile birleştirin. Kök `CNAME` dosyası ve yeni SEO adresleri aynı sürümde yayımlanmalıdır.
 2. GitHub deposunda Settings → Pages → Custom domain alanının `pdrkampus.com` olduğunu kontrol edin. GitHub'ın DNS kontrolünü bekleyin.
-3. DNS sağlayıcısında mevcut Squarespace web kayıtlarını inceleyip GitHub Pages için kök alan adına şu `A` kayıtlarını yönlendirin: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. `www` için `CNAME` hedefi `evrenguless.github.io` olmalıdır; depo adını hedefe eklemeyin. E-posta için kullanılan MX/TXT kayıtlarını değiştirmeyin.
+3. Squarespace Domains dashboard → `pdrkampus.com` → DNS → DNS Settings bölümünde mevcut kayıtları inceleyin. Alan adını yayına yönlendireceğiniz zaman Squarespace'in kök alan adına (`@`) ait web kayıtlarını GitHub Pages'in şu dört `A` kaydıyla değiştirin: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. `www` için `CNAME` hedefi `evrenguless.github.io` olmalıdır; depo adını hedefe eklemeyin. Squarespace Defaults veya çakışan `@`/`www` web kayıtlarının durumunu panelde gördükten sonra karar verin; e-posta için kullanılan MX/TXT, DKIM, SPF ve DMARC kayıtlarına dokunmayın.
 4. Sertifika hazır olduğunda GitHub Pages'te Enforce HTTPS seçeneğini açın.
 5. Yeni adres açıldığında Supabase Site URL'yi `https://pdrkampus.com` yapın; kayıt ve şifre sıfırlama e-postalarını yeni adresle sınayın.
 
@@ -26,4 +26,4 @@ Bu dal hazırlık içindir. `main` dalına birleştirilmeden ve DNS değiştiril
 
 Yerel kontrol: `python3 scripts/check_seo.py` ve `node --test tests/*.mjs`.
 
-Başvuru: [GitHub Pages alan adı](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Supabase Auth yönlendirmeleri](https://supabase.com/docs/guides/auth/redirect-urls), [Google site taşıma](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes).
+Başvuru: [GitHub Pages alan adı](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Squarespace DNS kayıtları](https://support.squarespace.com/hc/en-us/articles/360002101888-Edit-your-domain-s-DNS-records), [Supabase Auth yönlendirmeleri](https://supabase.com/docs/guides/auth/redirect-urls), [Google site taşıma](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes).
