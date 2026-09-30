@@ -1,0 +1,15 @@
+{
+  "name": "PDR Kampüs",
+  "short_name": "PDR Kampüs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f5f0",
+  "theme_color": "#123c31",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
