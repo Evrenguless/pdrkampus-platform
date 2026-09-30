@@ -1,3 +1,10 @@
+const faviconLinks=[
+  ['icon','/assets/logo.png'],
+  ['shortcut icon','/assets/logo.png'],
+  ['apple-touch-icon','/assets/logo.png']
+];
+faviconLinks.forEach(([rel,href])=>{if(document.querySelector('link[rel="'+rel+'"]'))return;const link=document.createElement('link');link.id='pdr-favicon-'+rel.replace(/\s+/g,'-');link.rel=rel;link.href=href;if(rel==='icon')link.type='image/png';document.head.appendChild(link)});
+
 if(!document.querySelector('link[rel="icon"]')){const icon=document.createElement('link');icon.rel='icon';icon.type='image/png';icon.href='/assets/logo.png';document.head.appendChild(icon)}
 if(!document.querySelector('link[rel="apple-touch-icon"]')){const apple=document.createElement('link');apple.rel='apple-touch-icon';apple.href='/assets/logo.png';document.head.appendChild(apple)}
 const button=document.querySelector('#menuButton');
