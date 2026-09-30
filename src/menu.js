@@ -1,3 +1,5 @@
+if(!document.querySelector('link[rel="icon"]')){const icon=document.createElement('link');icon.rel='icon';icon.type='image/png';icon.href='/assets/logo.png';document.head.appendChild(icon)}
+if(!document.querySelector('link[rel="apple-touch-icon"]')){const apple=document.createElement('link');apple.rel='apple-touch-icon';apple.href='/assets/logo.png';document.head.appendChild(apple)}
 const button=document.querySelector('#menuButton');
 const menu=document.querySelector('#mobileMenu');
 function closeMenu(){if(!menu||!button)return;menu.hidden=true;button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Menüyü aç');button.textContent='☰'}
