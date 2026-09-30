@@ -1,0 +1,26 @@
+name: Uptime Monitor
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+jobs:
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check production endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          check() {
+            url="$1"
+            code="$(curl -L --max-time 20 --retry 2 --retry-delay 2 -sS -o /tmp/body -w "%{http_code}" "$url")"
+            echo "$url -> HTTP $code"
+            test "$code" -ge 200 -a "$code" -lt 400
+          }
+          check "https://pdrkampus.com/"
+          check "https://pdrkampus.com/sitemap.xml"
+          check "https://pdrkampus.com/robots.txt"
+          check "https://pdrkampus.com/kutuphane.html"
+          check "https://pdrkampus.com/topluluk.html"
