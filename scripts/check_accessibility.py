@@ -18,15 +18,21 @@ class A11yParser(HTMLParser):
         self.buttons=[]
         self.imgs=[]
         self.html_lang=None
+        self.label_depth=0
     def handle_starttag(self,tag,attrs):
         d=dict(attrs)
         if tag=="html": self.html_lang=d.get("lang")
         if d.get("id"): self.ids.append(d["id"])
-        if tag=="label" and d.get("for"): self.labels_for.add(d["for"])
+        if tag=="label":
+            self.label_depth += 1
+            if d.get("for"): self.labels_for.add(d["for"])
         if tag in ("input","select","textarea"):
-            self.inputs.append((tag,d))
+            self.inputs.append((tag,d,self.label_depth>0))
         if tag=="button": self.buttons.append(d)
         if tag=="img": self.imgs.append(d)
+    def handle_endtag(self,tag):
+        if tag=="label" and self.label_depth:
+            self.label_depth -= 1
 
 for path in files:
     text=path.read_text(encoding="utf-8",errors="replace")
@@ -40,11 +46,11 @@ for path in files:
     for d in p.imgs:
         if "alt" not in d:
             errors.append(f"img alt eksik: {rel} -> {d.get('src','?')}")
-    for tag,d in p.inputs:
+    for tag,d,wrapped in p.inputs:
         typ=(d.get("type") or "").lower()
         if typ in ("hidden","submit","button","reset","image"): continue
         ident=d.get("id")
-        named=bool(d.get("aria-label") or d.get("aria-labelledby") or d.get("title"))
+        named=wrapped or bool(d.get("aria-label") or d.get("aria-labelledby") or d.get("title"))
         if not named and (not ident or ident not in p.labels_for):
             warnings.append(f"Form alanı etiketsiz olabilir: {rel} -> {tag}#{ident or '-'}")
     for d in p.buttons:
