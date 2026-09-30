@@ -18,10 +18,12 @@ class A11yParser(HTMLParser):
         self.buttons=[]
         self.imgs=[]
         self.html_lang=None
+        self.viewport=None
         self.label_depth=0
     def handle_starttag(self,tag,attrs):
         d=dict(attrs)
         if tag=="html": self.html_lang=d.get("lang")
+        if tag=="meta" and (d.get("name") or "").lower()=="viewport": self.viewport=d.get("content")
         if d.get("id"): self.ids.append(d["id"])
         if tag=="label":
             self.label_depth += 1
@@ -40,6 +42,8 @@ for path in files:
     rel=path.relative_to(ROOT)
     if p.html_lang!="tr":
         warnings.append(f"HTML lang tr değil: {rel} ({p.html_lang})")
+    if not p.viewport or "width=device-width" not in p.viewport.replace(" ","").lower():
+        errors.append(f"Mobil viewport eksik/hatalı: {rel}")
     dup={x for x in p.ids if p.ids.count(x)>1}
     for x in sorted(dup):
         errors.append(f"Tekrarlanan id: {rel} -> {x}")
