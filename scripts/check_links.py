@@ -11,7 +11,7 @@ BASE = "https://pdrkampus.com/"
 SKIP_SCHEMES = ("mailto:", "tel:", "javascript:", "data:")
 HTML_FILES = list(ROOT.rglob("*.html"))
 errors, warnings = [], []
-external = set()
+external = {}
 
 class Parser(HTMLParser):
     def __init__(self):
@@ -55,7 +55,7 @@ for source, parser in parsers.items():
             continue
         parsed=urlparse(ref)
         if parsed.scheme in ("http","https") and not ref.startswith(BASE):
-            external.add(ref.split("#",1)[0])
+            external.setdefault(ref.split("#",1)[0], set()).add(str(source.relative_to(ROOT)))
             continue
         try:
             target=local_target(source,ref)
@@ -104,9 +104,9 @@ for url in sorted(external):
     if status is None:
         warnings.append(f"Dış bağlantı doğrulanamadı: {url} ({detail})")
     elif status in (404,410):
-        errors.append(f"Kırık dış bağlantı HTTP {status}: {url}")
+        errors.append(f"Kırık dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
     elif status>=400:
-        warnings.append(f"Dış bağlantı HTTP {status}: {url}")
+        warnings.append(f"Dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
     elif detail!=url:
         pass
 
