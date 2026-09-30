@@ -7,7 +7,7 @@ SKIP={".git","node_modules"}
 patterns=[
     ("Supabase service role", re.compile(r"service[_-]?role", re.I)),
     ("Supabase secret key", re.compile(r"sb_secret_[A-Za-z0-9_-]+")),
-    ("Service role env", re.compile(r"SUPABASE_SERVICE_ROLE(?:_KEY)?", re.I)),
+    ("Service role assignment", re.compile(r"SUPABASE_SERVICE_ROLE(?:_KEY)?\\s*[:=]\\s*[\\"\'][^\\"\']{16,}[\\"\']", re.I)),
     ("Private key block", re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
 ]
 allowed_files={
