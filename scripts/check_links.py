@@ -71,6 +71,10 @@ for source, parser in parsers.items():
             errors.append(f"Eksik iç hedef: {source.relative_to(ROOT)} -> {ref}")
             continue
         if "#" in ref and target.suffix.lower()==".html":
+            # kutuphane.html fragmentleri JS ile data/library.json ve data/forms.json kimliklerinden çözülür.
+            # Bunlar scripts/check_seo.py tarafından ayrıca doğrulanıyor.
+            if target.name == "kutuphane.html":
+                continue
             frag=unquote(ref.split("#",1)[1])
             if frag:
                 tp=parsers.get(target)
