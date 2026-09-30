@@ -20,7 +20,7 @@ const footerBottom=document.querySelector('.campus-footer-bottom');
 if(footerBottom){
  let links=footerBottom.querySelector('.footer-policy-links');
  if(!links){links=document.createElement('nav');links.className='footer-policy-links';links.setAttribute('aria-label','Gizlilik ve yasal bilgiler');const replace=footerBottom.querySelector('span:nth-child(2)');replace?replace.replaceWith(links):footerBottom.insertBefore(links,footerBottom.lastElementChild)}
- links.innerHTML='<a href="/iletisim.html">İletişim</a><a href="/gizlilik.html">Gizlilik</a><a href="/kvkk-aydinlatma.html">KVKK</a><a href="/cerez-politikasi.html">Çerezler</a><a href="/kullanim-kosullari.html">Kullanım koşulları</a><a href="/paylasim-kurallari.html">Paylaşım kuralları</a><button type="button" class="footer-consent-button" data-open-consent>Çerez tercihleri</button>';
+ links.innerHTML='<a href="/hakkimizda.html">Hakkımızda</a><a href="/iletisim.html">İletişim</a><a href="/gizlilik.html">Gizlilik</a><a href="/kvkk-aydinlatma.html">KVKK</a><a href="/cerez-politikasi.html">Çerezler</a><a href="/kullanim-kosullari.html">Kullanım koşulları</a><a href="/paylasim-kurallari.html">Paylaşım kuralları</a><button type="button" class="footer-consent-button" data-open-consent>Çerez tercihleri</button>';
 }
 
 const CONSENT_KEY='pdrkampus_consent_v1';
