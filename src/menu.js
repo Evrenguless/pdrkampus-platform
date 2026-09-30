@@ -32,10 +32,12 @@ const modal=document.createElement('div');modal.className='consent-modal';modal.
 modal.innerHTML='<div class="consent-panel" role="dialog" aria-modal="true" aria-labelledby="consentTitle"><h2 id="consentTitle">Çerez ve depolama tercihleri</h2><p>Tercihini istediğin zaman değiştirebilirsin.</p><div class="consent-row"><div><strong>Zorunlu</strong><small>Oturum, güvenlik ve tercih kaydı gibi temel işlevler. Kapatılamaz.</small></div><input class="consent-toggle" type="checkbox" checked disabled aria-label="Zorunlu depolama etkin"></div><div class="consent-row"><div><strong>Analitik</strong><small>Kullanımın toplu ölçümü için isteğe bağlı kategori. Şu anda etkin bir analitik aracı yoktur.</small></div><input id="consentAnalytics" class="consent-toggle" type="checkbox" aria-label="Analitik tercihi"></div><div class="consent-actions"><button type="button" data-consent-close>Kapat</button><button type="button" class="primary" data-consent-save>Tercihi kaydet</button></div></div>';
 document.body.appendChild(modal);
 
-function openConsent(){const current=readConsent();modal.querySelector('#consentAnalytics').checked=Boolean(current?.analytics);modal.hidden=false;modal.querySelector('#consentAnalytics').focus()}
-function closeConsent(){modal.hidden=true}
+let consentOpener=null;
+function consentFocusables(){return [...modal.querySelectorAll('button,input:not([disabled]),a[href],[tabindex]:not([tabindex="-1"])')].filter(el=>!el.hidden)}
+function openConsent(){const current=readConsent();consentOpener=document.activeElement;modal.querySelector('#consentAnalytics').checked=Boolean(current?.analytics);modal.hidden=false;modal.querySelector('#consentAnalytics').focus()}
+function closeConsent(){modal.hidden=true;const target=consentOpener;consentOpener=null;if(target&&typeof target.focus==='function')target.focus()}
 if(readConsent())banner.hidden=true;
 banner.addEventListener('click',e=>{const a=e.target.closest('[data-consent]')?.dataset.consent;if(!a)return;if(a==='manage')return openConsent();saveConsent(a==='all');banner.hidden=true});
 document.addEventListener('click',e=>{if(e.target.closest('[data-open-consent]')){e.preventDefault();openConsent()}});
 modal.addEventListener('click',e=>{if(e.target===modal||e.target.closest('[data-consent-close]'))closeConsent();if(e.target.closest('[data-consent-save]')){saveConsent(modal.querySelector('#consentAnalytics').checked);banner.hidden=true;closeConsent()}});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeConsent()});
+document.addEventListener('keydown',e=>{if(modal.hidden)return;if(e.key==='Escape'){e.preventDefault();closeConsent();return}if(e.key==='Tab'){const items=consentFocusables();if(!items.length)return;const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
