@@ -1,3 +1,11 @@
+function normalizeIndexUrl(){
+  if(location.pathname==='/index.html'){
+    history.replaceState(null,'',location.search||location.hash?'/'+location.search+location.hash:'/');
+  }
+  document.querySelectorAll('a[href="index.html"],a[href="/index.html"]').forEach(a=>a.setAttribute('href','/'));
+}
+normalizeIndexUrl();
+
 const faviconLinks=[
   ['icon','/assets/logo.png'],
   ['shortcut icon','/assets/logo.png'],
