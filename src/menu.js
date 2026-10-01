@@ -23,6 +23,17 @@ if(footerBottom){
  links.innerHTML='<a href="/hakkimizda.html">Hakkımızda</a><a href="/iletisim.html">İletişim</a><a href="/gizlilik.html">Gizlilik</a><a href="/kvkk-aydinlatma.html">KVKK</a><a href="/cerez-politikasi.html">Çerezler</a><a href="/kullanim-kosullari.html">Kullanım koşulları</a><a href="/paylasim-kurallari.html">Paylaşım kuralları</a><button type="button" class="footer-consent-button" data-open-consent>Çerez tercihleri</button>';
 }
 
+
+const footerGroups=[...document.querySelectorAll('.campus-footer-links')];
+const personalFooter=footerGroups.find(group=>group.querySelector('h2')?.textContent?.trim()==='KİŞİSEL ALAN');
+if(personalFooter&&!personalFooter.querySelector('a[href*="analiz.pdrkampus.com"]')){
+  const analysisLink=document.createElement('a');
+  analysisLink.href='https://analiz.pdrkampus.com/';
+  analysisLink.textContent='AGS/PDR Puan Hesaplama';
+  analysisLink.setAttribute('aria-label','AGS ve PDR puan hesaplama aracına git');
+  personalFooter.appendChild(analysisLink);
+}
+
 const CONSENT_KEY='pdrkampus_consent_v1';
 const consentStyle=document.createElement('style');
 consentStyle.textContent=`.consent-banner{position:fixed;z-index:9999;left:18px;right:18px;bottom:18px;max-width:760px;margin:auto;background:#fff;border:1px solid rgba(18,60,49,.16);border-radius:18px;padding:18px;box-shadow:0 22px 70px rgba(0,0,0,.18);font:inherit}.consent-banner[hidden],.consent-modal[hidden]{display:none!important}.consent-banner h2,.consent-modal h2{margin:0 0 8px;font-size:1.15rem}.consent-banner p,.consent-modal p{margin:0 0 14px;line-height:1.55;font-size:.92rem}.consent-actions{display:flex;flex-wrap:wrap;gap:9px}.consent-actions button,.footer-consent-button{font:inherit;cursor:pointer}.consent-actions button{border:1px solid #123c31;border-radius:999px;padding:9px 14px;background:#fff;color:#123c31;font-weight:700}.consent-actions .primary{background:#123c31;color:#fff}.consent-modal{position:fixed;z-index:10000;inset:0;background:rgba(8,22,18,.48);display:grid;place-items:center;padding:20px}.consent-panel{width:min(620px,100%);max-height:85vh;overflow:auto;background:#fff;border-radius:20px;padding:24px;box-shadow:0 25px 90px rgba(0,0,0,.25)}.consent-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding:15px 0;border-top:1px solid rgba(18,60,49,.12)}.consent-row strong{display:block;margin-bottom:5px}.consent-row small{display:block;line-height:1.45;max-width:420px}.consent-toggle{min-width:46px;height:26px}.footer-consent-button{border:0;background:none;padding:0;color:inherit;text-decoration:underline;text-underline-offset:3px}@media(max-width:600px){.consent-banner{left:10px;right:10px;bottom:10px}.consent-actions button{flex:1 1 auto}}`;
