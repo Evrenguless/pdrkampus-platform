@@ -153,10 +153,31 @@
 .featured-stand-track{display:flex;gap:10px;width:max-content}
 .featured-stand-card{scroll-snap-align:start;width:224px;min-height:220px;display:flex;flex-direction:column;overflow:hidden;border:1px solid #dde7dd;border-radius:13px;background:#fff;box-shadow:0 6px 16px rgba(27,57,42,.045);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
 .featured-stand-card:hover{transform:translateY(-2px);border-color:#b7cfbd;box-shadow:0 16px 32px rgba(27,57,42,.09)}
-.featured-stand-preview{position:relative;height:112px;overflow:hidden;background:#eef3ed;border-bottom:1px solid #e4ebe3}
-.featured-stand-preview iframe{width:145%;height:145%;border:0;transform:scale(.69);transform-origin:0 0;pointer-events:none;background:white}
-.featured-stand-preview::after{content:"";position:absolute;inset:auto 0 0;height:42px;background:linear-gradient(transparent,rgba(250,250,246,.7));pointer-events:none}
-.featured-stand-filetype{position:absolute;left:9px;bottom:7px;z-index:2;padding:4px 7px;border-radius:999px;background:#fff5ef;color:#a45844;font:800 8px/1 Manrope,sans-serif;box-shadow:0 2px 8px #0001}
+.featured-stand-preview{position:relative;height:112px;overflow:hidden;border-bottom:1px solid #e4ebe3}
+.featured-cover{--fc-accent:#e4aa45;--fc-soft:#fff2d7;--fc-deep:#865d18;background:linear-gradient(145deg,#fffdf8 0%,var(--fc-soft) 100%);padding:10px 11px}
+.featured-cover--amber{--fc-accent:#f2b54e;--fc-soft:#fff1d1;--fc-deep:#865713}
+.featured-cover--blue{--fc-accent:#6aa8f5;--fc-soft:#eaf3ff;--fc-deep:#235fa6}
+.featured-cover--sky{--fc-accent:#63b8f2;--fc-soft:#eaf8ff;--fc-deep:#2574a6}
+.featured-cover--green{--fc-accent:#69b879;--fc-soft:#edf8ee;--fc-deep:#2f7740}
+.featured-cover--violet{--fc-accent:#9e7ce8;--fc-soft:#f1ecff;--fc-deep:#6446a5}
+.featured-cover--coral{--fc-accent:#ef7e82;--fc-soft:#fff0f0;--fc-deep:#a84850}
+.featured-cover::before,.featured-cover::after{content:"";position:absolute;border-radius:50%;background:color-mix(in srgb,var(--fc-accent) 28%,transparent);pointer-events:none}
+.featured-cover::before{width:82px;height:82px;right:-30px;top:-40px}
+.featured-cover::after{width:108px;height:108px;left:-54px;bottom:-70px}
+.featured-cover-top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.featured-cover-brand{display:inline-flex;align-items:center;gap:5px;color:#173f34;font:800 7px/1 Manrope,sans-serif;letter-spacing:.04em}
+.featured-cover-brand img{width:16px;height:16px;object-fit:contain}
+.featured-cover-category{max-width:116px;padding:4px 6px;border-radius:999px;background:var(--fc-accent);color:white;font:800 6px/1 Manrope,sans-serif;letter-spacing:.08em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.featured-cover-title{position:relative;z-index:2;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;max-width:172px;margin-top:8px;color:#183354;font:800 14px/1.02 Manrope,sans-serif;letter-spacing:-.045em}
+.featured-cover-art{position:absolute;z-index:1;right:10px;bottom:8px;width:62px;height:38px}
+.featured-cover-art-icon{position:absolute;right:10px;bottom:2px;z-index:3;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:white;color:var(--fc-deep);font:800 16px/1 Manrope,sans-serif;box-shadow:0 4px 10px rgba(30,58,42,.10)}
+.featured-cover-art i{position:absolute;bottom:0;width:34px;height:18px;border-radius:50% 50% 12px 12px;background:color-mix(in srgb,var(--fc-accent) 72%,white)}
+.featured-cover-art i:nth-child(1){right:0;transform:rotate(-8deg)}
+.featured-cover-art i:nth-child(2){right:18px;bottom:-2px;transform:rotate(8deg);opacity:.72}
+.featured-cover-art i:nth-child(3){right:33px;bottom:2px;transform:rotate(-12deg);opacity:.42}
+.featured-cover .featured-stand-filetype{background:rgba(255,255,255,.88);color:var(--fc-deep)}
+
+.featured-stand-filetype{position:absolute;left:9px;bottom:7px;z-index:3;padding:4px 7px;border-radius:999px;background:#fff5ef;color:#a45844;font:800 8px/1 Manrope,sans-serif;box-shadow:0 2px 8px #0001}
 .featured-stand-card-body{display:flex;flex-direction:column;flex:1;padding:10px 11px 11px}
 .featured-stand-meta{display:flex;align-items:center;gap:6px;margin-bottom:6px}
 .featured-stand-level{display:inline-flex;padding:4px 7px;border-radius:999px;background:#e9f2ec;color:#35664d;font:750 8px/1 Manrope,sans-serif}
