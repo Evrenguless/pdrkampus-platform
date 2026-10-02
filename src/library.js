@@ -7,6 +7,7 @@ const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&
 const client=authConfigured&&window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 const bucket='community-documents';
 const topicButtons=[
+ {label:'Selamlaşma',query:'selamlaşma'},
  {label:'Akran zorbalığı',query:'akran zorbalığı'},
  {label:'Okul iklimi',query:'güvenli okul iklimi'},
  {label:'Mahremiyet',query:'mahremiyet eğitimi'},
@@ -143,7 +144,7 @@ $('#closeViewer').addEventListener('click',closeViewer);
 $('#viewerDialog').addEventListener('click',event=>{if(event.target===$('#viewerDialog'))closeViewer()});
 
 try{
- const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20260929-1'),getCuratedResources()]);
+ const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20261002-1'),getCuratedResources()]);
  documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library]);
  setTypeOptions();setAreaOptions();
  const url=new URL(location.href);
