@@ -139,19 +139,19 @@
 /* Header-to-hero featured resource stand */
 .featured-stand{background:#fafaf6;padding:10px 14px 2px;color:#123c31}
 .featured-stand-shell{max-width:1500px;margin:0 auto;padding:13px 18px 11px;border:1px solid #e2e9e1;border-radius:17px;background:linear-gradient(110deg,#f7f8f2 0%,#fbfaf6 58%,#f0f5ef 100%);box-shadow:0 8px 24px rgba(29,68,48,.045);overflow:hidden}
-.featured-stand-head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 38px 10px}
-.featured-stand-title{display:flex;align-items:center;gap:14px;min-width:0}
-.featured-stand-mark{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#e4efe7;color:#1f6c50;font-size:12px;flex:none}
+.featured-stand-head{position:relative;display:flex;align-items:center;justify-content:center;gap:18px;margin:0 38px 10px;text-align:center}
+.featured-stand-title{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0}
 .featured-stand-kicker{display:block;margin-bottom:1px;color:#6c8a76;font:800 7px/1.2 Manrope,sans-serif;letter-spacing:.16em}
 .featured-stand-title h2{margin:0;color:#123c31;font:600 19px/1.1 Georgia,serif;letter-spacing:-.03em;white-space:nowrap}
-.featured-stand-title p{max-width:520px;margin:0 0 0 8px;padding-left:16px;border-left:1px solid #c8d6cb;color:#718078;font-size:10px;line-height:1.45}
-.featured-stand-all{flex:none;color:#245d47;font:800 10px/1.3 Manrope,sans-serif;text-decoration:none}
+.featured-stand-title p{max-width:620px;margin:4px 0 0;padding:0;border:0;color:#718078;font-size:10px;line-height:1.45}
+.featured-stand-all{position:absolute;right:0;top:50%;transform:translateY(-50%);flex:none;color:#245d47;font:800 10px/1.3 Manrope,sans-serif;text-decoration:none}
 .featured-stand-all:hover{text-decoration:underline;text-underline-offset:3px}
 .featured-stand-stage{position:relative}
-.featured-stand-viewport{overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:1px 38px 4px}
+.featured-stand-viewport{overflow-x:auto;scroll-snap-type:none;scroll-behavior:auto;scrollbar-width:none;padding:1px 38px 4px;cursor:grab;overscroll-behavior-x:contain}
 .featured-stand-viewport::-webkit-scrollbar{display:none}
+.featured-stand-viewport.is-dragging{cursor:grabbing;user-select:none}
 .featured-stand-track{display:flex;gap:10px;width:max-content}
-.featured-stand-card{scroll-snap-align:start;width:224px;min-height:220px;display:flex;flex-direction:column;overflow:hidden;border:1px solid #dde7dd;border-radius:13px;background:#fff;box-shadow:0 6px 16px rgba(27,57,42,.045);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.featured-stand-card{width:224px;min-height:220px;display:flex;flex-direction:column;overflow:hidden;border:1px solid #dde7dd;border-radius:13px;background:#fff;box-shadow:0 6px 16px rgba(27,57,42,.045);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
 .featured-stand-card:hover{transform:translateY(-2px);border-color:#b7cfbd;box-shadow:0 16px 32px rgba(27,57,42,.09)}
 .featured-stand-preview{position:relative;height:112px;overflow:hidden;border-bottom:1px solid #e4ebe3}
 .featured-cover{--fc-accent:#e4aa45;--fc-soft:#fff2d7;--fc-deep:#865d18;background:linear-gradient(145deg,#fffdf8 0%,var(--fc-soft) 100%);padding:10px 11px}
@@ -193,18 +193,17 @@
 .featured-stand-dots i.is-active{background:#1e6650}
 .featured-stand-loading{width:100%;padding:55px 20px;color:#718078;text-align:center}
 @media(max-width:900px){
- .featured-stand-head{margin:0 32px 9px;align-items:flex-start}
- .featured-stand-title p{display:none}
+ .featured-stand-head{margin:0 32px 9px;align-items:center}
+ .featured-stand-title p{display:block}
  .featured-stand-card{width:212px}
 }
 @media(max-width:700px){
  .featured-stand{padding:7px 7px 0}
  .featured-stand-shell{padding:11px 6px 9px;border-radius:14px}
  .featured-stand-head{margin:0 29px 8px;gap:10px}
- .featured-stand-mark{display:none}
- .featured-stand-kicker{font-size:6px}
+  .featured-stand-kicker{font-size:6px}
  .featured-stand-title h2{font-size:17px;white-space:normal}
- .featured-stand-all{font-size:9px}
+ .featured-stand-all{position:static;transform:none;font-size:9px;margin-left:8px}
  .featured-stand-viewport{padding:1px 29px 4px}
  .featured-stand-card{width:min(68vw,230px)}
  .featured-stand-preview{height:104px}
