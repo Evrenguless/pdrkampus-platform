@@ -61,6 +61,8 @@ if(featuredStandTrack&&featuredStandViewport){
  featuredStandTrack.addEventListener('click',event=>{
    const button=event.target.closest('.featured-stand-open');
    if(!button)return;
+   event.preventDefault();
+   event.stopPropagation();
    const card=button.closest('.featured-stand-card');
    if(!card)return;
    openFeatured({
@@ -112,7 +114,7 @@ if(featuredStandTrack&&featuredStandViewport){
  featuredStandViewport.addEventListener('focusout',resume);
 
  featuredStandViewport.addEventListener('pointerdown',event=>{
-   if(event.pointerType==='touch')return;
+   if(event.pointerType==='touch'||event.target.closest('button,a'))return;
    dragging=true;paused=true;dragStartX=event.clientX;dragStartScroll=featuredStandViewport.scrollLeft;
    featuredStandViewport.classList.add('is-dragging');
    featuredStandViewport.setPointerCapture?.(event.pointerId);
