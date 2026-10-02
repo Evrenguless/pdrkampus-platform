@@ -84,7 +84,7 @@ if(featuredStandTrack&&featuredStandViewport){
  let dragStartScroll=0;
  let raf=0;
  let last=performance.now();
- const speed=.026;
+ const speed=.065;
 
  const loop=(now)=>{
    const dt=Math.min(40,now-last);
@@ -124,10 +124,13 @@ if(featuredStandTrack&&featuredStandViewport){
  featuredStandViewport.addEventListener('pointerup',endDrag);
  featuredStandViewport.addEventListener('pointercancel',endDrag);
 
+ let nudgeTimer=null;
  const nudge=dir=>{
-   const card=featuredStandTrack.querySelector('.featured-stand-card');
-   const step=(card?.getBoundingClientRect().width||220)+10;
+   paused=true;
+   clearTimeout(nudgeTimer);
+   const step=Math.max(240,featuredStandViewport.clientWidth*.72);
    featuredStandViewport.scrollBy({left:dir*step,behavior:'smooth'});
+   nudgeTimer=setTimeout(()=>{paused=false;last=performance.now()},850);
  };
  featuredStandPrev?.addEventListener('click',()=>nudge(-1));
  featuredStandNext?.addEventListener('click',()=>nudge(1));
