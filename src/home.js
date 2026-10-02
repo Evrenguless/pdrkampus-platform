@@ -50,6 +50,18 @@ if(featuredStandTrack&&featuredStandViewport){
  const fallback=(Array.isArray(data)?data:[]).filter(item=>/selam/i.test([item.title,item.topic].join(' '))&&item.fileType==='PDF');
  const resources=[...items,...fallback.filter(x=>!items.some(y=>y.id===x.id))].slice(0,8);
 
+ const featuredCoverMeta=(item)=>{
+   const hay=[item.title,item.type,item.area,item.topic].join(' ').toLocaleLowerCase('tr-TR');
+   if(hay.includes('veli')) return {theme:'violet',label:'VELİ ÇALIŞMALARI',icon:'♡'};
+   if(hay.includes('yıllık plan')||hay.includes('rehberlik program')) return {theme:'blue',label:'REHBERLİK PROGRAMI',icon:'▦'};
+   if(hay.includes('çalışma yapra')||hay.includes('form')) return {theme:'sky',label:'ÇALIŞMA YAPRAKLARI',icon:'✓'};
+   if(hay.includes('sosyal beceri')||hay.includes('duygu')||hay.includes('iletişim')) return {theme:'coral',label:'DUYGU VE DAVRANIŞ',icon:'☻'};
+   if(hay.includes('etkinlik')||hay.includes('sınıf')) return {theme:'green',label:'SINIF İÇİ UYGULAMA',icon:'✎'};
+   if(hay.includes('broşür')) return {theme:'amber',label:'BİLGİLENDİRME BROŞÜRÜ',icon:'✦'};
+   return {theme:'amber',label:'SELAMLAŞMA',icon:'☼'};
+ };
+ const coverTitle=(title)=>String(title||'Kaynak').replace(/\s*·\s*2026-2027\s*$/,'').trim();
+
  const openFeatured=(item)=>{
    const dialog=document.querySelector('#viewerDialog');
    if(!dialog)return window.open(item.file,'_blank','noopener');
@@ -63,8 +75,16 @@ if(featuredStandTrack&&featuredStandViewport){
  if(resources.length){
    featuredStandTrack.innerHTML=resources.map((item,index)=>`
     <article class="featured-stand-card" data-featured-index="${index}">
-      <div class="featured-stand-preview" aria-hidden="true">
-        <iframe src="${esc(item.file)}#toolbar=0&navpanes=0&scrollbar=0&page=1" tabindex="-1" loading="${index<4?'eager':'lazy'}"></iframe>
+      <div class="featured-stand-preview featured-cover featured-cover--${featuredCoverMeta(item).theme}" aria-hidden="true">
+        <div class="featured-cover-top">
+          <span class="featured-cover-brand"><img src="assets/logo.png" alt="">PDR KAMPÜS</span>
+          <span class="featured-cover-category">${esc(featuredCoverMeta(item).label)}</span>
+        </div>
+        <strong class="featured-cover-title">${esc(coverTitle(item.title))}</strong>
+        <div class="featured-cover-art" aria-hidden="true">
+          <span class="featured-cover-art-icon">${featuredCoverMeta(item).icon}</span>
+          <i></i><i></i><i></i>
+        </div>
         <span class="featured-stand-filetype">${esc(item.fileType||'PDF')}</span>
       </div>
       <div class="featured-stand-card-body">
