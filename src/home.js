@@ -26,3 +26,102 @@ if(host){
   else host.innerHTML=data.map(x=>`<a class="campus-entry" href="meslektasima-sor.html#soru-${encodeURIComponent(x.id)}"><span class="campus-entry-meta">${esc(x.category)}${x.school_level?' · '+esc(x.school_level):''}</span><strong>${esc(x.title)}</strong></a>`).join('');
  }
 }
+
+
+const featuredStandTrack=document.querySelector('#featuredStandTrack');
+const featuredStandViewport=document.querySelector('#featuredStandViewport');
+const featuredStandDots=document.querySelector('#featuredStandDots');
+const featuredStandPrev=document.querySelector('.featured-stand-prev');
+const featuredStandNext=document.querySelector('.featured-stand-next');
+
+if(featuredStandTrack&&featuredStandViewport){
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const data=await fetch('data/library.json?v=20261002-2').then(r=>r.ok?r.json():[]).catch(()=>[]);
+ const preferred=[
+   'cizre-selamlasma-okuloncesi-ilkokul-etkinlik-2026',
+   'cizre-selamlasma-ortaokul-lise-etkinlik-2026',
+   'cizre-selamlasma-okuloncesi-ilkokul-veli-brosur-2026',
+   'izmit-selamlasma-akran-zorbaligi-ogretmen-brosuru-2026',
+   'avcilar-selamlasma-el-kitapcigi-2026',
+   'meb-meslek-gorgu-protokol-selamlasma-2025'
+ ];
+ const byId=new Map((Array.isArray(data)?data:[]).map(item=>[item.id,item]));
+ const items=preferred.map(id=>byId.get(id)).filter(Boolean).filter(item=>item.fileType==='PDF');
+ const fallback=(Array.isArray(data)?data:[]).filter(item=>/selam/i.test([item.title,item.topic].join(' '))&&item.fileType==='PDF');
+ const resources=[...items,...fallback.filter(x=>!items.some(y=>y.id===x.id))].slice(0,8);
+
+ const openFeatured=(item)=>{
+   const dialog=document.querySelector('#viewerDialog');
+   if(!dialog)return window.open(item.file,'_blank','noopener');
+   document.querySelector('#viewerCode').textContent=[item.type,item.source].filter(Boolean).join(' · ');
+   document.querySelector('#viewerTitle').textContent=item.title;
+   document.querySelector('#viewerOpen').href=item.file;
+   document.querySelector('#viewerBody').innerHTML='<iframe title="'+esc(item.title)+'" src="'+esc(item.file)+'#toolbar=1" loading="lazy"></iframe>';
+   dialog.showModal();
+ };
+
+ if(resources.length){
+   featuredStandTrack.innerHTML=resources.map((item,index)=>`
+    <article class="featured-stand-card" data-featured-index="${index}">
+      <div class="featured-stand-preview" aria-hidden="true">
+        <iframe src="${esc(item.file)}#toolbar=0&navpanes=0&scrollbar=0&page=1" tabindex="-1" loading="${index<4?'eager':'lazy'}"></iframe>
+        <span class="featured-stand-filetype">${esc(item.fileType||'PDF')}</span>
+      </div>
+      <div class="featured-stand-card-body">
+        <div class="featured-stand-meta"><span class="featured-stand-level">${esc(item.level||'Tüm kademeler')}</span></div>
+        <h3>${esc(item.title)}</h3>
+        <p class="featured-stand-source">${esc(item.source||'Resmî kaynak')}</p>
+        <button type="button" class="featured-stand-open" data-featured-open="${esc(item.id)}">Kaynağı incele</button>
+      </div>
+    </article>`).join('');
+
+   featuredStandDots.innerHTML=resources.map((_,i)=>'<i class="'+(i===0?'is-active':'')+'"></i>').join('');
+   const cards=()=>[...featuredStandTrack.querySelectorAll('.featured-stand-card')];
+   const step=()=>{
+     const first=cards()[0];
+     return first?first.getBoundingClientRect().width+12:280;
+   };
+   const updateDots=()=>{
+     const s=step();
+     const idx=Math.max(0,Math.min(resources.length-1,Math.round(featuredStandViewport.scrollLeft/s)));
+     [...featuredStandDots.children].forEach((dot,i)=>dot.classList.toggle('is-active',i===idx));
+   };
+   const go=dir=>{
+     const s=step();
+     const max=featuredStandViewport.scrollWidth-featuredStandViewport.clientWidth;
+     if(dir>0&&featuredStandViewport.scrollLeft+s>=max-4) featuredStandViewport.scrollTo({left:0,behavior:'smooth'});
+     else if(dir<0&&featuredStandViewport.scrollLeft<=4) featuredStandViewport.scrollTo({left:max,behavior:'smooth'});
+     else featuredStandViewport.scrollBy({left:dir*s,behavior:'smooth'});
+   };
+
+   featuredStandNext?.addEventListener('click',()=>go(1));
+   featuredStandPrev?.addEventListener('click',()=>go(-1));
+   featuredStandViewport.addEventListener('scroll',()=>requestAnimationFrame(updateDots),{passive:true});
+   featuredStandTrack.addEventListener('click',e=>{
+     const id=e.target.closest('[data-featured-open]')?.dataset.featuredOpen;
+     if(!id)return;
+     const item=resources.find(x=>x.id===id);
+     if(item)openFeatured(item);
+   });
+
+   let timer=null;
+   const start=()=>{
+     if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+     clearInterval(timer);
+     timer=setInterval(()=>go(1),4300);
+   };
+   const stop=()=>{clearInterval(timer);timer=null};
+   start();
+   featuredStandViewport.addEventListener('mouseenter',stop);
+   featuredStandViewport.addEventListener('mouseleave',start);
+   featuredStandViewport.addEventListener('focusin',stop);
+   featuredStandViewport.addEventListener('focusout',start);
+   featuredStandViewport.addEventListener('pointerdown',stop);
+   featuredStandViewport.addEventListener('pointerup',start);
+   document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
+ }else{
+   featuredStandTrack.innerHTML='<p class="featured-stand-loading">Öne çıkan kaynaklar hazırlanıyor.</p>';
+   featuredStandPrev.hidden=true;
+   featuredStandNext.hidden=true;
+ }
+}
