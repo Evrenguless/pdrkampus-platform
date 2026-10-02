@@ -84,7 +84,7 @@ if(featuredStandTrack&&featuredStandViewport){
  let dragStartScroll=0;
  let raf=0;
  let last=performance.now();
- const speed=.065;
+ const speed=.038;
 
  const loop=(now)=>{
    const dt=Math.min(40,now-last);
