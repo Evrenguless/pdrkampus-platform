@@ -200,10 +200,12 @@
 @media(max-width:700px){
  .featured-stand{padding:7px 7px 0}
  .featured-stand-shell{padding:11px 6px 9px;border-radius:14px}
- .featured-stand-head{margin:0 29px 8px;gap:10px}
-  .featured-stand-kicker{font-size:6px}
- .featured-stand-title h2{font-size:17px;white-space:normal}
- .featured-stand-all{position:static;transform:none;font-size:9px;margin-left:8px}
+ .featured-stand-head{margin:0 18px 10px;gap:6px;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+ .featured-stand-title{width:100%;align-items:center}
+ .featured-stand-kicker{font-size:6px}
+ .featured-stand-title h2{font-size:17px;white-space:normal;text-align:center}
+ .featured-stand-title p{max-width:290px;margin:4px auto 0;text-align:center}
+ .featured-stand-all{position:static;transform:none;font-size:9px;margin:2px 0 0;text-align:center}
  .featured-stand-viewport{padding:1px 29px 4px}
  .featured-stand-card{width:min(68vw,230px)}
  .featured-stand-preview{height:104px}
