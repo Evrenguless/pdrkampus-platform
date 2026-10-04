@@ -213,3 +213,19 @@
  .featured-stand-prev{left:0}.featured-stand-next{right:0}
 }
 @media(prefers-reduced-motion:reduce){.featured-stand-card{transition:none}.featured-stand-viewport{scroll-behavior:auto}}
+
+/* Keep resource search prominent on the first screen. */
+.home-stage{padding:38px 24px 36px}
+.home-stage .eyebrow{margin-bottom:16px}
+.home-stage h1{font-size:clamp(36px,4.2vw,58px)}
+.home-stage .lead{margin:16px auto 24px}
+.home-stage .search{border:2px solid #4d927c;box-shadow:0 10px 28px rgba(29,68,48,.10)}
+.home-stage .search input{min-height:58px;font-size:17px}
+.home-stage .search button{min-height:58px}
+@media(max-width:700px){
+ .home-stage{padding:28px 18px 30px}
+ .home-stage h1{font-size:clamp(32px,8.5vw,44px)}
+ .home-stage .lead{margin:14px auto 20px;font-size:14px}
+ .home-stage .search input{min-height:50px;font-size:16px}
+ .home-stage .search button{min-height:50px}
+}
