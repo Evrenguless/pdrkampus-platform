@@ -1,3 +1,4 @@
+import {readLibraryUrl,writeLibraryUrl} from './library-url-state.js';
 import { libraryDetailLinks } from './library-detail-links.js';
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 import {getCuratedResources} from './curated.js?v=20260926-1';
@@ -96,7 +97,7 @@ function render(){
  const rows=documents.filter(item=>(!state.type||item.type===state.type)&&(!state.area||item.area===state.area)&&(!state.source||item.origin===state.source)&&(!state.level||item.level===state.level||item.level==='Tüm kademeler'||item.levels?.includes(state.level)))
   .map(item=>({item,score:score(item,state.query,parsed)})).filter(row=>row.score>0)
   .sort((a,b)=>b.score-a.score||a.item.title.localeCompare(b.item.title,'tr')).map(row=>row.item);
- const target=decodeURIComponent(location.hash.slice(1));
+ let target='';try{target=decodeURIComponent(location.hash.slice(1))}catch{}
  if(target){const position=rows.findIndex(item=>(item.kind==='member'?'belge-'+item.id:item.id)===target);if(position>=state.limit)state.limit=position+1}
  $('#libraryCount').textContent=parsed.topic?`${rows.length} kaynak · ${parsed.topic.name}`:`${rows.length} kaynak${state.query?' bulundu':' gösteriliyor'}`;
  $('#libraryGrid').innerHTML=rows.length?rows.slice(0,state.limit).map(card).join(''):'<p class="empty">Bu ölçütlerde kaynak bulunamadı. Aramayı veya filtreleri değiştir.</p>';
@@ -104,7 +105,18 @@ function render(){
  $('#libraryMore').textContent=`Daha fazla göster · ${rows.length-state.limit} kayıt`;
  document.querySelectorAll('[data-library-source]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.librarySource===state.source)));
  if(target)requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({block:'center'}));
+ const next=writeLibraryUrl(new URL(location.href),state);if(next.href!==location.href)history.replaceState(null,'',next);
 }
+function restoreUrl(){
+ Object.assign(state,readLibraryUrl(new URL(location.href)),{limit:24});
+ $('#libraryQuery').value=state.query;
+ for(const [id,key] of [['libraryType','type'],['libraryLevel','level'],['libraryArea','area']]){
+  const control=$('#'+id);control.value=state[key];
+  if(control.value!==state[key]){state[key]='';control.value=''}
+ }
+}
+window.addEventListener('popstate',()=>{restoreUrl();render()});
+window.addEventListener('hashchange',()=>render());
 function openViewer(item,url){
  $('#viewerCode').textContent=[item.type,item.source].filter(Boolean).join(' · ');
  $('#viewerTitle').textContent=item.title;
@@ -148,10 +160,7 @@ try{
  const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20261002-2'),getCuratedResources()]);
  documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library]);
  setTypeOptions();setAreaOptions();
- const url=new URL(location.href);
- if(url.searchParams.get('tur')){state.type=url.searchParams.get('tur');$('#libraryType').value=state.type}
- if(url.searchParams.get('kaynak'))state.source=url.searchParams.get('kaynak');
- if(url.searchParams.get('q')){state.query=url.searchParams.get('q');$('#libraryQuery').value=state.query}
+ restoreUrl();
  render();
  if(client){
   const {data,error}=await client.from('community_documents').select('id,title,document_type,level,topic,file_storage_key').eq('review_status','approved').order('created_at',{ascending:false}).limit(1000);
@@ -159,4 +168,5 @@ try{
   documents.push(...memberDocuments(data||[]));setTypeOptions();setAreaOptions();render();
  }
 }catch(error){$('#libraryStatus').textContent='Kaynakların bir bölümü yüklenemedi: '+error.message}
+
 

@@ -17,6 +17,8 @@ jobs:
           python-version: "3.12"
       - name: Verify generated resource catalog
         run: python scripts/build_library_catalog.py --check
+      - name: Verify material hubs
+        run: python scripts/build_material_hubs.py --check
       - name: Run SEO audit
         run: python scripts/check_seo.py
 

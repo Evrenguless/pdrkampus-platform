@@ -54,6 +54,7 @@ for entry in list(root):
 for path in outputs:
     if path.endswith('/index.html'):
         entry=ET.SubElement(root,'{'+ns+'}url'); ET.SubElement(entry,'{'+ns+'}loc').text=BASE+'/'+path[:-10]
+root[:] = sorted(root, key=lambda entry: entry.find('{'+ns+'}loc').text)
 ET.indent(tree,space='  ')
 outputs['sitemap.xml'] = '<?xml version="1.0" encoding="UTF-8"?>\n'+ET.tostring(root,encoding='unicode')+'\n'
 check = '--check' in sys.argv
