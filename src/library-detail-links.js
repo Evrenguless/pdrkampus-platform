@@ -1,0 +1,22 @@
+export const libraryDetailLinks = {
+  "farkindalik-okuloncesi": "/kaynak-detay/farkindalik-okuloncesi/",
+  "farkindalik-ilkokul": "/kaynak-detay/farkindalik-ilkokul/",
+  "farkindalik-ortaokul": "/kaynak-detay/farkindalik-ortaokul/",
+  "farkindalik-lise": "/kaynak-detay/farkindalik-lise/",
+  "sinif-etkinlik-okuloncesi": "/kaynak-detay/sinif-etkinlik-okuloncesi/",
+  "sinif-etkinlik-ilkokul": "/kaynak-detay/sinif-etkinlik-ilkokul/",
+  "sinif-etkinlik-ortaokul": "/kaynak-detay/sinif-etkinlik-ortaokul/",
+  "sinif-etkinlik-lise": "/kaynak-detay/sinif-etkinlik-lise/",
+  "zorbalik-kuramsal": "/kaynak-detay/zorbalik-kuramsal/",
+  "ogretmen-brosur": "/kaynak-detay/ogretmen-brosur/",
+  "veli-brosur": "/kaynak-detay/veli-brosur/",
+  "sunum-öğretmen-okuloncesi": "/kaynak-detay/sunum-ogretmen-okuloncesi/",
+  "sunum-öğretmen-ilkokul": "/kaynak-detay/sunum-ogretmen-ilkokul/",
+  "sunum-öğretmen-ortaokul": "/kaynak-detay/sunum-ogretmen-ortaokul/",
+  "sunum-öğretmen-lise": "/kaynak-detay/sunum-ogretmen-lise/",
+  "sunum-veli-okuloncesi": "/kaynak-detay/sunum-veli-okuloncesi/",
+  "sunum-veli-ilkokul": "/kaynak-detay/sunum-veli-ilkokul/",
+  "sunum-veli-ortaokul": "/kaynak-detay/sunum-veli-ortaokul/",
+  "sunum-veli-lise": "/kaynak-detay/sunum-veli-lise/",
+  "ozel-egitim-anaokulu": "/kaynak-detay/ozel-egitim-anaokulu/"
+};

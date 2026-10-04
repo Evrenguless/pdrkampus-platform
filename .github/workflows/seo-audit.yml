@@ -15,5 +15,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Verify generated resource catalog
+        run: python scripts/build_library_catalog.py --check
       - name: Run SEO audit
         run: python scripts/check_seo.py
+
