@@ -1,6 +1,7 @@
 """Build crawlable official resource catalog; member documents are never exported."""
 import html, json, re, unicodedata, sys
 from pathlib import Path
+from urllib.parse import quote
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +26,7 @@ def page(path, title, desc, body, schema=None):
 def file_url(item):
     value = item.get('file','')
     assert value.startswith(('https://','http://')), item['id']
-    return value
+    return quote(value, safe="/:?=&%#@+;,-._~")
 def card(item):
     url = links.get(item['id'],file_url(item))
     meta = ' · '.join(str(item.get(k,'')) for k in ('type','level','fileType') if item.get(k))
@@ -39,7 +40,7 @@ for n in range(1,count+1):
 for item in selected:
     title = item['title']; source = item.get('source','MEB'); level = item.get('level',''); topic = item.get('topic','Rehberlik')
     desc = f'{title}: {level} kademesi için {item.get("type","rehberlik kaynağı").lower()}. Kaynak bilgileri ve resmî dosya bağlantısı PDR Kampüs’te.'
-    source_page = item.get('sourcePage') or file_url(item)
+    source_page = quote(item.get('sourcePage') or file_url(item), safe="/:?=&%#@+;,-._~")
     related = [x for x in selected if x['id']!=item['id'] and (x.get('level')==level or x.get('type')==item.get('type'))][:4]
     body = f'<p class="catalog-kicker"><a href="/kutuphane.html">Kütüphane</a> / <a href="/kutuphane/katalog/">Resmî kaynaklar</a></p><h1>{esc(title)}</h1><p class="catalog-lead">{esc(desc)}</p><section class="catalog-card"><h2>Kaynak bilgileri</h2><dl><dt>Hazırlayan kurum</dt><dd>{esc(source)}</dd><dt>Kademe</dt><dd>{esc(level)}</dd><dt>Kaynak türü</dt><dd>{esc(item.get("type"))}</dd><dt>Konu</dt><dd>{esc(topic)}</dd><dt>Dosya biçimi</dt><dd>{esc(item.get("fileType"))}</dd></dl><a class="catalog-primary" href="{esc(file_url(item))}" target="_blank" rel="noopener">Resmî dosyayı aç / indir ↗</a><p><a href="{esc(source_page)}" target="_blank" rel="noopener">Kaynak kurumun sayfası ↗</a></p></section><section class="catalog-card"><h2>Hangi çalışma için kullanılabilir?</h2><p>Bu kaynak, {esc(level.lower())} kademesinde {esc(topic.lower())} konusunda yürütülen çalışmalarda başvurulabilecek bir {esc(item.get("type","kaynak").lower())} olarak listelenmiştir. Uygulama öncesinde resmî dosyadaki hedef kitleyi ve yönergeleri inceleyin; materyali öğrencilerinizin ihtiyaçlarına ve kurumunuzun çalışma planına göre değerlendirin.</p><p>Bu sayfa dosyayı yeniden yayımlamaz; güncel belgeye hazırlayan kurumun bağlantısından ulaşabilirsiniz.</p></section><h2>İlgili kaynaklar</h2><div class="catalog-grid">'+''.join(card(x) for x in related)+'</div>'
     page(links[item['id']], title+' | PDR Kampüs', desc, body, {'@context':'https://schema.org','@type':'CreativeWork','name':title,'url':BASE+links[item['id']],'isAccessibleForFree':True,'inLanguage':'tr','learningResourceType':item.get('type'),'publisher':{'@type':'Organization','name':source}})
