@@ -15,6 +15,26 @@ faviconLinks.forEach(([rel,href])=>{if(document.querySelector('link[rel="'+rel+'
 
 if(!document.querySelector('link[rel="icon"]')){const icon=document.createElement('link');icon.rel='icon';icon.type='image/png';icon.href='/assets/logo.png';document.head.appendChild(icon)}
 if(!document.querySelector('link[rel="apple-touch-icon"]')){const apple=document.createElement('link');apple.rel='apple-touch-icon';apple.href='/assets/logo.png';document.head.appendChild(apple)}
+// All platform pages use these shared navigation templates.
+const platformHeader="<header class=\"header\"><a class=\"brand\" href=\"/\" aria-label=\"PDR Kampüs ana sayfa\"><img src=\"/assets/logo.png\" alt=\"PDR Kampüs logosu\"><strong>PDR<span>Kampüs</span></strong></a><nav class=\"desktop\" aria-label=\"Ana menü\"><a href=\"/kutuphane.html\">Kütüphane</a><a href=\"/konular.html\">Konular</a><a href=\"/topluluk.html\">Topluluk</a><a href=\"/meslektasima-sor.html\">Meslektaşıma Sor</a><a href=\"/calisma-alani.html\">Çalışma Alanım</a><a href=\"https://analiz.pdrkampus.com/\">AGS/PDR Puan Hesaplama</a><a href=\"https://norm.pdrkampus.com/\">PDR Norm Analizi</a><a href=\"/profil.html\">Profil</a></nav><button id=\"menuButton\" class=\"menu-button\" type=\"button\" aria-label=\"Menüyü aç\" aria-controls=\"mobileMenu\" aria-expanded=\"false\">☰</button></header><nav id=\"mobileMenu\" class=\"mobile-menu\" aria-label=\"Mobil menü\" hidden><div class=\"mobile-menu-group\"><span class=\"mobile-menu-label\">KAYNAKLAR</span><div><a href=\"/kutuphane.html\">Kütüphane</a><a href=\"/konular.html\">Konular</a></div></div><div class=\"mobile-menu-group\"><span class=\"mobile-menu-label\">MESLEKTAŞLAR</span><div><a href=\"/topluluk.html\">Topluluk</a><a href=\"/meslektasima-sor.html\">Meslektaşıma Sor</a></div></div><div class=\"mobile-menu-group\"><span class=\"mobile-menu-label\">ARAÇLAR</span><div><a href=\"https://analiz.pdrkampus.com/\">AGS/PDR Puan Hesaplama</a><a href=\"https://norm.pdrkampus.com/\">PDR Norm Analizi</a></div></div><div class=\"mobile-menu-group\"><span class=\"mobile-menu-label\">KİŞİSEL ALAN</span><div><a href=\"/calisma-alani.html\">Çalışma Alanım</a><a href=\"/profil.html\">Profil</a></div></div></nav>";
+const platformFooter="<footer class=\"campus-footer\"><div class=\"wrap campus-footer-main\"><div class=\"campus-footer-about\"><a class=\"brand campus-footer-brand\" href=\"/\" aria-label=\"PDR Kampüs ana sayfa\"><img src=\"/assets/logo.png\" alt=\"\"><strong>PDR<span>Kampüs</span></strong></a><p>Psikolojik danışmanlar için kaynak, araç ve meslektaş dayanışması tek kampüste.</p></div><nav class=\"campus-footer-links\" aria-label=\"Kampüsü keşfet\"><h2>KEŞFET</h2><a href=\"/kutuphane.html\">Kütüphane</a><a href=\"/konular.html\">Konular</a><a href=\"/topluluk.html\">Topluluk</a><a href=\"/meslektasima-sor.html\">Meslektaşıma Sor</a></nav><nav class=\"campus-footer-links\" aria-label=\"Araçlar ve kişisel alan\"><h2>ARAÇLAR VE KİŞİSEL ALAN</h2><a href=\"/calisma-alani.html\">Çalışma Alanım</a><a href=\"https://analiz.pdrkampus.com/\">AGS/PDR Puan Hesaplama</a><a href=\"https://norm.pdrkampus.com/\">PDR Norm Analizi</a><a href=\"/profil.html\">Profil</a></nav></div><div class=\"wrap campus-footer-bottom\"><span>© 2026 PDR Kampüs</span><nav class=\"footer-policy-links\" aria-label=\"İletişim ve yasal bilgiler\"><a href=\"/hakkimizda.html\">Hakkımızda</a><a href=\"/iletisim.html\">İletişim</a><a href=\"/gizlilik.html\">Gizlilik</a><a href=\"/kvkk-aydinlatma.html\">KVKK</a><a href=\"/cerez-politikasi.html\">Çerezler</a><a href=\"/kullanim-kosullari.html\">Kullanım koşulları</a><a href=\"/paylasim-kurallari.html\">Paylaşım kuralları</a><button type=\"button\" class=\"footer-consent-button\" data-open-consent>Çerez tercihleri</button></nav><a href=\"#top\" aria-label=\"Sayfanın başına dön\">Yukarı çık ↑</a></div></footer>";
+const currentPage=location.pathname;
+const oldHeader=document.querySelector('header.header');
+const oldMobile=document.querySelector('#mobileMenu');
+oldMobile?.remove();
+if(oldHeader)oldHeader.outerHTML=platformHeader;
+const oldFooter=document.querySelector('footer');
+if(oldFooter)oldFooter.outerHTML=platformFooter;
+function markCurrentLinks(){
+ document.querySelectorAll('header a,.mobile-menu a,footer a').forEach(link=>{
+  const url=new URL(link.href,location.origin);
+  if(url.origin!==location.origin)return;
+  if(url.pathname===currentPage&&!url.hash)link.setAttribute('aria-current','page');
+  else if((url.pathname==='/konular.html'&&currentPage.endsWith('/index.html'))||(url.pathname==='/profil.html'&&currentPage==='/hesap.html'))link.dataset.sectionCurrent='true';
+ });
+}
+markCurrentLinks();
+
 const button=document.querySelector('#menuButton');
 const menu=document.querySelector('#mobileMenu');
 function closeMenu(){if(!menu||!button)return;menu.hidden=true;button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Menüyü aç');button.textContent='☰'}
@@ -23,36 +43,6 @@ menu?.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu()}
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!menu?.hidden){closeMenu();button?.focus()}});
 document.addEventListener('click',event=>{if(!menu?.hidden&&!menu.contains(event.target)&&!button?.contains(event.target))closeMenu()});
 window.matchMedia('(min-width:1101px)').addEventListener('change',event=>{if(event.matches)closeMenu()});
-
-// Ortak masaüstü ve mobil menülerde norm analizine erişim.
-document.querySelectorAll('nav.desktop, #mobileMenu').forEach(nav=>{
-  if(nav.querySelector('a[href="https://norm.pdrkampus.com/"]'))return;
-  const link=document.createElement('a');
-  link.href='https://norm.pdrkampus.com/';
-  link.textContent='PDR Norm Analizi';
-  const analysisLink=nav.querySelector('a[href*="analiz.pdrkampus.com"]');
-  if(analysisLink){analysisLink.after(link);return;}
-  const personalGroup=[...nav.querySelectorAll('.mobile-menu-group')].find(group=>group.querySelector('.mobile-menu-label')?.textContent.trim()==='KİŞİSEL ALAN');
-  (personalGroup?.querySelector('div')||nav).appendChild(link);
-});
-
-const footerBottom=document.querySelector('.campus-footer-bottom');
-if(footerBottom){
- let links=footerBottom.querySelector('.footer-policy-links');
- if(!links){links=document.createElement('nav');links.className='footer-policy-links';links.setAttribute('aria-label','Gizlilik ve yasal bilgiler');const replace=footerBottom.querySelector('span:nth-child(2)');replace?replace.replaceWith(links):footerBottom.insertBefore(links,footerBottom.lastElementChild)}
- links.innerHTML='<a href="/hakkimizda.html">Hakkımızda</a><a href="/iletisim.html">İletişim</a><a href="/gizlilik.html">Gizlilik</a><a href="/kvkk-aydinlatma.html">KVKK</a><a href="/cerez-politikasi.html">Çerezler</a><a href="/kullanim-kosullari.html">Kullanım koşulları</a><a href="/paylasim-kurallari.html">Paylaşım kuralları</a><button type="button" class="footer-consent-button" data-open-consent>Çerez tercihleri</button>';
-}
-
-
-const footerGroups=[...document.querySelectorAll('.campus-footer-links')];
-const personalFooter=footerGroups.find(group=>group.querySelector('h2')?.textContent?.trim()==='KİŞİSEL ALAN');
-if(personalFooter&&!personalFooter.querySelector('a[href*="analiz.pdrkampus.com"]')){
-  const analysisLink=document.createElement('a');
-  analysisLink.href='https://analiz.pdrkampus.com/';
-  analysisLink.textContent='AGS/PDR Puan Hesaplama';
-  analysisLink.setAttribute('aria-label','AGS ve PDR puan hesaplama aracına git');
-  personalFooter.appendChild(analysisLink);
-}
 
 const CONSENT_KEY='pdrkampus_consent_v1';
 const consentStyle=document.createElement('style');
