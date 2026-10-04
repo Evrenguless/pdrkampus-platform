@@ -24,6 +24,18 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!menu?.hidd
 document.addEventListener('click',event=>{if(!menu?.hidden&&!menu.contains(event.target)&&!button?.contains(event.target))closeMenu()});
 window.matchMedia('(min-width:1101px)').addEventListener('change',event=>{if(event.matches)closeMenu()});
 
+// Ortak masaüstü ve mobil menülerde norm analizine erişim.
+document.querySelectorAll('nav.desktop, #mobileMenu').forEach(nav=>{
+  if(nav.querySelector('a[href="https://norm.pdrkampus.com/"]'))return;
+  const link=document.createElement('a');
+  link.href='https://norm.pdrkampus.com/';
+  link.textContent='PDR Norm Analizi';
+  const analysisLink=nav.querySelector('a[href*="analiz.pdrkampus.com"]');
+  if(analysisLink){analysisLink.after(link);return;}
+  const personalGroup=[...nav.querySelectorAll('.mobile-menu-group')].find(group=>group.querySelector('.mobile-menu-label')?.textContent.trim()==='KİŞİSEL ALAN');
+  (personalGroup?.querySelector('div')||nav).appendChild(link);
+});
+
 const footerBottom=document.querySelector('.campus-footer-bottom');
 if(footerBottom){
  let links=footerBottom.querySelector('.footer-policy-links');
