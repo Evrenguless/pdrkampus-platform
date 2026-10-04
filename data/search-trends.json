@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-10-05",
+  "periodStart": "2026-07-04",
+  "periodEnd": "2026-10-04",
+  "region": "TR",
+  "sourceUrl": "https://trends.google.com/trends/explore?geo=TR&date=2026-07-04%202026-10-04&q=rehberlik,akran%20zorbal%C4%B1%C4%9F%C4%B1,s%C4%B1nav%20kayg%C4%B1s%C4%B1,sosyometri,rehberlik%20plan%C4%B1",
+  "metric": "rising-related-queries",
+  "items": [
+    {
+      "query": "Öğrenci bilgi formu",
+      "libraryQuery": "öğrenci bilgi formu",
+      "signal": "Büyük Çıkış"
+    },
+    {
+      "query": "Selamlaşma",
+      "libraryQuery": "selamlaşma",
+      "signal": "Büyük Çıkış"
+    },
+    {
+      "query": "Akran zorbalığı slayt",
+      "libraryQuery": "akran zorbalığı",
+      "signal": "Büyük Çıkış"
+    }
+  ]
+}
