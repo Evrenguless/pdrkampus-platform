@@ -5,14 +5,16 @@ import {readFileSync} from 'node:fs';
 const forms=JSON.parse(readFileSync(new URL('../data/forms.json',import.meta.url),'utf8'));
 const library=JSON.parse(readFileSync(new URL('../data/library.json',import.meta.url),'utf8'));
 const all=[...forms,...library];
+const aliases=JSON.parse(readFileSync(new URL('../seo/catalogue-aliases.json',import.meta.url),'utf8'));
+import {groupVisibleResources} from '../src/resource-groups.js';
 
-test('her katalog kaydında benzersiz kimlik, dosya ve gerekli alanlar bulunur',()=>{
- const ids=new Set(),files=new Set();
+test('katalog kimlikleri benzersizdir; ortak dosyaların tüm kimlikleri denetlenen alias kaydında korunur',()=>{
+ const ids=new Set(),files=new Map();
  for(const item of all){
   const label=item.id||item.title||'kimliksiz kayıt';
   for(const key of ['id','title','level','file','fileType','sourceType'])assert.ok(item[key],`${label}: ${key} eksik`);
   assert.ok(!ids.has(item.id),`${label}: yinelenen kimlik`);ids.add(item.id);
-  assert.ok(!files.has(item.file),`${label}: aynı dosyaya ikinci bağımsız kart`);files.add(item.file);
+  if(!files.has(item.file))files.set(item.file,[]);files.get(item.file).push(item.id);
   const url=new URL(item.file);
   assert.equal(url.protocol,'https:',`${label}: güvenli dosya adresi gerekli`);
   const officialHost=/\.meb\.(?:gov\.tr|k12\.tr)$/.test(url.hostname)
@@ -34,6 +36,12 @@ test('her katalog kaydında benzersiz kimlik, dosya ve gerekli alanlar bulunur',
   }
   if(item.grades)for(const grade of item.grades)assert.ok(Number.isInteger(grade)&&grade>=1&&grade<=12,`${label}: geçersiz sınıf`);
  }
+ for(const [file,members] of files)if(members.length>1)assert.deepEqual(members.slice().sort(),aliases[file]?.slice().sort(),`Denetlenmemiş ortak dosya: ${file}`);
+ assert.deepEqual(Object.keys(aliases).sort(),[...files].filter(([,members])=>members.length>1).map(([file])=>file).sort());
+ const visible=groupVisibleResources(all.map(item=>({...item,origin:'official'})));
+ assert.equal(new Set(visible.map(item=>item.file)).size,visible.length);
+ assert.deepEqual(visible.flatMap(item=>[item.id,...item.aliases.map(a=>a.id)]).sort(),all.map(item=>item.id).sort());
+
 });
 
 test('2026 esenlik kartları doğru dosya başlığıyla eşleşir',()=>{
@@ -69,4 +77,10 @@ test('psikolojik sağlamlık dosyaları kademe ve materyal türüne göre eşle�
  for(const [i,token] of ['dogalafetkitabi','olumyaskitabi','gockitabi','intiharkitabi','terorkitabi'].entries()){
   const item=rows[27+i];assert.ok(item.file.includes(token),`${item.id}: yanlış güçlendirici destek kitabı`);
  }
+});
+
+test('üye dosyaları gruplanmaz; filtrelenen resmî alias kendi kimliğiyle açılabilir',()=>{
+ const input=[{id:'a',title:'A',file:'same',origin:'official'},{id:'b',title:'B',file:'same',origin:'official'},{id:'u1',file:'same',origin:'member'},{id:'u2',file:'same',origin:'member'}];
+ const result=groupVisibleResources(input);assert.equal(result.length,3);assert.deepEqual(result[0].aliases,[{id:'b',title:'B'}]);assert.equal(input[0].aliases,undefined);
+ const filtered=groupVisibleResources([input[1]]);assert.equal(filtered[0].id,'b');assert.equal(filtered[0].aliases.length,0);
 });

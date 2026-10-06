@@ -1,0 +1,435 @@
+{
+  "version": 1,
+  "scope": "presentation_only_original_catalogue_unchanged",
+  "entries": {
+    "https://akademi.meb.gov.tr/meb_iys_dosyalar/2026_03/69b0326a5a846876932904_Akademi_Program_10.03.26_17.32.pdf": {
+      "ids": [
+        "meb-akademi-hazirlik-egitimi-programi-2026"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://akademi.meb.gov.tr/www/milli-egitim-akademisi-hazirlik-egitimi-programi-yayimlandi/icerik/135",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://bahcelievlerram.meb.k12.tr/meb_iys_dosyalar/34/28/965180/dosyalar/2024_10/01224136_bultenler_tukenmislik_erteleme.pdf": {
+      "ids": [
+        "bahcelievler-erteleme-tukenmislik-bulteni"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://bahcelievlerram.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://canikturktelekomlisesi.meb.k12.tr/meb_iys_dosyalar/55/17/970410/dosyalar/2017_12/22102615_sosyometri_tekniYi.pdf?CHK=c1bd66c7d3b7c82e47c007d32b5711b7": {
+      "ids": [
+        "canik-sosyometri-degerlendirme-sosyogram"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://canikturktelekomlisesi.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://hakkariram.meb.k12.tr/meb_iys_dosyalar/30/01/225455/dosyalar/2023_09/22164833_POZI%CC%87TI%CC%87F_DI%CC%87SI%CC%87PLI%CC%87N_TEKNI%CC%87KLERI%CC%87_I%CC%87LE_C%CC%A7OCUKLARDA_O%CC%88Z_DENETI%CC%87MI%CC%87_SAG%CC%86LAMA.pptx": {
+      "ids": [
+        "hakkari-otokontrol-ortaokul-veli-sunum"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://hakkariram.meb.k12.tr/icerikler/20232024egitimogretimyilirpdhizmetleriyerelhedeficerikleri_14242352.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://izmitram.meb.k12.tr/meb_iys_dosyalar/41/01/173925/dosyalar/2026_09/6a9814e6dd1d3956146165_SelamlaC59Fma_ile_Akran_ZorbalC4B1C49FC4B1nC4B1n_C396nlenmesi_ArasC4B1nda_NasC4B1l_Bir_BaC49F_Var_C396C49Fretmen_BroC59FC3BCrC3BC.pdf": {
+      "ids": [
+        "izmit-selamlasma-akran-zorbaligi-ogretmen-brosuru-2026"
+      ],
+      "status": "available",
+      "replacement_url": "https://izmitram.meb.k12.tr/meb_iys_dosyalar/41/01/173925/dosyalar/2026_09/6a9814e6dd1d3956146165_Selamla%C5%9Fma_ile_Akran_Zorbal%C4%B1%C4%9F%C4%B1n%C4%B1n_%C3%96nlenmesi_Aras%C4%B1nda_Nas%C4%B1l_Bir_Ba%C4%9F_Var_%C3%96%C4%9Fretmen_Bro%C5%9F%C3%BCr%C3%BC.pdf",
+      "source_url": "https://izmitram.meb.k12.tr/icerikler/selamlasmaileakranzorbaligininonlenmesiarasindanasilbirbagvarogretmenbrosuru_17664576.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "official_page_same_file_and_signature"
+    },
+    "https://izmitram.meb.k12.tr/meb_iys_dosyalar/41/01/173925/dosyalar/2026_09/6a98152e6e8d9638262761_SelamlaC59Fma_OrtaokulLise__AfiC59F.png": {
+      "ids": [
+        "izmit-selamlasma-ortaokul-lise-afis-2026"
+      ],
+      "status": "available",
+      "replacement_url": "https://izmitram.meb.k12.tr/meb_iys_dosyalar/41/01/173925/dosyalar/2026_09/6a98152e6e8d9638262761_Selamla%C5%9Fma_Ortaokul-Lise_-_Afi%C5%9F.png",
+      "source_url": "https://izmitram.meb.k12.tr/icerikler/selamlasmaortaokulliseafis_17664606.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "official_page_same_file_and_signature"
+    },
+    "https://izmitram.meb.k12.tr/meb_iys_dosyalar/41/01/173925/dosyalar/2026_09/6a981543e4934266469969_SelamlaC59Fma_TC3BCm_Kademeler__AfiC59F.png": {
+      "ids": [
+        "izmit-selamlasma-tum-kademeler-afis-2026"
+      ],
+      "status": "available",
+      "replacement_url": "https://izmitram.meb.k12.tr/meb_iys_dosyalar/41/01/173925/dosyalar/2026_09/6a981543e4934266469969_Selamla%C5%9Fma_T%C3%BCm_Kademeler_-_Afi%C5%9F.png",
+      "source_url": "https://izmitram.meb.k12.tr/icerikler/selamlasmatumkademelerafis_17664611.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "official_page_same_file_and_signature"
+    },
+    "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2026_09/6aa13e45648c6076856193_ET%C4%B0K_KARAR_VERME_SER%C4%B0S%C4%B0_-_DO%C4%9ERU_OLANI_SE%C3%87%C4%B0YORUM_-_ORTAOKULpdf_compressed.pdf": {
+      "ids": [
+        "kecioren-etik-karar-verme-kilavuzu-ortaokul-2026"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://keciorenram.meb.k12.tr/dosyalar/listele_dosya_4112663_etik%20davran%C4%B1%C5%9F%20%C3%B6%C4%9Frenci-ortaokul",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2026_09/6aa13e57657c9290918003_ET%C4%B0K_KARAR_VERME_SER%C4%B0S%C4%B0_-_DO%C4%9ERU_OLANI_SE%C3%87%C4%B0YORUM_-_%C4%B0LKOKULpdf_compressed.pdf": {
+      "ids": [
+        "kecioren-etik-karar-verme-kilavuzu-ilkokul-2026"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://keciorenram.meb.k12.tr/dosyalar/listele_dosya_4112469_etik%20davran%C4%B1%C5%9F%20%C3%B6%C4%9Frenci-ilkokul",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://keciorenram.meb.k12.tr/meb_iys_dosyalar/06/15/332646/dosyalar/2026_09/6aa13e6f6bf97671438689_ET%C4%B0K_KARAR_VERME_SER%C4%B0S%C4%B0_-_DO%C4%9ERU_OLANI_SE%C3%87%C4%B0YORUM_-_L%C4%B0SEpdf_compressed.pdf": {
+      "ids": [
+        "kecioren-dijital-etik-karar-verme-kilavuzu-lise-2026"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://keciorenram.meb.k12.tr/icerikler/kurumumuzrehberlikvepsikolojikdanismahizmetleribolumutarafindanhazirlananyerelhedefetikdavranisicerikleriyayinlandi_17674770.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://meslek.meb.gov.tr/upload/dersmateryali/pdf/ATH2025TOPA111214.pdf": {
+      "ids": [
+        "meb-meslek-toplum-aile-selamlasma-etkinligi-2025"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://meslek.meb.gov.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://meslek.meb.gov.tr/upload/dersmateryali/pdf/KSH2025KSHA0902.pdf": {
+      "ids": [
+        "meb-meslek-protokol-gorgu-selamlasma-2025"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://meslek.meb.gov.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://meslek.meb.gov.tr/upload/dersmateryali/pdf/YIH2025YIHO1107.pdf": {
+      "ids": [
+        "meb-meslek-gorgu-protokol-selamlasma-2025"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://meslek.meb.gov.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://nevsehirram.meb.k12.tr/meb_iys_dosyalar/50/01/188322/dosyalar/2021_11/03143346_PSIKOLOJIK-SAGLAMLIK-OGRETMEN-BILGILENDIRME-KITAPCIGI.pdf": {
+      "ids": [
+        "nevsehir-ogretmen-psikolojik-saglamlik-kitapcigi"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://nevsehirram.meb.k12.tr/tema/siteharitasi.php",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://nevsehirram.meb.k12.tr/meb_iys_dosyalar/50/01/188322/dosyalar/2021_12/31084323_BILSEM-SURECI-VE-TANITIMI-OGRETMEN-BILGILENDIRME-KITAPCIGI.pdf": {
+      "ids": [
+        "nevsehir-ogretmen-bilsem-kitapcigi"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://nevsehirram.meb.k12.tr/tema/siteharitasi.php",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://nevsehirram.meb.k12.tr/meb_iys_dosyalar/50/01/188322/dosyalar/2022_03/08112337_PSIKOLOJIK-SAGLAMLIK-OGRENCI-BILGILENDIRME-KITAPCIGI.pdf": {
+      "ids": [
+        "nevsehir-ogrenci-psikolojik-saglamlik-kitapcigi"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://nevsehirram.meb.k12.tr/tema/siteharitasi.php",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://nevsehirram.meb.k12.tr/meb_iys_dosyalar/50/01/188322/dosyalar/2023_01/16163846_OZ-DISIPLIN-OGRENCI-SUNUMU.pdf": {
+      "ids": [
+        "nevsehir-ogrenci-ozdisiplin"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://nevsehirram.meb.k12.tr/tema/siteharitasi.php",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://nevsehirram.meb.k12.tr/meb_iys_dosyalar/50/01/188322/dosyalar/2023_01/16163940_ZAMAN-YONETIMI-OGRENCI-SEMINERI.pdf": {
+      "ids": [
+        "nevsehir-ogrenci-zaman-yonetimi"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://nevsehirram.meb.k12.tr/tema/siteharitasi.php",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://ofram.meb.k12.tr/meb_iys_dosyalar/61/08/964488/dosyalar/2022_01/10183015_COCUK-IHMAL-VE-ISTISMARINI-ONLEME-EGITIMLERI.pdf": {
+      "ids": [
+        "of-ram-cocuk-ihmal-istismar-onleme-egitimleri"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://ofram.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://ofram.meb.k12.tr/meb_iys_dosyalar/61/08/964488/dosyalar/2024_10/11140812_disleksiogretmenbilgilendirmebrosuru.pdf": {
+      "ids": [
+        "of-disleksi-ogretmen-brosuru-2024"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://ofram.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://ofram.meb.k12.tr/meb_iys_dosyalar/61/08/964488/dosyalar/2024_10/11140827_disleksivelibilgilendirmebrosuru.pdf": {
+      "ids": [
+        "of-disleksi-veli-brosuru-2024"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://ofram.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://orgm.meb.gov.tr/meb_iys_dosyalar/2017_08/07230245_BYREYSEL_GELYYYM_RAPORU.pdf": {
+      "ids": [
+        "meb-79"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://orgm.meb.gov.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://orgm.meb.gov.tr/meb_iys_dosyalar/2023_11/14134713_bilsemrehberlikvepsikolojikdanismahizmetlerikilavuzu.pdf": {
+      "ids": [
+        "orgm-bilsem-rpd-hizmetleri-kilavuzu-2023"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://orgm.meb.gov.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_02/04134247_10165332_sesbozukluklari4.pdf": {
+      "ids": [
+        "orgm-dil-konusma-ses-bozukluklari-2025"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://orgm.meb.gov.tr/www/aile-egitimi-kitap-seti/icerik/3109",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_02/04134441_10165645_motorkonusmaveyutmabozukluklari4.pdf": {
+      "ids": [
+        "orgm-dil-konusma-motor-konusma-yutma-2025"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://orgm.meb.gov.tr/www/aile-egitimi-kitap-seti/icerik/3109",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://sarimeseilkokulu.meb.k12.tr/meb_iys_dosyalar/41/13/969122/dosyalar/2021_01/17214718_DevamsYzlYYY_Onleme.pdf?CHK=e34ee3bd817e049ee222f2acd6c181b4": {
+      "ids": [
+        "sarimese-devamsizlik-onleme-2021"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://sarimeseilkokulu.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://sidikaavarkml.meb.k12.tr/meb_iys_dosyalar/23/01/216470/dosyalar/2025_10/09151414_aylikrehberlikcalismaraporu.docx": {
+      "ids": [
+        "sidikaavar-aylik-rehberlik-calisma-raporu-2025"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://sidikaavarkml.meb.k12.tr/icerikler/sinifrehberlikplanlarianketlerveformlar_14253697.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17195700_mbk_1.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-ab"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17195800_mbk_2.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-ccd"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200110_mbk_3.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-ef"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200223_mbk_4.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-gh"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200420_mbk_5.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-iijk"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200607_mbk_6.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-lmno"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17200732_mbk_7.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-oprs"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://siirtibrahimhakki.meb.k12.tr/meb_iys_dosyalar/56/01/974260/dosyalar/2020_04/17201244_mbk_8.pdf.pdf": {
+      "ids": [
+        "iskur-mesleki-bilgi-tuvyz"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://mhihekimoglualisesi.meb.k12.tr/icerikler/meslektanitimi_15439939.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://yalovaram.meb.k12.tr/meb_iys_dosyalar/77/01/363601/dosyalar/2023_09/08094100_E-Rehberlik-Kilavuzu.pdf": {
+      "ids": [
+        "yalova-ram-e-rehberlik-modulu-kilavuzu"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://yalovaram.meb.k12.tr/",
+      "source_label": "Kaynak kurumun sitesini aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114044_REH.YIL-SONU-FAALI%CC%87YET-RAPORU.docx": {
+      "ids": [
+        "rehberlik-faaliyet-raporu-docx"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114123_REH.YIL-SONU-FAALI%CC%87YET-RAPORU.pdf": {
+      "ids": [
+        "rehberlik-faaliyet-raporu-pdf"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    },
+    "https://yardimcicpl.meb.k12.tr/meb_iys_dosyalar/63/01/749242/dosyalar/2023_10/05114859_RI%CC%87SK-HARI%CC%87TASI-DU%CC%88ZENLI%CC%87.xlsx": {
+      "ids": [
+        "sinif-risk-haritasi-xlsx-duzenlenebilir"
+      ],
+      "status": "unavailable",
+      "replacement_url": null,
+      "source_url": "https://yardimcicpl.meb.k12.tr/icerikler/sinifrehberlikdosyasi_14276485.html",
+      "source_label": "Kaynak sayfasını aç",
+      "checked_on": "2026-10-06",
+      "basis": "original_asset_http_404_source_page_http_200"
+    }
+  }
+}

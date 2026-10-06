@@ -1,0 +1,25 @@
+name: SEO Preservation
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preservation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check original calculation and data protection
+        run: python scripts/seo_engine.py audit --output "$RUNNER_TEMP/seo-preservation-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+      - name: Run preservation tests
+        run: python scripts/test_seo_engine.py
+      - name: Run catalogue and search tests
+        run: node --test tests/*.mjs
+      - name: Test link transport
+        run: python scripts/test_link_http.py
+      - name: Verify catalogue regeneration
+        run: python scripts/build_library_catalog.py --check

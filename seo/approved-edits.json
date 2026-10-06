@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "edits": {
+    "404.html": {
+      "baseline_sha256": "04a564f7bd78d587a3fcfb2fad770ceaa3d06dfec1a5af51bdb2a95411ab6002",
+      "reviewed_sha256": "52ce78fae82fcdc2195ef690bbbc064616cc168bfb50d65b3d0c94f6a666f6e3",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+    },
+    "kaynak-detay/farkindalik-ilkokul/index.html": {
+      "baseline_sha256": "ab67eb9980570b7c9fe8215ed9807f63608df4c7ab43091e8d7c35f961e32c96",
+      "reviewed_sha256": "a80f6afaeec11599c26dc147fb5d54ced0b37111994880045d3230023a5bfa7d",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kaynak-detay/ogretmen-brosur/index.html": {
+      "baseline_sha256": "79e39e07bc4223f8a03562eeea1348ad51aab4e6fb1964d61b1db0be7436ee08",
+      "reviewed_sha256": "b05db659734a6db47b166317b3939e4a0ceaa78c68d9cd707a1222de9129d859",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kaynak-detay/veli-brosur/index.html": {
+      "baseline_sha256": "bad056e335d441c8ddc26a4388c5b8a6084ab873511adbb4dc75df182b703fc4",
+      "reviewed_sha256": "03ee70b8fb55424025941ef814ecff2751cb2d6a805bab32899cc7aae2b2e48c",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "konu/dijital-denge/index.html": {
+      "baseline_sha256": "a420ccac4fa0a0f101c820fce5589f7490a8983fc3427b7cc23b99b2ffbfe6ba",
+      "reviewed_sha256": "cd786dce01a19c967d92b0ae7ade8ae8045a057d90abde1a05713a82a32df53a",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "konu/ogrenciyi-tanima/index.html": {
+      "baseline_sha256": "600c9b2bcb7e1a7a4657b343d224350518eb5d987ab95fc86dd083a1ec15d55e",
+      "reviewed_sha256": "64af3560b330b9f1eea4800ed7154203ea1bf35df9b3e5114fef452c4610db53",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/index.html": {
+      "baseline_sha256": "addf69ca652a06f2563051b8700ee7d9d1b2c73da10d56c9a752635143fe57b1",
+      "reviewed_sha256": "346efad1b3bfa2ca31499df22e56d16f283eca14ee6e6aaf55d4a475beb6e9d8",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/10/index.html": {
+      "baseline_sha256": "69876336df657ccf09067ee98b3b4be404cfa98350b3709e6d77a13658b08d77",
+      "reviewed_sha256": "233ede0d17b1f23e19c3eaaac9a0275e8198cc187833ea9a6f43ca9ec95e27c2",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/11/index.html": {
+      "baseline_sha256": "f6e67682f8c00dcf7598feadce6a3dd8e9d15f128304ccf297c98307157811ef",
+      "reviewed_sha256": "d75d16828aea60dc17b64942b974a7b2effd0dc714e2524dff91365a4c36ca63",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/12/index.html": {
+      "baseline_sha256": "efefaa3985141e27f533314b27e665f4519a1205be447b64bfc63c789401d0bc",
+      "reviewed_sha256": "11e01c775190a205831b9134b2f5397ab87989e2dffde466b9eab0177dc530a4",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/13/index.html": {
+      "baseline_sha256": "3286b798c0dac8ad91e9be83d4ae2b7ec0afa1dc8a3cd05aca28412f4ba7e35a",
+      "reviewed_sha256": "499cf50bc078f97646a5c9a911e211a57ac4d2f06ec019f4c617d07a2ca6a169",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/14/index.html": {
+      "baseline_sha256": "8f1d06ab67e11bf926549c4d38f9b359a2ec3c13bd29a55294b8d50a53a2fff7",
+      "reviewed_sha256": "c993dbef1af5c2ded943747cdafa8b84178a82704829aa2d3290c253ec6a9bfb",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/15/index.html": {
+      "baseline_sha256": "0b6de5fe2c85215ad1ab792adabd5614a3d8c788571b08cad99e8b24f80407a0",
+      "reviewed_sha256": "fe6700b82da19569faf070438fbe75699743e94f442ca31f71554bcf93526a1f",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/16/index.html": {
+      "baseline_sha256": "6d3141b7b3dfab13c40b5437242d957ec0bd1916acf9215c43cf76cc1c35e33c",
+      "reviewed_sha256": "294a320128a3d9ed9df37397c4b0e35a6b54b7fb46ea109349cfda950e66d474",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/17/index.html": {
+      "baseline_sha256": "a327f00f93a2ab6522df96c7f29857ca013a9e3d0ec3330e3d45143999e69c84",
+      "reviewed_sha256": "d5e7af5fe74dc572fa0a7743732f3b58497d6232a4fcf9ef90fbe3e8b057aafc",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/18/index.html": {
+      "baseline_sha256": "58ce19daffb6446cf848b8cba1e259d74effd164309844db3e4eef7dbbd420d7",
+      "reviewed_sha256": "a71505e31c2b2045b42427f3ce9db5645273c5e34e38a87829a894a510128ffc",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/19/index.html": {
+      "baseline_sha256": "18fafb932625d2d17e75440788c980d2eb51dc3cda5bae2f97614c191b884404",
+      "reviewed_sha256": "e8b0f712adf3d260f59f75e317ff5443b8b146eb398a4c7251b297faec287f9c",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/2/index.html": {
+      "baseline_sha256": "ca46dac784e031b5a29b09d17badd70a4deb51e94cb9e95ba920e0a2749cc4ca",
+      "reviewed_sha256": "2cc68a02e05eb9cf9a6b5a38e90dcdb21bb4c4dc163bcb01f37c6c58491622d0",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/20/index.html": {
+      "baseline_sha256": "6b7f1dea645df7b99a42fd02d79f05d3ccd3d2fb3ec45785ae3a8ffa21ee9ebe",
+      "reviewed_sha256": "d735b767082614444b674975401ef2b8e1df3a1c9c2476333709e29625778bbe",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/21/index.html": {
+      "baseline_sha256": "a67a8b916b5b954d4c7dce118ef0acde20b74bc18fa4cc9ed9709310042e6857",
+      "reviewed_sha256": "14516a891d65b01ce1d6fd2ac1cf6dc7090a85ceae7f126027cf631effc775bb",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/22/index.html": {
+      "baseline_sha256": "6442a121db718e330eba0ad21ad3f9f1f55caae1596d962de2aec5b8e920468b",
+      "reviewed_sha256": "46f5ce3ae8e631879a4c8d6e9fbbd7782264e93723c0bff00084fc21e23ff7de",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/23/index.html": {
+      "baseline_sha256": "06f5976555f3597c726c97d5eddebd72e7bbabfa90a495c40b9bbeaf16a6535d",
+      "reviewed_sha256": "cf6c3248d931c86fb91d12049b29fbc549e393da6bafb1f0f383379a22893b8d",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/24/index.html": {
+      "baseline_sha256": "918280020a8bc4a449aa10124abaf69cecc79f6d932956d8d9c7ec2945b1f5e1",
+      "reviewed_sha256": "7778ce0137c5b9ece47d788c3efa4e2fad5360e8d2d89e8d92b009514b1eaee1",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/25/index.html": {
+      "baseline_sha256": "d59f5b6c3d84366456e41063fda3159d31e6f9683c5b49465173fc12a15f1fb7",
+      "reviewed_sha256": "3d0b58546297dc1299fb33f016a31dd8f36ab7cd1d46ed42948e212005b98c5f",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/26/index.html": {
+      "baseline_sha256": "e9a54478a5e6408a56391b1e808d74c2c67b4e6e60b8bcd25c9db297a9d136f2",
+      "reviewed_sha256": "fa15085d97b8e07a1e39921c94c8f9a6d555e729407d8967ddeac1501fbfb2d4",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/27/index.html": {
+      "baseline_sha256": "41f67c417abe0420d041370a9ca93aa081b39486d67e3523f86f6c8debe5cd88",
+      "reviewed_sha256": "43bb502a247c1c66af1f3d947dbb04440538b673e1af91b15c715691c3207229",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/28/index.html": {
+      "baseline_sha256": "de63e0325b070cab00859436b34e25a04733617d90e8a21dbb5b209f5ae31542",
+      "reviewed_sha256": "cce3a8ceec7439ff09f2fc281a304f005400c2f7e64e9d53722feb8d3ba85535",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/29/index.html": {
+      "baseline_sha256": "68bc8390cad8ca852b442698a17b8f162bfa2acd06c2646227243e1684991968",
+      "reviewed_sha256": "cecc5e2eb332eccc3915cf9ab4808b2d07c71345574bed5ff51c21915886b08c",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/3/index.html": {
+      "baseline_sha256": "ec7576d071a79cf44fa19848820103424eef54117e39e76751186c4baa472b0c",
+      "reviewed_sha256": "0d8aa6daeb3d0a5f2d4bdb62809da0f5e0ecc08ffe1160a5ec395a8359e74599",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/30/index.html": {
+      "baseline_sha256": "2732cb8bfd3f11c16e0facd109169d1f802785a6ccabf038cea1079915a67bde",
+      "reviewed_sha256": "39f7f9483fcca74e02182a1e86827dde308f1a785966e96ec090b8d659e33b19",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/31/index.html": {
+      "baseline_sha256": "2f2551ad25789d2d65953b381bf079dbb4f1e3ef58bfb5232b62e28ba0533422",
+      "reviewed_sha256": "6a2fdd0a2355c596c0915551b1fe9c58a41bffbadb8e7914cf39040faee70344",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/32/index.html": {
+      "baseline_sha256": "ebfea7ce0d87fae9ac58c8e4ff0dd2b18c29913e75d36a5f7c8e735b0cc37fa7",
+      "reviewed_sha256": "84b53b9cb7cc9f3a1bf42b1824d325fc6ef29bd36ecf7c6d8ba03921692d45e1",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/33/index.html": {
+      "baseline_sha256": "c14a369c70a92fa67271a774d5461453389b48279f845fb2566fece97078361d",
+      "reviewed_sha256": "7af07c6418b069cb43169057730abd244a46953873cb910e98a72e3680db1efe",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/34/index.html": {
+      "baseline_sha256": "d893499614c1f112e016cfc9c0258b857160ddb8867942edf4ca23bdbb5cfb88",
+      "reviewed_sha256": "274d3e4506653e7558d92c09701a45c2c1a5a691b075a1680473edeefeeb445f",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/35/index.html": {
+      "baseline_sha256": "c40615d870de5ea41b4d9b82ffbe2ee37b89527549759234ac17dc756da5296f",
+      "reviewed_sha256": "d991127f04e0c4f31fbb3a44912b9dd047061d6814d8479abb08b61584dad847",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/4/index.html": {
+      "baseline_sha256": "2843193dccb536208a468f1265fb152582f6cf91941abc21e59db07a1608ddad",
+      "reviewed_sha256": "5ae793eaac572d072d3e7900783bc70c1d94d34396117db02c714ae1ca7b18ba",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/5/index.html": {
+      "baseline_sha256": "32455d0c4b7c372ad71fa95c2fe86fa713f420fe71b8edf8d03a2e3b4b705d04",
+      "reviewed_sha256": "c018cb06f7cc5ffd47b84eaba8784cbe5a4644de440d013f991874d800314291",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/6/index.html": {
+      "baseline_sha256": "fee31770eb35abedd171508b6be2bc49182411626c9ad62dbb30ff9da7f1f7c3",
+      "reviewed_sha256": "5d7f71631c1da1493519b95f9eb90045ded482e98222a18b9cc59ad3f7f20184",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/7/index.html": {
+      "baseline_sha256": "c553a4c436c52ee682252b2ffe9976851c6e7fc783e14508c926eddf94c89972",
+      "reviewed_sha256": "e55458543982fb079b9094ac5d44204ca4296c7e1945a0f6f743ebe173bce5a2",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/8/index.html": {
+      "baseline_sha256": "0436b5fd938c34e4c09336fea264b947e893f9e3fba771add2039ec9cf5bbcb0",
+      "reviewed_sha256": "0b7cf2aed54a2d87e116f352ef1eaea10c7614c0aea29f291224d282ccd444df",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "kutuphane/katalog/sayfa/9/index.html": {
+      "baseline_sha256": "45b49246a048b822ea1eb68d438f1d3428efe7fbb2392f1ed47af978651df8eb",
+      "reviewed_sha256": "db3e9645898f80b4f7b2c24dee58707ccf70251053c8f950aacd460acbb4b3fb",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "scripts/build_library_catalog.py": {
+      "baseline_sha256": "70afdfe2a3f3d9f1f2db2770fe44d28abde79b939b4acf2b298de2c133608425",
+      "reviewed_sha256": "f52a176968f7a24f80de8fe50d4c6536820989c8e31e427511b7124dc954e56f",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+    },
+    "scripts/check_links.py": {
+      "baseline_sha256": "380fb46f02b6e82b5f5df97ce322d7a69a2fa4ebcd147afd541880b5f2271125",
+      "reviewed_sha256": "0a1edceb5481ff7905e9b35b38d67b548404768ad0fb1e14c179bd47d7f8edc2",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+    },
+    "src/library.js": {
+      "baseline_sha256": "18ef87251a4b0ce7232d07cca82ad94f59741ace9109feff8844eb7b6254fb1e",
+      "reviewed_sha256": "c5648aa595f934986b27615f236e0eb28f751e2a50bd7a67f501e932c53a79a1",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+    },
+    "tests/catalog.mjs": {
+      "baseline_sha256": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
+      "reviewed_sha256": "5c187c5ec96c5dfb5031c6313d21b63b5dbe3e7929756f210af79a9ef7a4c7a0",
+      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+    }
+  }
+}

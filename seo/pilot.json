@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "scope": "existing-resource-page-preview",
+  "proposals": [
+    {
+      "id": "ogretmen-brosur",
+      "answer": "MEB’in Akran Zorbalığı Öğretmen Broşürü, öğretmenlerin sınıfta zorbalık farkındalığı geliştirmesine ve önleyici çalışmalarını planlamasına yardımcı olan kısa bir bilgilendirme kaynağıdır. Öğrenci gözlemi, sınıf kuralları ve aile ile okul iş birliği başlıklarını içerir.",
+      "sections": [
+        [
+          "Kimler için hazırlanmış?",
+          "Broşür öğretmenlere yöneliktir. Sınıf ortamındaki önleyici yaklaşımı ele alır; öğretmenlerin öğrencilerle iletişimi ve okulun diğer paydaşlarıyla birlikte hareket etmesi üzerinde durur."
+        ],
+        [
+          "Hangi kapsamda kullanılabilir?",
+          "Öğretmen bilgilendirmesinde farkındalık, öğrenci gözlemi ve sınıf kuralları başlıklarını tanıtmak için kullanılabilir. Bir ölçek veya puanlama aracı değildir; broşürden öğrenciler için hesaplanmış bir zorbalık puanı üretilemez."
+        ]
+      ],
+      "faq": [
+        [
+          "Veli toplantısı için hangi kaynak seçilmeli?",
+          "Velilere yönelik anlatım için aynı resmî kaynak koleksiyonundaki Veli Broşürü daha doğrudan bir seçenektir. Öğretmen Broşürü öğretmenin sınıf içindeki rolüne odaklanır."
+        ],
+        [
+          "Bu belge etkinlik programı yerine geçer mi?",
+          "Broşür kısa bilgilendirme sunar. Oturum ve uygulama yönergesi gereken bir çalışma için kademeye uygun farkındalık programının ayrıca incelenmesi gerekir."
+        ]
+      ],
+      "source_pdf_page": 1,
+      "route": "/kaynak-detay/ogretmen-brosur/",
+      "source_url": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_02/05094042_ogretmenbrosuru.pdf",
+      "source_sha256": "f71cc55a47502a898661a833511257923797735a70309f672831955ce25f0b55",
+      "checked_on": "2026-10-06",
+      "methodology": "Bu sayfadaki açıklama PDR Kampüs tarafından resmî PDF incelenerek hazırlanmış bir kaynak özetidir. Uygulama ayrıntıları için özgün belge esas alınmalıdır. Belge dosyası burada yeniden yayımlanmaz; kurumun bağlantısı kullanılır. Kaynak erişimi ve açıklama kontrolü ile belgenin ilk yayın tarihi ayrı bilgiler olarak tutulur.",
+      "editorial_evidence": {
+        "review": "PDF text read and targeted source pages visually checked",
+        "physical_pdf_pages": [
+          1,
+          2
+        ],
+        "note": "Editorial review is separate from automated structural score."
+      },
+      "description": "MEB öğretmen broşürünün hedef kitlesi, sınıf içi kullanım kapsamı ve resmî PDF bağlantısı. Akran zorbalığı çalışmalarında kaynak seçimi için kısa rehber."
+    },
+    {
+      "id": "veli-brosur",
+      "answer": "MEB’in Akran Zorbalığı Veli Broşürü, velilerin çocuklarının zorbalığa maruz kalması, zorbalık yapması veya zorbalığa tanık olması durumlarını anlamasına yardımcı olan kısa bir kaynaktır. Çocukla iletişimi, destek sunmayı ve okulla iş birliğini ele alır.",
+      "sections": [
+        [
+          "Kimler için hazırlanmış?",
+          "Broşür velilere yöneliktir. Üç farklı durumda ailelerin üstlenebileceği destek rolünü ayrı ayrı açıklar; okul ve aile iletişimini bilgilendirmenin bir parçası olarak ele alır."
+        ],
+        [
+          "Hangi kapsamda kullanılabilir?",
+          "Veli bilgilendirmesinde belgeyi tanıtmak ve ailelerin ilgili bölüme ulaşmasını sağlamak için kullanılabilir. Kaynak seçerken çocuğun durumuna uygun başlık incelenmeli; sayfa özeti özgün broşürdeki açıklamanın yerine kullanılmamalıdır."
+        ]
+      ],
+      "faq": [
+        [
+          "Broşürdeki belirtiler kesin bir tanı verir mi?",
+          "Hayır. Belge, bazı belirtilerin başka nedenlerle de görülebileceğini belirtir. Broşürdeki işaretler tek başına kesin bir değerlendirme sonucu olarak sunulmamalıdır."
+        ],
+        [
+          "Öğretmen Broşürü ile farkı nedir?",
+          "Veli Broşürü ailenin çocukla iletişimine ve okulla birlikte hareket etmesine odaklanır. Öğretmen Broşürü ise öğretmenin sınıf ortamındaki önleyici çalışmalarını ele alır."
+        ]
+      ],
+      "source_pdf_page": 1,
+      "route": "/kaynak-detay/veli-brosur/",
+      "source_url": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_02/05094108_velibrosuru.pdf",
+      "source_sha256": "fc5efe1371bb2cab354bc014ffcefbb81d986893201dd45cb1ea636e05b03578",
+      "checked_on": "2026-10-06",
+      "methodology": "Bu sayfadaki açıklama PDR Kampüs tarafından resmî PDF incelenerek hazırlanmış bir kaynak özetidir. Uygulama ayrıntıları için özgün belge esas alınmalıdır. Belge dosyası burada yeniden yayımlanmaz; kurumun bağlantısı kullanılır. Kaynak erişimi ve açıklama kontrolü ile belgenin ilk yayın tarihi ayrı bilgiler olarak tutulur.",
+      "editorial_evidence": {
+        "review": "PDF text read and targeted source pages visually checked",
+        "physical_pdf_pages": [
+          1,
+          2
+        ],
+        "note": "Editorial review is separate from automated structural score."
+      },
+      "description": "MEB veli broşürünün kapsamı, çocukla iletişim ve okulla iş birliği başlıkları. Akran zorbalığı hakkında resmî PDF ve kaynak seçimi açıklamaları."
+    },
+    {
+      "id": "farkindalik-ilkokul",
+      "answer": "MEB’in Akran Zorbalığı Farkındalık Programı İlkokul belgesi, ilkokul öğrencileri için beş oturumlu bir uygulama kaynağıdır. Öğrenci oturumları, rehber öğretmen veya psikolojik danışman müşavirliğinde sınıf öğretmeni tarafından yürütülmek üzere hazırlanmıştır. Tek bir broşürden farklı olarak uygulama yönergeleri içerir.",
+      "sections": [
+        [
+          "Kim uygular, kim destekler?",
+          "Belge, öğrenci oturumlarını sınıf öğretmeninin uygulamasını öngörür. Rehber öğretmen veya psikolojik danışman öğretmen ve veli seminerlerini yürütür; okul yönetimi planlama ve düzenlemeleri koordine eder."
+        ],
+        [
+          "Uygulama planında nelere bakılmalı?",
+          "Program beş oturumdan oluşur. Yönergelerde oturumların ardışık olmayan günlerde, iki veya üç haftada tamamlanması belirtilir. Birinci sınıflar için okuma yazma öğrenilmiş olması koşulu ve ilk iki sınıfa yönelik uyarlamalar incelenmelidir."
+        ]
+      ],
+      "faq": [
+        [
+          "Belgenin yayın yılı 2025 mi?",
+          "PDF’nin künye bölümünde ilk baskı Ankara, 2021 olarak belirtilir. Dosya adresindeki 2025 klasörü ilk yayın yılı olarak yorumlanmaz."
+        ],
+        [
+          "Tek bir etkinlik olarak kullanılabilir mi?",
+          "Belge oturumların bütünlüğüne ve devamlılığına dikkat çeker. Program seçimi yapılırken tamamı ve uygulama yönergeleri incelenmelidir."
+        ]
+      ],
+      "source_pdf_page": 6,
+      "route": "/kaynak-detay/farkindalik-ilkokul/",
+      "source_url": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2025_02/05094158_ilkokulfarkindalikprogrami.pdf",
+      "source_sha256": "423244e88b6bbc8b1a291801e3850cdc26a91098ca97f7f1653fdc9ff470d9e8",
+      "checked_on": "2026-10-06",
+      "methodology": "Bu sayfadaki açıklama PDR Kampüs tarafından resmî PDF incelenerek hazırlanmış bir kaynak özetidir. Uygulama ayrıntıları için özgün belge esas alınmalıdır. Belge dosyası burada yeniden yayımlanmaz; kurumun bağlantısı kullanılır. Kaynak erişimi ve açıklama kontrolü ile belgenin ilk yayın tarihi ayrı bilgiler olarak tutulur.",
+      "editorial_evidence": {
+        "review": "PDF text read and targeted source pages visually checked",
+        "physical_pdf_pages": [
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "note": "Editorial review is separate from automated structural score."
+      },
+      "description": "MEB ilkokul akran zorbalığı programının beş oturumu, uygulayıcı rolleri ve kullanım koşulları. 2021 ilk baskı bilgisi ve resmî PDF bağlantısı."
+    }
+  ]
+}
