@@ -27,3 +27,9 @@ Başlangıç hash kaydı korunur. Kullanıcının devam/düzeltme talebiyle yap�
 Ana sitenin aynı resmî dosyaya işaret eden katalog kayıtları kaynak verisi değiştirilmeden tek görünür kartta gruplanır. Kayıt kimlikleri ve diğer başlıklar korunur. `catalogue-aliases.json` yalnız denetlenmiş ortak dosya gruplarını tanımlar; yeni ve denetlenmemiş tekrarlar katalog oluşturma/test aşamasında hata verir. Özel üye dosyaları gruplanmaz.
 
 İsteğe bağlı komut adları `seo/package.json` içinde tanımlıdır; `seo/` dizininde `npm run seo:audit -- --output /tmp/yeni-cikti` kullanılabilir. Üretim komutu yine `--dry-run` gerektirir.
+
+## Dosya erişim düzeltmeleri
+
+`link-overrides.json` yalnız sunumdaki erişim davranışını tanımlar; `data/forms.json` ve `data/library.json` özgün kalır. Aynı resmî dosyanın düzeltilmiş adresi kaynak sayfası ve dosya imzasıyla doğrulanır. Erişilemeyen dosya indirme veya PDF önizleme düğmesiyle sunulmaz; açık erişim notu ve kaynak kurum bağlantısı gösterilir. HTML kaynak sayfası PDF dosyası yerine geçirilmez. Gruplama özgün dosya adresiyle yapılır; özel üye dosyaları bu katmana girmez. Katalog oluşturucu aynı metadatadan tarayıcı modülünü de üretir.
+
+Bağlantı denetimi eşzamanlı en fazla 8 isteğe izin verir (varsayılan 6; `PDR_LINK_WORKERS`). HTTP 404/410 hata, erişim engeli veya zaman aşımı ayrı uyarıdır. `scripts/test_link_http.py` yerel HTTP sunucusuyla taşıma davranışını sınar. PR koruma iş akışı veri/formül koruma, katalog ve taşıma testlerini çalıştırır.

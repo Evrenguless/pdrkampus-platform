@@ -1,3 +1,4 @@
+import { resourceAccess } from './resource-access.js';
 import {groupVisibleResources} from './resource-groups.js';
 import {readLibraryUrl,writeLibraryUrl} from './library-url-state.js';
 import { libraryDetailLinks } from './library-detail-links.js';
@@ -77,7 +78,10 @@ function score(item,query,parsed){
 function card(item){
  const origin=item.origin==='member'?'Meslektaş paylaşımı':'Resmî kaynak';
  const subtitle=[item.area,item.topic,item.level==='Belirtilmiyor'?'Kademe belirtilmiyor':item.level].filter(Boolean).join(' · ');
- const fileButton=item.kind==='member'
+ const access=resourceAccess(item);
+ const fileButton=!access.available
+  ?`<p>Dosya bağlantısına erişilemiyor.</p><a href="${esc(access.sourceUrl)}" target="_blank" rel="noopener">${esc(access.sourceLabel)}</a>`
+  :item.kind==='member'
   ?`<button type="button" data-community-file="${esc(item.file)}" data-library-open="${esc(item.id)}">Görüntüle</button>`
   :`<button type="button" data-kind="${item.kind}" data-id="${esc(item.id)}" data-library-open="${esc(item.id)}">Görüntüle</button>`;
  return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && libraryDetailLinks[item.id] ? `<a href="${esc(libraryDetailLinks[item.id])}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
@@ -144,7 +148,7 @@ $('#libraryMore').addEventListener('click',()=>{state.limit+=24;render()});
 $('#libraryGrid').addEventListener('click',async event=>{
  const button=event.target.closest('[data-library-open]');if(!button)return;
  const item=documents.find(row=>row.id===button.dataset.libraryOpen);if(!item)return;
- if(item.origin==='official'){openViewer(item,item.file);return}
+ if(item.origin==='official'){const access=resourceAccess(item);if(access.available)openViewer(item,access.url);return}
  button.disabled=true;
  try{
   if(!client)throw Error('Dosya bağlantısı kurulamadı.');

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Build crawlable official resource catalog; member documents are never exported."""
 import html, json, re, unicodedata, sys
 from pathlib import Path
@@ -6,6 +7,7 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://pdrkampus.com'
+overrides = json.loads((ROOT/'seo/link-overrides.json').read_text())['entries']
 def esc(value): return html.escape(str(value or ''), quote=True)
 def slug(value):
     return re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', value.replace('ı','i')).encode('ascii','ignore').decode().lower()).strip('-')
@@ -38,15 +40,22 @@ def page(path, title, desc, body, schema=None):
     structured = '<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('<','\\u003c')+'</script>' if schema else ''
     outputs[path.lstrip('/')+'index.html'] = f'''<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:type" content="website"><link rel="stylesheet" href="/src/style.css"><link rel="stylesheet" href="/src/shell-refresh.css"><link rel="stylesheet" href="/src/design-system.css"><link rel="stylesheet" href="/src/resource-catalog.css">{structured}</head><body id="top">{header}<main class="catalog-shell">{body}</main>{footer}<script type="module" src="/src/menu.js?v=20261005-2"></script></body></html>'''
 def file_url(item):
-    value = item.get('file','')
+    value = overrides.get(item.get('file',''),{}).get('replacement_url') or item.get('file','')
     assert value.startswith(('https://','http://')), item['id']
     return quote(value, safe="/:?=&%#@+;,-._~")
+def access_markup(item,detail=False):
+    entry=overrides.get(item.get('file',''),{})
+    if entry.get('status')=='unavailable':
+        return '<p>Dosya bağlantısına erişilemiyor. Belgenin güncel adresini kaynak kurumdan kontrol edin.</p><a href="'+esc(entry['source_url'])+'" target="_blank" rel="noopener">'+esc(entry['source_label'])+' ↗</a>'
+    return '<a'+(' class="catalog-primary"' if detail else '')+' href="'+esc(file_url(item))+'" target="_blank" rel="noopener">'+('Resmî dosyayı aç / indir' if detail else 'Resmî dosyayı aç')+' ↗</a>'
 def card(item):
-    url = links.get(item['id'],file_url(item))
+    entry=overrides.get(item.get('file',''),{})
+    url = links.get(item['id']) or (None if entry.get('status')=='unavailable' else file_url(item))
+    heading='<a href="'+esc(url)+'">'+esc(item['title'])+'</a>' if url else esc(item['title'])
     alias_markup = ''.join(f'<li id="{esc(a["id"])}">{esc(a["title"])}</li>' for a in item.get('aliases',[]))
     alias_markup = '<ul>'+alias_markup+'</ul>' if alias_markup else ''
     meta = ' · '.join(str(item.get(k,'')) for k in ('type','level','fileType') if item.get(k))
-    return f'<article class="catalog-card"><p class="catalog-kicker">{esc(meta)}</p><h2><a href="{esc(url)}">{esc(item["title"])}</a></h2>{alias_markup}<p>{esc(item.get("source") or "Millî Eğitim Bakanlığı")}</p><a href="{esc(file_url(item))}" target="_blank" rel="noopener">Resmî dosyayı aç ↗</a></article>'
+    return f'<article class="catalog-card"><p class="catalog-kicker">{esc(meta)}</p><h2>{heading}</h2>{alias_markup}<p>{esc(item.get("source") or "Millî Eğitim Bakanlığı")}</p>{access_markup(item)}</article>'
 count = (len(items)+39)//40
 def catalog_path(n): return '/kutuphane/katalog/' if n==1 else f'/kutuphane/katalog/sayfa/{n}/'
 for n in range(1,count+1):
@@ -56,9 +65,9 @@ for n in range(1,count+1):
 for item in selected:
     title = item['title']; source = item.get('source','MEB'); level = item.get('level',''); topic = item.get('topic','Rehberlik')
     desc = f'{title}: {level} kademesi için {item.get("type","rehberlik kaynağı").lower()}. Kaynak bilgileri ve resmî dosya bağlantısı PDR Kampüs’te.'
-    source_page = quote(item.get('sourcePage') or file_url(item), safe="/:?=&%#@+;,-._~")
+    source_page = quote(overrides.get(item.get('file',''),{}).get('source_url') or item.get('sourcePage') or file_url(item), safe="/:?=&%#@+;,-._~")
     related = [x for x in selected if x['id']!=item['id'] and (x.get('level')==level or x.get('type')==item.get('type'))][:4]
-    body = f'<p class="catalog-kicker"><a href="/kutuphane.html">Kütüphane</a> / <a href="/kutuphane/katalog/">Resmî kaynaklar</a></p><h1>{esc(title)}</h1><p class="catalog-lead">{esc(desc)}</p><section class="catalog-card"><h2>Kaynak bilgileri</h2><dl><dt>Hazırlayan kurum</dt><dd>{esc(source)}</dd><dt>Kademe</dt><dd>{esc(level)}</dd><dt>Kaynak türü</dt><dd>{esc(item.get("type"))}</dd><dt>Konu</dt><dd>{esc(topic)}</dd><dt>Dosya biçimi</dt><dd>{esc(item.get("fileType"))}</dd></dl><a class="catalog-primary" href="{esc(file_url(item))}" target="_blank" rel="noopener">Resmî dosyayı aç / indir ↗</a><p><a href="{esc(source_page)}" target="_blank" rel="noopener">Kaynak kurumun sayfası ↗</a></p></section><section class="catalog-card"><h2>Hangi çalışma için kullanılabilir?</h2><p>Bu kaynak, {esc(level.lower())} kademesinde {esc(topic.lower())} konusunda yürütülen çalışmalarda başvurulabilecek bir {esc(item.get("type","kaynak").lower())} olarak listelenmiştir. Uygulama öncesinde resmî dosyadaki hedef kitleyi ve yönergeleri inceleyin; materyali öğrencilerinizin ihtiyaçlarına ve kurumunuzun çalışma planına göre değerlendirin.</p><p>Bu sayfa dosyayı yeniden yayımlamaz; güncel belgeye hazırlayan kurumun bağlantısından ulaşabilirsiniz.</p></section><h2>İlgili kaynaklar</h2><div class="catalog-grid">'+''.join(card(x) for x in related)+'</div>'
+    body = f'<p class="catalog-kicker"><a href="/kutuphane.html">Kütüphane</a> / <a href="/kutuphane/katalog/">Resmî kaynaklar</a></p><h1>{esc(title)}</h1><p class="catalog-lead">{esc(desc)}</p><section class="catalog-card"><h2>Kaynak bilgileri</h2><dl><dt>Hazırlayan kurum</dt><dd>{esc(source)}</dd><dt>Kademe</dt><dd>{esc(level)}</dd><dt>Kaynak türü</dt><dd>{esc(item.get("type"))}</dd><dt>Konu</dt><dd>{esc(topic)}</dd><dt>Dosya biçimi</dt><dd>{esc(item.get("fileType"))}</dd></dl>{access_markup(item,detail=True)}<p><a href="{esc(source_page)}" target="_blank" rel="noopener">Kaynak kurumun sayfası ↗</a></p></section><section class="catalog-card"><h2>Hangi çalışma için kullanılabilir?</h2><p>Bu kaynak, {esc(level.lower())} kademesinde {esc(topic.lower())} konusunda yürütülen çalışmalarda başvurulabilecek bir {esc(item.get("type","kaynak").lower())} olarak listelenmiştir. Uygulama öncesinde resmî dosyadaki hedef kitleyi ve yönergeleri inceleyin; materyali öğrencilerinizin ihtiyaçlarına ve kurumunuzun çalışma planına göre değerlendirin.</p><p>Bu sayfa dosyayı yeniden yayımlamaz; güncel belgeye hazırlayan kurumun bağlantısından ulaşabilirsiniz.</p></section><h2>İlgili kaynaklar</h2><div class="catalog-grid">'+''.join(card(x) for x in related)+'</div>'
     page(links[item['id']], title+' | PDR Kampüs', desc, body, {'@context':'https://schema.org','@type':'CreativeWork','name':title,'url':BASE+links[item['id']],'isAccessibleForFree':True,'inLanguage':'tr','learningResourceType':item.get('type'),'publisher':{'@type':'Organization','name':source}})
 # Preserve reviewed source-specific content when rebuilding existing detail URLs.
 pilot_path = ROOT/'seo/pilot.json'
@@ -70,6 +79,7 @@ if pilot_path.exists():
         if key not in outputs:
             raise ValueError('Reviewed pilot route absent from catalog: ' + key)
         outputs[key] = render(ROOT, config, proposal, source=outputs[key])
+outputs['src/resource-access-data.js'] = 'export const resourceAccessEntries = '+json.dumps(overrides,ensure_ascii=False,indent=2)+';\n'
 outputs['src/library-detail-links.js'] = 'export const libraryDetailLinks = '+json.dumps(links,ensure_ascii=False,indent=2)+';\n'
 ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
 ET.register_namespace('',ns)

@@ -4,7 +4,9 @@ from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse, unquote
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
-import sys, socket
+import sys, socket, os
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from link_http import check_external
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://pdrkampus.com/"
@@ -84,35 +86,23 @@ for source, parser in parsers.items():
                 if frag not in tp.ids:
                     warnings.append(f"Eksik fragment hedefi: {source.relative_to(ROOT)} -> {ref}")
 
-def check_external(url):
-    headers={"User-Agent":"Mozilla/5.0 (compatible; PDRKampus-LinkAudit/1.0)"}
-    for method in ("HEAD","GET"):
-        try:
-            req=Request(url, headers=headers, method=method)
-            with urlopen(req, timeout=12) as r:
-                return r.status, r.geturl()
-        except HTTPError as e:
-            if e.code in (405,501) and method=="HEAD":
-                continue
-            return e.code, url
-        except (URLError, socket.timeout, TimeoutError) as e:
-            if method=="HEAD":
-                continue
-            return None, str(e)
-    return None, "bilinmeyen hata"
-
 checked=0
-for url in sorted(external):
-    status, detail=check_external(url)
-    checked+=1
-    if status is None:
-        warnings.append(f"Dış bağlantı doğrulanamadı: {url} ({detail})")
-    elif status in (404,410):
-        errors.append(f"Kırık dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
-    elif status>=400:
-        warnings.append(f"Dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
-    elif detail!=url:
-        pass
+workers=max(1,min(8,int(os.environ.get('PDR_LINK_WORKERS','6'))))
+with ThreadPoolExecutor(max_workers=workers) as pool:
+    pending={pool.submit(check_external,url):url for url in sorted(external)}
+    for future in as_completed(pending):
+        url=pending[future]
+        status,detail=future.result()
+        checked+=1
+        if status is None:
+            warnings.append(f"Dış bağlantı doğrulanamadı: {url} ({detail})")
+        elif status in (404,410):
+            errors.append(f"Kırık dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
+        elif status>=400:
+            warnings.append(f"Dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
+        if checked%100==0 or checked==len(external):
+            print(f"External link progress: {checked}/{len(external)}",flush=True)
+warnings.sort();errors.sort()
 
 print(f"Link audit: {len(HTML_FILES)} HTML dosyası, {checked} benzersiz dış URL kontrol edildi.")
 for w in warnings: print("WARN:",w)
