@@ -1,0 +1,43 @@
+{
+  "reviewedAt": "2026-10-06",
+  "announcements": [
+    {
+      "slug": "duzce-universitesi-2026-2-sozlesmeli-personel",
+      "title": "Düzce Üniversitesi 3 sözleşmeli personel alacak",
+      "institution": "Düzce Üniversitesi",
+      "city": "Düzce",
+      "category": "Üniversite",
+      "education": ["Ön lisans"],
+      "publishedAt": "2026-09-28",
+      "updatedAt": "2026-10-06",
+      "startsAt": "2026-09-28T09:00:00+03:00",
+      "deadline": "2026-10-12T13:00:00+03:00",
+      "withdrawn": false,
+      "quota": 3,
+      "summary": "2026/2 ilanında 2 büro personeli ve 1 tekniker alınacak. Başvurular 12 Ekim saat 13.00’e kadar Kariyer Kapısı üzerinden yapılacak.",
+      "kpss": "2024 KPSS P93; ilanda sayısal bir asgari puan belirtilmiyor.",
+      "selection": "2024 KPSS (B) grubu puan sıralaması; puan eşitliğinde mezuniyet notu esas alınıyor.",
+      "sourceUrl": "https://personel.duzce.edu.tr/duyuru/e222/sozlesmel-personel-alm-lan-2026-2",
+      "sourceLabel": "Düzce Üniversitesi · 2026/2 personel alım duyurusu",
+      "documentUrl": "https://cdn.duzce.edu.tr/File/GetFile/843be355-2d3b-45c6-9391-487be123f355",
+      "applyUrl": "https://kariyerkapisi.gov.tr/isealim",
+      "positions": [
+        {"code": "20260201", "name": "Büro Personeli", "quota": 2, "education": "Ön lisans", "requirements": "Büro yönetimi ve sekreterlik, ofis teknolojileri, büro hizmetleri, genel işletme, işletme, işletmecilik, işletme yönetimi veya yönetim alanlarında ilanda sayılan ön lisans programlarından mezun olmak. Örgün yükseköğretim öğrencisi olmamak (açık öğretim hariç). Kesin program adları için resmî ilanı inceleyin."},
+        {"code": "20260202", "name": "Tekniker", "quota": 1, "education": "Ön lisans", "requirements": "İlanda sayılan bilgisayar programcılığı, bilgisayar teknolojisi/programlama, web teknolojileri, bilgisayar bilimleri veya arka/ön yüz yazılım geliştirme ön lisans programlarından mezun olmak. Hastane bilgi yönetim sistemlerinde en az 1 yıl deneyimi belgelemek. Örgün yükseköğretim öğrencisi olmamak (açık öğretim hariç)."}
+      ],
+      "conditions": [
+        "657 sayılı Kanun’un 48. maddesindeki genel şartları ve resmî ilandaki özel şartları taşımak gerekiyor.",
+        "Her aday yalnızca bir pozisyona başvurabilir; birden fazla ilan koduyla başvuru geçersiz sayılır.",
+        "Başvurular çevrim içi alınır; şahsen veya posta yoluyla yapılan başvurular kabul edilmez.",
+        "Resmî kurum takvimde değişiklik yapabilir. Güncel duyuruları başvurudan önce yeniden kontrol edin."
+      ],
+      "steps": [
+        "Kariyer Kapısı’nda e-Devlet ile giriş yapıp Düzce Üniversitesi’nin 2026/2 ilanını seçin.",
+        "Seçtiğiniz pozisyonun öğrenim, KPSS ve varsa deneyim koşullarını resmî metinle karşılaştırın.",
+        "Sisteme gelen bilgileri kontrol edin; fotoğraf ve ilanın istediği ek belgeleri yükleyin.",
+        "Başvuruyu son saatten önce tamamlayın ve sonuç duyurularını üniversitenin sayfasından takip edin."
+      ],
+      "relatedPrograms": ["bilgisayar-programciligi"]
+    }
+  ]
+}
