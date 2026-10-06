@@ -1,0 +1,553 @@
+[
+  {
+    "group": "Planlar & programlar",
+    "title": "Yıllık rehberlik planı",
+    "slug": "yillik-rehberlik-plani",
+    "sources": [
+      "meb-61",
+      "manisa-yillik-plan-ortaokul-2026-2027",
+      "manisa-yillik-plan-lise-2026-2027"
+    ],
+    "intro": "Okulun yıllık rehberlik programını ve kademe örneklerini birlikte inceleyin.",
+    "note": "Örnek plandaki tarihleri aynen taşımadan okulunuzun ihtiyaçlarını, hedeflerini ve takvimini karşılaştırın."
+  },
+  {
+    "group": "Planlar & programlar",
+    "title": "İlkokul sınıf rehberliği planı",
+    "slug": "ilkokul-sinif-rehberligi-plani",
+    "sources": [
+      "konak-2026-2027-ilkokul-plan-cilt1",
+      "konak-2026-2027-ilkokul-plan-cilt2",
+      "meb-62"
+    ],
+    "intro": "İlkokul için sınıf rehberliği yıllık planları ve program formu.",
+    "note": "Sınıf düzeyine uygun kazanımları seçip çalışma sırasını okul takviminize göre düzenleyin."
+  },
+  {
+    "group": "Planlar & programlar",
+    "title": "Ortaokul sınıf rehberliği planı",
+    "slug": "ortaokul-sinif-rehberligi-plani",
+    "sources": [
+      "konak-2026-2027-ortaokul-plan-cilt1",
+      "manisa-yillik-plan-ortaokul-2026-2027",
+      "meb-62"
+    ],
+    "intro": "Ortaokul sınıfları için plan ve program kaynakları.",
+    "note": "Geçiş, akran ilişkileri ve çalışma alışkanlıklarına ait kazanımları sınıfın ihtiyaçlarıyla eşleştirin."
+  },
+  {
+    "group": "Planlar & programlar",
+    "title": "Lise sınıf rehberliği planı",
+    "slug": "lise-sinif-rehberligi-plani",
+    "sources": [
+      "konak-2026-2027-lise-plan-cilt1",
+      "manisa-yillik-plan-lise-2026-2027",
+      "meb-62"
+    ],
+    "intro": "Lise kademesine ait yıllık rehberlik planı örnekleri.",
+    "note": "Sınıf düzeyini, kariyer çalışmalarını ve sınav takvimini dikkate alarak planı uyarlayın."
+  },
+  {
+    "group": "Planlar & programlar",
+    "title": "Aylık çalışma programı",
+    "slug": "aylik-calisma-programi",
+    "sources": [
+      "meb-61",
+      "meb-71"
+    ],
+    "intro": "Yıllık programdaki hedefleri aylık işlere dönüştürmek için hazırlık sayfası.",
+    "note": "Her iş için hedef, tarih, sorumlu, hazırlık kaynağı ve izleme adımını belirleyin."
+  },
+  {
+    "group": "Planlar & programlar",
+    "title": "Dönem sonu çalışma raporu",
+    "slug": "donem-sonu-calisma-raporu",
+    "sources": [
+      "sinif-rehberlik-faaliyet-raporu-1-donem-2026",
+      "sinif-rehberlik-faaliyet-raporu-2-donem-2026",
+      "meb-53"
+    ],
+    "intro": "Birinci ve ikinci dönem sınıf rehberliği raporu örnekleri.",
+    "note": "Gerçekleşen çalışmaları planlanan hedeflerle karşılaştırın; yapılmayan işleri ve sonraki dönem önceliğini belirtin."
+  },
+  {
+    "group": "Görüşme & takip formları",
+    "title": "Öğrenci görüşme formu",
+    "slug": "ogrenci-gorusme-formu",
+    "sources": [
+      "meb-04",
+      "meb-06",
+      "ogrenci-gorusme-tutanagi-docx"
+    ],
+    "intro": "Öğrenci görüşmesi ve ön görüşme için PDF ve düzenlenebilir Word kaynakları.",
+    "note": "Ön görüşme ile görüşme kaydının amacını ayırın; yalnız gerekli bilgiyi kurumun kayıt düzeninde tutun."
+  },
+  {
+    "group": "Görüşme & takip formları",
+    "title": "Veli görüşme formu",
+    "slug": "veli-gorusme-formu",
+    "sources": [
+      "meb-65",
+      "veli-gorusme-tutanagi-docx",
+      "meb-00"
+    ],
+    "intro": "Veli görüşmesi ve aile bilgi formunu kullanım amacına göre seçin.",
+    "note": "Görüşmenin amacı, ele alınan konu, birlikte kararlaştırılan adım ve izleme tarihini belirleyin."
+  },
+  {
+    "group": "Görüşme & takip formları",
+    "title": "Öğretmen görüşme formu",
+    "slug": "ogretmen-gorusme-formu",
+    "sources": [
+      "meb-07"
+    ],
+    "intro": "Öğretmen ile görüşme için MEB formuna doğrudan erişin.",
+    "note": "Gözlenebilir okul davranışlarını, sınıfta kullanılan destekleri ve izleme kararını konuşun."
+  },
+  {
+    "group": "Görüşme & takip formları",
+    "title": "Öğrenci gözlem formu",
+    "slug": "ogrenci-gozlem-formu",
+    "sources": [
+      "meb-40",
+      "meb-35"
+    ],
+    "intro": "Öğrenci gözlem kaydı ve aile içi gözlem formu kaynakları.",
+    "note": "Gözlemi yorumdan ayırın; tarih, bağlam ve somut davranış üzerinden kayıt tutun."
+  },
+  {
+    "group": "Görüşme & takip formları",
+    "title": "Görüşme takip çizelgesi",
+    "slug": "gorusme-takip-cizelgesi",
+    "sources": [
+      "meb-56",
+      "meb-67",
+      "meb-71"
+    ],
+    "intro": "Randevu, aylık kayıt ve yıllık kayıt çizelgeleri.",
+    "note": "Randevu çizelgesinde ayrıntılı görüşme içeriğini bulundurmayın; kayıtları erişim amacına göre ayırın."
+  },
+  {
+    "group": "Görüşme & takip formları",
+    "title": "Yönlendirme ve izleme formu",
+    "slug": "yonlendirme-ve-izleme-formu",
+    "sources": [
+      "meb-47",
+      "meb-48",
+      "meb-49"
+    ],
+    "intro": "Rehberlik servisi, psikolojik destek ve sağlık kuruluşu yönlendirme formları.",
+    "note": "Yönlendirilecek birime uygun formu seçin; gerekli bilgilendirme ve izleme adımını kurumunuzla planlayın."
+  },
+  {
+    "group": "İhtiyaç analizi & değerlendirme",
+    "title": "RİBA ve ihtiyaç analizi",
+    "slug": "riba-ve-ihtiyac-analizi",
+    "sources": [
+      "meb-22",
+      "meb-63",
+      "meb-23",
+      "meb-57"
+    ],
+    "intro": "RİBA öğrenci formları ve sonuç çizelgesini kademeye göre bulun.",
+    "note": "Farklı kademelerin formlarını karıştırmayın; veriyi ilgili uygulama yönergesine göre değerlendirin."
+  },
+  {
+    "group": "İhtiyaç analizi & değerlendirme",
+    "title": "Öğrenci ihtiyaç anketi",
+    "slug": "ogrenci-ihtiyac-anketi",
+    "sources": [
+      "meb-22",
+      "meb-63",
+      "meb-23"
+    ],
+    "intro": "İlkokul, ortaokul ve lise öğrenci RİBA formları.",
+    "note": "Formun hedef kitlesini kontrol edin; sonuçları bireysel tanı veya tek başına karar aracı olarak kullanmayın."
+  },
+  {
+    "group": "İhtiyaç analizi & değerlendirme",
+    "title": "Veli ihtiyaç anketi",
+    "slug": "veli-ihtiyac-anketi",
+    "sources": [
+      "meb-28",
+      "meb-29",
+      "meb-30",
+      "meb-31"
+    ],
+    "intro": "Okul öncesinden liseye veli RİBA formları.",
+    "note": "Velilere amacı açıklayın; sonuçları öğrenci ve öğretmen ihtiyaçlarıyla birlikte değerlendirin."
+  },
+  {
+    "group": "İhtiyaç analizi & değerlendirme",
+    "title": "Öğretmen ihtiyaç anketi",
+    "slug": "ogretmen-ihtiyac-anketi",
+    "sources": [
+      "meb-24",
+      "meb-25",
+      "meb-26",
+      "meb-27"
+    ],
+    "intro": "Kademeye uygun öğretmen RİBA formları.",
+    "note": "Öğretmen yanıtlarını okulun mevcut destek olanaklarıyla karşılaştırarak çalışma öncelikleri oluşturun."
+  },
+  {
+    "group": "İhtiyaç analizi & değerlendirme",
+    "title": "Sınıf ihtiyaç değerlendirmesi",
+    "slug": "sinif-ihtiyac-degerlendirmesi",
+    "sources": [
+      "riba-2026-ilkokul-sinif-sonuc",
+      "riba-2026-ortaokul-sinif-sonuc",
+      "riba-2026-lise-sinif-sonuc"
+    ],
+    "intro": "Sınıf RİBA sonuç çizelgelerini kademeye göre inceleyin.",
+    "note": "Sınıfın ortak ihtiyaçlarını seçin; öğrencileri etiketleyen veya bireysel bilgiyi görünür kılan özetlerden kaçının."
+  },
+  {
+    "group": "İhtiyaç analizi & değerlendirme",
+    "title": "Etkinlik değerlendirme formu",
+    "slug": "etkinlik-degerlendirme-formu",
+    "sources": [
+      "meb-53"
+    ],
+    "intro": "Etkinlik sonu geri bildirim taslağı ve program değerlendirme kontrol listesi.",
+    "note": "Katılım sayısını öğrenme sonucu gibi sunmayın; kazanımla ilgili geri bildirim ve uygulama sınırlılığını ayrı kaydedin."
+  },
+  {
+    "group": "Sınıf rehberliği etkinlikleri",
+    "title": "Tanışma ve okula uyum etkinlikleri",
+    "slug": "tanisma-ve-okula-uyum-etkinlikleri",
+    "sources": [
+      "sinif-etkinlik-ilkokul",
+      "sinif-etkinlik-ortaokul",
+      "sinif-etkinlik-lise"
+    ],
+    "intro": "Kademe etkinlik kitapları ve okula uyum çalışmasına hazırlık.",
+    "note": "Grubun yaşına uygun tanışma çalışması seçin; kişisel paylaşımı ve etkinliğe katılımı zorunlu tutmayın."
+  },
+  {
+    "group": "Sınıf rehberliği etkinlikleri",
+    "title": "Duyguları tanıma etkinlikleri",
+    "slug": "duygulari-tanima-etkinlikleri",
+    "sources": [
+      "sdb-565",
+      "sdb-576",
+      "sdb-587",
+      "sinif-etkinlik-ilkokul"
+    ],
+    "intro": "Sosyal duygusal beceri kaynakları ve sınıf etkinlik kitabı.",
+    "note": "Duyguları kişisel yaşantı açıklatmadan örnek durumlar üzerinden konuşun; özel paylaşımları sınıf önünde açmayın."
+  },
+  {
+    "group": "Sınıf rehberliği etkinlikleri",
+    "title": "Akran ilişkileri etkinlikleri",
+    "slug": "akran-iliskileri-etkinlikleri",
+    "sources": [
+      "farkindalik-ilkokul",
+      "farkindalik-ortaokul",
+      "farkindalik-lise",
+      "zorbalik-kuramsal"
+    ],
+    "intro": "Akran zorbalığı farkındalık programları ve kuramsal kaynak.",
+    "note": "Hazır programın oturum sırasını ve uygulayıcı yönergesini inceleyin; somut vakaları sınıf içinde tartışmaya açmayın."
+  },
+  {
+    "group": "Sınıf rehberliği etkinlikleri",
+    "title": "Sınav kaygısı etkinlikleri",
+    "slug": "sinav-kaygisi-etkinlikleri",
+    "sources": [
+      "sinav-kaygisi-psikoegitim-grubu-isparta",
+      "kocasinan-2026-sinav-kaygisini-yonetmek"
+    ],
+    "intro": "Sınav kaygısı programı ve öğrenci rehberi kaynakları.",
+    "note": "Bilgilendirme çalışması ile psikoeğitim grubunu ayırın; programın hedef kitlesini ve uygulama koşullarını inceleyin."
+  },
+  {
+    "group": "Sınıf rehberliği etkinlikleri",
+    "title": "Verimli ders çalışma etkinlikleri",
+    "slug": "verimli-ders-calisma-etkinlikleri",
+    "sources": [
+      "meb-13",
+      "meb-74",
+      "v19-igdir-moduler-pano"
+    ],
+    "intro": "Ders çalışma kontrol listesi, sonuç çizelgesi ve pano kaynağı.",
+    "note": "Öğrencinin mevcut çalışma düzeninden bir küçük adım seçmesini sağlayın; bir hafta sonra uygulanabilirliği değerlendirin."
+  },
+  {
+    "group": "Sınıf rehberliği etkinlikleri",
+    "title": "Kariyer keşfi etkinlikleri",
+    "slug": "kariyer-kesfi-etkinlikleri",
+    "sources": [
+      "kariyer-91",
+      "meb-10"
+    ],
+    "intro": "Kariyer gelişimi programı ve Yol Haritam formu.",
+    "note": "İlgi, deneyim ve araştırılacak seçenekleri birlikte ele alın; tek bir form sonucuyla meslek kararı vermeyin."
+  },
+  {
+    "group": "Veli seminerleri & sunumlar",
+    "title": "Çocuklarla iletişim sunumu",
+    "slug": "cocuklarla-iletisim-sunumu",
+    "sources": [
+      "seyhan-aile-ici-iletisim-veli-semineri-2025",
+      "aksaray-aile-ici-iletisim-veli-sunumu-2025"
+    ],
+    "intro": "Aile içi iletişim için veli semineri ve sunum dosyaları.",
+    "note": "Sunumdan önce hedef grubu seçin; günlük iletişim örnekleri ve evde denenebilecek tek bir adım üzerinden ilerleyin."
+  },
+  {
+    "group": "Veli seminerleri & sunumlar",
+    "title": "Ergenlik dönemi sunumu",
+    "slug": "ergenlik-donemi-sunumu",
+    "sources": [
+      "kaynarca-ergen-iletisim-veli-2026",
+      "cayeli-ergenlik-aile-iletisim-veli-sunum-2026"
+    ],
+    "intro": "Ergen çocuğuyla iletişim ve aile içi iletişim sunumları.",
+    "note": "Yaşa uygun örnekler seçin; ailelerin özel yaşantılarını topluluk önünde paylaşmasını istemeyin."
+  },
+  {
+    "group": "Veli seminerleri & sunumlar",
+    "title": "Dijital yaşam veli sunumu",
+    "slug": "dijital-yasam-veli-sunumu",
+    "sources": [
+      "bandirma-dijital-ebeveynlik-sunumu-2026",
+      "bandirma-bilincli-teknoloji-veli-sunumu-2026",
+      "bandirma-siber-zorbalik-veli-sunumu-2026"
+    ],
+    "intro": "Dijital ebeveynlik, bilinçli teknoloji kullanımı ve siber zorbalık sunumları.",
+    "note": "Konuyu yalnız ekran süresine indirgemeden içerik, iletişim ve güvenlik boyutlarını birlikte ele alın."
+  },
+  {
+    "group": "Veli seminerleri & sunumlar",
+    "title": "Sınav sürecinde aile desteği",
+    "slug": "sinav-surecinde-aile-destegi",
+    "sources": [
+      "maltepe-sinav-kaygisi-veli-bulten-2026",
+      "haydarfadim-sinav-velisi-ergenlik-2026"
+    ],
+    "intro": "Sınav döneminde veli bilgilendirme ve sunum kaynakları.",
+    "note": "Destekleyici iletişim, günlük düzen ve öğrencinin ihtiyacını dinleme başlıklarını hazırlığa ekleyin."
+  },
+  {
+    "group": "Veli seminerleri & sunumlar",
+    "title": "Okula uyum veli sunumu",
+    "slug": "okula-uyum-veli-sunumu",
+    "sources": [
+      "fatih-okula-uyum-veli-brosuru-2025",
+      "gursu-okula-uyum-okul-fobisi-bulten-2025",
+      "silivri-okul-fobisi-veli-sunum-2023"
+    ],
+    "intro": "Okula uyum broşürleri ve ilgili veli sunumu.",
+    "note": "İlk gün düzenini, okul-aile iletişim yolunu ve izleme görüşmesini açıklaştırın."
+  },
+  {
+    "group": "Veli seminerleri & sunumlar",
+    "title": "Akran zorbalığı veli sunumu",
+    "slug": "akran-zorbaligi-veli-sunumu",
+    "sources": [
+      "sunum-veli-ilkokul",
+      "sunum-veli-ortaokul",
+      "sunum-veli-lise",
+      "veli-brosur"
+    ],
+    "intro": "Akran zorbalığına ilişkin kademeye göre veli sunumları ve broşür.",
+    "note": "Belirtiler, okulda başvuru yolu ve destekleyici aile iletişimini sunumun odağına alın."
+  },
+  {
+    "group": "Özel eğitim & BEP",
+    "title": "BEP hazırlama",
+    "slug": "bep-hazirlama",
+    "sources": [
+      "serik-bep-hazirlama-kilavuzu",
+      "meb-bep-ornek-dosyasi-docx-2025",
+      "meb-bep-ornek-dosyasi-xlsx-2025"
+    ],
+    "intro": "BEP hazırlama kılavuzu ile Word ve Excel örnek dosyaları.",
+    "note": "Örnek dosyanın amaçlarını öğrenciye aynen taşımayın; ekip çalışmasında performans, hedef ve izleme ölçütlerini belirleyin."
+  },
+  {
+    "group": "Özel eğitim & BEP",
+    "title": "BEP toplantı tutanağı",
+    "slug": "bep-toplanti-tutanagi",
+    "sources": [
+      "ismetaktar-bep-gelistirme-1-toplanti-2025",
+      "ismetaktar-bep-gelistirme-2-toplanti-2025"
+    ],
+    "intro": "BEP geliştirme birimi toplantı tutanağı örnekleri.",
+    "note": "Toplantının gündemini, kararlarını, sorumluları ve izleme tarihini kurumun uygun formatında kaydedin."
+  },
+  {
+    "group": "Özel eğitim & BEP",
+    "title": "Eğitsel değerlendirme kaynakları",
+    "slug": "egitsel-degerlendirme-kaynaklari",
+    "sources": [
+      "meb-45",
+      "meb-46",
+      "ismetaktar-egitsel-performans-bep-2025"
+    ],
+    "intro": "İlk ve yeniden inceleme isteği formları ile eğitsel performans kaynağı.",
+    "note": "İlk inceleme ve yeniden inceleme formlarını ayırın; performans bilgisini gözlenebilir örneklerle hazırlayın."
+  },
+  {
+    "group": "Özel eğitim & BEP",
+    "title": "Destek eğitim planı",
+    "slug": "destek-egitim-plani",
+    "sources": [
+      "destek-egitim-odalari-isleyis-kilavuzu",
+      "destek-egitim-odasi-programi-docx"
+    ],
+    "intro": "Destek eğitim odası işleyiş kılavuzu ve düzenlenebilir program.",
+    "note": "Kılavuzdaki uygulama düzenini inceleyin; hedef, süre ve değerlendirme adımını ekip planıyla eşleştirin."
+  },
+  {
+    "group": "Özel eğitim & BEP",
+    "title": "Uyarlanmış etkinlikler",
+    "slug": "uyarlanmis-etkinlikler",
+    "sources": [
+      "sinif-etkinlik-okuloncesi",
+      "sinif-etkinlik-ilkokul"
+    ],
+    "intro": "Kademe etkinlik kaynaklarından uyarlama hazırlığı.",
+    "note": "Yönerge uzunluğunu, görsel desteği, yanıt biçimini ve süreyi öğrencilerin erişim ihtiyacına göre düzenleyin."
+  },
+  {
+    "group": "Özel eğitim & BEP",
+    "title": "Özel eğitim aile bilgilendirmesi",
+    "slug": "ozel-egitim-aile-bilgilendirmesi",
+    "sources": [
+      "meb-08"
+    ],
+    "intro": "RAM özel eğitim veli görüşme formu ve aile görüşmesine hazırlık kaynağı.",
+    "note": "Bilgilendirme broşürünü aile görüşme kaydıyla karıştırmayın; kullanılacak materyali aile ihtiyacına göre seçin."
+  },
+  {
+    "group": "Pano, afiş & broşürler",
+    "title": "Rehberlik servisi tanıtım panosu",
+    "slug": "rehberlik-servisi-tanitim-panosu",
+    "sources": [
+      "meb-58"
+    ],
+    "intro": "Rehberlik servisini tanıtmak için düzenlenebilir pano metni.",
+    "note": "İletişim ve randevu yolunu belirtin; panoda kişisel görüşme bilgisi veya öğrenci isimleri kullanmayın."
+  },
+  {
+    "group": "Pano, afiş & broşürler",
+    "title": "Okula uyum panosu",
+    "slug": "okula-uyum-panosu",
+    "sources": [
+      "fatih-okula-uyum-veli-brosuru-2025"
+    ],
+    "intro": "Okula uyum bilgilendirme kaynağı ve pano hazırlık alanı.",
+    "note": "Pano ile veli broşürünü ayrı işaretleyin; okulun kendi iletişim bilgisi ve ilk hafta düzenini ekleyin."
+  },
+  {
+    "group": "Pano, afiş & broşürler",
+    "title": "Sınav kaygısı broşürü",
+    "slug": "sinav-kaygisi-brosuru",
+    "sources": [
+      "rabiaarikan-sinav-kaygisi-kitapcik-2025",
+      "kiziltepe-sinav-kaygisi-pano-2025"
+    ],
+    "intro": "Sınav kaygısı öğrenci kitapçığı ve modüler pano kaynağı.",
+    "note": "Dosya biçimini kontrol edin; kitapçığı broşür, panoyu kitapçık olarak sunmayın."
+  },
+  {
+    "group": "Pano, afiş & broşürler",
+    "title": "Akran zorbalığı afişi",
+    "slug": "akran-zorbaligi-afisi",
+    "sources": [
+      "ogretmen-brosur",
+      "veli-brosur",
+      "farkindalik-ilkokul"
+    ],
+    "intro": "Akran zorbalığı broşürleri ve farkındalık materyalleri.",
+    "note": "Görsel hazırlarken öğrencileri etiketlemeyin; okulun güvenli yardım isteme yollarını görünür kılın."
+  },
+  {
+    "group": "Pano, afiş & broşürler",
+    "title": "Dijital güvenlik panosu",
+    "slug": "dijital-guvenlik-panosu",
+    "sources": [
+      "susehri-guvenli-internet-pano-2026",
+      "siber-2022-03"
+    ],
+    "intro": "Güvenli internet modüler panosu ve siber zorbalık veli broşürü.",
+    "note": "Pano bağlantılarını yayımlamadan kontrol edin; yardım alma ve bildirme adımlarını okula göre düzenleyin."
+  },
+  {
+    "group": "Pano, afiş & broşürler",
+    "title": "Meslek tanıtım panosu",
+    "slug": "meslek-tanitim-panosu",
+    "sources": [
+      "susehri-mesleki-ilgi-yetenek-pano-2025",
+      "unye-alan-tanitim-brosuru"
+    ],
+    "intro": "Mesleki ilgi-yetenek panosu ve alan tanıtım broşürü.",
+    "note": "Meslek ve alan bilgisini kaynağıyla birlikte sunun; tercih takvimine ilişkin tarihleri ayrıca doğrulayın."
+  },
+  {
+    "group": "Servis dosyası & raporlar",
+    "title": "Rehberlik servisi dosya düzeni",
+    "slug": "rehberlik-servisi-dosya-duzeni",
+    "sources": [
+      "meb-61",
+      "meb-53"
+    ],
+    "intro": "Servis dosyasını plan, uygulama ve değerlendirme başlıklarıyla düzenlemek için kontrol listesi.",
+    "note": "Herkese açık doküman arşivi ile kişisel görüşme kayıtlarını ayrı tutun; erişim yetkilerini dosya amacına göre belirleyin."
+  },
+  {
+    "group": "Servis dosyası & raporlar",
+    "title": "Komisyon toplantı tutanağı",
+    "slug": "komisyon-toplanti-tutanagi",
+    "sources": [
+      "meb-61"
+    ],
+    "intro": "Komisyon toplantısı için gündem ve karar hazırlık taslağı.",
+    "note": "Bu taslak resmî tutanak yerine geçmez; kurumun tutanak ve imza düzenini ayrıca kullanın."
+  },
+  {
+    "group": "Servis dosyası & raporlar",
+    "title": "Aylık faaliyet çizelgesi",
+    "slug": "aylik-faaliyet-cizelgesi",
+    "sources": [
+      "meb-71"
+    ],
+    "intro": "MEB aylık görüşme kayıt çizelgesi ve anonim faaliyet özeti hazırlama aracı.",
+    "note": "Görüşme kayıt çizelgesini /asistan/ sayfasındaki faaliyet özetiyle karıştırmayın; kişisel görüşme kayıtları ve anonim toplamlar ayrı tutulur."
+  },
+  {
+    "group": "Servis dosyası & raporlar",
+    "title": "Dönem sonu değerlendirmesi",
+    "slug": "donem-sonu-degerlendirmesi",
+    "sources": [
+      "meb-53",
+      "sinif-rehberlik-faaliyet-raporu-1-donem-2026",
+      "sinif-rehberlik-faaliyet-raporu-2-donem-2026"
+    ],
+    "intro": "Program değerlendirme listesi ve dönem raporu kaynakları.",
+    "note": "Gerçekleşme durumunu, alınan geri bildirimi ve gelecek dönem düzenlemelerini birbirinden ayırın."
+  },
+  {
+    "group": "Servis dosyası & raporlar",
+    "title": "Yıl sonu çalışma raporu",
+    "slug": "yil-sonu-calisma-raporu",
+    "sources": [
+      "yilsonu-faaliyet-raporu-sinif-rehberlik-2025",
+      "meb-53"
+    ],
+    "intro": "Yıl sonu sınıf rehberlik raporu örneği ve değerlendirme listesi.",
+    "note": "Örneğin yılına dikkat edin; kendi çalışma döneminize ait toplamları ve sınırlılıkları açıkça yazın."
+  },
+  {
+    "group": "Servis dosyası & raporlar",
+    "title": "Doküman kontrol listesi",
+    "slug": "dokuman-kontrol-listesi",
+    "sources": [
+      "meb-53"
+    ],
+    "intro": "Dosya bağlantısı, sürüm, hedef kitle ve erişim kontrolü için özgün liste.",
+    "note": "Belgenin kaynağını, güncellemesini, kullanılacak sürümünü ve kişisel bilgi içerip içermediğini kontrol edin."
+  }
+]

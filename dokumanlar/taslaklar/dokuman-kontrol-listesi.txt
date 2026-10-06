@@ -1,0 +1,21 @@
+DOKÜMAN KONTROL LISTESI
+PDR Kampüs özgün hazırlık taslağı — 6 Ekim 2026
+Resmî belge veya onaylı program değildir.
+
+DOKÜMAN YAYIMLAMA VE KULLANIM KONTROLÜ
+
+Belge adı / kullanım amacı:
+Hedef kademe ve kitle:
+Kaynak kurum / kaynak sayfa:
+Dosya bağlantısı:
+Belgedeki yıl ve sürüm:
+Bağlantı kontrol tarihi:
+[ ] Dosya açılıyor ve başlıkla eşleşiyor.
+[ ] Dosya türü doğru belirtilmiş.
+[ ] Örnek / taslak / resmî belge ayrımı açık.
+[ ] Gerekli yönergeler incelenmiş.
+[ ] Öğrenciye ait kişisel bilgi bulunmuyor.
+[ ] Paylaşılacak sürüm erişim amacına uygun.
+[ ] Güncelleme gerektiğinde izlenecek kaynak belirtilmiş.
+
+Düzeltilecek madde / sorumlu / tarih:
