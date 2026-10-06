@@ -1,3 +1,4 @@
+import {groupVisibleResources} from './resource-groups.js';
 import {readLibraryUrl,writeLibraryUrl} from './library-url-state.js';
 import { libraryDetailLinks } from './library-detail-links.js';
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
@@ -79,7 +80,7 @@ function card(item){
  const fileButton=item.kind==='member'
   ?`<button type="button" data-community-file="${esc(item.file)}" data-library-open="${esc(item.id)}">Görüntüle</button>`
   :`<button type="button" data-kind="${item.kind}" data-id="${esc(item.id)}" data-library-open="${esc(item.id)}">Görüntüle</button>`;
- return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && libraryDetailLinks[item.id] ? `<a href="${esc(libraryDetailLinks[item.id])}">${esc(item.title)}</a>` : esc(item.title)}</h3><p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
+ return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && libraryDetailLinks[item.id] ? `<a href="${esc(libraryDetailLinks[item.id])}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
 }
 function setTypeOptions(){
  const current=state.type;
@@ -94,11 +95,11 @@ function setAreaOptions(){
 }
 function render(){
  const parsed=parseQuery(state.query);
- const rows=documents.filter(item=>(!state.type||item.type===state.type)&&(!state.area||item.area===state.area)&&(!state.source||item.origin===state.source)&&(!state.level||item.level===state.level||item.level==='Tüm kademeler'||item.levels?.includes(state.level)))
+ const rows=groupVisibleResources(documents.filter(item=>(!state.type||item.type===state.type)&&(!state.area||item.area===state.area)&&(!state.source||item.origin===state.source)&&(!state.level||item.level===state.level||item.level==='Tüm kademeler'||item.levels?.includes(state.level)))
   .map(item=>({item,score:score(item,state.query,parsed)})).filter(row=>row.score>0)
-  .sort((a,b)=>b.score-a.score||a.item.title.localeCompare(b.item.title,'tr')).map(row=>row.item);
+  .sort((a,b)=>b.score-a.score||a.item.title.localeCompare(b.item.title,'tr')).map(row=>row.item));
  let target='';try{target=decodeURIComponent(location.hash.slice(1))}catch{}
- if(target){const position=rows.findIndex(item=>(item.kind==='member'?'belge-'+item.id:item.id)===target);if(position>=state.limit)state.limit=position+1}
+ if(target){const position=rows.findIndex(item=>(item.kind==='member'?'belge-'+item.id:item.id)===target||item.aliases?.some(alias=>alias.id===target));if(position>=state.limit)state.limit=position+1}
  $('#libraryCount').textContent=parsed.topic?`${rows.length} kaynak · ${parsed.topic.name}`:`${rows.length} kaynak${state.query?' bulundu':' gösteriliyor'}`;
  $('#libraryGrid').innerHTML=rows.length?rows.slice(0,state.limit).map(card).join(''):'<p class="empty">Bu ölçütlerde kaynak bulunamadı. Aramayı veya filtreleri değiştir.</p>';
  $('#libraryMore').hidden=rows.length<=state.limit;
