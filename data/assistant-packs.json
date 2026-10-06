@@ -1,0 +1,401 @@
+[
+  {
+    "id": "haftalik-plan",
+    "title": "Rehber öğretmen haftalık çalışma planı",
+    "category": "Planlama",
+    "levels": [
+      "Tüm kademeler"
+    ],
+    "query": "rehberlik",
+    "path": "/uygulama/haftalik-plan/",
+    "intro": "Haftayı yalnız görüşme saatleriyle doldurmak, sınıf çalışmaları ve izlemeyi ertelemenize yol açabilir. Önce okulun ihtiyaçlarına bağlı bir öncelik belirleyin; sonra hazırlık, uygulama ve değerlendirme için ayrı zaman ayırın. Bu sayfa resmî yıllık programın yerine geçmeyen, onu haftalık işe dönüştüren bir çalışma akışıdır.",
+    "sections": [
+      {
+        "title": "Önceliği somutlaştırın",
+        "body": "Okul programındaki bir hedefi seçin. Örneğin öğrencilerin yardım isteyebilecekleri kişileri tanıması. Yapılacak işi “uyum çalışması” gibi genel bir adla değil, bir sınıfta uygulanacak oturum ve kısa değerlendirme olarak tanımlayın. Yerel hedefleri başka ilin duyurusundan kopyalamayın; kendi ilinizin ve okulunuzun kararını esas alın."
+      },
+      {
+        "title": "Zamanı üç parçaya ayırın",
+        "body": "Hazırlık için materyal inceleme ve sınıf öğretmeniyle eşgüdüm; uygulama için gerçek ders süresi; izleme için çıkış kartlarını değerlendirme zamanı belirleyin. Görüşmelerle aynı saate etkinlik koymayın. Beklenmedik ihtiyaçlar için takvimi tamamen doldurmayın."
+      },
+      {
+        "title": "Cuma günü değerlendirin",
+        "body": "Tamamlanan iş sayısının yanında hangi ihtiyacın devam ettiğini de sorun. Tamamlanmayan görevleri otomatik olarak bir sonraki haftaya yığmak yerine amacını ve uygulanabilirliğini yeniden değerlendirin. Haftalık toplamları aylık raporda kullanabilirsiniz; görüşme ayrıntıları bu planın parçası değildir."
+      }
+    ],
+    "checklist": [
+      "Okul programından bir haftalık öncelik seç",
+      "Sınıf öğretmeniyle uygulama saatini netleştir",
+      "Materyali ve uyarlamaları hazırla",
+      "Hafta sonu anonim geri bildirimleri değerlendir"
+    ],
+    "activity": {
+      "title": "Haftalık öncelik atölyesi",
+      "goal": "Bu hafta yapabileceğim tek küçük adım",
+      "steps": [
+        "Bireysel düşünme: Öğrenciler gelecek hafta için ulaşılabilir bir çalışma hedefi belirler.",
+        "İkili paylaşım: Paylaşmak isteyenler hedefin ilk adımını anlatır; kişisel açıklama zorunlu değildir.",
+        "Plan kartı: Ne yapacağım, ne zaman başlayacağım, hangi destek işime yarar sorularını yanıtlar.",
+        "Kapanış: Her öğrenci hedefini kendi kartında tutar; öğretmen genel destek ihtiyaçlarını değerlendirir."
+      ],
+      "audience": "Rehber öğretmen"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/okul-rehberlik-ve-psikolojik-danisma-hizmetleri-programi/icerik/3231"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "riba-ihtiyac-analizi",
+    "title": "RİBA sonuçlarından okul önceliğine geçiş",
+    "category": "İhtiyaç analizi",
+    "levels": [
+      "Tüm kademeler"
+    ],
+    "query": "RİBA",
+    "path": "/uygulama/riba-ihtiyac-analizi/",
+    "intro": "RİBA sonuçlarının değerini belirleyen şey yalnız tabloyu doldurmak değil, hangi okul ihtiyacına nasıl karşılık verileceğine karar vermektir. Resmî form ve sonuç çizelgelerini kendi uygulama yönergeleriyle kullanın. Buradaki akış, sonuçları öğrenci etiketlerine dönüştürmeden program kararına bağlamak içindir.",
+    "sections": [
+      {
+        "title": "Uygulama koşullarını kontrol edin",
+        "body": "Hedef gruba uygun resmî formu seçin ve uygulama açıklamasını inceleyin. Katılımı, eksik yanıtları ve uygulama tarihini kaydedin. Öğrenci, veli ve öğretmen sonuçlarını birbiriyle karıştırmadan önce ayrı değerlendirin. Eksik katılımı yüksek bir grubu okulun tamamını temsil ediyor gibi sunmayın."
+      },
+      {
+        "title": "Sayıdan ihtiyaç cümlesine geçin",
+        "body": "Yüksek görünen alanları okulun mevcut gözlemleri ve önceki dönem değerlendirmesiyle birlikte ele alın. “Öğrenciler başarısız” yerine “çalışma alışkanlıklarını planlama konusunda desteğe ihtiyaç var” gibi müdahale edilebilir bir ihtiyaç tanımlayın. Yüzde kullanıyorsanız payda ve katılımcı sayısı açık olsun."
+      },
+      {
+        "title": "Bir hedef ve izleme yöntemi seçin",
+        "body": "Her ihtiyacı aynı anda programa eklemeyin. Okulun kapasitesi, hedef grubu ve uygulanabilir süreyi dikkate alarak öncelik verin. Etkinlik öncesinde başarının nasıl değerlendirileceğini belirleyin: örneğin çalışma planı hazırlama becerisine ilişkin sınıf düzeyinde geri bildirim. RİBA klinik tanı veya bireysel risk puanı olarak kullanılmaz."
+      }
+    ],
+    "checklist": [
+      "Kademe ve katılımcı grubuna uygun formu kontrol et",
+      "Katılım ve eksik yanıt sayısını değerlendir",
+      "Okul gözlemleriyle birlikte bir ihtiyaç belirle",
+      "Hedefi ve değerlendirme yöntemini programa bağla"
+    ],
+    "activity": {
+      "title": "İhtiyaçtan hedefe",
+      "goal": "Sınıfımızda hangi destek işe yarar?",
+      "steps": [
+        "Tahtaya zaman planlama, iletişim ve yardım isteme gibi üç okul becerisi yazın.",
+        "Öğrenciler isim yazmadan bir beceri ve günlük yaşamdan kurgusal bir örnek seçer.",
+        "Yanıtları sınıf düzeyinde gruplayın; bireysel öğrenci yorumu veya puanlaması yapmayın.",
+        "Sonuçların bir sonraki sınıf çalışmasının seçimine nasıl katkı vereceğini açıklayın."
+      ],
+      "audience": "Rehber öğretmen"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/rehberlik-hizmetleri/kategori/307"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "akran-zorbaligi-onleme",
+    "title": "Akran zorbalığını önleme: sınıf ve okul çalışma akışı",
+    "category": "Güvenli okul",
+    "levels": [
+      "İlkokul",
+      "Ortaokul",
+      "Lise"
+    ],
+    "query": "akran zorbalığı",
+    "path": "/uygulama/akran-zorbaligi-onleme/",
+    "intro": "Zorbalığı önlemek tek bir sunumla tamamlanmaz. Yardım isteme yollarının görünür olması, öğretmenler arasında ortak dil ve uygulama sonrası izleme gerekir. Bu akış genel farkındalık çalışması içindir; yaşanan bir olayın değerlendirilmesi ve öğrenciye özel destek ayrı, yetkili süreçlerde yürütülmelidir.",
+    "sections": [
+      {
+        "title": "Ortak dili kurun",
+        "body": "Çalışmanın amacını “iyi arkadaş olmak” gibi geniş bir başlıktan daha açık tanımlayın: öğrencilerin incitici davranışı fark etmesi ve güvenli yardım isteme yollarını bilmesi. Gerçek öğrenci olaylarını sınıfın önünde tartışmayın. Yaş grubuna uygun MEB materyalini inceleyip okulunuzun destek başvuru yollarını hazırlayın."
+      },
+      {
+        "title": "Kurgusal örnekle çalışın",
+        "body": "Öğrencilerden yaşadıkları olayları herkesin önünde anlatmalarını istemeyin. Kurgusal örnekler üzerinden “Bu durumda kimden yardım istenebilir?” sorusunu ele alın. Öğrenciyi karşılık vermeye, misillemeye veya güvenliğini riske atan yüzleşmeye yönlendirmeyin. Çalışmaya katılmadan dinleme seçeneği sağlayın."
+      },
+      {
+        "title": "İzlemeyi planlayın",
+        "body": "Sınıf öğretmeniyle sonraki hafta kısa bir geri bildirim zamanı belirleyin. Öğrencilerin yardım kanallarını hatırlayıp hatırlamadığını anonim soruyla değerlendirin. Bir olay veya güvenlik kaygısı ortaya çıkarsa sınıf etkinliği içinde çözmeye çalışmadan kurumun ilgili destek ve koruma süreçlerine geçin."
+      }
+    ],
+    "checklist": [
+      "Kademe için farkındalık materyalini incele",
+      "Okulun yardım başvuru yollarını netleştir",
+      "Kurgusal örneklerle sınıf çalışmasını yap",
+      "Bir hafta sonra yardım kanallarını hatırlamayı değerlendir"
+    ],
+    "activity": {
+      "title": "Yardım haritam",
+      "goal": "Güvenli yardım isteme yollarını tanıyorum",
+      "steps": [
+        "Kurgusal bir öğrencinin incitici davranışla karşılaştığı kısa bir örnek okuyun.",
+        "Gruplar güvenli destek kişilerini ve başvuru yollarını listeler.",
+        "Okuldaki gerçek yardım kanallarını öğretmen olarak açıklayın; arkadaşların gizlilik sözü vermesini istemeyin.",
+        "Çıkış kartında isim almadan bir destek kişisi ve başvuru yolunu sorun."
+      ],
+      "audience": "Öğrenci"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/akran-zorbaligi/icerik/3132"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "devamsizlik-izleme",
+    "title": "Devamsızlık izleme: görüşmeden takip planına",
+    "category": "Okula devam",
+    "levels": [
+      "İlkokul",
+      "Ortaokul",
+      "Lise"
+    ],
+    "query": "devamsızlık",
+    "path": "/uygulama/devamsizlik-izleme/",
+    "intro": "Devamsızlığı yalnız gün sayısıyla açıklamak, ulaşım, okul ortamı ve aile koşulları gibi farklı ihtiyaçları gözden kaçırabilir. Amaç öğrenciyi suçlamak değil, okula devamı destekleyecek uygulanabilir adımları belirlemektir. Resmî devam kayıtları kurumun yetkili sistemlerinde tutulur; bu akış çalışma hazırlığı içindir.",
+    "sections": [
+      {
+        "title": "Bilgiyi farklı kaynaklardan değerlendirin",
+        "body": "Yetkili kayıttaki tarih aralığını ve devam örüntüsünü kontrol edin. Sınıf öğretmeninin gözlemi, öğrencinin anlatımı ve veliyle yapılan görüşmeyi birbirinin yerine kullanmayın. Bir neden varsaymak yerine açık sorularla koşulları anlamaya çalışın. Görüşme içerikleri genel görev listesine taşınmaz."
+      },
+      {
+        "title": "Küçük ve uygulanabilir adım belirleyin",
+        "body": "Öğrenci, veli ve ilgili öğretmenle kimin hangi desteği sağlayacağını netleştirin. Bir sonraki hafta için gözden geçirilebilir bir adım seçin; örneğin okula geliş düzeni için veliyle iletişim zamanı. Sorumluluğu yalnız öğrenciye yüklemeyin. Sağlık veya güvenlik ihtiyacı varsa uygun kurum desteği ayrıca değerlendirilir."
+      },
+      {
+        "title": "İzleme tarihini baştan koyun",
+        "body": "İlk görüşmede sonraki kontrol zamanını belirleyin. İzlemede sadece toplam gün sayısını değil, belirlenen desteğin uygulanıp uygulanmadığını da inceleyin. Yasal eşik ve işlemleri bu taslaktan çıkarmayın; güncel mevzuatı ve okulun yetkili idari süreçlerini esas alın."
+      }
+    ],
+    "checklist": [
+      "Yetkili devam kaydını ve dönemini kontrol et",
+      "Görüşme için açık sorular hazırla",
+      "Veli ve öğretmenle bir destek adımı belirle",
+      "İzleme tarihini belirle ve desteği değerlendir"
+    ],
+    "activity": {
+      "title": "Okula gelmeyi kolaylaştıranlar",
+      "goal": "Okulda destek alabileceğim yolları biliyorum",
+      "steps": [
+        "Öğrenciler kurgusal bir okul gününde devamı zorlaştırabilecek durumları inceler.",
+        "Her durum için öğrenci, aile ve okulun sağlayabileceği desteği ayrı listeler.",
+        "Gruplar bir destek çözümünü paylaşır; kişisel devamsızlık nedenleri sorulmaz.",
+        "Kapanışta okul içi başvuru yollarını hatırlatın."
+      ],
+      "audience": "Öğrenci"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/rehberlik-hizmetleri/kategori/307"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "veli-semineri-hazirlama",
+    "title": "Veli semineri hazırlama: hedef, akış ve geri bildirim",
+    "category": "Veli çalışmaları",
+    "levels": [
+      "Tüm kademeler"
+    ],
+    "query": "veli",
+    "path": "/uygulama/veli-semineri-hazirlama/",
+    "intro": "Velilere çok bilgi aktarmak ile evde uygulanabilir bir beceri kazandırmak farklı hedeflerdir. Bir seminerde tek bir ihtiyaca odaklanmak, açık bir örnek vermek ve sonraki adımı belirlemek hazırlığı kolaylaştırır. Bu sayfadaki seminer iskeleti PDR Kampüs taslağıdır; resmî bir program veya psikoeğitim protokolü değildir.",
+    "sections": [
+      {
+        "title": "Tek hedef ve doğru katılımcı grubu",
+        "body": "Konu seçimini okulun ihtiyaçlarıyla ilişkilendirin. Okul öncesi ve lise velilerine aynı örnekleri kullanmayın. Seminer sonunda katılımcının yapabilmesini istediğiniz bir davranışı yazın: örneğin çocuğuyla günlük plan hakkında yargılamadan konuşmak. Davetin dili destekleyici olsun; aileleri sorunlu diye sınıflandırmayın."
+      },
+      {
+        "title": "Bilgi, örnek ve uygulama dengesi",
+        "body": "Kısa bilgi bölümünün ardından kurgusal bir aile diyaloğu kullanın. Velilere konuşmayı daha açık ve destekleyici hâle getirecek cümleleri düşünmeleri için zaman verin. Özel aile hikâyelerini topluluk önünde anlatma zorunluluğu oluşturmayın. Sunumdan sonra sorular ve okulun destek kanalları için süre ayırın."
+      },
+      {
+        "title": "Kapanış ve değerlendirme",
+        "body": "Velilere bir haftalık küçük bir deneme adımı önerin ve isim gerektirmeyen kısa geri bildirim alın. Katılımcı sayısı etkinliğin erişimini gösterir; davranış değişikliğini kanıtlamaz. Başvuru gerektiren bireysel soruları seminer ortamından ayrı ele alın. İzleme toplantısında hangi örneklerin işe yaradığını değerlendirin."
+      }
+    ],
+    "checklist": [
+      "Katılımcı kademesini ve tek seminer hedefini belirle",
+      "Uygun resmî sunum ve broşürü incele",
+      "Kurgusal örnek ve soru süresini hazırla",
+      "Anonim geri bildirim ve izleme zamanını planla"
+    ],
+    "activity": {
+      "title": "Destekleyen iletişim",
+      "goal": "Ailede plan hakkında konuşma",
+      "steps": [
+        "Kısa bir kurgusal “ödev yapılmadı” diyaloğu okuyun.",
+        "Veliler yargılayıcı cümleleri gözlem ve açık soru biçiminde yeniden kurar.",
+        "Paylaşmak isteyenler örnek cümlelerini okur; bireysel aile bilgisi alınmaz.",
+        "Her katılımcı evde denemek istediği bir cümleyi kendi notunda tutar."
+      ],
+      "audience": "Veli"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/sinif-rehberlik-calismalari/icerik/3141"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "zaman-yonetimi-etkinligi",
+    "title": "Zaman yönetimi sınıf etkinliği ve haftalık izleme",
+    "category": "Akademik gelişim",
+    "levels": [
+      "İlkokul",
+      "Ortaokul",
+      "Lise"
+    ],
+    "query": "zaman yönetimi",
+    "path": "/uygulama/zaman-yonetimi-etkinligi/",
+    "intro": "Öğrenciden kusursuz bir çizelge istemek yerine, planı deneyip değiştirebildiği bir süreç kurun. Hedef ders, dinlenme ve gündelik sorumluluklar arasında uygulanabilir bir düzen tasarlamaktır. Buradaki özgün kısa etkinlik gelişimsel sınıf çalışmasıdır; okulun kazanımı ve öğrencilerin yaşına göre uyarlanmalıdır.",
+    "sections": [
+      {
+        "title": "Başlangıç: gerçekçi bir gün",
+        "body": "Öğrencilerin süre tahmin etmesini sağlayan kurgusal bir günlük örnek hazırlayın. Ulaşım, yemek ve dinlenme gibi zamanları görünür kılın. Öğrencilerin özel aile düzenlerini açıklamasını zorunlu tutmayın. Küçük yaşlarda resimli kartlar ve yetişkin desteği, büyük yaşlarda yazılı plan kullanabilirsiniz."
+      },
+      {
+        "title": "Plan: tek bir deneme",
+        "body": "Bir haftalık planı tümüyle doldurmak yerine tek bir iş için başlama zamanı ve küçük ilk adım seçtirin. Öğrenciye planının değişebileceğini anlatın. Planı sınıfın önünde karşılaştırıp en iyi öğrenci sıralaması yapmayın; amaç plan yapma becerisini çalışmaktır."
+      },
+      {
+        "title": "İzleme: plana geri dönün",
+        "body": "Bir hafta sonra neyin uygulanabilir olduğunu sorun. “Başaramadın” yerine “Bu planı zorlaştıran neydi?” ve “Nasıl küçültebiliriz?” sorularını kullanın. Sınıf düzeyindeki anonim geri bildirim sonraki oturum için yol gösterir. Uygulanan süre ve katılım sayısını kaydedin; bunları tek başına gelişim kanıtı saymayın."
+      }
+    ],
+    "checklist": [
+      "Kademe için resimli veya yazılı plan kartı seç",
+      "Dinlenmeyi içeren kurgusal bir gün hazırla",
+      "Öğrencilere tek bir deneme adımı seçtir",
+      "Bir hafta sonra planın uygulanabilirliğini değerlendir"
+    ],
+    "activity": {
+      "title": "Bir günüm, bir küçük adım",
+      "goal": "Uygulanabilir bir zaman planı hazırlıyorum",
+      "steps": [
+        "Kurgusal bir günün ders, ulaşım ve dinlenme sürelerini birlikte inceleyin.",
+        "Öğrenciler kendi saklayacakları kartta tek bir çalışma ve başlama zamanı seçer.",
+        "Eşler isteyen öğrencilerin planını “ilk adım yeterince küçük mü?” sorusuyla değerlendirir.",
+        "Kapanışta bir hafta sonra planı yeniden gözden geçireceğinizi açıklayın."
+      ],
+      "audience": "Öğrenci"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/sinif-rehberlik-calismalari/icerik/3141"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "kariyer-kesif-atolyesi",
+    "title": "Kariyer keşif atölyesi: ilgiden araştırma sorusuna",
+    "category": "Kariyer",
+    "levels": [
+      "Ortaokul",
+      "Lise"
+    ],
+    "query": "kariyer",
+    "path": "/uygulama/kariyer-kesif-atolyesi/",
+    "intro": "Kariyer çalışmasını tek bir test sonucuyla meslek söylemeye indirgemeyin. Öğrencinin ilgileri, deneyimleri ve araştırma soruları zaman içinde gelişebilir. Bu atölye karar vermeyi zorlamak yerine güvenilir bilgiye nasıl ulaşılacağını ve seçeneklerin nasıl araştırılacağını çalıştırır.",
+    "sections": [
+      {
+        "title": "Etiket yerine deneyim",
+        "body": "Öğrencilerin keyif aldığı etkinlikleri ve denemek istediği becerileri düşünmesini sağlayın. İlgi, beceri ve meslek adını birbirinin yerine kullanmayın. Öğrenci “resim seviyorum” dediğinde tek bir mesleğe yönlendirmek yerine bu ilgiyi kullanabileceği farklı çalışma ortamlarını araştırmasını destekleyin."
+      },
+      {
+        "title": "Bir araştırma sorusu üretin",
+        "body": "Seçilen alanla ilgili eğitim yolu, günlük çalışma, kullanılan beceriler ve erişilebilir deneyim fırsatları üzerine soru hazırlatın. Güncel program koşulları, kontenjan veya başarı sırası gerekiyorsa ilgili yılın ÖSYM/YÖK kaynaklarına gidin. Önceki yıllardaki veriyi güncel kabul ederek tercih kararı üretmeyin."
+      },
+      {
+        "title": "Sonraki adımı belirleyin",
+        "body": "Öğrenciye güvenilir bir tanıtım kaynağı inceleme veya okulun uygun bulduğu bir kariyer etkinliğine katılma gibi küçük bir araştırma adımı seçtirin. Bir hafta sonra “Neyi öğrendim, hangi sorum değişti?” sorularıyla dönün. Paylaşımda meslekleri prestij sırasına koymadan farklı yolların gerektirdiği koşulları tartışın."
+      }
+    ],
+    "checklist": [
+      "Atölyenin keşif hedefini ve hedef grubu belirle",
+      "Güvenilir kariyer tanıtım kaynaklarını seç",
+      "Her öğrenciye bir araştırma sorusu hazırlat",
+      "Sonraki araştırma adımı için izleme zamanı belirle"
+    ],
+    "activity": {
+      "title": "Merak ettiğim çalışma dünyası",
+      "goal": "Bir kariyer alanı için araştırma sorusu hazırlıyorum",
+      "steps": [
+        "Öğrenciler ilgi duydukları iki etkinliği kendilerine ait kartta listeler.",
+        "Kurgusal çalışma ortamları üzerinden hangi becerilerin kullanıldığını tartışın.",
+        "Her öğrenci merak ettiği alan için eğitim ve günlük iş hakkında iki soru hazırlar.",
+        "Güvenilir bilgi kaynağı seçerek bir sonraki küçük araştırma adımını yazdırın."
+      ],
+      "audience": "Öğrenci"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/rehberlik-hizmetleri/kategori/307"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  },
+  {
+    "id": "aylik-faaliyet-ozeti",
+    "title": "Aylık rehberlik faaliyet özeti: sayı ve değerlendirme",
+    "category": "Raporlama",
+    "levels": [
+      "Tüm kademeler"
+    ],
+    "query": "faaliyet",
+    "path": "/uygulama/aylik-faaliyet-ozeti/",
+    "intro": "Aylık özet, yapılan işleri okul programının hedefleriyle birlikte değerlendirmeye yardımcı olur. Etkinlik sayısı, katılım ve nitel gözlem farklı bilgilerdir. Bu sayfadaki rapor taslağı kurumun istediği resmî rapor biçiminin yerine geçmez; kendi kayıtlarınızdan mahremiyeti koruyan bir özet hazırlamak için kullanılabilir.",
+    "sections": [
+      {
+        "title": "Önce kapsamı yazın",
+        "body": "Rapor ayını ve hangi çalışmaları kapsadığını belirleyin. Sınıf etkinlikleri, veli çalışmaları, öğretmen müşavirliği ve görüşme sayılarını farklı alanlarda toplayın. Görüşme sayısını görüşülen benzersiz öğrenci sayısı gibi sunmayın. Aynı kişinin birden fazla katılımı varsa toplam katılım ile kişi sayısının farkını açıklayın."
+      },
+      {
+        "title": "Hedefle bağlantı kurun",
+        "body": "Yalnız “üç etkinlik yapıldı” yazmak yerine etkinliğin okul programındaki hangi ihtiyaca karşılık geldiğini belirtin. Uygulama sayıları erişimi gösterir; etkililiği kanıtlamaz. Değerlendirme yapılmadıysa “sonuç ölçülmedi” diyebilmek, dayanaksız başarı iddiasından daha yararlıdır."
+      },
+      {
+        "title": "Bir sonraki ayı belirleyin",
+        "body": "Devam eden ihtiyacı, değiştirilecek uygulamayı ve sonraki ay için bir önceliği belirtin. Çok küçük bir gruba ait veriler öğrencilerin tanınmasını kolaylaştırabilir; raporu paylaşmadan önce ayrıntı düzeyini değerlendirin. İsim, vaka anlatısı ve sağlık bilgisi rapor taslağına girilmez. Çıktıyı kurumun rapor formatına aktarmadan önce sayıları kontrol edin."
+      }
+    ],
+    "checklist": [
+      "Ayı ve kayıtların kapsamını belirle",
+      "Etkinlik, görüşme ve katılım sayılarını ayır",
+      "Yapılan işleri okul hedefleriyle ilişkilendir",
+      "Anonim özeti kontrol et ve sonraki önceliği belirle"
+    ],
+    "activity": {
+      "title": "Ay sonu değerlendirme",
+      "goal": "Yapılan çalışmayı hedefle ilişkilendiriyorum",
+      "steps": [
+        "Kurgusal bir okulun üç faaliyetini ve hedeflerini kartlara yazın.",
+        "Faaliyet sayısı ile sonuç değerlendirmesi arasındaki farkı birlikte tartışın.",
+        "Her grup kanıtı olmayan bir başarı cümlesini ölçülebilir izleme sorusuna dönüştürür.",
+        "Sonraki ay için bir iyileştirme adımı seçin."
+      ],
+      "audience": "Rehber öğretmen"
+    },
+    "sources": [
+      {
+        "title": "MEB ÖRGM · ilgili resmî kaynak merkezi",
+        "url": "https://orgm.meb.gov.tr/www/okul-rehberlik-ve-psikolojik-danisma-hizmetleri-programi/icerik/3231"
+      }
+    ],
+    "updatedAt": "2026-10-06"
+  }
+]

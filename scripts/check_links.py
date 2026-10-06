@@ -102,17 +102,18 @@ def check_external(url):
     return None, "bilinmeyen hata"
 
 checked=0
-for url in sorted(external):
-    status, detail=check_external(url)
-    checked+=1
-    if status is None:
-        warnings.append(f"Dış bağlantı doğrulanamadı: {url} ({detail})")
-    elif status in (404,410):
-        errors.append(f"Kırık dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
-    elif status>=400:
-        warnings.append(f"Dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
-    elif detail!=url:
-        pass
+if "--local-only" not in sys.argv:
+    for url in sorted(external):
+        status, detail=check_external(url)
+        checked+=1
+        if status is None:
+            warnings.append(f"Dış bağlantı doğrulanamadı: {url} ({detail})")
+        elif status in (404,410):
+            errors.append(f"Kırık dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
+        elif status>=400:
+            warnings.append(f"Dış bağlantı HTTP {status}: {url} | kaynak: {', '.join(sorted(external[url]))}")
+        elif detail!=url:
+            pass
 
 print(f"Link audit: {len(HTML_FILES)} HTML dosyası, {checked} benzersiz dış URL kontrol edildi.")
 for w in warnings: print("WARN:",w)

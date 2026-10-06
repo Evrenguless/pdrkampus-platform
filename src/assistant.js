@@ -1,0 +1,37 @@
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
+import {dateKey,parseDate,weekDates,taskSummary,filterPacks,activityText,reportText} from './assistant-core.js?v=20261006-2';
+import {guestStore,accountStore} from './assistant-store.js?v=20261006-2';
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+let packs=[],store=null,tasks=[],output='',outputName='pdr-kampus.txt';
+const status=s=>{$('#assistantStatus').textContent=s};
+$('#weekDate').value=dateKey();$('#taskDate').value=dateKey();$('#reportForm').elements.month.value=dateKey().slice(0,7);
+$('#todayLabel').textContent=new Date().toLocaleDateString('tr-TR',{weekday:'long',day:'numeric',month:'long'});
+function renderTasks(){const summary=taskSummary(tasks);for(const key of ['open','today','overdue'])$('#count'+key).textContent=summary[key];const days=weekDates($('#weekDate').value),visible=tasks.filter(x=>days.includes(x.due_date));$('#weekRange').textContent=days.map(x=>parseDate(x).toLocaleDateString('tr-TR',{day:'numeric',month:'short'})).filter((_,i)=>i===0||i===4).join(' – ');
+ const row=x=>`<li class="assistant-task ${x.completed?'is-done':''}"><label><input type="checkbox" data-toggle="${esc(x.id)}" ${x.completed?'checked':''}> <span>${esc(x.title)}</span></label><button type="button" data-remove="${esc(x.id)}" aria-label="${esc(x.title)} işini sil">Sil</button></li>`;
+ $('#weekBoard').innerHTML=days.map(day=>`<section class="assistant-day"><h3>${parseDate(day).toLocaleDateString('tr-TR',{weekday:'long',day:'numeric'})}</h3><ul>${visible.filter(x=>x.due_date===day).map(row).join('')||'<li class="assistant-empty">Planlanmış iş yok.</li>'}</ul></section>`).join('');
+ const others=tasks.filter(x=>!days.includes(x.due_date));$('#otherTasks').innerHTML=others.map(x=>`<div><small>${x.due_date?esc(parseDate(x.due_date).toLocaleDateString('tr-TR')):'Tarihsiz'}</small><ul>${row(x)}</ul></div>`).join('')||'<p>Diğer tarihlerde iş yok.</p>';
+}
+async function refresh(){tasks=await store.list();renderTasks()}
+async function action(button,run){button.disabled=true;try{if(!store)throw Error('Plan bağlantısı hazır değil.');await run();await refresh();status(store.mode==='account'?'Çalışma Alanım’a kaydedildi.':'Bu tarayıcıya kaydedildi.')}catch(e){if(button.type==='checkbox')button.checked=!button.checked;status(e.message)}finally{button.disabled=false}}
+function renderPacks(){const selected=filterPacks(packs,$('#packLevel').value,$('#packSearch').value);$('#packCount').textContent=`${selected.length} çalışma paketi`;$('#packGrid').innerHTML=selected.map(p=>`<article class="assistant-pack"><small>${esc(p.category)} · ${esc(p.levels.join(' / '))}</small><h3><a href="${esc(p.path)}">${esc(p.title)}</a></h3><p>${esc(p.intro)}</p><a href="${esc(p.path)}">Adım adım rehber →</a><button type="button" data-plan="${esc(p.id)}">İlk adımı planıma ekle</button></article>`).join('')||'<p>Bu filtrede paket yok. Kademeyi veya aramayı değiştirin.</p>';
+ const options=filterPacks(packs,$('#activityLevel').value).filter(p=>p.activity.audience==='Öğrenci');const previous=$('#activityPack').value;$('#activityPack').innerHTML=options.map(p=>`<option value="${esc(p.id)}">${esc(p.activity.title)}</option>`).join('');if(options.some(p=>p.id===previous))$('#activityPack').value=previous;
+}
+function showOutput(value,name){output=value;outputName=name;$('#outputText').textContent=value;$('#outputPanel').hidden=false;$('#outputPanel').scrollIntoView({behavior:'smooth',block:'start'});$('#outputTitle').focus()}
+$('#taskForm').addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget,title=f.elements.title.value.trim(),date=f.elements.due_date.value||null;action(f.querySelector('button'),async()=>{if(title.length<3||title.length>180)throw Error('İş başlığı 3–180 karakter olmalı.');if(date)parseDate(date);await store.add(title,date);f.elements.title.value=''})});
+$('#planner').addEventListener('change',e=>{const box=e.target.closest('[data-toggle]');if(box)action(box,()=>store.toggle(box.dataset.toggle,box.checked));});
+$('#planner').addEventListener('click',e=>{const button=e.target.closest('[data-remove]');if(button)action(button,()=>store.remove(button.dataset.remove));});
+$('#weekDate').addEventListener('change',()=>{try{renderTasks()}catch(e){status(e.message)}});
+$('#packGrid').addEventListener('click',e=>{const button=e.target.closest('[data-plan]');if(!button)return;const p=packs.find(p=>p.id===button.dataset.plan);$('#taskForm').elements.title.value=p.checklist[0];$('#taskForm').elements.due_date.value=dateKey();$('#taskForm').scrollIntoView({behavior:'smooth',block:'center'});$('#taskForm').elements.title.focus();status('İlk adım hazır. Tarihini kontrol edip İş ekle düğmesine basın.');});
+for(const selector of ['#packLevel','#packSearch','#activityLevel'])$(selector).addEventListener('input',renderPacks);
+$('#activityForm').addEventListener('submit',e=>{e.preventDefault();try{const p=packs.find(p=>p.id===$('#activityPack').value);if(!p)throw Error('Etkinlik paketi yüklenemedi.');showOutput(activityText(p,$('#activityLevel').value,$('#activityMinutes').value),'pdr-etkinlik-taslagi.txt')}catch(e){status(e.message)}});
+$('#reportForm').addEventListener('submit',e=>{e.preventDefault();try{showOutput(reportText(Object.fromEntries(new FormData(e.currentTarget))),'pdr-aylik-faaliyet-ozeti.txt')}catch(e){status(e.message)}});
+$('#downloadOutput').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([output],{type:'text/plain;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=outputName;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
+$('#printOutput').addEventListener('click',()=>window.print());
+$('#copyOutput').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(output);status('Taslak panoya kopyalandı.')}catch{status('Kopyalama izni verilmedi. Metni seçebilir veya indirebilirsiniz.')}});
+async function init(){
+ try{const response=await fetch('/data/assistant-packs.json?v=20261006-2');if(!response.ok)throw Error('Çalışma paketleri yüklenemedi.');packs=await response.json();renderPacks();const initial=packs.find(p=>p.id===new URLSearchParams(location.search).get('paket'));if(initial)$('#taskForm').elements.title.value=initial.checklist[0];if(!packs.length)throw Error('Çalışma paketi bulunamadı.');}catch(e){status(e.message);$('#packGrid').innerHTML='<p>Çalışma paketleri yüklenemedi. Sayfayı yenileyin veya uygulama rehberlerinden devam edin.</p>'}
+ try{const client=authConfigured&&window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);let user=null;if(client){const {data,error}=await client.auth.getSession();if(error)throw Error('Hesap oturumu okunamadı. Sayfayı yenileyin.');if(data.session){const verified=await client.auth.getUser();if(verified.error||!verified.data.user)throw Error('Hesap oturumu doğrulanamadı. Yeniden giriş yapın.');user=verified.data.user;}}
+ store=user?accountStore(client,user.id):guestStore(window.localStorage);$('#storageMode').textContent=user?'Hesap planı · Çalışma Alanım ile ortak':'Misafir planı · yalnız bu tarayıcıda';await refresh();$('#taskForm').querySelector('button').disabled=false;
+ }catch(e){store=null;status(e.message);$('#storageMode').textContent='Plan bağlantısı kurulamadı';}
+}
+await init();

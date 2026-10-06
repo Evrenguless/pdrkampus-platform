@@ -104,3 +104,9 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## İçerik bildirimi
 
 `db/017_content_reports.sql` dosyasını 016 sonrasında yeni Supabase projesinde çalıştırın. Giriş yapan üyeler yayımlanmış gönderi, yorum, soru, cevap ve meslektaş belgelerini gerekçeyle bildirebilir. Aynı üye aynı içeriği bir kez bildirebilir. Bildirimler yalnızca sahibine ve yöneticiye görünür; yönetici Topluluk yönetimi sayfasındaki kuyruğu inceler ve işlem yapıldı/işlem gerekmiyor durumunu seçer. Bu işlem içeriği kendiliğinden yayından kaldırmaz; yönetici mevcut düzenleme/kaldırma ekranlarından karar verir.
+
+## Günlük Asistan · 6 Ekim 2026
+
+`/asistan/` haftalık plan, sekiz uygulama paketi, etkinlik taslağı ve aylık faaliyet özeti sunar. Hesap planı mevcut `workspace_tasks` tablosunu kullanır; 013 kurulumu gereklidir. Misafir planı yalnız tarayıcıda saklanır. Etkinlik/rapor çıktıları TXT olarak indirilebilir veya tarayıcıdan PDF yazdırılabilir. Rapor girdileri kalıcı olarak saklanmaz. Öğrenci kişisel verisi ve görüşme kayıtları eklenmez.
+
+İçerik kaynağı `data/assistant-packs.json`; `python3 scripts/build_assistant_guides.py` statik rehberleri ve asistan sayfasını üretir. `--check` üretimin güncel olduğunu denetler. `npm test` tarih sınırları, kademeler, rapor sayıları, depolama hataları ve hesap sahipliği davranışlarını sınar. Ürün/growth planı ve kapsam için `docs/gunluk-asistan-growth.md` dosyasına bakın.
