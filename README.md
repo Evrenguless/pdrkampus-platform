@@ -104,3 +104,7 @@ Bu atama yalnızca yetkili yönetici tarafından yapılır. `009` kurulumu sonra
 ## İçerik bildirimi
 
 `db/017_content_reports.sql` dosyasını 016 sonrasında yeni Supabase projesinde çalıştırın. Giriş yapan üyeler yayımlanmış gönderi, yorum, soru, cevap ve meslektaş belgelerini gerekçeyle bildirebilir. Aynı üye aynı içeriği bir kez bildirebilir. Bildirimler yalnızca sahibine ve yöneticiye görünür; yönetici Topluluk yönetimi sayfasındaki kuyruğu inceler ve işlem yapıldı/işlem gerekmiyor durumunu seçer. Bu işlem içeriği kendiliğinden yayından kaldırmaz; yönetici mevcut düzenleme/kaldırma ekranlarından karar verir.
+
+## Personel alım ilanları ve bölüm rehberi
+
+Ana sayfa ve menüden bağımsız `/personel-alim-ilanlari/` haber akışı ile `/bolumler/` rehberi eklendi. İçerikler arama motorları için statik HTML olarak üretilir. İlan filtreleri ve tarih/saat bazında başvuru durumları; bölüm puan türü ve düzey filtreleri bulunur. 16 bölüm ve resmî kaynaktan doğrulanan ilk personel ilanıyla başlar. İçerik eklemek için JSON verilerini düzenleyip `python3 scripts/build_career_pages.py` çalıştırın. Ayrıntılar: [İçerik yönetimi](docs/career-content.md).

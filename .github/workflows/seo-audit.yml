@@ -19,6 +19,8 @@ jobs:
         run: python scripts/build_library_catalog.py --check
       - name: Verify material hubs
         run: python scripts/build_material_hubs.py --check
+      - name: Verify career pages
+        run: python scripts/build_career_pages.py --check
       - name: Run SEO audit
         run: python scripts/check_seo.py
 
