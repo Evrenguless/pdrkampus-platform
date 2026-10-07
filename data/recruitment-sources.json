@@ -3,14 +3,50 @@
   "intervalHours": 6,
   "mode": "codex-heartbeat",
   "sources": [
-    {"name": "Kariyer Kapısı", "url": "https://kariyerkapisi.gov.tr/isealim"},
-    {"name": "Basın İlan Kurumu", "url": "https://www.ilan.gov.tr/"},
-    {"name": "SBB kamu personel ilanları", "url": "https://www.sbb.gov.tr/kamu-personel-alim-ilanlari/"},
-    {"name": "ÇSGB", "url": "https://www.csgb.gov.tr/duyurular/"},
-    {"name": "Düzce Üniversitesi", "url": "https://personel.duzce.edu.tr/"},
-    {"name": "Niğde Ömer Halisdemir Üniversitesi", "url": "https://www.ohu.edu.tr/personel"},
-    {"name": "Atatürk Üniversitesi", "url": "https://atauni.edu.tr/personel-daire-baskanligi/"},
-    {"name": "Batman Üniversitesi", "url": "https://batman.edu.tr/Birimler/personel"},
-    {"name": "Ankara Üniversitesi", "url": "https://personeldb.ankara.edu.tr/tum-duyurular/"}
+    {
+      "name": "Kariyer Kapısı",
+      "url": "https://kariyerkapisi.gov.tr/isealim",
+      "priority": 1,
+      "role": "official"
+    },
+    {
+      "name": "Kamu İş İlanları",
+      "url": "https://www.kamuisilanlari.com/",
+      "priority": 1,
+      "role": "discovery",
+      "verification": "Kurumun resmî ilanı veya Kariyer Kapısı ile doğrula"
+    },
+    {
+      "name": "Basın İlan Kurumu",
+      "url": "https://www.ilan.gov.tr/"
+    },
+    {
+      "name": "SBB kamu personel ilanları",
+      "url": "https://www.sbb.gov.tr/kamu-personel-alim-ilanlari/"
+    },
+    {
+      "name": "ÇSGB",
+      "url": "https://www.csgb.gov.tr/duyurular/"
+    },
+    {
+      "name": "Düzce Üniversitesi",
+      "url": "https://personel.duzce.edu.tr/"
+    },
+    {
+      "name": "Niğde Ömer Halisdemir Üniversitesi",
+      "url": "https://www.ohu.edu.tr/personel"
+    },
+    {
+      "name": "Atatürk Üniversitesi",
+      "url": "https://atauni.edu.tr/personel-daire-baskanligi/"
+    },
+    {
+      "name": "Batman Üniversitesi",
+      "url": "https://batman.edu.tr/Birimler/personel"
+    },
+    {
+      "name": "Ankara Üniversitesi",
+      "url": "https://personeldb.ankara.edu.tr/tum-duyurular/"
+    }
   ]
 }
