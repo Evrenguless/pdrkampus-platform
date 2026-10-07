@@ -33,4 +33,18 @@ class Tests(unittest.TestCase):
    root=Path(d);(root/'data').mkdir();now=datetime(2026,10,7,tzinfo=TZ)
    first=collect(root,Fake(),now);before=(root/'data/recruitment-feed.json').read_bytes();second=collect(root,Fake(),datetime(2026,10,8,tzinfo=TZ))
    self.assertTrue(first['changed']);self.assertFalse(second['changed']);self.assertEqual(before,(root/'data/recruitment-feed.json').read_bytes());self.assertTrue(first['newsError'])
+ def test_official_rss_fallback_preserves_known_dates_and_never_invents_new_dates(self):
+  from collect_recruitment import normalize
+  old=normalize([self.row()])[0]
+  xml=b'<rss><channel><item><title>Kurum - Personel alimi</title><category>Sozlesmeli Personel</category><link>https://kariyerkapisi.gov.tr/IlanDetay?i=00000000-0000-0000-0000-000000000001</link><pubDate>Sun, 04 Oct 2026 09:00:00 +0300</pubDate></item><item><title>Yeni Kurum - Alim</title><category>Sozlesmeli Personel</category><link>https://kariyerkapisi.gov.tr/IlanDetay?i=00000000-0000-0000-0000-000000000002</link><pubDate>Wed, 07 Oct 2026 09:00:00 +0300</pubDate></item></channel></rss>'
+  class Fake:
+   def get(self,u,*args):
+    if 'api.kariyerkapisi' in u:raise OSError('connect timeout')
+    if '/RSS' in u:return xml,{}
+    return b'[]',{'X-WP-TotalPages':'1'}
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);(root/'data').mkdir();p=root/'data/recruitment-feed.json';p.write_text(json.dumps({'records':old}))
+   r=collect(root,Fake(),datetime(2026,10,8,tzinfo=TZ));rows={x['id']:x for x in json.loads(p.read_text())['records']}
+   self.assertEqual(r['source'],'https://kariyerkapisi.gov.tr/RSS');self.assertEqual(r['open'],1);self.assertEqual(r['timingUnknown'],1)
+   self.assertEqual(rows[old[0]['id']]['deadline'],old[0]['deadline']);new=rows['00000000-0000-0000-0000-000000000002'];self.assertIsNone(new['deadline']);self.assertIsNone(new['startsAt'])
 if __name__=='__main__':unittest.main()
