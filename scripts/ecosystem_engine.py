@@ -13,7 +13,8 @@ def load_catalogue(root):
     # Explicit public catalogue fields; user/individual data is never imported.
     allowed={'id','title','type','level','topic','source','sourcePage','sourceUrl','file','fileType','verifiedAt','category','group'}
     rows=[]
-    for name in ['library','forms']:
+    for name in ['library','forms','collected-resources']:
+        if not (root/'data'/f'{name}.json').exists():continue
         rows.extend({**{k:v for k,v in r.items() if k in allowed},'catalogue':name} for r in read(root/'data'/f'{name}.json'))
     return rows
 

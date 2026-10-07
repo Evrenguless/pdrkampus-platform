@@ -12,7 +12,7 @@ from collect_resources import ROOT, Links, allowed, canonical, classify, collect
 class CollectorTests(unittest.TestCase):
     def setUp(self):
         self.config = json.loads((ROOT / 'collector/config.json').read_text())
-        self.config.update(seed_pages=['https://test.meb.k12.tr/'], seed_batch=1, max_pages=4, max_file_checks=4)
+        self.config.update(seed_pages=['https://test.meb.k12.tr/'], seed_batch=1, max_pages=4, max_file_checks=4, known_file_checks=0)
         self.page = 'https://test.meb.k12.tr/'
         self.file = self.page + 'dosyalar/akran-zorbaligi-sunum.pdf'
 
@@ -47,6 +47,9 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(result['levels'], ['İlkokul']); self.assertEqual(result['material_type'], 'Pano')
         self.assertIn('Dijital güvenlik', result['topics'])
         self.assertEqual(classify('Akran zorbalığı sunumu', self.config)['levels'], [])
+        self.assertEqual(classify('9 Sınıflar Örnek Sınıf Rehberlik Planı', self.config)['levels'], ['Lise'])
+        self.assertEqual(classify('1-8. sınıf rehberlik etkinlikleri', self.config)['levels'], ['İlkokul', 'Ortaokul'])
+        self.assertEqual(classify('2/……. SINIFI REHBERLİK HİZMETLERİ PLANI', self.config)['levels'], ['İlkokul'])
 
     def test_known_catalogue_unchanged_and_repeat_run_is_idempotent(self):
         known = self.page + 'dosyalar/veli-form.pdf'
@@ -104,6 +107,15 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(source_title('/dosyalar/6ac5de6ca8d95629736886_plan.pdf', '6ac5de6ca8d95629736886_plan.pdf'), 'plan')
         self.assertEqual(source_title('Tıklayınız.', '12345678_rehberlik_sunumu.pdf'), 'rehberlik sunumu')
         self.assertNotIn('Kriz ve yas', classify('Yasal haklar', self.config)['topics'])
+
+    def test_existing_catalogue_content_hash_blocks_a_new_url_copy(self):
+        import hashlib
+        body = b'%PDF-1.7\nsame-public-document'
+        get = self.fake({self.page: f'<a href="{self.file}">Akran zorbalığı sunumu</a>'}, {self.file: body})
+        previous = {'known_hashes': {'https://old.meb.k12.tr/old.pdf': {'sha256': hashlib.sha256(body).hexdigest()}}}
+        state, report = collect(self.config, [], previous, get)
+        self.assertEqual(state['candidates'][0]['status'], 'duplicate')
+        self.assertEqual(state['candidates'][0]['duplicate_of'], 'existing_catalogue_content')
 
 
 if __name__ == '__main__': unittest.main()

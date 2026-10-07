@@ -259,8 +259,8 @@
     },
     "src/library.js": {
       "baseline_sha256": "18ef87251a4b0ce7232d07cca82ad94f59741ace9109feff8844eb7b6254fb1e",
-      "reviewed_sha256": "c5648aa595f934986b27615f236e0eb28f751e2a50bd7a67f501e932c53a79a1",
-      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+      "reviewed_sha256": "d0698b8e2146b14d3511f7e05234098a7d51d974e3887180a71d3628aedd8f01",
+      "reason": "Supplementary collected-resource integration; all original catalogue records and auth/storage behavior preserved"
     },
     "tests/catalog.mjs": {
       "baseline_sha256": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
@@ -821,8 +821,8 @@
     },
     "kutuphane.html": {
       "baseline_sha256": "423c4fe55483a69113a61d2fc7523ffc17d59e79b2569f967901aad15fedee24",
-      "reviewed_sha256": "749500fae7efb064af52afad469a6397b6e60e8c9f7c22a3e2dd1808f2312a2d",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "590b9df0d592989302144d5b0136d447c016df77e89236a0694d8eab4c375d7b",
+      "reason": "Supplementary collected-resource integration; all original catalogue records and auth/storage behavior preserved",
       "runtime_sha256": "219318b6ed001a8127e028fec6669202a01bbc2b918fcaf059bee8aeb8c33cfd"
     },
     "kvkk-aydinlatma.html": {
@@ -1241,7 +1241,7 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "1f3d7aa55b06967549ec96463c71cb6383956d79e129e990aa638ec440fff9ab",
+      "reviewed_sha256": "d5654efd7be6a303d0e1cc92f02d560c4097610994ecbff1f1614685c8f2b8b5",
       "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved"
     },
     "topluluk.html": {

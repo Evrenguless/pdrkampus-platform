@@ -4,6 +4,7 @@
 import argparse
 import collections
 import csv
+from datetime import datetime, timezone
 import hashlib
 import html
 from html.parser import HTMLParser
@@ -36,7 +37,7 @@ def canonical(url):
         raise ValueError('Nonstandard port')
     path = quote(unquote(parts.path or '/'), safe='/@:+,;=-._~')
     # File identity excludes only fragment; query may identify a different document.
-    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, parts.query, ''))
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, quote(parts.query, safe='=&?/:;+,%'), ''))
 
 
 def allowed(url, domains):
@@ -126,6 +127,7 @@ class Fetcher:
         return self.robots[origin].can_fetch(self.config['user_agent'], url)
 
     def get(self, url, limit):
+        url = canonical(url)
         if not allowed(url, self.config['allowed_domains']): raise ValueError('Nonofficial URL')
         if not self.robot(url): raise ValueError('Robots denied or unavailable')
         self.wait(url)
@@ -159,9 +161,18 @@ def classify(title, config):
     topics = [topic for topic, words in config['topic_keywords'].items() if any((re.search(r'\b' + re.escape(word) + r'\b', text) if len(word) <= 3 else word in text) for word in words)]
     kinds = [('Envanter', ['envanter']), ('Form', ['form', 'anket', 'tutanak', 'gozlem', 'sosyometri', 'beyan']),
              ('Sunum', ['sunum', 'sunu']), ('Pano', ['pano', 'afis', 'poster']),
-             ('Broşür', ['brosur', 'bulten']), ('Yıllık plan', ['calisma plani', 'yillikplan', 'yillik_plan']), ('Etkinlik', ['etkinlik', 'psikoegitim', 'program'])]
+             ('Broşür', ['brosur', 'bulten']), ('Yıllık plan', ['calisma plani', 'calismaplani', 'rehberlikplani', 'rehberlik plani', 'yillikplan', 'yillik_plan', 'yillik plan']), ('Kılavuz', ['kilavuz', 'rehber kitap']), ('Rapor', ['arastirma rapor']), ('Etkinlik', ['etkinlik', 'psikoegitim', 'program'])]
     kind = next((kind for kind, words in kinds if any(word in text for word in words)), 'Belirtilmiyor')
     levels = [label for label, word in [('Okul öncesi', 'okuloncesi'), ('İlkokul', 'ilkokul'), ('Ortaokul', 'ortaokul'), ('Lise', 'lise')] if word in text.replace(' ', '')]
+    grade_text = text.replace('_', ' ')
+    grades = {int(g) for g in re.findall(r'(?<!\d)(1[0-2]|[1-9])\s*\.?\s*sinif', grade_text)}
+    # Printed plan templates use an empty branch field: "2/…… SINIFI".
+    grades.update(int(g) for g in re.findall(r'(?<!\d)(1[0-2]|[1-9])\s*/\s*[.\u2026_]+\s*sinif', grade_text))
+    for first, last in re.findall(r'(?<!\d)(1[0-2]|[1-9])\s*[-–]\s*(1[0-2]|[1-9])\s*\.?\s*sinif', grade_text):
+        if int(first) <= int(last): grades.update(range(int(first), int(last)+1))
+    for grade in sorted(grades):
+        label = 'İlkokul' if grade <= 4 else 'Ortaokul' if grade <= 8 else 'Lise'
+        if label not in levels: levels.append(label)
     return {'topics': topics, 'material_type': kind, 'levels': levels, 'classification_basis': 'source_anchor_and_filename_keywords', 'classification_review_required': True}
 
 
@@ -183,14 +194,18 @@ def collect(config, catalogue, previous, fetch, now=None):
     queue.extend((u, 1) for u in frontier[:config['max_pages'] // 4])
     frontier = frontier[config['max_pages'] // 4:]
     rows = {row['id']: dict(row) for row in previous.get('candidates', []) if allowed(row.get('file_url', ''), config['allowed_domains']) and resource_link(row['file_url'], row.get('anchor_text', '')) and all(allowed(u, config['allowed_domains']) for u in row.get('source_pages', [])) and row.get('source_pages')}
+    known_hashes = dict(previous.get('known_hashes', {}))
+    for row in catalogue:
+        if row.get('contentSha256'): known_hashes[canonical(row['file'])] = {'sha256': row['contentSha256'], 'text_sha256': row.get('documentTextSha256')}
     for row in rows.values():
         filename = unquote(urlsplit(row['file_url']).path.rsplit('/', 1)[-1])
         row['title'] = source_title(row.get('anchor_text', ''), filename)
+        if row.get('inspection', {}).get('eligible'): row['title'] = row['inspection'].get('title', row['title'])
         row.update(classify(row.get('anchor_text', '') + ' ' + filename, config))
         if canonical(row['file_url']) in known: row['status'] = 'already_catalogued'
     errors = []; visited = set(); discovered = 0; known_skipped = 0
     words = [word for values in config['topic_keywords'].values() for word in values] + ['rehber', 'dokuman', 'materyal', 'sunum', 'form', 'envanter', 'brosur']
-    while queue and len(visited) < config['max_pages'] and time.monotonic() - start < config['max_seconds']:
+    while queue and len(visited) < config['max_pages'] and time.monotonic() - start < config['max_seconds'] * .55:
         page, depth = queue.popleft()
         if page in visited: continue
         visited.add(page)
@@ -221,14 +236,40 @@ def collect(config, catalogue, previous, fetch, now=None):
                     rows[identity] = {'id': identity, 'title': title[:240], 'file_url': url, 'file_type': ext.upper(), 'source_pages': [page], 'source_title': parsed.title.strip()[:240], 'source_host': urlsplit(page).hostname, 'discovered_at': now, 'status': 'pending_check', 'published': False, 'anchor_text': anchor[:240], **classify(evidence, config)}
                     discovered += 1
                 elif depth < config['max_depth'] and urlsplit(url).hostname == urlsplit(page).hostname:
+                    if '/icerikler/etiket__' in url or ('.' in urlsplit(url).path.rsplit('/', 1)[-1] and extension(url) not in ('html', 'htm', 'php')): continue
                     if any(word in fold(unquote(url) + ' ' + anchor) for word in words) and not re.search(r'(login|giris|arama|search|\.php\?)', url, re.I):
                         queue.append((url, depth + 1))
         except Exception as error: errors.append({'url': page, 'stage': 'page', 'error': str(error)[:240]})
     frontier.extend(url for url, _ in queue if url not in visited)
-    checked = 0; hashes = {row['sha256']: row['id'] for row in rows.values() if row.get('sha256') and row['status'] != 'duplicate'}
+    checked = 0; baseline_checked = 0; baseline_errors = []
+    # Index an incremental sample of existing files without writing their records.
+    originals = sorted({canonical(row['file']): row for row in catalogue if row.get('file') and not row.get('contentSha256') and allowed(row['file'], config['allowed_domains']) and extension(row['file']) in EXTENSIONS}.items())
+    known_cursor = previous.get('known_cursor', 0) % max(1, len(originals))
+    overrides = json.loads((ROOT/'seo/link-overrides.json').read_text())['entries'] if (ROOT/'seo/link-overrides.json').exists() else {}
+    for i in range(min(config.get('known_file_checks', 0), len(originals))):
+        if time.monotonic() - start >= config['max_seconds'] * .75: break
+        url, original = originals[(known_cursor+i) % len(originals)]
+        if url in known_hashes: continue
+        entry = overrides.get(original['file'], {})
+        if entry.get('status') == 'unavailable': continue
+        actual = entry.get('replacement_url') or original['file']
+        baseline_checked += 1
+        try:
+            body, _, final = fetch(actual, config['max_file_bytes'])
+            if not file_signature(body, extension(actual)): raise ValueError('Original signature unavailable')
+            from inspect_resource import inspect
+            evidence = inspect(body, extension(actual), original.get('title', ''))
+            known_hashes[url] = {'sha256': hashlib.sha256(body).hexdigest(), 'text_sha256': evidence.get('text_sha256')}
+        except Exception as error: baseline_errors.append({'url': url, 'error': str(error)[:240]})
+    hashes = {row['sha256']: row['id'] for row in rows.values() if row.get('sha256') and row['status'] != 'duplicate'}
+    original_byte_hashes = {r['sha256'] for r in known_hashes.values() if r.get('sha256')}
+    original_text_hashes = {r['text_sha256'] for r in known_hashes.values() if r.get('text_sha256')}
     for row in sorted(rows.values(), key=lambda row: (row.get('last_checked_at', ''), row['discovered_at'], row['id'])):
         if checked >= config['max_file_checks'] or time.monotonic() - start >= config['max_seconds']: break
-        if row['status'] not in ('pending_check', 'retry'): continue
+        last = row.get('access_verified_at', '')
+        try: stale = (datetime.fromisoformat(now.replace('Z','+00:00'))-datetime.fromisoformat(last.replace('Z','+00:00'))).total_seconds() > 86400
+        except ValueError: stale = True
+        if row['status'] not in ('pending_check', 'retry') and not (row['status'] == 'review_ready' and ('inspection' not in row or stale)): continue
         checked += 1; row['last_checked_at'] = now
         try:
             body, headers, final = fetch(row['file_url'], config['max_file_bytes'])
@@ -239,10 +280,21 @@ def collect(config, catalogue, previous, fetch, now=None):
             if final in known: row.update(status='already_catalogued')
             elif digest in hashes and hashes[digest] != row['id']: row.update(status='duplicate', duplicate_of=hashes[digest])
             else: hashes[digest] = row['id']
+            if row['status'] == 'review_ready':
+                from inspect_resource import inspect
+                row['inspection'] = inspect(body, row['file_type'].lower(), row['title'])
+                if row['inspection'].get('eligible'): row['title'] = row['inspection'].get('title', row['title'])
+                if digest in original_byte_hashes or row['inspection'].get('text_sha256') in original_text_hashes:
+                    row.update(status='duplicate', duplicate_of='existing_catalogue_content')
         except Exception as error:
             row.update(status='retry', error=str(error)[:240])
-    state = {'version': 1, 'last_run': now, 'cursor': (cursor + len(batch)) % max(1, len(seeds)), 'frontier': list(dict.fromkeys(frontier))[:2000], 'candidates': sorted(rows.values(), key=lambda row: row['id'])}
-    report = {'run_at': now, 'seed_pages': len(seeds), 'seed_batch': len(batch), 'visited_pages': len(visited), 'new_candidates': discovered, 'known_links_skipped': known_skipped, 'file_checks': checked, 'statuses': dict(collections.Counter(row['status'] for row in rows.values())), 'errors': errors, 'catalogue_writes': 0, 'database_writes': 0, 'publication_writes': 0, 'elapsed_seconds': round(time.monotonic() - start, 2)}
+    # Previously inspected candidates must also benefit from the growing original-file index.
+    for row in rows.values():
+        if row['status'] == 'review_ready' and (row.get('sha256') in original_byte_hashes or row.get('inspection', {}).get('text_sha256') in original_text_hashes):
+            row.update(status='duplicate', duplicate_of='existing_catalogue_content')
+    state = {'version': 1, 'last_run': now, 'cursor': (cursor + len(batch)) % max(1, len(seeds)), 'known_cursor': (known_cursor+config.get('known_file_checks', 0)) % max(1, len(originals)), 'known_hashes': known_hashes, 'frontier': list(dict.fromkeys(frontier))[:2000], 'candidates': sorted(rows.values(), key=lambda row: row['id'])}
+    report = {'run_at': now, 'seed_pages': len(seeds), 'seed_batch': len(batch), 'visited_pages': len(visited), 'new_candidates': discovered, 'known_links_skipped': known_skipped, 'file_checks': checked, 'statuses': dict(collections.Counter(row['status'] for row in rows.values())), 'publication_eligible': sum(bool(row.get('inspection', {}).get('eligible')) for row in rows.values() if row['status'] == 'review_ready'), 'published_unique_resources': len(known), 'target_resources': config.get('target_resources', 5000), 'remaining_to_target': max(0, config.get('target_resources', 5000) - len(known)), 'errors': errors, 'catalogue_writes': 0, 'database_writes': 0, 'publication_writes': 0, 'elapsed_seconds': round(time.monotonic() - start, 2)}
+    report.update(original_file_checks=baseline_checked, original_hashes_indexed=len(known_hashes), original_index_errors=baseline_errors)
     return state, report
 
 
@@ -279,6 +331,13 @@ def main():
     args = parser.parse_args(); output = args.output.resolve()
     if output == ROOT or ROOT in output.parents or output.exists(): raise ValueError('Output must be a new directory outside the project')
     config = json.loads(args.config.read_text(encoding='utf-8'))
+    inventory_sources = ROOT / 'inventory-review/source-pages.csv'
+    if inventory_sources.exists():
+        with inventory_sources.open(encoding='utf-8-sig', newline='') as stream:
+            for row in csv.DictReader(stream):
+                page = row.get('source_url', '')
+                if allowed(page, config['allowed_domains']) and extension(page) not in EXTENSIONS:
+                    config['seed_pages'].append(canonical(page))
     for key in ('seed_batch', 'max_pages', 'max_file_checks'):
         value = getattr(args, key)
         if value is not None:
@@ -286,6 +345,8 @@ def main():
             config[key] = value
     previous = json.loads(args.previous.read_text(encoding='utf-8')) if args.previous and args.previous.exists() else {}
     catalogue = json.loads((ROOT / 'data/library.json').read_text()) + json.loads((ROOT / 'data/forms.json').read_text())
+    supplementary = ROOT / 'data/collected-resources.json'
+    if supplementary.exists(): catalogue += json.loads(supplementary.read_text())
     state, report = collect(config, catalogue, previous, Fetcher(config).get)
     write_outputs(output, state, report)
     print(json.dumps(report, ensure_ascii=False))

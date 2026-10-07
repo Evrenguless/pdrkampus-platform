@@ -2,6 +2,7 @@ import { resourceAccess } from './resource-access.js';
 import {groupVisibleResources} from './resource-groups.js';
 import {readLibraryUrl,writeLibraryUrl} from './library-url-state.js';
 import { libraryDetailLinks } from './library-detail-links.js';
+import { mergeCollectedResources } from './collected-resources.js';
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 import {getCuratedResources} from './curated.js?v=20260926-1';
 import {parseQuery,normalize} from './search.js?v=20260928-4';
@@ -39,7 +40,7 @@ async function loadJson(path){
 function officialDocuments(forms,resources){
  return [
   ...forms.map(item=>({id:item.id,kind:'tool',title:item.title,type:'Form',level:item.level,levels:item.levels,topic:item.category,area:item.group,source:'MEB Form Haritası',origin:'official',file:item.file,fileType:item.fileType,code:item.code,location:item.location,grades:item.grades})),
-  ...resources.map(item=>({id:item.id,kind:'library',title:item.title,type:item.type,level:item.level,levels:item.levels,topic:item.topic,area:item.area,source:item.source||'MEB yayını',origin:'official',file:item.file,fileType:item.fileType,grades:item.grades}))
+  ...resources.map(item=>({id:item.id,kind:'library',title:item.title,type:item.type,level:item.level,levels:item.levels,topic:item.topic,area:item.area,source:item.source||'MEB yayını',origin:'official',file:item.file,fileType:item.fileType,grades:item.grades,pagePath:item.pagePath}))
  ];
 }
 function memberDocuments(rows){
@@ -76,6 +77,7 @@ function score(item,query,parsed){
  return 0;
 }
 function card(item){
+ const detailPath=libraryDetailLinks[item.id]||item.pagePath;
  const origin=item.origin==='member'?'Meslektaş paylaşımı':'Resmî kaynak';
  const subtitle=[item.area,item.topic,item.level==='Belirtilmiyor'?'Kademe belirtilmiyor':item.level].filter(Boolean).join(' · ');
  const access=resourceAccess(item);
@@ -84,7 +86,7 @@ function card(item){
   :item.kind==='member'
   ?`<button type="button" data-community-file="${esc(item.file)}" data-library-open="${esc(item.id)}">Görüntüle</button>`
   :`<button type="button" data-kind="${item.kind}" data-id="${esc(item.id)}" data-library-open="${esc(item.id)}">Görüntüle</button>`;
- return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && libraryDetailLinks[item.id] ? `<a href="${esc(libraryDetailLinks[item.id])}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
+ return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && detailPath ? `<a href="${esc(detailPath)}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
 }
 function setTypeOptions(){
  const current=state.type;
@@ -162,8 +164,10 @@ $('#closeViewer').addEventListener('click',closeViewer);
 $('#viewerDialog').addEventListener('click',event=>{if(event.target===$('#viewerDialog'))closeViewer()});
 
 try{
- const [forms,resources,curated]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20261002-2'),getCuratedResources()]);
- documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library]);
+ const [forms,resources,curated,supplementary]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20261002-2'),getCuratedResources(),loadJson('../data/collected-resources.json').catch(()=>[])]);
+ const combined=mergeCollectedResources([...forms,...resources,...curated.tools,...curated.library],supplementary);
+ const additions=combined.slice(forms.length+resources.length+curated.tools.length+curated.library.length);
+ documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library,...additions]);
  setTypeOptions();setAreaOptions();
  restoreUrl();
  render();
@@ -173,5 +177,3 @@ try{
   documents.push(...memberDocuments(data||[]));setTypeOptions();setAreaOptions();render();
  }
 }catch(error){$('#libraryStatus').textContent='Kaynakların bir bölümü yüklenemedi: '+error.message}
-
-
