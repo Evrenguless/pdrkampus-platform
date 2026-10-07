@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "allowed_domains": ["meb.gov.tr", "meb.k12.tr"],
+  "seed_pages": [
+    "https://orgm.meb.gov.tr/",
+    "https://orgm.meb.gov.tr/www/akran-zorbaligi/icerik/3132",
+    "https://orgm.meb.gov.tr/www/sosyal-duygusal-beceriler/icerik/3121",
+    "https://orgm.meb.gov.tr/www/brosurler/icerik/1364",
+    "https://orgm.meb.gov.tr/www/mesleki-rehberlik-programlari/icerik/3138"
+  ],
+  "seed_batch": 40,
+  "max_pages": 80,
+  "max_depth": 2,
+  "max_file_checks": 24,
+  "max_file_bytes": 15728640,
+  "max_candidates": 10000,
+  "max_seconds": 600,
+  "timeout_seconds": 15,
+  "host_delay_seconds": 1,
+  "user_agent": "PDRKampusResourceCollector/1.0 (+https://pdrkampus.com/iletisim.html)",
+  "topic_keywords": {
+    "Akran zorbalığı": ["zorbal", "akran"],
+    "Dijital güvenlik": ["dijital", "internet", "siber", "teknoloji", "ekran"],
+    "Kariyer": ["kariyer", "mesleki rehber", "meslek sec", "tercih"],
+    "Okula uyum": ["uyum", "okula basla", "okul kork"],
+    "Duygular ve psikolojik sağlamlık": ["duygu", "saglamlik", "dayaniklilik", "oz duzen", "stres", "kaygi"],
+    "Aile iletişimi": ["aile", "veli", "ebeveyn"],
+    "Devamsızlık": ["devamsiz", "sinif tekrar"],
+    "Özel eğitim": ["ozel egitim", "bep", "kaynastirma"],
+    "Kriz ve yas": ["kriz", "yas", "travma", "afet", "deprem"],
+    "Bağımlılığın önlenmesi": ["bagimlilik", "yesilay"],
+    "Sınav ve çalışma becerileri": ["sinav", "lgs", "yks", "ders calis", "zaman yonet"],
+    "Bireyi tanıma": ["envanter", "anket", "sosyometri", "gozlem", "gorusme"],
+    "Sınıf rehberliği": ["sinif rehber", "rehberlik etkin", "pano", "degerler", "etik", "iletisim"]
+  }
+}
