@@ -2,6 +2,7 @@
 import unittest,tempfile,json,sys
 from unittest.mock import patch
 import ecosystem_engine
+from discover_public_analysis import sanitize
 from pathlib import Path
 from ecosystem_engine import discover,load_catalogue,relationships,editorial
 from enrich_seo_content import enrich_schema
@@ -10,6 +11,11 @@ ROOT=Path(__file__).resolve().parents[1]
 class EcosystemTests(unittest.TestCase):
  def test_discovery_changes_and_no_auto_publication(self):
   rows=[{'catalogue':'library','id':'one','title':'Bir kaynak','file':'https://example.org/a.pdf'}];first=discover(rows);registry={r['entity_id']:r['fingerprint'] for r in first};self.assertEqual(discover(rows,registry)[0]['status'],'skipped');rows[0]['title']='Güncellenmiş başlık';self.assertEqual(discover(rows,registry)[0]['status'],'updated');self.assertFalse(first[0]['automatic_publication'])
+ def test_live_export_drops_coefficients_and_rejects_individual_dataset(self):
+  stats={k:{'mean':1,'std':2} for k in ('sozel','sayisal','tarih','cografya','egitim','mevzuat','oabt')}
+  value=sanitize('calculation_config',{'official_test_stats':stats,'p2_model':{'private_coefficient':123},'person_name':'PRIVATE'})
+  self.assertEqual(set(value),{'official_test_stats'});self.assertNotIn('PRIVATE',json.dumps(value))
+  with self.assertRaises(ValueError):sanitize('p2_ranking_data',{'rows':[]})
  def test_duplicates_and_bad_scheme_blocked(self):
   r={'catalogue':'library','title':'Kaynak','file':'https://example.org/a.pdf'};x=discover([{**r,'id':'a'},{**r,'id':'b'},{**r,'id':'c','file':'javascript:evil'}]);self.assertEqual([v['status'] for v in x],['created','duplicate','invalid'])
  def test_private_fields_not_exported(self):

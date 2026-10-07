@@ -43,3 +43,7 @@ Raporlar: arama niyeti, görünür soru kümeleri, kaynak/konu/kademe ilişkiler
 `enrich_seo_content.py` yalnız mevcut görünür sorular ve cevaplarla FAQ açıklaması yapar. Kaynak detayları mevcut katalogdaki hedef kitle/kademe/kurum bilgilerini kullanır. Hiçbir hesaplama, kişisel kayıt veya özgün katalog değeri değiştirilmez.
 
 Kaynak dosyası daha sonra değişirse salt okunur keşif raporu yine üretilir; koruma kontrolü başarısızken kalite kapısı geçmez ve yayın engellenir. Rapor başarısız CI koşusunda da inceleme için saklanır.
+
+## Analiz kamu verisi keşfi
+
+`discover_public_analysis.py`, mevcut yayımlanmış anon yapılandırmasıyla yalnız `is_public=true` olan historical_appointments, research_data ve official_test_stats alanlarını GET ile okur. Model katsayıları, bireysel referanslar ve özel tablolar aktarılmaz. Supabase yazımı/RPC yoktur. `Public Analysis Data Discovery` iş akışı elle veya okuyucu kodu değiştiğinde çalışır; veritabanı değişimini kesintisiz izleyen bir webhook/cron değildir. Değişiklik parmak izleri editoryal inceleme içindir, otomatik yayın yapılmaz.
