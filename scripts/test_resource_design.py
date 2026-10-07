@@ -25,4 +25,19 @@ class ResourceDesignTests(unittest.TestCase):
    self.assertNotIn('class="resource-download"',decorate(root,self.source,self.row))
  def test_inventory_instructions_do_not_change_scoring(self):
   self.assertIn('değiştirmeden', ' '.join(guidance({**self.row,'title':'Öğrenci Envanteri','type':'Envanter'})[3]))
+ def test_existing_format_tile_upgrades_to_real_workbook_cover(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);(root/'data').mkdir()
+   (root/'data/library.json').write_text(json.dumps([self.row]))
+   (root/'data/resource-previews.json').write_text(json.dumps({'sample':{'thumbnail':'/assets/sample-sheet.jpg','sheets':[{'name':'EYLÜL'}]}}))
+   source='<body data-resource-design="1"><article class="catalog-card"><div class="resource-card-cover"><span class="resource-format-tile">XLSX</span></div><h2>Selamlaşma Panosu</h2></article></body>'
+   result=decorate(root,source)
+   self.assertIn('/assets/sample-sheet.jpg',result);self.assertNotIn('resource-format-tile',result)
+   self.assertEqual(result.count('resource-card-cover'),1);self.assertEqual(decorate(root,result),result)
+ def test_existing_page_refreshes_old_asset_versions(self):
+  with tempfile.TemporaryDirectory() as d:
+   source='<head><link href="/src/resource-design.css?v=20261008-1"></head><body data-resource-design="1"><script src="src/library.js?v=20261005-4"></script></body>'
+   result=decorate(Path(d),source)
+   self.assertNotIn('v=20261008-1',result);self.assertNotIn('v=20261005-4',result)
+   self.assertIn('resource-design.css?v=20261008-2',result);self.assertIn('library.js?v=20261008-2',result)
 if __name__=='__main__':unittest.main()

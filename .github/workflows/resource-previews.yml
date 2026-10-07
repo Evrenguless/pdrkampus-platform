@@ -9,12 +9,15 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: real-resource-previews
+  group: resource-design-publication
   cancel-in-progress: false
 jobs:
   previews:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
+    permissions:
+      contents: write
+      pages: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,12 +30,21 @@ jobs:
           pip install openpyxl Pillow pypdf
       - name: Render original public documents
         run: python scripts/build_resource_previews.py --limit 100
+      - name: Update catalogue covers
+        run: |
+          python scripts/resource_design.py
+          python scripts/build_library_catalog.py
+          python scripts/resource_design.py
+          python -m unittest discover -s scripts -p test_resource_design.py
+          python scripts/build_library_catalog.py --check
+          python scripts/check_seo.py
+          python scripts/check_accessibility.py
       - name: Preserve original resource records
         run: |
           test -z "$(git diff --name-only -- data/library.json data/forms.json data/collected-resources.json db src/auth-config.js)"
       - name: Publish actual previews
         run: |
-          git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/
+          git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/ kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ seo/approved-edits.json
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -40,3 +52,7 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Build live Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/{owner}/{repo}/pages/builds
