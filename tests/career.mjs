@@ -3,6 +3,13 @@ import assert from 'node:assert/strict';
 import {matchesCareerFilters, recruitmentStatus, normalizeCareerText} from '../src/career-model.js';
 
 const announcement = {startsAt: '2026-09-28T09:00:00+03:00', deadline: '2026-10-12T13:00:00+03:00'};
+test('date-only deadlines never invent an open application hour on the last day', () => {
+  const row = {startsAt:'2026-10-04', deadline:'2026-10-11'};
+  assert.equal(recruitmentStatus(row, new Date('2026-10-10T20:59:59Z')), 'open');
+  assert.equal(recruitmentStatus(row, new Date('2026-10-10T21:00:00Z')), 'unknown');
+  assert.equal(recruitmentStatus(row, new Date('2026-10-11T20:59:59Z')), 'unknown');
+  assert.equal(recruitmentStatus(row, new Date('2026-10-11T21:00:00Z')), 'closed');
+});
 test('application opens and closes at the exact Turkey time boundary', () => {
   assert.equal(recruitmentStatus(announcement, new Date('2026-09-28T05:59:59Z')), 'upcoming');
   assert.equal(recruitmentStatus(announcement, new Date('2026-09-28T06:00:00Z')), 'open');

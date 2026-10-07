@@ -7,7 +7,7 @@ Bu iki alan ana sayfa, genel arama, Konular kataloğu ve masaüstü/mobil/alt me
 - `/bolumler/`: bölüm seçkisi; metin, puan türü ve program düzeyi filtresi.
 - `/bolumler/<slug>/`: puan türü, süre, yıl belirtilen başarı sırası koşulu, tercih kontrolü ve resmî kaynaklar.
 
-Liste ve içeriklerin tamamı HTML'de bulunur; JavaScript sadece filtreleme ve güncel başvuru durumunu sağlar. JS kapalıysa içerik ve kaynaklar erişilebilirdir; durum rozeti kaynak kontrolü tarihine göre etiketlenir. JavaScript açıkken durumlar 30 saniyede bir ve sekmeye dönüldüğünde güncellenir. Kapanan, geri çekilen ve henüz başlamayan ilanlarda başvuru düğmesi gizlenir. İptal/değişiklik duyuruları kaynakta editör tarafından takip edilmelidir; site kendiliğinden haber toplamaz.
+Liste ve içeriklerin tamamı HTML'de bulunur; JavaScript sadece filtreleme ve güncel başvuru durumunu sağlar. JS kapalıysa içerik ve kaynaklar erişilebilirdir; durum rozeti kaynak kontrolü tarihine göre etiketlenir. JavaScript açıkken durumlar 30 saniyede bir ve sekmeye dönüldüğünde güncellenir. Kapanan, geri çekilen ve henüz başlamayan ilanlarda başvuru düğmesi gizlenir. İptal/değişiklik duyuruları resmî kaynaklardan takip edilir. Altı saatlik Codex otomasyonunun iş akışı ve erişim sınırları `docs/recruitment-monitor.md` içindedir.
 
 ## İlan ekleme / güncelleme
 
@@ -17,7 +17,7 @@ Liste ve içeriklerin tamamı HTML'de bulunur; JavaScript sadece filtreleme ve g
 4. `updatedAt` gerçek içerik kontrol/değişiklik tarihidir. Üstteki `reviewedAt` son editör kontrolüdür; otomatik günlük tarih değiştirmeyin.
 5. `python3 scripts/build_career_pages.py` çalıştırıp üretilen HTML ve sitemap değişikliklerini veriyle birlikte commit edin.
 
-Bu sürümün içerik yönetimi Git üzerinden yapılır. Tarayıcıda yönetici paneli, Supabase migration veya otomatik dış kaynak haber aktarımı eklenmemiştir.
+İçerik Git üzerinden yönetilir. Kaynak kontrolü ve yayın Codex otomasyonuna bağlıdır; tarayıcı yönetici paneli veya Supabase değişikliği yoktur.
 
 ## Bölüm koşulları
 

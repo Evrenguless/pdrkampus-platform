@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-06",
+  "reviewedAt": "2026-10-07",
   "announcements": [
     {
       "slug": "duzce-universitesi-2026-2-sozlesmeli-personel",
@@ -7,7 +7,9 @@
       "institution": "Düzce Üniversitesi",
       "city": "Düzce",
       "category": "Üniversite",
-      "education": ["Ön lisans"],
+      "education": [
+        "Ön lisans"
+      ],
       "publishedAt": "2026-09-28",
       "updatedAt": "2026-10-06",
       "startsAt": "2026-09-28T09:00:00+03:00",
@@ -22,8 +24,20 @@
       "documentUrl": "https://cdn.duzce.edu.tr/File/GetFile/843be355-2d3b-45c6-9391-487be123f355",
       "applyUrl": "https://kariyerkapisi.gov.tr/isealim",
       "positions": [
-        {"code": "20260201", "name": "Büro Personeli", "quota": 2, "education": "Ön lisans", "requirements": "Büro yönetimi ve sekreterlik, ofis teknolojileri, büro hizmetleri, genel işletme, işletme, işletmecilik, işletme yönetimi veya yönetim alanlarında ilanda sayılan ön lisans programlarından mezun olmak. Örgün yükseköğretim öğrencisi olmamak (açık öğretim hariç). Kesin program adları için resmî ilanı inceleyin."},
-        {"code": "20260202", "name": "Tekniker", "quota": 1, "education": "Ön lisans", "requirements": "İlanda sayılan bilgisayar programcılığı, bilgisayar teknolojisi/programlama, web teknolojileri, bilgisayar bilimleri veya arka/ön yüz yazılım geliştirme ön lisans programlarından mezun olmak. Hastane bilgi yönetim sistemlerinde en az 1 yıl deneyimi belgelemek. Örgün yükseköğretim öğrencisi olmamak (açık öğretim hariç)."}
+        {
+          "code": "20260201",
+          "name": "Büro Personeli",
+          "quota": 2,
+          "education": "Ön lisans",
+          "requirements": "Büro yönetimi ve sekreterlik, ofis teknolojileri, büro hizmetleri, genel işletme, işletme, işletmecilik, işletme yönetimi veya yönetim alanlarında ilanda sayılan ön lisans programlarından mezun olmak. Örgün yükseköğretim öğrencisi olmamak (açık öğretim hariç). Kesin program adları için resmî ilanı inceleyin."
+        },
+        {
+          "code": "20260202",
+          "name": "Tekniker",
+          "quota": 1,
+          "education": "Ön lisans",
+          "requirements": "İlanda sayılan bilgisayar programcılığı, bilgisayar teknolojisi/programlama, web teknolojileri, bilgisayar bilimleri veya arka/ön yüz yazılım geliştirme ön lisans programlarından mezun olmak. Hastane bilgi yönetim sistemlerinde en az 1 yıl deneyimi belgelemek. Örgün yükseköğretim öğrencisi olmamak (açık öğretim hariç)."
+        }
       ],
       "conditions": [
         "657 sayılı Kanun’un 48. maddesindeki genel şartları ve resmî ilandaki özel şartları taşımak gerekiyor.",
@@ -37,7 +51,153 @@
         "Sisteme gelen bilgileri kontrol edin; fotoğraf ve ilanın istediği ek belgeleri yükleyin.",
         "Başvuruyu son saatten önce tamamlayın ve sonuç duyurularını üniversitenin sayfasından takip edin."
       ],
-      "relatedPrograms": ["bilgisayar-programciligi"]
+      "relatedPrograms": [
+        "bilgisayar-programciligi"
+      ]
+    },
+    {
+      "slug": "nigde-omer-halisdemir-universitesi-2026-eylul-personel",
+      "title": "Niğde Ömer Halisdemir Üniversitesi 29 sözleşmeli personel alacak",
+      "institution": "Niğde Ömer Halisdemir Üniversitesi",
+      "city": "Niğde",
+      "category": "Üniversite",
+      "education": [
+        "Ortaöğretim",
+        "Ön lisans"
+      ],
+      "publishedAt": "2026-09-24",
+      "updatedAt": "2026-10-07",
+      "startsAt": "2026-09-24T09:00:00+03:00",
+      "deadline": "2026-10-09T13:00:00+03:00",
+      "withdrawn": false,
+      "quota": 29,
+      "summary": "20 destek personeli ve 9 sağlık teknikeri alınacak. Çevrim içi başvuru 9 Ekim saat 13.00’te bitiyor; başvuru belgesi 13 Ekim mesai bitimine kadar elden teslim edilmeli.",
+      "kpss": "2024 KPSS P94 (ortaöğretim) veya P93 (ön lisans), en az 60 puan.",
+      "selection": "KPSS puan sıralaması; eşitlikte önce mezuniyet tarihi, ardından yaş önceliği.",
+      "sourceUrl": "https://www.ohu.edu.tr/personel/duyuru/97027",
+      "sourceLabel": "Niğde Ömer Halisdemir Üniversitesi · 24 Eylül duyurusu",
+      "documentUrl": "https://static.ohu.edu.tr/uniweb/media/portallar/personel/duyurular/97027/olnyird2.pdf",
+      "applyUrl": "https://kariyerkapisi.gov.tr/isealim",
+      "positions": [
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Temizlik görevlisi · hastane (kadın/erkek)",
+          "quota": 6,
+          "education": "Ortaöğretim",
+          "requirements": "Herhangi bir lise alanı; 6 ay belgeli temizlik deneyimi."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Temizlik görevlisi · hastane (erkek)",
+          "quota": 5,
+          "education": "Ortaöğretim",
+          "requirements": "Herhangi bir lise alanı; 6 ay belgeli temizlik deneyimi."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Temizlik görevlisi · hastane (kadın)",
+          "quota": 1,
+          "education": "Ortaöğretim",
+          "requirements": "Herhangi bir lise alanı; 6 ay belgeli temizlik deneyimi."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Şoför (erkek)",
+          "quota": 1,
+          "education": "Ortaöğretim",
+          "requirements": "Lise, B ehliyeti ve 1 yıl belgeli şoförlük deneyimi."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Hizmetli (erkek)",
+          "quota": 7,
+          "education": "Ortaöğretim",
+          "requirements": "Herhangi bir lise alanı; 6 ay belgeli temizlik deneyimi."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Sağlık teknikeri · ağız ve diş sağlığı",
+          "quota": 6,
+          "education": "Ön lisans",
+          "requirements": "İlanda sayılan ağız/diş sağlığı veya diş hekimliği-hijyen programı."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Sağlık teknikeri · diş protez",
+          "quota": 2,
+          "education": "Ön lisans",
+          "requirements": "İlanda sayılan diş protez programlarından mezuniyet."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Sağlık teknikeri · tıbbi görüntüleme",
+          "quota": 1,
+          "education": "Ön lisans",
+          "requirements": "Tıbbi Görüntüleme Teknikleri mezuniyeti."
+        }
+      ],
+      "conditions": [
+        "Genel ve özel şartlar için tam ilan esas alınır; vardiyalı çalışma koşulu vardır.",
+        "Tek pozisyona başvurulabilir.",
+        "Kariyer Kapısı başvurusu tek başına yeterli değildir; elden belge teslimi zorunludur."
+      ],
+      "steps": [
+        "Kariyer Kapısı başvurusunu 9 Ekim saat 13.00’ten önce tamamlayın.",
+        "Aday Başvuru Bilgileri belgesini indirip 13 Ekim mesai bitimine kadar Personel Daire Başkanlığına şahsen teslim edin."
+      ],
+      "relatedPrograms": []
+    },
+    {
+      "slug": "csgb-2026-ekim-bilisim-personeli",
+      "title": "Çalışma ve Sosyal Güvenlik Bakanlığı 5 bilişim personeli alacak",
+      "institution": "Çalışma ve Sosyal Güvenlik Bakanlığı",
+      "city": "Ankara",
+      "category": "Bakanlık",
+      "education": [
+        "Resmî ilandan kontrol edin"
+      ],
+      "publishedAt": "2026-10-04",
+      "updatedAt": "2026-10-07",
+      "startsAt": "2026-10-04",
+      "deadline": "2026-10-11",
+      "withdrawn": false,
+      "quota": 5,
+      "summary": "3 kıdemli Java ve 2 kıdemli .Net yazılım uzmanı alınacak. Başvurular 4–11 Ekim 2026 tarihleri arasında Kariyer Kapısı üzerinden yapılacak; son başvuru saati duyuruda belirtilmiyor.",
+      "kpss": "KPSS ve öğrenim koşullarının ayrıntısı kısa kurum duyurusunda yer almıyor; tam ilanı Kariyer Kapısı üzerinden kontrol edin.",
+      "selection": "Sözlü/uygulamalı sınav başarı sırasıyla yerleştirme; toplam 50 aday sınava çağrılacak.",
+      "sourceUrl": "https://www.csgb.gov.tr/duyurular/sozlesmeli-bilisim-personeli-alim-ilani/",
+      "sourceLabel": "ÇSGB · 4 Ekim 2026 bilişim personeli duyurusu",
+      "documentUrl": "https://kariyerkapisi.gov.tr/IlanDetay?i=d434258f-ea4c-4c46-9db3-dbaef0160823",
+      "applyUrl": "https://kariyerkapisi.gov.tr/isealim",
+      "positions": [
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Kıdemli Java Yazılım Uzmanı",
+          "quota": 3,
+          "education": "Resmî ilandan kontrol edin",
+          "requirements": "Öğrenim, deneyim ve teknik koşullar için tam ilanı inceleyin; 30 aday sınava çağrılacak."
+        },
+        {
+          "code": "İlan tablosunu inceleyin",
+          "name": "Kıdemli .Net Yazılım Uzmanı",
+          "quota": 2,
+          "education": "Resmî ilandan kontrol edin",
+          "requirements": "Öğrenim, deneyim ve teknik koşullar için tam ilanı inceleyin; 20 aday sınava çağrılacak."
+        }
+      ],
+      "conditions": [
+        "375 sayılı KHK Ek 6 ve sözleşmeli bilişim personeli esasları uygulanır.",
+        "Kısa duyuru bütün özel koşulları içermiyor; başvuru öncesinde tam ilanı inceleyin.",
+        "Son günün kapanış saati doğrulanamadığından 11 Ekim’de başvuru açıklığı kesin olarak gösterilmez."
+      ],
+      "steps": [
+        "Kariyer Kapısı’nda Bakanlığın ilan ayrıntılarını açın.",
+        "Pozisyona ait tüm nitelikleri karşılaştırın ve belirtilen takvim içinde başvurun."
+      ],
+      "relatedPrograms": [
+        "bilgisayar-muhendisligi",
+        "yazilim-muhendisligi"
+      ]
     }
   ]
 }

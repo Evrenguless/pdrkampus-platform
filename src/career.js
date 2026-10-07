@@ -1,4 +1,4 @@
-import {matchesCareerFilters, recruitmentStatus, statusLabels} from './career-model.js';
+import {matchesCareerFilters, recruitmentStatus, statusLabels} from './career-model.js?v=20261007-1';
 
 const form = document.querySelector('[data-filter]');
 const cards = [...document.querySelectorAll('[data-career-card]')];

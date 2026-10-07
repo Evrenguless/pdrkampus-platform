@@ -1,5 +1,5 @@
 """Generate crawlable recruitment news and university guides, without global navigation links."""
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from html import escape
 from pathlib import Path
 from urllib.parse import urlparse
@@ -19,15 +19,23 @@ MONTHS = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağ
 def date_text(value, with_time=False):
     d = datetime.fromisoformat(value)
     text = f'{d.day} {MONTHS[d.month-1]} {d.year}'
-    return text + (f' · {d:%H.%M} (Türkiye saati)' if with_time else '')
+    return text + ((' · Saat için resmî ilanı kontrol edin' if len(value) == 10 else f' · {d:%H.%M} (Türkiye saati)') if with_time else '')
+
+
+def boundary(value):
+    return datetime.fromisoformat(value + 'T00:00:00+03:00' if len(value) == 10 else value)
 
 
 def status(row, now):
     if row.get('withdrawn'):
         return 'withdrawn', 'İlan geri çekildi'
-    if now >= datetime.fromisoformat(row['deadline']):
+    end = boundary(row['deadline'])
+    # A date alone does not prove that applications remain open until midnight.
+    if len(row['deadline']) == 10 and end <= now < end + timedelta(days=1):
+        return 'unknown', 'Son gün · Saati resmî kaynaktan kontrol edin'
+    if now >= end + (timedelta(days=1) if len(row['deadline']) == 10 else timedelta()):
         return 'closed', 'Başvuru sona erdi'
-    if now < datetime.fromisoformat(row['startsAt']):
+    if now < boundary(row['startsAt']):
         return 'upcoming', 'Başvuru başlayacak'
     return 'open', 'Başvuru açık'
 
@@ -49,7 +57,7 @@ def validate(jobs, programs):
             assert row[name].strip(), f'Eksik alan: {name}'
         for name in ('sourceUrl', 'documentUrl', 'applyUrl'):
             official_url(row[name])
-        start, end = [datetime.fromisoformat(row[k]) for k in ('startsAt', 'deadline')]
+        start, end = [boundary(row[k]) for k in ('startsAt', 'deadline')]
         assert start.utcoffset() is not None and end.utcoffset() is not None, 'Saat dilimi gerekli'
         assert start < end, 'Başvuru tarihleri hatalı'
         assert row['quota'] > 0 and sum(p['quota'] for p in row['positions']) == row['quota'], 'Kontenjan toplamı hatalı'
@@ -140,7 +148,7 @@ def generate():
 <link rel="icon" href="/assets/logo.png"><link rel="stylesheet" href="/src/style.css"><link rel="stylesheet" href="/src/shell-refresh.css"><link rel="stylesheet" href="/src/design-system.css"><link rel="stylesheet" href="/src/career.css?v=20261006-1">
 <script type="application/ld+json">{schema_text}</script></head><body id="top">
 <a class="career-skip" href="#careerContent">İçeriğe geç</a>{header}<main id="careerContent" class="career-shell">{body}</main>{footer}
-<script type="module" src="/src/menu.js?v=20261005-2"></script><script type="module" src="/src/career.js?v=20261006-1"></script></body></html>
+<script type="module" src="/src/menu.js?v=20261005-2"></script><script type="module" src="/src/career.js?v=20261007-1"></script></body></html>
 '''
         outputs[path.strip('/') + '/index.html'] = html
         modified[url] = lastmod
@@ -158,7 +166,7 @@ def generate():
         for p in row['positions']:
             positions += f'<tr><td><strong>{E(p["name"])}</strong><br>{E(p["code"])}<br>{E(p["education"])}</td><td>{p["quota"]}</td><td>{E(p["requirements"])}</td></tr>'
         positions += '</tbody></table></div>'
-        article = section('ozet', 'İlan özeti ve KPSS şartı', overview) + section('pozisyonlar', 'Hangi pozisyonlara alım yapılacak?', positions) + section('sartlar', 'Başvuru koşulları', items(row['conditions'])) + section('basvuru', 'Nasıl başvurulur?', items(row['steps'], True) + f'<p data-apply-note>{"Başvuru süresi sona erdi. Sonuç duyuruları için kurumun sayfasını izleyin." if status(row, now)[0] == "closed" else "Başvuru, kurumun resmî sistemi üzerinden yapılır."}</p><a class="career-action" data-apply-link data-start="{row["startsAt"]}" data-deadline="{row["deadline"]}" data-withdrawn="{str(row.get("withdrawn", False)).lower()}" href="{row["applyUrl"]}" target="_blank" rel="noopener noreferrer"{ " hidden" if status(row, now)[0] != "open" else ""}>Resmî başvuru sistemine git ↗</a>') + section('kaynaklar', 'Resmî kaynaklar', link(row['sourceUrl'], row['sourceLabel']) + '<p>' + link(row['documentUrl'], 'Tam ilan metni (PDF)') + '</p>')
+        article = section('ozet', 'İlan özeti ve KPSS şartı', overview) + section('pozisyonlar', 'Hangi pozisyonlara alım yapılacak?', positions) + section('sartlar', 'Başvuru koşulları', items(row['conditions'])) + section('basvuru', 'Nasıl başvurulur?', items(row['steps'], True) + f'<p data-apply-note>{"Başvuru süresi sona erdi. Sonuç duyuruları için kurumun sayfasını izleyin." if status(row, now)[0] == "closed" else "Başvuru, kurumun resmî sistemi üzerinden yapılır."}</p><a class="career-action" data-apply-link data-start="{row["startsAt"]}" data-deadline="{row["deadline"]}" data-withdrawn="{str(row.get("withdrawn", False)).lower()}" href="{row["applyUrl"]}" target="_blank" rel="noopener noreferrer"{ " hidden" if status(row, now)[0] != "open" else ""}>Resmî başvuru sistemine git ↗</a>') + section('kaynaklar', 'Resmî kaynaklar', link(row['sourceUrl'], row['sourceLabel']) + '<p>' + link(row['documentUrl'], 'Tam ilan metni / resmî ilan ayrıntıları') + '</p>')
         aside = '<div class="career-box"><h2>Bu ilanda</h2>' + ''.join(f'<a href="#{i}">{label}</a>' for i, label in [('ozet', 'İlan özeti'), ('pozisyonlar', 'Pozisyonlar'), ('sartlar', 'Başvuru koşulları'), ('basvuru', 'Başvuru adımları'), ('kaynaklar', 'Resmî kaynaklar')]) + '</div><div class="career-box"><h2>İlgili bölümler</h2>'
         aside += ''.join(f'<a href="/bolumler/{p["slug"]}/">{E(p["name"])}</a>' for p in programs if p['slug'] in row.get('relatedPrograms', []))
         aside += '<a href="/bolumler/">Bölüm rehberini incele →</a><a href="/personel-alim-ilanlari/">Tüm ilanlar →</a></div>'
@@ -170,7 +178,7 @@ def generate():
     body = breadcrumb('Personel alım ilanları') + hero('KARİYER · İLAN AKIŞI', title, desc, '<strong>Tercihten kariyere</strong><p>Üniversiteye giriş koşulları ve başarı sırası açıklamalarını inceleyin.</p><a href="/bolumler/">Bölüm rehberi →</a>')
     body += toolbar('jobs', [('city', 'Şehir', [r['city'] for r in announcements]), ('education', 'Öğrenim', [x for r in announcements for x in r['education']])])
     # Stable status keys are independent of translated labels.
-    body = body.replace('<button type="reset">Temizle</button></form>', '<label for="career-status">Başvuru durumu<select id="career-status" name="status"><option value="">Tümü</option><option value="open">Başvuru açık</option><option value="upcoming">Başvuru başlayacak</option><option value="closed">Başvuru sona erdi</option><option value="withdrawn">İlan geri çekildi</option></select></label><button type="reset">Temizle</button></form>', 1)
+    body = body.replace('<button type="reset">Temizle</button></form>', '<label for="career-status">Başvuru durumu<select id="career-status" name="status"><option value="">Tümü</option><option value="open">Başvuru açık</option><option value="upcoming">Başvuru başlayacak</option><option value="closed">Başvuru sona erdi</option><option value="withdrawn">İlan geri çekildi</option><option value="unknown">Takvimi kontrol edin</option></select></label><button type="reset">Temizle</button></form>', 1)
     body += f'<div class="career-results"><span data-result-count aria-live="polite">{len(announcements)} ilan</span><span>En yeni ilanlar önce · Kaynak kontrolü: {date_text(jobs["reviewedAt"])}</span></div><div class="career-grid career-news-grid">{cards}</div><p class="career-empty" data-empty hidden>Seçtiğiniz koşullara uygun ilan bulunamadı. Filtreleri temizleyerek tüm ilanları görebilirsiniz.</p><noscript><p>Arama ve durumların anlık güncellenmesi için JavaScript gerekir. İlan metinleri ve bağlantılar aşağıda erişilebilir; tarihleri resmî duyurudan kontrol edin.</p></noscript><div class="career-notice">Bu sayfa resmî kaynaklardan doğrulanan seçili ilanları listeler; Türkiye’deki bütün alımları kapsamaz. Başvuru öncesinde kurumun güncel duyurusunu kontrol edin.</div>'
     page(PREFIXES[0], title, desc, body, structured('CollectionPage', title, PREFIXES[0]), jobs['reviewedAt'])
 

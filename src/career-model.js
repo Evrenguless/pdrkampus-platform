@@ -5,9 +5,14 @@ export function normalizeCareerText(value) {
 
 export function recruitmentStatus({startsAt, deadline, withdrawn = false}, now = new Date()) {
   if (withdrawn) return 'withdrawn';
-  const start = Date.parse(startsAt), end = Date.parse(deadline), time = Number(now);
+  const dateOnly = /^\d{4}-\d{2}-\d{2}$/;
+  const parse = value => Date.parse(dateOnly.test(value) ? value + 'T00:00:00+03:00' : value);
+  const start = parse(startsAt), end = parse(deadline), time = Number(now);
   if (!Number.isFinite(start) || !Number.isFinite(end) || !Number.isFinite(time) || start >= end) return 'unknown';
-  if (time >= end) return 'closed';
+  if (dateOnly.test(deadline)) {
+    if (time >= end + 86400000) return 'closed';
+    if (time >= end) return 'unknown';
+  } else if (time >= end) return 'closed';
   return time < start ? 'upcoming' : 'open';
 }
 
