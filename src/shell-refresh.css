@@ -34,7 +34,7 @@
 .campus-footer-main{display:grid;grid-template-columns:minmax(280px,1.6fr) minmax(155px,.7fr) minmax(155px,.7fr);gap:clamp(30px,6vw,95px);padding-top:52px;padding-bottom:46px}
 .campus-footer-brand{display:inline-flex;gap:12px;color:#fffdf8}
 .campus-footer-brand img{display:block;width:49px;height:49px;flex:none;object-fit:contain;padding:4px;background:#f8fcf8;border-radius:12px}
-.campus-footer-brand strong{font:800 25px/1 Manrope,sans-serif;letter-spacing:-.055em}
+.campus-footer-brand strong{font:800 25px/1 Manrope,sans-serif;letter-spacing:-.055em;color:#fffdf8}
 .campus-footer-brand strong span{color:#9ccfab;font-weight:800}
 .campus-footer-brand:focus-visible{outline:2px solid #a6d4b9;outline-offset:5px;border-radius:5px}
 .campus-footer-about p{max-width:355px;margin:18px 0 0;color:#c1d0c5;font-size:13px;line-height:1.75}
