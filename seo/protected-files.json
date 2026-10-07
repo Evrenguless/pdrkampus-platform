@@ -77,7 +77,7 @@
     "db/018_campus_search_precision.sql": "f6f92bb3fec09a8e73ae17c4676f021a8e8c3edcb771bc6f5581444161f49959",
     "docs/auth-production-checklist.md": "aa98c4b384b134dfca396923b14cf3150cd022e003fed68d816910e380d0c663",
     "docs/backup-recovery.md": "593a0dd58786227486f4279475f7bb774c63f4dc3807a70171c836f701f1eb24",
-    "docs/career-content.md": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",
+    "docs/career-content.md": "b9636d0a4901806c25ec6b471b5e6aeaeab32b30f621450a3a41eb8badb8d10a",
     "docs/domain-launch-checklist.md": "daa6d4833aa98aea42892d69211accb7adbb8c487a4a3c78607c5f5899ea38f8",
     "docs/envanter-toplu-aktarim.md": "8045d0068a9c9fa010197a6f7da9323b064efa6fa420115ffe401d2e66b622ae",
     "docs/envanter-v19-aktarim.md": "3d7a0edc1ff8d4fd3ae8efeafcfce36822e6a57e20fd85ad08b3ba507a62b2c4",
@@ -354,9 +354,9 @@
       "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
     },
     "docs/career-content.md": {
-      "previous_sha256": "1d09cf72b80fff937318c802daf697dbe6d5a8a31f6281ad6e7d83b9199cdc6a",
-      "reviewed_sha256": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",
-      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+      "previous_sha256": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",
+      "reviewed_sha256": "b9636d0a4901806c25ec6b471b5e6aeaeab32b30f621450a3a41eb8badb8d10a",
+      "reason": "User-authorized server recruitment automation documentation"
     },
     "scripts/check_seo.py": {
       "previous_sha256": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",

@@ -1,0 +1,101 @@
+name: Public Recruitment Collector
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/collect_recruitment.py', 'scripts/test_collect_recruitment.py', '.github/workflows/recruitment-collector.yml']
+  pull_request:
+    paths: ['scripts/*recruitment*.py', 'data/recruitment-feed.json', '.github/workflows/recruitment-collector.yml']
+permissions:
+  contents: read
+concurrency:
+  group: recruitment-publication-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s scripts -p test_collect_recruitment.py
+  collect:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: tests
+    permissions:
+      contents: write
+      pages: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh main before reading publication files
+        run: |
+          git fetch origin main
+          git merge --ff-only origin/main
+      - name: Collect all public recruitment records and scan news pagination
+        run: python scripts/collect_recruitment.py --report "$RUNNER_TEMP/recruitment/report.json"
+      - name: Generate and validate the official feed
+        run: |
+          python scripts/build_career_pages.py
+          python scripts/collect_recruitment.py --refresh-hashes --report "$RUNNER_TEMP/recruitment/report.json"
+          python scripts/build_career_pages.py --check
+          python scripts/check_seo.py
+          python scripts/check_accessibility.py
+          python scripts/check_frontend_secrets.py
+          python scripts/seo_engine.py audit --output "$RUNNER_TEMP/recruitment/protection"
+          node --test tests/career.mjs
+      - name: Publish only recruitment output
+        id: publish
+        run: |
+          python - <<'PY'
+          import subprocess
+          changed = subprocess.check_output(['git','status','--porcelain'], text=True).splitlines()
+          allowed = {'data/recruitment-feed.json','seo/approved-edits.json','sitemap.xml'}
+          for line in changed:
+              p=line[3:]
+              if p not in allowed and not p.startswith('personel-alim-ilanlari/'):
+                  raise ValueError('Publication escaped recruitment scope: '+p)
+          PY
+          if ! git diff --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/recruitment-feed.json personel-alim-ilanlari/ seo/approved-edits.json sitemap.xml
+            git commit -m 'Refresh official public recruitment notices'
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Request Pages build for the bot commit
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/{owner}/{repo}/pages/builds
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recruitment-scan
+          path: ${{ runner.temp }}/recruitment
+          retention-days: 30
+      - name: Report coverage and pending news verification
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'recruitment/report.json'
+          if p.exists():
+              r=json.loads(p.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+                  out.write(f"Resmî kayıt: {r['sourceRecords']}\n\nAlım: {r['recruitmentRecords']} · Açık: {r['open']} · Başlayacak: {r['upcoming']}\n\n")
+                  out.write(f"Kamu İş İlanları taranan haber: {r['news']['scanned']} · En yeni yayın: {r['news'].get('newestPublishedAt')}\n\n")
+                  out.write(f"Resmî doğrulama bekleyen haber: {len(r['news']['candidates'])}\n\n")
+                  if r['newsError']:out.write('Haber kaynağı hatası: '+r['newsError'])
+          PY
