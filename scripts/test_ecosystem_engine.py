@@ -28,7 +28,7 @@ class EcosystemTests(unittest.TestCase):
  def test_question_heading_cannot_swallow_intervening_sections(self):
   s='<head></head><main><h1>Konu</h1><h2>Birinci soru?</h2><ul><li>Liste</li></ul><h2>İkinci soru?</h2><p>Bu ikinci sorunun yeterli uzunluktaki cevabı mevcut ve görünür kaynak içeriğinde yer alan açıklamadır.</p></main>';new=enrich_schema(s,'https://pdrkampus.com/test/');graph=Page(new).schemas[0]['@graph'];questions=next(n for n in graph if n['@type']=='FAQPage')['mainEntity'];self.assertEqual([q['name'] for q in questions],['İkinci soru?'])
  def test_real_catalogue_and_relationships(self):
-  rows=load_catalogue(ROOT);self.assertEqual(len(rows),1366);graph=relationships(ROOT,rows);self.assertTrue(graph['edges']);self.assertTrue(graph['question_clusters'])
+  rows=load_catalogue(ROOT);self.assertGreaterEqual(len(rows),1366);self.assertEqual(len({r['id'] for r in rows}),len(rows));graph=relationships(ROOT,rows);self.assertTrue(graph['edges']);self.assertTrue(graph['question_clusters'])
  def test_idempotent_schema(self):
   s='<head></head><main><h1>Konu</h1><p>İçerik</p></main>';x=enrich_schema(s,'https://pdrkampus.com/test/');self.assertEqual(x,enrich_schema(x,'https://pdrkampus.com/test/'))
  def test_changed_source_is_reported_but_publication_stays_blocked(self):

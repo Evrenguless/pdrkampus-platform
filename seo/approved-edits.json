@@ -275,8 +275,8 @@
     },
     "atama/pdr-akademi-kontenjan/index.html": {
       "baseline_sha256": "80d6460231702a113d3732bc40234b59ec6dc5177e272a23c683d75520e5367a",
-      "reviewed_sha256": "a5dfa5d1ecd5f25fb36f7dd5097228bd76e5365b94933e3bb1918d5c7e34e7d2",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "c42016fafe785f2fb7ac4e8149f8b2062a601e1637914285f7d46e62e39ad0f0",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "atama/pdr-akademi-yerlestirme/index.html": {
@@ -287,8 +287,8 @@
     },
     "atama/pdr-atama-verileri-nasil-okunur/index.html": {
       "baseline_sha256": "558d8596916c49ef15dda8bda031421d1b4877fb782c450fdd85a6d7f582b515",
-      "reviewed_sha256": "943474fd85f089efb81cc69b181e62ba6c663d2956aae3d6dfa79fa189acadc2",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "f5f8e9f38de4b793dee602361d811ba04de1133ca667df188aa8a3964fa665e1",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "bep/bep-toplantisi-nasil-yapilir/index.html": {
@@ -899,8 +899,8 @@
     },
     "pdr-ags/calisma-programi/index.html": {
       "baseline_sha256": "5b6e4cfbe88fddb70af67fbd22c3002a38b864a7c52dda95f3c914201446c8a0",
-      "reviewed_sha256": "2feeddcd1fd22635285c207ad43d9041f9b809cc9d15af6b6fcc684b6049cdf0",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "8b6e744b56f0b5ce93c4d46fafd1fe4dcd98bdd69049a08cf369fae098c31ad8",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "pdr-ags/cikmis-sorular/index.html": {
@@ -917,20 +917,20 @@
     },
     "pdr-ags/konu-soru-dagilimi/index.html": {
       "baseline_sha256": "182186b5b9f1c6865264407c1855af5a8dbd9ed21eba23e31e5262584f60b4a1",
-      "reviewed_sha256": "5692e2db7d2057b71f32efcd2c6a25e37f1e3105a32d0cfc04ef54c75adc1940",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "bf89dda58c8c4f01f4e09c00214e62d0d272535b4109f9615de5ebf670b1e145",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "pdr-ags/puan-hesaplama/index.html": {
       "baseline_sha256": "7cce5784b5c611aaea3fe6f6056379674b825b9e078f8d30fdb7e087e891e6fe",
-      "reviewed_sha256": "7937711636673204e4614b7b2648766aeaa1c45d3a545db0b1412b9e785c0fa3",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "51af19b84c70390a352fb504598bed289b9ef3b34cd9863eb832605c21811ed8",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "pdr-oabt/konu-soru-dagilimi/index.html": {
       "baseline_sha256": "c3372073d26f5d372b3ae6b8da66d7a8b47ac30e1485d6741f242eb6800ad75f",
-      "reviewed_sha256": "e6edc57bc4eced719148a86c8457f9a3aadc11e31672f9af193bd79b92a8c1b6",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "71db229cfc8ab1356b529c64b4b0d5c802fa96c9ab1ef934cb8f2af6cbd95808",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "pdr-ogrencileri/bireyi-tanima-teknikleri/index.html": {
@@ -1301,6 +1301,11 @@
       "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
       "reviewed_sha256": "7efb9a610284cc844be2ef36f386a2a1642dc7dd2749c0946513f745729af363",
       "reason": "SEO-only regeneration now preserves schema/context; original data and generated runtime scripts unchanged"
+    },
+    "scripts/check_seo.py": {
+      "baseline_sha256": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",
+      "reviewed_sha256": "28b42669d57d93d96a341827b59163acbcce418e7ca3915cd4160355edb011bf",
+      "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved."
     }
   }
 }

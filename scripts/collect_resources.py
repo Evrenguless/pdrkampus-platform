@@ -21,6 +21,7 @@ from urllib.robotparser import RobotFileParser
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+INSPECTION_VERSION = 2
 EXTENSIONS = {'pdf', 'doc', 'docx', 'ppt', 'pptx', 'xls', 'xlsx', 'png', 'jpg', 'jpeg', 'webp'}
 
 
@@ -249,7 +250,7 @@ def collect(config, catalogue, previous, fetch, now=None):
     for i in range(min(config.get('known_file_checks', 0), len(originals))):
         if time.monotonic() - start >= config['max_seconds'] * .75: break
         url, original = originals[(known_cursor+i) % len(originals)]
-        if url in known_hashes: continue
+        if known_hashes.get(url, {}).get('inspection_version') == INSPECTION_VERSION: continue
         entry = overrides.get(original['file'], {})
         if entry.get('status') == 'unavailable': continue
         actual = entry.get('replacement_url') or original['file']
@@ -259,7 +260,7 @@ def collect(config, catalogue, previous, fetch, now=None):
             if not file_signature(body, extension(actual)): raise ValueError('Original signature unavailable')
             from inspect_resource import inspect
             evidence = inspect(body, extension(actual), original.get('title', ''))
-            known_hashes[url] = {'sha256': hashlib.sha256(body).hexdigest(), 'text_sha256': evidence.get('text_sha256')}
+            known_hashes[url] = {'sha256': hashlib.sha256(body).hexdigest(), 'text_sha256': evidence.get('text_sha256'), 'inspection_version': INSPECTION_VERSION}
         except Exception as error: baseline_errors.append({'url': url, 'error': str(error)[:240]})
     hashes = {row['sha256']: row['id'] for row in rows.values() if row.get('sha256') and row['status'] != 'duplicate'}
     original_byte_hashes = {r['sha256'] for r in known_hashes.values() if r.get('sha256')}
@@ -269,7 +270,7 @@ def collect(config, catalogue, previous, fetch, now=None):
         last = row.get('access_verified_at', '')
         try: stale = (datetime.fromisoformat(now.replace('Z','+00:00'))-datetime.fromisoformat(last.replace('Z','+00:00'))).total_seconds() > 86400
         except ValueError: stale = True
-        if row['status'] not in ('pending_check', 'retry') and not (row['status'] == 'review_ready' and ('inspection' not in row or stale)): continue
+        if row['status'] not in ('pending_check', 'retry') and not (row['status'] == 'review_ready' and (row.get('inspection', {}).get('version') != INSPECTION_VERSION or stale)): continue
         checked += 1; row['last_checked_at'] = now
         try:
             body, headers, final = fetch(row['file_url'], config['max_file_bytes'])

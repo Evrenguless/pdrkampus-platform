@@ -6,14 +6,14 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
-from collect_resources import ROOT, allowed, canonical, source_title, extension
+from collect_resources import ROOT, allowed, canonical, source_title, extension, INSPECTION_VERSION
 from seo_engine import protected
 from resource_seo import page_path, build_pages
 
 
 def publishable(row, known, hashes):
     gate = row.get('inspection', {})
-    if row.get('status') != 'review_ready' or not gate.get('eligible') or gate.get('review_reasons') or gate.get('version') != 1: return False
+    if row.get('status') != 'review_ready' or not gate.get('eligible') or gate.get('review_reasons') or gate.get('version') != INSPECTION_VERSION: return False
     if gate.get('method') != 'full_readable_document_text_and_source_metadata' or gate.get('text_characters', 0) < 120: return False
     if not allowed(row.get('file_url', ''), ['meb.gov.tr', 'meb.k12.tr']): return False
     if not row['file_url'].startswith('https://') or not row.get('source_pages'): return False

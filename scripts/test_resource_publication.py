@@ -53,6 +53,8 @@ class PublicationTests(unittest.TestCase):
         for field, value in [('file_url', 'https://evil.example/a.pdf'), ('file_type', 'DOC'), ('sha256', ''), ('status', 'retry'), ('source_pages', ['http://test.meb.k12.tr/'])]:
             row = copy.deepcopy(self.row); row[field] = value
             self.assertFalse(publishable(row, set(), set()), field)
+        row = copy.deepcopy(self.row); row['inspection']['version'] = 1
+        self.assertFalse(publishable(row, set(), set()))
         row = copy.deepcopy(self.row); row.pop('inspection')
         self.assertFalse(publishable(row, set(), set()))
 

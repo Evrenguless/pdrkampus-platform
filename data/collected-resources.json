@@ -17,7 +17,8 @@
     "pagePath": "/kaynak/yeni/akran-zorbaligi-sunumu-0a373e0d995b/",
     "documentInfo": {
       "format": "PDF",
-      "page_count": 37
+      "page_count": 37,
+      "filled_interactive_fields": 0
     },
     "documentWords": 1109,
     "documentTextSha256": "33d128c8ba21d7f47da64c0ec2b8f2840f4cff9347b69fd4c782d008309ced0b"
@@ -40,7 +41,8 @@
     "pagePath": "/kaynak/yeni/veli-gorusme-formu-cd61b5cee7ad/",
     "documentInfo": {
       "format": "PDF",
-      "page_count": 3
+      "page_count": 3,
+      "filled_interactive_fields": 0
     },
     "documentWords": 640,
     "documentTextSha256": "aacbb939f11ea91ead871cebf4c0613d0033c9881cb0a1d666b3c418159430ed"
@@ -65,8 +67,8 @@
       "format": "XLSX",
       "slide_count": null
     },
-    "documentWords": 698,
-    "documentTextSha256": "68f1a7a8baefa7fe1334b08428734f7ce43218b514a9d6070dd2f4deab2451a0"
+    "documentWords": 574,
+    "documentTextSha256": "2bbf4d571f26fe51e47359ca507a9b1e7d7e53160945f9f29554d2ab7b91f313"
   },
   {
     "id": "collected-a91049b85061b046fa77512c",
@@ -88,8 +90,8 @@
       "format": "XLSX",
       "slide_count": null
     },
-    "documentWords": 385,
-    "documentTextSha256": "db26821908782cfbdedef9a601f86cfb14255443d5ffa83b473fb42f955c5a39"
+    "documentWords": 266,
+    "documentTextSha256": "5ab457008effacc8390ebcdbbe1741bc90a69f167ec2c6f67f17504576da5993"
   },
   {
     "id": "collected-b6f65fe44d69091bfb9fd86a",
@@ -134,8 +136,8 @@
       "format": "XLSX",
       "slide_count": null
     },
-    "documentWords": 392,
-    "documentTextSha256": "1f6951e26467b01fafafc32cb469217c3f65715c84bbd35d1a8845d2c14d0916"
+    "documentWords": 274,
+    "documentTextSha256": "84d813f2e1d65c5674a62aac5b274ca08dca8512c6a222baa3339188449d87ca"
   },
   {
     "id": "collected-ce22c0d77a3e936f6515e915",
@@ -157,8 +159,8 @@
       "format": "XLSX",
       "slide_count": null
     },
-    "documentWords": 396,
-    "documentTextSha256": "c48540ed30463f9e88113ee7d0be2fcf6c48a0abdf7966f106f2cabaec2b33fa"
+    "documentWords": 279,
+    "documentTextSha256": "da0f09fbacc5b773b46642e47a443a6e319b05fbb21047fab08d4d6d9f802e77"
   },
   {
     "id": "collected-e160ec35e2d843bdebd5f53c",
@@ -178,7 +180,8 @@
     "pagePath": "/kaynak/yeni/bilincli-teknoloji-kullanimi-ogrenci-sunumu-43bdebd5f53c/",
     "documentInfo": {
       "format": "PDF",
-      "page_count": 16
+      "page_count": 16,
+      "filled_interactive_fields": 0
     },
     "documentWords": 668,
     "documentTextSha256": "445183cfe8d6dba31a1774cf89542d1e50ba4ecd6c6a58e6b5b50c5945f1bff8"

@@ -12,7 +12,7 @@ import tempfile
 import difflib
 import xml.etree.ElementTree as ET
 import zipfile
-from collect_resources import ROOT, classify, fold
+from collect_resources import ROOT, classify, fold, INSPECTION_VERSION
 
 
 def ocr(path):
@@ -119,7 +119,7 @@ def assess(text, title, ext, config):
     if len(title.split()) < 2 or len(title) < 8 or len(title) > 180: flags.append('title_requires_review')
     # Do not assert a school stage unless source metadata AND document agree.
     if source['levels'] and not levels: flags.append('school_stage_conflict')
-    return {'version': 1, 'eligible': not flags, 'title': title, 'review_reasons': flags, 'text_sha256': hashlib.sha256(' '.join(text.split()).encode()).hexdigest(), 'text_characters': len(text), 'topics': topics, 'levels': levels, 'material_type': kind, 'method': 'full_readable_document_text_and_source_metadata', 'personal_data_stored': False}
+    return {'version': INSPECTION_VERSION, 'eligible': not flags, 'title': title, 'review_reasons': flags, 'text_sha256': hashlib.sha256(' '.join(text.split()).encode()).hexdigest(), 'text_characters': len(text), 'topics': topics, 'levels': levels, 'material_type': kind, 'method': 'full_readable_document_text_and_source_metadata', 'personal_data_stored': False}
 
 
 def inspect(body, ext, title):
@@ -129,7 +129,7 @@ def inspect(body, ext, title):
             result = subprocess.run([sys.executable, str(Path(__file__).resolve()), str(path), ext, title], capture_output=True, timeout=45, check=True, text=True)
             return json.loads(result.stdout)
         except (subprocess.SubprocessError, ValueError) as error:
-            return {'version': 1, 'eligible': False, 'review_reasons': ['document_inspection_failed'], 'method': 'bounded_document_inspection', 'personal_data_stored': False}
+            return {'version': INSPECTION_VERSION, 'eligible': False, 'review_reasons': ['document_inspection_failed'], 'method': 'bounded_document_inspection', 'personal_data_stored': False}
 
 
 if __name__ == '__main__':
@@ -146,4 +146,4 @@ if __name__ == '__main__':
         result['word_count'] = len(text.split())
         print(json.dumps(result, ensure_ascii=False))
     except Exception:
-        print(json.dumps({'version': 1, 'eligible': False, 'review_reasons': ['unreadable_or_unsupported_document'], 'personal_data_stored': False}))
+        print(json.dumps({'version': INSPECTION_VERSION, 'eligible': False, 'review_reasons': ['unreadable_or_unsupported_document'], 'personal_data_stored': False}))
