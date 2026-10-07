@@ -1241,7 +1241,7 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "6126ad3caa10263b39087106d97901b24319087e8226c067bbee4b8ec8e6a8b6",
+      "reviewed_sha256": "d6e37cabbdf98d5c517633d0638acf9b571a007771df7c29b36cf5656a0a29de",
       "reason": "Source-preserving resource detail pages and exact-file matching; original catalogue and calculation data preserved"
     },
     "topluluk.html": {
