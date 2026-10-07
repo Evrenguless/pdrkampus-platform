@@ -1,1 +1,50 @@
-{}
+{
+  "osym-2026-meb-ags-engelli-basvuru-kullanici-kilavuzu": {
+    "retryAfter": 1791500422,
+    "errorType": "TimeoutError"
+  },
+  "tarsus-2026-2027-4sinif-etkinlik": {
+    "retryAfter": 1791500461,
+    "errorType": "TimeoutError"
+  },
+  "tegm-2026-5sinif-veli-sunumu": {
+    "retryAfter": 1791500485,
+    "errorType": "ValueError"
+  },
+  "karasu-2026-selamlasma-yillik-plan-ilkokul": {
+    "retryAfter": 1791500493,
+    "errorType": "UnicodeEncodeError"
+  },
+  "tegm-2026-1sinif-veli-sunumu": {
+    "retryAfter": 1791500499,
+    "errorType": "ValueError"
+  },
+  "karasu-2026-2027-ortaokul-cerceve-plan": {
+    "retryAfter": 1791500512,
+    "errorType": "URLError"
+  },
+  "collected-c73e3cc40338073750915ea3": {
+    "retryAfter": 1791500533,
+    "errorType": "URLError"
+  },
+  "collected-a91049b85061b046fa77512c": {
+    "retryAfter": 1791500540,
+    "errorType": "URLError"
+  },
+  "collected-4734cb4690b27c83b0154bb0": {
+    "retryAfter": 1791500540,
+    "errorType": "URLError"
+  },
+  "mesleki-alan-tercih-dilekce-2026": {
+    "retryAfter": 1791500553,
+    "errorType": "URLError"
+  },
+  "cizre-aile-iletisim-ortaokul-sunum-2026": {
+    "retryAfter": 1791500592,
+    "errorType": "URLError"
+  },
+  "cizre-aile-iletisim-veli-brosur-2026": {
+    "retryAfter": 1791500594,
+    "errorType": "URLError"
+  }
+}
