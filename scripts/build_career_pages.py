@@ -154,8 +154,17 @@ def generate():
         modified[url] = lastmod
 
     announcements = sorted(jobs['announcements'], key=lambda r: r['publishedAt'], reverse=True)
+    feed_path = ROOT / 'data/recruitment-feed.json'
+    feed = json.loads(feed_path.read_text()) if feed_path.exists() else {'records': []}
+    feed_rows = feed['records']
+    checked_day = feed.get('updatedAt', jobs['reviewedAt'])[:10]
+    now = datetime.fromisoformat(checked_day + 'T00:00:00+03:00')
     cards = ''
     for row in announcements:
+        row = dict(row)
+        live = next((r for r in feed_rows if r.get('manualSlug') == row['slug']), None)
+        if live:
+            row.update(startsAt=live['startsAt'], deadline=live['deadline'])
         path = PREFIXES[0] + row['slug'] + '/'
         search_text = ' '.join([row['title'], row['institution'], row['city'], row['summary']] + [p['name'] for p in row['positions']])
         cards += f'<article class="career-card" data-career-card data-search="{E(search_text)}" data-city="{E(row["city"])}" data-education="{E(json.dumps(row["education"], ensure_ascii=False))}"><div class="career-card-body"><div class="career-tags"><span class="career-tag">{E(row["category"])}</span>{badge(row, now)}</div><h2><a href="{path}">{E(row["title"])}</a></h2><p>{E(row["summary"])}</p>' + facts([('Görev yeri', row['city']), ('Kontenjan', f'{row["quota"]} kişi'), ('Öğrenim', ', '.join(row['education'])), ('Son başvuru', date_text(row['deadline'], True))]) + f'</div><div class="career-card-footer"><time datetime="{row["publishedAt"]}">{date_text(row["publishedAt"])}</time><a href="{path}" aria-label="{E(row["title"])}: ilan detayları">İlanı incele →</a></div></article>'
@@ -173,14 +182,21 @@ def generate():
         body += '<div class="career-notice">Bu özet tam ilan metninin yerine geçmez. Pozisyonun tüm koşulları ve kurumun değişiklik duyuruları başvuruda esas alınır.</div><div class="career-layout"><article class="career-article">' + article + '</article><aside class="career-aside">' + aside + '</aside></div>'
         page(path, row['title'], row['summary'], body, structured('NewsArticle', row['title'], path, row['publishedAt'], row['updatedAt']), row['updatedAt'])
 
+    imported = [r for r in feed_rows if not r.get('manualSlug')]
+    for row in imported:
+        official_url(row['sourceUrl'])
+        cards += f'<article class="career-card" data-career-card data-search="{E(row["title"]+" "+row["institution"])}" data-city="Resmî ilanda" data-education="[&quot;Resmî ilanda&quot;]"><div class="career-card-body"><div class="career-tags"><span class="career-tag">{E(row["category"])}</span>{badge(row, now)}</div><img src="{E(row["logoUrl"])}" alt="" width="64" height="64" loading="lazy"><h2><a href="{E(row["sourceUrl"])}" aria-label="{E(row["title"])}" target="_blank" rel="noopener noreferrer">{E(row["title"][:100] + ("…" if len(row["title"]) > 100 else ""))}</a></h2><p><strong>{E(row["institution"])}</strong><br>{E(row["unit"])}</p>' + facts([('Başvuru başlangıcı', date_text(row['startsAt'],True)), ('Son başvuru', date_text(row['deadline'],True))]) + '<p>Kontenjan, öğrenim ve KPSS koşulları için tam resmî ilanı inceleyin.</p></div><div class="career-card-footer"><span>Kariyer Kapısı · resmî kayıt</span>' + link(row['sourceUrl'],'Resmî ilanı incele ↗') + '</div></article>'
+    all_rows = announcements + [{'city':'Resmî ilanda','education':['Resmî ilanda']} for r in imported]
+
     title = 'Personel Alım İlanları'
     desc = 'Kamu ve üniversite personel alım ilanları: kontenjan, mezuniyet ve KPSS koşulları, başvuru tarihleri ve resmî ilan bağlantıları.'
     body = breadcrumb('Personel alım ilanları') + hero('KARİYER · İLAN AKIŞI', title, desc, '<strong>Tercihten kariyere</strong><p>Üniversiteye giriş koşulları ve başarı sırası açıklamalarını inceleyin.</p><a href="/bolumler/">Bölüm rehberi →</a>')
-    body += toolbar('jobs', [('city', 'Şehir', [r['city'] for r in announcements]), ('education', 'Öğrenim', [x for r in announcements for x in r['education']])])
+    body += '<div class="career-notice"><img src="https://kariyerkapisi.gov.tr/img/logo-kariyerkapisi.png" alt="Kariyer Kapısı" width="100" height="35" loading="lazy"> <strong>Kamu İşe Alım İlanları</strong> · Resmî veri akışı</div>'
+    body += toolbar('jobs', [('city', 'Şehir', [r['city'] for r in all_rows]), ('education', 'Öğrenim', [x for r in all_rows for x in r['education']])])
     # Stable status keys are independent of translated labels.
     body = body.replace('<button type="reset">Temizle</button></form>', '<label for="career-status">Başvuru durumu<select id="career-status" name="status"><option value="">Tümü</option><option value="open">Başvuru açık</option><option value="upcoming">Başvuru başlayacak</option><option value="closed">Başvuru sona erdi</option><option value="withdrawn">İlan geri çekildi</option><option value="unknown">Takvimi kontrol edin</option></select></label><button type="reset">Temizle</button></form>', 1)
-    body += f'<div class="career-results"><span data-result-count aria-live="polite">{len(announcements)} ilan</span><span>En yeni ilanlar önce · Kaynak kontrolü: {date_text(jobs["reviewedAt"])}</span></div><div class="career-grid career-news-grid">{cards}</div><p class="career-empty" data-empty hidden>Seçtiğiniz koşullara uygun ilan bulunamadı. Filtreleri temizleyerek tüm ilanları görebilirsiniz.</p><noscript><p>Arama ve durumların anlık güncellenmesi için JavaScript gerekir. İlan metinleri ve bağlantılar aşağıda erişilebilir; tarihleri resmî duyurudan kontrol edin.</p></noscript><div class="career-notice">Bu sayfa resmî kaynaklardan doğrulanan seçili ilanları listeler; Türkiye’deki bütün alımları kapsamaz. Başvuru öncesinde kurumun güncel duyurusunu kontrol edin.</div>'
-    page(PREFIXES[0], title, desc, body, structured('CollectionPage', title, PREFIXES[0]), jobs['reviewedAt'])
+    body += f'<div class="career-results"><span data-result-count aria-live="polite">{len(all_rows)} ilan</span><span>Resmî alım kayıtları · Kaynak kontrolü: {date_text(checked_day)}</span></div><div class="career-grid career-news-grid">{cards}</div><p class="career-empty" data-empty hidden>Seçtiğiniz koşullara uygun ilan bulunamadı. Filtreleri temizleyerek tüm ilanları görebilirsiniz.</p><noscript><p>Arama ve durumların anlık güncellenmesi için JavaScript gerekir. İlan metinleri ve bağlantılar aşağıda erişilebilir; tarihleri resmî duyurudan kontrol edin.</p></noscript><div class="career-notice">Kariyer Kapısı’nın tüm kamuya açık alım kayıtları otomatik izlenir. Kurum içi yükselme, yeterlik ve eğitim başvuruları alım olarak gösterilmez. Kamu İş İlanları haberleri resmî doğrulama için taranır; bu kaynakların dışında kalan alımlar bulunabilir. Başvuru öncesinde kurumun güncel duyurusunu kontrol edin.</div>'
+    page(PREFIXES[0], title, desc, body, structured('CollectionPage', title, PREFIXES[0]), checked_day)
 
     program_cards = ''
     for row in programs:

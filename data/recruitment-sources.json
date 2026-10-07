@@ -1,13 +1,15 @@
 {
   "version": 1,
-  "intervalHours": 6,
-  "mode": "codex-heartbeat",
+  "intervalHours": 1,
+  "mode": "github-actions",
   "sources": [
     {
       "name": "Kariyer Kapısı",
       "url": "https://kariyerkapisi.gov.tr/isealim",
       "priority": 1,
-      "role": "official"
+      "role": "official",
+      "apiUrl": "https://api.kariyerkapisi.gov.tr/api/ilan/GetIseAlimPage",
+      "rssUrl": "https://kariyerkapisi.gov.tr/RSS"
     },
     {
       "name": "Kamu İş İlanları",
@@ -48,5 +50,6 @@
       "name": "Ankara Üniversitesi",
       "url": "https://personeldb.ankara.edu.tr/tum-duyurular/"
     }
-  ]
+  ],
+  "workflow": ".github/workflows/recruitment-collector.yml"
 }

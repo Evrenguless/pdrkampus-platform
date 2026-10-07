@@ -1299,8 +1299,8 @@
     },
     "scripts/build_career_pages.py": {
       "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
-      "reviewed_sha256": "98545595715668e29be7918abee1b13bf9daab548d42ad56033e429cc685f4cf",
-      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions"
+      "reviewed_sha256": "5eaad10626cc616dc2379e3cc59d71f6d92892b858030ccf3aa2807d6a11b4b5",
+      "reason": "Generated official public recruitment snapshot; application and other datasets preserved"
     },
     "scripts/check_seo.py": {
       "baseline_sha256": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",
@@ -1315,14 +1315,14 @@
     },
     "personel-alim-ilanlari/duzce-universitesi-2026-2-sozlesmeli-personel/index.html": {
       "baseline_sha256": "f69f61f3cd9e83d3494a842fd35c63004510d9a021544c0881eba5ac5fe8f56b",
-      "reviewed_sha256": "d3900a151e6a9ac15db7662bc6f5bfd24aa40d5bda2380903b90632f3fc7c60d",
-      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "reviewed_sha256": "bb7481546e2c3fabd4a4af5a7b4b74bf520432482435b63700a4cbd50e419ef6",
+      "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "personel-alim-ilanlari/index.html": {
       "baseline_sha256": "866b330b1f4bb3ed6e01a3dc78097e3cb0c237b1059d60d7668ed147dfabfb36",
-      "reviewed_sha256": "b0c902f78065a6a8552772bfee8d03bd5a023ae38e4bc1e7cab7229c2d4617e8",
-      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "reviewed_sha256": "7472072ec9f1d5f54dcc35e506cf31df7b1ade41fbf0ef53f1fa1fe2a17923ca",
+      "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     }
   }

@@ -1,26 +1,25 @@
-# Personel ilanlarını otomatik takip
+# Kamu alım ilanlarının otomatik yayını
 
-Kullanıcının 7 Ekim 2026 talebi yeni ve başvurusu devam eden kamu personel ilanlarının resmî sitelerden doğrulanarak ayrıca onay beklemeden yayımlanmasını yetkilendirir. Ana sayfa/genel menü kapsamı değişmez.
+Kullanıcının 7 Ekim 2026 talebi, tüm güncel kaynak kayıtlarını çekmeyi ve yeni veriyi ayrıca onay beklemeden canlıya eklemeyi yetkilendirir. Ana sayfa ve genel menü değişmez.
 
-Bu sohbetin Codex heartbeat otomasyonu altı saatte bir kaynak kontrolü ve yayın yapar. Öncelikli kaynaklar Kamu İş İlanları (`https://www.kamuisilanlari.com/`) ve Kariyer Kapısı (`https://kariyerkapisi.gov.tr/isealim`). Kamu İş İlanları keşif kaynağıdır; yayın verisi resmî metinle doğrulanır. Kaynak listesi `data/recruitment-sources.json`; bu dosya kendi başına zamanlayıcı değildir. Otomasyon bağlı yerel çalışma ortamının kullanılabilir olmasına bağlıdır; sürekli sunucuda çalışan bir RSS/webhook servisi değildir. Anlık yayın veya bütün Türkiye kapsamı garantisi verilmez.
+## Sunucuda saatlik takip
 
-## Her kontrolün işlemleri
+`.github/workflows/recruitment-collector.yml` GitHub Actions üzerinde her saat çalışır; yerel bilgisayar/Codex açık olma şartı yoktur. GitHub zamanlanmış işleri yoğunlukta gecikebilir. Akış aynı zamanda main'e kurulum yayını yapıldığında ve manuel başlatıldığında çalışır.
 
-1. Güncel `origin/main` ve yerel değişiklikleri kontrol et; kullanıcı çalışmalarını ezme. Kaynak listesindeki resmî portalları ve kurum duyurularını oku; başka resmî kurum kaynakları keşfedilirse listeyi genişlet.
-2. Yeni ve başvurusu açık/ileride başlayacak alımları ayır. Sonuç, sözlü sınav takvimi, yedek çağrı, kurum içi görevlendirme ve eski ilan tekrarını yeni alım olarak yayımlama. Haber siteleri keşif içindir; veriyi kurum/Resmî Gazete/Kariyer Kapısı metniyle doğrula. Erişim engeli ve CAPTCHA aşılmaz; erişilebilir resmî alternatif aranır.
-3. Başvuru tarihini, kontenjan toplamını, pozisyon dağılımını, öğrenim/KPSS şartlarını, başvuru yöntemini ve varsa ayrıca belge teslim tarihini doğrula. Bilinmeyen koşulu açıkça belirt; sayı, mezuniyet, puan veya saat uydurma. Pozisyon toplamı ve başvuru takvimi doğrulanamayan ilan yayımlanmaz.
-4. Mevcut kayıtları kurum+ilan numarası+resmî URL ile eşleştir; URL varyantlarından mükerrer ilan üretme. Slug kalıcıdır. Kaynak kontrol tarihini kayıt bazında tut; içerik değişmeden veya yeniden doğrulanmadan günlük tarih değiştirme.
-5. Açık kayıtlar için düzeltme/iptal/tarih değişikliği duyurularını da kontrol et. İptal doğrulanırsa `withdrawn: true`; kaynağın erişilememesi veya kaybolması tek başına iptal değildir. Süresi biten kayıtlar arşivde kalır; tarayıcı başvuru durumunu günceller.
-6. Üreticiyi çalıştır ve `--check`, SEO, erişilebilirlik, frontend secret, preservation/discovery ve `node --test tests/career.mjs` kontrollerini tamamla. Değişiklik yoksa commit/PR açma.
-7. İlan verisi, kaynak listesi, üretilen ilan sayfaları ve sitemap değişikliklerini yeni dal/PR üzerinden yayımla. PR'ı sohbetle ilişkilendir. İlgili kontroller geçince doğrulanmış head SHA ile main'e birleştir. Connector create_tree tabanı güncel main ağacıdır; başka çalışmaları silme. Yeni test hatasını araştır, mevcut ilgisiz katalog test kusuruyla karıştırma.
-8. Pages dağıtımı ve değişen canlı URL içeriklerini doğrula. Sitemap güncellenir; Google indeksleme veya sıralama garantisi verilmez.
+1. Kariyer Kapısı sitesinin kendi JavaScript'inde kullandığı giriş gerektirmeyen `GetIseAlimPage` API'sine tüm kurum/il/tür filtreleri boş olarak istek gönderilir. RSS adresi `/RSS`, resmî sitenin RSS Linkini Oluştur düğmesinden doğrulanmıştır.
+2. Kamu İş İlanları'nın açık WordPress API'sinin bütün sayfaları taranır. Kaynak sitesinin haberleri keşif içindir; resmî doğrulama yapılmadan başvurusu açık ilan olarak yayımlanmaz. Yeni haber adayları `recruitment-scan` Actions paketinde saklanır; Codex takip görevi resmî doğrulama ve ayrıntı tamamlama için bu adayları izler.
+3. Başvuru başlangıcı/bitişi, kurum, birim, başlık, tür ve resmî bağlantı `data/recruitment-feed.json` içinde saklanır. Resmî API'nin saatleri Türkiye saat diliminde kullanılır. API'nin paylaşmadığı kontenjan/KPSS/öğrenim koşulları tahmin edilmez; kullanıcı tam resmî ilana yönlendirilir.
+4. Kurum içi yükselme, yeterlik sınavı, yurt dışı eğitim, belge ve tercih başvuruları personel alımı olarak gösterilmez. Henüz başlayacak alımlar ayrıca işaretlenir. Geçmiş kayıtlar tarihleriyle arşivde kalır; kaynağın geçici olarak kaybolması iptal sayılmaz.
+5. Daha önce ayrıntılı yayımlanmış Niğde, Düzce ve ÇSGB kayıtları resmî ID ile eşleştirilir; mükerrer kart oluşturulmaz. Ayrıntı sayfasındaki takvim de resmî listeden güncellenir.
+6. Üretici, SEO, erişilebilirlik, frontend secret, preservation ve tarih testleri geçmeden otomatik yayın yapılmaz. Yalnız feed, üretilen ilan sayfaları, sitemap ve onaylı hash kaydı yazılabilir. Başka veri dosyası veya uygulama kodu otomatik değiştirilmez.
+7. Veri değiştiğinde bot main'e commit yapar ve Pages build API'sini açıkça çağırır; bot commit'lerinin yeni Actions işlerini kendiliğinden tetiklememesine bağlı kalınmaz. Değişiklik yoksa commit yapılmaz. Başka yayın main'i ilerletmişse non-fast-forward push reddedilir; veri sonraki çalışmada güncel main üstünden yeniden uygulanır.
 
-## Tarih hassasiyeti
+## Kapsam ve ilk tarama
 
-Saat doğrulanan alanlar ISO 8601 `+03:00`; yalnızca gün doğrulanmışsa `YYYY-MM-DD` kullanılır. Ekran bilinmeyen saati göstermez. Saati bilinmeyen son başvuru gününde durum `unknown`, başvuru düğmesi gizlidir; ertesi gün kapanır. Bilinmeyen başlangıç tarihi uydurulmaz; ilan doğrulanana kadar yayımlanmaz.
+7 Ekim taraması: Kariyer Kapısı 27 kamuya açık kayıt, bunlardan 22 personel alımı (17 açık, 5 başlayacak), 5 kurum içi sınav/eğitim kaydı. Kamu İş İlanları 52 haber; en yeni yayın 6 Ocak 2026, son 90 günde yeni haber adayı yok. Bu sayılar canlı taramanın o anki sonucudur, sabit kontenjan değildir. Bu iki kaynağın dışında kalan İŞKUR, belediye veya diğer kurum ilanları için başka resmî kaynaklar da keşfedilmelidir; tüm Türkiye kapsamı gerçekleşmiş gibi sunulmaz.
 
-Değişmeyen durumda sessiz kal. Yeni yayın, anlamlı iptal/değişiklik veya kullanıcı müdahalesi gerektiren bir sorun olduğunda bildir. Aynı erişim sorunu için tekrarlayan bildirim gönderme.
+## Koruma ve hata davranışı
 
-## Koruma kaydı
+Boş/bozuk resmî yanıt önceki geçerli feed'i silmez; iş hata verir. Haber kaynağındaki hata resmî akışın yayınını engellemez ve rapora yazılır. Erişim engeli/CAPTCHA aşılmaz. İptal ancak açık resmî düzeltme duyurusuyla doğrulanır. Üretilen ilan HTML'leri ve sitemap için yalnız ilgili dosyaların SHA-256 onay kaydı yenilenir; baseline koruması kapatılmaz.
 
-Bu yayın ilan verisi ve başvuru tarihi davranışı için kullanıcı tarafından yetkilendirilmiş bakımdır. `seo/protected-files.json` içindeki yalnız bu bakıma ait JSON/JS/test/belge hashleri güncellenir; diğer veri dosyaları korunur. Üretilen HTML ve sitemap için `seo/approved-edits.json` hash kayıtları güncellenir. Güncel main içindeki b2e5d4 breadcrumb denetimi de kayda alınır. Sonraki veri yayınlarında sadece doğrulanmış ve test edilmiş değişikliklerin ilgili hash kaydı yenilenir; koruma denetimi kapatılmaz.
+Codex destek görevi kaynak raporlarını ve doğrulanmayı bekleyen haberleri altı saatte bir takip eder; normal saatlik feed yayınına ikinci kez müdahale etmez. Değişmeyen durumda sessiz kalır. Yeni doğrulanmış dış kaynak ilanı, anlamlı düzeltme/iptal veya kalıcı yayın hatası varsa bildirir.
