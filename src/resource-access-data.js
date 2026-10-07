@@ -427,5 +427,16 @@ export const resourceAccessEntries = {
     "source_label": "Kaynak sayfasını aç",
     "checked_on": "2026-10-06",
     "basis": "original_asset_http_404_source_page_http_200"
+  },
+  "https://15temmuzanadolu.meb.k12.tr/meb_iys_dosyalar/28/01/964222/dosyalar/2025_12/01191806_devamsizlikyillikcalismaplaniaksu15temmuz6102026.pdf": {
+    "ids": [
+      "aksu-devamsizlik-sinif-tekrari-onleme-plani-2025-2026"
+    ],
+    "status": "unavailable",
+    "replacement_url": null,
+    "source_url": "https://15temmuzanadolu.meb.k12.tr/icerikler/devamsizlikformlari_15424168.html",
+    "source_label": "Resmî yayın sayfasını aç",
+    "checked_on": "2026-10-07",
+    "basis": "original_asset_http_404_source_page_http_200_updated_plan_listed_20261007"
   }
 };

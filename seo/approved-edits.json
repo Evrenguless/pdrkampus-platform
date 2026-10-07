@@ -129,7 +129,7 @@
     },
     "kutuphane/katalog/sayfa/23/index.html": {
       "baseline_sha256": "06f5976555f3597c726c97d5eddebd72e7bbabfa90a495c40b9bbeaf16a6535d",
-      "reviewed_sha256": "de8dc8030698d90b376c73f0595ab4d1b71f12d9445a9a300d8a77ff03ef3f5a",
+      "reviewed_sha256": "0596fabc5bd56a2d4b55e4d54f27ac30d844887eef8bd7a4b8064f6ec27a70c7",
       "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -1001,7 +1001,7 @@
     },
     "rehber/devamsizlik-mudahale-plani/index.html": {
       "baseline_sha256": "f53c7275753d006c61949fef42e2ce9fd2aa9f22ed5d6b314d4675149bb32be1",
-      "reviewed_sha256": "0531478ac5e3fdfc40a0015ac029ad4950b4a38622c74bb991ff08e5941bf0f8",
+      "reviewed_sha256": "40b0af46a33d65d58ed4ddaea1e674bad88f800fe418dad37cfbeb643b7bac0e",
       "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
