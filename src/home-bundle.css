@@ -326,7 +326,7 @@
 .home-hero{display:block;max-width:none;min-height:0;padding:0;background:#fafaf6;color:#123c31;text-align:left}
 .home-stage{max-width:1120px;margin:0 auto;padding:78px 24px 61px;text-align:center}
 .home-stage .hero-copy{max-width:none;margin:0}
-.home-stage .eyebrow{display:flex;align-items:center;justify-content:center;gap:19px;margin:0 0 23px;color:#477f70;font-size:11px;font-weight:750;letter-spacing:.26em}
+.home-stage .eyebrow{display:flex;align-items:center;justify-content:center;gap:19px;margin:0 0 23px;color:#35695b;font-size:11px;font-weight:750;letter-spacing:.26em}
 .home-stage .eyebrow::before,.home-stage .eyebrow::after{content:"";width:76px;height:1px;background:#b9d0c6}
 .home-stage h1{max-width:1120px;margin:0 auto;color:#123c31;font:700 clamp(44px,5vw,72px)/1.06 Georgia,serif;letter-spacing:-.047em;text-align:center}
 .home-stage h1 em{font-style:normal;color:#123c31}
@@ -342,7 +342,7 @@
 .home-stage .search button:hover{background:#18715d}
 
 .home-scope{display:flex;align-items:center;justify-content:center;gap:18px;max-width:890px;margin:25px auto 0;color:#62756d}
-.home-scope-label{color:#789188;font-size:9px;font-weight:800;letter-spacing:.18em}
+.home-scope-label{color:#586f66;font-size:9px;font-weight:800;letter-spacing:.18em}
 .home-scope>a{display:inline-flex;align-items:baseline;gap:7px;color:#536c63;text-decoration:none;transition:color .18s}
 .home-scope>a:hover,.home-scope>a:focus-visible{color:#0d5947;text-decoration:none;outline:none}
 .home-scope strong{color:#173f34;font:750 17px/1 Manrope,sans-serif;letter-spacing:-.03em}
