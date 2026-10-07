@@ -41,6 +41,21 @@ jobs:
           assert rows, 'Empty public source response'
           print('Public official records:',len(rows))
           PY
+  rss-access:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the official alternative RSS source
+        run: |
+          curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
+            'https://kariyerkapisi.gov.tr/RSS' --output "$RUNNER_TEMP/public-recruitment-rss.xml"
+          python - <<'PY'
+          import os, xml.etree.ElementTree as ET
+          from pathlib import Path
+          rows=ET.parse(Path(os.environ['RUNNER_TEMP'])/'public-recruitment-rss.xml').findall('.//item')
+          assert rows, 'Empty official RSS feed'
+          print('Official RSS records:',len(rows))
+          PY
   collect:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: tests
