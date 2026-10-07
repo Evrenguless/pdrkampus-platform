@@ -215,6 +215,10 @@ def generate():
     tree.getroot()[:] = sorted(tree.getroot(), key=lambda n: n.find(f'{{{NS}}}loc').text)
     ET.indent(tree, space='  ')
     outputs['sitemap.xml'] = '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tree.getroot(), encoding='unicode') + '\n'
+    from enrich_seo_content import enrich_schema
+    for path in list(outputs):
+        if path.endswith(".html"):
+            outputs[path]=enrich_schema(outputs[path],BASE+"/"+path[:-10] if path.endswith("/index.html") else BASE+"/"+path)
     return outputs
 
 

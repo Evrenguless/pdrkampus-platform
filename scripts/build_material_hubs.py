@@ -24,9 +24,15 @@ for slug,(title,filter_type,needle,desc,intro,followup) in hubs.items():
  others=''.join('<a href="/materyaller/'+n+'/">'+e(v[0])+'</a> · ' for n,v in hubs.items() if n!=slug)
  body='<p class="catalog-kicker"><a href="/kutuphane.html">PDR Kampüs Kütüphanesi</a></p><h1>'+title+'</h1><p class="catalog-lead">'+desc+'</p><section class="catalog-card"><h2>Materyal seçerken</h2><p>'+intro+'</p><h2>Çalışmayı tamamladıktan sonra</h2><p>'+followup+'</p></section><h2>Başlangıç için resmî kaynaklar</h2><p>Kütüphanede bu materyal grubunda '+str(len(rows))+' kayıt bulunuyor. Aşağıdaki seçki ilk 16 kaydı gösterir; farklı türdeki dosyalar aynı çalışma amacı için birlikte kullanılabilir.</p><div class="catalog-grid">'+cards+'</div><p><a class="catalog-primary" href="/kutuphane.html?q='+quote(needle)+'">Kütüphanede ilgili materyalleri ara →</a></p><p>'+others+'</p><p>Kaynak dosyalar hazırlayan kuruma aittir. Bu sayfadaki seçim ve uygulama önerileri PDR Kampüs tarafından hazırlanmıştır.</p>'
  outputs['materyaller/'+slug+'/index.html']='<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+' | PDR Kampüs</title><meta name="description" content="'+e(desc,quote=True)+'"><link rel="canonical" href="'+url+'"><meta property="og:url" content="'+url+'"><meta property="og:title" content="'+title+' | PDR Kampüs"><meta property="og:description" content="'+e(desc,quote=True)+'"><link rel="stylesheet" href="/src/style.css"><link rel="stylesheet" href="/src/shell-refresh.css"><link rel="stylesheet" href="/src/design-system.css"><link rel="stylesheet" href="/src/resource-catalog.css"></head><body id="top">'+header+'<main class="catalog-shell">'+body+'</main>'+footer+'<script type="module" src="/src/menu.js?v=20261005-2"></script></body></html>'
+from enrich_seo_content import enrich_schema
+for file in list(outputs):
+ if file=='materyaller/etkinlikler/index.html':
+  links='<section class="catalog-card"><h2>Kademeye göre rehberlik etkinlikleri</h2>'+''.join('<p><a href="/materyaller/etkinlikler/'+slug+'/">'+label+' etkinlikleri ve programları</a></p>' for slug,label in [('ilkokul','İlkokul'),('ortaokul','Ortaokul'),('lise','Lise')])+'</section>'
+  outputs[file]=outputs[file].replace('</main>',links+'</main>')
+ outputs[file]=enrich_schema(outputs[file],'https://pdrkampus.com/'+file[:-10])
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';ET.register_namespace('',ns);tree=ET.parse(root/'sitemap.xml')
 for entry in list(tree.getroot()):
- if '/materyaller/' in entry.find('{'+ns+'}loc').text:tree.getroot().remove(entry)
+ if entry.find('{'+ns+'}loc').text in {'https://pdrkampus.com/materyaller/'+slug+'/' for slug in hubs}:tree.getroot().remove(entry)
 for slug in hubs:
  entry=ET.SubElement(tree.getroot(),'{'+ns+'}url');ET.SubElement(entry,'{'+ns+'}loc').text='https://pdrkampus.com/materyaller/'+slug+'/';ET.SubElement(entry,'{'+ns+'}lastmod').text='2026-10-05'
 tree.getroot()[:] = sorted(tree.getroot(),key=lambda entry:entry.find('{'+ns+'}loc').text)

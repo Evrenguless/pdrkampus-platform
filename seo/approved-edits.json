@@ -1291,6 +1291,16 @@
       "reviewed_sha256": "51c0af7ef13542881257ea77d3cb94fb19c3ec8edb7526717949d1cdc0d4a7ce",
       "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+    },
+    "scripts/build_material_hubs.py": {
+      "baseline_sha256": "f7e44bfa3db584e4b727b14e420d78cfb61392054597dd3f6da50857a902c56f",
+      "reviewed_sha256": "d32e31a5d5ef4e085f13d9c1cf0967840f8c36d63e2105aab6ad3d9f224c18de",
+      "reason": "SEO-only regeneration now preserves schema/context; original data and generated runtime scripts unchanged"
+    },
+    "scripts/build_career_pages.py": {
+      "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
+      "reviewed_sha256": "7efb9a610284cc844be2ef36f386a2a1642dc7dd2749c0946513f745729af363",
+      "reason": "SEO-only regeneration now preserves schema/context; original data and generated runtime scripts unchanged"
     }
   }
 }
