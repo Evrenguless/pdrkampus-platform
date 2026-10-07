@@ -46,6 +46,27 @@ for url in urls:
         continue
 
     html = path.read_text(encoding="utf-8")
+    def check_breadcrumbs(node):
+        if isinstance(node, list):
+            for child in node:
+                check_breadcrumbs(child)
+        elif isinstance(node, dict):
+            if node.get("@type") == "BreadcrumbList":
+                items = node.get("itemListElement", [])
+                for item in items[:-1]:
+                    if not item.get("item"):
+                        errors.append(
+                            f"Breadcrumb üst bölüm item eksik: {path.relative_to(ROOT)} -> {item.get('name')}"
+                        )
+            for child in node.values():
+                if isinstance(child, (dict, list)):
+                    check_breadcrumbs(child)
+
+    for block in re.findall(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.I | re.S):
+        try:
+            check_breadcrumbs(json.loads(block))
+        except json.JSONDecodeError:
+            errors.append(f"Geçersiz JSON-LD: {path.relative_to(ROOT)}")
     if LEGACY_BASE in html:
         errors.append(f"Eski alan adı kaldı: {path.relative_to(ROOT)}")
     title = grab(r"<title>(.*?)</title>", html)
