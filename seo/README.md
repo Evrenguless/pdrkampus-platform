@@ -41,3 +41,5 @@ Bağlantı denetimi eşzamanlı en fazla 8 isteğe izin verir (varsayılan 6; `P
 Raporlar: arama niyeti, görünür soru kümeleri, kaynak/konu/kademe ilişkileri, kaynak kapsamı, iç bağlantılar, schema/FAQ görünürlük eşleşmesi, yakın içerik benzerliği, koruma ve kalite kontrolü. Kalite puanı Google puanı değildir. `Content Discovery and Quality` iş akışı katalog/metaveri değişikliklerinde raporu üretir. Önceki registry açıkça `--previous` ile de verilebilir.
 
 `enrich_seo_content.py` yalnız mevcut görünür sorular ve cevaplarla FAQ açıklaması yapar. Kaynak detayları mevcut katalogdaki hedef kitle/kademe/kurum bilgilerini kullanır. Hiçbir hesaplama, kişisel kayıt veya özgün katalog değeri değiştirilmez.
+
+Kaynak dosyası daha sonra değişirse salt okunur keşif raporu yine üretilir; koruma kontrolü başarısızken kalite kapısı geçmez ve yayın engellenir. Rapor başarısız CI koşusunda da inceleme için saklanır.

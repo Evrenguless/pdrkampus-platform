@@ -95,9 +95,9 @@ def editorial(root):
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1]);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--previous',type=Path);args=ap.parse_args();root=args.root.resolve();output=safe_output(root,args.output)
     if output.exists():raise ValueError('Use a new output directory')
-    if not protected(root)['pass']:raise ValueError('Calculation/data protection failed')
+    # Discovery is read-only even when an upstream source changed. Failed protection blocks publication, not review reports.
     report=editorial(root);output.mkdir(parents=True)
-    report['quality_gate_pass']=all(not p['review_required'] for p in report['editorial'])
+    report['quality_gate_pass']=report['protection']['pass'] and all(not p['review_required'] for p in report['editorial'])
     (output/'audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     if (root/'data/library.json').exists():
         rows=load_catalogue(root);registry_path=args.previous or root/'seo/discovery-registry.json';previous=read(registry_path) if registry_path.exists() else {};topic_candidates=[{'catalogue':'topics','id':t['slug'],'title':t['name'],'file':'https://pdrkampus.com'+t.get('canonicalPath','/konu/'+t['slug']+'/'),'aliases':t.get('aliases',[]),'related_topics':t.get('relatedTopics',[]),'sources':t.get('officialSources',[]),'content_status':t.get('contentStatus')} for t in read(root/'data/topics.json')['topics']]

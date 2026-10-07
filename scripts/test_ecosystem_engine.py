@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-import unittest,tempfile,json
+import unittest,tempfile,json,sys
+from unittest.mock import patch
+import ecosystem_engine
 from pathlib import Path
 from ecosystem_engine import discover,load_catalogue,relationships,editorial
 from enrich_seo_content import enrich_schema
@@ -23,6 +25,12 @@ class EcosystemTests(unittest.TestCase):
   rows=load_catalogue(ROOT);self.assertEqual(len(rows),1366);graph=relationships(ROOT,rows);self.assertTrue(graph['edges']);self.assertTrue(graph['question_clusters'])
  def test_idempotent_schema(self):
   s='<head></head><main><h1>Konu</h1><p>İçerik</p></main>';x=enrich_schema(s,'https://pdrkampus.com/test/');self.assertEqual(x,enrich_schema(x,'https://pdrkampus.com/test/'))
+ def test_changed_source_is_reported_but_publication_stays_blocked(self):
+  with tempfile.TemporaryDirectory() as temp:
+   output=Path(temp)/'review';report={'protection':{'pass':False,'changed':['data/library.json']},'editorial':[],'near_duplicates':[]}
+   with patch('ecosystem_engine.editorial',return_value=report),patch.object(sys,'argv',['engine','--root',str(ROOT),'--output',str(output)]):
+    self.assertEqual(ecosystem_engine.main(),1)
+   self.assertTrue((output/'discovery.json').exists());self.assertFalse(json.loads((output/'audit.json').read_text())['quality_gate_pass'])
  def test_all_current_pages_have_visible_faqs_and_no_duplicates(self):
   r=editorial(ROOT);self.assertTrue(r['protection']['pass']);self.assertFalse(r['near_duplicates']);self.assertFalse([p for p in r['editorial'] if p['faq_issues']])
 if __name__=='__main__':unittest.main()

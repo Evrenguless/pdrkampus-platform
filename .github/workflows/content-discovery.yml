@@ -20,6 +20,7 @@ jobs:
       - name: Discover public content and audit editorial quality
         run: python scripts/ecosystem_engine.py --output "$RUNNER_TEMP/content-discovery"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: content-discovery-review
           path: ${{ runner.temp }}/content-discovery
