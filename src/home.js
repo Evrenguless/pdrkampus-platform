@@ -73,6 +73,9 @@ if(featuredStandTrack&&featuredStandViewport){
  let last=performance.now();
  const speed=.042;
  let carry=0;
+ let halfTrackWidth=featuredStandTrack.scrollWidth/2;
+ const updateTrackWidth=()=>{halfTrackWidth=featuredStandTrack.scrollWidth/2};
+ window.addEventListener('resize',()=>requestAnimationFrame(updateTrackWidth),{passive:true});
 
  const loop=(now)=>{
    const dt=Math.min(40,now-last);
@@ -84,8 +87,7 @@ if(featuredStandTrack&&featuredStandViewport){
        featuredStandViewport.scrollLeft+=whole;
        carry-=whole;
      }
-     const half=featuredStandTrack.scrollWidth/2;
-     if(featuredStandViewport.scrollLeft>=half)featuredStandViewport.scrollLeft-=half;
+     if(featuredStandViewport.scrollLeft>=halfTrackWidth)featuredStandViewport.scrollLeft-=halfTrackWidth;
    }
    raf=requestAnimationFrame(loop);
  };
