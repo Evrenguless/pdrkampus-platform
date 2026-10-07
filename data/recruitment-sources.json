@@ -49,6 +49,11 @@
     {
       "name": "Ankara Üniversitesi",
       "url": "https://personeldb.ankara.edu.tr/tum-duyurular/"
+    },
+    {
+      "name": "Türkiye Taşkömürü Kurumu",
+      "url": "https://www.taskomuru.gov.tr/ttk/tumduyurular/",
+      "role": "official"
     }
   ],
   "workflow": ".github/workflows/recruitment-collector.yml"

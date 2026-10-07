@@ -52,7 +52,7 @@
     "data/inventory-gap-audit.json": "5596d99064ba31072ec6634bd713b4cc3681b35a9efe6746f988abf6fcbcde5f",
     "data/library.json": "9c14baa1d26b5e030e876463c41147c44c9294408e8e23dc19d70244e7fad60b",
     "data/programs.json": "ca77c3ef66e418c8f188ccb9dfe55629610a6380508f633d583a9077b8b4c421",
-    "data/recruitment.json": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
+    "data/recruitment.json": "2169783e6ef7fc5d62af5234ecc83123b55d8e177cd285ec26bf769a33284cb6",
     "data/search-trends.json": "64dace446dd768334e11d743b2125511a2421860f00d39a950c585edd46f60c7",
     "data/seo-keywords.json": "ce482047364f1bc1c22ae8cb8dd8e8f8f523fb18789036a4e283e37d203f5fad",
     "data/seo-site-architecture.json": "1cb7ac406659769a5caa52a8e8e1cc3448039d7784c554c3cdf47326f7838d73",
@@ -349,9 +349,9 @@
   },
   "maintenance_updates": {
     "data/recruitment.json": {
-      "previous_sha256": "da9e7d7035e254e7a91b559137764bddc2a0aec2f6c2b499708df5ef0eea5cc1",
-      "reviewed_sha256": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
-      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+      "previous_sha256": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
+      "reviewed_sha256": "2169783e6ef7fc5d62af5234ecc83123b55d8e177cd285ec26bf769a33284cb6",
+      "reason": "2026-10-08 user-authorized officially verified TTK additions and corrected CSGB official date/source identity"
     },
     "docs/career-content.md": {
       "previous_sha256": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",

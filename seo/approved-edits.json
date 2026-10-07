@@ -1241,8 +1241,8 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "d6e37cabbdf98d5c517633d0638acf9b571a007771df7c29b36cf5656a0a29de",
-      "reason": "Source-preserving resource detail pages and exact-file matching; original catalogue and calculation data preserved"
+      "reviewed_sha256": "d32ce9e09cda4a48bb8ee6217bf9ce01f6376389fd058d59ae3f52c37715ba12",
+      "reason": "Generated official public recruitment snapshot; application and other datasets preserved"
     },
     "topluluk.html": {
       "baseline_sha256": "e73b19a12fd7d33801327f61799969e46685844e3504de5c4e9835352c14d1b9",
@@ -1321,7 +1321,7 @@
     },
     "personel-alim-ilanlari/index.html": {
       "baseline_sha256": "866b330b1f4bb3ed6e01a3dc78097e3cb0c237b1059d60d7668ed147dfabfb36",
-      "reviewed_sha256": "7472072ec9f1d5f54dcc35e506cf31df7b1ade41fbf0ef53f1fa1fe2a17923ca",
+      "reviewed_sha256": "801792ef957a8fd6568f88c11672f99806f1919b4d0c4c99dcd016413e061ae8",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     }

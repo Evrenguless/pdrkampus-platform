@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-07",
+  "reviewedAt": "2026-10-08",
   "announcements": [
     {
       "slug": "duzce-universitesi-2026-2-sozlesmeli-personel",
@@ -157,17 +157,17 @@
         "Resmî ilandan kontrol edin"
       ],
       "publishedAt": "2026-10-04",
-      "updatedAt": "2026-10-07",
+      "updatedAt": "2026-10-08",
       "startsAt": "2026-10-04",
-      "deadline": "2026-10-11",
+      "deadline": "2026-10-11T23:59:00+03:00",
       "withdrawn": false,
       "quota": 5,
-      "summary": "3 kıdemli Java ve 2 kıdemli .Net yazılım uzmanı alınacak. Başvurular 4–11 Ekim 2026 tarihleri arasında Kariyer Kapısı üzerinden yapılacak; son başvuru saati duyuruda belirtilmiyor.",
+      "summary": "3 Java ve 2 .NET yazılım geliştirme uzmanı alınacak. Kariyer Kapısı takvimine göre son başvuru 11 Ekim saat 23.59.",
       "kpss": "KPSS ve öğrenim koşullarının ayrıntısı kısa kurum duyurusunda yer almıyor; tam ilanı Kariyer Kapısı üzerinden kontrol edin.",
       "selection": "Sözlü/uygulamalı sınav başarı sırasıyla yerleştirme; toplam 50 aday sınava çağrılacak.",
       "sourceUrl": "https://www.csgb.gov.tr/duyurular/sozlesmeli-bilisim-personeli-alim-ilani/",
       "sourceLabel": "ÇSGB · 4 Ekim 2026 bilişim personeli duyurusu",
-      "documentUrl": "https://kariyerkapisi.gov.tr/IlanDetay?i=d434258f-ea4c-4c46-9db3-dbaef0160823",
+      "documentUrl": "https://kariyerkapisi.gov.tr/IlanDetay?i=be701e43-3849-4ebc-9374-89a2e432c2db",
       "applyUrl": "https://kariyerkapisi.gov.tr/isealim",
       "positions": [
         {
@@ -188,7 +188,7 @@
       "conditions": [
         "375 sayılı KHK Ek 6 ve sözleşmeli bilişim personeli esasları uygulanır.",
         "Kısa duyuru bütün özel koşulları içermiyor; başvuru öncesinde tam ilanı inceleyin.",
-        "Son günün kapanış saati doğrulanamadığından 11 Ekim’de başvuru açıklığı kesin olarak gösterilmez."
+        "Kariyer Kapısı resmî takviminde son başvuru 11 Ekim 2026 saat 23.59 olarak belirtiliyor."
       ],
       "steps": [
         "Kariyer Kapısı’nda Bakanlığın ilan ayrıntılarını açın.",
@@ -197,6 +197,166 @@
       "relatedPrograms": [
         "bilgisayar-muhendisligi",
         "yazilim-muhendisligi"
+      ]
+    },
+    {
+      "institution": "Türkiye Taşkömürü Kurumu",
+      "category": "Sürekli işçi",
+      "education": [
+        "Lise"
+      ],
+      "publishedAt": "2026-09-30",
+      "updatedAt": "2026-10-08",
+      "startsAt": "2026-10-05",
+      "deadline": "2026-10-09",
+      "withdrawn": false,
+      "kpss": "Resmî belgede KPSS puanı belirtilmiyor; seçim noter kurasıyla yapılacak.",
+      "selection": "20 Ekim 2026 saat 10.00’da Kozlu TİM Konferans Salonunda elektronik noter kurası; her kontenjan için bir asıl, dört yedek aday.",
+      "sourceUrl": "https://www.taskomuru.gov.tr/ttk/duyuru-detay/?ihale_id=116",
+      "sourceLabel": "TTK · 30 Eylül 2026 tarihli 3092026 duyurusu",
+      "applyUrl": "https://esube.iskur.gov.tr/",
+      "relatedPrograms": [],
+      "steps": [
+        "5–9 Ekim arasında ilgili ildeki İŞKUR ilanına başvurun; son günün kapanış saatini İŞKUR’dan kontrol edin.",
+        "20 Ekim noter kurasının sonuçlarını TTK duyurularından izleyin.",
+        "Asıl veya sırası gelen yedek aday olarak belge kontrolüne çağrıldığınızda diploma ve meslek belgelerini sunun; teslim takvimi ayrıca duyurulacak."
+      ],
+      "slug": "ttk-2026-ekim-zonguldak-57-isci",
+      "title": "TTK Zonguldak için 57 sürekli işçi alacak",
+      "city": "Zonguldak",
+      "quota": 57,
+      "summary": "Zonguldak İŞKUR aracılığıyla 57 işçi alınacak. Başvurular 5–9 Ekim; kapanış saati resmî belgede belirtilmiyor.",
+      "documentUrl": "https://www.taskomuru.gov.tr/duyuru/dosyalar/ZONGULDAK%20%C4%B0LAN_1790754447.pdf",
+      "conditions": [
+        "T.C. vatandaşı olmak.",
+        "Zonguldak ilinde ikamet etmek.",
+        "Son başvuru günü 18 yaşını tamamlamış; ilk başvuru günü 32 yaşından gün almamış olmak.",
+        "İlgili diploma ve geçerli meslek belgelerini son başvuru gününde taşımak.",
+        "Kura tek başına işe giriş hakkı sağlamaz; sağlık muayenesi ve arşiv araştırması da değerlendirilir."
+      ],
+      "positions": [
+        {
+          "name": "Kuvvetli akım tesisatçısı",
+          "code": "7411.10",
+          "quota": 2,
+          "education": "Meslek lisesi: Elektrik-Elektronik Teknolojisi.",
+          "requirements": "Geçerli EKAT belgesi (EÜAŞ/TEİAŞ/TEDAŞ yetkili kuruluşlarından)."
+        },
+        {
+          "name": "Kaynakçı",
+          "code": "7212.07",
+          "quota": 5,
+          "education": "Meslek lisesi: Metal Teknolojisi.",
+          "requirements": "Belge kontrolü kura sonrası."
+        },
+        {
+          "name": "Numuneci (maden ocağı)",
+          "code": "3117.31",
+          "quota": 1,
+          "education": "Meslek lisesi: Kimya Teknolojisi.",
+          "requirements": "Laboratuvar işçiliği."
+        },
+        {
+          "name": "Mekanizasyon-pres işçisi",
+          "code": "8111.30",
+          "quota": 18,
+          "education": "Meslek lisesi: Makine, Makine ve Tasarım veya Metal Teknolojisi.",
+          "requirements": "Gerektiğinde yeraltında çalışma."
+        },
+        {
+          "name": "Mekaniker (kompresör)",
+          "code": "7233.35",
+          "quota": 16,
+          "education": "Meslek lisesi: Elektrik-Elektronik, Makine veya Makine ve Tasarım Teknolojisi.",
+          "requirements": "Gerektiğinde yeraltında çalışma."
+        },
+        {
+          "name": "Şoför-yük taşıma",
+          "code": "8332.02",
+          "quota": 9,
+          "education": "En az lise.",
+          "requirements": "Geçerli CE+D ehliyet; SRC-2 ve SRC-4."
+        },
+        {
+          "name": "Tren makinisti",
+          "code": "8311.04",
+          "quota": 2,
+          "education": "Meslek lisesi: Motorlu Araçlar, Raylı Sistemler, Elektrik-Elektronik, Makine veya Makine ve Tasarım Teknolojisi.",
+          "requirements": "Tren makinist ehliyeti ve psikoteknik değerlendirme raporu."
+        },
+        {
+          "name": "Vinç operatörü",
+          "code": "8343.13",
+          "quota": 2,
+          "education": "Meslek lisesi: Elektrik-Elektronik Teknolojisi.",
+          "requirements": "Kuyu vinç işçiliği."
+        },
+        {
+          "name": "Gemici",
+          "code": "8350.14",
+          "quota": 2,
+          "education": "En az lise.",
+          "requirements": "Gemici yeterliği, gemiadamı sağlık raporu, güncel STCW/diğer zorunlu sertifikalar ve en az 6 ay deniz hizmeti."
+        }
+      ]
+    },
+    {
+      "institution": "Türkiye Taşkömürü Kurumu",
+      "category": "Sürekli işçi",
+      "education": [
+        "Lise"
+      ],
+      "publishedAt": "2026-09-30",
+      "updatedAt": "2026-10-08",
+      "startsAt": "2026-10-05",
+      "deadline": "2026-10-09",
+      "withdrawn": false,
+      "kpss": "Resmî belgede KPSS puanı belirtilmiyor; seçim noter kurasıyla yapılacak.",
+      "selection": "20 Ekim 2026 saat 10.00’da Kozlu TİM Konferans Salonunda elektronik noter kurası; her kontenjan için bir asıl, dört yedek aday.",
+      "sourceUrl": "https://www.taskomuru.gov.tr/ttk/duyuru-detay/?ihale_id=116",
+      "sourceLabel": "TTK · 30 Eylül 2026 tarihli 3092026 duyurusu",
+      "applyUrl": "https://esube.iskur.gov.tr/",
+      "relatedPrograms": [],
+      "steps": [
+        "5–9 Ekim arasında ilgili ildeki İŞKUR ilanına başvurun; son günün kapanış saatini İŞKUR’dan kontrol edin.",
+        "20 Ekim noter kurasının sonuçlarını TTK duyurularından izleyin.",
+        "Asıl veya sırası gelen yedek aday olarak belge kontrolüne çağrıldığınızda diploma ve meslek belgelerini sunun; teslim takvimi ayrıca duyurulacak."
+      ],
+      "slug": "ttk-2026-ekim-bartin-4-isci",
+      "title": "TTK Bartın için 4 sürekli işçi alacak",
+      "city": "Bartın",
+      "quota": 4,
+      "summary": "Bartın İŞKUR aracılığıyla 4 işçi alınacak. Başvurular 5–9 Ekim; kapanış saati resmî belgede belirtilmiyor.",
+      "documentUrl": "https://www.taskomuru.gov.tr/duyuru/dosyalar/AMASRA%20%C4%B0LAN_1790754460.pdf",
+      "conditions": [
+        "T.C. vatandaşı olmak.",
+        "Bartın ilinde ikamet etmek.",
+        "Son başvuru günü 18 yaşını tamamlamış; ilk başvuru günü 32 yaşından gün almamış olmak.",
+        "İlgili diploma ve geçerli meslek belgelerini son başvuru gününde taşımak.",
+        "Kura tek başına işe giriş hakkı sağlamaz; sağlık muayenesi ve arşiv araştırması da değerlendirilir."
+      ],
+      "positions": [
+        {
+          "name": "Mekanizasyon-pres işçisi",
+          "code": "8111.30",
+          "quota": 1,
+          "education": "Meslek lisesi: Makine, Makine ve Tasarım veya Metal Teknolojisi.",
+          "requirements": "Gerektiğinde yeraltında çalışma."
+        },
+        {
+          "name": "Mekaniker (kompresör)",
+          "code": "7233.35",
+          "quota": 1,
+          "education": "Meslek lisesi: Elektrik-Elektronik, Makine veya Makine ve Tasarım Teknolojisi.",
+          "requirements": "Gerektiğinde yeraltında çalışma."
+        },
+        {
+          "name": "Şoför-yük taşıma",
+          "code": "8332.02",
+          "quota": 2,
+          "education": "En az lise.",
+          "requirements": "Geçerli CE+D ehliyet; SRC-2 ve SRC-4."
+        }
       ]
     }
   ]
