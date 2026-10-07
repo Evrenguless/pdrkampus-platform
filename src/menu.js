@@ -6,6 +6,11 @@ function normalizeIndexUrl(){
 }
 normalizeIndexUrl();
 
+const brandGuardStyle=document.createElement('style');
+brandGuardStyle.id='pdr-brand-guard';
+brandGuardStyle.textContent='.header .brand strong{color:#123c31!important}.header .brand strong span{color:#3e8169!important}.campus-footer-brand{align-items:center!important}.campus-footer-brand strong{color:#fffdf8!important;display:inline-block!important;white-space:nowrap!important}.campus-footer-brand strong span{color:#9ccfab!important}';
+document.head.appendChild(brandGuardStyle);
+
 const faviconLinks=[
   ['icon','/assets/logo.png'],
   ['shortcut icon','/assets/logo.png'],
