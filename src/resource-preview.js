@@ -3,7 +3,7 @@ const configNode=document.getElementById('resourcePreviewData');
 if(configNode){
  const row=JSON.parse(configNode.textContent),stage=document.getElementById('resourcePreview'),controls=document.getElementById('resourcePreviewControls');
  let preview={},index=0,zoom=100;
- try{const response=await fetch('/data/resource-previews.json');if(response.ok)preview=(await response.json())[row.id]||{}}catch{}
+ try{const response=await fetch('/data/resource-previews.json',{cache:'no-cache'});if(response.ok)preview=(await response.json())[row.id]||{}}catch{}
  const safeUrl=value=>{try{const url=new URL(value,location.href);return ['https:','http:'].includes(url.protocol)?url.href:''}catch{return ''}};
  const file=safeUrl(row.file);
  function sheetMarkup(sheet){

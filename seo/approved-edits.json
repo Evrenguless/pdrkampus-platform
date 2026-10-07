@@ -259,8 +259,8 @@
     },
     "src/library.js": {
       "baseline_sha256": "18ef87251a4b0ce7232d07cca82ad94f59741ace9109feff8844eb7b6254fb1e",
-      "reviewed_sha256": "6189888d69839d50d416c893da9562319d568e09431fecb3b7c1d27b9d4b6954",
-      "reason": "User-approved resource design and official preview navigation; original data and calculation logic preserved"
+      "reviewed_sha256": "38fc5e843466ea95e19b52dcaf752f5c69ae741b19e0c0ce7f5c76ef53c46337",
+      "reason": "User-requested actual document previews and navigation/footer color corrections; original records preserved"
     },
     "tests/catalog.mjs": {
       "baseline_sha256": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
@@ -821,9 +821,9 @@
     },
     "kutuphane.html": {
       "baseline_sha256": "423c4fe55483a69113a61d2fc7523ffc17d59e79b2569f967901aad15fedee24",
-      "reviewed_sha256": "93df6a26a3973d0342e55d9b84d8f29db6ee0e088a7cf45239f788ce68d9e54c",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
-      "runtime_sha256": "219318b6ed001a8127e028fec6669202a01bbc2b918fcaf059bee8aeb8c33cfd"
+      "reviewed_sha256": "c6d518dc1b563d8fe0f7559175680c54ad9b130f1ff75f4f337efcb2d7ee31cb",
+      "reason": "User-requested actual document previews and navigation/footer color corrections; original records preserved",
+      "runtime_sha256": "342453a4913a35b746c50cd38318658a602a592eb928ab445f51a28865ba0b61"
     },
     "kvkk-aydinlatma.html": {
       "baseline_sha256": "0a2a484dbfdd0dda88ff5725ac30b57743d71ad6e971dd932a9e22197dda82f1",

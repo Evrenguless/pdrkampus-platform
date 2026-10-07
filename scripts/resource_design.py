@@ -83,18 +83,20 @@ def enhance_cards(root,source):
  records,previews=catalogue(root)
  def decorate_card(match):
   card=match.group(0)
-  if 'resource-card-cover' in card:return card
+  card=re.sub(r'<div class="resource-card-cover">.*?</div>','',card,flags=re.S)
   heading=re.search(r'<h2[^>]*>(.*?)</h2>',card,re.S)
   if not heading:return card
   title=html.unescape(re.sub('<[^>]+>','',heading.group(1)))
   row=records.get(title)
   if not row:return card
-  cover=previews.get(row['id'],{}).get('previews',[])
+  preview=previews.get(row['id'],{})
+  cover=[preview['thumbnail']] if preview.get('thumbnail') else preview.get('previews',[])
   visual='<img src="'+E(cover[0],quote=True)+'" alt="'+E(title,quote=True)+' — gerçek ilk sayfa" loading="lazy">' if cover else '<span class="resource-format-tile">'+E(row['fileType'])+'<small>'+E(row.get('type') or 'Form')+'</small></span>'
   return card.replace('>','><div class="resource-card-cover">'+visual+'</div>',1)
  return re.sub(r'<article class="catalog-card"[^>]*>.*?</article>',decorate_card,source,flags=re.S)
 
 def decorate(root,source,row=None):
+ source=re.sub(r'(resource-design\.css|resource-preview\.js|library\.js)\?v=[^"\s>]+',r'\1?v=20261008-2',source)
  source=enhance_cards(root,source)
  source=re.sub(r'(/assets/resource-previews/[^"<>]+)\.png',lambda m:m.group(1)+'.jpg' if (root/(m.group(1).lstrip('/')+'.jpg')).exists() else m.group(0),source)
  if 'data-resource-design="1"' in source:
@@ -107,7 +109,7 @@ def decorate(root,source,row=None):
    if context:source=source.replace('<details class="resource-original">','<section class="resource-editorial" data-resource-use-context><h2>Bu sürümle çalışırken</h2><p>'+E(context)+'</p></section><details class="resource-original">',1)
   return source
  source=source.replace('<body','<body data-resource-design="1"',1)
- source=source.replace('</head>','<link rel="stylesheet" href="/src/resource-design.css?v=20261008-1"></head>',1)
+ source=source.replace('</head>','<link rel="stylesheet" href="/src/resource-design.css?v=20261008-2"></head>',1)
  if not row:return source
  match=re.search(r'<main\b[^>]*>(.*?)</main>',source,re.S)
  if not match:return source
@@ -130,7 +132,7 @@ def decorate(root,source,row=None):
  context=specific_context(row)
  if context:body=body.replace('<details class="resource-original">','<section class="resource-editorial" data-resource-use-context><h2>Bu sürümle çalışırken</h2><p>'+E(context)+'</p></section><details class="resource-original">',1)
  source=source[:match.start()]+body+source[match.end():]
- source=source.replace('</body>','<script type="application/json" id="resourcePreviewData">'+json.dumps(config,ensure_ascii=False).replace('<','\\u003c')+'</script><script type="module" src="/src/resource-preview.js?v=20261008-1"></script></body>',1)
+ source=source.replace('</body>','<script type="application/json" id="resourcePreviewData">'+json.dumps(config,ensure_ascii=False).replace('<','\\u003c')+'</script><script type="module" src="/src/resource-preview.js?v=20261008-2"></script></body>',1)
  return source
 
 def apply(root):

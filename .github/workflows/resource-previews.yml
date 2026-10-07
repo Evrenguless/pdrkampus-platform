@@ -1,0 +1,42 @@
+name: Real Resource Previews
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 * * * *'
+  push:
+    branches: [main]
+    paths: ['data/collected-resources.json', 'scripts/build_resource_previews.py', '.github/workflows/resource-previews.yml']
+permissions:
+  contents: write
+concurrency:
+  group: real-resource-previews
+  cancel-in-progress: false
+jobs:
+  previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document rendering tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils fonts-dejavu-core
+          pip install openpyxl Pillow pypdf
+      - name: Render original public documents
+        run: python scripts/build_resource_previews.py --limit 100
+      - name: Preserve original resource records
+        run: |
+          test -z "$(git diff --name-only -- data/library.json data/forms.json data/collected-resources.json db src/auth-config.js)"
+      - name: Publish actual previews
+        run: |
+          git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Add genuine document covers and spreadsheet previews'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

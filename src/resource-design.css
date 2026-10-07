@@ -6,7 +6,7 @@ body[data-resource-design]{background:#f8faff;color:#102344;font-family:Manrope,
 [data-resource-design] .catalog-shell{max-width:1240px;margin:28px auto;padding:0 28px 50px;color:#102344}
 [data-resource-design] h1{font-size:clamp(27px,3.3vw,38px);line-height:1.25;letter-spacing:-1px;color:#102344}
 [data-resource-design] h2{color:#102344;font-size:19px;line-height:1.4}
-[data-resource-design] a{color:#1169ef}[data-resource-design] button,[data-resource-design] input,[data-resource-design] select{font:inherit}
+[data-resource-design] .resource-detail a{color:#1169ef}[data-resource-design] button,[data-resource-design] input,[data-resource-design] select{font:inherit}
 [data-resource-design] button:focus-visible,[data-resource-design] a:focus-visible{outline:3px solid #6baaff;outline-offset:3px}
 [data-resource-design] .catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 [data-resource-design] .catalog-card{border:1px solid #e6ebf3;border-radius:15px;padding:20px;background:#fff}
@@ -26,3 +26,10 @@ body[data-resource-design]{background:#f8faff;color:#102344;font-family:Manrope,
 @media(max-width:720px){.resource-main{display:contents}.resource-viewer{width:100%;order:0}.resource-sidebar{order:1}.resource-editorial{order:2;width:100%}.resource-original{order:3;width:100%}}
 
 [data-resource-design] .campus-footer a,[data-resource-design] .campus-footer h2,[data-resource-design] .campus-footer .brand strong,[data-resource-design] .campus-footer .brand span{color:#e4f2ec}[data-resource-design] .campus-footer a:hover{color:#fff}
+
+/* Keep campus navigation and sharing controls consistent with the green theme. */
+[data-resource-design] .header nav a{color:#164c39}
+[data-resource-design] .header nav a:hover{color:#087f62}
+[data-resource-design] .library-contribute a{background:#176c50;color:#fff;border:1px solid #176c50;border-radius:8px;padding:10px 16px;text-decoration:none}
+[data-resource-design] .library-contribute a:hover{background:#10543e;color:#fff}
+[data-resource-design] .campus-footer p,[data-resource-design] .campus-footer-bottom,[data-resource-design] .campus-footer button{color:#d6e9df}
