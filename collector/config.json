@@ -1,6 +1,9 @@
 {
   "version": 1,
-  "allowed_domains": ["meb.gov.tr", "meb.k12.tr"],
+  "allowed_domains": [
+    "meb.gov.tr",
+    "meb.k12.tr"
+  ],
   "seed_pages": [
     "https://orgm.meb.gov.tr/",
     "https://orgm.meb.gov.tr/www/akran-zorbaligi/icerik/3132",
@@ -9,30 +12,105 @@
     "https://orgm.meb.gov.tr/www/mesleki-rehberlik-programlari/icerik/3138"
   ],
   "target_resources": 5000,
-  "seed_batch": 80,
-  "max_pages": 200,
+  "seed_batch": 160,
+  "max_pages": 400,
   "max_depth": 2,
-  "max_file_checks": 80,
-  "known_file_checks": 12,
+  "max_file_checks": 400,
+  "known_file_checks": 50,
   "max_file_bytes": 15728640,
-  "max_candidates": 10000,
-  "max_seconds": 600,
+  "max_candidates": 25000,
+  "max_seconds": 1200,
   "timeout_seconds": 15,
   "host_delay_seconds": 1,
   "user_agent": "PDRKampusResourceCollector/1.0 (+https://pdrkampus.com/iletisim.html)",
   "topic_keywords": {
-    "Akran zorbalığı": ["zorbal", "akran"],
-    "Dijital güvenlik": ["dijital", "internet", "siber", "teknoloji", "ekran"],
-    "Kariyer": ["kariyer", "mesleki rehber", "meslek sec", "tercih"],
-    "Okula uyum": ["uyum", "okula basla", "okul kork"],
-    "Duygular ve psikolojik sağlamlık": ["duygu", "saglamlik", "dayaniklilik", "oz duzen", "stres", "kaygi", "oz fark", "ozfark", "ozguven", "yaraticilik"],
-    "Aile iletişimi": ["aile", "veli", "ebeveyn"],
-    "Devamsızlık": ["devamsiz", "sinif tekrar"],
-    "Özel eğitim": ["ozel egitim", "bep", "kaynastirma", "ogrenme guclugu", "zihinsel yetersiz", "otizm", "osb", "destek egitim"],
-    "Kriz ve yas": ["kriz", "yas", "travma", "afet", "deprem"],
-    "Bağımlılığın önlenmesi": ["bagimlilik", "yesilay"],
-    "Sınav ve çalışma becerileri": ["sinav", "lgs", "yks", "ders calis", "zaman yonet"],
-    "Bireyi tanıma": ["envanter", "anket", "sosyometri", "gozlem", "gorusme"],
-    "Sınıf rehberliği": ["sinif rehber", "rehberlik etkin", "pano", "degerler", "etik", "iletisim"]
-  }
+    "Akran zorbalığı": [
+      "zorbal",
+      "akran"
+    ],
+    "Dijital güvenlik": [
+      "dijital",
+      "internet",
+      "siber",
+      "teknoloji",
+      "ekran"
+    ],
+    "Kariyer": [
+      "kariyer",
+      "mesleki rehber",
+      "meslek sec",
+      "tercih"
+    ],
+    "Okula uyum": [
+      "uyum",
+      "okula basla",
+      "okul kork"
+    ],
+    "Duygular ve psikolojik sağlamlık": [
+      "duygu",
+      "saglamlik",
+      "dayaniklilik",
+      "oz duzen",
+      "stres",
+      "kaygi",
+      "oz fark",
+      "ozfark",
+      "ozguven",
+      "yaraticilik"
+    ],
+    "Aile iletişimi": [
+      "aile",
+      "veli",
+      "ebeveyn"
+    ],
+    "Devamsızlık": [
+      "devamsiz",
+      "sinif tekrar"
+    ],
+    "Özel eğitim": [
+      "ozel egitim",
+      "bep",
+      "kaynastirma",
+      "ogrenme guclugu",
+      "zihinsel yetersiz",
+      "otizm",
+      "osb",
+      "destek egitim"
+    ],
+    "Kriz ve yas": [
+      "kriz",
+      "yas",
+      "travma",
+      "afet",
+      "deprem"
+    ],
+    "Bağımlılığın önlenmesi": [
+      "bagimlilik",
+      "yesilay"
+    ],
+    "Sınav ve çalışma becerileri": [
+      "sinav",
+      "lgs",
+      "yks",
+      "ders calis",
+      "zaman yonet"
+    ],
+    "Bireyi tanıma": [
+      "envanter",
+      "anket",
+      "sosyometri",
+      "gozlem",
+      "gorusme"
+    ],
+    "Sınıf rehberliği": [
+      "sinif rehber",
+      "rehberlik etkin",
+      "pano",
+      "degerler",
+      "etik",
+      "iletisim"
+    ]
+  },
+  "page_workers": 8,
+  "document_workers": 4
 }

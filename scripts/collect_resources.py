@@ -13,6 +13,8 @@ import json
 from pathlib import Path
 import re
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor
 import unicodedata
 from urllib.error import HTTPError
 from urllib.parse import quote, unquote, urljoin, urlsplit, urlunsplit
@@ -105,21 +107,29 @@ class OfficialRedirects(HTTPRedirectHandler):
 
 class Fetcher:
     def __init__(self, config):
-        self.config = config; self.robots = {}; self.last = {}; self.delays = {}; self.opener = build_opener(OfficialRedirects(config['allowed_domains']))
+        self.config = config; self.robots = {}; self.last = {}; self.delays = {}; self.guard = threading.Lock(); self.host_locks = {}
+
+    def lock(self, url):
+        host = urlsplit(url).hostname
+        with self.guard: return self.host_locks.setdefault(host, threading.RLock())
 
     def wait(self, url):
-        host = urlsplit(url).hostname
-        time.sleep(max(0, max(self.config['host_delay_seconds'], self.delays.get(host, 0)) - (time.monotonic() - self.last.get(host, 0))))
-        self.last[host] = time.monotonic()
+        with self.lock(url):
+            host = urlsplit(url).hostname
+            time.sleep(max(0, max(self.config['host_delay_seconds'], self.delays.get(host, 0)) - (time.monotonic() - self.last.get(host, 0))))
+            self.last[host] = time.monotonic()
 
     def robot(self, url):
+        with self.lock(url): return self._robot(url)
+
+    def _robot(self, url):
         parts = urlsplit(url); origin = parts.scheme + '://' + parts.netloc
         if origin not in self.robots:
             robot = RobotFileParser(origin + '/robots.txt')
             self.wait(url)
             try:
                 request = Request(robot.url, headers={'User-Agent': self.config['user_agent']})
-                with self.opener.open(request, timeout=self.config['timeout_seconds']) as response:
+                with build_opener(OfficialRedirects(self.config['allowed_domains'])).open(request, timeout=self.config['timeout_seconds']) as response:
                     robot.parse(response.read(256000).decode('utf-8', 'replace').splitlines())
             except HTTPError as error:
                 if error.code in (404, 410): robot.parse([])
@@ -135,7 +145,7 @@ class Fetcher:
         if not self.robot(url): raise ValueError('Robots denied or unavailable')
         self.wait(url)
         request = Request(url, headers={'User-Agent': self.config['user_agent']})
-        with self.opener.open(request, timeout=self.config['timeout_seconds']) as response:
+        with build_opener(OfficialRedirects(self.config['allowed_domains'])).open(request, timeout=self.config['timeout_seconds']) as response:
             final_url = canonical(response.url)
             # Redirect target must independently permit collection.
             if not self.robot(final_url): raise ValueError('Redirect target robots denied')
@@ -179,6 +189,41 @@ def classify(title, config):
     return {'topics': topics, 'material_type': kind, 'levels': levels, 'classification_basis': 'source_anchor_and_filename_keywords', 'classification_review_required': True}
 
 
+def parallel_pages(queue, visited, config, start, fetch):
+    workers = max(1, min(8, config.get('page_workers', 1)))
+    def request(entry):
+        page, depth = entry
+        try: return page, depth, fetch(page, 2000000), None
+        except Exception as error: return page, depth, None, error
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        while queue and len(visited) < config['max_pages'] and time.monotonic()-start < config['max_seconds']*.55:
+            batch = []
+            while queue and len(batch) < workers and len(visited) < config['max_pages']:
+                page, depth = queue.popleft()
+                if page in visited: continue
+                visited.add(page); batch.append((page, depth))
+            yield from pool.map(request, batch)
+
+
+def parallel_documents(rows, config, start, fetch, now):
+    def request(row):
+        if time.monotonic()-start >= config['max_seconds']: return row, None
+        try:
+            body, headers, final = fetch(row['file_url'], config['max_file_bytes'])
+            if not file_signature(body, row['file_type'].lower()): raise ValueError('File signature does not match extension')
+            from inspect_resource import inspect
+            return row, {'sha256': hashlib.sha256(body).hexdigest(), 'byte_size': len(body), 'resolved_url': final,
+                         'status': 'review_ready', 'access_verified_at': now, 'last_checked_at': now,
+                         'inspection': inspect(body, row['file_type'].lower(), row['title'])}
+        except Exception as error: return row, {'status': 'retry', 'last_checked_at': now, 'error': str(error)[:240]}
+    workers = max(1, min(4, config.get('document_workers', 1)))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        # Keep only one small batch of document bodies/subprocesses in flight.
+        for index in range(0, len(rows), workers):
+            if time.monotonic()-start >= config['max_seconds']: break
+            yield from pool.map(request, rows[index:index+workers])
+
+
 def collect(config, catalogue, previous, fetch, now=None):
     now = now or time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
     start = time.monotonic()
@@ -208,12 +253,11 @@ def collect(config, catalogue, previous, fetch, now=None):
         if canonical(row['file_url']) in known: row['status'] = 'already_catalogued'
     errors = []; visited = set(); discovered = 0; known_skipped = 0
     words = [word for values in config['topic_keywords'].values() for word in values] + ['rehber', 'dokuman', 'materyal', 'sunum', 'form', 'envanter', 'brosur']
-    while queue and len(visited) < config['max_pages'] and time.monotonic() - start < config['max_seconds'] * .55:
-        page, depth = queue.popleft()
-        if page in visited: continue
-        visited.add(page)
+    for original_page, depth, payload, error in parallel_pages(queue, visited, config, start, fetch):
+        page = original_page
         try:
-            body, headers, page = fetch(page, 2000000)
+            if error: raise error
+            body, headers, page = payload
             if 'html' not in headers.get('Content-Type', headers.get('content-type', '')).lower(): continue
             charset = re.search(r'charset=([\w-]+)', headers.get('Content-Type', ''), re.I)
             parsed = Links(body.decode(charset.group(1) if charset else 'utf-8', 'replace'))
@@ -267,30 +311,26 @@ def collect(config, catalogue, previous, fetch, now=None):
     hashes = {row['sha256']: row['id'] for row in rows.values() if row.get('sha256') and row['status'] != 'duplicate'}
     original_byte_hashes = {r['sha256'] for r in known_hashes.values() if r.get('sha256')}
     original_text_hashes = {r['text_sha256'] for r in known_hashes.values() if r.get('text_sha256')}
+    selected = []
     for row in sorted(rows.values(), key=lambda row: (row.get('last_checked_at', ''), row['discovered_at'], row['id'])):
-        if checked >= config['max_file_checks'] or time.monotonic() - start >= config['max_seconds']: break
         last = row.get('access_verified_at', '')
         try: stale = (datetime.fromisoformat(now.replace('Z','+00:00'))-datetime.fromisoformat(last.replace('Z','+00:00'))).total_seconds() > 86400
         except ValueError: stale = True
-        if row['status'] not in ('pending_check', 'retry') and not (row['status'] == 'review_ready' and (row.get('inspection', {}).get('version') != INSPECTION_VERSION or stale)): continue
-        checked += 1; row['last_checked_at'] = now
-        try:
-            body, headers, final = fetch(row['file_url'], config['max_file_bytes'])
-            if not file_signature(body, row['file_type'].lower()): raise ValueError('File signature does not match extension')
-            digest = hashlib.sha256(body).hexdigest()
-            row.update(sha256=digest, byte_size=len(body), resolved_url=final, status='review_ready', access_verified_at=now)
-            row.pop('error', None)
-            if final in known: row.update(status='already_catalogued')
-            elif digest in hashes and hashes[digest] != row['id']: row.update(status='duplicate', duplicate_of=hashes[digest])
-            else: hashes[digest] = row['id']
-            if row['status'] == 'review_ready':
-                from inspect_resource import inspect
-                row['inspection'] = inspect(body, row['file_type'].lower(), row['title'])
-                if row['inspection'].get('eligible'): row['title'] = row['inspection'].get('title', row['title'])
-                if digest in original_byte_hashes or row['inspection'].get('text_sha256') in original_text_hashes:
-                    row.update(status='duplicate', duplicate_of='existing_catalogue_content')
-        except Exception as error:
-            row.update(status='retry', error=str(error)[:240])
+        if row['status'] in ('pending_check', 'retry') or (row['status'] == 'review_ready' and (row.get('inspection', {}).get('version') != INSPECTION_VERSION or stale)):
+            selected.append(row)
+        if len(selected) >= config['max_file_checks']: break
+    for row, result in parallel_documents(selected, config, start, fetch, now):
+        if result is None: continue
+        checked += 1; row.update(result)
+        if row['status'] != 'review_ready': continue
+        row.pop('error', None); digest = row['sha256']
+        if row['resolved_url'] in known: row.update(status='already_catalogued')
+        elif digest in hashes and hashes[digest] != row['id']: row.update(status='duplicate', duplicate_of=hashes[digest])
+        else: hashes[digest] = row['id']
+        if row['status'] == 'review_ready':
+            if row['inspection'].get('eligible'): row['title'] = row['inspection'].get('title', row['title'])
+            if digest in original_byte_hashes or row['inspection'].get('text_sha256') in original_text_hashes:
+                row.update(status='duplicate', duplicate_of='existing_catalogue_content')
     # Previously inspected candidates must also benefit from the growing original-file index.
     for row in rows.values():
         if row['status'] == 'review_ready' and (row.get('sha256') in original_byte_hashes or row.get('inspection', {}).get('text_sha256') in original_text_hashes):

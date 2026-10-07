@@ -4,9 +4,9 @@
 
 ## Çalışma düzeni
 
-`Official Resource Collector` her dört saatte bir çalışır: Türkiye saatiyle **02.23, 06.23, 10.23, 14.23, 18.23, 22.23**. Program ana dala alınınca ilk tarama da başlar. GitHub Actions → Run workflow ile elle çalıştırılabilir. Başlangıç GitHub yoğunluğunda gecikebilir.
+`Official Resource Collector` her saat **23. dakikada** çalışır. Program ana dala alınınca ilk tarama da başlar. GitHub Actions → Run workflow ile elle çalıştırılabilir. Başlangıç GitHub yoğunluğunda gecikebilir.
 
-Başlangıç havuzu yapılandırılmış MEB sayfaları, mevcut katalog kaynak sayfaları, kurum ana sayfaları ve mevcut envanterin kaynak sayfalarından oluşur. Her çalışmada havuzun sıradaki 80 adresine ilerlenir, en fazla 200 sayfa taranır. Yeni ilgili sayfalar sonraki çalışmalara aktarılır. Tüm kurumlar her çalışmada tekrar taranmaz. Yeni adres ve dosya bulunması garanti değildir; tekrar bulunan dosyalar sayıya eklenmez.
+Başlangıç havuzu yapılandırılmış MEB sayfaları, mevcut katalog kaynak sayfaları, kurum ana sayfaları ve mevcut envanterin kaynak sayfalarından oluşur. Her çalışmada havuzun sıradaki 160 adresine ilerlenir, en fazla 400 sayfa taranır. Yeni ilgili sayfalar sonraki çalışmalara aktarılır. Farklı kurumların sayfaları en fazla 8 paralel işçiyle, belgeler en fazla 4 paralel işçiyle işlenir. Kurum başına bekleme ve robots kuralları korunur. Tüm kurumlar her çalışmada tekrar taranmaz. Yeni adres ve dosya bulunması garanti değildir; tekrar bulunan dosyalar sayıya eklenmez.
 
 PDF, PPT/PPTX, DOC/DOCX, XLS/XLSX ve PNG/JPG/WebP pano görselleri desteklenir. MEB/RAM ve MEB okul siteleri izin listesindedir. Başka kaynak alanları ancak yapılandırmaya eklenerek taranır.
 
@@ -16,11 +16,11 @@ Dosya imzası ve erişimi, kaynak adresi, belgenin okunabilir içeriği, başlı
 
 PDF ve yeni Office dosyaları metin olarak incelenir. Eski Office dosyaları geçici, makro güvenliği yüksek bir LibreOffice profiliyle inceleme için dönüştürülür; yayımlanan bağlantı özgün dosyaya gider. Taranmış PDF/görseller Türkçe OCR ile incelenir. Okunamayan, şifreli, sınırları aşan veya belirsiz kalan belgeler otomatik yayımlanmaz. Belgenin metni ve kopyası kalıcı tutulmaz; içerik özetleri ve sınıflandırma sonuçları tutulur.
 
-Bir çalışmada en fazla 80 aday dosya ve 12 eski katalog dosyası incelenir. Toplam süre sınırı 10 dakika, dosya sınırı 15 MiB, PDF sınırı 80 sayfa, OCR PDF sınırı 10 sayfadır. Her belgeyi işleyen alt süreçte zaman/bellek sınırı vardır. Robots kuralları, kurum başına bekleme ve resmî alan adı sınırı uygulanır. Haber küçük görselleri, okul sınav takvimleri ve öğrenci listeleri filtrelenir.
+Bir çalışmada en fazla 400 aday dosya ve 50 eski katalog dosyası incelenir. Toplam süre sınırı 20 dakika, dosya sınırı 15 MiB, PDF sınırı 80 sayfa, OCR PDF sınırı 10 sayfadır. Her belgeyi işleyen alt süreçte zaman/bellek sınırı vardır. Robots kuralları, kurum başına bekleme ve resmî alan adı sınırı uygulanır. Haber küçük görselleri, okul sınav takvimleri ve öğrenci listeleri filtrelenir.
 
 Aynı adres, aynı dosya bayt özeti ve aynı normalize edilmiş belge metni tekrar sayılmaz. Eski kataloğun içerik özeti indeksi aşamalı kurulur. Henüz indekslenememiş eski dosyaların farklı adreslerdeki kopyaları yalnız URL kontrolüyle kesin tanınamaz; indeks kapsamı raporda yer alır.
 
-Kontrollerden geçen en fazla 80 yeni kayıt bir çalışmada ek kataloğa **eklenir**. Eski kayıtlar yeniden yazılmaz. Yeni kaynaklar kendi canonical adresi, başlık/açıklama, resmî kaynak bağlantıları, belge/kademe/konu bilgisi ve yapılandırılmış verisi bulunan sayfalara sahip olur. Yeni kaynak kataloğu sayfalarıyla iç bağlantı kurulur. Sitemap'e yeni adresler eklenir; eski adresler kaldırılmaz. Yayın öncesi özgün dosya koruması ve içerik kalite kontrolü tekrar çalışır. GitHub Pages yayını otomatik istenir; GitHub iş akışı token'ıyla yapılan commitlerin Pages'i kendiliğinden tetiklememesi bu adımla ele alınır.
+Kontrollerden geçen en fazla 300 yeni kayıt bir çalışmada ek kataloğa **eklenir**. Eski kayıtlar yeniden yazılmaz. Yeni kaynaklar kendi canonical adresi, başlık/açıklama, resmî kaynak bağlantıları, belge/kademe/konu bilgisi ve yapılandırılmış verisi bulunan sayfalara sahip olur. Yeni kaynak kataloğu sayfalarıyla iç bağlantı kurulur. Sitemap'e yeni adresler eklenir; eski adresler kaldırılmaz. Yayın öncesi özgün dosya koruması ve içerik kalite kontrolü tekrar çalışır. GitHub Pages yayını otomatik istenir; GitHub iş akışı token'ıyla yapılan commitlerin Pages'i kendiliğinden tetiklememesi bu adımla ele alınır.
 
 Konu ve kademe yalnız belgeyle desteklendiğinde kullanılır. Bilinmeyen kademe “Belirtilmiyor” olarak kalır. Bir belgeyi farklı konu veya sınıf başlıklarına bölerek kaynak sayısı artırılmaz. 5.000'e ulaşma tarihi bulunacak uygun benzersiz belgelerin sayısına bağlıdır.
 

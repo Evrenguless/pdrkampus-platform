@@ -24,7 +24,7 @@ def publishable(row, known, hashes):
     return bool(row.get('sha256') and len(row['sha256']) == 64 and row.get('access_verified_at'))
 
 
-def append_resources(existing, candidates, catalogue, limit=80):
+def append_resources(existing, candidates, catalogue, limit=300):
     before = json.dumps(existing, ensure_ascii=False, sort_keys=True)
     result = [dict(row) for row in existing]; known = {canonical(r['file']) for r in catalogue + existing}; hashes = {r.get('contentSha256') for r in existing}
     additions = []; text_hashes = {r.get('documentTextSha256') for r in existing if r.get('documentTextSha256')}

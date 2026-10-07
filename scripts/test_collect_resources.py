@@ -6,7 +6,10 @@ from pathlib import Path
 import tempfile
 import unittest
 import zipfile
-from collect_resources import ROOT, Links, allowed, canonical, classify, collect, file_signature, resource_link, source_title, write_outputs
+import threading
+import time
+from collections import deque
+from collect_resources import ROOT, Links, allowed, canonical, classify, collect, file_signature, resource_link, source_title, write_outputs, parallel_pages
 
 
 class CollectorTests(unittest.TestCase):
@@ -22,6 +25,17 @@ class CollectorTests(unittest.TestCase):
             if url in files: return files[url], {'Content-Type': 'application/pdf'}, url
             raise OSError('Unreachable test URL')
         return get
+
+    def test_different_source_pages_are_fetched_concurrently(self):
+        config = dict(self.config, page_workers=2, max_pages=2)
+        barrier = threading.Barrier(2)
+        def fetch(url, limit):
+            barrier.wait(timeout=2)
+            return b'<html></html>', {'Content-Type':'text/html'}, url
+        visited = set()
+        results = list(parallel_pages(deque([(self.page,0),('https://other.meb.k12.tr/',0)]), visited, config, time.monotonic(), fetch))
+        self.assertEqual(len(results),2)
+        self.assertTrue(all(error is None for _,_,_,error in results))
 
     def test_official_boundaries_and_unsafe_schemes(self):
         for url in ['https://meb.gov.tr.evil.example/a.pdf', 'https://evilmeb.k12.tr/a.pdf', 'http://127.0.0.1/a.pdf', 'https://u:p@test.meb.k12.tr/a', 'https://test.meb.k12.tr:8000/a', 'javascript:alert(1)']:
