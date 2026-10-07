@@ -52,7 +52,7 @@
     "data/inventory-gap-audit.json": "5596d99064ba31072ec6634bd713b4cc3681b35a9efe6746f988abf6fcbcde5f",
     "data/library.json": "9c14baa1d26b5e030e876463c41147c44c9294408e8e23dc19d70244e7fad60b",
     "data/programs.json": "ca77c3ef66e418c8f188ccb9dfe55629610a6380508f633d583a9077b8b4c421",
-    "data/recruitment.json": "da9e7d7035e254e7a91b559137764bddc2a0aec2f6c2b499708df5ef0eea5cc1",
+    "data/recruitment.json": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
     "data/search-trends.json": "64dace446dd768334e11d743b2125511a2421860f00d39a950c585edd46f60c7",
     "data/seo-keywords.json": "ce482047364f1bc1c22ae8cb8dd8e8f8f523fb18789036a4e283e37d203f5fad",
     "data/seo-site-architecture.json": "1cb7ac406659769a5caa52a8e8e1cc3448039d7784c554c3cdf47326f7838d73",
@@ -77,7 +77,7 @@
     "db/018_campus_search_precision.sql": "f6f92bb3fec09a8e73ae17c4676f021a8e8c3edcb771bc6f5581444161f49959",
     "docs/auth-production-checklist.md": "aa98c4b384b134dfca396923b14cf3150cd022e003fed68d816910e380d0c663",
     "docs/backup-recovery.md": "593a0dd58786227486f4279475f7bb774c63f4dc3807a70171c836f701f1eb24",
-    "docs/career-content.md": "1d09cf72b80fff937318c802daf697dbe6d5a8a31f6281ad6e7d83b9199cdc6a",
+    "docs/career-content.md": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",
     "docs/domain-launch-checklist.md": "daa6d4833aa98aea42892d69211accb7adbb8c487a4a3c78607c5f5899ea38f8",
     "docs/envanter-toplu-aktarim.md": "8045d0068a9c9fa010197a6f7da9323b064efa6fa420115ffe401d2e66b622ae",
     "docs/envanter-v19-aktarim.md": "3d7a0edc1ff8d4fd3ae8efeafcfce36822e6a57e20fd85ad08b3ba507a62b2c4",
@@ -282,7 +282,7 @@
     "scripts/check_catalog_links.py": "ce754d0584ab758380dcbccfb7e3a4e99c75bdefeaa12c49c9ee379542a49a59",
     "scripts/check_frontend_secrets.py": "4c4d581d63a746b94a828daf3effc42bf1af1da6f956546ba6426448cdd3b0c0",
     "scripts/check_links.py": "380fb46f02b6e82b5f5df97ce322d7a69a2fa4ebcd147afd541880b5f2271125",
-    "scripts/check_seo.py": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",
+    "scripts/check_seo.py": "28b42669d57d93d96a341827b59163acbcce418e7ca3915cd4160355edb011bf",
     "scripts/import_official_batches.py": "18fd9a49405dfbafc03de07a17f88cedae15dfb468b9951b320fd41acea372ab",
     "scripts/import_riba_sheets.py": "f4005373a7f5cf8b8e52d4190f6fafe67e62dec3b0d6932c90da272f4e204c55",
     "scripts/prepare_inventory.py": "767f8484796c84e1a622516c53789b1aa36c9732c3a6e52ab30340c6916b392a",
@@ -294,9 +294,9 @@
     "src/account.js": "1fb5be4d3d4faf8ff20b72a2c2024d5107d8a238b18cc885bc6b5bb0b2330680",
     "src/app.js": "a5b113cce92888904a4ff1d3d483b07d5f5e92bab143a75442313a79f9d36511",
     "src/auth-config.js": "73ae43ad3197b5f664d249cc9c26d734418af410582104336cc97f89df94be07",
-    "src/career-model.js": "04779d758a948679ece7eb1d2f98b3229a09558ee08bf8cb8e5b28f6710e54a5",
+    "src/career-model.js": "12f8949445cf0092f11da716060e3648ab8ad1c42552970b1ed4aed2d1631d9b",
     "src/career.css": "4443a80063e400faa5298e311d5b24f323301b64f76b7cfa8d50e8e5b1351f54",
-    "src/career.js": "2348afa4d5cef81f7499fc6e4dc23b0deb57b6227c8b74e4ca14b36bd297a1fe",
+    "src/career.js": "d541c0eecdfe05ebe1de6e8d38587f4912cfd377f80d42cd85fad05f5320af12",
     "src/community-detail.css": "abce01cd4a3bd8635183faac72d0d10fe7d97c4d7ce2019230c2e2395f6d4f2c",
     "src/community.js": "ec61ca84bd9141c621d7be30794e9086d19ef64fcd7e26e8e882b0e047c8d06d",
     "src/curated.js": "732c411fdfb1d9c17b18cc6957a69affaceb54f3ce631f2912d841b8859485fc",
@@ -333,7 +333,7 @@
     "src/unified-search.js": "16505ec6b780869ba3afaea711ffd7e44dc2c6981744de5bab496cfec0f8e499",
     "src/workspace-modern.css": "ff38d1e536efb0c9bcee069eadfebe16557addc78a33024e625eb0441882b118",
     "src/workspace.js": "d4504f4683d7305eaf72ba56afdb7c383ef50c45c3f60ab8c3e4d9bbf8010f9f",
-    "tests/career.mjs": "12cff3879672811760888ed0dacae88ccbc5272b30dda4f27c1aa614e097fb46",
+    "tests/career.mjs": "c61525a1b48c2ee7170d130a00a04ab7d47e72ba8b6299d320ab6d7f753942b8",
     "tests/catalog.mjs": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
     "tests/documents.mjs": "e02ae754bc3572517d7c19568fc813c0dafb6db3ee1114f4f641e418999ee60e",
     "tests/search.mjs": "c98ac4cbfba352b09af41c9db66923ce3ec16272450ccff5374b482312c2eda9",
@@ -346,5 +346,37 @@
     "yks/tercih-listesi-nasil-hazirlanir/index.html": "b3d483003ca103ec1fd6e9e62e3c6f5ce18d0d43536382f1d5b8429dfc6830db",
     "yks/tercih-nasil-yapilir/index.html": "e8aad2f079c1470943d5ef3582ee9e0be8eb823fae571a77e58e9d9c2b6d49a8",
     "yks/tercih-robotu/index.html": "2c609511c664be1c1e540b1f9d7f563e15120f775985f5a7f9265e9ceece9acd"
+  },
+  "maintenance_updates": {
+    "data/recruitment.json": {
+      "previous_sha256": "da9e7d7035e254e7a91b559137764bddc2a0aec2f6c2b499708df5ef0eea5cc1",
+      "reviewed_sha256": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
+      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+    },
+    "docs/career-content.md": {
+      "previous_sha256": "1d09cf72b80fff937318c802daf697dbe6d5a8a31f6281ad6e7d83b9199cdc6a",
+      "reviewed_sha256": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",
+      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+    },
+    "scripts/check_seo.py": {
+      "previous_sha256": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",
+      "reviewed_sha256": "28b42669d57d93d96a341827b59163acbcce418e7ca3915cd4160355edb011bf",
+      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+    },
+    "src/career-model.js": {
+      "previous_sha256": "04779d758a948679ece7eb1d2f98b3229a09558ee08bf8cb8e5b28f6710e54a5",
+      "reviewed_sha256": "12f8949445cf0092f11da716060e3648ab8ad1c42552970b1ed4aed2d1631d9b",
+      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+    },
+    "src/career.js": {
+      "previous_sha256": "2348afa4d5cef81f7499fc6e4dc23b0deb57b6227c8b74e4ca14b36bd297a1fe",
+      "reviewed_sha256": "d541c0eecdfe05ebe1de6e8d38587f4912cfd377f80d42cd85fad05f5320af12",
+      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+    },
+    "tests/career.mjs": {
+      "previous_sha256": "12cff3879672811760888ed0dacae88ccbc5272b30dda4f27c1aa614e097fb46",
+      "reviewed_sha256": "c61525a1b48c2ee7170d130a00a04ab7d47e72ba8b6299d320ab6d7f753942b8",
+      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+    }
   }
 }

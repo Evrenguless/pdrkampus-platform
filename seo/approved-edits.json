@@ -323,99 +323,99 @@
     },
     "bolumler/bilgisayar-muhendisligi/index.html": {
       "baseline_sha256": "e24f2f118876dc2aff1402bec3c14811b363c58552c5a6053d56290f5d46b63e",
-      "reviewed_sha256": "0031b50491f6a71a9b56a656ce933ca8e8687a8918862b0c5f3b06ea9426169f",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "f5d62d0f6e983d916267fc5a7c6bf3845b9b9f40a48f4ae7686d140dc5d3e446",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/bilgisayar-programciligi/index.html": {
       "baseline_sha256": "5e7e6ae7b758d929228516303e22bf7e48f50e2b737c0029c5c47595c06034cf",
-      "reviewed_sha256": "0e5d61a0558af18fe09f6258850165a1ae83173ed6db826f0906679b65f16e26",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "b66a114a04cabbdba3c221b2fc1190e1e4ada3cdb78073e8585f8058f4333a7d",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/dis-hekimligi/index.html": {
       "baseline_sha256": "4f5adc105cd2f83266fd673ba3fd1d0ae92fb9b26a1ebe18e4648b01ef0168a4",
-      "reviewed_sha256": "402f93bdd3889aa3d2e81fcc8dfc52e2998ac711fca45f90a4a900c1c69e4868",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "fbdc168434d731055ae2f4e00fa5d05f6327fb22cfcc69673e0d5b77d1f54e55",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/eczacilik/index.html": {
       "baseline_sha256": "b464de630fa0e366d186733be4ef2f2ebf6738b5e6cbea1d38b4f16704da1192",
-      "reviewed_sha256": "28e7ddf7a897c1b93f6e8f10f21b752ea081f1b60569ec439efa3283d0e3d105",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "5d05dd52f28d33360e7ed411c6920d7f5348aeecdddb75f804bb458d93004016",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/endustri-muhendisligi/index.html": {
       "baseline_sha256": "062fa0f4fb0a04061f68abb087aafc95dd843211fd8c70bc1bc11686a554454f",
-      "reviewed_sha256": "cdd1b3bde701a74b5370bd7e59e7737ee720bac437f1e2fb3344e852df51ef43",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "ed4ba89aa99f78ed1d286dbb22f835adfa60a5c5973288afddbf3b3d5c8b1234",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/hemsirelik/index.html": {
       "baseline_sha256": "d49bf6647c81ffa7796a06008d9be5787c837a2b410d755ffe649721d43f5ccd",
-      "reviewed_sha256": "9500e9f5dc32f4a17b29f20fad7224cd96de427345f08419dca4337d228e0011",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "8e83068ec2014f49b7710f97be8395b55ecb35402919ca387635460203c9c8a6",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/hukuk/index.html": {
       "baseline_sha256": "29bc98ca18e63f17f050f5f70e685fc73d0bad2da96654119205e6e0222e34af",
-      "reviewed_sha256": "a7121ad2e2e8ff893962a189e94b7b2d0bb1ff49e0f907f597bfcb53578f8404",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "128f1dbc497d67e290b87aa50e30375c3b57a95e8cb08d9b18c7e54693250fdb",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/ilk-ve-acil-yardim/index.html": {
       "baseline_sha256": "09c33af1954ca13bed2105d9fc4b6c57299e109208ef09b448baa3c2f0c13413",
-      "reviewed_sha256": "b43ed552bfdbd2567799836e671064993232d241317bc7951b2e65e8da978cef",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "be8b08f6512211fc7a9baa34537218e077964043b7eb7b55a7ee0cf961051278",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/mimarlik/index.html": {
       "baseline_sha256": "2df77983395f9954841dfb024939646ded6b3cbc2578a4f75910754387b4a186",
-      "reviewed_sha256": "53d039050e499e0dc0e5abd6284d327971e7dd0325679fc8bddcb6db0f36f1a9",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "c50c14b3ebf4355b763d5a645002f4d84910a717389bb0e3b6a1c2960a3fe37b",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/ozel-egitim-ogretmenligi/index.html": {
       "baseline_sha256": "41339dd03fba6af80497d596e55ef77c8cdf50f91c38e23faeda97a2b6c8ac97",
-      "reviewed_sha256": "29b0ba0bc94ad243c6590e070e09c26d0de4a6d9f744e6ed748a080c53161480",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "1252ca4870d0dfd7a3dbf725bd1d766ae79e83164a6a394b49848dacf49da62a",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/pdr/index.html": {
       "baseline_sha256": "2e2c092629c506e0d2c91bf8d8b6c1c19cfedac45633cf5da5714a92cee71d33",
-      "reviewed_sha256": "f97a3509ac016526b55a4c05c1219151f20da8b69312b6c2df686d30e9c6a5ec",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "b48f8859b8eed6ed63be35976e6a151da5bf749dfebed6fddcac97789d3cab74",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/psikoloji/index.html": {
       "baseline_sha256": "555d5bff64b13fdae328a525b14b9cd1de6d994cfa22c89a15c80e6cf211abc6",
-      "reviewed_sha256": "463f2a91caeab01f05e16a4a8d77386c09fd814fb9cc7b64f4021b75f13ec3d3",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "db467e4fdfde228044da800a0c3406d1c684da5247b9507cd79af79c25d0297c",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/sinif-ogretmenligi/index.html": {
       "baseline_sha256": "23ae96346067230aa8d7da8d7dbea1242d4d4c0e806a9e97d7d6fd266b490f3d",
-      "reviewed_sha256": "5209f7c363950d77f9dbebc55e9bfb95e7aa2428b12eaf34d966b03d702c6e1e",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "22789bdd6075ea5482d9f370266a8e612b30fdeebd9c7ee42732ead9375a2f7f",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/tip/index.html": {
       "baseline_sha256": "d4e187f32140e1dceca20b2417262e5d9201297158f972d2a6ea908c363a4394",
-      "reviewed_sha256": "9dc4e71cb58270d1d15a8894b877aa36399fe6150acf536d2009b229f5d2efa0",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "ad4b716d2b2da61d2930fe5c1fee9ad1d537b7b58c693f1b54242011d75b7632",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/yazilim-muhendisligi/index.html": {
       "baseline_sha256": "420dc858a96ed730b5bd31b6345a63cb5b230944dddd295196bbe79db3b9f29b",
-      "reviewed_sha256": "ee2f50f51a4f5ffe2ad9b88e4e222665952cb505bf52a49566f2e62bdf61ed50",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "ae5a73ac5eb7894fb8636c695905fa7654876b8f5a8159b9c3107c774bae88c7",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "bolumler/yonetim-bilisim-sistemleri/index.html": {
       "baseline_sha256": "33c355a17a935cedd660260da6a047ce88bd58c77b4d31fd00eed337c6b285c8",
-      "reviewed_sha256": "1aaa19c0db5dfae0ad39551e97068055ccd189150c7eb3a1e4916a366bbee88c",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "f2a9c5df5ad45f4597fe32e697b359c26d963a23f15820fcb3bae76871285d85"
+      "reviewed_sha256": "0d00cc70f4e07931d6c2929780de02b7e2e5d3247841c9ea69cc44237246401d",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "cerez-politikasi.html": {
       "baseline_sha256": "9ea5a2713173280f9c889292b5133364a89a8adb45347d8015c7b3c8ffbf1c9c",
@@ -1241,8 +1241,8 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "9c7bf03426858273f7ff0a00f40db57beca3276beacc81afbbe04a8364cf4fb7",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved"
+      "reviewed_sha256": "d77c61a991e0131130f25c9f234cc1264845e674094ab109c229104301ec91ee",
+      "reason": "Reviewed merged main sitemap retains all new resources and recruitment URLs"
     },
     "topluluk.html": {
       "baseline_sha256": "e73b19a12fd7d33801327f61799969e46685844e3504de5c4e9835352c14d1b9",
@@ -1299,13 +1299,31 @@
     },
     "scripts/build_career_pages.py": {
       "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
-      "reviewed_sha256": "7efb9a610284cc844be2ef36f386a2a1642dc7dd2749c0946513f745729af363",
-      "reason": "SEO-only regeneration now preserves schema/context; original data and generated runtime scripts unchanged"
+      "reviewed_sha256": "98545595715668e29be7918abee1b13bf9daab548d42ad56033e429cc685f4cf",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions"
     },
     "scripts/check_seo.py": {
       "baseline_sha256": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",
       "reviewed_sha256": "28b42669d57d93d96a341827b59163acbcce418e7ca3915cd4160355edb011bf",
       "reason": "Reviewed concurrent main breadcrumb JSON-LD fix and added breadcrumb validation; runtime and original data preserved."
+    },
+    "bolumler/index.html": {
+      "baseline_sha256": "0afef04fd67804155837336f553a46a3816085a93f35c8192ae30a94b40fa6eb",
+      "reviewed_sha256": "660196e52d5b8fe55d6e1a594d856fa824bd56d6690781ac38ab081e5f43a936",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
+    },
+    "personel-alim-ilanlari/duzce-universitesi-2026-2-sozlesmeli-personel/index.html": {
+      "baseline_sha256": "f69f61f3cd9e83d3494a842fd35c63004510d9a021544c0881eba5ac5fe8f56b",
+      "reviewed_sha256": "d3900a151e6a9ac15db7662bc6f5bfd24aa40d5bda2380903b90632f3fc7c60d",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
+    },
+    "personel-alim-ilanlari/index.html": {
+      "baseline_sha256": "866b330b1f4bb3ed6e01a3dc78097e3cb0c237b1059d60d7668ed147dfabfb36",
+      "reviewed_sha256": "b0c902f78065a6a8552772bfee8d03bd5a023ae38e4bc1e7cab7229c2d4617e8",
+      "reason": "Reviewed recruitment/date precision generation or already merged main breadcrumb/schema additions",
+      "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     }
   }
 }
