@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Collect the complete public Kariyer Kapısı list; news is discovery only."""
-import argparse, hashlib, json, re, time
+import argparse, hashlib, json, re, time, os, subprocess
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.request import Request, build_opener, HTTPCookieProcessor
@@ -50,6 +50,9 @@ def normalize(rows):
 class Client:
  def __init__(self):self.opener=build_opener(HTTPCookieProcessor(CookieJar()))
  def get(self,url,payload=None):
+  if url == API and os.environ.get('GITHUB_ACTIONS') == 'true':
+   command=['curl','--fail','--silent','--show-error','--ipv4','--connect-timeout','10','--max-time','30','--max-filesize','5000000','--header','Content-Type: application/json','--data',json.dumps(payload),url]
+   return subprocess.check_output(command,timeout=35),{}
   data=json.dumps(payload).encode() if payload is not None else None
   headers={'User-Agent':'PDRKampus-PublicRecruitment/1.0','Accept':'application/json, application/xml, text/html'}
   if data is not None:headers['Content-Type']='application/json'

@@ -50,10 +50,6 @@ def build_pages(root, resources):
         if not resources: body += '<p>Yeni kaynaklar bu bölümde listelenecek. <a href="/kutuphane.html">Mevcut kütüphaneyi inceleyin</a>.</p>'
         if len(chunks) > 1: body += '<nav class="catalog-pagination" aria-label="Yeni kaynak kataloğu">'+''.join('<a href="'+(HUB if i == 1 else HUB+'sayfa/'+str(i)+'/')+'">'+str(i)+'</a>' for i in range(1,len(chunks)+1))+'</nav>'
         page(route, 'Yeni Rehberlik Kaynakları'+(' · Sayfa '+str(n) if n > 1 else '')+' | PDR Kampüs', 'Yeni rehberlik materyalleri kataloğu'+(' · '+str(n)+'. sayfa' if n > 1 else '')+'. Resmî kaynaklardan envanter, form, sunum, pano ve etkinlikler.', body, noindex=not bool(resources))
-    from resource_design import decorate
-    for path in list(outputs):
-        row = next((r for r in resources if r['pagePath'].lstrip('/')+'index.html'==path), None)
-        outputs[path] = decorate(root, outputs[path], row)
     for path, content in outputs.items():
         dest = root / path; dest.parent.mkdir(parents=True, exist_ok=True); dest.write_text(content, encoding='utf-8')
     ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'; ET.register_namespace('', ns)

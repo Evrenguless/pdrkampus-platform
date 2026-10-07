@@ -30,8 +30,6 @@ const topicButtons=[
  {label:'Psikolojik sağlamlık',query:'psikolojik sağlamlık'},
  {label:'Sınıf rehberliği',query:'sınıf rehberliği'}
 ];
-let previewIndex={};
-fetch('/data/resource-previews.json').then(r=>r.ok?r.json():{}).then(value=>{previewIndex=value;if(documents.length)render()}).catch(()=>{});
 const state={query:'',type:'',level:'',area:'',source:'',limit:24};
 let documents=[];
 
@@ -90,9 +88,7 @@ function card(item){
   :item.kind==='member'
   ?`<button type="button" data-community-file="${esc(item.file)}" data-library-open="${esc(item.id)}">Görüntüle</button>`
   :`<button type="button" data-kind="${item.kind}" data-id="${esc(item.id)}" data-library-open="${esc(item.id)}">Görüntüle</button>`;
- const cover=previewIndex[item.id]?.previews?.[0];
- const visual=`<div class="resource-card-cover">${cover?`<img src="${esc(cover)}" alt="${esc(item.title)} — ilk sayfa" loading="lazy">`:`<span class="resource-format-tile">${esc(item.fileType)}<small>${esc(item.type)}</small></span>`}</div>`;
- return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}">${visual}<div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && detailPath ? `<a href="${esc(detailPath)}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
+ return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}"><div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && detailPath ? `<a href="${esc(detailPath)}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
 }
 function setTypeOptions(){
  const current=state.type;
@@ -131,9 +127,6 @@ function restoreUrl(){
 window.addEventListener('popstate',()=>{restoreUrl();render()});
 window.addEventListener('hashchange',()=>render());
 function openViewer(item,url){
- const detailPath=libraryDetailLinks[item.id]||resourcePageLinks[item.id]||item.pagePath;
- if(item.origin==='official'&&detailPath){location.href=detailPath;return}
-
  $('#viewerCode').textContent=[item.type,item.source].filter(Boolean).join(' · ');
  $('#viewerTitle').textContent=item.title;
  $('#viewerOpen').href=url;

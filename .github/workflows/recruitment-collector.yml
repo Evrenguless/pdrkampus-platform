@@ -22,6 +22,25 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s scripts -p test_collect_recruitment.py
+  source-access:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check official IPv4 API access from the publication runner
+        run: |
+          curl --fail --silent --show-error --ipv4 --connect-timeout 10 --max-time 30 \
+            --header 'Content-Type: application/json' \
+            --data '{"krM_ID":0,"searchText":"","il":"0","ilanTuru":"0"}' \
+            'https://api.kariyerkapisi.gov.tr/api/ilan/GetIseAlimPage' \
+            --output "$RUNNER_TEMP/public-recruitment-api.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'public-recruitment-api.json'
+          rows=json.loads(p.read_text())['searchIlan']
+          assert rows, 'Empty public source response'
+          print('Public official records:',len(rows))
+          PY
   collect:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: tests
