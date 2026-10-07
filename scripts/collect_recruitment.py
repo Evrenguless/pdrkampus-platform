@@ -110,6 +110,9 @@ def refresh_review_hashes(root):
  for name in [n for n in baseline['files'] if n.startswith('personel-alim-ilanlari/') or n in ('scripts/build_career_pages.py','sitemap.xml')]:
   path=root/name
   if name in baseline['files']:
+   existing=a['edits'].get(name,{})
+   if existing.get('baseline_sha256') == baseline['files'][name] and existing.get('reviewed_sha256') == e.digest(path):
+    continue
    row={'baseline_sha256':baseline['files'][name],'reviewed_sha256':e.digest(path),'reason':'Generated official public recruitment snapshot; application and other datasets preserved'}
    if name.endswith('.html'):row['runtime_sha256']=e.runtime_digest(path.read_text())
    a['edits'][name]=row
