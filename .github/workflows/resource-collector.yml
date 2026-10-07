@@ -1,0 +1,152 @@
+name: Official Resource Collector
+on:
+  schedule:
+    - cron: '23 3,7,11,15,19,23 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['collector/**', 'scripts/collect_resources.py', 'scripts/inspect_resource.py', 'scripts/publish_collected_resources.py', 'scripts/resource_seo.py', '.github/workflows/resource-collector.yml']
+  pull_request:
+    paths: ['collector/**', 'scripts/*resource*.py', 'src/collected-resources.js', '.github/workflows/resource-collector.yml']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: resource-collector-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s scripts -p test_collect_resources.py
+      - run: python -m unittest discover -s scripts -p test_resource_publication.py
+  collect:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: tests
+    permissions:
+      contents: write
+      actions: read
+      pages: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pypdf==6.10.0
+      - name: Document conversion and Turkish OCR tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends libreoffice-writer libreoffice-impress libreoffice-calc poppler-utils tesseract-ocr tesseract-ocr-tur
+      - name: Restore the most recent queue from this workflow on the default branch
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const branch = context.payload.repository.default_branch;
+            const {data} = await github.rest.actions.listWorkflowRuns({
+              ...context.repo, workflow_id: 'resource-collector.yml', branch,
+              status: 'completed', per_page: 10
+            });
+            for (const run of data.workflow_runs) {
+              if (run.id === context.runId) continue;
+              const result = await github.rest.actions.listWorkflowRunArtifacts({
+                ...context.repo, run_id: run.id
+              });
+              const artifact = result.data.artifacts.find(a => a.name === 'official-resource-review' && !a.expired);
+              if (!artifact) continue;
+              const download = await github.rest.actions.downloadArtifact({
+                ...context.repo, artifact_id: artifact.id, archive_format: 'zip'
+              });
+              fs.writeFileSync(`${process.env.RUNNER_TEMP}/collector-previous.zip`, Buffer.from(download.data));
+              core.info(`Restored queue from run ${run.id}`);
+              break;
+            }
+      - name: Read only state.json from the queue archive
+        run: |
+          python - <<'PY'
+          import os, zipfile
+          from pathlib import Path
+          root = Path(os.environ['RUNNER_TEMP'])
+          archive = root / 'collector-previous.zip'
+          if archive.exists():
+              with zipfile.ZipFile(archive) as z:
+                  info = z.getinfo('state.json')
+                  if info.file_size > 30000000:
+                      raise ValueError('Previous queue exceeds size limit')
+                  (root / 'collector-previous.json').write_bytes(z.read(info))
+          PY
+      - name: Collect public learning resources into the review queue
+        run: python scripts/collect_resources.py --previous "$RUNNER_TEMP/collector-previous.json" --output "$RUNNER_TEMP/official-resource-review"
+      - name: Include resources published during this scan
+        run: |
+          git fetch origin main
+          git merge --ff-only origin/main
+      - name: Add only resources passing document and privacy checks
+        run: python scripts/publish_collected_resources.py --state "$RUNNER_TEMP/official-resource-review/state.json" --apply
+      - name: Recheck protection and supplementary catalogue
+        run: |
+          python -m unittest discover -s scripts -p test_resource_publication.py
+          python scripts/ecosystem_engine.py --output "$RUNNER_TEMP/post-collection-audit"
+          python scripts/check_frontend_secrets.py
+      - name: Commit the supplementary catalogue only
+        id: catalogue
+        run: |
+          python - <<'PY'
+          import subprocess
+          changed = subprocess.check_output(['git', 'diff', '--name-only'], text=True).splitlines()
+          allowed = {'data/collected-resources.json', 'sitemap.xml', 'seo/approved-edits.json'}
+          if any(p not in allowed and not p.startswith('kaynak/yeni/') for p in changed):
+              raise ValueError('Publication attempted to change a protected application file')
+          PY
+          if ! git diff --quiet -- data/collected-resources.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/collected-resources.json sitemap.xml seo/approved-edits.json kaynak/yeni/
+            git commit -m 'Add checked official resources to supplementary catalogue'
+            git push origin HEAD:main
+          fi
+      - name: Request Pages publication explicitly
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          if json.loads(Path('data/collected-resources.json').read_text()):
+              subprocess.run(['gh', 'api', '--method', 'POST', 'repos/{owner}/{repo}/pages/builds'], check=True)
+          PY
+      - name: Keep the queue and review exports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-resource-review
+          path: ${{ runner.temp }}/official-resource-review
+          retention-days: 90
+          if-no-files-found: warn
+      - name: Show collection results
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from scripts.collect_resources import canonical
+          report = Path(os.environ['RUNNER_TEMP']) / 'official-resource-review/report.json'
+          if report.exists():
+              r = json.loads(report.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+                  out.write(f"## Kaynak toplama\n\nTaranan sayfa: {r['visited_pages']}\n\nYeni aday: {r['new_candidates']}\n\nDosya kontrolü: {r['file_checks']}\n\n")
+                  for status, count in r['statuses'].items():
+                      out.write(f"- {status}: {count}\n")
+                  rows = []
+                  for name in ('library', 'forms', 'collected-resources'):
+                      rows.extend(json.loads(Path(f'data/{name}.json').read_text()))
+                  total = len({canonical(row['file']) for row in rows if row.get('file')})
+                  out.write(f"\nEk katalog: {len(json.loads(Path('data/collected-resources.json').read_text()))} kaynak\n\nBenzersiz kaynak: {total} / 5.000\n\nHedefe kalan: {max(0, 5000-total)}\n")
+                  out.write('\nİnceleme için official-resource-review paketindeki index.html dosyasını açın.\n')
+          PY
