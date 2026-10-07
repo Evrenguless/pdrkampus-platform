@@ -33,3 +33,11 @@ Ana sitenin aynı resmî dosyaya işaret eden katalog kayıtları kaynak verisi 
 `link-overrides.json` yalnız sunumdaki erişim davranışını tanımlar; `data/forms.json` ve `data/library.json` özgün kalır. Aynı resmî dosyanın düzeltilmiş adresi kaynak sayfası ve dosya imzasıyla doğrulanır. Erişilemeyen dosya indirme veya PDF önizleme düğmesiyle sunulmaz; açık erişim notu ve kaynak kurum bağlantısı gösterilir. HTML kaynak sayfası PDF dosyası yerine geçirilmez. Gruplama özgün dosya adresiyle yapılır; özel üye dosyaları bu katmana girmez. Katalog oluşturucu aynı metadatadan tarayıcı modülünü de üretir.
 
 Bağlantı denetimi eşzamanlı en fazla 8 isteğe izin verir (varsayılan 6; `PDR_LINK_WORKERS`). HTTP 404/410 hata, erişim engeli veya zaman aşımı ayrı uyarıdır. `scripts/test_link_http.py` yerel HTTP sunucusuyla taşıma davranışını sınar. PR koruma iş akışı veri/formül koruma, katalog ve taşıma testlerini çalıştırır.
+
+## Ekosistem keşfi ve editoryal denetim
+
+`python scripts/ecosystem_engine.py --output /tmp/pdr-ecosystem-review` mevcut kamu kataloglarını ve HTML sayfalarını inceler. `seo/discovery-registry.json` ile yeni/değişen kayıtlar ayrılır. Çıktıdaki `created` bir keşif adayıdır; yayımlanmış sayfa anlamına gelmez. Yeni kayıtlar editoryal incelemeden geçer; otomatik yayın yapılmaz.
+
+Raporlar: arama niyeti, görünür soru kümeleri, kaynak/konu/kademe ilişkileri, kaynak kapsamı, iç bağlantılar, schema/FAQ görünürlük eşleşmesi, yakın içerik benzerliği, koruma ve kalite kontrolü. Kalite puanı Google puanı değildir. `Content Discovery and Quality` iş akışı katalog/metaveri değişikliklerinde raporu üretir. Önceki registry açıkça `--previous` ile de verilebilir.
+
+`enrich_seo_content.py` yalnız mevcut görünür sorular ve cevaplarla FAQ açıklaması yapar. Kaynak detayları mevcut katalogdaki hedef kitle/kademe/kurum bilgilerini kullanır. Hiçbir hesaplama, kişisel kayıt veya özgün katalog değeri değiştirilmez.

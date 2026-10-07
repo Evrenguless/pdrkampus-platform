@@ -1,0 +1,25 @@
+name: Content Discovery and Quality
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ['data/**', 'seo/**', 'scripts/ecosystem_engine.py', 'scripts/enrich_seo_content.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/test_ecosystem_engine.py
+      - run: python scripts/build_grade_hubs.py --check
+      - name: Discover public content and audit editorial quality
+        run: python scripts/ecosystem_engine.py --output "$RUNNER_TEMP/content-discovery"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: content-discovery-review
+          path: ${{ runner.temp }}/content-discovery
