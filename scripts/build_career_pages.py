@@ -17,6 +17,7 @@ MONTHS = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağ
 
 
 def date_text(value, with_time=False):
+    if not value: return 'Resmî ilandan kontrol edin'
     d = datetime.fromisoformat(value)
     text = f'{d.day} {MONTHS[d.month-1]} {d.year}'
     return text + ((' · Saat için resmî ilanı kontrol edin' if len(value) == 10 else f' · {d:%H.%M} (Türkiye saati)') if with_time else '')
@@ -29,6 +30,7 @@ def boundary(value):
 def status(row, now):
     if row.get('withdrawn'):
         return 'withdrawn', 'İlan geri çekildi'
+    if not row.get('startsAt') or not row.get('deadline'): return ('unknown', 'Takvimi resmî kaynaktan kontrol edin')
     end = boundary(row['deadline'])
     # A date alone does not prove that applications remain open until midnight.
     if len(row['deadline']) == 10 and end <= now < end + timedelta(days=1):
@@ -96,7 +98,7 @@ def facts(pairs):
 
 def badge(row, now):
     key, label = status(row, now)
-    return f'<span class="career-status" data-start="{E(row["startsAt"])}" data-deadline="{E(row["deadline"])}" data-withdrawn="{str(row.get("withdrawn", False)).lower()}" data-status="{key}">{label} · {date_text(now.isoformat())} itibarıyla</span>'
+    return f'<span class="career-status" data-start="{E((row.get("startsAt") or ""))}" data-deadline="{E((row.get("deadline") or ""))}" data-withdrawn="{str(row.get("withdrawn", False)).lower()}" data-status="{key}">{label} · {date_text(now.isoformat())} itibarıyla</span>'
 
 
 def breadcrumb(group, title=None):
@@ -175,7 +177,7 @@ def generate():
         for p in row['positions']:
             positions += f'<tr><td><strong>{E(p["name"])}</strong><br>{E(p["code"])}<br>{E(p["education"])}</td><td>{p["quota"]}</td><td>{E(p["requirements"])}</td></tr>'
         positions += '</tbody></table></div>'
-        article = section('ozet', 'İlan özeti ve KPSS şartı', overview) + section('pozisyonlar', 'Hangi pozisyonlara alım yapılacak?', positions) + section('sartlar', 'Başvuru koşulları', items(row['conditions'])) + section('basvuru', 'Nasıl başvurulur?', items(row['steps'], True) + f'<p data-apply-note>{"Başvuru süresi sona erdi. Sonuç duyuruları için kurumun sayfasını izleyin." if status(row, now)[0] == "closed" else "Başvuru, kurumun resmî sistemi üzerinden yapılır."}</p><a class="career-action" data-apply-link data-start="{row["startsAt"]}" data-deadline="{row["deadline"]}" data-withdrawn="{str(row.get("withdrawn", False)).lower()}" href="{row["applyUrl"]}" target="_blank" rel="noopener noreferrer"{ " hidden" if status(row, now)[0] != "open" else ""}>Resmî başvuru sistemine git ↗</a>') + section('kaynaklar', 'Resmî kaynaklar', link(row['sourceUrl'], row['sourceLabel']) + '<p>' + link(row['documentUrl'], 'Tam ilan metni / resmî ilan ayrıntıları') + '</p>')
+        article = section('ozet', 'İlan özeti ve KPSS şartı', overview) + section('pozisyonlar', 'Hangi pozisyonlara alım yapılacak?', positions) + section('sartlar', 'Başvuru koşulları', items(row['conditions'])) + section('basvuru', 'Nasıl başvurulur?', items(row['steps'], True) + f'<p data-apply-note>{"Başvuru süresi sona erdi. Sonuç duyuruları için kurumun sayfasını izleyin." if status(row, now)[0] == "closed" else "Başvuru, kurumun resmî sistemi üzerinden yapılır."}</p><a class="career-action" data-apply-link data-start="{(row.get("startsAt") or "")}" data-deadline="{(row.get("deadline") or "")}" data-withdrawn="{str(row.get("withdrawn", False)).lower()}" href="{row["applyUrl"]}" target="_blank" rel="noopener noreferrer"{ " hidden" if status(row, now)[0] != "open" else ""}>Resmî başvuru sistemine git ↗</a>') + section('kaynaklar', 'Resmî kaynaklar', link(row['sourceUrl'], row['sourceLabel']) + '<p>' + link(row['documentUrl'], 'Tam ilan metni / resmî ilan ayrıntıları') + '</p>')
         aside = '<div class="career-box"><h2>Bu ilanda</h2>' + ''.join(f'<a href="#{i}">{label}</a>' for i, label in [('ozet', 'İlan özeti'), ('pozisyonlar', 'Pozisyonlar'), ('sartlar', 'Başvuru koşulları'), ('basvuru', 'Başvuru adımları'), ('kaynaklar', 'Resmî kaynaklar')]) + '</div><div class="career-box"><h2>İlgili bölümler</h2>'
         aside += ''.join(f'<a href="/bolumler/{p["slug"]}/">{E(p["name"])}</a>' for p in programs if p['slug'] in row.get('relatedPrograms', []))
         aside += '<a href="/bolumler/">Bölüm rehberini incele →</a><a href="/personel-alim-ilanlari/">Tüm ilanlar →</a></div>'

@@ -23,3 +23,7 @@ Kullanıcının 7 Ekim 2026 talebi, tüm güncel kaynak kayıtlarını çekmeyi 
 Boş/bozuk resmî yanıt önceki geçerli feed'i silmez; iş hata verir. Haber kaynağındaki hata resmî akışın yayınını engellemez ve rapora yazılır. Erişim engeli/CAPTCHA aşılmaz. İptal ancak açık resmî düzeltme duyurusuyla doğrulanır. Üretilen ilan HTML'leri ve sitemap için yalnız ilgili dosyaların SHA-256 onay kaydı yenilenir; baseline koruması kapatılmaz.
 
 Codex destek görevi kaynak raporlarını ve doğrulanmayı bekleyen haberleri altı saatte bir takip eder; normal saatlik feed yayınına ikinci kez müdahale etmez. Değişmeyen durumda sessiz kalır. Yeni doğrulanmış dış kaynak ilanı, anlamlı düzeltme/iptal veya kalıcı yayın hatası varsa bildirir.
+
+## Sunucu erişimi ve resmî RSS yedeği
+
+GitHub runner resmî API portuna bağlantıda zaman aşımına uğradı; aynı API yerelde başarılıdır. GitHub üzerinde resmî `/RSS` erişimi ayrıca doğrulandı. API erişilemezse collector bu resmî akışa geçer. Bilinen kayıtların daha önce doğrulanmış tarihleri korunur. Yeni RSS kaydı başlığı/kurumu/yayın tarihi ve resmî bağlantısıyla otomatik görünür; RSS bitiş tarihi veya koşul paylaşmıyorsa bunlar tahmin edilmez ve takvim kontrolü işaretlenir. Kaynakta aktif olup eski bitişi geçmiş bir kaydın uzatıldığı tahmin edilmez; kesin tarih yeniden doğrulanana kadar takvim bilinmiyor sayılır. Codex destek görevi erişilebilir API üzerinden bu ayrıntıları tamamlar. Kaynak erişiminin ikisi de başarısızsa son geçerli liste korunur ve iş hata verir.

@@ -23,6 +23,7 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s scripts -p test_collect_recruitment.py
   source-access:
+    continue-on-error: true
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:

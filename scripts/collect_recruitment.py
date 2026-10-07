@@ -8,6 +8,8 @@ from urllib.parse import urlsplit, parse_qs
 from urllib.error import HTTPError, URLError
 from http.cookiejar import CookieJar
 from html import unescape
+import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 
 ROOT = Path(__file__).resolve().parents[1]
 TZ = timezone(timedelta(hours=3))
@@ -45,7 +47,7 @@ def normalize(rows):
    'category':kind.rstrip(','),'startsAt':start,'deadline':end,'sourceUrl':url,
    'logoUrl':official('https://kariyerkapisi.gov.tr/UPS/'+row['logo_Path']),
    'manualSlug':MANUAL.get(guid),'withdrawn':False})
- return sorted(result,key=lambda r:(r['startsAt'],r['id']),reverse=True),excluded
+ return sorted(result,key=lambda r:(r.get('startsAt') or r.get('publishedAt') or '',r['id']),reverse=True),excluded
 
 class Client:
  def __init__(self):self.opener=build_opener(HTTPCookieProcessor(CookieJar()))
@@ -82,27 +84,64 @@ def news_scan(client,now):
  else:raise ValueError('News pagination incomplete')
  return {'scanned':total,'newestPublishedAt':newest,'candidates':candidates}
 
+def rss_records(body,previous,now):
+ root=ET.fromstring(body);items=root.findall('.//item')
+ if not items:raise ValueError('Official RSS empty; preserving snapshot')
+ rows=[];excluded=[];known={r['id']:r for r in previous};seen=set()
+ for item in items:
+  title=item.findtext('title') or '';kind=item.findtext('category') or 'Kamu alımı';url=official(item.findtext('link') or '')
+  guid=parse_qs(urlsplit(url).query).get('i',[''])[0]
+  if not re.fullmatch(r'[a-f0-9-]{36}',guid) or guid in seen:raise ValueError('Invalid RSS identity')
+  seen.add(guid)
+  if any(t in kind for t in EXCLUDED):
+   excluded.append({'id':guid,'title':title,'reason':kind});continue
+  if guid in known:
+   row=dict(known[guid])
+   # An active RSS entry past the cached deadline may represent an extension.
+   # Mark timing unknown until the structured API can confirm it.
+   if row.get('deadline') and datetime.fromisoformat(row['deadline'])<=now:row['deadline']=None
+   row['title']=title;row['category']=kind.rstrip(',')
+  else:
+   enclosure=item.find('enclosure');logo=official(enclosure.get('url')) if enclosure is not None else 'https://kariyerkapisi.gov.tr/img/logo-kariyerkapisi.png'
+   row={'id':guid,'title':title,'institution':title.split(' - ')[0],'unit':'','category':kind.rstrip(','),
+    'startsAt':None,'deadline':None,'sourceUrl':url,'logoUrl':logo,'manualSlug':MANUAL.get(guid),'withdrawn':False}
+  row['publishedAt']=parsedate_to_datetime(item.findtext('pubDate')).date().isoformat()
+  row['sourceCurrent']=True;rows.append(row)
+ return rows,excluded,len(items)
+
 def collect(root,client,now):
  payload={'krM_ID':0,'searchText':'','il':'0','ilanTuru':'0'}
- body,_=client.get(API,payload);raw=json.loads(body)
- if not isinstance(raw.get('searchIlan'),list) or not raw['searchIlan']:raise ValueError('Official list missing/empty; preserving last snapshot')
- rows,excluded=normalize(raw['searchIlan'])
+ target=root/'data/recruitment-feed.json'
+ old=json.loads(target.read_text()) if target.exists() else {'records':[]}
+ source=API;api_error=None
+ try:
+  body,_=client.get(API,payload)
+ except (URLError,TimeoutError,OSError,subprocess.SubprocessError) as e:
+  api_error=str(e);source='https://kariyerkapisi.gov.tr/RSS'
+  body,_=client.get(source);rows,excluded,total=rss_records(body,old['records'],now)
+ else:
+  raw=json.loads(body)
+  if not isinstance(raw.get('searchIlan'),list) or not raw['searchIlan']:raise ValueError('Official list missing/empty; preserving last snapshot')
+  rows,excluded=normalize(raw['searchIlan']);total=len(raw['searchIlan'])
+  for row in rows:row['sourceCurrent']=True
  news_error=None
  try:news=news_scan(client,now)
  except Exception as e:news={'scanned':None,'candidates':[]};news_error=str(e)
- target=root/'data/recruitment-feed.json'
- old=json.loads(target.read_text()) if target.exists() else {'records':[]}
  # Keep dated archives. A disappeared source record is never automatically called cancelled.
+ prior={r['id']:r for r in old['records']}
+ for r in rows:
+  if not r.get('publishedAt') and prior.get(r['id'],{}).get('publishedAt'):r['publishedAt']=prior[r['id']]['publishedAt']
  current={r['id']:r for r in rows}
  for r in old['records']:
-  if r['id'] not in current:current[r['id']]=r
- rows=sorted(current.values(),key=lambda r:(r['startsAt'],r['id']),reverse=True)
+  if r['id'] not in current:
+   r=dict(r);r['sourceCurrent']=False;current[r['id']]=r
+ rows=sorted(current.values(),key=lambda r:(r.get('startsAt') or r.get('publishedAt') or '',r['id']),reverse=True)
  changed=rows!=old['records']
  if changed:
-  target.write_text(json.dumps({'source':API,'updatedAt':now.isoformat(timespec='seconds'),'records':rows},ensure_ascii=False,indent=2)+'\n')
- report={'checkedAt':now.isoformat(timespec='seconds'),'sourceRecords':len(raw['searchIlan']),'recruitmentRecords':len(current),
-  'open':sum(datetime.fromisoformat(r['startsAt'])<=now<datetime.fromisoformat(r['deadline']) for r in rows),
-  'upcoming':sum(now<datetime.fromisoformat(r['startsAt']) for r in rows),'excluded':excluded,'news':news,'newsError':news_error,'changed':changed}
+  target.write_text(json.dumps({'source':source,'updatedAt':now.isoformat(timespec='seconds'),'records':rows},ensure_ascii=False,indent=2)+'\n')
+ report={'checkedAt':now.isoformat(timespec='seconds'),'sourceRecords':total,'source':source,'apiError':api_error,'recruitmentRecords':len(current),
+  'open':sum(bool(r.get('startsAt') and r.get('deadline')) and datetime.fromisoformat(r['startsAt'])<=now<datetime.fromisoformat(r['deadline']) for r in rows),
+  'upcoming':sum(bool(r.get('startsAt')) and now<datetime.fromisoformat(r['startsAt']) for r in rows), 'timingUnknown':sum(not r.get('deadline') for r in rows),'excluded':excluded,'news':news,'newsError':news_error,'changed':changed}
  return report
 
 def refresh_review_hashes(root):

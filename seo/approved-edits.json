@@ -1299,7 +1299,7 @@
     },
     "scripts/build_career_pages.py": {
       "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
-      "reviewed_sha256": "5eaad10626cc616dc2379e3cc59d71f6d92892b858030ccf3aa2807d6a11b4b5",
+      "reviewed_sha256": "2b3b9952449f7e93d7b520cef3232fb732bc36bd413ea24a88d06274d166a419",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved"
     },
     "scripts/check_seo.py": {
