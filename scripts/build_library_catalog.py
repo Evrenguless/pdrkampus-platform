@@ -51,6 +51,7 @@ template = (ROOT/'konu/akran-zorbaligi/index.html').read_text()
 header = re.search(r'<header.*?</header>.*?</nav>', template, re.S).group().replace(' data-section-current="true"','')
 footer = re.search(r'<footer.*?</footer>', template, re.S).group()
 outputs = {}
+contexts = json.loads((ROOT/'seo/resource-context.json').read_text()) if (ROOT/'seo/resource-context.json').exists() else {}
 def page(path, title, desc, body, schema=None):
     url = BASE + path
     structured = '<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('<','\\u003c')+'</script>' if schema else ''
@@ -90,6 +91,8 @@ for item in selected:
     source_page = quote(overrides.get(item.get('file',''),{}).get('source_url') or item.get('sourcePage') or item.get('sourceUrl') or file_url(item), safe="/:?=&%#@+;,-._~")
     related = [x for x in selected if x['id']!=item['id'] and (x.get('level')==level or x.get('type')==item.get('type'))][:4]
     body = f'<p class="catalog-kicker"><a href="/kutuphane.html">Kütüphane</a> / <a href="/kutuphane/katalog/">Resmî kaynaklar</a></p><h1>{esc(title)}</h1><p class="catalog-lead">{esc(desc)}</p><section class="catalog-card"><h2>Kaynak bilgileri</h2><dl><dt>Hazırlayan kurum</dt><dd>{esc(source)}</dd><dt>Kademe</dt><dd>{esc(level)}</dd><dt>Kaynak türü</dt><dd>{esc(item.get("type"))}</dd><dt>Konu</dt><dd>{esc(topic)}</dd><dt>Dosya biçimi</dt><dd>{esc(item.get("fileType"))}</dd></dl>{access_markup(item,detail=True)}<p><a href="{esc(source_page)}" target="_blank" rel="noopener">Kaynak kurumun sayfası ↗</a></p></section><section class="catalog-card"><h2>Hangi çalışma için kullanılabilir?</h2><p>Bu kaynak, {esc(level.lower())} kademesinde {esc(topic.lower())} konusunda yürütülen çalışmalarda başvurulabilecek bir {esc(item.get("type","kaynak").lower())} olarak listelenmiştir. Uygulama öncesinde resmî dosyadaki hedef kitleyi ve yönergeleri inceleyin; materyali öğrencilerinizin ihtiyaçlarına ve kurumunuzun çalışma planına göre değerlendirin.</p><p>Bu sayfa dosyayı yeniden yayımlamaz; güncel belgeye hazırlayan kurumun bağlantısından ulaşabilirsiniz.</p></section><h2>İlgili kaynaklar</h2><div class="catalog-grid">'+''.join(card(x) for x in related)+'</div>'
+    if item['id'] in contexts:
+        body += '<section class="catalog-card"><h2>Hedef kitle ve belge sürümü</h2><p>'+esc(contexts[item['id']])+'</p></section>'
     page(links[item['id']], title+' · '+source+' · '+level+' | PDR Kampüs', desc, body, {'@context':'https://schema.org','@type':'CreativeWork','name':title,'url':BASE+links[item['id']],'isAccessibleForFree':True,'inLanguage':'tr','learningResourceType':item.get('type'),'publisher':{'@type':'Organization','name':source}})
 # Preserve reviewed source-specific content when rebuilding existing detail URLs.
 pilot_path = ROOT/'seo/pilot.json'

@@ -249,7 +249,7 @@
     },
     "scripts/build_library_catalog.py": {
       "baseline_sha256": "70afdfe2a3f3d9f1f2db2770fe44d28abde79b939b4acf2b298de2c133608425",
-      "reviewed_sha256": "6921415c7f2cfe7c4d8bb12e4ab98cdb78cc64f8eefc9cef49a3cb145add2414",
+      "reviewed_sha256": "9d86f8114afb7fe0922a6bea5a921fe783720383d957d93c4cb6f2e6a83133fb",
       "reason": "Source-preserving resource detail pages and exact-file matching; original catalogue and calculation data preserved"
     },
     "scripts/check_links.py": {
