@@ -53,13 +53,37 @@ function readConsent(){try{return JSON.parse(localStorage.getItem(CONSENT_KEY)||
 function saveConsent(analytics){const value={necessary:true,analytics:Boolean(analytics),updatedAt:new Date().toISOString()};localStorage.setItem(CONSENT_KEY,JSON.stringify(value));window.PDRConsent=value;window.dispatchEvent(new CustomEvent('pdrconsentchange',{detail:value}));return value}
 window.PDRConsent=readConsent()||{necessary:true,analytics:false,updatedAt:null};
 
+const GA_MEASUREMENT_ID='G-1WQ10WJHVW';
+window.dataLayer=window.dataLayer||[];
+window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
+window.gtag('consent','default',{
+  analytics_storage:window.PDRConsent.analytics?'granted':'denied',
+  ad_storage:'denied',
+  ad_user_data:'denied',
+  ad_personalization:'denied'
+});
+window.gtag('js',new Date());
+window.gtag('config',GA_MEASUREMENT_ID);
+if(!document.querySelector('script[data-pdr-google-analytics]')){
+  const gaScript=document.createElement('script');
+  gaScript.async=true;
+  gaScript.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(GA_MEASUREMENT_ID);
+  gaScript.dataset.pdrGoogleAnalytics='true';
+  document.head.appendChild(gaScript);
+}
+window.addEventListener('pdrconsentchange',event=>{
+  window.gtag('consent','update',{
+    analytics_storage:event.detail?.analytics?'granted':'denied'
+  });
+});
+
 const banner=document.createElement('section');
 banner.className='consent-banner';banner.setAttribute('role','dialog');banner.setAttribute('aria-label','Çerez tercihleri');
-banner.innerHTML='<h2>Gizlilik tercihlerin</h2><p>PDR Kampüs, oturum ve temel özellikler için gerekli tarayıcı depolamasını kullanır. Analitik teknolojiler yalnızca izin verirsen çalıştırılır. Şu anda reklam/pazarlama çerezi kullanılmıyor. <a href="/cerez-politikasi.html">Ayrıntılar</a></p><div class="consent-actions"><button type="button" data-consent="necessary">Yalnızca gerekli</button><button type="button" data-consent="manage">Tercihleri yönet</button><button type="button" class="primary" data-consent="all">Tümünü kabul et</button></div>';
+banner.innerHTML='<h2>Gizlilik tercihlerin</h2><p>PDR Kampüs, oturum ve temel özellikler için gerekli tarayıcı depolamasını kullanır. Google Analytics yalnızca analitik izni verirsen ölçüm depolamasını etkinleştirir. Reklam/pazarlama çerezi kullanılmıyor. <a href="/cerez-politikasi.html">Ayrıntılar</a></p><div class="consent-actions"><button type="button" data-consent="necessary">Yalnızca gerekli</button><button type="button" data-consent="manage">Tercihleri yönet</button><button type="button" class="primary" data-consent="all">Tümünü kabul et</button></div>';
 document.body.appendChild(banner);
 
 const modal=document.createElement('div');modal.className='consent-modal';modal.hidden=true;
-modal.innerHTML='<div class="consent-panel" role="dialog" aria-modal="true" aria-labelledby="consentTitle"><h2 id="consentTitle">Çerez ve depolama tercihleri</h2><p>Tercihini istediğin zaman değiştirebilirsin.</p><div class="consent-row"><div><strong>Zorunlu</strong><small>Oturum, güvenlik ve tercih kaydı gibi temel işlevler. Kapatılamaz.</small></div><input class="consent-toggle" type="checkbox" checked disabled aria-label="Zorunlu depolama etkin"></div><div class="consent-row"><div><strong>Analitik</strong><small>Kullanımın toplu ölçümü için isteğe bağlı kategori. Şu anda etkin bir analitik aracı yoktur.</small></div><input id="consentAnalytics" class="consent-toggle" type="checkbox" aria-label="Analitik tercihi"></div><div class="consent-actions"><button type="button" data-consent-close>Kapat</button><button type="button" class="primary" data-consent-save>Tercihi kaydet</button></div></div>';
+modal.innerHTML='<div class="consent-panel" role="dialog" aria-modal="true" aria-labelledby="consentTitle"><h2 id="consentTitle">Çerez ve depolama tercihleri</h2><p>Tercihini istediğin zaman değiştirebilirsin.</p><div class="consent-row"><div><strong>Zorunlu</strong><small>Oturum, güvenlik ve tercih kaydı gibi temel işlevler. Kapatılamaz.</small></div><input class="consent-toggle" type="checkbox" checked disabled aria-label="Zorunlu depolama etkin"></div><div class="consent-row"><div><strong>Analitik</strong><small>Kullanımın toplu ölçümü için Google Analytics. Yalnızca izin verdiğinde analitik depolaması etkinleşir.</small></div><input id="consentAnalytics" class="consent-toggle" type="checkbox" aria-label="Analitik tercihi"></div><div class="consent-actions"><button type="button" data-consent-close>Kapat</button><button type="button" class="primary" data-consent-save>Tercihi kaydet</button></div></div>';
 document.body.appendChild(modal);
 
 let consentOpener=null;
