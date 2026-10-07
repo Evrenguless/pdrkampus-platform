@@ -1241,7 +1241,7 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "d77c61a991e0131130f25c9f234cc1264845e674094ab109c229104301ec91ee",
+      "reviewed_sha256": "37e2bb57cde63ae3aba045114bb341283ead88a08c35c4f237876e0d0d39cabf",
       "reason": "Reviewed merged main sitemap retains all new resources and recruitment URLs"
     },
     "topluluk.html": {
