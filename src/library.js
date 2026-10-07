@@ -2,6 +2,7 @@ import { resourceAccess } from './resource-access.js';
 import {groupVisibleResources} from './resource-groups.js';
 import {readLibraryUrl,writeLibraryUrl} from './library-url-state.js';
 import { libraryDetailLinks } from './library-detail-links.js';
+import { resourcePageLinks } from './resource-page-links.js';
 import { mergeCollectedResources } from './collected-resources.js';
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,authConfigured} from './auth-config.js?v=20260925-2';
 import {getCuratedResources} from './curated.js?v=20260926-1';
@@ -56,6 +57,7 @@ function score(item,query,parsed){
  if(!query)return 1;
  if(!matchGrade(item,parsed))return 0;
  const title=normalize(item.title);
+ if(title===normalize(query))return 100;
  const hay=normalize([item.title,item.type,item.topic,item.area,item.source,item.level,item.code,item.location].join(' '));
  const words=parsed.words.filter(word=>!['meb','resmi','kaynak','belge'].includes(word));
  const directTerms=(parsed.topic?.resourceTerms||parsed.topic?.terms||[]).map(normalize);
@@ -77,7 +79,7 @@ function score(item,query,parsed){
  return 0;
 }
 function card(item){
- const detailPath=libraryDetailLinks[item.id]||item.pagePath;
+ const detailPath=libraryDetailLinks[item.id]||resourcePageLinks[item.id]||item.pagePath;
  const origin=item.origin==='member'?'Meslektaş paylaşımı':'Resmî kaynak';
  const subtitle=[item.area,item.topic,item.level==='Belirtilmiyor'?'Kademe belirtilmiyor':item.level].filter(Boolean).join(' · ');
  const access=resourceAccess(item);
