@@ -16,7 +16,7 @@
   "max_pages": 400,
   "max_depth": 2,
   "max_file_checks": 400,
-  "known_file_checks": 50,
+  "known_file_checks": 10,
   "max_file_bytes": 15728640,
   "max_candidates": 25000,
   "max_seconds": 1200,
@@ -112,5 +112,7 @@
     ]
   },
   "page_workers": 8,
-  "document_workers": 4
+  "document_workers": 4,
+  "discovery_fraction": 0.25,
+  "original_index_fraction": 0.35
 }

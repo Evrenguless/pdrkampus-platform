@@ -46,3 +46,5 @@ python -m unittest discover -s scripts -p 'test_*resource*.py'
 Toplama komutu yalnız proje dışına çıktı yazar. Yayın komutu yalnız ek katalog, kendine ait yeni kaynak sayfaları, sitemap'in eklenen adresleri ve bunun koruma özetini yazar. Hesaplamalar, özgün veri kümeleri, auth, RLS ve Supabase kayıtlarına yazım yoktur. Kaynak metni HTML içinde kaçışlanır; CSV formül metni güvenli metne dönüştürülür.
 
 GitHub belgeleri: [zamanlı işler](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule), [Pages yayın isteği](https://docs.github.com/en/rest/pages/pages#request-a-github-pages-build).
+
+Tarama süresinin en fazla %25’i kaynak sayfalarının keşfine, ilk %35’ine kadar olan bölüm mevcut dosyaların ek hash indeksine ayrılır. Kalan süre kontrol kuyruğundaki belgeler içindir; mevcut katalog her turda en fazla 10 ek dosyayla indekslenir. Böylece büyüyen kuyruk yayın kontrollerinden önce tüm süreyi tüketmez.

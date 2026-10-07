@@ -196,7 +196,7 @@ def parallel_pages(queue, visited, config, start, fetch):
         try: return page, depth, fetch(page, 2000000), None
         except Exception as error: return page, depth, None, error
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        while queue and len(visited) < config['max_pages'] and time.monotonic()-start < config['max_seconds']*.55:
+        while queue and len(visited) < config['max_pages'] and time.monotonic()-start < config['max_seconds']*config.get('discovery_fraction', .25):
             batch = []
             while queue and len(batch) < workers and len(visited) < config['max_pages']:
                 page, depth = queue.popleft()
@@ -294,7 +294,7 @@ def collect(config, catalogue, previous, fetch, now=None):
     known_cursor = previous.get('known_cursor', 0) % max(1, len(originals))
     overrides = json.loads((ROOT/'seo/link-overrides.json').read_text())['entries'] if (ROOT/'seo/link-overrides.json').exists() else {}
     for i in range(min(config.get('known_file_checks', 0), len(originals))):
-        if time.monotonic() - start >= config['max_seconds'] * .75: break
+        if time.monotonic() - start >= config['max_seconds'] * config.get('original_index_fraction', .35): break
         url, original = originals[(known_cursor+i) % len(originals)]
         if known_hashes.get(url, {}).get('inspection_version') == INSPECTION_VERSION: continue
         entry = overrides.get(original['file'], {})
