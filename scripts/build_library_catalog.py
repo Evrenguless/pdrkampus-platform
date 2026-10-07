@@ -37,6 +37,13 @@ for item in selected:
 reviewed_links = {x['id']: '/kaynak-detay/'+slug(x['id'])+'/' for x in reviewed}
 # Reuse a published page only when it links to this exact source file.
 published_by_file = {unquote(x['file']): reviewed_links[x['id']] for x in reviewed}
+# Retain the published exact-file route before inspecting legacy related links.
+previous_path = ROOT/'src/resource-page-links.js'
+previous_links = json.loads(re.search(r'=\s*(\{.*\})\s*;', previous_path.read_text(), re.S).group(1)) if previous_path.exists() else {}
+for item in selected:
+    previous_route = previous_links.get(item['id'])
+    if previous_route and (ROOT/(previous_route.lstrip('/')+'index.html')).exists():
+        published_by_file.setdefault(unquote(item['file']), previous_route)
 for existing in sorted((ROOT/'kaynak').glob('*/index.html')):
     source = existing.read_text()
     route = '/' + str(existing.parent.relative_to(ROOT)) + '/'
@@ -127,6 +134,11 @@ for path in outputs:
 root[:] = sorted(root, key=lambda entry: entry.find('{'+ns+'}loc').text)
 ET.indent(tree,space='  ')
 outputs['sitemap.xml'] = '<?xml version="1.0" encoding="UTF-8"?>\n'+ET.tostring(root,encoding='unicode')+'\n'
+from resource_design import decorate
+for key in list(outputs):
+    if not key.endswith('/index.html'): continue
+    row = next((x for x in selected if links[x['id']].lstrip('/')+'index.html'==key), None)
+    outputs[key] = decorate(ROOT, outputs[key], row)
 check = '--check' in sys.argv
 for path,content in outputs.items():
     dest=ROOT/path

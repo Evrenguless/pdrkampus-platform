@@ -249,8 +249,8 @@
     },
     "scripts/build_library_catalog.py": {
       "baseline_sha256": "70afdfe2a3f3d9f1f2db2770fe44d28abde79b939b4acf2b298de2c133608425",
-      "reviewed_sha256": "9d86f8114afb7fe0922a6bea5a921fe783720383d957d93c4cb6f2e6a83133fb",
-      "reason": "Source-preserving resource detail pages and exact-file matching; original catalogue and calculation data preserved"
+      "reviewed_sha256": "edb77bad4fc55bdb009978ec940307d6f9816efd39783be9ca7b0c2bc98dc3ee",
+      "reason": "User-approved resource design and official preview navigation; original data and calculation logic preserved"
     },
     "scripts/check_links.py": {
       "baseline_sha256": "380fb46f02b6e82b5f5df97ce322d7a69a2fa4ebcd147afd541880b5f2271125",
@@ -259,8 +259,8 @@
     },
     "src/library.js": {
       "baseline_sha256": "18ef87251a4b0ce7232d07cca82ad94f59741ace9109feff8844eb7b6254fb1e",
-      "reviewed_sha256": "cb9cfe72913fb4e06660be65674e0c3cd4b1ac216ced59f31d2ac5922fb17274",
-      "reason": "Source-preserving resource detail pages and exact-file matching; original catalogue and calculation data preserved"
+      "reviewed_sha256": "6189888d69839d50d416c893da9562319d568e09431fecb3b7c1d27b9d4b6954",
+      "reason": "User-approved resource design and official preview navigation; original data and calculation logic preserved"
     },
     "tests/catalog.mjs": {
       "baseline_sha256": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
