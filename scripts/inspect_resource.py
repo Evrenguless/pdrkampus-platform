@@ -12,7 +12,7 @@ import tempfile
 import difflib
 import xml.etree.ElementTree as ET
 import zipfile
-from collect_resources import ROOT, classify, fold, INSPECTION_VERSION
+from collect_resources import ROOT, classify, fold, INSPECTION_VERSION, source_title
 
 
 def ocr(path):
@@ -92,6 +92,7 @@ def has_identity(text):
 
 
 def assess(text, title, ext, config):
+    title = source_title(title, title + '.' + ext)
     if len(title.split()) < 2:
         source_key = re.sub(r'[^a-z]', '', fold(title))
         for line in text.splitlines()[:20]:
@@ -117,6 +118,8 @@ def assess(text, title, ext, config):
     if not topics: flags.append('topic_not_supported_by_document')
     if kind == 'Belirtilmiyor': flags.append('material_type_unclear')
     if len(title.split()) < 2 or len(title) < 8 or len(title) > 180: flags.append('title_requires_review')
+    if fold(title) in ('veli brosuru', 'ogrenci brosuru', 'rehberlik sunumu', 'rehberlik formu'): flags.append('title_requires_topic_context')
+    if re.search(r'\b(?:oyrenci|eyitim|saylykly|kylavuz)', fold(title)): flags.append('filename_character_corruption')
     # Do not assert a school stage unless source metadata AND document agree.
     if source['levels'] and not levels: flags.append('school_stage_conflict')
     return {'version': INSPECTION_VERSION, 'eligible': not flags, 'title': title, 'review_reasons': flags, 'text_sha256': hashlib.sha256(' '.join(text.split()).encode()).hexdigest(), 'text_characters': len(text), 'topics': topics, 'levels': levels, 'material_type': kind, 'method': 'full_readable_document_text_and_source_metadata', 'personal_data_stored': False}

@@ -21,7 +21,7 @@ from urllib.robotparser import RobotFileParser
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-INSPECTION_VERSION = 2
+INSPECTION_VERSION = 3
 EXTENSIONS = {'pdf', 'doc', 'docx', 'ppt', 'pptx', 'xls', 'xlsx', 'png', 'jpg', 'jpeg', 'webp'}
 
 
@@ -64,10 +64,12 @@ def resource_link(url, anchor):
 
 
 def source_title(anchor, filename):
+    anchor = re.sub(r'\s+(?:için\s+)?tıklayınız\s*[.!]*\s*$', '', anchor, flags=re.I).strip()
+    anchor = re.sub(r'^\d{8}[_ -]*', '', anchor).strip()
     generic = re.sub(r'[^a-z ]', '', fold(anchor)).strip()
     if len(anchor) >= 5 and '/' not in anchor and generic not in ('indir', 'tiklayiniz', 'dosya', 'buraya tiklayiniz', 'buradan indirebilirsiniz', 'tiklayin'):
         return anchor[:240]
-    name = re.sub(r'^(?:[a-fA-F0-9]{8,}|\d{6,})[_ -]+', '', filename.rsplit('.', 1)[0])
+    name = re.sub(r'^(?:[a-fA-F0-9]{8,}[_ -]+|\d{8}[_ -]*)', '', filename.rsplit('.', 1)[0])
     return re.sub(r'[_-]+', ' ', name)[:240]
 
 

@@ -83,6 +83,10 @@ jobs:
           PY
       - name: Collect public learning resources into the review queue
         run: python scripts/collect_resources.py --previous "$RUNNER_TEMP/collector-previous.json" --output "$RUNNER_TEMP/official-resource-review"
+      - name: Include resources published during this scan
+        run: |
+          git fetch origin main
+          git merge --ff-only origin/main
       - name: Add only resources passing document and privacy checks
         run: python scripts/publish_collected_resources.py --state "$RUNNER_TEMP/official-resource-review/state.json" --apply
       - name: Recheck protection and supplementary catalogue

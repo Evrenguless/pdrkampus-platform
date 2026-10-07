@@ -43,6 +43,10 @@ class PublicationTests(unittest.TestCase):
         gate = assess(self.text + 'Adı Soyadı: ................', self.row['title'], 'pdf', self.config)
         self.assertTrue(gate['eligible'])
 
+    def test_filename_artifacts_and_generic_titles_do_not_get_published(self):
+        self.assertFalse(assess(self.text, 'Veli Broşürü için Tıklayınız !', 'pdf', self.config)['eligible'])
+        self.assertFalse(assess(self.text, '28100753 Ozel EYitim OYrencileri Kılavuzu', 'pdf', self.config)['eligible'])
+
     def test_unreadable_or_conflicting_metadata_stays_in_review(self):
         self.assertFalse(assess('', self.row['title'], 'pdf', self.config)['eligible'])
         self.assertFalse(assess('Kariyer seçimi ve meslekler ' * 12, self.row['title'], 'pdf', self.config)['eligible'])
