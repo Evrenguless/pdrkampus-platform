@@ -79,6 +79,14 @@ if pilot_path.exists():
         if key not in outputs:
             raise ValueError('Reviewed pilot route absent from catalog: ' + key)
         outputs[key] = render(ROOT, config, proposal, source=outputs[key])
+from enrich_seo_content import enrich_schema,resource_context
+resource_lookup={item['id']:item for item in resources}
+for key in list(outputs):
+    if not key.endswith('/index.html'):continue
+    resource_id=key.split('/')[1] if key.startswith('kaynak-detay/') else None
+    if resource_id in resource_lookup:
+        outputs[key]=resource_context(outputs[key],resource_lookup[resource_id],resources)
+    outputs[key]=enrich_schema(outputs[key],BASE+'/'+key[:-10])
 outputs['src/resource-access-data.js'] = 'export const resourceAccessEntries = '+json.dumps(overrides,ensure_ascii=False,indent=2)+';\n'
 outputs['src/library-detail-links.js'] = 'export const libraryDetailLinks = '+json.dumps(links,ensure_ascii=False,indent=2)+';\n'
 ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'

@@ -1,0 +1,27 @@
+name: Public Analysis Data Discovery
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/discover_public_analysis.py']
+permissions:
+  contents: read
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Evrenguless/pdrkampus
+          path: analysis-source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read explicitly public aggregate data only
+        run: python scripts/discover_public_analysis.py --config analysis-source/assets/js/02-config.js --output "$RUNNER_TEMP/public-analysis-discovery"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-analysis-discovery-review
+          path: ${{ runner.temp }}/public-analysis-discovery
