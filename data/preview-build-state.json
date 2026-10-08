@@ -762,5 +762,33 @@
   "kayseri-sinir-lise-etkinlik-seti-2026": {
     "retryAfter": 1791541735,
     "errorType": "URLError"
+  },
+  "meb-meslek-toplum-aile-selamlasma-etkinligi-2025": {
+    "retryAfter": 1791542187,
+    "errorType": "HTTPError"
+  },
+  "mardin-sinir-ilkokul-ogretmen-sunum-2026": {
+    "retryAfter": 1791542207,
+    "errorType": "ValueError"
+  },
+  "meb-74": {
+    "retryAfter": 1791542227,
+    "errorType": "ValueError"
+  },
+  "tusba-2025-tutun-bagimliliginda-bdt": {
+    "retryAfter": 1791542233,
+    "errorType": "URLError"
+  },
+  "collected-4bd848976776f1dcef562d31": {
+    "retryAfter": 1791542236,
+    "errorType": "URLError"
+  },
+  "susehri-yks-moduler-pano-2026": {
+    "retryAfter": 1791542265,
+    "errorType": "URLError"
+  },
+  "cizre-verimli-calisma-zaman-yonetimi-ortaokul-2026": {
+    "retryAfter": 1791542320,
+    "errorType": "ValueError"
   }
 }
