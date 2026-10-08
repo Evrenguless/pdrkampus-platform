@@ -460,10 +460,10 @@
       "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
     },
     "index.html": {
-      "baseline_sha256": "e8f63bf5fce45396462acdab5b9d35dfd7ad1e4f7ff6f001252ed304de476868",
-      "reviewed_sha256": "98811b8f7aea1bcfe63f98f4759f13fac31753ae7f78a05ba38a7a09554c48d4",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "c14534c3c3121324d43d441030bb86cdd646279de19a1b3cb6104e26c0a78c26"
+      "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
+      "reviewed_sha256": "01431053fcbbc199dab2c8a72236ad1b0e6ebe7f6b9692fb4d5fcac40b41ee1e",
+      "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b",
+      "reason": "User-requested home and library visual refresh; original data, previews, file access and calculation modules preserved"
     },
     "kariyer/kariyer-gelisimi-ortaokul-lise/index.html": {
       "baseline_sha256": "29ae161969be36b3486edb20e6ae86963ca5c8a1e45af5f53e9875dae2dd474d",
@@ -821,9 +821,9 @@
     },
     "kutuphane.html": {
       "baseline_sha256": "423c4fe55483a69113a61d2fc7523ffc17d59e79b2569f967901aad15fedee24",
-      "reviewed_sha256": "c6d518dc1b563d8fe0f7559175680c54ad9b130f1ff75f4f337efcb2d7ee31cb",
-      "reason": "User-requested actual document previews and navigation/footer color corrections; original records preserved",
-      "runtime_sha256": "342453a4913a35b746c50cd38318658a602a592eb928ab445f51a28865ba0b61"
+      "reviewed_sha256": "1d20306fc0d18f97e683822fc44a351276c424d9b24807022dc4975d6f038a9d",
+      "runtime_sha256": "24fcea6d2340d7f935961ef90cada5ab7eaa33a1103172c359a13bdce70116c9",
+      "reason": "User-requested home and library visual refresh; original data, previews, file access and calculation modules preserved"
     },
     "kvkk-aydinlatma.html": {
       "baseline_sha256": "0a2a484dbfdd0dda88ff5725ac30b57743d71ad6e971dd932a9e22197dda82f1",

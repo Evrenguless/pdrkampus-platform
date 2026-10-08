@@ -33,3 +33,27 @@ body[data-resource-design]{background:#f8faff;color:#102344;font-family:Manrope,
 [data-resource-design] .library-contribute a{background:#176c50;color:#fff;border:1px solid #176c50;border-radius:8px;padding:10px 16px;text-decoration:none}
 [data-resource-design] .library-contribute a:hover{background:#10543e;color:#fff}
 [data-resource-design] .campus-footer p,[data-resource-design] .campus-footer-bottom,[data-resource-design] .campus-footer button{color:#d6e9df}
+
+/* Match document detail pages to the refreshed library without changing the viewer. */
+body[data-resource-design]:not([data-visual-refresh]){background:#f8fbfe;--accent:#007f68}
+[data-resource-design] .resource-crumbs a{color:#007f68}
+[data-resource-design] .resource-badges span{border-radius:7px;padding:7px 11px}
+[data-resource-design] .resource-badges span:nth-child(2){background:#e1f6eb;color:#006b57}
+[data-resource-design] .resource-badges span:nth-child(3){background:#fff3d7;color:#79601c}
+[data-resource-design] .resource-viewer{border:1px solid #dce7ee;border-radius:16px;box-shadow:0 8px 28px #153e540a}
+[data-resource-design] .resource-viewer-head{background:#fff;padding:16px 18px;color:#102344;border-bottom-color:#e3edf1}
+[data-resource-design] .resource-viewer-head strong:before{content:'▤';display:inline-block;margin-right:8px;color:#007f68}
+[data-resource-design] .resource-preview{background:#edf3f7}
+[data-resource-design] .resource-preview-controls{background:#123747;padding:12px 16px;gap:9px}
+[data-resource-design] .resource-preview-controls button{min-height:34px;padding:6px 11px;border-radius:7px;font-weight:700}
+[data-resource-design] .resource-preview-controls button:hover:not(:disabled){background:#245363}
+[data-resource-design] .resource-sheet-tabs button[aria-selected=true]{background:#dff6ed;color:#006b57}
+[data-resource-design] .resource-infobox{border-color:#dce7ee;border-radius:16px;box-shadow:0 6px 22px #153e5406}
+[data-resource-design] .resource-infobox a.resource-download{background:#007f68;min-height:46px;box-shadow:0 4px 12px #007f681a}
+[data-resource-design] .resource-infobox a.resource-download:hover{background:#006b57}
+[data-resource-design] .resource-source-link,[data-resource-design] .resource-tip a{color:#007f68}
+[data-resource-design] .resource-tip{background:#eaf8f0;border:1px solid #d4eadd;border-radius:14px;color:#526480}
+[data-resource-design] .resource-main details{border-color:#dce7ee;border-radius:12px}
+[data-resource-design] .catalog-pagination a[aria-current]{background:#007f68;color:#fff;border-color:#007f68}
+[data-resource-design] .catalog-pagination a{color:#007f68}
+@media(max-width:720px){[data-resource-design] .resource-viewer-head{padding:12px 14px}[data-resource-design] .resource-preview-controls{padding:10px 12px}[data-resource-design] .resource-preview-controls button{min-height:36px}}
