@@ -998,5 +998,9 @@
   "meb-44": {
     "retryAfter": 1791543387,
     "errorType": "TimeoutError"
+  },
+  "golcuk-siddeti-onleme-veli-sunum-2024": {
+    "retryAfter": 1791543538,
+    "errorType": "URLError"
   }
 }
