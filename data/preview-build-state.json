@@ -594,5 +594,85 @@
   "riba-ilkokul-ogretmen-2026": {
     "retryAfter": 1791541094,
     "errorType": "URLError"
+  },
+  "cizre-sinir-koyma-okuloncesi-ilkokul-ogretmen-brosur-2026": {
+    "retryAfter": 1791541188,
+    "errorType": "URLError"
+  },
+  "osmangazi-selamlasma-yillik-plan-ortaokul-2026": {
+    "retryAfter": 1791541233,
+    "errorType": "URLError"
+  },
+  "osmangazi-selamlasma-yillik-plan-ilkokul-2026": {
+    "retryAfter": 1791541240,
+    "errorType": "URLError"
+  },
+  "cizre-sinir-koyma-okuloncesi-ilkokul-sunum-2026": {
+    "retryAfter": 1791541292,
+    "errorType": "ValueError"
+  },
+  "collected-48e0cb617e6953d735ec30c7": {
+    "retryAfter": 1791541303,
+    "errorType": "URLError"
+  },
+  "collected-06d281898061032771a9de24": {
+    "retryAfter": 1791541336,
+    "errorType": "URLError"
+  },
+  "collected-0263596e3813712c00c2e9ef": {
+    "retryAfter": 1791541339,
+    "errorType": "URLError"
+  },
+  "cizre-selamlasma-okuloncesi-ilkokul-sunum-2026": {
+    "retryAfter": 1791541343,
+    "errorType": "ValueError"
+  },
+  "rabiaarikan-sosyal-beceri-veli-sunum-2025": {
+    "retryAfter": 1791541351,
+    "errorType": "URLError"
+  },
+  "karaman-sosyal-beceriler-veli-brosur": {
+    "retryAfter": 1791541365,
+    "errorType": "URLError"
+  },
+  "sdb-559": {
+    "retryAfter": 1791541369,
+    "errorType": "ValueError"
+  },
+  "sdb-588": {
+    "retryAfter": 1791541369,
+    "errorType": "ValueError"
+  },
+  "sdb-549": {
+    "retryAfter": 1791541373,
+    "errorType": "ValueError"
+  },
+  "sdb-552": {
+    "retryAfter": 1791541375,
+    "errorType": "ValueError"
+  },
+  "sdb-586": {
+    "retryAfter": 1791541384,
+    "errorType": "TimeoutError"
+  },
+  "sdb-575": {
+    "retryAfter": 1791541386,
+    "errorType": "ValueError"
+  },
+  "sdb-574": {
+    "retryAfter": 1791541387,
+    "errorType": "ValueError"
+  },
+  "sdb-577": {
+    "retryAfter": 1791541389,
+    "errorType": "ValueError"
+  },
+  "sdb-570": {
+    "retryAfter": 1791541394,
+    "errorType": "ValueError"
+  },
+  "dogubayazit-sosyal-beceriler-veli-sunum-2025": {
+    "retryAfter": 1791541405,
+    "errorType": "ValueError"
   }
 }
