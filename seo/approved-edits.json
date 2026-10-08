@@ -21,7 +21,7 @@
     },
     "kaynak-detay/veli-brosur/index.html": {
       "baseline_sha256": "bad056e335d441c8ddc26a4388c5b8a6084ab873511adbb4dc75df182b703fc4",
-      "reviewed_sha256": "3d3f1b32b2c6fa9969e06e2f986d2cde52abfcef28173cbfedf5df7ecc76dcd8",
+      "reviewed_sha256": "77a7120d00f67ae9927446e98d0ea1dae4a20a5d8dfb0718596b5e7a94bdd5a2",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "af6914456b2ea81ec5d555088cf8470a2facabcc145f81e192eb7ddd03af2e0a"
     },
@@ -45,37 +45,37 @@
     },
     "kutuphane/katalog/sayfa/10/index.html": {
       "baseline_sha256": "69876336df657ccf09067ee98b3b4be404cfa98350b3709e6d77a13658b08d77",
-      "reviewed_sha256": "cd50d7e491e14926df4489fee77866ab6d4a0d3b35a3c8cf4f48199c37031d96",
+      "reviewed_sha256": "57d53911f26e0a60f1893214b98388d33cb0f5caed13a9f488933a19509371db",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/11/index.html": {
       "baseline_sha256": "f6e67682f8c00dcf7598feadce6a3dd8e9d15f128304ccf297c98307157811ef",
-      "reviewed_sha256": "c736620f77c83b21f246d06367c66e53120cc3e0a2ff9418415c871633d585ad",
+      "reviewed_sha256": "3ef2bff820b6eb4299b2a12ad1add1ce39481c26478fea3dc1878127306eb8c7",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/12/index.html": {
       "baseline_sha256": "efefaa3985141e27f533314b27e665f4519a1205be447b64bfc63c789401d0bc",
-      "reviewed_sha256": "a5c47f22f43c30bf95c5bc7206f0341cc72876665946695529149c7f378ee3c6",
+      "reviewed_sha256": "f5d3d22e0d072cc434aa09b9162b2812c536b966e12a67b04354698b36df031f",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/13/index.html": {
       "baseline_sha256": "3286b798c0dac8ad91e9be83d4ae2b7ec0afa1dc8a3cd05aca28412f4ba7e35a",
-      "reviewed_sha256": "42bbce2e8dd8cd44cd29590afbcba6049cff7c6e470aafbda5cad0dd33d188c6",
+      "reviewed_sha256": "79a6c4ec63d68af7c2452bab06ca8151d31a574509619c8e16b5573778c7b25d",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/14/index.html": {
       "baseline_sha256": "8f1d06ab67e11bf926549c4d38f9b359a2ec3c13bd29a55294b8d50a53a2fff7",
-      "reviewed_sha256": "0e2b6164b63a42a322f8afa7981dd7c82a752f0fce803d8353bbbc853416c4ab",
+      "reviewed_sha256": "ae110387342a89f97b4dc0ae1595b934481ad6a4ec1ebedb6b0748d20e142bc2",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/15/index.html": {
       "baseline_sha256": "0b6de5fe2c85215ad1ab792adabd5614a3d8c788571b08cad99e8b24f80407a0",
-      "reviewed_sha256": "bbc7ef6b0c22304528c40bb9616e78e9dba7daff84810669099ee6a31b0d15b1",
+      "reviewed_sha256": "a367636ea1f07d6fd227eda7e189106f14c1e7f4d1ad97d408b452885839e813",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -87,7 +87,7 @@
     },
     "kutuphane/katalog/sayfa/17/index.html": {
       "baseline_sha256": "a327f00f93a2ab6522df96c7f29857ca013a9e3d0ec3330e3d45143999e69c84",
-      "reviewed_sha256": "a99dbd0165bf1813cc45d908240f92cf4a035f4ad67c8126e7d514ef09fb3675",
+      "reviewed_sha256": "60e95aa00fed2fbf815fe7d75857fc2fbaf9139826f68612ac3e63071a6fdeda",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -99,7 +99,7 @@
     },
     "kutuphane/katalog/sayfa/19/index.html": {
       "baseline_sha256": "18fafb932625d2d17e75440788c980d2eb51dc3cda5bae2f97614c191b884404",
-      "reviewed_sha256": "3300674842a3d4151a2d6e12adb880a4179e6489bc340c6cc49210b71ddce4fd",
+      "reviewed_sha256": "0dcbd2d6e03a2d1c6e8a9407e05533dd0f1b1dc942de47b8dbce52ae4bd849b5",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -111,97 +111,97 @@
     },
     "kutuphane/katalog/sayfa/20/index.html": {
       "baseline_sha256": "6b7f1dea645df7b99a42fd02d79f05d3ccd3d2fb3ec45785ae3a8ffa21ee9ebe",
-      "reviewed_sha256": "5817652c1f39a30f5455281bff9564f64401bda62c47ca1cdda6b2d4990b6447",
+      "reviewed_sha256": "0cedb8bc34c7c6ee35fecc32b369f3428cb540be3344c54c3f14b6c05c3dc469",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/21/index.html": {
       "baseline_sha256": "a67a8b916b5b954d4c7dce118ef0acde20b74bc18fa4cc9ed9709310042e6857",
-      "reviewed_sha256": "040666aa8b73461a2d72f704d596365b83500dcadf05884dc764b22bbcd748d3",
+      "reviewed_sha256": "f670d757dfb530c0987d3780fcffb7264edfbc52fd5708fa5a9590a12ecf6794",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/22/index.html": {
       "baseline_sha256": "6442a121db718e330eba0ad21ad3f9f1f55caae1596d962de2aec5b8e920468b",
-      "reviewed_sha256": "17c456b2b068ec2e93f2b612a97d4eb214afccbb56816113d9fbec3bf2d08f36",
+      "reviewed_sha256": "5f13c09951ecb40db5453a36cd9d09e1db442273c630a51db8a525a1ea7109e2",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/23/index.html": {
       "baseline_sha256": "06f5976555f3597c726c97d5eddebd72e7bbabfa90a495c40b9bbeaf16a6535d",
-      "reviewed_sha256": "31cb4cdee5f5681e506913bc8735018d18c28478c001800ac982b33b3313908d",
+      "reviewed_sha256": "01703209a997c90e3269ae2f3ffa3bf68f9cdc34400624f1eced92000ba03c1d",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/24/index.html": {
       "baseline_sha256": "918280020a8bc4a449aa10124abaf69cecc79f6d932956d8d9c7ec2945b1f5e1",
-      "reviewed_sha256": "734f8a6dd8ef85a7f6bed9ae5943ce4360131d6d7a4b1588274f5056407afcf0",
+      "reviewed_sha256": "2ac6fb88fca8ee63fdb5d753ef3773d3953fd08f1cf50aa173cc7bf4bfd91a55",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/25/index.html": {
       "baseline_sha256": "d59f5b6c3d84366456e41063fda3159d31e6f9683c5b49465173fc12a15f1fb7",
-      "reviewed_sha256": "63484ff303ca4aa1902e29b28ff9efd8ff9d26e0ee948b74c2af1e4e317f1e6e",
+      "reviewed_sha256": "efbc3da0623dc2537acca63ef6d79a941764eb9e5aded32dbc7c7ca9d552056a",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/26/index.html": {
       "baseline_sha256": "e9a54478a5e6408a56391b1e808d74c2c67b4e6e60b8bcd25c9db297a9d136f2",
-      "reviewed_sha256": "1df20ac8d67e7675565717a57e4bfb09d21b8c140e97c4d8fb94d098f4445b62",
+      "reviewed_sha256": "ddfc125932cd658de7c8d16ed7cf9da8e9133a0432ca7539cb0cc23a0eaae137",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/27/index.html": {
       "baseline_sha256": "41f67c417abe0420d041370a9ca93aa081b39486d67e3523f86f6c8debe5cd88",
-      "reviewed_sha256": "88cf28e2252c2fde0f7e221ba54fe1cbee2088f1303c7c12b466f3ce9182f252",
+      "reviewed_sha256": "746a13dc26fe7a3dbe99648b32fb8f01b09de1cf3a91814310b3d2119b4e2406",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/28/index.html": {
       "baseline_sha256": "de63e0325b070cab00859436b34e25a04733617d90e8a21dbb5b209f5ae31542",
-      "reviewed_sha256": "7055d7b30bfa1a0905e40ccb1438b05ec6837a2de8f3e66672c763f78bac0b4b",
+      "reviewed_sha256": "847b942587ed2f8fd6a0f4a82fa215aab108d11192847ae6390157e1a7822e1b",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/29/index.html": {
       "baseline_sha256": "68bc8390cad8ca852b442698a17b8f162bfa2acd06c2646227243e1684991968",
-      "reviewed_sha256": "282a2b5525be98dd1a60d6da5ba0ec3775960c66b2b940ea3d8deac99fbff91c",
+      "reviewed_sha256": "feb5ae5d5ebf416ffcc52cc3dc5ae69a0970f87c37ef6ad25f832e5dca2f0ce7",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/3/index.html": {
       "baseline_sha256": "ec7576d071a79cf44fa19848820103424eef54117e39e76751186c4baa472b0c",
-      "reviewed_sha256": "17d40b46ef3f96697188686335ecb5766fefc014bd2f59e018be779d2e898607",
+      "reviewed_sha256": "1f6693ffcc75d7c6801abf5952148c328ffc7a71f4006cf178299a9ce1584106",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/30/index.html": {
       "baseline_sha256": "2732cb8bfd3f11c16e0facd109169d1f802785a6ccabf038cea1079915a67bde",
-      "reviewed_sha256": "982d31f11bdd609fa32f68b2879cd4abd90259465ede86b90fb32ab47902e167",
+      "reviewed_sha256": "11e0ff4f8fcb6cad0086496382b6c54db99b162c876ce18870fdf7d2059e786d",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/31/index.html": {
       "baseline_sha256": "2f2551ad25789d2d65953b381bf079dbb4f1e3ef58bfb5232b62e28ba0533422",
-      "reviewed_sha256": "8c4aa35b13061107a25e108f9783bb0ab9c11cf5caf881bfdb76cbafa85c75da",
+      "reviewed_sha256": "f2f18f6860173bedf5cf959699e9ca83a3fd9c95cd1798e6cd47dacfc3ad9733",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/32/index.html": {
       "baseline_sha256": "ebfea7ce0d87fae9ac58c8e4ff0dd2b18c29913e75d36a5f7c8e735b0cc37fa7",
-      "reviewed_sha256": "f8d3d403a0dd85af85913df9053f046075755f81fd46ab9f61681c5e531200a9",
+      "reviewed_sha256": "66b2139e9ce2edbe7f79d54425fbd8ae3dc2cb35c9a81295c09b8e572d3d2646",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/33/index.html": {
       "baseline_sha256": "c14a369c70a92fa67271a774d5461453389b48279f845fb2566fece97078361d",
-      "reviewed_sha256": "e16da9d5521bc35fe0d92af7b9bb166783dfdc57a7c8769a6140cfdc1e22d4d7",
+      "reviewed_sha256": "d0de142a95de1dde095f413ec822d3d3f974554d7ab6e0cafb9fa889789bf81c",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/34/index.html": {
       "baseline_sha256": "d893499614c1f112e016cfc9c0258b857160ddb8867942edf4ca23bdbb5cfb88",
-      "reviewed_sha256": "f9fc18d900208ed42a26ab7cca52528b07b1864727b83e5daa0dd5c59ccd7c2e",
+      "reviewed_sha256": "2e908fa9ee1b7fa906a408fadc2e6cedb9a843047920b556205311a34e20fc57",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -213,13 +213,13 @@
     },
     "kutuphane/katalog/sayfa/4/index.html": {
       "baseline_sha256": "2843193dccb536208a468f1265fb152582f6cf91941abc21e59db07a1608ddad",
-      "reviewed_sha256": "7f90dfe91a3fc5aaed6fce216c6db5612c7c105b82d06ddf452396985f6d2dd7",
+      "reviewed_sha256": "423bbfaecf9a4835f6c9f1ca6f1c58aa2dbe40472dd4c61d8f3def7468ab4334",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/5/index.html": {
       "baseline_sha256": "32455d0c4b7c372ad71fa95c2fe86fa713f420fe71b8edf8d03a2e3b4b705d04",
-      "reviewed_sha256": "a6aec9915e3bd163779852eb839ec44e94a19aaa2d9d56063aef159098f91e5d",
+      "reviewed_sha256": "ae3c647f0b895854476f1a8ecc8c7ae30819df99c6146a0d67657686620a923b",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -231,19 +231,19 @@
     },
     "kutuphane/katalog/sayfa/7/index.html": {
       "baseline_sha256": "c553a4c436c52ee682252b2ffe9976851c6e7fc783e14508c926eddf94c89972",
-      "reviewed_sha256": "fbf9ff09f0903c9537c661199306bcc65d29f1e75dda20b49d8352c513734d9e",
+      "reviewed_sha256": "037c7f1d7ee198fa9711263e26a0098e6033635a3197598107cac0818b95e293",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/8/index.html": {
       "baseline_sha256": "0436b5fd938c34e4c09336fea264b947e893f9e3fba771add2039ec9cf5bbcb0",
-      "reviewed_sha256": "23a1fbccf8da71e14cb68ffa1a33a138e246464662349759aaf764bf8df006c1",
+      "reviewed_sha256": "8b6a3c8e78a8d788846f904c10503df837fcf76616c185625ced8bba1b4e012f",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/9/index.html": {
       "baseline_sha256": "45b49246a048b822ea1eb68d438f1d3428efe7fbb2392f1ed47af978651df8eb",
-      "reviewed_sha256": "5696b699c7dadb3f9796e045feb7de8337e4d657892e2485bdf6da56d94559a5",
+      "reviewed_sha256": "c5321263e0463afc370b87c870f897835f737c2ebaa7d66b93f676cc6bc65b59",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -647,7 +647,7 @@
     },
     "kaynak-detay/zorbalik-kuramsal/index.html": {
       "baseline_sha256": "6465e948b0b2f15d57fedbb0eaa6b9c442f3aa8f6948096221a0e2066abeafdf",
-      "reviewed_sha256": "a8d36b08ba991eda0c8009cd58065c9e865614838e061f6656285b8a8d770e55",
+      "reviewed_sha256": "8896c86cfbfe91ae23e5e6835ea298d40d1a1d001821b0c97086d9621041d8b0",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "9e0599bdb7bff606aac02198ecda149621f374da5771c23fdd7cb6a1f9017b80"
     },

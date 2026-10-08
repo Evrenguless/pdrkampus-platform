@@ -1,407 +1,102 @@
 {
-  "osym-2026-meb-ags-engelli-basvuru-kullanici-kilavuzu": {
-    "retryAfter": 1791500422,
-    "errorType": "TimeoutError"
-  },
-  "tarsus-2026-2027-4sinif-etkinlik": {
-    "retryAfter": 1791500461,
-    "errorType": "TimeoutError"
-  },
-  "tegm-2026-5sinif-veli-sunumu": {
-    "retryAfter": 1791500485,
-    "errorType": "ValueError"
-  },
-  "tegm-2026-1sinif-veli-sunumu": {
-    "retryAfter": 1791500499,
-    "errorType": "ValueError"
-  },
   "karasu-2026-2027-ortaokul-cerceve-plan": {
     "retryAfter": 1791500512,
     "errorType": "URLError"
   },
-  "collected-c73e3cc40338073750915ea3": {
-    "retryAfter": 1791500533,
-    "errorType": "URLError"
-  },
-  "collected-a91049b85061b046fa77512c": {
-    "retryAfter": 1791500540,
-    "errorType": "URLError"
-  },
-  "collected-4734cb4690b27c83b0154bb0": {
-    "retryAfter": 1791500540,
-    "errorType": "URLError"
-  },
-  "mesleki-alan-tercih-dilekce-2026": {
-    "retryAfter": 1791500553,
-    "errorType": "URLError"
-  },
-  "cizre-aile-iletisim-ortaokul-sunum-2026": {
-    "retryAfter": 1791500592,
-    "errorType": "URLError"
-  },
-  "cizre-aile-iletisim-veli-brosur-2026": {
-    "retryAfter": 1791500594,
-    "errorType": "URLError"
-  },
-  "collected-5e6c5a03dc7198de8d00521e": {
-    "retryAfter": 1791514415,
-    "errorType": "URLError"
-  },
-  "aksaray-aile-ici-iletisim-veli-sunumu-2025": {
-    "retryAfter": 1791514415,
-    "errorType": "URLError"
-  },
-  "seyhan-aile-ici-iletisim-veli-semineri-2025": {
-    "retryAfter": 1791514415,
-    "errorType": "URLError"
-  },
-  "tegm-2026-ailemle-okul-yolu-1sinif": {
-    "retryAfter": 1791514420,
-    "errorType": "ValueError"
-  },
-  "ogretmen-brosur": {
-    "retryAfter": 1791514437,
-    "errorType": "ValueError"
-  },
-  "akran-52": {
-    "retryAfter": 1791514439,
-    "errorType": "ValueError"
-  },
-  "atasehir-lise-bilgi-kitapcigi-2026": {
-    "retryAfter": 1791514465,
-    "errorType": "URLError"
-  },
-  "fatih-arkadaslik-iliskileri-2025": {
-    "retryAfter": 1791514465,
-    "errorType": "URLError"
-  },
-  "cizre-atilganlik-etkinlik-kitapcigi-2026": {
-    "retryAfter": 1791514476,
-    "errorType": "URLError"
-  },
-  "cizre-atilganlik-veli-brosur-2026": {
-    "retryAfter": 1791514491,
-    "errorType": "URLError"
-  },
-  "bep-excel-format-2024-esenyurt": {
-    "retryAfter": 1791514498,
-    "errorType": "URLError"
-  },
-  "bep-kilavuz-kitabi-2025": {
-    "retryAfter": 1791514513,
-    "errorType": "URLError"
-  },
-  "cizre-bagimlilikla-mucadele-veli-brosur-2026": {
-    "retryAfter": 1791514525,
-    "errorType": "URLError"
-  },
-  "kiziltepe-basari-pusulasi-pano-2024": {
-    "retryAfter": 1791514531,
-    "errorType": "URLError"
-  },
-  "cizre-atilganlik-okuloncesi-ilkokul-sunum-2026": {
-    "retryAfter": 1791514536,
-    "errorType": "ValueError"
-  },
-  "cankaya-bilincli-teknoloji-veli-2025": {
-    "retryAfter": 1791514561,
-    "errorType": "URLError"
-  },
   "meb-79": {
-    "retryAfter": 1791514571,
-    "errorType": "HTTPError"
-  },
-  "dogubayazit-bilincli-teknoloji-ogretmen-kitapcik-2022": {
-    "retryAfter": 1791514572,
-    "errorType": "URLError"
+    "retryAfter": 1791551713,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "orgm-bilsem-rpd-hizmetleri-kilavuzu-2023": {
-    "retryAfter": 1791514583,
-    "errorType": "HTTPError"
+    "retryAfter": 1791551716,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "nevsehir-ogretmen-bilsem-kitapcigi": {
-    "retryAfter": 1791514584,
-    "errorType": "HTTPError"
+    "retryAfter": 1791551717,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "serdivan-bireyi-tanima-teknikleri-sosyometri": {
-    "retryAfter": 1791514588,
-    "errorType": "PdfStreamError"
-  },
-  "nevsehir-ogretmen-guvenli-internet-etkinlik": {
-    "retryAfter": 1791514591,
-    "errorType": "URLError"
-  },
-  "nusaybin-2025-bireysel-gelisim-raporu": {
-    "retryAfter": 1791514601,
-    "errorType": "URLError"
-  },
-  "cizre-bagimlilik-ortaokul-sunum-2026": {
-    "retryAfter": 1791514606,
-    "errorType": "ValueError"
-  },
-  "cizre-bagimlilik-ilkokul-sunum-2026": {
-    "retryAfter": 1791514609,
-    "errorType": "ValueError"
-  },
-  "orgm-cinsel-istismar-okuloncesi-bireysel-psikoegitim-2025": {
-    "retryAfter": 1791535024,
-    "errorType": "ValueError"
-  },
-  "orgm-cinsel-istismar-ilkokul-bireysel-psikoegitim-2025": {
-    "retryAfter": 1791535030,
-    "errorType": "ValueError"
-  },
-  "collected-7fbf32d98b597a7458c2cb4e": {
-    "retryAfter": 1791535039,
-    "errorType": "URLError"
-  },
-  "collected-af1ebe155ee63ca095b1a9a1": {
-    "retryAfter": 1791535039,
-    "errorType": "URLError"
+    "retryAfter": 1791551722,
+    "errorType": "PdfStreamError",
+    "message": "Stream has ended unexpectedly"
   },
   "meb-73": {
-    "retryAfter": 1791535041,
-    "errorType": "ValueError"
+    "retryAfter": 1791551723,
+    "errorType": "ValueError",
+    "message": "Unable to read workbook: could not read worksheets from /tmp/tmpaareyu31/source.xlsx.\nThis is most probably because the workbook source files contain some invalid XML.\nPlease see the exception for more details."
   },
   "sarimese-devamsizlik-onleme-2021": {
-    "retryAfter": 1791535042,
-    "errorType": "HTTPError"
+    "retryAfter": 1791551723,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "aksu-devamsizlik-sinif-tekrari-onleme-plani-2025-2026": {
-    "retryAfter": 1791535044,
-    "errorType": "HTTPError"
-  },
-  "onikisubat-ram-2026-devamsizlik-nedenleri-calistay": {
-    "retryAfter": 1791535075,
-    "errorType": "URLError"
+    "retryAfter": 1791551735,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "kecioren-dijital-etik-karar-verme-kilavuzu-lise-2026": {
-    "retryAfter": 1791535077,
-    "errorType": "URLError"
-  },
-  "kecioren-ortaokul-dijital-etik-infografik-2026": {
-    "retryAfter": 1791535104,
-    "errorType": "URLError"
-  },
-  "kecioren-dijital-etik-ortaokul-modul3-2026": {
-    "retryAfter": 1791535104,
-    "errorType": "URLError"
+    "retryAfter": 1791551736,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "orgm-dil-konusma-motor-konusma-yutma-2025": {
-    "retryAfter": 1791535111,
-    "errorType": "HTTPError"
+    "retryAfter": 1791551803,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "orgm-dil-konusma-ses-bozukluklari-2025": {
-    "retryAfter": 1791535112,
-    "errorType": "HTTPError"
-  },
-  "orgm-dil-konusma-gelisimsel-dil-bozukluklari-2025": {
-    "retryAfter": 1791535113,
-    "errorType": "ValueError"
-  },
-  "orgm-dil-konusma-konusma-sesi-bozukluklari-2025": {
-    "retryAfter": 1791535117,
-    "errorType": "ValueError"
+    "retryAfter": 1791551803,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "of-disleksi-veli-brosuru-2024": {
-    "retryAfter": 1791535118,
-    "errorType": "HTTPError"
+    "retryAfter": 1791551811,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "of-disleksi-ogretmen-brosuru-2024": {
-    "retryAfter": 1791535119,
-    "errorType": "HTTPError"
-  },
-  "dogubayazit-dehb-veli-brosur-2022": {
-    "retryAfter": 1791535123,
-    "errorType": "URLError"
-  },
-  "akran-48": {
-    "retryAfter": 1791535130,
-    "errorType": "ValueError"
-  },
-  "kapakli-dogal-afet-travmasi-2026": {
-    "retryAfter": 1791535145,
-    "errorType": "URLError"
-  },
-  "kecioren-ilkokul-dogru-olani-seciyorum-etkinlik-2026": {
-    "retryAfter": 1791535145,
-    "errorType": "URLError"
-  },
-  "defne-duygu-duzenleme-brosuru-2025": {
-    "retryAfter": 1791535156,
-    "errorType": "URLError"
+    "retryAfter": 1791551812,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "czarifoglu-2sinif-34-duygu-dusunceler": {
-    "retryAfter": 1791535169,
-    "errorType": "URLError"
-  },
-  "collected-3baaa2a059668305e959210e": {
-    "retryAfter": 1791535173,
-    "errorType": "URLError"
-  },
-  "collected-11be934fbaf2e0d702236f15": {
-    "retryAfter": 1791535173,
-    "errorType": "URLError"
-  },
-  "kaynarca-ergen-iletisim-veli-2026": {
-    "retryAfter": 1791535194,
-    "errorType": "URLError"
+    "retryAfter": 1791551933,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "karaman-ergen-fiziksel-psikososyal-gelisim-2025": {
-    "retryAfter": 1791535200,
-    "errorType": "URLError"
-  },
-  "aksaray-ergenlik-erkek-ogrenciler-2024": {
-    "retryAfter": 1791535200,
-    "errorType": "URLError"
-  },
-  "kahramankazan-2026-dil-konusma-bozukluklari-aile-egitimi": {
-    "retryAfter": 1791535214,
-    "errorType": "ValueError"
-  },
-  "raifazakhafiz-ozduzenlemeli-ogrenme-ergenlik-veli-2025": {
-    "retryAfter": 1791535215,
-    "errorType": "URLError"
+    "retryAfter": 1791551938,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "sidikaavar-aylik-rehberlik-calisma-raporu-2025": {
-    "retryAfter": 1791539364,
-    "errorType": "HTTPError"
-  },
-  "devamsizlik-takip-formu-docx-2025": {
-    "retryAfter": 1791539415,
-    "errorType": "URLError"
+    "retryAfter": 1791551653,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "bahcelievler-erteleme-tukenmislik-bulteni": {
-    "retryAfter": 1791539439,
-    "errorType": "HTTPError"
-  },
-  "esenlik-2026-17": {
-    "retryAfter": 1791539442,
-    "errorType": "ValueError"
-  },
-  "esenlik-2026-24": {
-    "retryAfter": 1791539444,
-    "errorType": "ValueError"
-  },
-  "esenlik-2026-09": {
-    "retryAfter": 1791539446,
-    "errorType": "ValueError"
-  },
-  "cankaya-etik-lise-etkinlik-2026": {
-    "retryAfter": 1791539488,
-    "errorType": "URLError"
-  },
-  "bandirma-dijital-ebeveynlik-sunumu-2026": {
-    "retryAfter": 1791539498,
-    "errorType": "ValueError"
-  },
-  "etik-okuloncesi-etkinlik-2026": {
-    "retryAfter": 1791539515,
-    "errorType": "URLError"
+    "retryAfter": 1791551931,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "kecioren-etik-karar-verme-kilavuzu-ortaokul-2026": {
-    "retryAfter": 1791539587,
-    "errorType": "HTTPError"
+    "retryAfter": 1791551942,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "kecioren-etik-karar-verme-kilavuzu-ilkokul-2026": {
-    "retryAfter": 1791539590,
-    "errorType": "HTTPError"
-  },
-  "susehri-not-tutma-pano-2026": {
-    "retryAfter": 1791539620,
-    "errorType": "URLError"
-  },
-  "kurtulus-etkili-calisma-pptx-2025": {
-    "retryAfter": 1791539624,
-    "errorType": "URLError"
-  },
-  "esenyurt-ram-evde-egitim-rhyk-toplanti": {
-    "retryAfter": 1791539696,
-    "errorType": "URLError"
-  },
-  "orgm-fiziksel-yetersizlik-brakiyal-pleksus-2025": {
-    "retryAfter": 1791539699,
-    "errorType": "ValueError"
-  },
-  "orgm-fiziksel-yetersizlik-kromozom-anomalileri-2025": {
-    "retryAfter": 1791539700,
-    "errorType": "ValueError"
-  },
-  "esenyurt-ram-evde-egitim-ogrenci-ogretmen-bilgileri": {
-    "retryAfter": 1791539702,
-    "errorType": "URLError"
-  },
-  "esenyurt-ram-evde-egitim-ust-yazi": {
-    "retryAfter": 1791539702,
-    "errorType": "URLError"
-  },
-  "orgm-fiziksel-yetersizlik-serebral-palsi-2025": {
-    "retryAfter": 1791539703,
-    "errorType": "ValueError"
-  },
-  "orgm-fiziksel-yetersizlik-tipik-motor-gelisim-2025": {
-    "retryAfter": 1791539706,
-    "errorType": "ValueError"
-  },
-  "orgm-fiziksel-yetersizlik-spina-bifida-2025": {
-    "retryAfter": 1791539707,
-    "errorType": "ValueError"
-  },
-  "orgm-fiziksel-yetersizlik-ortopedik-suregen-2025": {
-    "retryAfter": 1791539709,
-    "errorType": "ValueError"
+    "retryAfter": 1791551942,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "meb-meslek-gorgu-protokol-selamlasma-2025": {
-    "retryAfter": 1791539730,
-    "errorType": "HTTPError"
-  },
-  "urfa-ataturk-2026-genclerde-stres-yonetimi-veli": {
-    "retryAfter": 1791539738,
-    "errorType": "URLError"
-  },
-  "aksaray-ram-gorme-yetersizligi-ogretmen-onerileri": {
-    "retryAfter": 1791539772,
-    "errorType": "URLError"
-  },
-  "kapakli-goc-travmasi-2026": {
-    "retryAfter": 1791539784,
-    "errorType": "URLError"
-  },
-  "besiktas-ram-hastanede-egitim-hizmetleri-kilavuzu": {
-    "retryAfter": 1791539799,
-    "errorType": "URLError"
-  },
-  "cizre-hedef-motivasyon-ortaokul-sunum-2026": {
-    "retryAfter": 1791539802,
-    "errorType": "URLError"
-  },
-  "cizre-hedef-motivasyon-ogretmen-brosur-2026": {
-    "retryAfter": 1791539813,
-    "errorType": "URLError"
-  },
-  "karam-hedef-belirleme-lise-sunum-2025": {
-    "retryAfter": 1791539837,
-    "errorType": "URLError"
-  },
-  "siber-2022-15": {
-    "retryAfter": 1791539853,
-    "errorType": "ValueError"
-  },
-  "afsin-kaynastirma-ogretmen-sorunlari-arastirma-2026": {
-    "retryAfter": 1791539902,
-    "errorType": "URLError"
-  },
-  "urfa-ataturk-2026-kaygini-kontrol-et": {
-    "retryAfter": 1791539902,
-    "errorType": "URLError"
-  },
-  "kecioren-ilkokul-kisisel-etik-afis-2026": {
-    "retryAfter": 1791539919,
-    "errorType": "URLError"
-  },
-  "uyum-604": {
-    "retryAfter": 1791540010,
-    "errorType": "ValueError"
+    "retryAfter": 1791552047,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Not Found"
   },
   "collected-083dafb0553988b6ea889966": {
     "retryAfter": 1791540045,
