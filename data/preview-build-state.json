@@ -262,5 +262,57 @@
   "raifazakhafiz-ozduzenlemeli-ogrenme-ergenlik-veli-2025": {
     "retryAfter": 1791535215,
     "errorType": "URLError"
+  },
+  "sidikaavar-aylik-rehberlik-calisma-raporu-2025": {
+    "retryAfter": 1791539364,
+    "errorType": "HTTPError"
+  },
+  "devamsizlik-takip-formu-docx-2025": {
+    "retryAfter": 1791539415,
+    "errorType": "URLError"
+  },
+  "bahcelievler-erteleme-tukenmislik-bulteni": {
+    "retryAfter": 1791539439,
+    "errorType": "HTTPError"
+  },
+  "esenlik-2026-17": {
+    "retryAfter": 1791539442,
+    "errorType": "ValueError"
+  },
+  "esenlik-2026-24": {
+    "retryAfter": 1791539444,
+    "errorType": "ValueError"
+  },
+  "esenlik-2026-09": {
+    "retryAfter": 1791539446,
+    "errorType": "ValueError"
+  },
+  "cankaya-etik-lise-etkinlik-2026": {
+    "retryAfter": 1791539488,
+    "errorType": "URLError"
+  },
+  "bandirma-dijital-ebeveynlik-sunumu-2026": {
+    "retryAfter": 1791539498,
+    "errorType": "ValueError"
+  },
+  "etik-okuloncesi-etkinlik-2026": {
+    "retryAfter": 1791539515,
+    "errorType": "URLError"
+  },
+  "kecioren-etik-karar-verme-kilavuzu-ortaokul-2026": {
+    "retryAfter": 1791539587,
+    "errorType": "HTTPError"
+  },
+  "kecioren-etik-karar-verme-kilavuzu-ilkokul-2026": {
+    "retryAfter": 1791539590,
+    "errorType": "HTTPError"
+  },
+  "susehri-not-tutma-pano-2026": {
+    "retryAfter": 1791539620,
+    "errorType": "URLError"
+  },
+  "kurtulus-etkili-calisma-pptx-2025": {
+    "retryAfter": 1791539624,
+    "errorType": "URLError"
   }
 }
