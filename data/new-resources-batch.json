@@ -102,5 +102,83 @@
     "file": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiye-%C3%A7ocuk-ara%C5%9Ft%C4%B1rmas%C4%B1-2022",
     "fileType": "Kaynak sayfası (PDF indirme)",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-kiz-cocuklarinin-okullasmasi-rapor-2003",
+    "title": "Kız Çocuklarının Okullaşması İçin Yapabileceklerimiz Var",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Devamsızlık ve okul terki",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/kiz-%C3%A7ocuklarinin-okulla%C5%9Fmasi-i%C3%A7in-yapabileceklerimiz-var-rapor",
+    "file": "https://www.unicef.org/turkiye/raporlar/kiz-%C3%A7ocuklarinin-okulla%C5%9Fmasi-i%C3%A7in-yapabileceklerimiz-var-rapor",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-cocuk-koruma-koordinasyon-egitici-2014",
+    "title": "Çocuk Koruma Hizmetlerinde Koordinasyon Eğitimi · Eğitici El Kitabı",
+    "type": "Eğitici el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-koruma-hizmetlerinde-koordinasyon-e%C4%9Fitimi-e%C4%9Fitici-i%C3%A7in-el-kitab%C4%B1-2014",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-koruma-hizmetlerinde-koordinasyon-e%C4%9Fitimi-e%C4%9Fitici-i%C3%A7in-el-kitab%C4%B1-2014",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-erken-cocukluk-egitimi-sistematik-analiz-2024",
+    "title": "Türkiye'de Erken Çocukluk Eğitimi Sektörünün Sistematik Analizi",
+    "type": "Araştırma raporu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Okul öncesi",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-erken-%C3%A7ocukluk-e%C4%9Fitimi-sekt%C3%B6r%C3%BCn%C3%BCn-sistematik-analizi",
+    "file": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-erken-%C3%A7ocukluk-e%C4%9Fitimi-sekt%C3%B6r%C3%BCn%C3%BCn-sistematik-analizi",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-vaka-temelli-egitim-kitabi-2013",
+    "title": "Vaka Temelli Eğitim Kitabı",
+    "type": "Eğitim kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk adalet sistemi",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/vaka-temelli-e%C4%9Fitim-kitabi-kas%C4%B1m-2013",
+    "file": "https://www.unicef.org/turkiye/raporlar/vaka-temelli-e%C4%9Fitim-kitabi-kas%C4%B1m-2013",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-egitimde-hakkaniyet-simdi-2013",
+    "title": "Eğitimde Hakkaniyet, Şimdi!",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitime erişim",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/e%C4%9Fitimde-hakkaniyet-%C5%9Fimdi",
+    "file": "https://www.unicef.org/turkiye/raporlar/e%C4%9Fitimde-hakkaniyet-%C5%9Fimdi",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-cocuk-haklari-adalete-erisim-2026",
+    "title": "Çocuk Hakları Üzerine İyileştirme, Güçlendirme ve Adalete Erişim Raporu",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-haklar%C4%B1-%C3%BCzerine-iyile%C5%9Ftirme-g%C3%BC%C3%A7lendirme-ve-adalete-eri%C5%9Fim-raporu",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-haklar%C4%B1-%C3%BCzerine-iyile%C5%9Ftirme-g%C3%BC%C3%A7lendirme-ve-adalete-eri%C5%9Fim-raporu",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
   }
 ]
