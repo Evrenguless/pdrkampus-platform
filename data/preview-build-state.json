@@ -562,5 +562,37 @@
   "kapakli-psikososyal-koruma-onleme-krize-mudahale-yonerge-2026": {
     "retryAfter": 1791540924,
     "errorType": "URLError"
+  },
+  "rehberlik-faaliyet-raporu-docx": {
+    "retryAfter": 1791541019,
+    "errorType": "HTTPError"
+  },
+  "rehberlik-faaliyet-raporu-pdf": {
+    "retryAfter": 1791541020,
+    "errorType": "HTTPError"
+  },
+  "samandag-2026-2027-rehber-ogretmeni-olmayan-ortaokul": {
+    "retryAfter": 1791541042,
+    "errorType": "URLError"
+  },
+  "nusaybin-2025-randevu-kayit-cizelgesi": {
+    "retryAfter": 1791541057,
+    "errorType": "URLError"
+  },
+  "kapakli-psikososyal-onleyici-destek-programi-2026": {
+    "retryAfter": 1791541064,
+    "errorType": "ValueError"
+  },
+  "riba-lise-ogrenci-2026": {
+    "retryAfter": 1791541088,
+    "errorType": "URLError"
+  },
+  "riba-okuloncesi-veli-2026": {
+    "retryAfter": 1791541090,
+    "errorType": "URLError"
+  },
+  "riba-ilkokul-ogretmen-2026": {
+    "retryAfter": 1791541094,
+    "errorType": "URLError"
   }
 }
