@@ -77,7 +77,13 @@ def specific_context(row):
 @lru_cache(maxsize=4)
 def catalogue(root):
  rows=load(root,'data/library.json',[])+load(root,'data/forms.json',[])+load(root,'data/collected-resources.json',[])
- return {r['title']:r for r in rows},load(root,'data/resource-previews.json',{})
+ records={r['title']:r for r in rows}
+ links_file=root/'src/resource-page-links.js'
+ links=json.loads(re.search(r'=\s*(\{.*\})\s*;',links_file.read_text(),re.S).group(1)) if links_file.exists() else {}
+ for row in rows:
+  route=row.get('pagePath') or links.get(row['id'])
+  if route:records.setdefault(route,row)
+ return records,load(root,'data/resource-previews.json',{})
 
 def enhance_cards(root,source):
  records,previews=catalogue(root)
@@ -87,7 +93,9 @@ def enhance_cards(root,source):
   heading=re.search(r'<h2[^>]*>(.*?)</h2>',card,re.S)
   if not heading:return card
   title=html.unescape(re.sub('<[^>]+>','',heading.group(1)))
-  row=records.get(title)
+  link=re.search(r'href="([^"]+)"',heading.group(1))
+  route=html.unescape(link.group(1)).removeprefix('https://pdrkampus.com') if link else ''
+  row=records.get(route) or records.get(title)
   if not row:return card
   preview=previews.get(row['id'],{})
   cover=[preview['thumbnail']] if preview.get('thumbnail') else preview.get('previews',[])

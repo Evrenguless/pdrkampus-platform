@@ -40,4 +40,13 @@ class ResourceDesignTests(unittest.TestCase):
    result=decorate(Path(d),source)
    self.assertNotIn('v=20261008-1',result);self.assertNotIn('v=20261005-4',result)
    self.assertIn('resource-design.css?v=20261008-2',result);self.assertIn('library.js?v=20261008-2',result)
+ def test_same_title_sources_use_their_own_document_covers(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);(root/'data').mkdir()
+   rows=[{**self.row,'id':'one','pagePath':'/kaynak/yeni/one/'},{**self.row,'id':'two','pagePath':'/kaynak/yeni/two/'}]
+   (root/'data/library.json').write_text(json.dumps(rows))
+   (root/'data/resource-previews.json').write_text(json.dumps({'one':{'thumbnail':'/assets/one.jpg'},'two':{'thumbnail':'/assets/two.jpg'}}))
+   source='<article class="catalog-card"><h2><a href="/kaynak/yeni/one/">Selamlaşma Panosu</a></h2></article>'
+   result=decorate(root,source)
+   self.assertIn('/assets/one.jpg',result);self.assertNotIn('/assets/two.jpg',result)
 if __name__=='__main__':unittest.main()
