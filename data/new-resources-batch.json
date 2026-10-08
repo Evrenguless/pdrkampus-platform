@@ -11,5 +11,31 @@
     "file": "https://www.stgm.org.tr/sites/default/files/2023-09/cocuk-guvenligi-uygulama-rehberi.pdf",
     "fileType": "PDF",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-acil-durumlarda-cocuk-koruma-katilimci-el-kitabi",
+    "title": "Acil Durumlarda Çocuk Koruma Eğitimi · Katılımcı El Kitabı",
+    "type": "El kitabı",
+    "level": "Tüm kademeler",
+    "area": "Kriz ve risk",
+    "topic": "Afet ve çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/acil-durumlarda-%C3%A7ocuk-koruma-e%C4%9Fitimi-kat%C4%B1l%C4%B1mc%C4%B1-el-kitab%C4%B1",
+    "file": "https://www.unicef.org/turkiye/media/3476/file/Acil%20Durumlarda%20%C3%87ocuk%20Koruma%20E%C4%9Fitimi%20Kat%C4%B1l%C4%B1mc%C4%B1%20El%20Kitab%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "sulukule-cocuk-odakli-izleme-degerlendirme-rehberi",
+    "title": "Çocuk Odaklı İzleme Değerlendirme Sistemi Rehberi",
+    "type": "Rehber",
+    "level": "Tüm kademeler",
+    "area": "Öğrenci gelişimi",
+    "topic": "İzleme ve değerlendirme",
+    "source": "Sulukule Gönüllüleri Derneği / UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-odakl%C4%B1-i%CC%87zleme-de%C4%9Ferlendirme-sistemi-rehberi",
+    "file": "https://www.unicef.org/turkiye/media/17821/file/%C3%87ocuk%20Odakl%C4%B1%20%C4%B0zleme%20De%C4%9Ferlendirme%20Sistemi%20Rehberi.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
   }
 ]
