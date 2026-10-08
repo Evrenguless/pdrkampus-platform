@@ -918,5 +918,85 @@
   "ozel-egitim-ortaokul": {
     "retryAfter": 1791543027,
     "errorType": "ValueError"
+  },
+  "collected-32ec715766c5c3542e25895f": {
+    "retryAfter": 1791543173,
+    "errorType": "URLError"
+  },
+  "cizre-ozguven-ilkokul-sunum-2026": {
+    "retryAfter": 1791543200,
+    "errorType": "ValueError"
+  },
+  "nevsehir-ogretmen-iletisim-kitapcigi": {
+    "retryAfter": 1791543214,
+    "errorType": "URLError"
+  },
+  "iskur-mesleki-bilgi-ab": {
+    "retryAfter": 1791543218,
+    "errorType": "HTTPError"
+  },
+  "iskur-mesleki-bilgi-ef": {
+    "retryAfter": 1791543219,
+    "errorType": "HTTPError"
+  },
+  "iskur-mesleki-bilgi-ccd": {
+    "retryAfter": 1791543219,
+    "errorType": "HTTPError"
+  },
+  "iskur-mesleki-bilgi-lmno": {
+    "retryAfter": 1791543220,
+    "errorType": "HTTPError"
+  },
+  "iskur-mesleki-bilgi-tuvyz": {
+    "retryAfter": 1791543220,
+    "errorType": "HTTPError"
+  },
+  "iskur-mesleki-bilgi-oprs": {
+    "retryAfter": 1791543221,
+    "errorType": "HTTPError"
+  },
+  "iskur-mesleki-bilgi-gh": {
+    "retryAfter": 1791543223,
+    "errorType": "HTTPError"
+  },
+  "siber-2022-14": {
+    "retryAfter": 1791543232,
+    "errorType": "ValueError"
+  },
+  "tekirdag-ram-isitme-yetersizligi-ogretmen-onerileri": {
+    "retryAfter": 1791543247,
+    "errorType": "URLError"
+  },
+  "iskur-mesleki-bilgi-iijk": {
+    "retryAfter": 1791543247,
+    "errorType": "URLError"
+  },
+  "collected-20b6e75f45a463e1ef1cd7c9": {
+    "retryAfter": 1791543250,
+    "errorType": "URLError"
+  },
+  "meb-75": {
+    "retryAfter": 1791543251,
+    "errorType": "ValueError"
+  },
+  "collected-67ab512d6378fa0d2dc407ed": {
+    "retryAfter": 1791543258,
+    "errorType": "URLError"
+  },
+  "meb-77": {
+    "retryAfter": 1791543285,
+    "errorType": "TimeoutError"
+  },
+  "meb-17": {
+    "retryAfter": 1791543294,
+    "errorType": "TimeoutError"
+  },
+  "meb-76": {
+    "retryAfter": 1791543340,
+    "errorType": "ValueError"
+  },
+  "meb-44": {
+    "retryAfter": 1791543387,
+    "errorType": "TimeoutError"
   }
 }
