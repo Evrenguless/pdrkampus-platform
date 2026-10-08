@@ -37,5 +37,70 @@
     "file": "https://www.unicef.org/turkiye/media/17821/file/%C3%87ocuk%20Odakl%C4%B1%20%C4%B0zleme%20De%C4%9Ferlendirme%20Sistemi%20Rehberi.pdf",
     "fileType": "PDF",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-ortaogretime-uyum-uygulama-kilavuzu-2016",
+    "title": "Ortaöğretime Uyum Programı · Uygulama Kılavuzu ve Uyum Etkinlikleri",
+    "type": "Etkinlik ve kılavuz",
+    "level": "Lise",
+    "area": "Rehberlik",
+    "topic": "Okula uyum",
+    "source": "UNICEF / MEB",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/orta%C3%B6%C4%9Fretime-uyum-program%C4%B1-uygulama-klavuzu-uyum-etkinlikleri",
+    "file": "https://www.unicef.org/turkiye/raporlar/orta%C3%B6%C4%9Fretime-uyum-program%C4%B1-uygulama-klavuzu-uyum-etkinlikleri",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-okullasmanin-onundeki-kayit-engelleri-2024",
+    "title": "Okullaşmanın Önündeki Kayıt Engelleri",
+    "type": "Araştırma raporu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Devamsızlık ve okul terki",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/okulla%C5%9Fman%C4%B1n-%C3%B6n%C3%BCndeki-kay%C4%B1t-engelleri",
+    "file": "https://www.unicef.org/turkiye/raporlar/okulla%C5%9Fman%C4%B1n-%C3%B6n%C3%BCndeki-kay%C4%B1t-engelleri",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-okul-disi-kalmis-cocuklar-analiz-2024",
+    "title": "Ulusal Nüfus İçerisinde Okul Dışı Kalmış Çocuklara Yönelik Analiz Raporu",
+    "type": "Araştırma raporu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Devamsızlık ve okul terki",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/ulusal-n%C3%BCfus-i%CC%87%C3%A7erisinde-okul-d%C4%B1%C5%9F%C4%B1-kalm%C4%B1%C5%9F-%C3%A7ocuklara-y%C3%B6nelik-analiz-raporu",
+    "file": "https://www.unicef.org/turkiye/raporlar/ulusal-n%C3%BCfus-i%CC%87%C3%A7erisinde-okul-d%C4%B1%C5%9F%C4%B1-kalm%C4%B1%C5%9F-%C3%A7ocuklara-y%C3%B6nelik-analiz-raporu",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-van-ercis-psikososyal-destek-degerlendirme-2015",
+    "title": "Van-Erciş Depremleri Sonrası Psikososyal Destek Programlarının Değerlendirilmesi",
+    "type": "Değerlendirme raporu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Afet sonrası psikososyal destek",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/van-erci%C5%9F-depremleri-sonras%C4%B1-y%C3%BCr%C3%BCt%C3%BClen-psikososyal-destek-programlar%C4%B1n%C4%B1n-de%C4%9Ferlendirilmesi",
+    "file": "https://www.unicef.org/turkiye/raporlar/van-erci%C5%9F-depremleri-sonras%C4%B1-y%C3%BCr%C3%BCt%C3%BClen-psikososyal-destek-programlar%C4%B1n%C4%B1n-de%C4%9Ferlendirilmesi",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-turkiye-cocuk-arastirmasi-2022",
+    "title": "Türkiye Çocuk Araştırması 2022",
+    "type": "Araştırma raporu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk gelişimi",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiye-%C3%A7ocuk-ara%C5%9Ft%C4%B1rmas%C4%B1-2022",
+    "file": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiye-%C3%A7ocuk-ara%C5%9Ft%C4%B1rmas%C4%B1-2022",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
   }
 ]
