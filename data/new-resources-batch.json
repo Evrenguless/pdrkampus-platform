@@ -661,5 +661,83 @@
     "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
     "fileType": "Yayın listesi (PDF bağlantısı)",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-covid-ozgurlugunden-yoksun-cocuklar-2020",
+    "title": "Teknik Bilgi Notu: COVID-19 ve Özgürlüğünden Yoksun Bırakılan Çocuklar",
+    "type": "Rapor / bilgi notu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C2",
+    "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C2",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-dunya-ogrenmeye-hazir-2019",
+    "title": "A World Ready To Learn · Global Report 2019",
+    "type": "Rapor / bilgi notu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Okul öncesi eğitim",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C2",
+    "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C2",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-ulke-isbirligi-2016-2020",
+    "title": "Türkiye–UNICEF Ülke İşbirliği Programı 2016–2020",
+    "type": "Rapor / bilgi notu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitim politikaları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/media/5186/file/T%C3%9CRK%C4%B0YE%20-%20UNICEF%20%C3%9CLKE%20%C4%B0%C5%9EB%C4%B0RL%C4%B0%C4%9E%C4%B0%20PROGRAMI%202016%20-2020.pdf",
+    "file": "https://www.unicef.org/turkiye/media/5186/file/T%C3%9CRK%C4%B0YE%20-%20UNICEF%20%C3%9CLKE%20%C4%B0%C5%9EB%C4%B0RL%C4%B0%C4%9E%C4%B0%20PROGRAMI%202016%20-2020.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-turkiye-yillik-rapor-2019",
+    "title": "UNICEF Türkiye Yıllık Raporu 2019",
+    "type": "Rapor / bilgi notu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitim ve çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/unicef-t%C3%BCrkiye-y%C4%B1ll%C4%B1k-raporu-2019",
+    "file": "https://www.unicef.org/turkiye/raporlar/unicef-t%C3%BCrkiye-y%C4%B1ll%C4%B1k-raporu-2019",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-turkiye-yillik-rapor-2018",
+    "title": "UNICEF Türkiye Yıllık Raporu 2018",
+    "type": "Rapor / bilgi notu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitim ve çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/unicef-t%C3%BCrkiye-yillik-raporu-2018",
+    "file": "https://www.unicef.org/turkiye/raporlar/unicef-t%C3%BCrkiye-yillik-raporu-2018",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-turkiye-yillik-rapor-2017",
+    "title": "UNICEF Türkiye Yıllık Raporu 2017",
+    "type": "Rapor / bilgi notu",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitim ve çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/media/5186/file/T%C3%9CRK%C4%B0YE%20-%20UNICEF%20%C3%9CLKE%20%C4%B0%C5%9EB%C4%B0RL%C4%B0%C4%9E%C4%B0%20PROGRAMI%202016%20-2020.pdf",
+    "file": "https://www.unicef.org/turkiye/media/5186/file/T%C3%9CRK%C4%B0YE%20-%20UNICEF%20%C3%9CLKE%20%C4%B0%C5%9EB%C4%B0RL%C4%B0%C4%9E%C4%B0%20PROGRAMI%202016%20-2020.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
   }
 ]
