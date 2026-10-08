@@ -349,5 +349,83 @@
     "file": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-engeli-olan-%C3%A7ocuklara-y%C3%B6nelik-bilgitutum-ve-davran%C4%B1%C5%9F-raporu",
     "fileType": "Kaynak sayfası (PDF indirme)",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-koordinasyon-katilimci-2014",
+    "title": "Çocuk Koruma Hizmetlerinde Koordinasyon Eğitimi · Katılımcı El Kitabı",
+    "type": "Rehber / el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-koruma-hizmetlerinde-koordinasyon-e%C4%9Fitimi-kat%C4%B1l%C4%B1mc%C4%B1-i%C3%A7in-el-kitab%C4%B1-2014",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-koruma-hizmetlerinde-koordinasyon-e%C4%9Fitimi-kat%C4%B1l%C4%B1mc%C4%B1-i%C3%A7in-el-kitab%C4%B1-2014",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-koordinasyon-yonetici-2014",
+    "title": "Çocuk Koruma Hizmetlerinde Koordinasyon Eğitimi · Yönetici El Kitabı",
+    "type": "Rehber / el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-koruma-hizmetlerinde-koordinasyon-e%C4%9Fitimi-y%C3%B6netici-kat%C4%B1l%C4%B1mc%C4%B1lar-i%C3%A7in-el-kitab%C4%B1-2014",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-koruma-hizmetlerinde-koordinasyon-e%C4%9Fitimi-y%C3%B6netici-kat%C4%B1l%C4%B1mc%C4%B1lar-i%C3%A7in-el-kitab%C4%B1-2014",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-cocuklarla-adli-gorusme-rehberi-2014",
+    "title": "Çocuklarla Adli Görüşme İçin Rehber",
+    "type": "Rehber / el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuklarla-adli-g%C3%B6r%C3%BC%C5%9Fme-i%C3%A7in-rehber-2014",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuklarla-adli-g%C3%B6r%C3%BC%C5%9Fme-i%C3%A7in-rehber-2014",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-insani-yardim-cocuk-koruma-asgari-standartlar-2012",
+    "title": "İnsani Yardım Çalışmalarında Çocuk Korumaya Yönelik Asgari Standartlar",
+    "type": "Rehber / el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Kriz ve risk",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/insani-yardim-%C3%A7ali%C5%9Fmalarinda-%C3%A7ocuk-korumaya-y%C3%B6nelik-asgari-standartlar",
+    "file": "https://www.unicef.org/turkiye/raporlar/insani-yardim-%C3%A7ali%C5%9Fmalarinda-%C3%A7ocuk-korumaya-y%C3%B6nelik-asgari-standartlar",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-cocuga-yonelik-siddet-uluslararasi-siniflama-2025",
+    "title": "Çocuğa Yönelik Şiddetin Uluslararası Sınıflaması",
+    "type": "Rehber / el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Akran zorbalığı ve şiddet",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocu%C4%9Fa-y%C3%B6nelik-%C5%9Fiddetin-uluslararas%C4%B1-s%C4%B1n%C4%B1flamas%C4%B1",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocu%C4%9Fa-y%C3%B6nelik-%C5%9Fiddetin-uluslararas%C4%B1-s%C4%B1n%C4%B1flamas%C4%B1",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-acil-durumlarda-cocuk-dostu-ortamlar-2011",
+    "title": "Acil Durumlarda Çocuk Dostu Ortamlar Oluşturma Kılavuzu",
+    "type": "Rehber / el kitabı",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Afet ve psikososyal destek",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/acil-durumlarda-%C3%A7ocuk-dostu-ortamlar-olu%C5%9Fturma-kilavuzu",
+    "file": "https://www.unicef.org/turkiye/raporlar/acil-durumlarda-%C3%A7ocuk-dostu-ortamlar-olu%C5%9Fturma-kilavuzu",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
   }
 ]
