@@ -314,5 +314,89 @@
   "kurtulus-etkili-calisma-pptx-2025": {
     "retryAfter": 1791539624,
     "errorType": "URLError"
+  },
+  "esenyurt-ram-evde-egitim-rhyk-toplanti": {
+    "retryAfter": 1791539696,
+    "errorType": "URLError"
+  },
+  "orgm-fiziksel-yetersizlik-brakiyal-pleksus-2025": {
+    "retryAfter": 1791539699,
+    "errorType": "ValueError"
+  },
+  "orgm-fiziksel-yetersizlik-kromozom-anomalileri-2025": {
+    "retryAfter": 1791539700,
+    "errorType": "ValueError"
+  },
+  "esenyurt-ram-evde-egitim-ogrenci-ogretmen-bilgileri": {
+    "retryAfter": 1791539702,
+    "errorType": "URLError"
+  },
+  "esenyurt-ram-evde-egitim-ust-yazi": {
+    "retryAfter": 1791539702,
+    "errorType": "URLError"
+  },
+  "orgm-fiziksel-yetersizlik-serebral-palsi-2025": {
+    "retryAfter": 1791539703,
+    "errorType": "ValueError"
+  },
+  "orgm-fiziksel-yetersizlik-tipik-motor-gelisim-2025": {
+    "retryAfter": 1791539706,
+    "errorType": "ValueError"
+  },
+  "orgm-fiziksel-yetersizlik-spina-bifida-2025": {
+    "retryAfter": 1791539707,
+    "errorType": "ValueError"
+  },
+  "orgm-fiziksel-yetersizlik-ortopedik-suregen-2025": {
+    "retryAfter": 1791539709,
+    "errorType": "ValueError"
+  },
+  "meb-meslek-gorgu-protokol-selamlasma-2025": {
+    "retryAfter": 1791539730,
+    "errorType": "HTTPError"
+  },
+  "urfa-ataturk-2026-genclerde-stres-yonetimi-veli": {
+    "retryAfter": 1791539738,
+    "errorType": "URLError"
+  },
+  "aksaray-ram-gorme-yetersizligi-ogretmen-onerileri": {
+    "retryAfter": 1791539772,
+    "errorType": "URLError"
+  },
+  "kapakli-goc-travmasi-2026": {
+    "retryAfter": 1791539784,
+    "errorType": "URLError"
+  },
+  "besiktas-ram-hastanede-egitim-hizmetleri-kilavuzu": {
+    "retryAfter": 1791539799,
+    "errorType": "URLError"
+  },
+  "cizre-hedef-motivasyon-ortaokul-sunum-2026": {
+    "retryAfter": 1791539802,
+    "errorType": "URLError"
+  },
+  "cizre-hedef-motivasyon-ogretmen-brosur-2026": {
+    "retryAfter": 1791539813,
+    "errorType": "URLError"
+  },
+  "karam-hedef-belirleme-lise-sunum-2025": {
+    "retryAfter": 1791539837,
+    "errorType": "URLError"
+  },
+  "siber-2022-15": {
+    "retryAfter": 1791539853,
+    "errorType": "ValueError"
+  },
+  "afsin-kaynastirma-ogretmen-sorunlari-arastirma-2026": {
+    "retryAfter": 1791539902,
+    "errorType": "URLError"
+  },
+  "urfa-ataturk-2026-kaygini-kontrol-et": {
+    "retryAfter": 1791539902,
+    "errorType": "URLError"
+  },
+  "kecioren-ilkokul-kisisel-etik-afis-2026": {
+    "retryAfter": 1791539919,
+    "errorType": "URLError"
   }
 }
