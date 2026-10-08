@@ -427,5 +427,83 @@
     "file": "https://www.unicef.org/turkiye/raporlar/acil-durumlarda-%C3%A7ocuk-dostu-ortamlar-olu%C5%9Fturma-kilavuzu",
     "fileType": "Kaynak sayfası (PDF indirme)",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-akran-zorbaligi-egitim-sektoru-2024",
+    "title": "Türkiye Eğitim Sektöründe Akran Zorbalığının Ele Alınması",
+    "type": "Rapor / rehber",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Akran zorbalığı",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiye-e%C4%9Fitim-sekt%C3%B6r%C3%BCnde-akran-zorbal%C4%B1%C4%9F%C4%B1n%C4%B1n-ele-al%C4%B1nmas%C4%B1",
+    "file": "https://www.unicef.org/turkiye/media/18741/file/T%C3%BCrkiye%20E%C4%9Fitim%20Sekt%C3%B6r%C3%BCnde%20Akran%20Zorbal%C4%B1%C4%9F%C4%B1n%C4%B1n%20Ele%20Al%C4%B1nmas%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-tasima-destegi-egitime-erisim-2024",
+    "title": "Mülteci ve Depremden Etkilenen Çocuklar İçin Taşıma Desteği",
+    "type": "Rapor / rehber",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Devamsızlık ve eğitime erişim",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-m%C3%BClteci-ve-depremden-etkilenen-%C3%A7ocuklar-i%C3%A7in",
+    "file": "https://www.unicef.org/turkiye/media/18771/file/ESWG%20Advocacy%20Brief%20on%20Support%20to%20Children%20Transportation%20to%20Schools_Turkish%20version.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-suriyeli-okul-disi-cocuklar-analiz-2024",
+    "title": "Suriyeli Okul Dışı Kalmış Çocuklar ile İlgili Analiz Raporu",
+    "type": "Rapor / rehber",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Okul terki",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/suriyeli-okul-d%C4%B1%C5%9F%C4%B1-kalm%C4%B1%C5%9F-%C3%A7ocuklar-ile-i%CC%87lgili-analiz-raporu",
+    "file": "https://www.unicef.org/turkiye/media/18036/file/SUR%C4%B0YEL%C4%B0%20OKUL%20DI%C5%9EI%20KALMI%C5%9E%20%C3%87OCUKLAR%20%C4%B0LE%20%C4%B0LG%C4%B0L%C4%B0%20ANAL%C4%B0Z%20RAPORU.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-iklim-cocuk-haklari-genel-yorum-26",
+    "title": "İklim Değişikliği Odağında Çocuk Hakları ve Çevre · Genel Yorum 26",
+    "type": "Rapor / rehber",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk hakları ve çevre",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/bm-%C3%A7ocuk-haklar%C4%B1-komitesi-i%CC%87klim-de%C4%9Fi%C5%9Fikli%C4%9Fi-oda%C4%9F%C4%B1nda-%C3%A7ocuk-haklar%C4%B1-ve-%C3%A7evre",
+    "file": "https://www.unicef.org/turkiye/media/17641/file/BM%20%C3%87ocuk%20Haklar%C4%B1%20Komitesi%20%C4%B0klim%20De%C4%9Fi%C5%9Fikli%C4%9Fi%20Oda%C4%9F%C4%B1nda%20%C3%87ocuk%20Haklar%C4%B1%20ve%20%C3%87evre%20Genel%20Yorum%20No%3A%2026.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-dijital-cocuk-haklari-genel-yorum-25",
+    "title": "Dijital Ortamlarda Çocuk Hakları · Genel Yorum 25",
+    "type": "Rapor / rehber",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Dijital güvenlik",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/bm-%C3%A7ocuk-haklar%C4%B1-komitesi-dijital-ortamlarda-%C3%A7ocuk-haklar%C4%B1-ile-i%CC%87lgili-genel-yorum-no25",
+    "file": "https://www.unicef.org/turkiye/media/17626/file/Dijital%20Ortamlarda%20%C3%87ocuk%20Haklar%C4%B1%20ile%20%C4%B0lgili%20Genel%20Yorum%20No%3A%2025.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-ece-yatirim-maliyet-ozet-2024",
+    "title": "Türkiye'de Erken Çocukluk Eğitimi Yatırım ve Maliyet Analizi · Genişletilmiş Özet",
+    "type": "Rapor / rehber",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Okul öncesi",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-e%C3%A7e-yat%C4%B1r%C4%B1m-ve-maliyet-analizi",
+    "file": "https://www.unicef.org/turkiye/media/19046/file/ECE%20Costing%20-%20Executive%20Summary%20-%20TR.pdf.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
   }
 ]
