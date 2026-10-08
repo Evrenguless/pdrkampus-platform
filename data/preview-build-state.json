@@ -1,8 +1,4 @@
 {
-  "karasu-2026-2027-ortaokul-cerceve-plan": {
-    "retryAfter": 1791500512,
-    "errorType": "URLError"
-  },
   "meb-79": {
     "retryAfter": 1791551713,
     "errorType": "HTTPError",
@@ -22,11 +18,6 @@
     "retryAfter": 1791551722,
     "errorType": "PdfStreamError",
     "message": "Stream has ended unexpectedly"
-  },
-  "meb-73": {
-    "retryAfter": 1791551723,
-    "errorType": "ValueError",
-    "message": "Unable to read workbook: could not read worksheets from /tmp/tmpaareyu31/source.xlsx.\nThis is most probably because the workbook source files contain some invalid XML.\nPlease see the exception for more details."
   },
   "sarimese-devamsizlik-onleme-2021": {
     "retryAfter": 1791551723,
@@ -63,16 +54,6 @@
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
-  "czarifoglu-2sinif-34-duygu-dusunceler": {
-    "retryAfter": 1791551933,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "karaman-ergen-fiziksel-psikososyal-gelisim-2025": {
-    "retryAfter": 1791551938,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
   "sidikaavar-aylik-rehberlik-calisma-raporu-2025": {
     "retryAfter": 1791551653,
     "errorType": "HTTPError",
@@ -98,529 +79,95 @@
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Not Found"
   },
-  "collected-083dafb0553988b6ea889966": {
-    "retryAfter": 1791540045,
-    "errorType": "URLError"
-  },
-  "riba-cizelge-545": {
-    "retryAfter": 1791540083,
-    "errorType": "URLError"
-  },
-  "kocasinan-2026-lgs-kaygi-motivasyon": {
-    "retryAfter": 1791540101,
-    "errorType": "TimeoutError"
-  },
-  "beypazari-lise-okul-aidiyeti-arastirma-2024": {
-    "retryAfter": 1791540112,
-    "errorType": "URLError"
-  },
-  "dogubayazit-mahremiyet-ogrenci-sunum-2022": {
-    "retryAfter": 1791540133,
-    "errorType": "URLError"
-  },
-  "manisa-lgs-puanlar-2026": {
-    "retryAfter": 1791540149,
-    "errorType": "URLError"
-  },
-  "gediz-mesleki-envanter-ogrenci-yonerge-2026": {
-    "retryAfter": 1791540182,
-    "errorType": "URLError"
-  },
   "meb-akademi-hazirlik-egitimi-programi-2026": {
-    "retryAfter": 1791540193,
-    "errorType": "HTTPError"
-  },
-  "kapakli-ram-2025-mtok-tanitim-yonlendirme-2": {
-    "retryAfter": 1791540205,
-    "errorType": "TimeoutError"
-  },
-  "akran-55": {
-    "retryAfter": 1791540209,
-    "errorType": "ValueError"
-  },
-  "czarifoglu-1sinif-34-ne-olurdu": {
-    "retryAfter": 1791540227,
-    "errorType": "URLError"
-  },
-  "nevsehir-veli-okul-basarisi": {
-    "retryAfter": 1791540248,
-    "errorType": "TimeoutError"
-  },
-  "meb-70": {
-    "retryAfter": 1791540253,
-    "errorType": "ValueError"
-  },
-  "nusaybin-2025-risk-haritasi-belirleme-programi": {
-    "retryAfter": 1791540263,
-    "errorType": "ValueError"
-  },
-  "cizre-meslek-secimi-ortaokul-lise-sunum-2026": {
-    "retryAfter": 1791540266,
-    "errorType": "ValueError"
-  },
-  "salihli-2025-okul-risk-haritasi": {
-    "retryAfter": 1791540288,
-    "errorType": "URLError"
-  },
-  "nusaybin-2025-okuloncesi-kazanim-sonuc": {
-    "retryAfter": 1791540332,
-    "errorType": "ValueError"
-  },
-  "nusaybin-2025-okuloncesi-ihtiyac-sonuc": {
-    "retryAfter": 1791540334,
-    "errorType": "ValueError"
-  },
-  "nusaybin-2025-okuloncesi-ihtiyac-formu": {
-    "retryAfter": 1791540358,
-    "errorType": "URLError"
-  },
-  "kariyer-92": {
-    "retryAfter": 1791540397,
-    "errorType": "ValueError"
-  },
-  "orgm-2025-obm-kisa-mudahale-kilavuzu": {
-    "retryAfter": 1791540415,
-    "errorType": "TimeoutError"
-  },
-  "collected-1c4227656100e65431d86a55": {
-    "retryAfter": 1791540445,
-    "errorType": "URLError"
-  },
-  "collected-01d6344355d3968e6b7d20f3": {
-    "retryAfter": 1791540456,
-    "errorType": "URLError"
-  },
-  "collected-b0b87d5c590acd202d573ffc": {
-    "retryAfter": 1791540468,
-    "errorType": "URLError"
-  },
-  "alasehir-ram-ortaogretime-uyum-programi-kilavuzu": {
-    "retryAfter": 1791540476,
-    "errorType": "URLError"
-  },
-  "collected-8944a1e417a3b98b5b50719b": {
-    "retryAfter": 1791540498,
-    "errorType": "URLError"
-  },
-  "collected-b6c8507e57dd60713c9f564a": {
-    "retryAfter": 1791540505,
-    "errorType": "URLError"
-  },
-  "tokat-lgs-tercih-rehberi-2026": {
-    "retryAfter": 1791540560,
-    "errorType": "DependencyError"
-  },
-  "korfez-otizm-ogrenci-etkinlik-kitabi-2025": {
-    "retryAfter": 1791540584,
-    "errorType": "ValueError"
-  },
-  "defne-okuloncesi-otokontrol-veli-etkinlik-2025": {
-    "retryAfter": 1791540596,
-    "errorType": "URLError"
+    "retryAfter": 1791588844,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "hakkari-otokontrol-ortaokul-veli-sunum": {
-    "retryAfter": 1791540831,
-    "errorType": "HTTPError"
+    "retryAfter": 1791588859,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "meb-meslek-protokol-gorgu-selamlasma-2025": {
-    "retryAfter": 1791540841,
-    "errorType": "HTTPError"
-  },
-  "nevsehir-ogrenci-problem-cozme-kitapcigi": {
-    "retryAfter": 1791540858,
-    "errorType": "URLError"
-  },
-  "psikososyal-2025-10": {
-    "retryAfter": 1791540860,
-    "errorType": "ValueError"
-  },
-  "psikososyal-2025-04": {
-    "retryAfter": 1791540860,
-    "errorType": "ValueError"
+    "retryAfter": 1791588860,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Not Found"
   },
   "nevsehir-ogrenci-psikolojik-saglamlik-kitapcigi": {
-    "retryAfter": 1791540864,
-    "errorType": "HTTPError"
+    "retryAfter": 1791588865,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "nevsehir-ogretmen-psikolojik-saglamlik-kitapcigi": {
-    "retryAfter": 1791540865,
-    "errorType": "HTTPError"
-  },
-  "kapakli-psikososyal-uygulayici-kilavuzu-2026": {
-    "retryAfter": 1791540902,
-    "errorType": "URLError"
-  },
-  "collected-b46f32455cd2c43863c2d643": {
-    "retryAfter": 1791540915,
-    "errorType": "URLError"
-  },
-  "kapakli-psikososyal-koruma-onleme-krize-mudahale-yonerge-2026": {
-    "retryAfter": 1791540924,
-    "errorType": "URLError"
+    "retryAfter": 1791588866,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "rehberlik-faaliyet-raporu-docx": {
-    "retryAfter": 1791541019,
-    "errorType": "HTTPError"
+    "retryAfter": 1791588869,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "rehberlik-faaliyet-raporu-pdf": {
-    "retryAfter": 1791541020,
-    "errorType": "HTTPError"
-  },
-  "samandag-2026-2027-rehber-ogretmeni-olmayan-ortaokul": {
-    "retryAfter": 1791541042,
-    "errorType": "URLError"
-  },
-  "nusaybin-2025-randevu-kayit-cizelgesi": {
-    "retryAfter": 1791541057,
-    "errorType": "URLError"
-  },
-  "kapakli-psikososyal-onleyici-destek-programi-2026": {
-    "retryAfter": 1791541064,
-    "errorType": "ValueError"
-  },
-  "riba-lise-ogrenci-2026": {
-    "retryAfter": 1791541088,
-    "errorType": "URLError"
-  },
-  "riba-okuloncesi-veli-2026": {
-    "retryAfter": 1791541090,
-    "errorType": "URLError"
-  },
-  "riba-ilkokul-ogretmen-2026": {
-    "retryAfter": 1791541094,
-    "errorType": "URLError"
-  },
-  "cizre-sinir-koyma-okuloncesi-ilkokul-ogretmen-brosur-2026": {
-    "retryAfter": 1791541188,
-    "errorType": "URLError"
-  },
-  "osmangazi-selamlasma-yillik-plan-ortaokul-2026": {
-    "retryAfter": 1791541233,
-    "errorType": "URLError"
-  },
-  "osmangazi-selamlasma-yillik-plan-ilkokul-2026": {
-    "retryAfter": 1791541240,
-    "errorType": "URLError"
-  },
-  "cizre-sinir-koyma-okuloncesi-ilkokul-sunum-2026": {
-    "retryAfter": 1791541292,
-    "errorType": "ValueError"
-  },
-  "collected-48e0cb617e6953d735ec30c7": {
-    "retryAfter": 1791541303,
-    "errorType": "URLError"
-  },
-  "collected-06d281898061032771a9de24": {
-    "retryAfter": 1791541336,
-    "errorType": "URLError"
-  },
-  "collected-0263596e3813712c00c2e9ef": {
-    "retryAfter": 1791541339,
-    "errorType": "URLError"
-  },
-  "cizre-selamlasma-okuloncesi-ilkokul-sunum-2026": {
-    "retryAfter": 1791541343,
-    "errorType": "ValueError"
-  },
-  "rabiaarikan-sosyal-beceri-veli-sunum-2025": {
-    "retryAfter": 1791541351,
-    "errorType": "URLError"
-  },
-  "karaman-sosyal-beceriler-veli-brosur": {
-    "retryAfter": 1791541365,
-    "errorType": "URLError"
-  },
-  "sdb-559": {
-    "retryAfter": 1791541369,
-    "errorType": "ValueError"
-  },
-  "sdb-588": {
-    "retryAfter": 1791541369,
-    "errorType": "ValueError"
-  },
-  "sdb-549": {
-    "retryAfter": 1791541373,
-    "errorType": "ValueError"
-  },
-  "sdb-552": {
-    "retryAfter": 1791541375,
-    "errorType": "ValueError"
-  },
-  "sdb-586": {
-    "retryAfter": 1791541384,
-    "errorType": "TimeoutError"
-  },
-  "sdb-575": {
-    "retryAfter": 1791541386,
-    "errorType": "ValueError"
-  },
-  "sdb-574": {
-    "retryAfter": 1791541387,
-    "errorType": "ValueError"
-  },
-  "sdb-577": {
-    "retryAfter": 1791541389,
-    "errorType": "ValueError"
-  },
-  "sdb-570": {
-    "retryAfter": 1791541394,
-    "errorType": "ValueError"
-  },
-  "dogubayazit-sosyal-beceriler-veli-sunum-2025": {
-    "retryAfter": 1791541405,
-    "errorType": "ValueError"
-  },
-  "sdb-564": {
-    "retryAfter": 1791541467,
-    "errorType": "ValueError"
+    "retryAfter": 1791588867,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "canik-sosyometri-degerlendirme-sosyogram": {
-    "retryAfter": 1791541480,
-    "errorType": "HTTPError"
-  },
-  "dogubayazit-stresle-bas-etme-veli-sunum-2022": {
-    "retryAfter": 1791541507,
-    "errorType": "URLError"
-  },
-  "collected-5b47a667894347ddf63bb7a0": {
-    "retryAfter": 1791541528,
-    "errorType": "URLError"
-  },
-  "collected-3310cd8bd79b8915e85c1501": {
-    "retryAfter": 1791541528,
-    "errorType": "URLError"
-  },
-  "yuksekova-sosyal-kaygi-egitim-kultur-dergisi": {
-    "retryAfter": 1791541592,
-    "errorType": "ValueError"
-  },
-  "sinif-oturma-plani-xlsx": {
-    "retryAfter": 1791541604,
-    "errorType": "URLError"
-  },
-  "sinif-etkinlik-lise": {
-    "retryAfter": 1791541612,
-    "errorType": "ValueError"
-  },
-  "kocasinan-sinif-rehber-ogretmenleri-rehberlik-calismalari-2026": {
-    "retryAfter": 1791541619,
-    "errorType": "URLError"
-  },
-  "sinif-etkinlik-ortaokul": {
-    "retryAfter": 1791541620,
-    "errorType": "ValueError"
-  },
-  "sinif-etkinlik-ilkokul": {
-    "retryAfter": 1791541623,
-    "errorType": "ValueError"
-  },
-  "cizre-sinav-kaygisi-ortaokul-lise-sunum-2026": {
-    "retryAfter": 1791541627,
-    "errorType": "ValueError"
-  },
-  "tusba-sinif-rehberlik-uygulama-sunumu": {
-    "retryAfter": 1791541653,
-    "errorType": "URLError"
-  },
-  "corum-kapsamli-sinif-rehberlik-etkinlik-kitapcigi-2026": {
-    "retryAfter": 1791541661,
-    "errorType": "TimeoutError"
-  },
-  "meb-69": {
-    "retryAfter": 1791541684,
-    "errorType": "ValueError"
-  },
-  "nusaybin-2025-sinif-risk-haritasi": {
-    "retryAfter": 1791541686,
-    "errorType": "ValueError"
-  },
-  "salihli-2025-sinif-risk-haritasi": {
-    "retryAfter": 1791541689,
-    "errorType": "ValueError"
+    "retryAfter": 1791588873,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "sinif-risk-haritasi-xlsx-duzenlenebilir": {
-    "retryAfter": 1791541696,
-    "errorType": "HTTPError"
-  },
-  "collected-100f3769e0478f69af217396": {
-    "retryAfter": 1791541701,
-    "errorType": "URLError"
-  },
-  "akdag-sinif-temsilcisi-secimi-docx": {
-    "retryAfter": 1791541716,
-    "errorType": "URLError"
-  },
-  "sinif-etkinlik-ilkokul-cilt2": {
-    "retryAfter": 1791541730,
-    "errorType": "ValueError"
-  },
-  "kayseri-sinir-lise-etkinlik-seti-2026": {
-    "retryAfter": 1791541735,
-    "errorType": "URLError"
+    "retryAfter": 1791588882,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "meb-meslek-toplum-aile-selamlasma-etkinligi-2025": {
-    "retryAfter": 1791542187,
-    "errorType": "HTTPError"
-  },
-  "mardin-sinir-ilkokul-ogretmen-sunum-2026": {
-    "retryAfter": 1791542207,
-    "errorType": "ValueError"
-  },
-  "meb-74": {
-    "retryAfter": 1791542227,
-    "errorType": "ValueError"
-  },
-  "tusba-2025-tutun-bagimliliginda-bdt": {
-    "retryAfter": 1791542233,
-    "errorType": "URLError"
-  },
-  "collected-4bd848976776f1dcef562d31": {
-    "retryAfter": 1791542236,
-    "errorType": "URLError"
-  },
-  "susehri-yks-moduler-pano-2026": {
-    "retryAfter": 1791542265,
-    "errorType": "URLError"
-  },
-  "cizre-verimli-calisma-zaman-yonetimi-ortaokul-2026": {
-    "retryAfter": 1791542320,
-    "errorType": "ValueError"
-  },
-  "nusaybin-2025-yasam-pencerem-sonuc": {
-    "retryAfter": 1791542420,
-    "errorType": "ValueError"
-  },
-  "meb-72": {
-    "retryAfter": 1791542420,
-    "errorType": "ValueError"
-  },
-  "balikesir-yetenek-farkindaligi-arastirma-2025": {
-    "retryAfter": 1791542454,
-    "errorType": "URLError"
+    "retryAfter": 1791588907,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Not Found"
   },
   "nevsehir-ogrenci-zaman-yonetimi": {
-    "retryAfter": 1791542458,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589000,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "alanya-zaman-yonetimi-hedefler-docx-2025": {
-    "retryAfter": 1791542470,
-    "errorType": "URLError"
-  },
-  "akran-29": {
-    "retryAfter": 1791542478,
-    "errorType": "ValueError"
-  },
-  "collected-705e5430545e8e03efc7cfc2": {
-    "retryAfter": 1791542485,
-    "errorType": "URLError"
+    "retryAfter": 1791588992,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "yalova-ram-e-rehberlik-modulu-kilavuzu": {
-    "retryAfter": 1791542510,
-    "errorType": "HTTPError"
+    "retryAfter": 1791588946,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "of-ram-cocuk-ihmal-istismar-onleme-egitimleri": {
-    "retryAfter": 1791542553,
-    "errorType": "HTTPError"
-  },
-  "osmangazi-duygu-duzenleme-bulteni-2026": {
-    "retryAfter": 1791542590,
-    "errorType": "URLError"
-  },
-  "kecioren-duygu-duzenleme-veli-brosur-2025": {
-    "retryAfter": 1791542602,
-    "errorType": "URLError"
-  },
-  "karabaglar-2025-bilincli-internet-veli": {
-    "retryAfter": 1791542648,
-    "errorType": "URLError"
-  },
-  "tegm-2026-ilk-adim-defteri-1sinif": {
-    "retryAfter": 1791542653,
-    "errorType": "ValueError"
-  },
-  "tegm-2026-ilk-adim-defteri-okuloncesi": {
-    "retryAfter": 1791542653,
-    "errorType": "ValueError"
-  },
-  "kecioren-duygu-duzenleme-moduler-pano-2025": {
-    "retryAfter": 1791542659,
-    "errorType": "ValueError"
-  },
-  "fatih-cocuk-ergen-travma-2026": {
-    "retryAfter": 1791542662,
-    "errorType": "ValueError"
-  },
-  "defne-ofke-kontrolu-brosuru-2025": {
-    "retryAfter": 1791542774,
-    "errorType": "URLError"
+    "retryAfter": 1791588946,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "nevsehir-ogrenci-ozdisiplin": {
-    "retryAfter": 1791542794,
-    "errorType": "HTTPError"
-  },
-  "erenler-ozdisiplin-kitapcik": {
-    "retryAfter": 1791542805,
-    "errorType": "URLError"
-  },
-  "hakkari-otokontrol-ortaokul-veli-brosur": {
-    "retryAfter": 1791542817,
-    "errorType": "URLError"
+    "retryAfter": 1791588962,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "defne-ortaokul-ozdenetim-ogrenci-sunum-2025": {
-    "retryAfter": 1791542852,
-    "errorType": "URLError"
+    "retryAfter": 1791589052,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "hakkari-otokontrol-ilkokul-veli-sunum": {
-    "retryAfter": 1791542877,
-    "errorType": "ValueError"
-  },
-  "collected-74866c4bea310a989e7ae069": {
-    "retryAfter": 1791542896,
-    "errorType": "URLError"
-  },
-  "ozel-96": {
-    "retryAfter": 1791542899,
-    "errorType": "ValueError"
-  },
-  "collected-b285a07ca6cc4e6d79c6a3fe": {
-    "retryAfter": 1791542902,
-    "errorType": "URLError"
+    "retryAfter": 1791589012,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "defne-lise-ozdenetim-ogretmen-rehber-2025": {
-    "retryAfter": 1791542909,
-    "errorType": "TimeoutExpired"
-  },
-  "dogubayazit-ozel-egitimden-rehberlige-2026": {
-    "retryAfter": 1791542936,
-    "errorType": "URLError"
-  },
-  "bakirkoy-ozel-yetenekli-cocuklar-aile-ogretmen-kitabi": {
-    "retryAfter": 1791542938,
-    "errorType": "URLError"
-  },
-  "korfez-ozel-yetenekli-cocugum-var-2025": {
-    "retryAfter": 1791542944,
-    "errorType": "URLError"
-  },
-  "sehit-furkan-ozel-ogrenme-guclugu-ogretmen-rehberi": {
-    "retryAfter": 1791542993,
-    "errorType": "URLError"
-  },
-  "ozel-ogrenciler-okula-uyum-etkinlikleri-2025": {
-    "retryAfter": 1791543010,
-    "errorType": "ValueError"
-  },
-  "ozel-egitim-ortaokul": {
-    "retryAfter": 1791543027,
-    "errorType": "ValueError"
-  },
-  "collected-32ec715766c5c3542e25895f": {
-    "retryAfter": 1791543173,
-    "errorType": "URLError"
-  },
-  "cizre-ozguven-ilkokul-sunum-2026": {
-    "retryAfter": 1791543200,
-    "errorType": "ValueError"
+    "retryAfter": 1791589022,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "nevsehir-ogretmen-iletisim-kitapcigi": {
     "retryAfter": 1791543214,
@@ -654,48 +201,73 @@
     "retryAfter": 1791543223,
     "errorType": "HTTPError"
   },
-  "siber-2022-14": {
-    "retryAfter": 1791543232,
-    "errorType": "ValueError"
-  },
-  "tekirdag-ram-isitme-yetersizligi-ogretmen-onerileri": {
-    "retryAfter": 1791543247,
-    "errorType": "URLError"
-  },
   "iskur-mesleki-bilgi-iijk": {
     "retryAfter": 1791543247,
     "errorType": "URLError"
   },
-  "collected-20b6e75f45a463e1ef1cd7c9": {
-    "retryAfter": 1791543250,
-    "errorType": "URLError"
+  "collected-cd697f3c8b7149b1b9f49983": {
+    "retryAfter": 1791588841,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "meb-75": {
-    "retryAfter": 1791543251,
-    "errorType": "ValueError"
+  "collected-e5a732ebe62364d3bb499322": {
+    "retryAfter": 1791588841,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "collected-67ab512d6378fa0d2dc407ed": {
-    "retryAfter": 1791543258,
-    "errorType": "URLError"
+  "collected-d9ff14fc055957a401cf9130": {
+    "retryAfter": 1791588841,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "meb-77": {
-    "retryAfter": 1791543285,
-    "errorType": "TimeoutError"
+  "collected-d455106f46528bb3d8776aab": {
+    "retryAfter": 1791588928,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "meb-17": {
-    "retryAfter": 1791543294,
-    "errorType": "TimeoutError"
+  "collected-0201db0b9edc3709e66cbe72": {
+    "retryAfter": 1791588930,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "meb-76": {
-    "retryAfter": 1791543340,
-    "errorType": "ValueError"
+  "bandirma-selamlasma-okuloncesi-etkinlikler-2026": {
+    "retryAfter": 1791588932,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "meb-44": {
-    "retryAfter": 1791543387,
-    "errorType": "TimeoutError"
+  "collected-d1be3ff9244ee80dde2ca2fb": {
+    "retryAfter": 1791589006,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "golcuk-siddeti-onleme-veli-sunum-2024": {
-    "retryAfter": 1791543538,
-    "errorType": "URLError"
+  "collected-0b86bbdff425776fe43f88c1": {
+    "retryAfter": 1791589006,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-1b80e3435d3889388587ea66": {
+    "retryAfter": 1791589060,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-199dc8802dc9a503f262c2c2": {
+    "retryAfter": 1791589066,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-1c08b07bc0882494b99de6ce": {
+    "retryAfter": 1791589068,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-1f606606535e0339b441dc71": {
+    "retryAfter": 1791589073,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-cb9dee1d282054f10351ab8e": {
+    "retryAfter": 1791589082,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   }
 }

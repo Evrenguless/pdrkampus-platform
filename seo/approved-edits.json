@@ -57,8 +57,8 @@
     },
     "kutuphane/katalog/sayfa/12/index.html": {
       "baseline_sha256": "efefaa3985141e27f533314b27e665f4519a1205be447b64bfc63c789401d0bc",
-      "reviewed_sha256": "88c458d6f2227ce19ddb78e05ce235e1c6b39f5b90a93dd086f06a8e33618868",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "6d41b7935fd4c4072d1e40c2ef4b02035ccfef7336a2eef2bd12c094d3dadb69",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/13/index.html": {
@@ -69,8 +69,8 @@
     },
     "kutuphane/katalog/sayfa/14/index.html": {
       "baseline_sha256": "8f1d06ab67e11bf926549c4d38f9b359a2ec3c13bd29a55294b8d50a53a2fff7",
-      "reviewed_sha256": "3a739a7d1dd406a19f5dd00cb66e811d4779a4b579cd445c8c363d0ddcddd7b3",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "352f59e429800c5821d200d748f42183b18697e5d71470b026881341f8264770",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/15/index.html": {
@@ -81,14 +81,14 @@
     },
     "kutuphane/katalog/sayfa/16/index.html": {
       "baseline_sha256": "6d3141b7b3dfab13c40b5437242d957ec0bd1916acf9215c43cf76cc1c35e33c",
-      "reviewed_sha256": "c60df153360dc8f8dce38a7357801abc5aae9bd0226038eba6dd58f1725e864a",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "bb0d83969589cfbf9e67fc7ed37197d59146a4a4c17108cb18496b60016e4159",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/17/index.html": {
       "baseline_sha256": "a327f00f93a2ab6522df96c7f29857ca013a9e3d0ec3330e3d45143999e69c84",
-      "reviewed_sha256": "359cc224a1315e27bfce74a4fd8be240e124da2f7db8ce78411f74a2993d3c20",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "04b2e1a98e19238aa81cf215082480eb4f50ce4cef1b1bbd7dd388cf3a7819ce",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/18/index.html": {
@@ -123,8 +123,8 @@
     },
     "kutuphane/katalog/sayfa/22/index.html": {
       "baseline_sha256": "6442a121db718e330eba0ad21ad3f9f1f55caae1596d962de2aec5b8e920468b",
-      "reviewed_sha256": "1943c06a71814c2623ddd04f0a2185e2da27688ad76d210f10df87322c0a4c16",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "27be290f1a7c719af7f6eff00fbbc39a7d0822f9b83532c5bb6676001cc14050",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/23/index.html": {
@@ -135,8 +135,8 @@
     },
     "kutuphane/katalog/sayfa/24/index.html": {
       "baseline_sha256": "918280020a8bc4a449aa10124abaf69cecc79f6d932956d8d9c7ec2945b1f5e1",
-      "reviewed_sha256": "90758a57ec46daec0748faeea5547f1776136af3768346c64cb280811435f29b",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "c9086c4fa00ca03f9c85727f801b7993d3a2362952b0be86901d0f13c72d2e61",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/25/index.html": {
@@ -195,8 +195,8 @@
     },
     "kutuphane/katalog/sayfa/33/index.html": {
       "baseline_sha256": "c14a369c70a92fa67271a774d5461453389b48279f845fb2566fece97078361d",
-      "reviewed_sha256": "78c4105ab88b93f2ab5ac3beb189efe48d2bcdfe3e57719c3a35bfa6b4e133b6",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "36102ad1d013871833a4ed7a84f6c517102cfe2a6a142e2cbdaee642381a8eaf",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/34/index.html": {
@@ -207,8 +207,8 @@
     },
     "kutuphane/katalog/sayfa/35/index.html": {
       "baseline_sha256": "c40615d870de5ea41b4d9b82ffbe2ee37b89527549759234ac17dc756da5296f",
-      "reviewed_sha256": "8e66f258bcf3be39e62619240da9494fb93a26c6af1481ab8c3c1579f4bb94d6",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "314814cfb0ccd2218bb40a8c186f19ce917cd9731d32e99a607c5ec9e424da20",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/4/index.html": {
