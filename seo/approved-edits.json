@@ -39,212 +39,212 @@
     },
     "kutuphane/katalog/index.html": {
       "baseline_sha256": "addf69ca652a06f2563051b8700ee7d9d1b2c73da10d56c9a752635143fe57b1",
-      "reviewed_sha256": "08b472ca22ec243cfa16963a2c98aee7edfe6f152e6cf952be8b91a4ce305f92",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "45e483d2edcc5da6cb2a2430c09ab135c66308f03e6abda45efb327e436d1b9a",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/10/index.html": {
       "baseline_sha256": "69876336df657ccf09067ee98b3b4be404cfa98350b3709e6d77a13658b08d77",
-      "reviewed_sha256": "2d239fbb540904291deaa6412e0f2d5ba890290384dc8d9eb1f46ec8eea1818f",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "d490246d3e905e3261419a4ac257abd8f56bf92fc2e3a2853c8c2761e176135b",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/11/index.html": {
       "baseline_sha256": "f6e67682f8c00dcf7598feadce6a3dd8e9d15f128304ccf297c98307157811ef",
-      "reviewed_sha256": "0d1b467a13a53139daf307648fc1f624454837c30146f1c5bf6f2f839cad10d5",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "0b135cf6650b7858166a9b79b2bc64d8cf9d3f06980031e797a471f08139b206",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/12/index.html": {
       "baseline_sha256": "efefaa3985141e27f533314b27e665f4519a1205be447b64bfc63c789401d0bc",
-      "reviewed_sha256": "e7289f200dc035b39cdb07f132d6ae6c011b3696a4edd24e62f104a1d60e07cb",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "88c458d6f2227ce19ddb78e05ce235e1c6b39f5b90a93dd086f06a8e33618868",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/13/index.html": {
       "baseline_sha256": "3286b798c0dac8ad91e9be83d4ae2b7ec0afa1dc8a3cd05aca28412f4ba7e35a",
-      "reviewed_sha256": "dacf8ad7c7db8948bb68f6c10bbadada39aa0bc0696361d691ec53b78f1d8e6c",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "c675db29281adf71c29886b02619cbcd6597e66cf44721c64ce83fca31da6f40",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/14/index.html": {
       "baseline_sha256": "8f1d06ab67e11bf926549c4d38f9b359a2ec3c13bd29a55294b8d50a53a2fff7",
-      "reviewed_sha256": "4000ad8cbb5388a51d9f30487a074ab3b92ea9a9395672ba1c0ff6035da39d91",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "3a739a7d1dd406a19f5dd00cb66e811d4779a4b579cd445c8c363d0ddcddd7b3",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/15/index.html": {
       "baseline_sha256": "0b6de5fe2c85215ad1ab792adabd5614a3d8c788571b08cad99e8b24f80407a0",
-      "reviewed_sha256": "5c88ad8c06c76b6c8ac98a3590e15a56e72032a8e3049690899566a9894da2d3",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "29922198f6781ff1bbd8dd51b9aef3ee9f40f5c719e09d8047df74057a1998d3",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/16/index.html": {
       "baseline_sha256": "6d3141b7b3dfab13c40b5437242d957ec0bd1916acf9215c43cf76cc1c35e33c",
-      "reviewed_sha256": "c8469b3674f94c59ba1cbd1eee2a6efe8accd7caf3f7f8613685836347d6adde",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "c60df153360dc8f8dce38a7357801abc5aae9bd0226038eba6dd58f1725e864a",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/17/index.html": {
       "baseline_sha256": "a327f00f93a2ab6522df96c7f29857ca013a9e3d0ec3330e3d45143999e69c84",
-      "reviewed_sha256": "005db69d88396d83022eb4453cb9e6d5dcb8d0786f6f33c6660ae46221c3c5fa",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "359cc224a1315e27bfce74a4fd8be240e124da2f7db8ce78411f74a2993d3c20",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/18/index.html": {
       "baseline_sha256": "58ce19daffb6446cf848b8cba1e259d74effd164309844db3e4eef7dbbd420d7",
-      "reviewed_sha256": "045ef6e9b5b4a14a3692a609031635aec99e7e08b7ed2bf84dd6b318480f2f1e",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "d8a70af5c46b456c7e2b61611ab13654905df171c666c3a1eda7eac344cb31d6",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/19/index.html": {
       "baseline_sha256": "18fafb932625d2d17e75440788c980d2eb51dc3cda5bae2f97614c191b884404",
-      "reviewed_sha256": "0dcbd2d6e03a2d1c6e8a9407e05533dd0f1b1dc942de47b8dbce52ae4bd849b5",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "c23a41007b47692879195e1f5de0dd17a59d9903e958509269be6934ab2969af",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/2/index.html": {
       "baseline_sha256": "ca46dac784e031b5a29b09d17badd70a4deb51e94cb9e95ba920e0a2749cc4ca",
-      "reviewed_sha256": "a3693b9669cec433dba060bbeaf53d4c8d7ae8ef98ecf22274de2fd1722ef758",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "33f6091f1e87e46accb93f60f03d6c56f1707c4ce805d0b7409bd1eba88ebb44",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/20/index.html": {
       "baseline_sha256": "6b7f1dea645df7b99a42fd02d79f05d3ccd3d2fb3ec45785ae3a8ffa21ee9ebe",
-      "reviewed_sha256": "ad0530027781731a67cbcf572ef77111bcef24ac787db1e2d97677774debaa7e",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "9e0e4866133942451af443426c27fbbb5b8d426b2a4fbf3d4ee4e5ff93bb7bad",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/21/index.html": {
       "baseline_sha256": "a67a8b916b5b954d4c7dce118ef0acde20b74bc18fa4cc9ed9709310042e6857",
-      "reviewed_sha256": "ae6e1c3caf0dfdd4fc5a720b5dc125a56ea4fb24ff8597daa0fad2c46eecfd2b",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "8e6dba98a351c0a52cd52387771ed0e877c77b55d51db7db3b0bf0b9e3fbf0ca",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/22/index.html": {
       "baseline_sha256": "6442a121db718e330eba0ad21ad3f9f1f55caae1596d962de2aec5b8e920468b",
-      "reviewed_sha256": "1a12e3fda749d1809d2e45536a69f2e3dea107b455be5c26122fd534573ec615",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "1943c06a71814c2623ddd04f0a2185e2da27688ad76d210f10df87322c0a4c16",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/23/index.html": {
       "baseline_sha256": "06f5976555f3597c726c97d5eddebd72e7bbabfa90a495c40b9bbeaf16a6535d",
-      "reviewed_sha256": "d2532bc1e63aecb7f9c476ee6f167048adbbef583b79da49c51d524b47fcf77f",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "822df83df5670d041327403afaed0c1887d6739a8c800cfb681db72270a77fdd",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/24/index.html": {
       "baseline_sha256": "918280020a8bc4a449aa10124abaf69cecc79f6d932956d8d9c7ec2945b1f5e1",
-      "reviewed_sha256": "130518b52f5dc7602fac7829810cadf4cca408c9f7a62e50352606486882d926",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "90758a57ec46daec0748faeea5547f1776136af3768346c64cb280811435f29b",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/25/index.html": {
       "baseline_sha256": "d59f5b6c3d84366456e41063fda3159d31e6f9683c5b49465173fc12a15f1fb7",
-      "reviewed_sha256": "15126807b354809dc5e368c0ddddd1816e0254260415c0fcbadd943bedb31c0f",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "5f2b9e12405d14ef679aaea8310b7f9daf9fb6a3448a2b949766b1a38cb557be",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/26/index.html": {
       "baseline_sha256": "e9a54478a5e6408a56391b1e808d74c2c67b4e6e60b8bcd25c9db297a9d136f2",
-      "reviewed_sha256": "6f4269db7591f93fb5c1e0b335c937dbb41fa1163a8306c38aad7c73d5ef0c35",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "006daf033ba1ba970de2a88d9b878af6e6bb70ae5f5528d55b40f28be59eb3a9",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/27/index.html": {
       "baseline_sha256": "41f67c417abe0420d041370a9ca93aa081b39486d67e3523f86f6c8debe5cd88",
-      "reviewed_sha256": "746a13dc26fe7a3dbe99648b32fb8f01b09de1cf3a91814310b3d2119b4e2406",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "641ccb5bd828aecfb90b9126a92566b0c3e43ba12edf37391550d4c65eed8ceb",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/28/index.html": {
       "baseline_sha256": "de63e0325b070cab00859436b34e25a04733617d90e8a21dbb5b209f5ae31542",
-      "reviewed_sha256": "531f6e0619e3d3973cecf081f1a75aa2e794008d85613d9c11032cf068a540e8",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "80a1df69b86401cad91e4e96da55e0c416879149f8f246bbda895b0460ce1da5",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/29/index.html": {
       "baseline_sha256": "68bc8390cad8ca852b442698a17b8f162bfa2acd06c2646227243e1684991968",
-      "reviewed_sha256": "feb5ae5d5ebf416ffcc52cc3dc5ae69a0970f87c37ef6ad25f832e5dca2f0ce7",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "f526cdc6204b9cfb90f35f79e5013864bf26bfe98d7856ce6e98e4cf35fbe0b0",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/3/index.html": {
       "baseline_sha256": "ec7576d071a79cf44fa19848820103424eef54117e39e76751186c4baa472b0c",
-      "reviewed_sha256": "be3da0702a73d0f5f8c10262dc28bf14c7a2fb1b0b5ff442c861349ce5cdd01e",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "98e845519e59e7849ba5d5b0550f08faa4a04a523a1f9c23ffeedfa9b6666ea3",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/30/index.html": {
       "baseline_sha256": "2732cb8bfd3f11c16e0facd109169d1f802785a6ccabf038cea1079915a67bde",
-      "reviewed_sha256": "11e0ff4f8fcb6cad0086496382b6c54db99b162c876ce18870fdf7d2059e786d",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "431f0782fd92cd57ad963d7b78e65fdbc22accf3aa3b2641f8cb4faa690f0a89",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/31/index.html": {
       "baseline_sha256": "2f2551ad25789d2d65953b381bf079dbb4f1e3ef58bfb5232b62e28ba0533422",
-      "reviewed_sha256": "af89cd1823bc3d510f2897ad7d115ad88039d65536124aab527998dd8d7ee67f",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "583bb342f9650b11f532f52b99b1291044b89e0b214016135802e191a61c087b",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/32/index.html": {
       "baseline_sha256": "ebfea7ce0d87fae9ac58c8e4ff0dd2b18c29913e75d36a5f7c8e735b0cc37fa7",
-      "reviewed_sha256": "fffb7441a283d3d34a0d241e5a1722f3487e525f4e40e5f45a5d257441922c35",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "7473168d6d55e860e3b7cf598c068f36f7568e46a72b48ce34860c3cd4fcbc7d",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/33/index.html": {
       "baseline_sha256": "c14a369c70a92fa67271a774d5461453389b48279f845fb2566fece97078361d",
-      "reviewed_sha256": "0a37e7342870b80a79dad9ba923eb8e89ee3d9614cb53e463bee649327d43501",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "78c4105ab88b93f2ab5ac3beb189efe48d2bcdfe3e57719c3a35bfa6b4e133b6",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/34/index.html": {
       "baseline_sha256": "d893499614c1f112e016cfc9c0258b857160ddb8867942edf4ca23bdbb5cfb88",
-      "reviewed_sha256": "d5b096ab258f28a215e1648486ff60d616d5c8fb501a5a2fe8e907e49205aa56",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "dfd7f5cdf0c15daafdce588f3e57785b151ae0fca6cfbce828bf13fc67dd2f01",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/35/index.html": {
       "baseline_sha256": "c40615d870de5ea41b4d9b82ffbe2ee37b89527549759234ac17dc756da5296f",
-      "reviewed_sha256": "1a482a12e53a892d953d1165e229e36305c50130d60755c0eeed4c30a8853763",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "8e66f258bcf3be39e62619240da9494fb93a26c6af1481ab8c3c1579f4bb94d6",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/4/index.html": {
       "baseline_sha256": "2843193dccb536208a468f1265fb152582f6cf91941abc21e59db07a1608ddad",
-      "reviewed_sha256": "709f2b63a999f2fb2da44827e4a181e83d9ceb2f978fa87360f0e14038751131",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "756c99d5cf92791c8c345ab33a42afe677f22b9320651f0e3eb887251187c641",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/5/index.html": {
       "baseline_sha256": "32455d0c4b7c372ad71fa95c2fe86fa713f420fe71b8edf8d03a2e3b4b705d04",
-      "reviewed_sha256": "8935e54e435fd1a4813de96b72334281a01b532309c68b1228be928a4c8d53f7",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "e18044ca12f1d9eba5b3c382f326b16b912579d10c917ea0c309258591a1b653",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/6/index.html": {
       "baseline_sha256": "fee31770eb35abedd171508b6be2bc49182411626c9ad62dbb30ff9da7f1f7c3",
-      "reviewed_sha256": "e48928dd958610254719c6af28fa120af5e89a67a819ab085c48402f2df556dc",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "ff419a7148262cae11b1eb3e7e8a991c58095a9e2a7f2ece6688c44c548c6466",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/7/index.html": {
       "baseline_sha256": "c553a4c436c52ee682252b2ffe9976851c6e7fc783e14508c926eddf94c89972",
-      "reviewed_sha256": "9b1badc72e8804f050a83dc0785f6ca6b717e31a6474407480de6156badfb914",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "7d1b35aeb0e41d7fcc658c2d9428da8c6b3480f2ebe76fc38e57446c68733c8a",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/8/index.html": {
       "baseline_sha256": "0436b5fd938c34e4c09336fea264b947e893f9e3fba771add2039ec9cf5bbcb0",
-      "reviewed_sha256": "aad260615ed41a6685b8178f3dddc9307b00162f66f10dfacd037cafc79f8c27",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "58187d903f21208b02cbf1ccc3b249f46ccc8630662b2a7ef81bc180952da274",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/9/index.html": {
       "baseline_sha256": "45b49246a048b822ea1eb68d438f1d3428efe7fbb2392f1ed47af978651df8eb",
-      "reviewed_sha256": "9eb861215af1acf06f23ffb8f92d518eb236ff9a433a873ca26557a342436d74",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
+      "reviewed_sha256": "15644f046df0d895df7045af62cdbd1439d4c6a157e01011623d372387dc46eb",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "scripts/build_library_catalog.py": {
@@ -264,8 +264,8 @@
     },
     "tests/catalog.mjs": {
       "baseline_sha256": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
-      "reviewed_sha256": "5c187c5ec96c5dfb5031c6313d21b63b5dbe3e7929756f210af79a9ef7a4c7a0",
-      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+      "reviewed_sha256": "8a6e1e0d6e4c011ec40a76e1ae4419513e41fe602d07785d9a839b73124c8f33",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged"
     },
     "atama/index.html": {
       "baseline_sha256": "2c707eb385fa0226b35828f6bb7021182f81573e0a49800f73ef5a2b282108a5",
@@ -460,10 +460,10 @@
       "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
     },
     "index.html": {
-      "baseline_sha256": "e8f63bf5fce45396462acdab5b9d35dfd7ad1e4f7ff6f001252ed304de476868",
-      "reviewed_sha256": "98811b8f7aea1bcfe63f98f4759f13fac31753ae7f78a05ba38a7a09554c48d4",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "c14534c3c3121324d43d441030bb86cdd646279de19a1b3cb6104e26c0a78c26"
+      "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
+      "reviewed_sha256": "671f0da357f98b8d81dfc42e984b0fdfb2227723820d2d16c59f4926cd00ee87",
+      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved",
+      "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b"
     },
     "kariyer/kariyer-gelisimi-ortaokul-lise/index.html": {
       "baseline_sha256": "29ae161969be36b3486edb20e6ae86963ca5c8a1e45af5f53e9875dae2dd474d",
@@ -659,9 +659,9 @@
     },
     "konu/akran-zorbaligi/index.html": {
       "baseline_sha256": "c0ff1221f2b36925e0d207f47e40fcbe6b63e4a52724721476718261a055d68f",
-      "reviewed_sha256": "5fd678ce65cbf55f3e6da5f89725f06c8605ea0ee44ce0d2143e2aa39fe75f00",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "d54f6c0da972c8e5af04e2e95d0b97c05d643cbf140e6fac00a58e1ceaf9a0f0",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/bep/index.html": {
       "baseline_sha256": "d1f0930efc0db047cca5eb8d2dbcf659101643f62debaf6637933cb1643f81f7",
@@ -677,9 +677,9 @@
     },
     "konu/devamsizlik/index.html": {
       "baseline_sha256": "fef16143416edba56ffb6c77e9a855c47db74ef835c0ae014172d3a11aa07430",
-      "reviewed_sha256": "3a9653726afe400d38eff404a80e6e81b8f129fdabe92c86c65cf468b6fa2cae",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "e324057315c7346e7852989ae1544b690476ff785c97fe62b14a1e5346e8dc4c",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/ergenlik/index.html": {
       "baseline_sha256": "486b1cb06cfee35d87068b557a7202610d4ac265833a8315829ae60909cb236e",
@@ -713,9 +713,9 @@
     },
     "konu/okul-reddi/index.html": {
       "baseline_sha256": "ad935586fb16e0b923ad4064acb3250663a2171dca4236f4f76d01a652460437",
-      "reviewed_sha256": "f567a62621c805e4b1db1887cb601be6c7c7c8892883833023ddbe148a28da4b",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "528a32940a519a54f7a0407b874fd19eba78ee80342d2e9dd9f6fce163269f15",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/okula-uyum/index.html": {
       "baseline_sha256": "f075d8cf902fa8077210b2e29c0672502e398428c02ed091a894a96ee81bbdd2",
@@ -749,9 +749,9 @@
     },
     "konu/sinav-kaygisi/index.html": {
       "baseline_sha256": "18b848287752efbdb211cdcd6f00e134829e0967dceed0c9b71f861b82a75fb9",
-      "reviewed_sha256": "59e9d6a59e3377330e29191318e1724a7edcd187da64bd30d66c559ad3d97143",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "8170cb012069ab9683f35117e7d881922bd0f4069d229cc079f7b753949a210a",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/sinif-rehberligi-etkinlikleri/index.html": {
       "baseline_sha256": "f9ad5cc8697bcb806131882841d588ba2d53d49ec2bd74e32734f7bcf91ebb33",
@@ -779,9 +779,9 @@
     },
     "konular.html": {
       "baseline_sha256": "f24fac3cc39ffaa58b5620754c91439a94a14a0d4d83aeba3f0e7ca2a9cb8458",
-      "reviewed_sha256": "02a81c586be51043594a096952e6c53704b1595407ae98d5d7fc3ff776605b79",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "f4a7ca8eb41887318b1b1b5d071c31e9bcae15b0b2fa452fd11abad8c0075dda",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved topic directory visual redesign; existing canonical URLs, structured data, original links and runtime preserved"
     },
     "kriz/index.html": {
       "baseline_sha256": "8f6b7baf6426a8e9e70f577afcd6e4bc4cf0b68c0da9a375a2528f5652f52852",
@@ -821,9 +821,9 @@
     },
     "kutuphane.html": {
       "baseline_sha256": "423c4fe55483a69113a61d2fc7523ffc17d59e79b2569f967901aad15fedee24",
-      "reviewed_sha256": "c6d518dc1b563d8fe0f7559175680c54ad9b130f1ff75f4f337efcb2d7ee31cb",
-      "reason": "User-requested actual document previews and navigation/footer color corrections; original records preserved",
-      "runtime_sha256": "342453a4913a35b746c50cd38318658a602a592eb928ab445f51a28865ba0b61"
+      "reviewed_sha256": "a88dc09f691abe87c92566e14b5be83b051ab3f93d551f02675d945ac3e02db9",
+      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved",
+      "runtime_sha256": "24fcea6d2340d7f935961ef90cada5ab7eaa33a1103172c359a13bdce70116c9"
     },
     "kvkk-aydinlatma.html": {
       "baseline_sha256": "0a2a484dbfdd0dda88ff5725ac30b57743d71ad6e971dd932a9e22197dda82f1",
@@ -863,8 +863,8 @@
     },
     "materyaller/etkinlikler/index.html": {
       "baseline_sha256": "ed95dfa51195b937e354a51341b695e8f4ebb2b5e28839a493e9994ea92b014c",
-      "reviewed_sha256": "01d6db8b7652a2e28f1cff41e1673551937c1a5cfba51961b24f97ca926b2911",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "aab37b56985dc06026cf59dc736b358509c985cb4f3d4ed6e20ddad32b0abec4",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "materyaller/pano-materyalleri/index.html": {
@@ -1241,8 +1241,8 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "b8380387ba9364f835411a7e5ff1c8310d7c0545cf348533b70868326be97a41",
-      "reason": "Source-preserving resource detail pages and exact-file matching; original catalogue and calculation data preserved"
+      "reviewed_sha256": "56f9431d90bf89a31869e2456d86f285f14880abb8f4f078e86eac7ec391af6a",
+      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged"
     },
     "topluluk.html": {
       "baseline_sha256": "e73b19a12fd7d33801327f61799969e46685844e3504de5c4e9835352c14d1b9",
@@ -1324,6 +1324,11 @@
       "reviewed_sha256": "7472072ec9f1d5f54dcc35e506cf31df7b1ade41fbf0ef53f1fa1fe2a17923ca",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
+    },
+    "src/shell-refresh.css": {
+      "baseline_sha256": "009fd9983df1090ba7c90159506696520293662d1d09d895e360ef95ad17b8b1",
+      "reviewed_sha256": "7abd93627773ef5d207f001d1ff576a54d0ee88d55022fccfdc196f2e5c1bbac",
+      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved"
     }
   }
 }

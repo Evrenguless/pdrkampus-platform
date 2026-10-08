@@ -22,8 +22,10 @@ test('katalog kimlikleri benzersizdir; ortak dosyaların tüm kimlikleri denetle
    || /(?:^|\.)yok\.gov\.tr$/.test(url.hostname)
    || /(?:^|\.)edu\.tr$/.test(url.hostname)
    || ['meb.gov.tr','www.aile.gov.tr'].includes(url.hostname);
-  assert.ok(officialHost,`${label}: kaynak alan adı`);
-  assert.equal(item.sourceType,'official',`${label}: kaynak türü`);
+  const unicefPublisher=url.hostname==='www.unicef.org' && item.source==='UNICEF Türkiye'
+   && new URL(item.sourcePage).hostname==='www.unicef.org' && url.pathname.startsWith('/turkiye/');
+  assert.ok(officialHost||unicefPublisher,`${label}: kaynak alan adı`);
+  assert.equal(item.sourceType,unicefPublisher?'other':'official',`${label}: kaynak türü`);
   assert.ok(['PDF','XLSX','XLS','MP4','PPTX','DOCX','DOC','JPEG','JPG','PNG','ZIP','PPT','WEB','HTML'].includes(item.fileType),`${label}: dosya türü`);
   const hasExpectedExtension=decodeURIComponent(url.pathname).toLowerCase().endsWith('.'+item.fileType.toLowerCase());
   const isMebBulutZip=item.fileType==='ZIP'&&url.hostname==='bulut.meb.gov.tr'&&/^\/app\/tr-TR\/Dosya\/Paylas\/MEBBulut\/[0-9a-f-]{36}$/.test(url.pathname);

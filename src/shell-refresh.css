@@ -1,3 +1,4 @@
+@import url('/src/visual-refresh.css?v=20261008-2');
 /* Shared chrome uses the same forest-green palette as the page content. */
 :root{--shell-ink:#123c31;--shell-teal:#3e8169;--shell-paper:#fffdf8;--shell-muted:#b9cec2}
 .header{height:82px;background:var(--shell-paper);border-bottom:1px solid #e5e1d8;padding-inline:32px}
