@@ -98,6 +98,15 @@ def enhance_cards(root,source):
 def decorate(root,source,row=None):
  source=re.sub(r'(resource-design\.css|resource-preview\.js|library\.js)\?v=[^"\s>]+',r'\1?v=20261008-2',source)
  source=enhance_cards(root,source)
+ if row and row.get('pagePath','').startswith('/kaynak/yeni/'):
+  publisher=(row.get('source') or 'MEB').replace('Rehberlik ve Araştırma Merkezi','RAM')
+  info=row.get('documentInfo',{});extent=str(info['page_count'])+' sayfa' if info.get('page_count') else str(info['slide_count'])+' slayt' if info.get('slide_count') else ''
+  page_title=row['title']+' · '+row['fileType']+' · '+publisher+' | PDR Kampüs'
+  description=row['title']+' — '+publisher+'. '+row['fileType']+(' · '+extent if extent else '')+'; belge önizlemesi ve kullanım önerileri.'
+  source=re.sub(r'<title>.*?</title>','<title>'+E(page_title)+'</title>',source,count=1,flags=re.S)
+  for attribute,value in [('name="description"',description),('property="og:title"',page_title),('property="og:description"',description)]:
+   source=re.sub(r'<meta '+attribute+r' content="[^"]*">','<meta '+attribute+' content="'+E(value,quote=True)+'">',source,count=1)
+
  source=re.sub(r'(/assets/resource-previews/[^"<>]+)\.png',lambda m:m.group(1)+'.jpg' if (root/(m.group(1).lstrip('/')+'.jpg')).exists() else m.group(0),source)
  if 'data-resource-design="1"' in source:
   if row:

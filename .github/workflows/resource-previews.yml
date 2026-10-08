@@ -1,20 +1,26 @@
 name: Real Resource Previews
 on:
   workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum number of missing document previews
+        required: true
+        default: 5000
+        type: number
   schedule:
     - cron: '35 * * * *'
   push:
     branches: [main]
     paths: ['data/collected-resources.json', 'scripts/build_resource_previews.py', '.github/workflows/resource-previews.yml']
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: resource-design-publication
   cancel-in-progress: false
 jobs:
   previews:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     permissions:
       contents: write
       pages: write
@@ -26,35 +32,37 @@ jobs:
       - name: Install document rendering tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y poppler-utils fonts-dejavu-core
+          sudo apt-get install -y poppler-utils fonts-dejavu-core libreoffice-writer libreoffice-impress libreoffice-calc
           pip install openpyxl Pillow pypdf
-      - name: Render original public documents
-        run: |
-          git pull --ff-only origin main
-          python scripts/build_resource_previews.py --limit 100
-      - name: Update catalogue covers
-        run: |
-          python scripts/resource_design.py
-          python scripts/build_library_catalog.py
-          python scripts/resource_design.py
-          python -m unittest discover -s scripts -p test_resource_design.py
-          python scripts/build_library_catalog.py --check
-          python scripts/check_seo.py
-          python scripts/check_accessibility.py
-      - name: Preserve original resource records
-        run: |
-          test -z "$(git diff --name-only -- data/library.json data/forms.json data/collected-resources.json db src/auth-config.js)"
-      - name: Publish actual previews
-        run: |
-          git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/ kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ seo/approved-edits.json
-          if ! git diff --cached --quiet; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Add genuine document covers and spreadsheet previews'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-      - name: Build live Pages
+      - name: Render, check and publish missing previews in batches
         env:
+          PREVIEW_LIMIT: ${{ github.event.inputs.limit || '5000' }}
           GH_TOKEN: ${{ github.token }}
-        run: gh api --method POST repos/{owner}/{repo}/pages/builds
+        run: |
+          python -c 'import os; n=int(os.environ["PREVIEW_LIMIT"]); assert 0<n<=5000'
+          budget="$PREVIEW_LIMIT"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          while [ "$budget" -gt 0 ]; do
+            git pull --ff-only origin main
+            batch=$((budget < 100 ? budget : 100))
+            python scripts/build_resource_previews.py --limit "$batch" | tee /tmp/pdr-preview-batch.log
+            python scripts/resource_design.py
+            python scripts/build_library_catalog.py
+            python scripts/resource_design.py
+            python -m unittest discover -s scripts -p test_resource_design.py
+            python scripts/build_library_catalog.py --check
+            python scripts/check_seo.py
+            python scripts/check_accessibility.py
+            test -z "$(git diff --name-only -- data/library.json data/forms.json data/collected-resources.json db src/auth-config.js)"
+            git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/ kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ seo/approved-edits.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Publish genuine document preview batch'
+              git pull --rebase origin main
+              git push origin HEAD:main
+              gh api --method POST repos/{owner}/{repo}/pages/builds
+            fi
+            remaining=$(tail -n 1 /tmp/pdr-preview-batch.log | python -c 'import json,sys; print(json.load(sys.stdin)["remaining_files"])')
+            if [ "$remaining" -eq 0 ]; then break; fi
+            budget=$((budget - batch))
+          done

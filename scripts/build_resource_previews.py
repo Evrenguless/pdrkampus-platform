@@ -1,12 +1,14 @@
 """Build faithful previews from public source files; never modify resource records."""
 import time
+import shutil
 import argparse, concurrent.futures, hashlib, json, os, subprocess, tempfile, textwrap, urllib.request, urllib.parse
 from pathlib import Path
 from openpyxl import load_workbook
 from PIL import Image, ImageDraw, ImageFont
 from pypdf import PdfReader
+class ConverterUnavailableError(RuntimeError):pass
 ROOT=Path(__file__).resolve().parents[1]
-FONT=os.environ.get('PREVIEW_FONT','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+FONT=os.environ.get('PREVIEW_FONT') or next((p for p in ['/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf','/System/Library/Fonts/Helvetica.ttc','C:/Windows/Fonts/arial.ttf'] if Path(p).exists()),'DejaVuSans.ttf')
 def thumbnail(sheet,path):
     rows=sheet['rows'][:16];cols=min(max(map(len,rows),default=1),8)
     width=1200;cw=(width-70)//cols;rh=82
@@ -43,6 +45,15 @@ def build(row):
         with urllib.request.urlopen(request,timeout=25) as response:data=response.read(25_000_001)
         if len(data)>25_000_000:raise ValueError('Preview size limit')
         dest.write_bytes(data);result={'sourceSha256':hashlib.sha256(data).hexdigest()}
+        if kind in ['DOC','DOCX','PPT','PPTX','XLS']:
+            if not shutil.which('libreoffice'):raise ConverterUnavailableError('Install LibreOffice for Office document previews')
+            profile=Path(tmp)/'profile';(profile/'user').mkdir(parents=True)
+            (profile/'user/registrymodifications.xcu').write_text('<?xml version="1.0"?><oor:items xmlns:oor="http://openoffice.org/2001/registry"><item oor:path="/org.openoffice.Office.Common/Security/Scripting"><prop oor:name="MacroSecurityLevel" oor:op="fuse"><value>3</value></prop></item><item oor:path="/org.openoffice.Office.Common/Security/Scripting"><prop oor:name="DisableMacrosExecution" oor:op="fuse"><value>true</value></prop></item></oor:items>')
+            subprocess.run(['libreoffice','-env:UserInstallation='+profile.as_uri(),'--headless','--convert-to','pdf','--outdir',tmp,str(dest)],check=True,capture_output=True,timeout=60)
+            dest=Path(tmp)/'source.pdf'
+            if not dest.exists():raise ValueError('Office conversion did not produce a PDF')
+            result['sourceFormat']=kind
+            kind='PDF'
         if kind=='PDF':
             reader=PdfReader(dest);result['pageCount']=len(reader.pages)
             prefix=assets/ident
@@ -64,6 +75,7 @@ def build(row):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=100);args=parser.parse_args()
+    if not 0<args.limit<=5000:parser.error('--limit must be between 1 and 5000')
     manifest=ROOT/'data/resource-previews.json';previews=json.loads(manifest.read_text())
     state_file=ROOT/'data/preview-build-state.json';state=json.loads(state_file.read_text()) if state_file.exists() else {}
     rows=[]
@@ -74,11 +86,11 @@ def main():
     pending=[];seen=set()
     for row in rows:
         if row['file'] in by_file:previews[row['id']]=by_file[row['file']];continue
-        if row['fileType'].upper() not in ['PDF','XLSX'] or row['file'] in seen:continue
-        if state.get(row['id'],{}).get('retryAfter',0)>time.time() and state.get(row['id'],{}).get('errorType')!='UnicodeEncodeError':continue
+        if row['fileType'].upper() not in ['PDF','XLSX','DOC','DOCX','PPT','PPTX','XLS'] or row['file'] in seen:continue
+        if state.get(row['id'],{}).get('retryAfter',0)>time.time() and state.get(row['id'],{}).get('errorType') not in (['UnicodeEncodeError','ConverterUnavailableError'] if shutil.which('libreoffice') else ['UnicodeEncodeError']):continue
         seen.add(row['file']);pending.append(row)
     successes=0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         futures={pool.submit(build,row):row for row in pending[:args.limit]}
         for future in concurrent.futures.as_completed(futures):
             row=futures[future]
