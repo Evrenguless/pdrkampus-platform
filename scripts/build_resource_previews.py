@@ -83,6 +83,9 @@ def main():
     # The library sorts titles; prioritize visible cards and the explicitly reported workbook.
     rows.sort(key=lambda r:(r['id']!='collected-64cf8183f040bf20432c3eea',r['title']))
     by_file={r['file']:previews[r['id']] for r in rows if r['id'] in previews and previews[r['id']].get('thumbnail')}
+    for row in rows:
+        if row['fileType'].upper() in ['PNG','JPG','JPEG']:
+            by_file.setdefault(row['file'],{'thumbnail':row['file'],'previews':[row['file']]})
     pending=[];seen=set()
     for row in rows:
         if row['file'] in by_file:previews[row['id']]=by_file[row['file']];continue
