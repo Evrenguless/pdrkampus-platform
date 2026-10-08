@@ -46,5 +46,109 @@
   "cizre-aile-iletisim-veli-brosur-2026": {
     "retryAfter": 1791500594,
     "errorType": "URLError"
+  },
+  "collected-5e6c5a03dc7198de8d00521e": {
+    "retryAfter": 1791514415,
+    "errorType": "URLError"
+  },
+  "aksaray-aile-ici-iletisim-veli-sunumu-2025": {
+    "retryAfter": 1791514415,
+    "errorType": "URLError"
+  },
+  "seyhan-aile-ici-iletisim-veli-semineri-2025": {
+    "retryAfter": 1791514415,
+    "errorType": "URLError"
+  },
+  "tegm-2026-ailemle-okul-yolu-1sinif": {
+    "retryAfter": 1791514420,
+    "errorType": "ValueError"
+  },
+  "ogretmen-brosur": {
+    "retryAfter": 1791514437,
+    "errorType": "ValueError"
+  },
+  "akran-52": {
+    "retryAfter": 1791514439,
+    "errorType": "ValueError"
+  },
+  "atasehir-lise-bilgi-kitapcigi-2026": {
+    "retryAfter": 1791514465,
+    "errorType": "URLError"
+  },
+  "fatih-arkadaslik-iliskileri-2025": {
+    "retryAfter": 1791514465,
+    "errorType": "URLError"
+  },
+  "cizre-atilganlik-etkinlik-kitapcigi-2026": {
+    "retryAfter": 1791514476,
+    "errorType": "URLError"
+  },
+  "cizre-atilganlik-veli-brosur-2026": {
+    "retryAfter": 1791514491,
+    "errorType": "URLError"
+  },
+  "bep-excel-format-2024-esenyurt": {
+    "retryAfter": 1791514498,
+    "errorType": "URLError"
+  },
+  "bep-kilavuz-kitabi-2025": {
+    "retryAfter": 1791514513,
+    "errorType": "URLError"
+  },
+  "cizre-bagimlilikla-mucadele-veli-brosur-2026": {
+    "retryAfter": 1791514525,
+    "errorType": "URLError"
+  },
+  "kiziltepe-basari-pusulasi-pano-2024": {
+    "retryAfter": 1791514531,
+    "errorType": "URLError"
+  },
+  "cizre-atilganlik-okuloncesi-ilkokul-sunum-2026": {
+    "retryAfter": 1791514536,
+    "errorType": "ValueError"
+  },
+  "cankaya-bilincli-teknoloji-veli-2025": {
+    "retryAfter": 1791514561,
+    "errorType": "URLError"
+  },
+  "meb-79": {
+    "retryAfter": 1791514571,
+    "errorType": "HTTPError"
+  },
+  "dogubayazit-bilincli-teknoloji-ogretmen-kitapcik-2022": {
+    "retryAfter": 1791514572,
+    "errorType": "URLError"
+  },
+  "kaynarca-2026-ergen-cocugunuzla-iletisim-sunumu": {
+    "retryAfter": 1791514576,
+    "errorType": "UnicodeEncodeError"
+  },
+  "orgm-bilsem-rpd-hizmetleri-kilavuzu-2023": {
+    "retryAfter": 1791514583,
+    "errorType": "HTTPError"
+  },
+  "nevsehir-ogretmen-bilsem-kitapcigi": {
+    "retryAfter": 1791514584,
+    "errorType": "HTTPError"
+  },
+  "serdivan-bireyi-tanima-teknikleri-sosyometri": {
+    "retryAfter": 1791514588,
+    "errorType": "PdfStreamError"
+  },
+  "nevsehir-ogretmen-guvenli-internet-etkinlik": {
+    "retryAfter": 1791514591,
+    "errorType": "URLError"
+  },
+  "nusaybin-2025-bireysel-gelisim-raporu": {
+    "retryAfter": 1791514601,
+    "errorType": "URLError"
+  },
+  "cizre-bagimlilik-ortaokul-sunum-2026": {
+    "retryAfter": 1791514606,
+    "errorType": "ValueError"
+  },
+  "cizre-bagimlilik-ilkokul-sunum-2026": {
+    "retryAfter": 1791514609,
+    "errorType": "ValueError"
   }
 }

@@ -1,6 +1,6 @@
 """Build faithful previews from public source files; never modify resource records."""
 import time
-import argparse, concurrent.futures, hashlib, json, os, subprocess, tempfile, textwrap, urllib.request
+import argparse, concurrent.futures, hashlib, json, os, subprocess, tempfile, textwrap, urllib.request, urllib.parse
 from pathlib import Path
 from openpyxl import load_workbook
 from PIL import Image, ImageDraw, ImageFont
@@ -35,7 +35,11 @@ def build(row):
     kind=row['fileType'].upper();ident=row['id'];assets=ROOT/'assets/resource-previews';assets.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         dest=Path(tmp)/('source.'+kind.lower())
-        request=urllib.request.Request(row['file'],headers={'User-Agent':'PDRKampus-DocumentPreview/1.0'})
+        override=json.loads((ROOT/'seo/link-overrides.json').read_text()).get('entries',{}).get(row['file'],{})
+        url=override.get('replacement_url') if row['id'] in override.get('ids',[]) and override.get('replacement_url') else row['file']
+        parts=urllib.parse.urlsplit(url)
+        url=urllib.parse.urlunsplit((parts.scheme,parts.netloc,urllib.parse.quote(parts.path,safe='/%:@'),urllib.parse.quote(parts.query,safe='/?&=%:+;'),parts.fragment))
+        request=urllib.request.Request(url,headers={'User-Agent':'PDRKampus-DocumentPreview/1.0'})
         with urllib.request.urlopen(request,timeout=25) as response:data=response.read(25_000_001)
         if len(data)>25_000_000:raise ValueError('Preview size limit')
         dest.write_bytes(data);result={'sourceSha256':hashlib.sha256(data).hexdigest()}
@@ -71,7 +75,7 @@ def main():
     for row in rows:
         if row['file'] in by_file:previews[row['id']]=by_file[row['file']];continue
         if row['fileType'].upper() not in ['PDF','XLSX'] or row['file'] in seen:continue
-        if state.get(row['id'],{}).get('retryAfter',0)>time.time():continue
+        if state.get(row['id'],{}).get('retryAfter',0)>time.time() and state.get(row['id'],{}).get('errorType')!='UnicodeEncodeError':continue
         seen.add(row['file']);pending.append(row)
     successes=0
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:

@@ -29,7 +29,9 @@ jobs:
           sudo apt-get install -y poppler-utils fonts-dejavu-core
           pip install openpyxl Pillow pypdf
       - name: Render original public documents
-        run: python scripts/build_resource_previews.py --limit 100
+        run: |
+          git pull --ff-only origin main
+          python scripts/build_resource_previews.py --limit 100
       - name: Update catalogue covers
         run: |
           python scripts/resource_design.py

@@ -26,6 +26,7 @@ jobs:
           node-version: '22'
       - name: Apply approved resource design
         run: |
+          git pull --ff-only origin main
           python scripts/resource_design.py
           python scripts/build_library_catalog.py
           python scripts/resource_design.py
