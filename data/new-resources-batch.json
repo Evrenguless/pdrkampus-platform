@@ -310,5 +310,44 @@
     "file": "https://www.unicef.org/turkiye/raporlar/e%C4%9Fi%CC%87ti%CC%87mi%CC%87n-toplumsal-ci%CC%87nsi%CC%87yet-a%C3%A7isindan-i%CC%87ncelenmesi%CC%87turki%CC%87ye-2003",
     "fileType": "Kaynak sayfası (PDF indirme)",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-egitim-sektoru-ihtiyaclari-genel-bakis-2024",
+    "title": "Eğitim Sektörü İhtiyaçlarına Genel Bakış",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Devamsızlık ve eğitime erişim",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/e%C4%9Fitim-sekt%C3%B6r%C3%BC-i%CC%87htiya%C3%A7lar%C4%B1na-genel-bak%C4%B1%C5%9F",
+    "file": "https://www.unicef.org/turkiye/raporlar/e%C4%9Fitim-sekt%C3%B6r%C3%BC-i%CC%87htiya%C3%A7lar%C4%B1na-genel-bak%C4%B1%C5%9F",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-cocuga-karsi-siddet-izleme-gostergeleri-2013",
+    "title": "Çocuğa Karşı Şiddeti İzleme Göstergeleri Kılavuzu",
+    "type": "Kılavuz",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Çocuk koruma",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocu%C4%9Fa-kar%C5%9Fi-%C5%9Fiddeti-izleme-g%C3%B6stergeleri-k%C4%B1lavuzu",
+    "file": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocu%C4%9Fa-kar%C5%9Fi-%C5%9Fiddeti-izleme-g%C3%B6stergeleri-k%C4%B1lavuzu",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-engeli-olan-cocuklar-bilgi-tutum-davranis-2015",
+    "title": "Türkiye'de Engeli Olan Çocuklara Yönelik Bilgi, Tutum ve Davranış Raporu",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Özel eğitim ve kapsayıcılık",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-engeli-olan-%C3%A7ocuklara-y%C3%B6nelik-bilgitutum-ve-davran%C4%B1%C5%9F-raporu",
+    "file": "https://www.unicef.org/turkiye/raporlar/t%C3%BCrkiyede-engeli-olan-%C3%A7ocuklara-y%C3%B6nelik-bilgitutum-ve-davran%C4%B1%C5%9F-raporu",
+    "fileType": "Kaynak sayfası (PDF indirme)",
+    "sourceType": "other"
   }
 ]
