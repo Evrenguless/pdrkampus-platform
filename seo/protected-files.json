@@ -50,7 +50,7 @@
     "data/content-map.json": "d88160daf287bae3b0764d5843334e71d5319f571bd1d8ad4746912033e78fd7",
     "data/forms.json": "06dbb276154da3df6abbb11d2c48d8fc8825de6a3cecfbd0824d596082c2dd6e",
     "data/inventory-gap-audit.json": "5596d99064ba31072ec6634bd713b4cc3681b35a9efe6746f988abf6fcbcde5f",
-    "data/library.json": "9c14baa1d26b5e030e876463c41147c44c9294408e8e23dc19d70244e7fad60b",
+    "data/library.json": "300cb3cfaddd87c1d9dd30ec734124cf99fc8d1194863b31b0de471b9ba2d550",
     "data/programs.json": "ca77c3ef66e418c8f188ccb9dfe55629610a6380508f633d583a9077b8b4c421",
     "data/recruitment.json": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
     "data/search-trends.json": "64dace446dd768334e11d743b2125511a2421860f00d39a950c585edd46f60c7",
@@ -407,6 +407,12 @@
       "previous_sha256": "2d17a0cfde3e2e476249c7af72db06aa0961b1670e4a375711132ca377e5be7b",
       "reviewed_sha256": "d1ef93cefe6997b85134dc2ca1f4bb9caa14137b7961f81f97d3fca8d76078e4",
       "reason": "Preserve already published main UI at 1be9664; exact HEAD bytes retained during catalogue SEO expansion"
+    }
+  },
+  "baseline_sources": {
+    "data/library.json": {
+      "commit": "07d7041cf6f39888b7a48f70d0cd26257be91d4b",
+      "reason": "Re-pin unchanged current main catalogue after concurrent append-only additions; all original records verified identical; theme changes do not modify records"
     }
   }
 }

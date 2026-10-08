@@ -346,3 +346,5 @@
 :root body:has(.header) .mobile-menu-group+.mobile-menu-group{border-color:#e2eaf2}
 :root body:has(.header) .mobile-menu a:hover,:root body:has(.header) .mobile-menu a[aria-current="page"]{background:#eaf8f0;color:#007f68}
 @media(max-width:760px){:root body:has(.header) .mobile-menu:not([hidden]){top:68px}:root body:has(.header) [data-related-catalogue]>ul{grid-template-columns:1fr}}
+:root body:has(.header) .header .brand img{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+:root body:has(.header) .desktop a[aria-current="page"],:root body:has(.header) .desktop a[data-section-current="true"]{border-bottom-color:transparent;color:#007f68}

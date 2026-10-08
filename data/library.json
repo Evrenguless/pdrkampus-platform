@@ -17125,5 +17125,83 @@
     "file": "https://eskilaal.meb.k12.tr/icerikler/selamlasma_17702666.html",
     "fileType": "WEB",
     "sourceType": "official"
+  },
+  {
+    "id": "unicef-cocuk-haklari-etkinlik-kitabi-2020",
+    "title": "Çocuk Hakları · Eğlenceli Etkinlik Kitabı",
+    "type": "Etkinlik kitabı",
+    "level": "İlkokul",
+    "area": "Sosyal-duygusal",
+    "topic": "Çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-haklar%C4%B1-etkinlik-kitab%C4%B1",
+    "file": "https://www.unicef.org/turkiye/media/9141/file/Aktivite%20Kitab%C4%B1%20%28T%C3%BCrk%C3%A7e%29.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-cocuk-katilimi-el-kitabi-2026",
+    "title": "Çocuk Katılımı El Kitabı · UNICEF 2026",
+    "type": "El kitabı",
+    "level": "Tüm kademeler",
+    "area": "Sosyal-duygusal",
+    "topic": "Çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-kat%C4%B1l%C4%B1m%C4%B1-el-kitab%C4%B1-0",
+    "file": "https://www.unicef.org/turkiye/en/media/20691/file/%C3%87ocuk%20Kat%C4%B1l%C4%B1m%C4%B1%20El%20Kitab%C4%B1.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
+  },
+  {
+    "id": "bandirma-selamlasma-okuloncesi-etkinlikler-2026",
+    "title": "Selamlaşma · Okul Öncesi Etkinlikler (Bandırma RAM)",
+    "type": "Etkinlik",
+    "level": "Okul öncesi",
+    "area": "Sosyal-duygusal",
+    "topic": "Selamlaşma",
+    "source": "Bandırma Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://bandirmaram.meb.k12.tr/icerikler/ozelegitimverehberlikhizmetleri20262027egitimogretimyiligenelhedefveyerelhedeflereyonelikegitimicerikleri_17728088.html",
+    "file": "https://bandirmaram.meb.k12.tr/meb_iys_dosyalar/10/04/964690/dosyalar/2026_10/6ac4aea4d9c6e800808144_Okul%C3%B6ncesi-Selamla%C5%9FmaETK%C4%B0NL%C4%B0KLER.pdf",
+    "fileType": "PDF",
+    "sourceType": "official"
+  },
+  {
+    "id": "bandirma-okuloncesi-selamlasma-durum-kartlari-2026",
+    "title": "Selamlaşma · Birlikte Oynamak Güzel · Durum Kartları",
+    "type": "Durum kartları",
+    "level": "Okul öncesi",
+    "file": "https://bandirmaram.meb.k12.tr/meb_iys_dosyalar/10/04/964690/dosyalar/2026_10/6ac4aea4c6b6f191409368_Okul%C3%B6ncesi-Selamla%C5%9FmaDURUM_KARTLARI.png",
+    "fileType": "PNG",
+    "area": "Sosyal-duygusal",
+    "topic": "Selamlaşma",
+    "source": "Bandırma Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://bandirmaram.meb.k12.tr/icerikler/ozelegitimverehberlikhizmetleri20262027egitimogretimyiligenelhedefveyerelhedeflereyonelikegitimicerikleri_17728088.html",
+    "sourceType": "official"
+  },
+  {
+    "id": "bandirma-ortaokul-gor-selamla-sinirini-bil-2026",
+    "title": "Gör – Selamla – Sınırını Bil · 5 Etkinlik",
+    "type": "Etkinlik programı",
+    "level": "Ortaokul",
+    "file": "https://bandirmaram.meb.k12.tr/meb_iys_dosyalar/10/04/964690/dosyalar/2026_10/6ac4aec08007b091668299_Ortaokul-Selamla%C5%9FmaETK%C4%B0NL%C4%B0KLER.pdf",
+    "fileType": "PDF",
+    "area": "Sosyal-duygusal",
+    "topic": "Selamlaşma",
+    "source": "Bandırma Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://bandirmaram.meb.k12.tr/icerikler/ozelegitimverehberlikhizmetleri20262027egitimogretimyiligenelhedefveyerelhedeflereyonelikegitimicerikleri_17728088.html",
+    "sourceType": "official"
+  },
+  {
+    "id": "bandirma-lise-nezaket-ve-sinir-2026",
+    "title": "Nezaket ve Sınır · 5 Etkinlik",
+    "type": "Etkinlik programı",
+    "level": "Lise",
+    "file": "https://bandirmaram.meb.k12.tr/meb_iys_dosyalar/10/04/964690/dosyalar/2026_10/6ac4aed7a6f61317795381_Lise-Selamla%C5%9FmaETK%C4%B0NL%C4%B0KLER.pdf",
+    "fileType": "PDF",
+    "area": "Sosyal-duygusal",
+    "topic": "Selamlaşma",
+    "source": "Bandırma Rehberlik ve Araştırma Merkezi",
+    "sourcePage": "https://bandirmaram.meb.k12.tr/icerikler/ozelegitimverehberlikhizmetleri20262027egitimogretimyiligenelhedefveyerelhedeflereyonelikegitimicerikleri_17728088.html",
+    "sourceType": "official"
   }
 ]

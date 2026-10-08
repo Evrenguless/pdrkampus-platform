@@ -312,7 +312,13 @@ def collect(config, catalogue, previous, fetch, now=None):
     original_byte_hashes = {r['sha256'] for r in known_hashes.values() if r.get('sha256')}
     original_text_hashes = {r['text_sha256'] for r in known_hashes.values() if r.get('text_sha256')}
     selected = []
-    for row in sorted(rows.values(), key=lambda row: (row.get('last_checked_at', ''), row['discovered_at'], row['id'])):
+    # Inspect never-checked candidates first; stale rechecks must not starve the backlog.
+    # Preserve the existing safety checks and the configured per-run file limit.
+    def inspection_priority(row):
+        priority = {'pending_check': 0, 'retry': 1, 'review_ready': 2}.get(row.get('status'), 3)
+        return (priority, row.get('last_checked_at', ''), row.get('discovered_at', ''), row['id'])
+
+    for row in sorted(rows.values(), key=inspection_priority):
         last = row.get('access_verified_at', '')
         try: stale = (datetime.fromisoformat(now.replace('Z','+00:00'))-datetime.fromisoformat(last.replace('Z','+00:00'))).total_seconds() > 86400
         except ValueError: stale = True
