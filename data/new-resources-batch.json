@@ -596,5 +596,70 @@
     "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
     "fileType": "Kaynak sayfası (PDF indirme)",
     "sourceType": "other"
+  },
+  {
+    "id": "unicef-stk-dijital-cocuk-haklari-savunuculugu-2026",
+    "title": "STK'ların Dijital Dünyadaki Çocuk Hakları Savunuculuğu Kapasitelerinin Güçlendirilmesi",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Dijital çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/sivil-toplum-kurulu%C5%9Flar%C4%B1-stklar-ile-i%CC%87%C5%9F-birli%C4%9Fi-program%C4%B1",
+    "file": "https://www.unicef.org/turkiye/sivil-toplum-kurulu%C5%9Flar%C4%B1-stklar-ile-i%CC%87%C5%9F-birli%C4%9Fi-program%C4%B1",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-engeli-olan-cocuklar-dijital-haklara-erisim-2026",
+    "title": "Engeli Olan Çocukların Dijital Haklara Erişimlerinin Mevcut Durumu",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Özel eğitim ve dijital haklar",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/sivil-toplum-kurulu%C5%9Flar%C4%B1-stklar-ile-i%CC%87%C5%9F-birli%C4%9Fi-program%C4%B1",
+    "file": "https://www.unicef.org/turkiye/sivil-toplum-kurulu%C5%9Flar%C4%B1-stklar-ile-i%CC%87%C5%9F-birli%C4%9Fi-program%C4%B1",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-endviolence-in-schools-2018",
+    "title": "An Everyday Lesson · #ENDViolence in Schools (2018)",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Okulda şiddet",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
+    "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-suriyeli-cocuklar-bilgi-notu-2017",
+    "title": "Türkiye'deki Suriyeli Çocuklar Bilgi Notu · Ocak 2017",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitime erişim",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
+    "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
+  },
+  {
+    "id": "unicef-suriyeli-cocuklar-bilgi-notu-2016",
+    "title": "Türkiye'deki Suriyeli Çocuklar Bilgi Notu · Ekim 2016",
+    "type": "Rapor",
+    "level": "Tüm kademeler",
+    "area": "Rehberlik",
+    "topic": "Eğitime erişim",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
+    "file": "https://www.unicef.org/turkiye/ara%C5%9Ft%C4%B1rma-ve-raporlar?page=%2C%2C3",
+    "fileType": "Yayın listesi (PDF bağlantısı)",
+    "sourceType": "other"
   }
 ]
