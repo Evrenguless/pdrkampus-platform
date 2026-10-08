@@ -522,5 +522,45 @@
   "defne-okuloncesi-otokontrol-veli-etkinlik-2025": {
     "retryAfter": 1791540596,
     "errorType": "URLError"
+  },
+  "hakkari-otokontrol-ortaokul-veli-sunum": {
+    "retryAfter": 1791540831,
+    "errorType": "HTTPError"
+  },
+  "meb-meslek-protokol-gorgu-selamlasma-2025": {
+    "retryAfter": 1791540841,
+    "errorType": "HTTPError"
+  },
+  "nevsehir-ogrenci-problem-cozme-kitapcigi": {
+    "retryAfter": 1791540858,
+    "errorType": "URLError"
+  },
+  "psikososyal-2025-10": {
+    "retryAfter": 1791540860,
+    "errorType": "ValueError"
+  },
+  "psikososyal-2025-04": {
+    "retryAfter": 1791540860,
+    "errorType": "ValueError"
+  },
+  "nevsehir-ogrenci-psikolojik-saglamlik-kitapcigi": {
+    "retryAfter": 1791540864,
+    "errorType": "HTTPError"
+  },
+  "nevsehir-ogretmen-psikolojik-saglamlik-kitapcigi": {
+    "retryAfter": 1791540865,
+    "errorType": "HTTPError"
+  },
+  "kapakli-psikososyal-uygulayici-kilavuzu-2026": {
+    "retryAfter": 1791540902,
+    "errorType": "URLError"
+  },
+  "collected-b46f32455cd2c43863c2d643": {
+    "retryAfter": 1791540915,
+    "errorType": "URLError"
+  },
+  "kapakli-psikososyal-koruma-onleme-krize-mudahale-yonerge-2026": {
+    "retryAfter": 1791540924,
+    "errorType": "URLError"
   }
 }
