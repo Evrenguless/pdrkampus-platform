@@ -1,5 +1,7 @@
 """Build faithful previews from public source files; never modify resource records."""
 import time
+import io, re, zipfile
+import xml.etree.ElementTree as ET
 import shutil
 import argparse, concurrent.futures, hashlib, json, os, subprocess, tempfile, textwrap, urllib.request, urllib.parse
 from pathlib import Path
@@ -33,6 +35,29 @@ def thumbnail(sheet,path):
             for line in value.splitlines():lines.extend(textwrap.wrap(line,width=max(9,int((right-left-16)/9))) or [''])
             for n,line in enumerate(lines[:max(1,(bottom-top-12)//22)]):d.text((left+8,top+7+n*22),line,font=font,fill='#173728')
     canvas.save(path,'JPEG',quality=80,optimize=True)
+def preview_workbook(path,data_only):
+    try:
+        return load_workbook(path,data_only=data_only)
+    except ValueError as error:
+        # Some official books contain an unsupported drawing font pitchFamily.
+        # Remove drawing references in an in-memory preview copy only; keep cells,
+        # formulas, cached results, merges and the original downloaded bytes intact.
+        if str(error.__cause__)!='Max value is 52':raise
+        cleaned=io.BytesIO()
+        with zipfile.ZipFile(path) as source, zipfile.ZipFile(cleaned,'w') as target:
+            for entry in source.infolist():
+                content=source.read(entry.filename)
+                if re.fullmatch(r'xl/worksheets/sheet\d+\.xml',entry.filename):
+                    content=re.sub(rb'<drawing\b[^>]*/>',b'',content)
+                if entry.filename.startswith('xl/worksheets/_rels/') and entry.filename.endswith('.rels'):
+                    relations=ET.fromstring(content)
+                    for relation in list(relations):
+                        if relation.get('Type','').endswith('/drawing'):relations.remove(relation)
+                    content=ET.tostring(relations)
+                target.writestr(entry,content)
+        cleaned.seek(0)
+        return load_workbook(cleaned,data_only=data_only)
+
 def build(row):
     kind=row['fileType'].upper();ident=row['id'];assets=ROOT/'assets/resource-previews';assets.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
@@ -61,7 +86,7 @@ def build(row):
             result['previews']=['/'+str(p.relative_to(ROOT)) for p in sorted(assets.glob(ident+'-*.jpg'))]
             result['thumbnail']=result['previews'][0]
         elif kind=='XLSX':
-            book=load_workbook(dest,data_only=True);formulas=load_workbook(dest,data_only=False);sheets=[]
+            book=preview_workbook(dest,data_only=True);formulas=preview_workbook(dest,data_only=False);sheets=[]
             for sheet in book:
                 if sheet.sheet_state!='visible':continue
                 values=[[str(c.value) if c.value is not None else ('Formül sonucu özgün Excel dosyasında görüntülenir' if formulas[sheet.title].cell(c.row,c.column).data_type=='f' else '') for c in cells] for cells in sheet.iter_rows(max_row=min(sheet.max_row,180),max_col=min(sheet.max_column,40))]
@@ -88,7 +113,7 @@ def main():
             by_file.setdefault(row['file'],{'thumbnail':row['file'],'previews':[row['file']]})
     pending=[];seen=set()
     for row in rows:
-        if row['file'] in by_file:previews[row['id']]=by_file[row['file']];continue
+        if row['file'] in by_file:previews[row['id']]=by_file[row['file']];state.pop(row['id'],None);continue
         if row['fileType'].upper() not in ['PDF','XLSX','DOC','DOCX','PPT','PPTX','XLS'] or row['file'] in seen:continue
         if state.get(row['id'],{}).get('message') and state.get(row['id'],{}).get('retryAfter',0)>time.time() and state.get(row['id'],{}).get('errorType') not in (['UnicodeEncodeError','ConverterUnavailableError'] if shutil.which('libreoffice') else ['UnicodeEncodeError']):continue
         seen.add(row['file']);pending.append(row)
