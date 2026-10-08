@@ -398,5 +398,73 @@
   "kecioren-ilkokul-kisisel-etik-afis-2026": {
     "retryAfter": 1791539919,
     "errorType": "URLError"
+  },
+  "uyum-604": {
+    "retryAfter": 1791540010,
+    "errorType": "ValueError"
+  },
+  "collected-083dafb0553988b6ea889966": {
+    "retryAfter": 1791540045,
+    "errorType": "URLError"
+  },
+  "riba-cizelge-545": {
+    "retryAfter": 1791540083,
+    "errorType": "URLError"
+  },
+  "kocasinan-2026-lgs-kaygi-motivasyon": {
+    "retryAfter": 1791540101,
+    "errorType": "TimeoutError"
+  },
+  "beypazari-lise-okul-aidiyeti-arastirma-2024": {
+    "retryAfter": 1791540112,
+    "errorType": "URLError"
+  },
+  "dogubayazit-mahremiyet-ogrenci-sunum-2022": {
+    "retryAfter": 1791540133,
+    "errorType": "URLError"
+  },
+  "manisa-lgs-puanlar-2026": {
+    "retryAfter": 1791540149,
+    "errorType": "URLError"
+  },
+  "gediz-mesleki-envanter-ogrenci-yonerge-2026": {
+    "retryAfter": 1791540182,
+    "errorType": "URLError"
+  },
+  "meb-akademi-hazirlik-egitimi-programi-2026": {
+    "retryAfter": 1791540193,
+    "errorType": "HTTPError"
+  },
+  "kapakli-ram-2025-mtok-tanitim-yonlendirme-2": {
+    "retryAfter": 1791540205,
+    "errorType": "TimeoutError"
+  },
+  "akran-55": {
+    "retryAfter": 1791540209,
+    "errorType": "ValueError"
+  },
+  "czarifoglu-1sinif-34-ne-olurdu": {
+    "retryAfter": 1791540227,
+    "errorType": "URLError"
+  },
+  "nevsehir-veli-okul-basarisi": {
+    "retryAfter": 1791540248,
+    "errorType": "TimeoutError"
+  },
+  "meb-70": {
+    "retryAfter": 1791540253,
+    "errorType": "ValueError"
+  },
+  "nusaybin-2025-risk-haritasi-belirleme-programi": {
+    "retryAfter": 1791540263,
+    "errorType": "ValueError"
+  },
+  "cizre-meslek-secimi-ortaokul-lise-sunum-2026": {
+    "retryAfter": 1791540266,
+    "errorType": "ValueError"
+  },
+  "salihli-2025-okul-risk-haritasi": {
+    "retryAfter": 1791540288,
+    "errorType": "URLError"
   }
 }
