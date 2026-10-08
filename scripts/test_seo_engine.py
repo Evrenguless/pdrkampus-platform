@@ -26,6 +26,17 @@ class SafetyTests(unittest.TestCase):
  def test_hidden_and_dialog_headings_do_not_raise_primary_h1_count(self):
   page=engine.Page('<main><h1>Overview</h1><section hidden><h1>Scenario</h1></section></main><section role="dialog"><h1>Welcome</h1></section>')
   self.assertEqual(page.primary_h1,['Overview']);self.assertEqual(len(page.h1),3)
+ def test_reviewed_shared_theme_requires_exact_hashes(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp);(root/'seo').mkdir();(root/'src').mkdir();p=root/'src/shell-refresh.css'
+   p.write_text('body { color: green; }');before=engine.digest(p)
+   (root/'seo/protected-files.json').write_text(json.dumps({'baseline_commit':'test','files':{'src/shell-refresh.css':before}}))
+   p.write_text("@import url('/src/visual-refresh.css');")
+   self.assertFalse(engine.protected(root)['pass'])
+   (root/'seo/approved-edits.json').write_text(json.dumps({'edits':{'src/shell-refresh.css':{'baseline_sha256':before,'reviewed_sha256':engine.digest(p)}}}))
+   self.assertTrue(engine.protected(root)['pass'])
+   p.write_text('body { color: red; }')
+   self.assertFalse(engine.protected(root)['pass'])
  def test_protected_change_detected_without_touching_real_data(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp); (root/'seo').mkdir(); (root/'data.csv').write_text('original')

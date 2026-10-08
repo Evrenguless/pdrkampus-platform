@@ -461,9 +461,9 @@
     },
     "index.html": {
       "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
-      "reviewed_sha256": "01431053fcbbc199dab2c8a72236ad1b0e6ebe7f6b9692fb4d5fcac40b41ee1e",
-      "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b",
-      "reason": "User-requested home and library visual refresh; original data, previews, file access and calculation modules preserved"
+      "reviewed_sha256": "671f0da357f98b8d81dfc42e984b0fdfb2227723820d2d16c59f4926cd00ee87",
+      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved",
+      "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b"
     },
     "kariyer/kariyer-gelisimi-ortaokul-lise/index.html": {
       "baseline_sha256": "29ae161969be36b3486edb20e6ae86963ca5c8a1e45af5f53e9875dae2dd474d",
@@ -659,9 +659,9 @@
     },
     "konu/akran-zorbaligi/index.html": {
       "baseline_sha256": "c0ff1221f2b36925e0d207f47e40fcbe6b63e4a52724721476718261a055d68f",
-      "reviewed_sha256": "5fd678ce65cbf55f3e6da5f89725f06c8605ea0ee44ce0d2143e2aa39fe75f00",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "d54f6c0da972c8e5af04e2e95d0b97c05d643cbf140e6fac00a58e1ceaf9a0f0",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/bep/index.html": {
       "baseline_sha256": "d1f0930efc0db047cca5eb8d2dbcf659101643f62debaf6637933cb1643f81f7",
@@ -677,9 +677,9 @@
     },
     "konu/devamsizlik/index.html": {
       "baseline_sha256": "fef16143416edba56ffb6c77e9a855c47db74ef835c0ae014172d3a11aa07430",
-      "reviewed_sha256": "3a9653726afe400d38eff404a80e6e81b8f129fdabe92c86c65cf468b6fa2cae",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "e324057315c7346e7852989ae1544b690476ff785c97fe62b14a1e5346e8dc4c",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/ergenlik/index.html": {
       "baseline_sha256": "486b1cb06cfee35d87068b557a7202610d4ac265833a8315829ae60909cb236e",
@@ -713,9 +713,9 @@
     },
     "konu/okul-reddi/index.html": {
       "baseline_sha256": "ad935586fb16e0b923ad4064acb3250663a2171dca4236f4f76d01a652460437",
-      "reviewed_sha256": "f567a62621c805e4b1db1887cb601be6c7c7c8892883833023ddbe148a28da4b",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "528a32940a519a54f7a0407b874fd19eba78ee80342d2e9dd9f6fce163269f15",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/okula-uyum/index.html": {
       "baseline_sha256": "f075d8cf902fa8077210b2e29c0672502e398428c02ed091a894a96ee81bbdd2",
@@ -749,9 +749,9 @@
     },
     "konu/sinav-kaygisi/index.html": {
       "baseline_sha256": "18b848287752efbdb211cdcd6f00e134829e0967dceed0c9b71f861b82a75fb9",
-      "reviewed_sha256": "59e9d6a59e3377330e29191318e1724a7edcd187da64bd30d66c559ad3d97143",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "8170cb012069ab9683f35117e7d881922bd0f4069d229cc079f7b753949a210a",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
     },
     "konu/sinif-rehberligi-etkinlikleri/index.html": {
       "baseline_sha256": "f9ad5cc8697bcb806131882841d588ba2d53d49ec2bd74e32734f7bcf91ebb33",
@@ -779,9 +779,9 @@
     },
     "konular.html": {
       "baseline_sha256": "f24fac3cc39ffaa58b5620754c91439a94a14a0d4d83aeba3f0e7ca2a9cb8458",
-      "reviewed_sha256": "02a81c586be51043594a096952e6c53704b1595407ae98d5d7fc3ff776605b79",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
+      "reviewed_sha256": "f4a7ca8eb41887318b1b1b5d071c31e9bcae15b0b2fa452fd11abad8c0075dda",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
+      "reason": "User-approved topic directory visual redesign; existing canonical URLs, structured data, original links and runtime preserved"
     },
     "kriz/index.html": {
       "baseline_sha256": "8f6b7baf6426a8e9e70f577afcd6e4bc4cf0b68c0da9a375a2528f5652f52852",
@@ -821,9 +821,9 @@
     },
     "kutuphane.html": {
       "baseline_sha256": "423c4fe55483a69113a61d2fc7523ffc17d59e79b2569f967901aad15fedee24",
-      "reviewed_sha256": "1d20306fc0d18f97e683822fc44a351276c424d9b24807022dc4975d6f038a9d",
-      "runtime_sha256": "24fcea6d2340d7f935961ef90cada5ab7eaa33a1103172c359a13bdce70116c9",
-      "reason": "User-requested home and library visual refresh; original data, previews, file access and calculation modules preserved"
+      "reviewed_sha256": "a88dc09f691abe87c92566e14b5be83b051ab3f93d551f02675d945ac3e02db9",
+      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved",
+      "runtime_sha256": "24fcea6d2340d7f935961ef90cada5ab7eaa33a1103172c359a13bdce70116c9"
     },
     "kvkk-aydinlatma.html": {
       "baseline_sha256": "0a2a484dbfdd0dda88ff5725ac30b57743d71ad6e971dd932a9e22197dda82f1",
@@ -1324,6 +1324,11 @@
       "reviewed_sha256": "7472072ec9f1d5f54dcc35e506cf31df7b1ade41fbf0ef53f1fa1fe2a17923ca",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
+    },
+    "src/shell-refresh.css": {
+      "baseline_sha256": "009fd9983df1090ba7c90159506696520293662d1d09d895e360ef95ad17b8b1",
+      "reviewed_sha256": "7abd93627773ef5d207f001d1ff576a54d0ee88d55022fccfdc196f2e5c1bbac",
+      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved"
     }
   }
 }
