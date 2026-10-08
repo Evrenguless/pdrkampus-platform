@@ -674,5 +674,93 @@
   "dogubayazit-sosyal-beceriler-veli-sunum-2025": {
     "retryAfter": 1791541405,
     "errorType": "ValueError"
+  },
+  "sdb-564": {
+    "retryAfter": 1791541467,
+    "errorType": "ValueError"
+  },
+  "canik-sosyometri-degerlendirme-sosyogram": {
+    "retryAfter": 1791541480,
+    "errorType": "HTTPError"
+  },
+  "dogubayazit-stresle-bas-etme-veli-sunum-2022": {
+    "retryAfter": 1791541507,
+    "errorType": "URLError"
+  },
+  "collected-5b47a667894347ddf63bb7a0": {
+    "retryAfter": 1791541528,
+    "errorType": "URLError"
+  },
+  "collected-3310cd8bd79b8915e85c1501": {
+    "retryAfter": 1791541528,
+    "errorType": "URLError"
+  },
+  "yuksekova-sosyal-kaygi-egitim-kultur-dergisi": {
+    "retryAfter": 1791541592,
+    "errorType": "ValueError"
+  },
+  "sinif-oturma-plani-xlsx": {
+    "retryAfter": 1791541604,
+    "errorType": "URLError"
+  },
+  "sinif-etkinlik-lise": {
+    "retryAfter": 1791541612,
+    "errorType": "ValueError"
+  },
+  "kocasinan-sinif-rehber-ogretmenleri-rehberlik-calismalari-2026": {
+    "retryAfter": 1791541619,
+    "errorType": "URLError"
+  },
+  "sinif-etkinlik-ortaokul": {
+    "retryAfter": 1791541620,
+    "errorType": "ValueError"
+  },
+  "sinif-etkinlik-ilkokul": {
+    "retryAfter": 1791541623,
+    "errorType": "ValueError"
+  },
+  "cizre-sinav-kaygisi-ortaokul-lise-sunum-2026": {
+    "retryAfter": 1791541627,
+    "errorType": "ValueError"
+  },
+  "tusba-sinif-rehberlik-uygulama-sunumu": {
+    "retryAfter": 1791541653,
+    "errorType": "URLError"
+  },
+  "corum-kapsamli-sinif-rehberlik-etkinlik-kitapcigi-2026": {
+    "retryAfter": 1791541661,
+    "errorType": "TimeoutError"
+  },
+  "meb-69": {
+    "retryAfter": 1791541684,
+    "errorType": "ValueError"
+  },
+  "nusaybin-2025-sinif-risk-haritasi": {
+    "retryAfter": 1791541686,
+    "errorType": "ValueError"
+  },
+  "salihli-2025-sinif-risk-haritasi": {
+    "retryAfter": 1791541689,
+    "errorType": "ValueError"
+  },
+  "sinif-risk-haritasi-xlsx-duzenlenebilir": {
+    "retryAfter": 1791541696,
+    "errorType": "HTTPError"
+  },
+  "collected-100f3769e0478f69af217396": {
+    "retryAfter": 1791541701,
+    "errorType": "URLError"
+  },
+  "akdag-sinif-temsilcisi-secimi-docx": {
+    "retryAfter": 1791541716,
+    "errorType": "URLError"
+  },
+  "sinif-etkinlik-ilkokul-cilt2": {
+    "retryAfter": 1791541730,
+    "errorType": "ValueError"
+  },
+  "kayseri-sinir-lise-etkinlik-seti-2026": {
+    "retryAfter": 1791541735,
+    "errorType": "URLError"
   }
 }
