@@ -17125,5 +17125,18 @@
     "file": "https://eskilaal.meb.k12.tr/icerikler/selamlasma_17702666.html",
     "fileType": "WEB",
     "sourceType": "official"
+  },
+  {
+    "id": "unicef-cocuk-haklari-etkinlik-kitabi-2020",
+    "title": "Çocuk Hakları · Eğlenceli Etkinlik Kitabı",
+    "type": "Etkinlik kitabı",
+    "level": "İlkokul",
+    "area": "Sosyal-duygusal",
+    "topic": "Çocuk hakları",
+    "source": "UNICEF Türkiye",
+    "sourcePage": "https://www.unicef.org/turkiye/raporlar/%C3%A7ocuk-haklar%C4%B1-etkinlik-kitab%C4%B1",
+    "file": "https://www.unicef.org/turkiye/media/9141/file/Aktivite%20Kitab%C4%B1%20%28T%C3%BCrk%C3%A7e%29.pdf",
+    "fileType": "PDF",
+    "sourceType": "other"
   }
 ]
