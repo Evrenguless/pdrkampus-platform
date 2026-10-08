@@ -466,5 +466,61 @@
   "salihli-2025-okul-risk-haritasi": {
     "retryAfter": 1791540288,
     "errorType": "URLError"
+  },
+  "nusaybin-2025-okuloncesi-kazanim-sonuc": {
+    "retryAfter": 1791540332,
+    "errorType": "ValueError"
+  },
+  "nusaybin-2025-okuloncesi-ihtiyac-sonuc": {
+    "retryAfter": 1791540334,
+    "errorType": "ValueError"
+  },
+  "nusaybin-2025-okuloncesi-ihtiyac-formu": {
+    "retryAfter": 1791540358,
+    "errorType": "URLError"
+  },
+  "kariyer-92": {
+    "retryAfter": 1791540397,
+    "errorType": "ValueError"
+  },
+  "orgm-2025-obm-kisa-mudahale-kilavuzu": {
+    "retryAfter": 1791540415,
+    "errorType": "TimeoutError"
+  },
+  "collected-1c4227656100e65431d86a55": {
+    "retryAfter": 1791540445,
+    "errorType": "URLError"
+  },
+  "collected-01d6344355d3968e6b7d20f3": {
+    "retryAfter": 1791540456,
+    "errorType": "URLError"
+  },
+  "collected-b0b87d5c590acd202d573ffc": {
+    "retryAfter": 1791540468,
+    "errorType": "URLError"
+  },
+  "alasehir-ram-ortaogretime-uyum-programi-kilavuzu": {
+    "retryAfter": 1791540476,
+    "errorType": "URLError"
+  },
+  "collected-8944a1e417a3b98b5b50719b": {
+    "retryAfter": 1791540498,
+    "errorType": "URLError"
+  },
+  "collected-b6c8507e57dd60713c9f564a": {
+    "retryAfter": 1791540505,
+    "errorType": "URLError"
+  },
+  "tokat-lgs-tercih-rehberi-2026": {
+    "retryAfter": 1791540560,
+    "errorType": "DependencyError"
+  },
+  "korfez-otizm-ogrenci-etkinlik-kitabi-2025": {
+    "retryAfter": 1791540584,
+    "errorType": "ValueError"
+  },
+  "defne-okuloncesi-otokontrol-veli-etkinlik-2025": {
+    "retryAfter": 1791540596,
+    "errorType": "URLError"
   }
 }
