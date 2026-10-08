@@ -790,5 +790,69 @@
   "cizre-verimli-calisma-zaman-yonetimi-ortaokul-2026": {
     "retryAfter": 1791542320,
     "errorType": "ValueError"
+  },
+  "nusaybin-2025-yasam-pencerem-sonuc": {
+    "retryAfter": 1791542420,
+    "errorType": "ValueError"
+  },
+  "meb-72": {
+    "retryAfter": 1791542420,
+    "errorType": "ValueError"
+  },
+  "balikesir-yetenek-farkindaligi-arastirma-2025": {
+    "retryAfter": 1791542454,
+    "errorType": "URLError"
+  },
+  "nevsehir-ogrenci-zaman-yonetimi": {
+    "retryAfter": 1791542458,
+    "errorType": "HTTPError"
+  },
+  "alanya-zaman-yonetimi-hedefler-docx-2025": {
+    "retryAfter": 1791542470,
+    "errorType": "URLError"
+  },
+  "akran-29": {
+    "retryAfter": 1791542478,
+    "errorType": "ValueError"
+  },
+  "collected-705e5430545e8e03efc7cfc2": {
+    "retryAfter": 1791542485,
+    "errorType": "URLError"
+  },
+  "yalova-ram-e-rehberlik-modulu-kilavuzu": {
+    "retryAfter": 1791542510,
+    "errorType": "HTTPError"
+  },
+  "of-ram-cocuk-ihmal-istismar-onleme-egitimleri": {
+    "retryAfter": 1791542553,
+    "errorType": "HTTPError"
+  },
+  "osmangazi-duygu-duzenleme-bulteni-2026": {
+    "retryAfter": 1791542590,
+    "errorType": "URLError"
+  },
+  "kecioren-duygu-duzenleme-veli-brosur-2025": {
+    "retryAfter": 1791542602,
+    "errorType": "URLError"
+  },
+  "karabaglar-2025-bilincli-internet-veli": {
+    "retryAfter": 1791542648,
+    "errorType": "URLError"
+  },
+  "tegm-2026-ilk-adim-defteri-1sinif": {
+    "retryAfter": 1791542653,
+    "errorType": "ValueError"
+  },
+  "tegm-2026-ilk-adim-defteri-okuloncesi": {
+    "retryAfter": 1791542653,
+    "errorType": "ValueError"
+  },
+  "kecioren-duygu-duzenleme-moduler-pano-2025": {
+    "retryAfter": 1791542659,
+    "errorType": "ValueError"
+  },
+  "fatih-cocuk-ergen-travma-2026": {
+    "retryAfter": 1791542662,
+    "errorType": "ValueError"
   }
 }
