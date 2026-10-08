@@ -854,5 +854,69 @@
   "fatih-cocuk-ergen-travma-2026": {
     "retryAfter": 1791542662,
     "errorType": "ValueError"
+  },
+  "defne-ofke-kontrolu-brosuru-2025": {
+    "retryAfter": 1791542774,
+    "errorType": "URLError"
+  },
+  "nevsehir-ogrenci-ozdisiplin": {
+    "retryAfter": 1791542794,
+    "errorType": "HTTPError"
+  },
+  "erenler-ozdisiplin-kitapcik": {
+    "retryAfter": 1791542805,
+    "errorType": "URLError"
+  },
+  "hakkari-otokontrol-ortaokul-veli-brosur": {
+    "retryAfter": 1791542817,
+    "errorType": "URLError"
+  },
+  "defne-ortaokul-ozdenetim-ogrenci-sunum-2025": {
+    "retryAfter": 1791542852,
+    "errorType": "URLError"
+  },
+  "hakkari-otokontrol-ilkokul-veli-sunum": {
+    "retryAfter": 1791542877,
+    "errorType": "ValueError"
+  },
+  "collected-74866c4bea310a989e7ae069": {
+    "retryAfter": 1791542896,
+    "errorType": "URLError"
+  },
+  "ozel-96": {
+    "retryAfter": 1791542899,
+    "errorType": "ValueError"
+  },
+  "collected-b285a07ca6cc4e6d79c6a3fe": {
+    "retryAfter": 1791542902,
+    "errorType": "URLError"
+  },
+  "defne-lise-ozdenetim-ogretmen-rehber-2025": {
+    "retryAfter": 1791542909,
+    "errorType": "TimeoutExpired"
+  },
+  "dogubayazit-ozel-egitimden-rehberlige-2026": {
+    "retryAfter": 1791542936,
+    "errorType": "URLError"
+  },
+  "bakirkoy-ozel-yetenekli-cocuklar-aile-ogretmen-kitabi": {
+    "retryAfter": 1791542938,
+    "errorType": "URLError"
+  },
+  "korfez-ozel-yetenekli-cocugum-var-2025": {
+    "retryAfter": 1791542944,
+    "errorType": "URLError"
+  },
+  "sehit-furkan-ozel-ogrenme-guclugu-ogretmen-rehberi": {
+    "retryAfter": 1791542993,
+    "errorType": "URLError"
+  },
+  "ozel-ogrenciler-okula-uyum-etkinlikleri-2025": {
+    "retryAfter": 1791543010,
+    "errorType": "ValueError"
+  },
+  "ozel-egitim-ortaokul": {
+    "retryAfter": 1791543027,
+    "errorType": "ValueError"
   }
 }
