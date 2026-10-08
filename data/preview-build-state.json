@@ -11,10 +11,6 @@
     "retryAfter": 1791500485,
     "errorType": "ValueError"
   },
-  "karasu-2026-selamlasma-yillik-plan-ilkokul": {
-    "retryAfter": 1791500493,
-    "errorType": "UnicodeEncodeError"
-  },
   "tegm-2026-1sinif-veli-sunumu": {
     "retryAfter": 1791500499,
     "errorType": "ValueError"
@@ -119,10 +115,6 @@
     "retryAfter": 1791514572,
     "errorType": "URLError"
   },
-  "kaynarca-2026-ergen-cocugunuzla-iletisim-sunumu": {
-    "retryAfter": 1791514576,
-    "errorType": "UnicodeEncodeError"
-  },
   "orgm-bilsem-rpd-hizmetleri-kilavuzu-2023": {
     "retryAfter": 1791514583,
     "errorType": "HTTPError"
@@ -150,5 +142,125 @@
   "cizre-bagimlilik-ilkokul-sunum-2026": {
     "retryAfter": 1791514609,
     "errorType": "ValueError"
+  },
+  "orgm-cinsel-istismar-okuloncesi-bireysel-psikoegitim-2025": {
+    "retryAfter": 1791535024,
+    "errorType": "ValueError"
+  },
+  "orgm-cinsel-istismar-ilkokul-bireysel-psikoegitim-2025": {
+    "retryAfter": 1791535030,
+    "errorType": "ValueError"
+  },
+  "collected-7fbf32d98b597a7458c2cb4e": {
+    "retryAfter": 1791535039,
+    "errorType": "URLError"
+  },
+  "collected-af1ebe155ee63ca095b1a9a1": {
+    "retryAfter": 1791535039,
+    "errorType": "URLError"
+  },
+  "meb-73": {
+    "retryAfter": 1791535041,
+    "errorType": "ValueError"
+  },
+  "sarimese-devamsizlik-onleme-2021": {
+    "retryAfter": 1791535042,
+    "errorType": "HTTPError"
+  },
+  "aksu-devamsizlik-sinif-tekrari-onleme-plani-2025-2026": {
+    "retryAfter": 1791535044,
+    "errorType": "HTTPError"
+  },
+  "onikisubat-ram-2026-devamsizlik-nedenleri-calistay": {
+    "retryAfter": 1791535075,
+    "errorType": "URLError"
+  },
+  "kecioren-dijital-etik-karar-verme-kilavuzu-lise-2026": {
+    "retryAfter": 1791535077,
+    "errorType": "URLError"
+  },
+  "kecioren-ortaokul-dijital-etik-infografik-2026": {
+    "retryAfter": 1791535104,
+    "errorType": "URLError"
+  },
+  "kecioren-dijital-etik-ortaokul-modul3-2026": {
+    "retryAfter": 1791535104,
+    "errorType": "URLError"
+  },
+  "orgm-dil-konusma-motor-konusma-yutma-2025": {
+    "retryAfter": 1791535111,
+    "errorType": "HTTPError"
+  },
+  "orgm-dil-konusma-ses-bozukluklari-2025": {
+    "retryAfter": 1791535112,
+    "errorType": "HTTPError"
+  },
+  "orgm-dil-konusma-gelisimsel-dil-bozukluklari-2025": {
+    "retryAfter": 1791535113,
+    "errorType": "ValueError"
+  },
+  "orgm-dil-konusma-konusma-sesi-bozukluklari-2025": {
+    "retryAfter": 1791535117,
+    "errorType": "ValueError"
+  },
+  "of-disleksi-veli-brosuru-2024": {
+    "retryAfter": 1791535118,
+    "errorType": "HTTPError"
+  },
+  "of-disleksi-ogretmen-brosuru-2024": {
+    "retryAfter": 1791535119,
+    "errorType": "HTTPError"
+  },
+  "dogubayazit-dehb-veli-brosur-2022": {
+    "retryAfter": 1791535123,
+    "errorType": "URLError"
+  },
+  "akran-48": {
+    "retryAfter": 1791535130,
+    "errorType": "ValueError"
+  },
+  "kapakli-dogal-afet-travmasi-2026": {
+    "retryAfter": 1791535145,
+    "errorType": "URLError"
+  },
+  "kecioren-ilkokul-dogru-olani-seciyorum-etkinlik-2026": {
+    "retryAfter": 1791535145,
+    "errorType": "URLError"
+  },
+  "defne-duygu-duzenleme-brosuru-2025": {
+    "retryAfter": 1791535156,
+    "errorType": "URLError"
+  },
+  "czarifoglu-2sinif-34-duygu-dusunceler": {
+    "retryAfter": 1791535169,
+    "errorType": "URLError"
+  },
+  "collected-3baaa2a059668305e959210e": {
+    "retryAfter": 1791535173,
+    "errorType": "URLError"
+  },
+  "collected-11be934fbaf2e0d702236f15": {
+    "retryAfter": 1791535173,
+    "errorType": "URLError"
+  },
+  "kaynarca-ergen-iletisim-veli-2026": {
+    "retryAfter": 1791535194,
+    "errorType": "URLError"
+  },
+  "karaman-ergen-fiziksel-psikososyal-gelisim-2025": {
+    "retryAfter": 1791535200,
+    "errorType": "URLError"
+  },
+  "aksaray-ergenlik-erkek-ogrenciler-2024": {
+    "retryAfter": 1791535200,
+    "errorType": "URLError"
+  },
+  "kahramankazan-2026-dil-konusma-bozukluklari-aile-egitimi": {
+    "retryAfter": 1791535214,
+    "errorType": "ValueError"
+  },
+  "raifazakhafiz-ozduzenlemeli-ogrenme-ergenlik-veli-2025": {
+    "retryAfter": 1791535215,
+    "errorType": "URLError"
   }
 }
