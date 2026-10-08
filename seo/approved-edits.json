@@ -63,8 +63,8 @@
     },
     "kutuphane/katalog/sayfa/13/index.html": {
       "baseline_sha256": "3286b798c0dac8ad91e9be83d4ae2b7ec0afa1dc8a3cd05aca28412f4ba7e35a",
-      "reviewed_sha256": "c675db29281adf71c29886b02619cbcd6597e66cf44721c64ce83fca31da6f40",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "141d7e8eecce708c3bc0d3a73f205fd8736f593f01a2a18f561f71cf3603b32b",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/14/index.html": {

@@ -169,41 +169,45 @@
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
-  "nevsehir-ogretmen-iletisim-kitapcigi": {
-    "retryAfter": 1791543214,
-    "errorType": "URLError"
-  },
   "iskur-mesleki-bilgi-ab": {
-    "retryAfter": 1791543218,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589172,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-ef": {
-    "retryAfter": 1791543219,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589175,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-ccd": {
-    "retryAfter": 1791543219,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589174,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-lmno": {
-    "retryAfter": 1791543220,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589175,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-tuvyz": {
-    "retryAfter": 1791543220,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589177,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-oprs": {
-    "retryAfter": 1791543221,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589177,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-gh": {
-    "retryAfter": 1791543223,
-    "errorType": "HTTPError"
+    "retryAfter": 1791589175,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "iskur-mesleki-bilgi-iijk": {
-    "retryAfter": 1791543247,
-    "errorType": "URLError"
+    "retryAfter": 1791589175,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "collected-cd697f3c8b7149b1b9f49983": {
     "retryAfter": 1791588841,
@@ -267,6 +271,11 @@
   },
   "collected-cb9dee1d282054f10351ab8e": {
     "retryAfter": 1791589082,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-e813a1238ae4f4087ef2d9e5": {
+    "retryAfter": 1791589229,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   }
