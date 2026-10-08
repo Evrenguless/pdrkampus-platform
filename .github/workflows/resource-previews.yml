@@ -33,7 +33,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y poppler-utils fonts-dejavu-core libreoffice-writer libreoffice-impress libreoffice-calc
-          pip install openpyxl Pillow pypdf
+          pip install openpyxl Pillow 'pypdf[crypto]'
       - name: Render, check and publish missing previews in batches
         env:
           PREVIEW_LIMIT: ${{ github.event.inputs.limit || '5000' }}

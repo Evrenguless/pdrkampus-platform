@@ -41,9 +41,9 @@ def build(row):
         url=override.get('replacement_url') if row['id'] in override.get('ids',[]) and override.get('replacement_url') else row['file']
         parts=urllib.parse.urlsplit(url)
         url=urllib.parse.urlunsplit((parts.scheme,parts.netloc,urllib.parse.quote(parts.path,safe='/%:@'),urllib.parse.quote(parts.query,safe='/?&=%:+;'),parts.fragment))
-        request=urllib.request.Request(url,headers={'User-Agent':'PDRKampus-DocumentPreview/1.0'})
-        with urllib.request.urlopen(request,timeout=25) as response:data=response.read(25_000_001)
-        if len(data)>25_000_000:raise ValueError('Preview size limit')
+        request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; PDRKampus-DocumentPreview/1.1)'})
+        with urllib.request.urlopen(request,timeout=60) as response:data=response.read(100_000_001)
+        if len(data)>100_000_000:raise ValueError('Preview size limit')
         dest.write_bytes(data);result={'sourceSha256':hashlib.sha256(data).hexdigest()}
         if kind in ['DOC','DOCX','PPT','PPTX','XLS']:
             if not shutil.which('libreoffice'):raise ConverterUnavailableError('Install LibreOffice for Office document previews')
@@ -57,7 +57,7 @@ def build(row):
         if kind=='PDF':
             reader=PdfReader(dest);result['pageCount']=len(reader.pages)
             prefix=assets/ident
-            subprocess.run(['pdftoppm','-f','1','-l','2','-scale-to','1200','-jpeg','-jpegopt','quality=78',str(dest),str(prefix)],check=True,capture_output=True,timeout=45)
+            subprocess.run(['pdftoppm','-f','1','-l','2','-scale-to','1200','-jpeg','-jpegopt','quality=78',str(dest),str(prefix)],check=True,capture_output=True,timeout=90)
             result['previews']=['/'+str(p.relative_to(ROOT)) for p in sorted(assets.glob(ident+'-*.jpg'))]
             result['thumbnail']=result['previews'][0]
         elif kind=='XLSX':
@@ -90,7 +90,7 @@ def main():
     for row in rows:
         if row['file'] in by_file:previews[row['id']]=by_file[row['file']];continue
         if row['fileType'].upper() not in ['PDF','XLSX','DOC','DOCX','PPT','PPTX','XLS'] or row['file'] in seen:continue
-        if state.get(row['id'],{}).get('retryAfter',0)>time.time() and state.get(row['id'],{}).get('errorType') not in (['UnicodeEncodeError','ConverterUnavailableError'] if shutil.which('libreoffice') else ['UnicodeEncodeError']):continue
+        if state.get(row['id'],{}).get('message') and state.get(row['id'],{}).get('retryAfter',0)>time.time() and state.get(row['id'],{}).get('errorType') not in (['UnicodeEncodeError','ConverterUnavailableError'] if shutil.which('libreoffice') else ['UnicodeEncodeError']):continue
         seen.add(row['file']);pending.append(row)
     successes=0
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
@@ -99,11 +99,12 @@ def main():
             row=futures[future]
             try:result=future.result();by_file[row['file']]=result;successes+=1;state.pop(row['id'],None);print('Preview ready:',row['id'],flush=True)
             except Exception as error:
-                state[row['id']]={'retryAfter':int(time.time()+86400),'errorType':type(error).__name__}
+                state[row['id']]={'retryAfter':int(time.time()+86400),'errorType':type(error).__name__,'message':str(error)[:500]}
                 print('Preview deferred:',row['id'],type(error).__name__,flush=True)
     for row in rows:
         if row['file'] in by_file:previews[row['id']]=by_file[row['file']]
     manifest.write_text(json.dumps(previews,ensure_ascii=False,separators=(',',':'))+'\n')
     state_file.write_text(json.dumps(state,indent=2)+'\n')
-    print(json.dumps({'generated':successes,'records_with_preview':len(previews),'remaining_files':max(0,len(pending)-successes)}))
+    missing=[r for r in rows if r['id'] not in previews and r['fileType'].upper() in ['PDF','XLSX','DOC','DOCX','PPT','PPTX','XLS']]
+    print(json.dumps({'missing_document_records':len({r['id'] for r in missing}),'deferred_records':len({r['id'] for r in missing if state.get(r['id'],{}).get('retryAfter',0)>time.time()}),'generated':successes,'records_with_preview':len(previews),'remaining_files':max(0,len(pending)-successes)}))
 if __name__=='__main__':main()
