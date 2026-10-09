@@ -461,7 +461,7 @@
     },
     "index.html": {
       "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
-      "reviewed_sha256": "d25130a77ac4e124b2dc35123a7ad6c7bfc29a6d729d48b92555efc36e6201f2",
+      "reviewed_sha256": "234e22aeb7712cab078015295ba95e43b44f707785c81984103335529df4a71f",
       "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b"
     },
