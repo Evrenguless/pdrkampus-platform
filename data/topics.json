@@ -1545,6 +1545,84 @@
         "sinav-kaygisi"
       ],
       "officialSources": []
+    },
+    {
+      "id": "topic_akran_catismasi",
+      "slug": "akran-catismasi",
+      "name": "Akran Çatışması",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "akran çatışması"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf rehberliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Akran Çatışması | PDR Kampüs",
+        "description": "Akran çatışması ve zorbalık ayrımı ile güvenli müdahale adımları.",
+        "primaryQuery": "akran çatışması"
+      },
+      "canonicalPath": "/konu/akran-catismasi/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "akran-zorbaligi"
+      ],
+      "officialSources": []
+    },
+    {
+      "id": "topic_sinifta_iletisim_becerileri",
+      "slug": "sinifta-iletisim-becerileri",
+      "name": "Sınıfta İletişim Becerileri",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "sınıfta iletişim becerileri"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf rehberliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Sınıfta İletişim Becerileri | PDR Kampüs",
+        "description": "Etkin dinleme, ben dili ve sınıfta iletişim etkinlikleri.",
+        "primaryQuery": "sınıfta iletişim becerileri"
+      },
+      "canonicalPath": "/konu/sinifta-iletisim-becerileri/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "akran-zorbaligi"
+      ],
+      "officialSources": []
+    },
+    {
+      "id": "topic_ofke_yonetimi",
+      "slug": "ofke-yonetimi",
+      "name": "Öfkeyle Baş Etme",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "öfkeyle baş etme"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf rehberliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Öfkeyle Baş Etme | PDR Kampüs",
+        "description": "Öfkeyi tanıma, güvenli ifade ve problem çözme becerileri.",
+        "primaryQuery": "öfkeyle baş etme"
+      },
+      "canonicalPath": "/konu/ofke-yonetimi/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "akran-zorbaligi"
+      ],
+      "officialSources": []
     }
   ]
 }
