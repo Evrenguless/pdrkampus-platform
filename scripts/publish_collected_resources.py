@@ -12,6 +12,8 @@ from resource_seo import page_path, build_pages
 
 
 def publishable(row, known, hashes):
+    fields = ('publicationApproved', 'licenseVerified', 'reviewStatus')
+    if any(key in row for key in fields) and not (row.get('publicationApproved') is True and row.get('licenseVerified') is True and row.get('reviewStatus') == 'approved'): return False
     gate = row.get('inspection', {})
     if row.get('status') != 'review_ready' or not gate.get('eligible') or gate.get('review_reasons') or gate.get('version') != INSPECTION_VERSION: return False
     if gate.get('method') != 'full_readable_document_text_and_source_metadata' or gate.get('text_characters', 0) < 120: return False
