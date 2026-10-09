@@ -1,26 +1,23 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {filterArticles, verifiedPdf, safeArticleUrl} from '../src/articles-catalog.js';
+import {articleSource, orderArticles, safeArticleUrl} from '../src/articles-catalog.js';
 const articles = JSON.parse(readFileSync(new URL('../data/academic-articles-tr.json', import.meta.url)));
-test('catalogue retains all scanned records and only verified PDF links', () => {
+test('all scanned records remain in the article catalogue', () => {
   assert.equal(articles.length, 1512);
   assert.equal(new Set(articles.map(a => a.id)).size, 1512);
-  assert.equal(filterArticles(articles, {access:'pdf'}).length, 248);
-  assert.equal(filterArticles(articles, {access:'source'}).length, 1264);
-  assert.equal(verifiedPdf({directDownload:true, downloadStatus:'verification-pending', file:'https://example.org/a.pdf'}), '');
-  assert.equal(safeArticleUrl('javascript:alert(1)'), '');
+  assert.equal(orderArticles(articles).length, articles.length);
+  assert.equal(orderArticles(articles)[0].publicationYear, 2026);
+});
+test('cards link to source pages or DOI, never to candidate or direct PDF files', () => {
+  assert.equal(articleSource({sourcePage:'https://example.org/article',file:'https://example.org/file.pdf',directDownload:true}), 'https://example.org/article');
+  assert.equal(articleSource({candidatePdf:'https://example.org/file.pdf',file:'https://example.org/file.pdf'}), '');
+  assert.equal(articleSource({sourcePage:'javascript:alert(1)',doi:'https://doi.org/10.1/example'}), 'https://doi.org/10.1/example');
   assert.equal(safeArticleUrl('https://user:pass@example.org/a.pdf'), '');
 });
-test('Turkish queries match author, title and DOI and combine with year and access', () => {
-  const result = filterArticles(articles, {query:'yavruturk inovasyon', year:'2024', access:'pdf'});
-  assert.equal(result.length, 1);
-  assert.match(result[0].title, /İnovasyon/);
-  assert.equal(filterArticles(articles, {query:'10.13114/mjh.1575107'}).length, 1);
-  assert.equal(filterArticles(articles, {query:'zzzznonexistent'}).length, 0);
-});
-test('sort orders and publication year filter reflect the data', () => {
-  assert.equal(filterArticles(articles, {year:'2026'}).length, 168);
-  assert.equal(filterArticles(articles)[0].publicationYear, 2026);
-  assert.equal(filterArticles(articles, {sort:'oldest'})[0].publicationYear, 2020);
+test('page reuses library cards and presents no filter or PDF counter controls', () => {
+  const page = readFileSync(new URL('../makaleler.html', import.meta.url), 'utf8');
+  assert.match(page, /document-results library-results/);
+  assert.match(page, /document-card library-document resource-card surface-card/);
+  assert.doesNotMatch(page, /<select|type="search"|articlePdfTotal|Doğrulanmış PDF|PDF’yi aç/);
 });
