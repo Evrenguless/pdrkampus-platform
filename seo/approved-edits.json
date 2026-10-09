@@ -461,7 +461,7 @@
     },
     "index.html": {
       "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
-      "reviewed_sha256": "d2169a3cc6f5ed1560f4b922e0065b12784c6e4334366fcab1c652c72fb937c4",
+      "reviewed_sha256": "c78587c44619e51bbd8c68227fd9a7a32d25fffa8fa2c21d3b7c8383b0620c9f",
       "reason": "User-requested themed statistics cards and live catalogue-derived counters; original data, catalogue and viewer scripts preserved",
       "runtime_sha256": "15ead258ce2d83a9f47f9f8a51a4be135fa6001b2af34e7c96bd1c526592e607"
     },
