@@ -461,9 +461,9 @@
     },
     "index.html": {
       "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
-      "reviewed_sha256": "234e22aeb7712cab078015295ba95e43b44f707785c81984103335529df4a71f",
-      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
-      "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b"
+      "reviewed_sha256": "8f02b82de39a4aff5013b515f0fe55496334d319a88a033f7b95a35f1f01b0f0",
+      "reason": "User-requested full-width official forms, horizontal colleague section, native GET library search and isolated preview pathway module; existing data and viewer runtime preserved",
+      "runtime_sha256": "acf4c0dce6d8819b0002d95c24bd25489db83a494297a51d04d38aa757be8797"
     },
     "kariyer/kariyer-gelisimi-ortaokul-lise/index.html": {
       "baseline_sha256": "29ae161969be36b3486edb20e6ae86963ca5c8a1e45af5f53e9875dae2dd474d",
