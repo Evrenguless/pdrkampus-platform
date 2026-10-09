@@ -1516,6 +1516,35 @@
       "canonicalPath": "/konu/sosyal-duygusal/",
       "relatedTopics": [],
       "officialSources": []
+    },
+    {
+      "id": "topic_duygu_duzenleme",
+      "slug": "duygu-duzenleme",
+      "name": "Duygu Düzenleme",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "duygu düzenleme",
+        "duygu düzenleme etkinliği",
+        "duygularla baş etme"
+      ],
+      "useCases": [
+        "sınıf rehberliği",
+        "öğrenci görüşmesi",
+        "baş etme becerileri"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Duygu Düzenleme | Okul PDR Rehberi | PDR Kampüs",
+        "description": "Duyguları tanıma, baş etme ve sınıf etkinlikleri için okul PDR rehberi.",
+        "primaryQuery": "duygu düzenleme"
+      },
+      "canonicalPath": "/konu/duygu-duzenleme/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "sinav-kaygisi"
+      ],
+      "officialSources": []
     }
   ]
 }
