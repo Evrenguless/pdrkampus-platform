@@ -452,3 +452,21 @@
 @media(max-width:1000px){.home-materials .campus-collections{grid-template-columns:repeat(2,minmax(0,1fr))}.home-materials .campus-discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.home-materials .campus-material-groups{gap:20px}.home-materials .campus-material-group{padding:14px;border-radius:16px}.home-materials .campus-material-heading{align-items:flex-start;gap:10px}:root body:has(.header) .home-materials .campus-material-heading h3{font-size:20px}.home-materials .campus-material-heading p{font-size:11px}.home-materials .campus-material-heading>a{font-size:10px;max-width:122px;text-align:center;padding:8px}.home-materials .campus-discovery-cover{height:150px;padding:8px}.home-materials .campus-discovery-body{padding:11px}:root body:has(.header) .home-materials .campus-discovery-body h4{font-size:12px}.home-materials .campus-collections{display:block}}
 @media(prefers-reduced-motion:reduce){.home-materials .campus-discovery-resource{transition:none}.home-materials .campus-discovery-resource:hover{transform:none}}
+/* One broad official-form shelf replaces the repeated home resource/form panels. */
+:root body:has(.header) .campus-home-forms{grid-column:span 2;min-width:0}
+:root body:has(.header) .campus-home-forms .campus-panel-heading{min-height:120px;padding-right:150px}
+:root body:has(.header) .campus-home-forms .campus-panel-heading:after{background-image:url('/assets/campus-new-counselor.webp');width:145px;height:110px}
+.campus-official-form-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:4px 0 20px}
+.campus-official-form{display:flex;flex-direction:column;min-width:0;border:1px solid #e1e9f1;border-radius:12px;overflow:hidden;background:#fff;color:#102344;transition:box-shadow .2s,transform .2s}
+.campus-official-form:hover{box-shadow:0 8px 20px #153e5412;transform:translateY(-2px)}
+.campus-form-preview{height:165px;padding:10px;background:#eef6fc}
+.campus-official-form:nth-child(2) .campus-form-preview{background:#fff6e6}.campus-official-form:nth-child(3) .campus-form-preview{background:#edf8f1}.campus-official-form:nth-child(4) .campus-form-preview{background:#f2eeff}
+.campus-form-preview img{width:100%;height:100%;object-fit:contain;display:block}
+.campus-form-body{display:flex;flex-direction:column;flex:1;padding:12px}
+.campus-form-body>span{color:#526480;font-size:10px}
+:root body:has(.header) .campus-form-body h4{margin:9px 0 14px;font-size:13px;font-weight:800;line-height:1.55;min-height:3.1em;overflow-wrap:normal;color:#102344}
+.campus-form-body>strong{margin-top:auto;font-size:10px;color:#007f68}
+@media(max-width:1000px){:root body:has(.header) .campus-home-grid{grid-template-columns:1fr}:root body:has(.header) .campus-home-forms{grid-column:auto}.campus-official-form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:440px){:root body:has(.header) .campus-home-forms .campus-panel-heading{padding-right:0;padding-top:0}:root body:has(.header) .campus-home-forms .campus-panel-heading:after{display:none}.campus-official-form-grid{gap:10px}.campus-form-preview{height:150px;padding:8px}.campus-form-body{padding:10px}:root body:has(.header) .campus-form-body h4{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.campus-official-form{transition:none}.campus-official-form:hover{transform:none}}
+:root body:has(.header) .campus-home-panel:has(#homeQuestions) .campus-panel-heading:after{background-image:url('/assets/campus-bullying-support.webp')}
