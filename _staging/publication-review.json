@@ -1,7 +1,7 @@
 {
   "reviewed": 1787,
-  "published": 335,
-  "held": 1452,
+  "published": 327,
+  "held": 1460,
   "publishedIds": [
     "collected-00b98609e9bb20207a097e8b",
     "collected-00c5f3d7675a5797bbf41e2d",
@@ -30,7 +30,6 @@
     "collected-0c5843d32548d1d2ebfa2cd8",
     "collected-0d04ad4c8c2dd4feac956d32",
     "collected-0d167adf61397c32f18dd689",
-    "collected-0ede2c4ef407b093a6ea22af",
     "collected-0f10302b8ce6fd2a0f36d0e9",
     "collected-1027a46e64078e8a053d0ac6",
     "collected-103278c85362ab22a126fab6",
@@ -69,7 +68,6 @@
     "collected-2e292417299a0e18bff1de30",
     "collected-2e64d3dd0c8b7789ef986630",
     "collected-2f3b0959d82adf2db77fd501",
-    "collected-2f8964cccb4e1cf820ee66e5",
     "collected-2ffce86438cc4eb2bb44afbe",
     "collected-306bd654b54e6d66c65c6d79",
     "collected-30a7d96628707efe988a5ec3",
@@ -93,7 +91,6 @@
     "collected-415c83a3852724b2038ae2e3",
     "collected-4164508cee83079e01a4e6bb",
     "collected-4249c6eb6b6a00566ac25e60",
-    "collected-42e0c54770526bbce3874930",
     "collected-435acdb9331fc95238ccc359",
     "collected-44bf85234ef3c07f76d4dc57",
     "collected-462fb341ab3e031bb96c6c7d",
@@ -130,7 +127,6 @@
     "collected-5f2e3a707f4ce9bc1daaec19",
     "collected-5fbc30a9aaa3ce03937d9ecf",
     "collected-607891050d68656eee3b6daf",
-    "collected-6221bbee2ec3c88782a600e6",
     "collected-626768b3ce08d9bc548d8e11",
     "collected-62a4399728d5c3f285dfb96d",
     "collected-62ae01994875cb23ed07ed40",
@@ -160,7 +156,6 @@
     "collected-73a8f188fe92619c62994e66",
     "collected-7407ef2604609bfd3833a938",
     "collected-75c99d1393c990d3cfb55ab1",
-    "collected-75f672d5fcab35183b323908",
     "collected-766e87e2c4291c23eaa4b9f8",
     "collected-7774c1d7d3b53e4ca0951021",
     "collected-7897673fe6af37cb9a0b1d6b",
@@ -189,7 +184,6 @@
     "collected-83cb9c1acf4fb691d8aae703",
     "collected-84a5d56d6841ff3d7f32269f",
     "collected-84b63d5935cfae4e323cffbe",
-    "collected-862783530d71187dbd92abae",
     "collected-86c4e11be7fd9768ef2f3257",
     "collected-8789ed2a890593c6335b1961",
     "collected-889bf3fd1a7a87f2b63678d4",
@@ -207,7 +201,6 @@
     "collected-8f4d54d0bdef2bea8bc62a1a",
     "collected-8fc10afbfb3acf35c976b726",
     "collected-90606148a37d1b670109be3c",
-    "collected-90cd7a489d9e226aa6e96ab2",
     "collected-91355f10522158576f79c0da",
     "collected-9256281613af717e03738736",
     "collected-92a89152f7352d6a0a9a47bd",
@@ -265,7 +258,6 @@
     "collected-bc2e03952ca40c34726fbc76",
     "collected-bd7988960cc4abb8a1560781",
     "collected-be1c6b1a5138fd93c4f7f0c1",
-    "collected-bf2031ceaf4dfa386a02b669",
     "collected-bf5fc8eb2dd2ba6eb4c6849d",
     "collected-c03a0d49f6fe559242754d6c",
     "collected-c091f3219cdbc6ac81b6e1c4",
@@ -12771,6 +12763,78 @@
       "status": "review_required",
       "reason": "ValueError",
       "reviewReasons": []
+    },
+    {
+      "importId": "toplanan-0ede2c4ef407b093a6ea",
+      "title": "Akademik Başarı ve Meslek Seçimi Sunu",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-2f8964cccb4e1cf820ee",
+      "title": "Ergenlikte Meslek Seçimi Broşür",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-42e0c54770526bbce387",
+      "title": "Destek Eğitim Odası Nedir?",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-6221bbee2ec3c88782a6",
+      "title": "Çocuklar ve Ebeveynler İçin Öfke Yönetimi Sunum",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-75f672d5fcab35183b32",
+      "title": "SINAV KAYGISI VELİ BROŞÜR",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-862783530d71187dbd92",
+      "title": "Ebeveyn Kaybı Sunum",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-90cd7a489d9e226aa6e9",
+      "title": "Yeni Destek Eğitim Programlarına İlişkin RAM Uygulama Kılavuzu",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
+    },
+    {
+      "importId": "toplanan-bf2031ceaf4dfa386a02",
+      "title": "Yaz Tatilinde Zaman Yönetimi Sunum",
+      "status": "duplicate",
+      "reason": "already_in_catalogue",
+      "reviewReasons": [
+        "Added by the main-branch collector during publication preparation"
+      ]
     }
   ],
   "approval": {
@@ -12781,11 +12845,11 @@
     "inputSha256": "12c107ce49abe8914d0cd4052b61d466d03d1e16a1e9f4cb7a8a4a05b0e699f2"
   },
   "existingLibraryCount": 1284,
-  "existingSupplementaryCount": 368,
-  "supplementaryCount": 703,
+  "existingSupplementaryCount": 411,
+  "supplementaryCount": 738,
   "heldReasons": {
     "outside_existing_official_domain_policy": 260,
-    "already_in_catalogue": 64,
+    "already_in_catalogue": 72,
     "inspection_gate": 997,
     "duplicate_content_after_inspection": 35,
     "ValueError": 93,

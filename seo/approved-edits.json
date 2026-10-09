@@ -1241,7 +1241,7 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "85621463c182476a9c32ff60ed4c4a157032d5978a83971d7897bdc6ad1a59cf",
+      "reviewed_sha256": "c5f393c244da336121fd95d51077ca954c50ab518b03451783ff3550700e7341",
       "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged"
     },
     "topluluk.html": {

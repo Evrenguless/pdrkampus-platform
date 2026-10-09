@@ -1,9 +1,9 @@
 # 1.787 kaynaklık içe aktarımın yayın sonucu
 
 Mevcut yayın ve gerçek belge önizleme kurallarıyla 1.787 kaynak değerlendirildi.
-335 yeni kaynak `data/collected-resources.json` ek kataloğuna alındı; 1.452 kayıt
+327 yeni kaynak `data/collected-resources.json` ek kataloğuna alındı; 1.460 kayıt
 kontrolleri tamamlamadığı veya tekrar olduğu için yayına alınmadı. Ek katalog
-368 kayıttan 703 kayda çıktı. Mevcut 1.284 kütüphane kaydı, 88 form, eski ek
+368 kayıttan 738 kayda çıktı. Mevcut 1.284 kütüphane kaydı, 88 form, eski ek
 katalog kayıtları ve eski önizleme metadata'sı aynen korunur.
 
 | Yayına alınmama nedeni | Kayıt |
@@ -20,7 +20,7 @@ Kaynak erişimi, resmi alan adı, dosya imzası, yüklenen dosyayla SHA-256 eşl
 başlık/konu/kademe tutarlılığı, olası kişisel bilgi işaretleri ve tekrar kontrolleri
 uygulandı. Belirsiz, şifreli veya mevcut sınırları aşan belgeler yayımlanmadı.
 Tam belge incelemesini geçen 370 kaydın 35'i aynı metin olduğu için ayrıldı.
-335 kaydın her biri özgün belgeden üretilmiş ilk iki sayfa/slayt önizlemesine sahiptir
+327 kaydın her biri özgün belgeden üretilmiş ilk iki sayfa/slayt önizlemesine sahiptir
 (tek sayfalı belgelerde bir önizleme). PDF, PowerPoint ve Word özgün dosya
 bağlantıları korunur. Konu, materyal türü ve kademe mevcut içerik denetiminden alınır.
 
