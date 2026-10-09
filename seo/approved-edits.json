@@ -863,19 +863,19 @@
     },
     "materyaller/etkinlikler/index.html": {
       "baseline_sha256": "ed95dfa51195b937e354a51341b695e8f4ebb2b5e28839a493e9994ea92b014c",
-      "reviewed_sha256": "26bd5c34f724de712c30b968a4f3b3952183ddcaa303efde42aa285b1e8ea481",
+      "reviewed_sha256": "943664ce516cc2795751cd7896a29a3a39e6271c03061f59a9caaf218742408a",
       "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "materyaller/pano-materyalleri/index.html": {
       "baseline_sha256": "6f7aebfd8a0365e6574758c9b4e01ed41d8177b490ee82ca83e4f52cf5e43bac",
-      "reviewed_sha256": "2b1c00c5578d52a6558a669e422e7e5326e03af30dfd2c966cbd1e048584e6d3",
+      "reviewed_sha256": "038e0564dd5c87e6366d5ea571c29233ec0135851fa12e0f02ae70bb4f06e4c3",
       "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "materyaller/sunumlar/index.html": {
       "baseline_sha256": "96affb7006d52d4b06402d55201d1152cd322fc463f277f96e64942874ac4594",
-      "reviewed_sha256": "4b40178c4000c2bc7479f7e69b48b8dff6bc5fdd5103bde7103f48c6d1e364c6",
+      "reviewed_sha256": "3a093ad3ef3669aac4700db5bf972fe6457552f8f7b060fd382acb09c005397e",
       "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -1294,7 +1294,7 @@
     },
     "scripts/build_material_hubs.py": {
       "baseline_sha256": "f7e44bfa3db584e4b727b14e420d78cfb61392054597dd3f6da50857a902c56f",
-      "reviewed_sha256": "6a5ecd97e49678654501d830339e301a5340531f94006b5b963855071218bda9",
+      "reviewed_sha256": "aec9eb89ad652fd748b34fccc27829d6c0f0b24bb97c7930c99c519af27e9ee1",
       "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved"
     },
     "scripts/build_career_pages.py": {
