@@ -12,6 +12,8 @@ from resource_seo import page_path, build_pages
 
 
 def publishable(row, known, hashes):
+    fields = ('publicationApproved', 'licenseVerified', 'reviewStatus')
+    if any(key in row for key in fields) and not (row.get('publicationApproved') is True and row.get('licenseVerified') is True and row.get('reviewStatus') == 'approved'): return False
     gate = row.get('inspection', {})
     if row.get('status') != 'review_ready' or not gate.get('eligible') or gate.get('review_reasons') or gate.get('version') != INSPECTION_VERSION: return False
     if gate.get('method') != 'full_readable_document_text_and_source_metadata' or gate.get('text_characters', 0) < 120: return False
@@ -34,6 +36,9 @@ def append_resources(existing, candidates, catalogue, limit=300):
         gate = row['inspection']; levels = gate['levels']
         if gate.get('text_sha256') in text_hashes: continue
         entry = {'id': 'collected-' + row['id'], 'title': row['title'], 'type': gate['material_type'], 'level': levels[0] if len(levels) == 1 else ' / '.join(levels) if levels else 'Belirtilmiyor', 'area': 'Rehberlik', 'topic': gate['topics'][0], 'source': 'MEB · ' + row['source_host'], 'sourcePage': row['source_pages'][0], 'file': row['file_url'], 'fileType': row['file_type'], 'sourceType': 'official', 'contentSha256': row['sha256'], 'collectedAt': row['discovered_at'], 'checkedAt': row['access_verified_at']}
+        if 'publicationApproved' in row:
+            for key in ('publicationApproved', 'licenseVerified', 'reviewStatus', 'approvalBasis', 'approvedAt', 'importId'):
+                if key in row: entry[key] = row[key]
         if len(levels) > 1: entry['levels'] = levels
         entry['pagePath'] = page_path(entry)
         entry['documentInfo'] = gate.get('document_info', {})

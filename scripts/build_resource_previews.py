@@ -58,16 +58,22 @@ def preview_workbook(path,data_only):
         cleaned.seek(0)
         return load_workbook(cleaned,data_only=data_only)
 
-def build(row):
-    kind=row['fileType'].upper();ident=row['id'];assets=ROOT/'assets/resource-previews';assets.mkdir(parents=True,exist_ok=True)
+def build(row, *, root=None, source_body=None):
+    root = Path(root) if root is not None else ROOT
+    kind=row['fileType'].upper();ident=row['id'];assets=root/'assets/resource-previews';assets.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         dest=Path(tmp)/('source.'+kind.lower())
-        override=json.loads((ROOT/'seo/link-overrides.json').read_text()).get('entries',{}).get(row['file'],{})
+        override=json.loads((root/'seo/link-overrides.json').read_text()).get('entries',{}).get(row['file'],{})
         url=override.get('replacement_url') if row['id'] in override.get('ids',[]) and override.get('replacement_url') else row['file']
         parts=urllib.parse.urlsplit(url)
         url=urllib.parse.urlunsplit((parts.scheme,parts.netloc,urllib.parse.quote(parts.path,safe='/%:@'),urllib.parse.quote(parts.query,safe='/?&=%:+;'),parts.fragment))
         request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; PDRKampus-DocumentPreview/1.1)'})
-        with urllib.request.urlopen(request,timeout=60) as response:data=response.read(100_000_001)
+        if source_body is None:
+            with urllib.request.urlopen(request,timeout=60) as response:data=response.read(100_000_001)
+        else:
+            data=source_body
+        expected=row.get('contentSha256')
+        if source_body is not None and expected and hashlib.sha256(data).hexdigest()!=expected:raise ValueError('Preview source hash mismatch')
         if len(data)>100_000_000:raise ValueError('Preview size limit')
         dest.write_bytes(data);result={'sourceSha256':hashlib.sha256(data).hexdigest()}
         if kind in ['DOC','DOCX','PPT','PPTX','XLS']:
@@ -83,7 +89,7 @@ def build(row):
             reader=PdfReader(dest);result['pageCount']=len(reader.pages)
             prefix=assets/ident
             subprocess.run(['pdftoppm','-f','1','-l','2','-scale-to','1200','-jpeg','-jpegopt','quality=78',str(dest),str(prefix)],check=True,capture_output=True,timeout=90)
-            result['previews']=['/'+str(p.relative_to(ROOT)) for p in sorted(assets.glob(ident+'-*.jpg'))]
+            result['previews']=['/'+str(p.relative_to(root)) for p in sorted(assets.glob(ident+'-*.jpg'))]
             result['thumbnail']=result['previews'][0]
         elif kind=='XLSX':
             book=preview_workbook(dest,data_only=True);formulas=preview_workbook(dest,data_only=False);sheets=[]
@@ -95,7 +101,7 @@ def build(row):
                 used=max((i+1 for row in values for i,v in enumerate(row) if v),default=1)
                 sheets.append({'name':sheet.title,'rows':[row[:used] for row in values],'merges':[str(v) for v in sheet.merged_cells.ranges],'rowCount':sheet.max_row,'columnCount':sheet.max_column})
             if not sheets:raise ValueError('No visible sheet')
-            result.update(sheets=sheets,sheetCount=len(sheets));chosen=next((s for s in sheets if s['name']=='EYLÜL'),sheets[0]);cover=assets/(ident+'-sheet.jpg');thumbnail(chosen,cover);result['thumbnail']='/'+str(cover.relative_to(ROOT))
+            result.update(sheets=sheets,sheetCount=len(sheets));chosen=next((s for s in sheets if s['name']=='EYLÜL'),sheets[0]);cover=assets/(ident+'-sheet.jpg');thumbnail(chosen,cover);result['thumbnail']='/'+str(cover.relative_to(root))
         return result
 
 def main():
