@@ -1,0 +1,5 @@
+
+.academic-scans/
+
+__pycache__/
+*.pyc

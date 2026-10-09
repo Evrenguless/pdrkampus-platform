@@ -1,3 +1,4 @@
 # Keep the editorial import out of the GitHub Pages build.
 exclude:
   - _staging
+  - .academic-scans

@@ -1,0 +1,5 @@
+/* Article cards reuse the library shell, grid, cover and content styles. */
+.articles-library .resource-format-tile{font-size:clamp(18px,2.3vw,30px)}
+.articles-library .resource-actions>a{display:inline-flex;align-items:center;min-height:34px;padding:7px 11px;background:#eaf8f1;color:#006b57;border:1px solid #ceeadd;border-radius:7px;font-size:11px;font-weight:800;text-decoration:none}
+.articles-library .resource-actions>a:hover{text-decoration:underline}
+.articles-library .resource-content{overflow-wrap:anywhere}

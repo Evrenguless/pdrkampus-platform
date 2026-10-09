@@ -3,9 +3,9 @@
   "edits": {
     "404.html": {
       "baseline_sha256": "04a564f7bd78d587a3fcfb2fad770ceaa3d06dfec1a5af51bdb2a95411ab6002",
-      "reviewed_sha256": "52ce78fae82fcdc2195ef690bbbc064616cc168bfb50d65b3d0c94f6a666f6e3",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "3118b31f2cd0eb5d8ad01147f1ac497b5d52dd634c9303cb6741dfbf06d33a07",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "kaynak-detay/farkindalik-ilkokul/index.html": {
       "baseline_sha256": "ab67eb9980570b7c9fe8215ed9807f63608df4c7ab43091e8d7c35f961e32c96",
@@ -419,9 +419,9 @@
     },
     "cerez-politikasi.html": {
       "baseline_sha256": "9ea5a2713173280f9c889292b5133364a89a8adb45347d8015c7b3c8ffbf1c9c",
-      "reviewed_sha256": "9d109c21c267ae292a018121da81800dcb5e83c60f981a6e23d539fa4a2521b3",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "e2a5bb192f90e8a1c51c99bae837c31072c2e3a18d6c2709964a34b1db9566f2",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "cocuk-koruma/bildirim-sureci/index.html": {
       "baseline_sha256": "1803f4272083e0223a18a19a3ade06fae03e2964556ad98d504bc2f6f1ce50f1",
@@ -443,27 +443,27 @@
     },
     "gizlilik.html": {
       "baseline_sha256": "cfb4c5f868fdfc52fdfcd24038bbf891d5eaf2e6eb72579b8ed0d052e39bf4a7",
-      "reviewed_sha256": "d2b6bd107e67ea8231cd64be6a98164b50907788f0b926db37f0018ba77b5648",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "b81d052a3b24feed167977dfcaa76878315c321e24c595e704be3a4645698afa",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "hakkimizda.html": {
       "baseline_sha256": "c8ee8d5e7b5e61800a3f2c7723502c4709281fd80040d78c63c8b68c06af71a8",
-      "reviewed_sha256": "4ff866e8e8cdf7f10f7c3bb15c0cf0f112ff2e0d221a0c0d62c7f0daadd592ac",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "b9683f2db95b0fa9270c2005233c774e6b009452ab257730f3eb1de262d28d74",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "iletisim.html": {
       "baseline_sha256": "3fa45cdcb4fbe60bcc5036af274c15a8974ea8c9432e06371c31589f4f0df4e7",
-      "reviewed_sha256": "bbbc175694f9b986507a53d9df186694448af3a332b6bc04857e9fdab56b8387",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "e81be017d1c7f305a143fc8f86073d423002d0f9540fc6a85cf4cb2fbede63c8",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "index.html": {
       "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
-      "reviewed_sha256": "c78587c44619e51bbd8c68227fd9a7a32d25fffa8fa2c21d3b7c8383b0620c9f",
-      "reason": "User-requested themed statistics cards and live catalogue-derived counters; original data, catalogue and viewer scripts preserved",
-      "runtime_sha256": "15ead258ce2d83a9f47f9f8a51a4be135fa6001b2af34e7c96bd1c526592e607"
+      "reviewed_sha256": "44c452031384e919308300801a2dfeea436b469101d8e4838cd31dcb62711d38",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "1e7953d5a8a517af5509423a0caaf1cb1400aee60e1ad6536b3382c09f8201fd"
     },
     "kariyer/kariyer-gelisimi-ortaokul-lise/index.html": {
       "baseline_sha256": "29ae161969be36b3486edb20e6ae86963ca5c8a1e45af5f53e9875dae2dd474d",
@@ -779,9 +779,9 @@
     },
     "konular.html": {
       "baseline_sha256": "f24fac3cc39ffaa58b5620754c91439a94a14a0d4d83aeba3f0e7ca2a9cb8458",
-      "reviewed_sha256": "f4a7ca8eb41887318b1b1b5d071c31e9bcae15b0b2fa452fd11abad8c0075dda",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
-      "reason": "User-approved topic directory visual redesign; existing canonical URLs, structured data, original links and runtime preserved"
+      "reviewed_sha256": "d9116fc0caa763e0a93ecd5ae75fa7793e4484630bc36f89aa3d53b208eee9dc",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "148dc626adbd8de301da0a2c926bfa122bfc932fc0a31d0abcaa05dbbf054231"
     },
     "kriz/index.html": {
       "baseline_sha256": "8f6b7baf6426a8e9e70f577afcd6e4bc4cf0b68c0da9a375a2528f5652f52852",
@@ -815,21 +815,21 @@
     },
     "kullanim-kosullari.html": {
       "baseline_sha256": "c01c9936b145685097c93f08509a08045402f9b49a9326eb6278ed921e4f2e00",
-      "reviewed_sha256": "5f277d0e664109a2a0d6c141b2800e1765f7da4bc0aa82ae92b513caf2f44fe0",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "dee00b1b071a5cad5c7a67b42851cb7b62534535c3a895d30ac5aa597d91d28c",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "kutuphane.html": {
       "baseline_sha256": "423c4fe55483a69113a61d2fc7523ffc17d59e79b2569f967901aad15fedee24",
-      "reviewed_sha256": "a88dc09f691abe87c92566e14b5be83b051ab3f93d551f02675d945ac3e02db9",
-      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved",
-      "runtime_sha256": "24fcea6d2340d7f935961ef90cada5ab7eaa33a1103172c359a13bdce70116c9"
+      "reviewed_sha256": "88838b8c61e7494a01099e5e3a5aa4852f465dcd0f6033182bfd5d54dfe40448",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "964e466477e7353f879b104450f11cd7f245fc098fde81dbf2f4ee7cbfd190e7"
     },
     "kvkk-aydinlatma.html": {
       "baseline_sha256": "0a2a484dbfdd0dda88ff5725ac30b57743d71ad6e971dd932a9e22197dda82f1",
-      "reviewed_sha256": "01b30f66e0e559d3bc8d5bad34cd03b68a32345046a80f833f1a5c2522d7faf9",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "9223cb1ff564b9944a2c89b24c14dd442f7e06f7a6ea2d8499a88e69168c90e1",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "lgs/index.html": {
       "baseline_sha256": "8d5c5d2dd368d8e6fe3a302ec2564a29a63a46019b809ad3390f449a036dd2d0",
@@ -881,15 +881,15 @@
     },
     "meslektasima-sor.html": {
       "baseline_sha256": "17ee90ad40c24dcc51940c7591a4490f744ea5857a5773a5e19b0cbf39105606",
-      "reviewed_sha256": "a2114fe296c3f7dc9770bbfd73bf33ad4c5c6737f03e738422b13112512e7512",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "3f1e8fe555ec63fc486bacb0d6bd80b8e288c07095ce4a28f52e9f899f86cd89"
+      "reviewed_sha256": "163831e665617c8d0f0d0e5c9e642ec204c2ac58d433befc9ed0d1699f9ebafb",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "6f71be36e922790cbe64df17c00f7bacaf3e7437b2c8ca4b4ff9637fb28ca1fa"
     },
     "paylasim-kurallari.html": {
       "baseline_sha256": "5da52dce928f629598ef8a9ed2a3465e12b6c5a77342affa75a49fdbf3837cc2",
-      "reviewed_sha256": "ca5b5eca6c820bbc2aa5946b18e698279ba6e69e4f9029ae49736f14c8e2b68a",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "82412211de4f93d1c45ea9fc7626567145261c0e62ed211c1b21aa668926e2dc"
+      "reviewed_sha256": "e3b25c5e04e08f34c356ce3382aeeab0c01d0dbaa9a48b351b7626b488e734c1",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bb1c2df0b70c9c270dcccbd675812d370c13dd6b24480d11e90e71d9d000dd95"
     },
     "pdr-ags/2026-resmi-kaynaklar/index.html": {
       "baseline_sha256": "64fb402f7828a7d8d143f8cbd1075f8488e43aef18711afcc12b45e2703ce2e7",
@@ -1241,14 +1241,14 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "c5cd6416b9469be7b8a3b2e2f52007f985021ae6cd3c66e67c8aefed678f1873",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged"
+      "reviewed_sha256": "1f555c84d06e52b67e077583d29ad91e459b3493efe1516507859e6cf1c7612a",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved"
     },
     "topluluk.html": {
       "baseline_sha256": "e73b19a12fd7d33801327f61799969e46685844e3504de5c4e9835352c14d1b9",
-      "reviewed_sha256": "9fd6c67c0bc6c3616e4fb8ebe498fd9602ba5047a39ca476859355e5f9cdabc2",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
-      "runtime_sha256": "88b503373915e1e2da4e7d211c382b720b10af04eae7991cb3c32bbd1a4af65d"
+      "reviewed_sha256": "0c05e35e423250e9a630a330460642b13d32886d2605db1ebaa1c9bfff0d6ec9",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "a67d768b8ac03861075bc3f688c72f597e0748fb1c2b859b8aceaecaed2ef2fc"
     },
     "yks/bolum-secimi/index.html": {
       "baseline_sha256": "bc37c87a2d33367d1080ed1f43f53b13061edec1feac0c1e17ba390b1dba317d",
@@ -1329,6 +1329,72 @@
       "baseline_sha256": "009fd9983df1090ba7c90159506696520293662d1d09d895e360ef95ad17b8b1",
       "reviewed_sha256": "bd0ecdc803e20979f2ad38cdebc90d0f698fb50842aeb1d92ed8ca2ee58b20b1",
       "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved"
+    },
+    "araclar.html": {
+      "baseline_sha256": "6766370ea40c8cf08c98491c30fa819171cdf696c62ba28319d43ea38884dc5c",
+      "reviewed_sha256": "8669dd2dd0a1fe0d53c66698d036289f00e6e992b6b52e182e762262edebc30b",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "e285704ac27991879f1d5ee43b45d438889f957312ba7168252ded543cde9d4a"
+    },
+    "belgeler.html": {
+      "baseline_sha256": "f623e6f37af80ad3c4c5afb3ded5954dba0a0c8d54cbf76533178260c8184b2e",
+      "reviewed_sha256": "8bbd20df1f599ca2447953f3f69d27747b953d76e5d401ba585b1dc6b40f3833",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "083d73ac56f348142edbe37ab40f56587a8fc66d5d439bd82d161b355b98943f"
+    },
+    "bildirimler.html": {
+      "baseline_sha256": "6469e5f970d2ede0512210c0d7baa95b7cb918655a32073fd3c74075a09cddc6",
+      "reviewed_sha256": "6e1496a33de6653f06ec56ecef902407926678d27ca6d7417ea0f8d50f0610cc",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "128b308dbc93dec440bcc51dad0b29e17367029670cd66de3e79e8c6af348255"
+    },
+    "calisma-alani.html": {
+      "baseline_sha256": "35c64c7e6ac348757e153539c7ecc6202fe5041d72180bf7c06da9ee40456925",
+      "reviewed_sha256": "2055bd11edde9584d2d20504c4aa41804e2b361ba1941486bece24674eb108a3",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "4e80ebeae1fd3aeadcd929232c605dae953dcb58d3b5e82584dc18fde4d91ca7"
+    },
+    "gonderi.html": {
+      "baseline_sha256": "2d68b8f70d4401233f8127f4a1bcc74a9abced1cd76b70b84046b000f16ec31a",
+      "reviewed_sha256": "7f9e314da46279b46823f2aa422e79dcdedb9ee4522d9daa44e8f7ef3393cffd",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "6f84e5f3b55e93c8258cdb1c556cb5d472c18ad369e6ff6015d9aa4f4fc2be9c"
+    },
+    "hesap.html": {
+      "baseline_sha256": "203890b5d2a6549aeb8c460b27e105fc103341e2b542a08081bfe34d93c190f6",
+      "reviewed_sha256": "c5d72ee8edb5d18e3f6ceca421340a884a64a1af8dc2f39ec1e0a3213d98bb9e",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "6be204351c3f19553b1d53f6ca71f1bd24108756b8b36aa9d1cfdea65415b256"
+    },
+    "kaynak-yonetimi.html": {
+      "baseline_sha256": "f95b9e448455928cae098c1333442fdb7b7e1d9d1f84873c69257d0ee84e76af",
+      "reviewed_sha256": "b261afa4b8897868ecddf2c6c559f783f410db53e6799e9a7d6814e87b613bad",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "8e63008ea7953aa7601fb0e48c61c6f8dd5627e1c8fdc383e48af44f2c102546"
+    },
+    "platform.html": {
+      "baseline_sha256": "7bd4bbfac63a73078b1b5e95d34598664b35a65bd45da66cba124f9eccf53409",
+      "reviewed_sha256": "5b310df51e15a5979f7ecac64c0c3a59146d9a28e225afa02cafb6df138827e1",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "cb8bbdf32ed8a8e6a921b15dde29fcfa7ed3acdc4c889365999076b1ae18d1ea"
+    },
+    "profil.html": {
+      "baseline_sha256": "4997c45d6c9a99ac5bcd430fa6d3102d3ac488d396ea471dd14e9f6db60e7ec0",
+      "reviewed_sha256": "11bbc772c07f5ee2e69950895c09a67b08e8dfd1f3753fadb9c81569f3265234",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "9b57b304848a435f9f6d36d9482bdd02013837a2b13ff17bae0cfcbb9321f19a"
+    },
+    "soru.html": {
+      "baseline_sha256": "1b71dd3b45160b3648b6191edade3630e56235387b1bddc2c150ad77b57cd946",
+      "reviewed_sha256": "f4b36ab55efc7c9c6dbf8afeb2c55890876ab67dce62cb86c46736c98e15302a",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "f3c148e3d4d1a23ecc49958517aea93c1f5f7c04872585b08c8edf6df489ed19"
+    },
+    "topluluk-yonetimi.html": {
+      "baseline_sha256": "07c626df3ecaf6f45d67b19df81f707c920a36cb6048f902d2932ddee66cd7f8",
+      "reviewed_sha256": "3317dad9e9e05c4fb5d545be27e2e592a979e7ef4ef47b8d32c61f14e56e2794",
+      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved",
+      "runtime_sha256": "bc907c9a138390b9a18a33215794a9a77a1a65d228f386204a468848b9e30ce5"
     }
   }
 }
