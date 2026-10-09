@@ -470,3 +470,23 @@
 @media(max-width:440px){:root body:has(.header) .campus-home-forms .campus-panel-heading{padding-right:0;padding-top:0}:root body:has(.header) .campus-home-forms .campus-panel-heading:after{display:none}.campus-official-form-grid{gap:10px}.campus-form-preview{height:150px;padding:8px}.campus-form-body{padding:10px}:root body:has(.header) .campus-form-body h4{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.campus-official-form{transition:none}.campus-official-form:hover{transform:none}}
 :root body:has(.header) .campus-home-panel:has(#homeQuestions) .campus-panel-heading:after{background-image:url('/assets/campus-bullying-support.webp')}
+/* Full-width forms and a compact colleague band keep this area easy to scan. */
+:root body:has(.header) .header .brand strong span,:root body:has(.header) .campus-footer-brand strong span{color:#007f68!important}
+:root body:has(.header) .campus-home-grid{grid-template-columns:minmax(0,1fr)}
+:root body:has(.header) .campus-home-forms{grid-column:auto}
+:root body:has(.header) .campus-home-secondary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;align-items:center;min-height:0;background:linear-gradient(115deg,#edf8f2,#f1f7ff);padding:22px 24px 22px 160px;position:relative}
+:root body:has(.header) .campus-home-secondary:before{content:"";position:absolute;left:20px;top:50%;transform:translateY(-50%);width:120px;height:100px;background:url('/assets/campus-bullying-support.webp') center/contain no-repeat}
+:root body:has(.header) .campus-home-secondary .campus-panel-heading{min-height:0;padding:0;border:0}
+:root body:has(.header) .campus-home-secondary .campus-panel-heading:after{display:none}
+:root body:has(.header) .campus-home-secondary h3{margin:5px 0;font-size:23px}
+:root body:has(.header) .campus-home-secondary .campus-panel-index{display:none}
+:root body:has(.header) .campus-home-secondary #homeQuestions{grid-column:1;order:2;border:0;margin:0}
+:root body:has(.header) .campus-home-secondary #homeQuestions .small-note{margin:0;font-size:11px;line-height:1.6}
+:root body:has(.header) .campus-home-secondary #homeQuestions .campus-entry{padding:6px 0}
+:root body:has(.header) .campus-home-secondary .campus-panel-link{grid-column:2;grid-row:1/3;margin:0;align-self:center;background:#007f68;color:white;border:0;padding:12px 22px}
+.home-pathway-previews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0}
+:root body:has(.header) .pathway-detail{background:#f5fbf8;border:1px solid #dcebe3;border-radius:18px}
+:root body:has(.header) .pathway-detail-head h3{color:#102344;font-size:24px}
+.home-pathway-previews .campus-form-preview{height:215px}
+:root body:has(.header) .pathway-all{display:inline-flex;padding:12px 18px;border-radius:9px;background:#007f68;color:#fff;font-size:12px;font-weight:800}
+@media(max-width:760px){:root body:has(.header) .campus-home-secondary{padding:20px;gap:12px;grid-template-columns:1fr}:root body:has(.header) .campus-home-secondary:before{display:none}:root body:has(.header) .campus-home-secondary .campus-panel-link{grid-column:1;grid-row:auto;order:3;justify-self:start}:root body:has(.header) .campus-home-secondary h3{font-size:20px}.home-pathway-previews{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-pathway-previews .campus-form-preview{height:155px}}
