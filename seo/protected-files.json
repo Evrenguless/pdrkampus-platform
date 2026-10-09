@@ -311,7 +311,7 @@
     "src/library-detail-links.js": "cedebb7d5d362ee27f04190055c6ea57138532525bd1b8ec2c67a3c4486fd212",
     "src/library-url-state.js": "731f1ae8b88d27177e3bd2f58a4bb9fa9bef692e5249893aba660bffad62f8ee",
     "src/library.js": "18ef87251a4b0ce7232d07cca82ad94f59741ace9109feff8844eb7b6254fb1e",
-    "src/menu.js": "3a680e225af1880d899dc6be8cdea129290b2a8f58282ee2e5128b9feebc3762",
+    "src/menu.js": "c92db3188af3e0cc6e1678471cfcf344ecccb8e0ede5b628f5bc0c4d90714f5e",
     "src/notifications.js": "def704390342b8771524fe7d7b6fee011321769d0423ef416f39e4b635fdfabb",
     "src/post-detail.js": "745859f3a7b3d41a470a821e513cb5dea2de04e3022cd610de6474181e48aa57",
     "src/profile-dashboard.css": "59580109122ed7e7c3eacab8f48218dd2f0a48f248bf53c6a5b88c3273b25dc3",
@@ -415,10 +415,9 @@
       "reason": "Re-pin unchanged current main catalogue after concurrent append-only additions; all original records verified identical; theme changes do not modify records"
     },
     "src/menu.js": {
-      "commit": "457471ad4b1e4b8e096bdfed045ff5c639e47d17",
-      "previous_sha256": "21004963d2374a0b6b4c79058f8028a7d33cf15145dd4e863b1d90fd09e427dd",
-      "reviewed_sha256": "3a680e225af1880d899dc6be8cdea129290b2a8f58282ee2e5128b9feebc3762",
-      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved"
+      "previous_sha256": "3a680e225af1880d899dc6be8cdea129290b2a8f58282ee2e5128b9feebc3762",
+      "reviewed_sha256": "c92db3188af3e0cc6e1678471cfcf344ecccb8e0ede5b628f5bc0c4d90714f5e",
+      "reason": "User confirmed G-407GDF2ZVC as the intended Google Analytics property; only measurement ID changed, consent behavior preserved"
     }
   }
 }

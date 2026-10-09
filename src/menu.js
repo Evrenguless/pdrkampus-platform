@@ -58,7 +58,7 @@ function readConsent(){try{return JSON.parse(localStorage.getItem(CONSENT_KEY)||
 function saveConsent(analytics){const value={necessary:true,analytics:Boolean(analytics),updatedAt:new Date().toISOString()};localStorage.setItem(CONSENT_KEY,JSON.stringify(value));window.PDRConsent=value;window.dispatchEvent(new CustomEvent('pdrconsentchange',{detail:value}));return value}
 window.PDRConsent=readConsent()||{necessary:true,analytics:false,updatedAt:null};
 
-const GA_MEASUREMENT_ID='G-1WQ10WJHVW';
+const GA_MEASUREMENT_ID='G-407GDF2ZVC';
 window.dataLayer=window.dataLayer||[];
 window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
 window.gtag('consent','default',{
