@@ -490,3 +490,21 @@
 .home-pathway-previews .campus-form-preview{height:215px}
 :root body:has(.header) .pathway-all{display:inline-flex;padding:12px 18px;border-radius:9px;background:#007f68;color:#fff;font-size:12px;font-weight:800}
 @media(max-width:760px){:root body:has(.header) .campus-home-secondary{padding:20px;gap:12px;grid-template-columns:1fr}:root body:has(.header) .campus-home-secondary:before{display:none}:root body:has(.header) .campus-home-secondary .campus-panel-link{grid-column:1;grid-row:auto;order:3;justify-self:start}:root body:has(.header) .campus-home-secondary h3{font-size:20px}.home-pathway-previews{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-pathway-previews .campus-form-preview{height:155px}}
+/* Live campus statistics in three calm, themed discovery cards. */
+:root body:has(.header) .home-scope{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;grid-column:1/-1;padding:0;margin:10px 0 0;border:0;max-width:none}
+:root body:has(.header) .home-scope-label{grid-column:1/-1;width:auto;font-size:9px;letter-spacing:.13em;font-weight:800;color:#597b71;text-align:left;margin:0 0 1px}
+:root body:has(.header) .home-scope>a.home-scope-card{display:flex;align-items:center;justify-content:flex-start;gap:14px;padding:17px 20px;min-width:0;min-height:86px;border:1px solid #dce9f3;border-radius:15px;background:#ffffffc9;box-shadow:0 4px 14px #153e5405;transition:transform .18s,box-shadow .18s}
+:root body:has(.header) .home-scope>a.home-scope-card:nth-of-type(2){border-color:#d7ebe1;background:#f5fcf8}
+:root body:has(.header) .home-scope>a.home-scope-card:nth-of-type(3){border-color:#e6e0f5;background:#faf8ff}
+:root body:has(.header) .home-scope .scope-icon{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:12px;color:#336b9c;background:#eaf3fc}
+:root body:has(.header) .home-scope a:nth-of-type(2) .scope-icon{background:#dff4e9;color:#007f68}
+:root body:has(.header) .home-scope a:nth-of-type(3) .scope-icon{background:#ede6fb;color:#7652b6}
+.scope-icon svg{width:23px;height:23px}
+.scope-card-copy{display:flex;flex-direction:column;min-width:0;gap:4px}
+:root body:has(.header) .home-scope strong{font-size:26px;font-weight:800;line-height:1.1;letter-spacing:-.04em;color:#102344;font-variant-numeric:tabular-nums}
+:root body:has(.header) .home-scope .scope-card-copy>span{font-size:11px;color:#526480;line-height:1.4}
+:root body:has(.header) .home-scope>a:hover{transform:translateY(-2px);box-shadow:0 7px 18px #153e5410}
+:root body:has(.header) .home-scope>a:focus-visible{outline:2px solid #007f68;outline-offset:3px}
+@media(max-width:760px){:root body:has(.header) .home-scope{gap:9px;margin-top:8px}:root body:has(.header) .home-scope>a.home-scope-card{gap:9px;padding:13px 12px}:root body:has(.header) .home-scope strong{font-size:23px}}
+@media(max-width:520px){:root body:has(.header) .home-scope>a.home-scope-card{flex-direction:column;align-items:flex-start;gap:10px;padding:12px 10px;min-height:120px;border-radius:12px}:root body:has(.header) .home-scope .scope-icon{width:32px;height:32px;border-radius:9px}.scope-icon svg{width:19px;height:19px}:root body:has(.header) .home-scope strong{font-size:22px}:root body:has(.header) .home-scope .scope-card-copy>span{font-size:9px}:root body:has(.header) .home-scope-label{font-size:8px}}
+@media(prefers-reduced-motion:reduce){:root body:has(.header) .home-scope>a{transition:none}:root body:has(.header) .home-scope>a:hover{transform:none}}
