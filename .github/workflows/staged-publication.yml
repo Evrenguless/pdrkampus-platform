@@ -1,0 +1,26 @@
+name: Staged Resource Publication Checks
+on:
+  pull_request:
+    paths: ['_staging/**', 'scripts/*staged*.py', 'scripts/publish_collected_resources.py', 'scripts/build_resource_previews.py', 'data/collected-resources.json', 'data/resource-previews.json', 'tests/imported-resources.mjs', '.github/workflows/staged-publication.yml']
+  push:
+    branches: [main]
+    paths: ['_staging/**', 'scripts/*staged*.py', 'scripts/publish_collected_resources.py', 'scripts/build_resource_previews.py', 'data/collected-resources.json', 'data/resource-previews.json', 'tests/imported-resources.mjs', '.github/workflows/staged-publication.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  staging-and-publication:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install pypdf==6.10.0 openpyxl==3.1.5 Pillow==12.3.0
+      - run: python -m unittest discover -s scripts -p test_staged_resources.py
+      - run: python -m unittest discover -s scripts -p test_staged_publication.py
+      - run: python -m unittest discover -s scripts -p test_resource_publication.py
+      - run: node --test tests/*.mjs

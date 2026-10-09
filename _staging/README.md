@@ -4,8 +4,10 @@
 SHA-256: `12c107ce49abe8914d0cd4052b61d466d03d1e16a1e9f4cb7a8a4a05b0e699f2`.
 
 Bütün kayıtlar `publicationApproved=false`, `licenseVerified=false`,
-`reviewStatus=editorial_review_required` durumundadır. Bu dosya canlı yükleyiciye,
-SEO sayfalarına, önizleme üretimine veya otomatik kaynak toplayıcısına bağlanmaz.
+`reviewStatus=editorial_review_required` durumundadır. Özgün staging dosyası canlı yükleyiciye bağlanmaz. Kullanıcının ayrıca verdiği
+açık kullanım/yayın izni, kaynak/içerik/önizleme kontrolleri tamamlandığında
+yeni bir canlı ek katalog kaydının oluşturulmasına izin verir. İnceleme sonuçları
+`publication-review.json` içinde ayrıca tutulur.
 GitHub Pages/Jekyll `_config.yml` bu klasörü yayın paketinden dışlar.
 Bu, GitHub deposunda erişim kontrolü sağlamaz; depo okuyucuları dosyayı görebilir.
 Başka bir dağıtım sistemi kullanılırsa `_staging` yine yayın paketinden çıkarılmalıdır.
@@ -25,9 +27,12 @@ insan tarafından incelenmelidir. `Belirtilmemiş` canlı katalogda kullanılan
 `Belirtilmiyor` değerine dönüştürülmeli; çoklu kademeler `levels` dizisine alınmalıdır.
 Kaynak/hash bilgisi ve kullanım izninin dayanağı inceleme notlarında korunmalıdır.
 Onaylar birbirinden bağımsızdır; resmi alan adı veya doğrulanmış dosya hash'i
-kullanım iznini kanıtlamaz. Bu içe aktarım hiçbir kaydı yayımlamaz.
+kullanım iznini kanıtlamaz. Bu aktarımda kullanım/yayın onayının dayanağı
+kullanıcının sohbet içindeki açık iznidir; bağımsız kurum lisansı doğrulaması
+yapıldığı iddia edilmez. Bu dayanak canlı kayıtların `approvalBasis` alanında
+korunur. Salt okunur rapor komutu hiçbir kaydı yayımlamaz.
 
-Yayımlama ayrı bir PR ile yapılmalıdır. Mevcut `toplanan-` kimlikleri doğrudan
+Yayımlama PR üzerinde testler ve belge kontrolleri tamamlandıktan sonra yapılır. Mevcut `toplanan-` kimlikleri doğrudan
 canlı ek katalog biçimine uymaz; kolektörün kimlik/adres/erişim/içerik kontrolleri
 korunmalıdır. Onay alanları bulunan canlı ek kayıtlar ancak iki onay `true` ve
 `reviewStatus=approved` olduğunda kabul edilir. Eski, onay alanları bulunmayan

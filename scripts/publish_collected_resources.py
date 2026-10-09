@@ -36,6 +36,9 @@ def append_resources(existing, candidates, catalogue, limit=300):
         gate = row['inspection']; levels = gate['levels']
         if gate.get('text_sha256') in text_hashes: continue
         entry = {'id': 'collected-' + row['id'], 'title': row['title'], 'type': gate['material_type'], 'level': levels[0] if len(levels) == 1 else ' / '.join(levels) if levels else 'Belirtilmiyor', 'area': 'Rehberlik', 'topic': gate['topics'][0], 'source': 'MEB · ' + row['source_host'], 'sourcePage': row['source_pages'][0], 'file': row['file_url'], 'fileType': row['file_type'], 'sourceType': 'official', 'contentSha256': row['sha256'], 'collectedAt': row['discovered_at'], 'checkedAt': row['access_verified_at']}
+        if 'publicationApproved' in row:
+            for key in ('publicationApproved', 'licenseVerified', 'reviewStatus', 'approvalBasis', 'approvedAt', 'importId'):
+                if key in row: entry[key] = row[key]
         if len(levels) > 1: entry['levels'] = levels
         entry['pagePath'] = page_path(entry)
         entry['documentInfo'] = gate.get('document_info', {})
