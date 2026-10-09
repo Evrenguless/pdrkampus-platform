@@ -6833,6 +6833,10 @@
     <loc>https://pdrkampus.com/lgs/yuzdelik-dilim-nasil-kullanilir/</loc>
   </url>
   <url>
+    <loc>https://pdrkampus.com/makaleler.html</loc>
+    <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
     <loc>https://pdrkampus.com/materyaller/etkinlikler/</loc>
     <lastmod>2026-10-05</lastmod>
   </url>
@@ -7079,5 +7083,4 @@
   <url>
     <loc>https://pdrkampus.com/yks/tercih-robotu/</loc>
   </url>
-  <url><loc>https://pdrkampus.com/makaleler.html</loc><lastmod>2026-10-10</lastmod></url>
 </urlset>
