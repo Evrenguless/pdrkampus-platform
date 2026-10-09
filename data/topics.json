@@ -1623,6 +1623,136 @@
         "akran-zorbaligi"
       ],
       "officialSources": []
+    },
+    {
+      "id": "topic_ozguven",
+      "slug": "ozguven",
+      "name": "Özgüven ve Öz Yeterlik",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "özgüven ve öz yeterlik"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf etkinliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Özgüven ve Öz Yeterlik | PDR Kampüs",
+        "description": "Özgüven ve Öz Yeterlik: okul PDR uygulama önerileri, öğrenci desteği ve ilgili kaynaklar.",
+        "primaryQuery": "özgüven ve öz yeterlik"
+      },
+      "canonicalPath": "/konu/ozguven/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "bireysel-gorusme"
+      ],
+      "officialSources": []
+    },
+    {
+      "id": "topic_problem_cozme_becerileri",
+      "slug": "problem-cozme-becerileri",
+      "name": "Problem Çözme Becerileri",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "problem çözme becerileri"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf etkinliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Problem Çözme Becerileri | PDR Kampüs",
+        "description": "Problem Çözme Becerileri: okul PDR uygulama önerileri, öğrenci desteği ve ilgili kaynaklar.",
+        "primaryQuery": "problem çözme becerileri"
+      },
+      "canonicalPath": "/konu/problem-cozme-becerileri/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "bireysel-gorusme"
+      ],
+      "officialSources": []
+    },
+    {
+      "id": "topic_arkadaslik_iliskileri",
+      "slug": "arkadaslik-iliskileri",
+      "name": "Arkadaşlık İlişkileri",
+      "categoryId": "cat-social-emotional",
+      "aliases": [
+        "arkadaşlık ilişkileri"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf etkinliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Arkadaşlık İlişkileri | PDR Kampüs",
+        "description": "Arkadaşlık İlişkileri: okul PDR uygulama önerileri, öğrenci desteği ve ilgili kaynaklar.",
+        "primaryQuery": "arkadaşlık ilişkileri"
+      },
+      "canonicalPath": "/konu/arkadaslik-iliskileri/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "bireysel-gorusme"
+      ],
+      "officialSources": []
+    },
+    {
+      "id": "topic_okul_aidiyeti",
+      "slug": "okul-aidiyeti",
+      "name": "Okul Aidiyeti",
+      "categoryId": "cat-school-adjustment",
+      "aliases": [
+        "okul aidiyeti"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf etkinliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Okul Aidiyeti | PDR Kampüs",
+        "description": "Okul Aidiyeti: okul PDR uygulama önerileri, öğrenci desteği ve ilgili kaynaklar.",
+        "primaryQuery": "okul aidiyeti"
+      },
+      "canonicalPath": "/konu/okul-aidiyeti/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "bireysel-gorusme"
+      ],
+      "officialSources": []
+    },
+    {
+      "id": "topic_zaman_yonetimi",
+      "slug": "zaman-yonetimi",
+      "name": "Zaman Yönetimi ve Planlama",
+      "categoryId": "cat-academic",
+      "aliases": [
+        "zaman yönetimi ve planlama"
+      ],
+      "useCases": [
+        "öğrenci görüşmesi",
+        "sınıf etkinliği"
+      ],
+      "indexable": true,
+      "contentStatus": "published",
+      "seo": {
+        "title": "Zaman Yönetimi ve Planlama | PDR Kampüs",
+        "description": "Zaman Yönetimi ve Planlama: okul PDR uygulama önerileri, öğrenci desteği ve ilgili kaynaklar.",
+        "primaryQuery": "zaman yönetimi ve planlama"
+      },
+      "canonicalPath": "/konu/zaman-yonetimi/",
+      "relatedTopics": [
+        "sosyal-duygusal",
+        "bireysel-gorusme"
+      ],
+      "officialSources": []
     }
   ]
 }
