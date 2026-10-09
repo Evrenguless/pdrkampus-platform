@@ -1,65 +1,55 @@
-import { safeArticleUrl, verifiedPdf, filterArticles } from './articles-catalog.js';
+import { articleSource, orderArticles } from './articles-catalog.js?v=20261010-2';
 const $ = id => document.getElementById(id);
 const pageSize = 24;
-let articles = [], results = [], visible = pageSize;
+let articles = [], visible = pageSize;
 function element(tag, text, className) {
   const node = document.createElement(tag);
   if (text) node.textContent = text;
   if (className) node.className = className;
   return node;
 }
+function sourceLink(url, label) {
+  const link = element('a', label);
+  link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+  return link;
+}
 function articleCard(article) {
-  const card = element('article', '', 'article-card');
-  const pdf = verifiedPdf(article);
-  const meta = element('div', '', 'article-card-meta');
-  meta.append(element('span', String(article.publicationYear || 'Yıl belirtilmemiş')), element('span', pdf ? 'PDF bağlantısı doğrulandı' : 'Kaynak sayfası', pdf ? 'article-pdf-badge' : 'article-source-badge'));
-  card.append(meta, element('h2', article.title), element('p', article.authors?.length ? article.authors.join(', ') : 'Yazar bilgisi kaynakta incelenebilir.', 'article-authors'), element('p', article.source || 'Akademik yayın', 'article-journal'));
-  const actions = element('div', '', 'article-actions');
-  const source = safeArticleUrl(article.sourcePage) || safeArticleUrl(article.doi);
-  for (const [url, label] of [[pdf, 'PDF’yi aç ↗'], [source, 'Kaynağı incele ↗']]) {
-    if (!url) continue;
-    const link = element('a', label); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
-    actions.append(link);
-  }
-  if (!actions.children.length) actions.append(element('span', 'Kaynak bağlantısı bulunmuyor.'));
-  card.append(actions);
+  const card = element('article', '', 'document-card library-document resource-card surface-card');
+  const visual = element('div', '', 'resource-card-cover');
+  const tile = element('span', 'MAKALE', 'resource-format-tile');
+  tile.append(element('small', 'Akademik yayın')); visual.append(tile);
+  const content = element('div', '', 'resource-content');
+  const meta = element('div', '', 'document-card-meta');
+  meta.append(element('span', String(article.publicationYear || 'Akademik yayın')), element('span', 'Makale'));
+  const title = element('h3');
+  const source = articleSource(article);
+  title.append(source ? sourceLink(source, article.title) : document.createTextNode(article.title));
+  content.append(meta, title, element('p', article.source || 'Akademik yayın', 'library-source'));
+  if (article.authors?.length) content.append(element('p', article.authors.join(', '), 'resource-detail'));
+  const actions = element('div', '', 'resource-actions');
+  actions.append(source ? sourceLink(source, 'Kaynak sayfasını aç ↗') : element('p', 'Kaynak bağlantısı bulunmuyor.'));
+  card.append(visual, content, actions);
   return card;
 }
 function render() {
-  $('articleCount').textContent = `${results.length.toLocaleString('tr-TR')} makale · ${Math.min(visible, results.length).toLocaleString('tr-TR')} gösteriliyor`;
-  $('articleGrid').replaceChildren(...results.slice(0, visible).map(articleCard));
-  $('articleMore').hidden = visible >= results.length;
-  $('articleStatus').textContent = results.length ? '' : 'Bu filtrelerle makale bulunamadı. Aramanı değiştir veya filtreleri temizle.';
-}
-function update() {
-  visible = pageSize;
-  results = filterArticles(articles, {query: $('articleQuery').value, year: $('articleYear').value, access: $('articleAccess').value, sort: $('articleSort').value});
-  render();
+  $('articleCount').textContent = `${articles.length.toLocaleString('tr-TR')} makale`;
+  $('articleGrid').replaceChildren(...articles.slice(0, visible).map(articleCard));
+  $('articleMore').hidden = visible >= articles.length;
 }
 async function load() {
   try {
     const response = await fetch('/data/academic-articles-tr.json');
     if (!response.ok) throw new Error('Catalogue unavailable');
-    articles = await response.json();
-    if (!Array.isArray(articles)) throw new Error('Invalid catalogue');
-    $('articleTotal').textContent = articles.length.toLocaleString('tr-TR');
-    $('articlePdfTotal').textContent = articles.filter(verifiedPdf).length.toLocaleString('tr-TR');
-    const years = [...new Set(articles.map(a => a.publicationYear).filter(Boolean))].sort((a, b) => b - a);
-    $('articleYear').append(...years.map(year => {const option = element('option', String(year)); option.value = String(year); return option;}));
-    const params = new URLSearchParams(location.search);
-    $('articleQuery').value = params.get('q') || '';
-    $('articleFilters').addEventListener('submit', event => {event.preventDefault(); update();});
-    $('articleQuery').addEventListener('input', update);
-    ['articleYear', 'articleAccess', 'articleSort'].forEach(id => $(id).addEventListener('change', update));
-    $('articleReset').addEventListener('click', () => {$('articleFilters').reset(); update(); $('articleQuery').focus();});
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error('Invalid catalogue');
+    articles = orderArticles(data);
     $('articleMore').addEventListener('click', () => {
       const previous = visible; visible += pageSize; render();
       $('articleGrid').children[previous]?.querySelector('a')?.focus();
     });
-    update();
+    render();
   } catch {
-    $('articleStatus').textContent = 'Tam katalog şu anda yüklenemedi. Aşağıdaki makalelerin bağlantılarını kullanabilir veya sayfayı yeniden yükleyebilirsin.';
-    $('articleFilters').querySelectorAll('input,select,button').forEach(control => control.disabled = true);
+    $('articleStatus').textContent = 'Tam katalog şu anda yüklenemedi. Aşağıdaki makalelerin kaynak bağlantılarını kullanabilir veya sayfayı yeniden yükleyebilirsin.';
   }
 }
 load();
