@@ -461,8 +461,8 @@
     },
     "index.html": {
       "baseline_sha256": "bedeaaf558157b85dd4766ff700dc1c97859876bb357eead559c774399945895",
-      "reviewed_sha256": "671f0da357f98b8d81dfc42e984b0fdfb2227723820d2d16c59f4926cd00ee87",
-      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved",
+      "reviewed_sha256": "09a7c15f9f4f007b2326bb2ee41ca4f9ed40bf6e25cd37603a1b28da23466e8d",
+      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "f064ed3bdaf053c04ac33d7b659798ce5d8ffa82da7ef39564ecf50f4a10c91b"
     },
     "kariyer/kariyer-gelisimi-ortaokul-lise/index.html": {
@@ -863,20 +863,20 @@
     },
     "materyaller/etkinlikler/index.html": {
       "baseline_sha256": "ed95dfa51195b937e354a51341b695e8f4ebb2b5e28839a493e9994ea92b014c",
-      "reviewed_sha256": "aab37b56985dc06026cf59dc736b358509c985cb4f3d4ed6e20ddad32b0abec4",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "26bd5c34f724de712c30b968a4f3b3952183ddcaa303efde42aa285b1e8ea481",
+      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "materyaller/pano-materyalleri/index.html": {
       "baseline_sha256": "6f7aebfd8a0365e6574758c9b4e01ed41d8177b490ee82ca83e4f52cf5e43bac",
-      "reviewed_sha256": "8021bbcf3ae7827fb13acdd95a12f62b1a1bb7bd8ca2f049a109c7339fd14bad",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "2b1c00c5578d52a6558a669e422e7e5326e03af30dfd2c966cbd1e048584e6d3",
+      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "materyaller/sunumlar/index.html": {
       "baseline_sha256": "96affb7006d52d4b06402d55201d1152cd322fc463f277f96e64942874ac4594",
-      "reviewed_sha256": "f10edab6575e3040d9f7dfbf9b8a8fc66f645dfe6abc95a18f154a9ae6ae3430",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "4b40178c4000c2bc7479f7e69b48b8dff6bc5fdd5103bde7103f48c6d1e364c6",
+      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "meslektasima-sor.html": {
@@ -1294,8 +1294,8 @@
     },
     "scripts/build_material_hubs.py": {
       "baseline_sha256": "f7e44bfa3db584e4b727b14e420d78cfb61392054597dd3f6da50857a902c56f",
-      "reviewed_sha256": "d32e31a5d5ef4e085f13d9c1cf0967840f8c36d63e2105aab6ad3d9f224c18de",
-      "reason": "SEO-only regeneration now preserves schema/context; original data and generated runtime scripts unchanged"
+      "reviewed_sha256": "6a5ecd97e49678654501d830339e301a5340531f94006b5b963855071218bda9",
+      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved"
     },
     "scripts/build_career_pages.py": {
       "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
@@ -1327,8 +1327,8 @@
     },
     "src/shell-refresh.css": {
       "baseline_sha256": "009fd9983df1090ba7c90159506696520293662d1d09d895e360ef95ad17b8b1",
-      "reviewed_sha256": "7abd93627773ef5d207f001d1ff576a54d0ee88d55022fccfdc196f2e5c1bbac",
-      "reason": "User-approved site-wide presentation refresh; original records, previews, calculation modules, membership and all URLs preserved"
+      "reviewed_sha256": "bd0ecdc803e20979f2ad38cdebc90d0f698fb50842aeb1d92ed8ca2ee58b20b1",
+      "reason": "User-annotated presentation refinements and real material preview cards; original records, file URLs and runtime preserved"
     }
   }
 }
