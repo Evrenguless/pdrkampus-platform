@@ -1,81 +1,81 @@
 {
   "meb-79": {
-    "retryAfter": 1791648686,
+    "retryAfter": 1791738829,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "orgm-bilsem-rpd-hizmetleri-kilavuzu-2023": {
-    "retryAfter": 1791648686,
+    "retryAfter": 1791738829,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "nevsehir-ogretmen-bilsem-kitapcigi": {
-    "retryAfter": 1791648687,
+    "retryAfter": 1791738830,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "serdivan-bireyi-tanima-teknikleri-sosyometri": {
-    "retryAfter": 1791648686,
+    "retryAfter": 1791738830,
     "errorType": "PdfStreamError",
     "message": "Stream has ended unexpectedly"
   },
   "sarimese-devamsizlik-onleme-2021": {
-    "retryAfter": 1791648687,
+    "retryAfter": 1791738831,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "aksu-devamsizlik-sinif-tekrari-onleme-plani-2025-2026": {
-    "retryAfter": 1791648688,
+    "retryAfter": 1791738831,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "kecioren-dijital-etik-karar-verme-kilavuzu-lise-2026": {
-    "retryAfter": 1791648691,
+    "retryAfter": 1791738832,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "orgm-dil-konusma-motor-konusma-yutma-2025": {
-    "retryAfter": 1791648690,
+    "retryAfter": 1791738833,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "orgm-dil-konusma-ses-bozukluklari-2025": {
-    "retryAfter": 1791648690,
+    "retryAfter": 1791738833,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "of-disleksi-veli-brosuru-2024": {
-    "retryAfter": 1791648750,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    "retryAfter": 1791738834,
+    "errorType": "HTTPError",
+    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "of-disleksi-ogretmen-brosuru-2024": {
-    "retryAfter": 1791648691,
+    "retryAfter": 1791738835,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "sidikaavar-aylik-rehberlik-calisma-raporu-2025": {
-    "retryAfter": 1791648679,
+    "retryAfter": 1791738828,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "bahcelievler-erteleme-tukenmislik-bulteni": {
-    "retryAfter": 1791648708,
+    "retryAfter": 1791738838,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
   },
   "kecioren-etik-karar-verme-kilavuzu-ortaokul-2026": {
-    "retryAfter": 1791648709,
-    "errorType": "HTTPError",
-    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
+    "retryAfter": 1791738899,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "kecioren-etik-karar-verme-kilavuzu-ilkokul-2026": {
-    "retryAfter": 1791648710,
-    "errorType": "HTTPError",
-    "message": "HTTP Error 404: Sayfa Bulunamad\u00c4\u00b1"
+    "retryAfter": 1791738899,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "meb-meslek-gorgu-protokol-selamlasma-2025": {
-    "retryAfter": 1791648712,
+    "retryAfter": 1791738850,
     "errorType": "HTTPError",
     "message": "HTTP Error 404: Not Found"
   },
@@ -235,77 +235,32 @@
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "collected-b5366059e4daa67fd9d81e55": {
-    "retryAfter": 1791648752,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-af561aa77180fd76ac5d68f8": {
-    "retryAfter": 1791648757,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-93174d674c2a5160b9a7eed8": {
-    "retryAfter": 1791648770,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-9d24dcf5e28cb694e91aee8e": {
-    "retryAfter": 1791648774,
+    "retryAfter": 1791738894,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "collected-88fd312d576046374dac0c79": {
-    "retryAfter": 1791648783,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-9c730dab1d7c004d1b508d16": {
-    "retryAfter": 1791648813,
+    "retryAfter": 1791738912,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "collected-ac9640eb96180ca2bd379107": {
-    "retryAfter": 1791648817,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-a8f0a1552418612190aa0241": {
-    "retryAfter": 1791648831,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-a3dedb58b71e3247dcfb630b": {
-    "retryAfter": 1791648835,
+    "retryAfter": 1791738917,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "collected-a1421c7cf49c034f21fb819a": {
-    "retryAfter": 1791648843,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-8a5dd4828997e46cc5fe0e56": {
-    "retryAfter": 1791648855,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-ad2f5a2500bbdadeaa963a2f": {
-    "retryAfter": 1791648885,
+    "retryAfter": 1791738959,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "collected-a86eca295a03c51fb1e85c0d": {
-    "retryAfter": 1791648891,
+    "retryAfter": 1791739056,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   "collected-970d02bb4b771ce9030d3e46": {
-    "retryAfter": 1791648912,
-    "errorType": "URLError",
-    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-  },
-  "collected-9b75ab405c6375c788732c07": {
-    "retryAfter": 1791648915,
+    "retryAfter": 1791739070,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   },
@@ -336,6 +291,36 @@
   },
   "collected-02d0ab453cd9d157523e747d": {
     "retryAfter": 1791732990,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "arsiv-13217883e0ff79fd": {
+    "retryAfter": 1791738959,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "arsiv-847c4c85c1353eac": {
+    "retryAfter": 1791738980,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "arsiv-d438eeab633e350e": {
+    "retryAfter": 1791738996,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "arsiv-8940b794ad946503": {
+    "retryAfter": 1791739005,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "arsiv-6eb7619a53905a12": {
+    "retryAfter": 1791739019,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "arsiv-9a40e80e8e859c29": {
+    "retryAfter": 1791739040,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   }
