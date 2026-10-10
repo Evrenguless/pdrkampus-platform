@@ -173,8 +173,8 @@ $('#closeViewer').addEventListener('click',closeViewer);
 $('#viewerDialog').addEventListener('click',event=>{if(event.target===$('#viewerDialog'))closeViewer()});
 
 try{
- const [forms,resources,curated,supplementary]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20261002-2'),getCuratedResources(),loadJson('../data/collected-resources.json').catch(()=>[])]);
- const combined=mergeCollectedResources([...forms,...resources,...curated.tools,...curated.library],supplementary);
+ const [forms,resources,curated,supplementary,reviewedBatch]=await Promise.all([loadJson('../data/forms.json?v=20260928-2'),loadJson('../data/library.json?v=20261002-2'),getCuratedResources(),loadJson('../data/collected-resources.json').catch(()=>[]),loadJson('../data/library-reviewed-batch-20261010.json').catch(()=>[])]);
+ const combined=mergeCollectedResources([...forms,...resources,...curated.tools,...curated.library],[...supplementary,...reviewedBatch]);
  const additions=combined.slice(forms.length+resources.length+curated.tools.length+curated.library.length);
  documents=officialDocuments([...forms,...curated.tools],[...resources,...curated.library,...additions]);
  setTypeOptions();setAreaOptions();
