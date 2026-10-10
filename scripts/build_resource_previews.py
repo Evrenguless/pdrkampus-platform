@@ -110,9 +110,9 @@ def main():
     manifest=ROOT/'data/resource-previews.json';previews=json.loads(manifest.read_text())
     state_file=ROOT/'data/preview-build-state.json';state=json.loads(state_file.read_text()) if state_file.exists() else {}
     rows=[]
-    for name in ['forms','library','collected-resources']:rows+=json.loads((ROOT/f'data/{name}.json').read_text())
+    for name in ['forms','library','collected-resources','library-reviewed-batch-20261010']:rows+=json.loads((ROOT/f'data/{name}.json').read_text())
     # The library sorts titles; prioritize visible cards and the explicitly reported workbook.
-    rows.sort(key=lambda r:(r['id']!='collected-64cf8183f040bf20432c3eea',r['title']))
+    rows.sort(key=lambda r:(r['id']!='collected-64cf8183f040bf20432c3eea',r['id'] not in { 'tuba-teknoloji-bagimliligi-raporu', 'meb-okuloncesi-uyum-etkinlikleri-2025', 'meb-aile-ici-iletisim-sunumu-2023', 'dergipdr-empati-gelistirme-rehberi', 'yalvac-ram-verimli-ders-calisma-etkinlikleri', 'iznik-ortaokul-uyum-rehberi' },r['title']))
     by_file={r['file']:previews[r['id']] for r in rows if r['id'] in previews and previews[r['id']].get('thumbnail')}
     for row in rows:
         if row['fileType'].upper() in ['PNG','JPG','JPEG']:
