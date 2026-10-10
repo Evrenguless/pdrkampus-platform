@@ -1241,7 +1241,7 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "b2ea17bb63dfb2feb0e73d4e998f0077e8474db4db9a77d5a80fc69a1b1ce387",
+      "reviewed_sha256": "e7bc00b10841c45c88d6f8a72bbad1f83dc426ec2ca468ea98b8afc9c20b29a9",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved"
     },
     "topluluk.html": {
