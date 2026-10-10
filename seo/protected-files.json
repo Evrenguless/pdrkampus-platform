@@ -52,11 +52,11 @@
     "data/inventory-gap-audit.json": "5596d99064ba31072ec6634bd713b4cc3681b35a9efe6746f988abf6fcbcde5f",
     "data/library.json": "300cb3cfaddd87c1d9dd30ec734124cf99fc8d1194863b31b0de471b9ba2d550",
     "data/programs.json": "ca77c3ef66e418c8f188ccb9dfe55629610a6380508f633d583a9077b8b4c421",
-    "data/recruitment.json": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
+    "data/recruitment.json": "3fc6c1eeaf27123f9de0dfe3ea8577f9c748d7dfe5764021c3fc58cd78b9f173",
     "data/search-trends.json": "64dace446dd768334e11d743b2125511a2421860f00d39a950c585edd46f60c7",
     "data/seo-keywords.json": "ce482047364f1bc1c22ae8cb8dd8e8f8f523fb18789036a4e283e37d203f5fad",
     "data/seo-site-architecture.json": "1cb7ac406659769a5caa52a8e8e1cc3448039d7784c554c3cdf47326f7838d73",
-    "data/topics.json": "b0591c312d2fe1e17ef46a3bf4f47a4da7fd0c71788183bff1227e2d3de3a5da",
+    "data/topics.json": "1a7aed26ebfd1b911f2adc0141fbee555e8dc954ea3b7965dafd4de2ad58ad6c",
     "db/001_form_catalog.sql": "321d18b0b3777159b82ff9093fdfe953d9b8cb3635ea4c2146866e62820564ff",
     "db/002_seed_form_catalog.sql": "a0d7fec061f374cfa7ce730fd923906a12403f2c13f6ad17bcdbb8993913521c",
     "db/003_library_resources.sql": "39f63a3e944946454f5c99e00e11a8acecd9782236f5e78c12558ae919b354c3",
@@ -349,9 +349,9 @@
   },
   "maintenance_updates": {
     "data/recruitment.json": {
-      "previous_sha256": "da9e7d7035e254e7a91b559137764bddc2a0aec2f6c2b499708df5ef0eea5cc1",
-      "reviewed_sha256": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
-      "reason": "2026-10-07 user-authorized recruitment publication/date precision; check_seo.py preserves already merged b2e5d4 audit"
+      "previous_sha256": "a7ecaea539d0068b0ac3c766331f0830177633135c82adf65f236d2d3c05b496",
+      "reviewed_sha256": "3fc6c1eeaf27123f9de0dfe3ea8577f9c748d7dfe5764021c3fc58cd78b9f173",
+      "reason": "Carry forward reviewed PR #50 announcement changes without replacing concurrent main changes."
     },
     "docs/career-content.md": {
       "previous_sha256": "ff43d7b3e34c10720f65e37bf358b523d79060afbcd0ae5676ed07790f4155d7",
@@ -407,6 +407,11 @@
       "previous_sha256": "2d17a0cfde3e2e476249c7af72db06aa0961b1670e4a375711132ca377e5be7b",
       "reviewed_sha256": "d1ef93cefe6997b85134dc2ca1f4bb9caa14137b7961f81f97d3fca8d76078e4",
       "reason": "Preserve already published main UI at 1be9664; exact HEAD bytes retained during catalogue SEO expansion"
+    },
+    "data/topics.json": {
+      "previous_sha256": "b0591c312d2fe1e17ef46a3bf4f47a4da7fd0c71788183bff1227e2d3de3a5da",
+      "reviewed_sha256": "1a7aed26ebfd1b911f2adc0141fbee555e8dc954ea3b7965dafd4de2ad58ad6c",
+      "reason": "Reconcile already published user-authorized topic expansion; no topic content changed in this maintenance."
     }
   },
   "baseline_sources": {

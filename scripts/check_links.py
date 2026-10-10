@@ -23,6 +23,7 @@ class Parser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         d=dict(attrs)
         if d.get("id"): self.ids.add(d["id"])
+        if tag == "link" and set(d.get("rel", "").split()) & {"preconnect", "dns-prefetch"}: return
         if tag=="a" and d.get("name"): self.ids.add(d["name"])
         for key in ("href","src"):
             v=d.get(key)

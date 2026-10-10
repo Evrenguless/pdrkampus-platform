@@ -27,14 +27,14 @@
     },
     "konu/dijital-denge/index.html": {
       "baseline_sha256": "a420ccac4fa0a0f101c820fce5589f7490a8983fc3427b7cc23b99b2ffbfe6ba",
-      "reviewed_sha256": "9d007d487de86fa144cad998723cfadd29f6a39d71114e805c2f3d38a871d527",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "c2adb1e9d58f4f58b4c3295dab8a7602966b001d45eb553ce139bb38f257b8d8",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/ogrenciyi-tanima/index.html": {
       "baseline_sha256": "600c9b2bcb7e1a7a4657b343d224350518eb5d987ab95fc86dd083a1ec15d55e",
-      "reviewed_sha256": "4c588cc15de077830b64829e8189cb6f312f2da96de6281097275d986d9103b2",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "f2c291e98b22b07bab1fdf85c38024ce0a16e379e060e18bcbe73d6bf2ec6521",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/index.html": {
@@ -254,13 +254,13 @@
     },
     "scripts/check_links.py": {
       "baseline_sha256": "380fb46f02b6e82b5f5df97ce322d7a69a2fa4ebcd147afd541880b5f2271125",
-      "reviewed_sha256": "0a1edceb5481ff7905e9b35b38d67b548404768ad0fb1e14c179bd47d7f8edc2",
-      "reason": "Reviewed SEO/content/catalogue display correction; source records and calculation logic preserved"
+      "reviewed_sha256": "179fa9d92aa88a4fa31636e9dbb2fa9f6ad4bcd880d943c47fbcfef01dffb1c2",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization."
     },
     "src/library.js": {
       "baseline_sha256": "18ef87251a4b0ce7232d07cca82ad94f59741ace9109feff8844eb7b6254fb1e",
-      "reviewed_sha256": "38fc5e843466ea95e19b52dcaf752f5c69ae741b19e0c0ce7f5c76ef53c46337",
-      "reason": "User-requested actual document previews and navigation/footer color corrections; original records preserved"
+      "reviewed_sha256": "fd372eaff683e5eb7959c16f5c9a618cf0e4675d536f71a62b93cc9d35142271",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization."
     },
     "tests/catalog.mjs": {
       "baseline_sha256": "18129031f6ef397d43b4411fb5e12724194a34b0850fa9993b12879df812cb98",
@@ -653,128 +653,128 @@
     },
     "konu/akademik-motivasyon/index.html": {
       "baseline_sha256": "81da849af5afdd24d91e5035161ad185c277ee70d6cdf9df2785c16ff3c01c6d",
-      "reviewed_sha256": "f10d3938defbc786416e1e10714cf636ed2ebbd46ec06a8f2cad3374416c09b7",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "c3c9c8b40eafa3c1541ed7b9b39db5c25508c2bc51be0fa62291b5190f846fb7",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/akran-zorbaligi/index.html": {
       "baseline_sha256": "c0ff1221f2b36925e0d207f47e40fcbe6b63e4a52724721476718261a055d68f",
       "reviewed_sha256": "d54f6c0da972c8e5af04e2e95d0b97c05d643cbf140e6fac00a58e1ceaf9a0f0",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
-      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/bep/index.html": {
       "baseline_sha256": "d1f0930efc0db047cca5eb8d2dbcf659101643f62debaf6637933cb1643f81f7",
       "reviewed_sha256": "81168d82c3a9fe52e7d99c1807cf3011ab77accf1eead9f2253b5971ea465405",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/bireysel-gorusme/index.html": {
       "baseline_sha256": "1a72800ab7ee01211d80038b3c4bfc5e1dd789616de175bb1547323185ed6cbe",
       "reviewed_sha256": "1c1cf795a77f7d9610030243a80a01789f9a47260f0a0883a2cf382d0400d58e",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/devamsizlik/index.html": {
       "baseline_sha256": "fef16143416edba56ffb6c77e9a855c47db74ef835c0ae014172d3a11aa07430",
-      "reviewed_sha256": "e324057315c7346e7852989ae1544b690476ff785c97fe62b14a1e5346e8dc4c",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
-      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
+      "reviewed_sha256": "412299b5f44ea0ae62e2446aaef663c99d68e0b3d2304ecfb072784d50e29a3e",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/ergenlik/index.html": {
       "baseline_sha256": "486b1cb06cfee35d87068b557a7202610d4ac265833a8315829ae60909cb236e",
-      "reviewed_sha256": "e4da2e1f6d926e33bd9ac9500720e5cb457111d44269fc5dd6a1c9860f3631bb",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "0d99995ae447fd937857f74cdabeb7ccb8006b9e0ce6b8033c6350a2af7c7633",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/guvenli-okul-iklimi/index.html": {
       "baseline_sha256": "5906cfcf839db135154f02b06ca47fbe7b700d7297511f185bd4e62ef0de8cbf",
-      "reviewed_sha256": "97b8ad440b0f985a7b355c104ba7e0baa26e03d6552b7bf9107e94bb54da1836",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "297ee5913eaad7648155dc67994bdfbbcf4463a1a1502b917b5107cc5ba1cf02",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/kariyer-gelisimi/index.html": {
       "baseline_sha256": "9f56e1135dfaf5835b31fb9de332b34da9d211080162e9506338ff073d95513a",
-      "reviewed_sha256": "2cf596357ce899e3ad784ada9130a3cefbb19b3891e6b2deae02266463b43569",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "732fbe2c986adbed20a637bac0ee26828c31de1b6fcdd894bfcd4ec6ca38a256",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/mahremiyet-beden-guvenligi/index.html": {
       "baseline_sha256": "4bf7bb3b80c9f9f240469cb458b31348b4e1eff78723b1e939f3fd8dbe5c4c9e",
       "reviewed_sha256": "958a930a3eedad004f9504ba1701bb9ea626b4e9ba50df085e1a015ecfb861f9",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/ogrenci-esenligi-psikoegitim/index.html": {
       "baseline_sha256": "215341b08cbd4ad933e7e92b96cbe6a1f8d26f8f9311166c85993d3236b296c3",
       "reviewed_sha256": "26f7560f51bdfa692a6f17a3dcc8127f06ab3cdc52ef047dbd3acb7eb2cf9ac0",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/okul-reddi/index.html": {
       "baseline_sha256": "ad935586fb16e0b923ad4064acb3250663a2171dca4236f4f76d01a652460437",
       "reviewed_sha256": "528a32940a519a54f7a0407b874fd19eba78ee80342d2e9dd9f6fce163269f15",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
-      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/okula-uyum/index.html": {
       "baseline_sha256": "f075d8cf902fa8077210b2e29c0672502e398428c02ed091a894a96ee81bbdd2",
-      "reviewed_sha256": "d06997dc56cfb745f5efee294d7d5e52862121ab29c1c0b17fc0318465b19a97",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "58ee72d36e48f142277eb14ca94df7dd81b2daaa735643505f2e7d1040fc8344",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/psikolojik-saglamlik/index.html": {
       "baseline_sha256": "7bc6bf60c8e6cadd8bf9406850713a8f80d134e8fc1aca14bdb0a7392d1a6222",
-      "reviewed_sha256": "044122f39c301679d83a81ad2fcfd8358c1088068d422b1cc4ec4d08a5b17a05",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "b90deab6ac0c87fae2373a0295b4a2adb2725dcdab51f31585ba1217bc5154c1",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/rehberlik-formlari/index.html": {
       "baseline_sha256": "872ffaa72e3a96f964567b4709e7a21cc169097b8ac0afd6c965a56e21f8b167",
-      "reviewed_sha256": "373ca8679cbaf781661e5fe70ac1896a5de028c750eef6ce1476bab92ec235e2",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "99209b9084c4040473a85c278528aeb4e063f78cc8c52a944032c94cb16dd5bd",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/rehberlik-hizmetleri/index.html": {
       "baseline_sha256": "54e8ad7dfd68e97b574ebc1561ae475036362edbdc9e982c1256898e3c28570d",
-      "reviewed_sha256": "838b0acc2bbc8d8e0e162b87ebcb2e42be57fa1b3bc0184ec62481a32f84f638",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "36aaa68c2c2e35f7aa79f9f2e75f9d217fbe1030b43e8fcce87649936e448ea5",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/siber-zorbalik/index.html": {
       "baseline_sha256": "1ce88c058beee4e63b13d54fcaf7217c6bb0fdc99382e150f076fce7c8e97bee",
       "reviewed_sha256": "791a1a1c56ccf4b1e97fe9c02c2a2b34420d942749525c751781677165f1b9fc",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/sinav-kaygisi/index.html": {
       "baseline_sha256": "18b848287752efbdb211cdcd6f00e134829e0967dceed0c9b71f861b82a75fb9",
       "reviewed_sha256": "8170cb012069ab9683f35117e7d881922bd0f4069d229cc079f7b753949a210a",
-      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed",
-      "reason": "User-approved visual refresh link audit: matching related-topic links now open the existing exact topic centre; canonical URLs, content, structured data and runtime preserved"
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
+      "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/sinif-rehberligi-etkinlikleri/index.html": {
       "baseline_sha256": "f9ad5cc8697bcb806131882841d588ba2d53d49ec2bd74e32734f7bcf91ebb33",
-      "reviewed_sha256": "d51772f11860b3dacbe2b5ca4cf41c7478326695fb167e31c0865c7f70c6e3b6",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "2dc6ddc6d27d77493e66043398f2248a69286aa9387d95f30e11bd16cba612d2",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/sosyal-duygusal/index.html": {
       "baseline_sha256": "ac5fb1b26cb6a01f9c158e70c964098e2d03a9de6ee8f6bfe52f38444ba403ba",
-      "reviewed_sha256": "2126d31d69725c4ca91fe11b64b54c25fc753c8499210dc88a04d07333dbc824",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "e42ce3f4766cc86a59aed3dfb6acbae385e2ca2dda2e8f301ad9c58361e2dec5",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/sosyometri/index.html": {
       "baseline_sha256": "e850cb4cd6930fbcc8d5e4252f7694059fcdb05488ca7e6f829befc7d80cafd6",
       "reviewed_sha256": "caa9b849b7a624b41c6dcbbac8c15a71ea91eb3f58839d6b1c2f215f6bd143d4",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konu/veli-gorusmesi/index.html": {
       "baseline_sha256": "571ce55d4ad4c2d451defbc633a2c74789a4b09ab0f2c5dfe84543faad2cbc21",
-      "reviewed_sha256": "303772f6c286d42454ac702676aa5e7dfd4f8d48344e8a63f8e7c9b6d23e4282",
-      "reason": "Reviewed source-grounded content/schema/link additions; original records and runtime preserved",
+      "reviewed_sha256": "53c79f68666989dede2ccb6ef41dc4cca4bcb56be6400edd84ec5dc327c8ed33",
+      "reason": "Reviewed existing published topic/library changes and preconnect audit correction under repository maintenance authorization.",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "konular.html": {
@@ -1241,8 +1241,8 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "1f555c84d06e52b67e077583d29ad91e459b3493efe1516507859e6cf1c7612a",
-      "reason": "User-requested Makaleler navigation and article page integration; only shared navigation links, menu cache version and sitemap entry changed; original source data and calculations preserved"
+      "reviewed_sha256": "5a068be0ff895a233167fc5fa4bb8d65613488b7f626000b6034ae44dfa40678",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved"
     },
     "topluluk.html": {
       "baseline_sha256": "e73b19a12fd7d33801327f61799969e46685844e3504de5c4e9835352c14d1b9",
@@ -1321,7 +1321,7 @@
     },
     "personel-alim-ilanlari/index.html": {
       "baseline_sha256": "866b330b1f4bb3ed6e01a3dc78097e3cb0c237b1059d60d7668ed147dfabfb36",
-      "reviewed_sha256": "7472072ec9f1d5f54dcc35e506cf31df7b1ade41fbf0ef53f1fa1fe2a17923ca",
+      "reviewed_sha256": "801792ef957a8fd6568f88c11672f99806f1919b4d0c4c99dcd016413e061ae8",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
