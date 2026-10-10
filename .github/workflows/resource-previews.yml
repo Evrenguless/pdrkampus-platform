@@ -11,7 +11,7 @@ on:
     - cron: '35 * * * *'
   push:
     branches: [main]
-    paths: ['data/collected-resources.json', 'scripts/build_resource_previews.py', '.github/workflows/resource-previews.yml']
+    paths: ['data/collected-resources.json', 'data/library-reviewed-batch-20261010.json', 'scripts/build_resource_previews.py', '.github/workflows/resource-previews.yml']
 permissions:
   contents: read
 concurrency:
