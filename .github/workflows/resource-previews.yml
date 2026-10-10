@@ -47,7 +47,6 @@ jobs:
             git pull --ff-only origin main
             batch=$((budget < 100 ? budget : 100))
             python scripts/build_resource_previews.py --limit "$batch" | tee /tmp/pdr-preview-batch.log
-            git pull --ff-only origin main
             python scripts/resource_design.py
             python scripts/build_library_catalog.py
             python scripts/resource_design.py
@@ -56,7 +55,7 @@ jobs:
             python scripts/check_seo.py
             python scripts/check_accessibility.py
             test -z "$(git diff --name-only -- data/library.json data/forms.json data/collected-resources.json db src/auth-config.js)"
-            git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/ kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ seo/approved-edits.json
+            git add data/resource-previews.json data/preview-build-state.json assets/resource-previews/ kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ src/resource-access-data.js src/library-detail-links.js src/resource-page-links.js sitemap.xml seo/approved-edits.json
             if ! git diff --cached --quiet; then
               git commit -m 'Publish genuine document preview batch'
               git pull --rebase origin main

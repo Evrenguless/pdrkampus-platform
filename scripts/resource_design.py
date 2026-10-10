@@ -174,7 +174,7 @@ def refresh_reviews(root):
  changed=set(__import__('subprocess').check_output(['git','diff','--name-only'],cwd=root,text=True).splitlines())
  for name in changed:
   if name not in baseline:continue
-  eligible=name=='kutuphane.html' or name.startswith(('kaynak/','kaynak-detay/','kutuphane/katalog/')) or name in ['scripts/build_library_catalog.py','src/library.js']
+  eligible=name in {'kutuphane.html','sitemap.xml'} or name.startswith(('kaynak/','kaynak-detay/','kutuphane/katalog/')) or name in ['scripts/build_library_catalog.py','src/library.js']
   if not eligible:continue
   path=root/name
   entry=data['edits'].setdefault(name,{'baseline_sha256':baseline[name]})

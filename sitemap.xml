@@ -6615,8 +6615,14 @@
     <loc>https://pdrkampus.com/konu/akademik-motivasyon/</loc>
   </url>
   <url>
+    <loc>https://pdrkampus.com/konu/akran-catismasi/</loc>
+  </url>
+  <url>
     <loc>https://pdrkampus.com/konu/akran-zorbaligi/</loc>
     <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://pdrkampus.com/konu/arkadaslik-iliskileri/</loc>
   </url>
   <url>
     <loc>https://pdrkampus.com/konu/bep/</loc>
@@ -6631,6 +6637,9 @@
     <loc>https://pdrkampus.com/konu/dijital-denge/</loc>
   </url>
   <url>
+    <loc>https://pdrkampus.com/konu/duygu-duzenleme/</loc>
+  </url>
+  <url>
     <loc>https://pdrkampus.com/konu/ergenlik/</loc>
   </url>
   <url>
@@ -6643,6 +6652,9 @@
     <loc>https://pdrkampus.com/konu/mahremiyet-beden-guvenligi/</loc>
   </url>
   <url>
+    <loc>https://pdrkampus.com/konu/ofke-yonetimi/</loc>
+  </url>
+  <url>
     <loc>https://pdrkampus.com/konu/ogrenci-esenligi-psikoegitim/</loc>
   </url>
   <url>
@@ -6650,10 +6662,19 @@
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
+    <loc>https://pdrkampus.com/konu/okul-aidiyeti/</loc>
+  </url>
+  <url>
     <loc>https://pdrkampus.com/konu/okul-reddi/</loc>
   </url>
   <url>
     <loc>https://pdrkampus.com/konu/okula-uyum/</loc>
+  </url>
+  <url>
+    <loc>https://pdrkampus.com/konu/ozguven/</loc>
+  </url>
+  <url>
+    <loc>https://pdrkampus.com/konu/problem-cozme-becerileri/</loc>
   </url>
   <url>
     <loc>https://pdrkampus.com/konu/psikolojik-saglamlik/</loc>
@@ -6677,6 +6698,9 @@
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
+    <loc>https://pdrkampus.com/konu/sinifta-iletisim-becerileri/</loc>
+  </url>
+  <url>
     <loc>https://pdrkampus.com/konu/sosyal-duygusal/</loc>
   </url>
   <url>
@@ -6684,6 +6708,9 @@
   </url>
   <url>
     <loc>https://pdrkampus.com/konu/veli-gorusmesi/</loc>
+  </url>
+  <url>
+    <loc>https://pdrkampus.com/konu/zaman-yonetimi/</loc>
   </url>
   <url>
     <loc>https://pdrkampus.com/konular.html</loc>
@@ -6905,7 +6932,7 @@
   </url>
   <url>
     <loc>https://pdrkampus.com/personel-alim-ilanlari/csgb-2026-ekim-bilisim-personeli/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://pdrkampus.com/personel-alim-ilanlari/duzce-universitesi-2026-2-sozlesmeli-personel/</loc>
@@ -6914,6 +6941,14 @@
   <url>
     <loc>https://pdrkampus.com/personel-alim-ilanlari/nigde-omer-halisdemir-universitesi-2026-eylul-personel/</loc>
     <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://pdrkampus.com/personel-alim-ilanlari/ttk-2026-ekim-bartin-4-isci/</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pdrkampus.com/personel-alim-ilanlari/ttk-2026-ekim-zonguldak-57-isci/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://pdrkampus.com/rehber/akran-zorbaligi-etkinlikleri/</loc>
@@ -7083,18 +7118,4 @@
   <url>
     <loc>https://pdrkampus.com/yks/tercih-robotu/</loc>
   </url>
-<url><loc>https://pdrkampus.com/konu/duygu-duzenleme/</loc></url>  <url><loc>https://pdrkampus.com/konu/akran-catismasi/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/sinifta-iletisim-becerileri/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/ofke-yonetimi/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/ozguven/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/problem-cozme-becerileri/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/arkadaslik-iliskileri/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/okul-aidiyeti/</loc></url>
-  <url><loc>https://pdrkampus.com/konu/zaman-yonetimi/</loc></url>
-  <url><loc>https://pdrkampus.com/kaynak-detay/tuba-teknoloji-bagimliligi-raporu/</loc></url>
-  <url><loc>https://pdrkampus.com/kaynak-detay/meb-okuloncesi-uyum-etkinlikleri-2025/</loc></url>
-  <url><loc>https://pdrkampus.com/kaynak-detay/meb-aile-ici-iletisim-sunumu-2023/</loc></url>
-  <url><loc>https://pdrkampus.com/kaynak-detay/dergipdr-empati-gelistirme-rehberi/</loc></url>
-  <url><loc>https://pdrkampus.com/kaynak-detay/yalvac-ram-verimli-ders-calisma-etkinlikleri/</loc></url>
-  <url><loc>https://pdrkampus.com/kaynak-detay/iznik-ortaokul-uyum-rehberi/</loc></url>
 </urlset>

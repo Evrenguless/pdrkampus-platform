@@ -8,6 +8,8 @@ on:
     paths: ['scripts/collect_recruitment.py', 'scripts/test_collect_recruitment.py', '.github/workflows/recruitment-collector.yml']
   pull_request:
     paths: ['scripts/*recruitment*.py', 'data/recruitment-feed.json', '.github/workflows/recruitment-collector.yml']
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
 permissions:
   contents: read
 concurrency:
