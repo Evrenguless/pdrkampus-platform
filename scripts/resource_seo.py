@@ -13,9 +13,22 @@ HUB = '/kaynak/yeni/'
 
 
 def page_path(row):
-    title = unicodedata.normalize('NFKD', row['title'].lower().replace('ı', 'i')).encode('ascii', 'ignore').decode()
-    slug = re.sub(r'[^a-z0-9]+', '-', title).strip('-')[:75].rstrip('-')
-    return HUB + slug + '-' + row['id'][-12:] + '/'
+    """Kaynağa özgü, değişmeyen ve çakışmasız kütüphane adresi."""
+    import hashlib
+
+    def slug(value):
+        value = str(value).replace("ı", "i").replace("İ", "I")
+        value = unicodedata.normalize("NFKD", value)
+        value = value.encode("ascii", "ignore").decode().lower()
+        return re.sub(r"[^a-z0-9]+", "-", value).strip("-")
+
+    title = slug(row.get("title", ""))[:65].strip("-")
+    source = slug(row.get("source", ""))[:28].strip("-")
+    identity = str(row["id"])
+    suffix = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:12]
+
+    parts = [part for part in (title, source, suffix) if part]
+    return "/kutuphane/" + "-".join(parts) + "/"
 
 
 def build_pages(root, resources):
