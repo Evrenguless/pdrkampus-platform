@@ -338,5 +338,15 @@
     "retryAfter": 1791744300,
     "errorType": "ValueError",
     "message": "Preview size limit"
+  },
+  "arsiv-23200fc9377e7cd3": {
+    "retryAfter": 1791744546,
+    "errorType": "PdfStreamError",
+    "message": "Stream has ended unexpectedly"
+  },
+  "arsiv-ba9db8f4566d47a0": {
+    "retryAfter": 1791744569,
+    "errorType": "ValueError",
+    "message": "Preview size limit"
   }
 }
