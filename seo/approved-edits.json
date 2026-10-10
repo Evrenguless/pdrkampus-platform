@@ -1241,8 +1241,8 @@
     },
     "sitemap.xml": {
       "baseline_sha256": "d3cc7b7448ac4ba6d3ae809821b6e5298b14d509f8f7844b48c09fd2715701c2",
-      "reviewed_sha256": "5a068be0ff895a233167fc5fa4bb8d65613488b7f626000b6034ae44dfa40678",
-      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved"
+      "reviewed_sha256": "b2ea17bb63dfb2feb0e73d4e998f0077e8474db4db9a77d5a80fc69a1b1ce387",
+      "reason": "Generated official public recruitment snapshot; application and other datasets preserved"
     },
     "topluluk.html": {
       "baseline_sha256": "e73b19a12fd7d33801327f61799969e46685844e3504de5c4e9835352c14d1b9",
@@ -1315,13 +1315,13 @@
     },
     "personel-alim-ilanlari/duzce-universitesi-2026-2-sozlesmeli-personel/index.html": {
       "baseline_sha256": "f69f61f3cd9e83d3494a842fd35c63004510d9a021544c0881eba5ac5fe8f56b",
-      "reviewed_sha256": "bb7481546e2c3fabd4a4af5a7b4b74bf520432482435b63700a4cbd50e419ef6",
+      "reviewed_sha256": "db43bb6548bf538a42310d969a4ad4953c16e37e2bdb366fb9e5f7a0aed9b2c3",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
     "personel-alim-ilanlari/index.html": {
       "baseline_sha256": "866b330b1f4bb3ed6e01a3dc78097e3cb0c237b1059d60d7668ed147dfabfb36",
-      "reviewed_sha256": "801792ef957a8fd6568f88c11672f99806f1919b4d0c4c99dcd016413e061ae8",
+      "reviewed_sha256": "1cc81b1964f0e64c153b3b32402b667b7573c2039f30527a8834e6112c0c2258",
       "reason": "Generated official public recruitment snapshot; application and other datasets preserved",
       "runtime_sha256": "7f4bd2cc02a7af659b01083656aa603c22aed83537d04e0629ac3f911610b808"
     },
