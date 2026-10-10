@@ -328,5 +328,15 @@
     "retryAfter": 1791670343,
     "errorType": "URLError",
     "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-38a39b2d810573433e809732": {
+    "retryAfter": 1791732925,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+  },
+  "collected-02d0ab453cd9d157523e747d": {
+    "retryAfter": 1791732990,
+    "errorType": "URLError",
+    "message": "<urlopen error _ssl.c:993: The handshake operation timed out>"
   }
 }
