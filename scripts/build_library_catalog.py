@@ -139,6 +139,62 @@ for key in list(outputs):
     if not key.endswith('/index.html'): continue
     row = next((x for x in selected if links[x['id']].lstrip('/')+'index.html'==key), None)
     outputs[key] = decorate(ROOT, outputs[key], row)
+
+# PDR Kampüs: yayımlanmış kütüphane adreslerini koru.
+route_map_file = ROOT / "data/kutuphane-route-map.json"
+if route_map_file.exists():
+    route_map = json.loads(route_map_file.read_text(encoding="utf-8"))
+    for old, new in route_map.items():
+        old_key = old.lstrip("/") + "index.html"
+        new_key = new.lstrip("/") + "index.html"
+        if old_key in outputs:
+            original_page = outputs[old_key]
+            outputs[new_key] = original_page.replace(BASE + old, BASE + new)
+            target = BASE + new
+            outputs[old_key] = (
+                '<!doctype html><html lang="tr"><head><meta charset="utf-8">'
+                '<meta name="robots" content="noindex,follow">'
+                '<link rel="canonical" href="' + target + '">'
+                '<meta http-equiv="refresh" content="0;url=' + target + '">'
+                '<script>location.replace(' + json.dumps(new) + ');</script>'
+                '</head><body><a href="' + new + '">Yeni adres</a></body></html>'
+            )
+    for key in ("src/resource-page-links.js", "src/library-detail-links.js"):
+        if key in outputs:
+            for old, new in route_map.items():
+                outputs[key] = outputs[key].replace(
+                    json.dumps(old), json.dumps(new)
+                )
+    xml_root = ET.fromstring(outputs["sitemap.xml"])
+    ns_tag = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    for node in list(xml_root):
+        loc = node.find(ns_tag + "loc")
+        if loc is not None and loc.text:
+            if loc.text.startswith(BASE + "/kaynak-detay/"):
+                xml_root.remove(node)
+    present = {
+        node.find(ns_tag + "loc").text
+        for node in xml_root
+        if node.find(ns_tag + "loc") is not None
+    }
+    for new in route_map.values():
+        if (ROOT / new.lstrip("/") / "index.html").exists() or (
+            new.lstrip("/") + "index.html" in outputs
+        ):
+            url = BASE + new
+            if url not in present:
+                node = ET.SubElement(xml_root, ns_tag + "url")
+                ET.SubElement(node, ns_tag + "loc").text = url
+    xml_root[:] = sorted(
+        xml_root,
+        key=lambda node: node.find(ns_tag + "loc").text
+    )
+    ET.indent(xml_root, space="  ")
+    outputs["sitemap.xml"] = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        + ET.tostring(xml_root, encoding="unicode") + "\n"
+    )
+
 check = '--check' in sys.argv
 for path,content in outputs.items():
     dest=ROOT/path
