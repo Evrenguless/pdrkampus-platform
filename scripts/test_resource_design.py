@@ -49,4 +49,23 @@ class ResourceDesignTests(unittest.TestCase):
    source='<article class="catalog-card"><h2><a href="/kaynak/yeni/one/">Selamlaşma Panosu</a></h2></article>'
    result=decorate(root,source)
    self.assertIn('/assets/one.jpg',result);self.assertNotIn('/assets/two.jpg',result)
+ def test_source_page_fallback_is_labelled_and_survives_regeneration(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);(root/'seo').mkdir()
+   (root/'seo/source-page-overrides.json').write_text(json.dumps({'entries':{self.row['sourcePage']:{'replacement_url':'https://example.meb.k12.tr/','label':'Kaynak kurumun sitesi'}}}))
+   result=decorate(root,self.source,self.row)
+   self.assertNotIn(self.row['sourcePage'],result)
+   self.assertIn('Kaynak kurumun sitesi',result)
+   self.assertEqual(decorate(root,result,self.row),result)
+ def test_verified_title_overlay_preserves_record_and_canonical(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);(root/'seo').mkdir()
+   (root/'seo/resource-title-overrides.json').write_text(json.dumps({'entries':{'sample':{'title':'Selamlaşma Panosu · Öğrenci Sürümü'}}}))
+   row={**self.row,'pagePath':'/kaynak/yeni/sample/'}
+   result=decorate(root,self.source,row)
+   self.assertIn('<h1>Selamlaşma Panosu · Öğrenci Sürümü</h1>',result)
+   self.assertIn('<title>Selamlaşma Panosu · Öğrenci Sürümü',result)
+   self.assertEqual(row['title'],self.row['title'])
+   self.assertEqual(Page(result).canonicals,['https://pdrkampus.com/sample/'])
+   self.assertEqual(decorate(root,result,row),result)
 if __name__=='__main__':unittest.main()

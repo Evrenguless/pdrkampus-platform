@@ -103,7 +103,19 @@ def enhance_cards(root,source):
   return card.replace('>','><div class="resource-card-cover">'+visual+'</div>',1)
  return re.sub(r'<article class="catalog-card"[^>]*>.*?</article>',decorate_card,source,flags=re.S)
 
+def repair_source_links(root, source):
+ entries=load(root,'seo/source-page-overrides.json',{}).get('entries',{})
+ def replace(match):
+  entry=entries.get(__import__('html').unescape(match.group(2)))
+  if not entry:return match.group(0)
+  return '<a'+match.group(1)+'href="'+E(entry['replacement_url'],quote=True)+'"'+match.group(3)+' title="Özgün yayın sayfasına erişilemiyor; bağlantı kurumun ana sayfasına gider.">'+E(entry['label'])+' ↗</a>'
+ return re.sub(r'<a([^>]*?)href="([^"]+)"([^>]*)>.*?</a>',replace,source,flags=re.S)
+
 def decorate(root,source,row=None):
+ if row:
+  override=load(root,'seo/resource-title-overrides.json',{}).get('entries',{}).get(row['id'])
+  if override:row={**row,'title':override['title']}
+ source=repair_source_links(root,source)
  source=re.sub(r'(resource-design\.css|resource-preview\.js|library\.js)\?v=[^"\s>]+',r'\1?v=20261008-2',source)
  source=enhance_cards(root,source)
  if row and row.get('pagePath','').startswith('/kaynak/yeni/'):
@@ -118,6 +130,7 @@ def decorate(root,source,row=None):
  source=re.sub(r'(/assets/resource-previews/[^"<>]+)\.png',lambda m:m.group(1)+'.jpg' if (root/(m.group(1).lstrip('/')+'.jpg')).exists() else m.group(0),source)
  if 'data-resource-design="1"' in source:
   if row:
+   source=re.sub(r'<h1>.*?</h1>','<h1>'+E(row['title'])+'</h1>',source,count=1,flags=re.S)
    context=specific_context(row)
    topic=row.get('topic') or row.get('category') or row.get('group') or 'Rehberlik'
    lead=f"{row['title']}. {row.get('level') or 'Belirtilmiyor'} kademesi için {(row.get('type') or 'Form').lower()}; dosya önizlemesi, konu bilgileri ve kullanım önerileri."
@@ -150,7 +163,7 @@ def decorate(root,source,row=None):
  if context:body=body.replace('<details class="resource-original">','<section class="resource-editorial" data-resource-use-context><h2>Bu sürümle çalışırken</h2><p>'+E(context)+'</p></section><details class="resource-original">',1)
  source=source[:match.start()]+body+source[match.end():]
  source=source.replace('</body>','<script type="application/json" id="resourcePreviewData">'+json.dumps(config,ensure_ascii=False).replace('<','\\u003c')+'</script><script type="module" src="/src/resource-preview.js?v=20261008-2"></script></body>',1)
- return source
+ return repair_source_links(root,source)
 
 def apply(root):
  rows=load(root,'data/forms.json',[])+load(root,'data/library.json',[])+load(root,'data/collected-resources.json',[])
