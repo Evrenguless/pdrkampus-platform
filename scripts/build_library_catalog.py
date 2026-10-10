@@ -110,6 +110,9 @@ if pilot_path.exists():
         key = proposal['route'].strip('/') + '/index.html'
         if key not in outputs:
             raise ValueError('Reviewed pilot route absent from catalog: ' + key)
+        # Eski URL artık yönlendirme sayfasıysa SEO şablonu uygulama.
+        if '<meta http-equiv="refresh"' in outputs[key]:
+            continue
         outputs[key] = render(ROOT, config, proposal, source=outputs[key])
 from enrich_seo_content import enrich_schema,resource_context
 resource_lookup={item['id']:item for item in resources}
