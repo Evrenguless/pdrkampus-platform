@@ -113,10 +113,13 @@ def main():
     for name in ['forms','library','collected-resources','library-reviewed-batch-20261010']:rows+=json.loads((ROOT/f'data/{name}.json').read_text())
     # The library sorts titles; prioritize visible cards and the explicitly reported workbook.
     rows.sort(key=lambda r:(r['id']!='collected-64cf8183f040bf20432c3eea',r['id'] not in { 'tuba-teknoloji-bagimliligi-raporu', 'meb-okuloncesi-uyum-etkinlikleri-2025', 'meb-aile-ici-iletisim-sunumu-2023', 'dergipdr-empati-gelistirme-rehberi', 'yalvac-ram-verimli-ders-calisma-etkinlikleri', 'iznik-ortaokul-uyum-rehberi' },r['title']))
+    access=json.loads((ROOT/'seo/link-overrides.json').read_text())['entries']
     by_file={r['file']:previews[r['id']] for r in rows if r['id'] in previews and previews[r['id']].get('thumbnail')}
     for row in rows:
         if row['fileType'].upper() in ['PNG','JPG','JPEG']:
-            by_file.setdefault(row['file'],{'thumbnail':row['file'],'previews':[row['file']]})
+            src=access.get(row['file'],{}).get('replacement_url') or row['file']
+            if src != row['file']:by_file[row['file']]={'thumbnail':src,'previews':[src]}
+            else:by_file.setdefault(row['file'],{'thumbnail':src,'previews':[src]})
     pending=[];seen=set()
     for row in rows:
         if row['file'] in by_file:previews[row['id']]=by_file[row['file']];state.pop(row['id'],None);continue

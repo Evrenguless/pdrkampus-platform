@@ -35,7 +35,7 @@ jobs:
           python - <<'PY'
           import subprocess
           changed = subprocess.check_output(['git', 'diff', '--name-only'], text=True).splitlines()
-          allowed = {'kutuphane.html', 'seo/approved-edits.json'}
+          allowed = {'kutuphane.html', 'seo/approved-edits.json', 'sitemap.xml', 'src/resource-access-data.js', 'src/library-detail-links.js', 'src/resource-page-links.js'}
           invalid = [name for name in changed if name not in allowed and not (name.endswith('/index.html') and name.startswith(('kaynak/', 'kaynak-detay/', 'kutuphane/katalog/')))]
           if invalid: raise ValueError('Unexpected publication changes: '+str(invalid))
           PY
@@ -56,7 +56,7 @@ jobs:
           if ! git diff --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ seo/approved-edits.json
+            git add kutuphane.html kaynak/ kaynak-detay/ kutuphane/katalog/ src/resource-access-data.js src/library-detail-links.js src/resource-page-links.js sitemap.xml seo/approved-edits.json
             git commit -m 'Apply compact resource layouts and source-specific usage guidance'
             git pull --rebase origin main
             git push origin HEAD:main

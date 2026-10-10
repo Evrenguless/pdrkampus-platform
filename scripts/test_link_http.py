@@ -5,8 +5,8 @@ from link_http import check_external,transport_url
 class Handler(BaseHTTPRequestHandler):
  def log_message(self,*a):pass
  def do_HEAD(self):
-  self.send_response(405 if self.path=='/fallback' else 404 if self.path=='/missing' else 403 if self.path=='/restricted' else 200);self.end_headers()
- def do_GET(self):self.send_response(200);self.end_headers()
+  self.send_response(405 if self.path=='/fallback' else 404 if self.path in ('/missing','/head-missing') else 403 if self.path=='/restricted' else 200);self.end_headers()
+ def do_GET(self):self.send_response(404 if self.path=='/missing' else 200);self.end_headers()
 class Tests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
@@ -14,6 +14,7 @@ class Tests(unittest.TestCase):
  @classmethod
  def tearDownClass(cls):cls.server.shutdown();cls.server.server_close();cls.thread.join()
  def test_head_fallback(self):self.assertEqual(check_external(self.base+'/fallback')[0],200)
+ def test_head_404_is_confirmed_with_get(self):self.assertEqual(check_external(self.base+'/head-missing')[0],200)
  def test_broken_link_remains_error(self):self.assertEqual(check_external(self.base+'/missing')[0],404)
  def test_restricted_link_is_not_reported_as_404(self):self.assertEqual(check_external(self.base+'/restricted')[0],403)
  def test_unicode_and_percent_encoding_preserved(self):

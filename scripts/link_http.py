@@ -22,7 +22,7 @@ def check_external(url,timeout=12):
             with urlopen(Request(target,headers=headers,method=method),timeout=timeout) as r:
                 return r.status,r.geturl()
         except HTTPError as e:
-            if e.code in (405,501) and method=='HEAD':continue
+            if e.code in (404,410,405,501) and method=='HEAD':continue
             return e.code,target
         except (URLError,socket.timeout,TimeoutError,OSError,ValueError,UnicodeError) as e:
             if method=='HEAD':continue

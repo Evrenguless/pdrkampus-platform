@@ -37,6 +37,13 @@ class EcosystemTests(unittest.TestCase):
    with patch('ecosystem_engine.editorial',return_value=report),patch.object(sys,'argv',['engine','--root',str(ROOT),'--output',str(output)]):
     self.assertEqual(ecosystem_engine.main(),1)
    self.assertTrue((output/'discovery.json').exists());self.assertFalse(json.loads((output/'audit.json').read_text())['quality_gate_pass'])
- def test_all_current_pages_have_visible_faqs_and_no_duplicates(self):
-  r=editorial(ROOT);self.assertTrue(r['protection']['pass']);self.assertFalse(r['near_duplicates']);self.assertFalse([p for p in r['editorial'] if p['faq_issues']])
+ def test_near_duplicates_remain_review_only_and_do_not_block_healthy_pages(self):
+  with tempfile.TemporaryDirectory() as temp:
+   output=Path(temp)/'review';near=[{'first':'https://example.org/one','second':'https://example.org/two','similarity':.95,'action':'editorial_review_only'}]
+   report={'protection':{'pass':True,'changed':[]},'editorial':[],'near_duplicates':near}
+   with patch('ecosystem_engine.editorial',return_value=report),patch.object(sys,'argv',['engine','--root',str(ROOT),'--output',str(output)]):
+    self.assertEqual(ecosystem_engine.main(),0)
+   saved=json.loads((output/'audit.json').read_text());self.assertEqual(saved['near_duplicates'],near);self.assertTrue(saved['quality_gate_pass'])
+ def test_all_current_pages_have_visible_faqs_and_review_only_similarity(self):
+  r=editorial(ROOT);self.assertTrue(r['protection']['pass']);self.assertTrue(all(p['action']=='editorial_review_only' for p in r['near_duplicates']));self.assertFalse([p for p in r['editorial'] if p['faq_issues']])
 if __name__=='__main__':unittest.main()

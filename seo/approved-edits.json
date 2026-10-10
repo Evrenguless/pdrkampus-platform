@@ -201,8 +201,8 @@
     },
     "kutuphane/katalog/sayfa/34/index.html": {
       "baseline_sha256": "d893499614c1f112e016cfc9c0258b857160ddb8867942edf4ca23bdbb5cfb88",
-      "reviewed_sha256": "dfd7f5cdf0c15daafdce588f3e57785b151ae0fca6cfbce828bf13fc67dd2f01",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "f8f45819a79c4c41924b0c2201c3ddf4b5a5c7ef69bf327996746417856bfc70",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/35/index.html": {
@@ -1299,8 +1299,8 @@
     },
     "scripts/build_career_pages.py": {
       "baseline_sha256": "32024e5e1f5ed661934b3d2ed3797442aa018aacb0b2f66eab3c33f36c78ee16",
-      "reviewed_sha256": "2b3b9952449f7e93d7b520cef3232fb732bc36bd413ea24a88d06274d166a419",
-      "reason": "Generated official public recruitment snapshot; application and other datasets preserved"
+      "reviewed_sha256": "40de461dec4e661508b7a2417529b22de5dbcc652aa526ffc48666f19f93dd63",
+      "reason": "User-requested repair of unavailable fallback logo; recruitment records preserved."
     },
     "scripts/check_seo.py": {
       "baseline_sha256": "36833b21f657c395686f2d9401b37d520fb9f810e1fb484efffcad7182ef6457",
