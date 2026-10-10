@@ -91,7 +91,7 @@ function card(item){
   ?`<button type="button" data-community-file="${esc(item.file)}" data-library-open="${esc(item.id)}">Görüntüle</button>`
   :`<button type="button" data-kind="${item.kind}" data-id="${esc(item.id)}" data-library-open="${esc(item.id)}">Görüntüle</button>`;
  const cover=previewIndex[item.id]?.thumbnail||previewIndex[item.id]?.previews?.[0];
- const visual=`<div class="resource-card-cover">${cover?`<img src="${esc(cover)}" alt="${esc(item.title)} — ilk sayfa" loading="lazy">`:`<span class="resource-format-tile">${esc(item.fileType)}<small>${esc(item.type)}</small></span>`}</div>`;
+ const visual=`${detailPath?`<a href="${esc(detailPath)}" class="resource-card-cover" aria-label="${esc(item.title)} detay sayfasını aç">`:`<div class="resource-card-cover">`}${cover?`<img src="${esc(cover)}" alt="${esc(item.title)} — ilk sayfa" loading="lazy">`:`<span class="resource-format-tile">${esc(item.fileType)}<small>${esc(item.type)}</small></span>`}${detailPath?"</a>":"</div>"}`;
  return `<article class="document-card library-document resource-card surface-card" id="${item.kind==='member'?'belge-':''}${esc(item.id)}">${visual}<div class="resource-content"><div class="document-card-meta"><span>${origin}</span><span>${esc(item.type)}</span></div><h3>${item.kind !== 'member' && detailPath ? `<a href="${esc(detailPath)}">${esc(item.title)}</a>` : esc(item.title)}</h3>${item.aliases?.length?`<ul class="resource-detail">${item.aliases.map(alias=>`<li id="${esc(alias.id)}">${esc(alias.title)}</li>`).join('')}</ul>`:''}<p class="library-source">${esc(item.source)}</p><p class="resource-detail">${esc(subtitle)}</p></div><div class="resource-actions">${fileButton}</div></article>`;
 }
 function setTypeOptions(){
