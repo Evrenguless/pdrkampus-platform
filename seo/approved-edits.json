@@ -51,8 +51,8 @@
     },
     "kutuphane/katalog/sayfa/11/index.html": {
       "baseline_sha256": "f6e67682f8c00dcf7598feadce6a3dd8e9d15f128304ccf297c98307157811ef",
-      "reviewed_sha256": "0b135cf6650b7858166a9b79b2bc64d8cf9d3f06980031e797a471f08139b206",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "1ae76f3a55f17f6e9463a0f78e3d50674a52ba4cef9d80cfce8d30e3876af021",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "kutuphane/katalog/sayfa/12/index.html": {
@@ -207,7 +207,7 @@
     },
     "kutuphane/katalog/sayfa/35/index.html": {
       "baseline_sha256": "c40615d870de5ea41b4d9b82ffbe2ee37b89527549759234ac17dc756da5296f",
-      "reviewed_sha256": "314814cfb0ccd2218bb40a8c186f19ce917cd9731d32e99a607c5ec9e424da20",
+      "reviewed_sha256": "e6f2ba8f9efe6fb4941d24b35d9189ed4af246fda98702e4b277aff75d6885c8",
       "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
@@ -243,8 +243,8 @@
     },
     "kutuphane/katalog/sayfa/9/index.html": {
       "baseline_sha256": "45b49246a048b822ea1eb68d438f1d3428efe7fbb2392f1ed47af978651df8eb",
-      "reviewed_sha256": "15644f046df0d895df7045af62cdbd1439d4c6a157e01011623d372387dc46eb",
-      "reason": "Reconcile exact existing main resources with generated catalogue and topic/grade hubs; original records remain unchanged",
+      "reviewed_sha256": "7df2a5d0813c9077d6aaefc0984fd08491ff32e2776e0fbdeb3a7d8227040709",
+      "reason": "User-approved resource design and editorial usage suggestions; original source records and calculations preserved",
       "runtime_sha256": "968cd51597989e59f5a2ef85d0959db07b2d68defbf520d71d892824ba7e20ed"
     },
     "scripts/build_library_catalog.py": {
